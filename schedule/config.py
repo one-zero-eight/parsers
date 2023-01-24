@@ -13,8 +13,6 @@ class ParserConfig:
     SPREADSHEET_ID: str
     TARGET_RANGES: list[str]
     TARGET_SHEET_TITLES: list[str]
-    SUBJECTS: list[str]
-    COURSES: list[dict]
     RECURRENCE: list[dict]
     SAVE_PATH: str
 
