@@ -1,0 +1,131 @@
+{
+  "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
+  "TARGET_RANGES": [
+    "TargetRange1",
+    "TargetRange2"
+  ],
+  "TARGET_SHEET_TITLES": [
+    "Target1",
+    "Target2"
+  ],
+  "SUBJECTS": [
+    "Academic Research and Writing Culture",
+    "Analytical Geometry and Linear Algebra",
+    "DevOps Engineering",
+    "Differential Equations",
+    "Distributed and Network Programming",
+    "Dynamics of Nonlinear Robotic Systems",
+    "Elective courses on Physical Education",
+    "Empirical Methods",
+    "English for Academic Purposes",
+    "Fundamentals of Computer Architecture",
+    "Game Theory",
+    "HDDA",
+    "IT Business Start",
+    "IT Product Development",
+    "Introduction to AI",
+    "Introduction to Computer Vision",
+    "Introduction to Machine Learning",
+    "Introduction to Optimization",
+    "Introduction to Programming",
+    "Machine Learning",
+    "Managing Software Development",
+    "Mathematical Analysis",
+    "No-Code Development",
+    "Operating Systems",
+    "Optimization",
+    "Philosophy",
+    "Physics",
+    "Practical Machine Learning and Deep Learning",
+    "Probability and Statistics",
+    "Programming Paradigms",
+    "Reinforcement Learning and Intelligent Agents",
+    "Requirements Engineering",
+    "Research methodology for Data Science & Robotics",
+    "Software Design with Python",
+    "System and Network Administration",
+    "Theoretical Mechanics",
+    "Unit Economics in IT business"
+  ],
+  "COURSES": [
+    {
+      "name": "BS - Year 1",
+      "groups": [
+        "B22-CS-01",
+        "B22-CS-02",
+        "B22-CS-03",
+        "B22-CS-04",
+        "B22-CS-05",
+        "B22-CS-06",
+        "B22-DSAI-01",
+        "B22-DSAI-02",
+        "B22-DSAI-03",
+        "B22-DSAI-04"
+      ]
+    },
+    {
+      "name": "BS - Year 2",
+      "groups": [
+        "B21-01",
+        "B21-02",
+        "B21-03",
+        "B21-04",
+        "B21-05",
+        "B21-06",
+        "B21-07",
+        "B21-08"
+      ]
+    },
+    {
+      "name": "BS - Year 3",
+      "groups": [
+        "B20 - SD - 01(29)",
+        "B20 - SD - 02(28)",
+        "B20 - \u0421S(30)",
+        "B20 - AI(30)",
+        "B20 - DS(18)",
+        "B20 - RO(23)"
+      ]
+    },
+    {
+      "name": "BS - Year 4",
+      "groups": [
+        "B19-SD-01 (29)",
+        "B19-SD-02 (29)",
+        "B19-CS-01 (24)",
+        "B19-DS-01 (30)",
+        "B19-AI-01 (19)",
+        "B19-RO-01 (14)"
+      ]
+    },
+    {
+      "name": "MS - Year 1",
+      "groups": [
+        "M22-SE-01(16)",
+        "M22-SE-02(15)",
+        "M22-DS-01 (18)",
+        "M22-RO-01 (17)",
+        "M22-TE-01 (30)"
+      ]
+    },
+    {
+      "name": "MS-Year 2",
+      "groups": [
+        "M21-DS",
+        "M21-RO"
+      ]
+    }
+  ],
+  "RECURRENCE": [
+    {
+      "start": "20230123T000000",
+      "end": "20230319T000000"
+    },
+    {
+      "start": "20230320T000000",
+      "end": "20230526T000000"
+    }
+  ],
+  "SAVE_PATH": "output",
+  "TARGET_ID": 0
+}

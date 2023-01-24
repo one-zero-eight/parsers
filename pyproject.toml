@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "innohassle-parsers"
+version = "0.1.0"
+description = ""
+authors = ["Ruslan Bel'kov <ruslan.belckov@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-api-python-client = "^2.73.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.8.0"
+pandas = "^1.5.3"
+pydantic = "^1.10.4"
+icalendar = "^5.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
