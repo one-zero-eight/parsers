@@ -324,10 +324,7 @@ def get_weekday_rrule(day_name, end_date):
     }
 
 
-if __name__ == '__main__':
-    parser = Parser()
-    target_id = config.TARGET_ID
-
+def process_target_schedule(target_id):
     df = parser.get_clear_df(
         spreadsheet_id=config.SPREADSHEET_ID,
         target_range=config.TARGET_RANGES[target_id],
@@ -347,7 +344,22 @@ if __name__ == '__main__':
         from_date,
         until_date
     )
+
+    return calendars
+
+
+if __name__ == '__main__':
+    parser = Parser()
+    calendars = process_target_schedule(0)
+    calendars_second = process_target_schedule(1)
+
+    # unite calendars
+    for group_name, calendar in calendars_second.items():
+        for event in calendar.walk('vevent'):
+            calendars[group_name].add_component(event)
+
     groups = {}
+
     for group_name, calendar in calendars.items():
         print(f"Writing {group_name}...")
         calendar['prodid'] = '-//one-zero-eight//InNoHassle Calendar'
