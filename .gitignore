@@ -243,3 +243,4 @@ cython_debug/
 token.json
 schedule/credentials.json
 /schedule/output/temp.py
+*.zip

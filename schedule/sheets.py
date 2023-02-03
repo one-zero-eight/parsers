@@ -9,12 +9,12 @@ from pathlib import Path
 from uuid import uuid4
 
 import googleapiclient.discovery
+import icalendar
 import numpy as np
 import pandas as pd
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
-import icalendar
 
 from schedule.config import PARSER_PATH, config
 
@@ -38,11 +38,11 @@ class Parser:
     def init_api(credentials: Path, scopes: list[str]) -> Credentials:
         """
         Initialize API credentials.
-        :param credentials: Path to credentials file.
-        :type credentials: Path
-        :param scopes: List of scopes to authorize.
-        :type scopes: list[str]
-        :return: Current Credentials object.
+        @param credentials: Path to credentials file.
+        @type credentials: Path
+        @param scopes: List of scopes to authorize.
+        @type scopes: list[str]
+        @return Current Credentials object.
         :rtype: Credentials
         """
         creds = None
@@ -73,7 +73,7 @@ class Parser:
     def connect_spreadsheets(self):
         """
         Connect to Google Sheets API.
-        :return: service.spreadsheets()
+        @return service.spreadsheets()
         :rtype: googleapiclient.discovery.Resource
         """
 
@@ -94,16 +94,17 @@ class Parser:
         """
         Get data from Google Sheets and return it as a DataFrame with merged
         cells and empty cells in the course row filled by left value.
-        :param spreadsheet_id: ID of the spreadsheet to retrieve data from.
-        :type spreadsheet_id: str
-        :param target_range: A1 notation of the values to retrieve. Or named
-        range.
-        :type target_range: str
-        :param target_title: Title of the sheet to retrieve data from.
-        :type target_title: str
-        :return: DataFrame with merged cells and empty cells in the course row
-        :rtype: pd.DataFrame
+
+        Args:
+            spreadsheet_id (str): ID of the spreadsheet to get data from.
+            target_range (str): A1 notation of the values to retrieve. Or
+             named range.
+            target_title (str): Title of the sheet to retrieve data from.
+
+        Returns:
+            DataFrame with merged cells and empty cells in the course row
         """
+
         self.logger.debug("Getting dataframe from Google Sheets...")
         self.logger.info(
             f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}"
@@ -178,12 +179,12 @@ class Parser:
         """
         Refactor course DataFrame to get a DataFrame with one cell
         corresponding to pair (timeslot, group), to one event.
-        :param course_df: DataFrame to refactor - multiple cells per event(
+        @param course_df: DataFrame to refactor - multiple cells per event(
         same timeslot and group). Columns: Time, [groups_names].
-        :type course_df: pd.DataFrame
-        :param group_names: List of group names.
-        :type group_names: list[str]
-        :return: DataFrame with one cell per event. Columns: Time,
+        @type course_df: pd.DataFrame
+        @param group_names: List of group names.
+        @type group_names: list[str]
+        @return DataFrame with one cell per event. Columns: Time,
         [*groups_names]
         :rtype: pd.DataFrame
         """
@@ -204,9 +205,9 @@ class Parser:
     def parse_df(self, df: pd.DataFrame) -> dict:
         """
         Parse DataFrame to dict with separation by groups.
-        :param df: DataFrame to parse.
-        :type df: pd.DataFrame
-        :return: Dict with groups and their lessons. Day of week is a first
+        @param df: DataFrame to parse.
+        @type df: pd.DataFrame
+        @return Dict with groups and their lessons. Day of week is a first
         key. Group is a second key.
         :rtype: dict
         """
@@ -301,13 +302,13 @@ def convert_separation(
     Convert separation by days to icalendar.Calendar without calendar
     properties(only vevents).
 
-    :param separation_by_days: separation by groups.
-    :type separation_by_days: dict
-    :param very_first_date: First date of the schedule.
-    :type very_first_date: datetime.date
-    :param very_last_date: Last date of the schedule.
-    :type very_last_date: datetime.date
-    :return: Dict with icalendar.Calendar for each group.
+    @param separation_by_days: separation by groups.
+    @type separation_by_days: dict
+    @param very_first_date: First date of the schedule.
+    @type very_first_date: datetime.date
+    @param very_last_date: Last date of the schedule.
+    @type very_last_date: datetime.date
+    @return Dict with icalendar.Calendar for each group.
     :rtype: defaultdict[icalendar.Calendar]
     """
     print("Parsing into ics...")
@@ -412,6 +413,31 @@ def process_target_schedule(target_id):
     return calendars
 
 
+def get_presentation_post() -> icalendar.Event:
+    # 6 february 2023 19:00
+    # "Introduction to one-zero-eight"
+    # location : 108 room
+    # description : "https://t.me/one_zero_eight/5"
+
+    dtstart = datetime(2023, 2, 6, 19, 0, 0)
+    dtend = datetime(2023, 2, 6, 20, 0, 0)
+    dtstamp = datetime.now().strftime("%Y%m%dT%H%M%S")
+    uid = str(
+        uuid4()
+    ) + "@innohassle.campus.innopolis.university"
+
+    vevent = icalendar.Event()
+    vevent['summary'] = "Introduction to one-zero-eight"
+    vevent['description'] = "https://t.me/one_zero_eight/5"
+    vevent['location'] = "108 room"
+    vevent['dtstart'] = dtstart.strftime("%Y%m%dT%H%M%S")
+    vevent['dtend'] = dtend.strftime("%Y%m%dT%H%M%S")
+    vevent['dtstamp'] = dtstamp
+    vevent['uid'] = uid
+
+    return vevent
+
+
 if __name__ == '__main__':
     parser = Parser()
     calendars_dict = process_target_schedule(0)
@@ -432,6 +458,8 @@ if __name__ == '__main__':
         calendar['x-wr-calname'] = group_name
         calendar['x-wr-caldesc'] = 'Generated by InNoHassle Calendar'
         calendar['x-wr-timezone'] = config.TIMEZONE
+
+        #  calendar.add_component(get_presentation_post())
 
         file_name = f"{group_name}.ics"
         groups["groups"].append(
