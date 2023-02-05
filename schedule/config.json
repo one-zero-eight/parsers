@@ -1,23 +1,29 @@
 {
-  "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
-  "TARGET_RANGES": [
-    "TargetRange1",
-    "TargetRange2"
-  ],
-  "TARGET_SHEET_TITLES": [
-    "Target1",
-    "Target2"
-  ],
-  "RECURRENCE": [
-    {
-      "start": "20230123T000000",
-      "end": "20230319T000000"
-    },
-    {
-      "start": "20230320T000000",
-      "end": "20230526T000000"
-    }
-  ],
-  "SAVE_PATH": "output",
-  "TARGET_ID": 0
+  "academic": {
+    "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
+    "TARGET_RANGES": [
+      "TargetRange1",
+      "TargetRange2"
+    ],
+    "TARGET_SHEET_TITLES": [
+      "Target1",
+      "Target2"
+    ],
+    "RECURRENCE": [
+      {
+        "start": "20230123T000000",
+        "end": "20230319T000000"
+      },
+      {
+        "start": "20230320T000000",
+        "end": "20230526T000000"
+      }
+    ],
+    "SAVE_PATH": "output",
+    "TARGET_ID": 0
+  },
+
+  "sport": null,
+  "elective": null,
+  "dormitory": null
 }
