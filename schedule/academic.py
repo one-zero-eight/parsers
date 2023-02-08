@@ -259,7 +259,12 @@ def convert_course_df(
             if event_lines:
                 group_dict = output_dict[formatted_group_name]
                 vevent = icalendar.Event()
-                event_parts = iter(event_lines)
+                event_parts = iter(
+                    map(
+                        lambda line: re.sub(r'\s+', ' ', line.strip()),
+                        event_lines
+                    )
+                )
                 summary = next(event_parts, '')
 
                 if any(
