@@ -16,10 +16,10 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-from schedule.config import PARSER_PATH, config
+from schedule.config import PARSER_PATH, academic_config as config
 
 
-class Parser:
+class AcademicParser:
     spreadsheets: googleapiclient.discovery.Resource
     credentials: Credentials
     logger = logging.getLogger(__name__ + "." + "Parser")
@@ -116,6 +116,8 @@ class Parser:
         ).execute()["values"]
 
         df = pd.DataFrame(data=values)
+        # strip all values
+        df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
         max_x, max_y = df.shape
 
         self.logger.info(f"Data retrieved: {max_x}x{max_y}")
@@ -261,7 +263,7 @@ def convert_course_df(
                 vevent = icalendar.Event()
                 event_parts = iter(
                     map(
-                        lambda line: re.sub(r'\s+', ' ', line.strip()),
+                        lambda line: re.sub(r'\s+', ' ', line),
                         event_lines
                     )
                 )
@@ -284,14 +286,14 @@ def convert_course_df(
                     timeslot.split("-")
                 )
 
-                dtstart = datetime.combine(dtstart, start_delta)
-                dtend = datetime.combine(dtstart, end_delta)
+                event_start = datetime.combine(dtstart, start_delta)
+                event_end = datetime.combine(dtstart, end_delta)
 
                 vevent['summary'] = summary
                 vevent['description'] = description
                 vevent['location'] = location
-                vevent['dtstart'] = dtstart.strftime("%Y%m%dT%H%M%S")
-                vevent['dtend'] = dtend.strftime("%Y%m%dT%H%M%S")
+                vevent['dtstart'] = event_start.strftime("%Y%m%dT%H%M%S")
+                vevent['dtend'] = event_end.strftime("%Y%m%dT%H%M%S")
                 vevent['dtstamp'] = dtstamp
                 vevent['uid'] = str(
                     uuid4()
@@ -427,7 +429,7 @@ def process_target_schedule(target_id):
 
 
 if __name__ == '__main__':
-    parser = Parser()
+    parser = AcademicParser()
     calendars_dict = process_target_schedule(0)
     calendars_dict_second = process_target_schedule(1)
 
@@ -436,7 +438,14 @@ if __name__ == '__main__':
         for event in calendar_dict["calendar"].walk('vevent'):
             calendars_dict[group_name]["calendar"].add_component(event)
 
-    calendars = {"filters": ["course"], "calendars": []}
+    calendars = {
+        "filters"  : [{
+            "title": "Course",
+            "alias": "course"
+        }],
+        "title"    : "Academic",
+        "calendars": []
+    }
 
     for group_name, calendar_dict in calendars_dict.items():
         print(f"Writing {group_name}...")
@@ -452,7 +461,7 @@ if __name__ == '__main__':
             {
                 "name"  : group_name,
                 "course": calendar_dict["course_name"],
-                "file"  : file_name
+                "file"  : "academic/" + file_name
             }
         )
         with open(
@@ -461,9 +470,9 @@ if __name__ == '__main__':
         ) as f:
             f.write(calendar.to_ical())
 
-        # create a new .json file with information about calendar
-        with open(
-            PARSER_PATH / config.SAVE_PATH / config.OUTPUT_JSON_NAME,
-            "w"
-        ) as f:
-            json.dump(calendars, f)
+    # create a new .json file with information about calendar
+    with open(
+        PARSER_PATH / config.SAVE_JSON_PATH,
+        "w"
+    ) as f:
+        json.dump(calendars, f)

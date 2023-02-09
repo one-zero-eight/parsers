@@ -2,12 +2,12 @@
   "academic": {
     "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
     "TARGET_RANGES": [
-      "TargetRange1",
-      "TargetRange2"
+      "AcademicRange1",
+      "AcademicRange2"
     ],
     "TARGET_SHEET_TITLES": [
-      "Target1",
-      "Target2"
+      "Academic1",
+      "Academic2"
     ],
     "RECURRENCE": [
       {
@@ -19,11 +19,217 @@
         "end": "20230526T000000"
       }
     ],
-    "SAVE_PATH": "output",
+    "SAVE_PATH": "output/academic",
+    "SAVE_JSON_PATH": "output/academic.json",
     "TARGET_ID": 0
   },
-
   "sport": null,
-  "elective": null,
+  "electives": {
+    "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
+    "TARGET_RANGES": [
+      "ElectivesBS3Range",
+      "ElectivesBS4Range",
+      "ElectivesMSRange",
+      "ElectivesRussianRange"
+    ],
+    "TARGET_SHEET_TITLES": [
+      "BS3",
+      "BS4",
+      "MS",
+      "Russian as foreign language"
+    ],
+    "SAVE_PATH": "output/electives",
+    "SAVE_JSON_PATH": "output/electives.json",
+    "ELECTIVES": [
+      [
+        {
+          "Short name": "FWD",
+          "Name of the course": "Front-end Web Development",
+          "Instructor": "AbdelRahman Abounegm",
+          "Type": "offline"
+        },
+        {
+          "Short name": "CPMDF",
+          "Name of the course": "Cross-platform Mobile Development with Flutter",
+          "Instructor": "Sergey Koltsov",
+          "Type": "offline"
+        },
+        {
+          "Short name": "AML",
+          "Name of the course": "Applied Machine Learning",
+          "Instructor": "Imad Eddine Ibrahim Bekkouch",
+          "Type": "online"
+        },
+        {
+          "Short name": "CGGD",
+          "Name of the course": "Computer Graphics in Game Development",
+          "Instructor": "Ivan Belyavtsev",
+          "Type": "offline"
+        },
+        {
+          "Short name": "PPA",
+          "Name of the course": "Practical Program Analysis",
+          "Instructor": "Yegor Bugayenko (lec), Violetta Sim (lab)",
+          "Type": "offline"
+        },
+        {
+          "Short name": "EPJA",
+          "Name of the course": "Enterprise programming on Javascript - Advanced",
+          "Instructor": "Nikita Grigoryev",
+          "Type": "offline"
+        },
+        {
+          "Short name": "SMP",
+          "Name of the course": "System Programming",
+          "Instructor": "VK Tarantool",
+          "Type": "online"
+        },
+        {
+          "Short name": "IQC",
+          "Name of the course": "Introduction to Quantum Computing",
+          "Instructor": "Kev Salikhov",
+          "Type": "offline"
+        },
+        {
+          "Short name": "TLV",
+          "Name of the course": "Total Virtualization",
+          "Instructor": "Anna Melekhova",
+          "Type": "offline"
+        },
+        {
+          "Short name": "DDS",
+          "Name of the course": "Distributed Systems",
+          "Instructor": "Ahsan Kazmi",
+          "Type": "online"
+        },
+        {
+          "Short name": "EOAL",
+          "Name of the course": "Engineering Optimization and the Optimization-Based Approach for Machine Learning",
+          "Instructor": "Vadim Azhmyakov",
+          "Type": "online"
+        },
+        {
+          "Short name": "NLP",
+          "Name of the course": "Natural Language Processing",
+          "Instructor": "Vladimir Ivanov (lec), \nAidar Valeev (lab)",
+          "Type": "offline"
+        },
+        {
+          "Short name": "SIML",
+          "Name of the course": "Security and Interpretability of Machine Learning",
+          "Instructor": "Bader Rasheed",
+          "Type": "offline"
+        },
+        {
+          "Short name": "ANC",
+          "Name of the course": "Applied Nonlinear Control",
+          "Instructor": "Simeon Nedelchev",
+          "Type": "offline"
+        },
+        {
+          "Short name": "ALUP",
+          "Name of the course": "Advanced Linux: Understanding and Programming",
+          "Instructor": "Ildar Kamaletdinov",
+          "Type": "offline"
+        },
+        {
+          "Short name": "AMR",
+          "Name of the course": "Autonomous Mobile Robotics",
+          "Instructor": "Geesara Prathap Kulathunga Kulathunga Mudiyanselage",
+          "Type": "offline"
+        }
+      ],
+      [
+        {
+          "Short name": "BPM",
+          "Name of the course": "Basics of Product Management",
+          "Instructor": "Iuliia Metelskaia",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "PSY",
+          "Name of the course": "Psychology of IT-specialist",
+          "Instructor": "Eleonora Ilina",
+          "Type": "offline"
+        },
+        {
+          "Short name": "DES",
+          "Name of the course": "Developing Entrepreneurial Skills for a Startup Founder",
+          "Instructor": "Alina Valencia",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "ICD",
+          "Name of the course": "Introduction to Career Development for IT-specialist",
+          "Instructor": "Gulnaz Ibragimova",
+          "Type": "offline"
+        },
+        {
+          "Short name": "IPS",
+          "Name of the course": "Introduction to Public Speaking for IT-specialist",
+          "Instructor": "Sergey Kladko ",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "CDHE",
+          "Name of the course": "Course design in STEM in Higher Education",
+          "Instructor": "Oksana Zhirosh, Nikolay Kudasov",
+          "Type": "offline"
+        }
+      ],
+      [
+        {
+          "Short name": "NLPML",
+          "Name of the course": "Natural Language Processing and Machine Learning",
+          "Instructor": "Vladimir Ivanov (lec), \nAidar Valeev (lab)",
+          "Type": "offline"
+        },
+        {
+          "Short name": "MPAV",
+          "Name of the course": "Motion planning for autonomous vehicles",
+          "Instructor": "Geesara Prathap Kulathunga Kulathunga Mudiyanselage",
+          "Type": "offline"
+        },
+        {
+          "Short name": "ACV",
+          "Name of the course": "Advanced Computer Vision",
+          "Instructor": "Adil Mehmood Khan (lec), Yaseen Albatoul (lab)",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "PSA",
+          "Name of the course": "Public Speaking for IT-Specialist (Advanced)",
+          "Instructor": "Sergey Kladko",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "LPE",
+          "Name of the course": "Leadership in Entrepreneurship",
+          "Instructor": "Alina Valencia",
+          "Type": "online/offline"
+        },
+        {
+          "Short name": "DFA",
+          "Name of the course": "Design Fiction (Advanced)",
+          "Instructor": "Olga Ignateva, Aleksandra Lebedeva",
+          "Type": "online"
+        },
+        {
+          "Short name": "ELN",
+          "Name of the course": "Entrepreneurial Negotiations",
+          "Instructor": "Alexey Petrenko",
+          "Type": "online/offline"
+        }
+      ],
+      [
+        {
+          "Short name": "RFL (Beginner)"
+        },
+        {
+          "Short name": "RFL (Intermediate)"
+        }
+      ]
+    ]
+  },
   "dormitory": null
 }

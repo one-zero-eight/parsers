@@ -1,0 +1,12 @@
+{
+  "categories": [
+    {
+      "title": "Academic",
+      "path": "academic.json"
+    },
+    {
+      "title": "Electives",
+      "path": "electives.json"
+    }
+  ]
+}
