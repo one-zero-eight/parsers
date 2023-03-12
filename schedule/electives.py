@@ -346,4 +346,4 @@ if __name__ == '__main__':
         PARSER_PATH / config.SAVE_JSON_PATH,
         "w"
     ) as f:
-        json.dump(calendars, f)
+        json.dump(calendars, f, indent=4)
