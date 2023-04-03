@@ -241,6 +241,6 @@ cython_debug/
 .idea/
 
 token.json
-schedule/credentials.json
-/schedule/output/temp.py
+schedule/parser/credentials.json
+/schedule/parser/output/temp.py
 *.zip
