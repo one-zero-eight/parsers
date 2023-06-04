@@ -25,7 +25,7 @@ class AcademicParser:
     logger = logging.getLogger(__name__ + "." + "Parser")
 
     def __init__(
-        self,
+            self,
     ):
 
         self.credentials = self.init_api(
@@ -86,10 +86,10 @@ class AcademicParser:
         return service.spreadsheets()
 
     def get_clear_df(
-        self,
-        spreadsheet_id: str,
-        target_range: str,
-        target_title: str
+            self,
+            spreadsheet_id: str,
+            target_range: str,
+            target_title: str
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged
@@ -174,9 +174,9 @@ class AcademicParser:
         return df
 
     def refactor_course_df(
-        self,
-        course_df: pd.DataFrame,
-        group_names
+            self,
+            course_df: pd.DataFrame,
+            group_names
     ) -> pd.DataFrame:
         """
         Refactor course DataFrame to get a DataFrame with one cell
@@ -248,12 +248,12 @@ class AcademicParser:
 
 
 def convert_course_df(
-    output_dict: dict,
-    course_df: pd.DataFrame,
-    course_name: str,
-    dtstart: datetime,
-    dtstamp: datetime,
-    rrule: dict
+        output_dict: dict,
+        course_df: pd.DataFrame,
+        course_name: str,
+        dtstart: datetime,
+        dtstamp: datetime,
+        rrule: dict
 ) -> list[dict]:
     for timeslot, by_groups in course_df.iterrows():  # type: str, dict
         for name, event_lines in by_groups.items():  # type: str, list[str]
@@ -270,8 +270,8 @@ def convert_course_df(
                 summary = next(event_parts, '')
 
                 if any(
-                    classname.lower() in summary.lower() for classname in
-                    config.IGNORING_CLASSES
+                        classname.lower() in summary.lower() for classname in
+                        config.IGNORING_CLASSES
                 ):
                     print(f"Skipping {summary}")
                     continue
@@ -281,6 +281,7 @@ def convert_course_df(
                     description = f"{description}\n"
                 description += formatted_group_name
                 location = next(event_parts, '')
+
                 start_delta, end_delta = map(
                     lambda t: datetime.strptime(t, '%H:%M').time(),
                     timeslot.split("-")
@@ -309,9 +310,9 @@ def convert_course_df(
 
 
 def convert_separation(
-    separation_by_days: dict,
-    very_first_date: datetime.date,
-    very_last_date: datetime.date
+        separation_by_days: dict,
+        very_first_date: datetime.date,
+        very_last_date: datetime.date
 ) -> defaultdict[icalendar.Calendar]:
     """
     Convert separation by days to icalendar.Calendar without calendar
@@ -365,13 +366,13 @@ def nearest_weekday(date, day):
 
 
 weekday_converter = {
-    'MONDAY'   : 0,
-    'TUESDAY'  : 1,
+    'MONDAY': 0,
+    'TUESDAY': 1,
     'WEDNESDAY': 2,
-    'THURSDAY' : 3,
-    'FRIDAY'   : 4,
-    'SATURDAY' : 5,
-    'SUNDAY'   : 6
+    'THURSDAY': 3,
+    'FRIDAY': 4,
+    'SATURDAY': 5,
+    'SUNDAY': 6
 }
 
 symbol_translation = str.maketrans(
@@ -398,9 +399,9 @@ def format_course_name(dirt_course_name: str) -> str:
 
 def get_weekday_rrule(end_date):
     return {
-        'FREQ'    : 'WEEKLY',
+        'FREQ': 'WEEKLY',
         'INTERVAL': 1,
-        'UNTIL'   : end_date,
+        'UNTIL': end_date,
     }
 
 
@@ -432,18 +433,23 @@ if __name__ == '__main__':
     parser = AcademicParser()
     calendars_dict = process_target_schedule(0)
     calendars_dict_second = process_target_schedule(1)
+    calendars_dict_third = process_target_schedule(2)
 
     # unite calendars
     for group_name, calendar_dict in calendars_dict_second.items():
         for event in calendar_dict["calendar"].walk('vevent'):
             calendars_dict[group_name]["calendar"].add_component(event)
 
+    for group_name, calendar_dict in calendars_dict_third.items():
+        for event in calendar_dict["calendar"].walk('vevent'):
+            calendars_dict[group_name]["calendar"].add_component(event)
+
     calendars = {
-        "filters"  : [{
+        "filters": [{
             "title": "Course",
             "alias": "course"
         }],
-        "title"    : "Academic",
+        "title": "Academic",
         "calendars": []
     }
 
@@ -459,21 +465,21 @@ if __name__ == '__main__':
         file_name = f"{group_name}.ics"
         calendars["calendars"].append(
             {
-                "name"  : group_name,
+                "name": group_name,
                 "course": calendar_dict["course_name"],
-                "file"  : "academic/" + file_name
+                "file": "academic/" + file_name
             }
         )
         with open(
-            PARSER_PATH / config.SAVE_PATH / file_name,
-            'wb'
+                PARSER_PATH / config.SAVE_PATH / file_name,
+                'wb'
         ) as f:
             f.write(calendar.to_ical())
 
     # create a new .json file with information about calendar
     with open(
-        PARSER_PATH / config.SAVE_JSON_PATH,
-        "w"
+            PARSER_PATH / config.SAVE_JSON_PATH,
+            "w"
     ) as f:
 
         json.dump(calendars, f, indent=4)

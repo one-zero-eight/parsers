@@ -1,5 +1,8 @@
 from pprint import pprint
 from pathlib import Path
+from typing import Optional
+
+from pydantic import BaseModel, validator
 from pydantic.tools import parse_obj_as
 from pydantic.dataclasses import dataclass
 import json
@@ -31,7 +34,18 @@ class AcademicParserConfig:
             'SATURDAY',
             'SUNDAY']
 
-    IGNORING_CLASSES = ["Physical Education"]
+    IGNORING_CLASSES = ["Elective courses on Physical Education"]
+
+
+class Elective(BaseModel):
+    alias: str
+    name: Optional[str]
+    instructor: Optional[str]
+    type: Optional[str]
+
+    @validator('name')
+    def strip_name(cls, v):
+        return v.strip() if v else v
 
 
 @dataclass
@@ -42,7 +56,7 @@ class ElectivesParserConfig:
     SAVE_PATH: str
     SAVE_JSON_PATH: str
 
-    ELECTIVES: list[list[dict]]
+    ELECTIVES: list[list[Elective]]
 
     CREDENTIALS_PATH: str = "credentials.json"
 
@@ -76,14 +90,11 @@ electives_config: ElectivesParserConfig = parse_obj_as(
     elective_config_dict
 )
 
-
-class CModel:
-    ...
-
-
 __all__ = ['academic_config',
            'electives_config',
+           'Elective',
            'PARSER_PATH']
 
 if __name__ == '__main__':
     pprint(academic_config)
+    pprint(electives_config)

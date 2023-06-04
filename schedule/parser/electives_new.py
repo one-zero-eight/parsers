@@ -3,8 +3,9 @@ import logging
 import os.path
 from collections import defaultdict
 from datetime import datetime
-from itertools import pairwise
+from itertools import pairwise, groupby
 from pathlib import Path
+from typing import Optional, Collection
 
 import googleapiclient.discovery
 import icalendar
@@ -14,20 +15,32 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-from schedule.parser.config import PARSER_PATH, electives_config as config
+from schedule.parser.config import PARSER_PATH, electives_config as config, Elective
+
+from pydantic import BaseModel
 
 
-class ElectivesParser:
+class ElectiveEvent(BaseModel):
+    elective: Elective
+    start: datetime
+    end: datetime
+    location: Optional[str]
+    description: Optional[str]
+
+    group: Optional[str] = None
+
+
+class ElectiveParser:
     spreadsheets: googleapiclient.discovery.Resource
     credentials: Credentials
     logger = logging.getLogger(__name__ + "." + "Parser")
 
     def __init__(
-        self,
+            self,
     ):
 
         self.credentials = self.init_api(
-            config.CREDENTIALS_PATH,
+            Path(config.CREDENTIALS_PATH),
             scopes=config.API_SCOPES
         )
         self.spreadsheets = self.connect_spreadsheets()
@@ -59,7 +72,7 @@ class ElectivesParser:
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    credentials, scopes
+                    str(credentials), scopes
                 )
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
@@ -84,10 +97,10 @@ class ElectivesParser:
         return service.spreadsheets()
 
     def get_clear_df(
-        self,
-        spreadsheet_id: str,
-        target_range: str,
-        target_title: str
+            self,
+            spreadsheet_id: str,
+            target_range: str,
+            target_title: str
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged
@@ -143,20 +156,21 @@ class ElectivesParser:
 
         self.logger.info(
             f"Target sheet: {target_sheet['properties']['title']}" +
-            f"> Sheet index: ({target_sheet['properties']['index']})" +
-            f"> Sheet merges: ({len(target_sheet['merges'])})"
+            f"> Sheet index: ({target_sheet['properties']['index']})"
         )
 
-        self.logger.info("Merging cells")
+        if "merges" in target_sheet:
+            self.logger.info(f"> Sheet merges: ({len(target_sheet['merges'])})")
+            self.logger.info("Merging cells")
 
-        for merge in target_sheet["merges"]:
-            x0 = merge["startRowIndex"]
-            y0 = merge["startColumnIndex"]
-            x1 = merge["endRowIndex"]
-            y1 = merge["endColumnIndex"]
+            for merge in target_sheet["merges"]:
+                x0 = merge["startRowIndex"]
+                y0 = merge["startColumnIndex"]
+                x1 = merge["endRowIndex"]
+                y1 = merge["endColumnIndex"]
 
-            if x0 < max_x and y0 < max_y:
-                df.iloc[x0: x1, y0: y1] = df.iloc[x0][y0]
+                if x0 < max_x and y0 < max_y:
+                    df.iloc[x0: x1, y0: y1] = df.iloc[x0][y0]
 
         df.fillna('', inplace=True)
 
@@ -164,10 +178,66 @@ class ElectivesParser:
         self.logger.info("Dataframe ready")
         return df
 
-    def parse_week_df(self, df: pd.DataFrame, course_names: list[str]) -> dict:
+    @staticmethod
+    def parse_week_df(df: pd.DataFrame, electives: Collection[Elective]) -> list[ElectiveEvent]:
+        # for each cell in day column
+        def process_cell(cell: str):
+            #           "BDLD(lec) 312" ->
+            #           {"ele"BDLD", "lec", "312"
+            #           "PP(lab/group2)303" -> "PP", "lab/group2", "303"
+
+            result: list[dict] = []
+
+            if not cell:
+                return result
+
+            occurences = (cell
+                          .replace('(', ' ')
+                          .replace(')', ' ')
+                          .strip()
+                          .split('\n'))
+
+            for line in occurences:
+                dct = {}
+                parts = line.split()
+                if len(parts) == 3:
+                    event_name, event_type, event_location = parts
+                elif len(parts) == 2:
+                    event_name, event_location = parts
+                    event_type = None
+                else:
+                    event_name = parts[0]
+                    event_type = None
+                    event_location = None
+
+                elective = next(
+                    (e for e in electives
+                     if e.alias == event_name),
+                    None
+                )
+
+                if elective is None:
+                    raise ValueError(f"Course not found: {event_name}")
+
+                dct['elective'] = elective
+                dct['location'] = event_location
+
+                if event_type:
+                    dct['type'] = event_type
+
+                    if 'lab' in event_type and '/' in event_type:
+                        event_type, group = event_type.split('/')
+                        dct['group'] = group
+                        dct['type'] = event_type
+
+                result.append(dct)
+            return result
+
         # first column is time
         # first row is day in format 'Month Day'
         # first cell is week number
+
+        events = []
 
         # get first column
         time_column = df.iloc[:, 0]
@@ -183,47 +253,37 @@ class ElectivesParser:
         df.columns = day_row
         df = df.drop(day_row.name, axis=0)
 
-        separation_by_course = defaultdict(list)
         days = [day for day in df.columns if day != '']
 
         for day in days:
+            # copy column
+            day_df = df[day].copy()
             dtstart = datetime.strptime(day, "%B %d")
             dtstart = dtstart.replace(year=datetime.now().year)
+            # drop rows with empty cells
+            day_df = day_df.dropna()
+            day_df = day_df[day_df != '']
+            # for each cell in day column
+            for timeslot, cell in day_df.items():
+                start_delta, end_delta = map(
+                    lambda t: datetime.strptime(t, '%H:%M').time(),
+                    timeslot.split("-")
+                )
+                cell_events = process_cell(cell)
+                event_start = datetime.combine(dtstart, start_delta)
+                event_end = datetime.combine(dtstart, end_delta)
 
-            for course in course_names:
-                course_mask = df[day].str.contains(course, regex=False).values
-                course_indexes = np.argwhere(course_mask).flatten().tolist()
-                for index in course_indexes:
-                    timeslot = df.index[index]
-
-                    start_delta, end_delta = map(
-                        lambda t: datetime.strptime(t, '%H:%M').time(),
-                        timeslot.split("-")
+                for cell_event in cell_events:
+                    event = ElectiveEvent(
+                        start=event_start,
+                        end=event_end,
+                        **cell_event
                     )
+                    events.append(event)
 
-                    event_start = datetime.combine(dtstart, start_delta)
-                    event_end = datetime.combine(dtstart, end_delta)
+        return events
 
-                    # split cell by newlines
-                    lines = df[day].iloc[index].splitlines()
-                    # find needed line which contains course name
-                    current = next((x for x in lines if course in x), None)
-                    desc, _, location = current.rpartition(" ")
-
-                    # add to dict
-                    separation_by_course[course].append(
-                        {
-                            "dtstart"    : event_start.strftime(
-                                "%Y%m%dT%H%M%S"
-                            ),
-                            "dtend"      : event_end.strftime("%Y%m%dT%H%M%S"),
-                            "description": desc + "\n" + location,
-                            "location"   : location
-                        }
-                    )
-        return separation_by_course
-
-    def parse_df(self, df: pd.DataFrame, course_names: list[str]) -> dict:
+    def parse_df(self, df: pd.DataFrame, electives: list[Elective]) -> list[ElectiveEvent]:
         """
         Parse DataFrame to dict with separation by groups.
         @param df: DataFrame to parse.
@@ -242,66 +302,66 @@ class ElectivesParser:
 
         self.logger.debug("Separating by days...")
         max_x, max_y = df.shape
-        separation_by_days = defaultdict(list)
+
+        events = []
 
         for (start_y, end_y) in pairwise(week_indexes + [max_x]):
             week = df.iloc[start_y, 0]
             self.logger.info(f"> Week: {week}")
             week_df = df.iloc[start_y: end_y, :]
-            week_separation = self.parse_week_df(week_df, course_names)
+            week_events = self.parse_week_df(week_df, electives)
+            events.extend(week_events)
 
-            for course, lessons in week_separation.items():
-                separation_by_days[course].extend(lessons)
-
-        return separation_by_days
+        return events
 
 
 def convert_separation(
-    separation_by_courses: list[dict],
-    ELECTIVES: list[dict]
+        events: list[ElectiveEvent],
 ):
-    # create map from short course name to dict with course info
-    electives_map = {
-        elective["Short name"]: elective
-        for elective in ELECTIVES
-    }
-
     output = defaultdict(lambda: {"calendar": icalendar.Calendar()})
+    # group events by Elective and group
+    grouping = groupby(events, lambda e: (e.elective, e.group))
 
-    for course, lessons in separation_by_courses.items():
-        cal = output[course]["calendar"]
+    for (elective, group), events in grouping:
+        elective: Elective
+        if group is None:
+            cal = output[elective.alias]["calendar"]
+        else:
+            cal = output[f"{elective.alias}-{group}"]["calendar"]
 
-        name = electives_map[course].get("Name of the course", None)
-        instructors = electives_map[course].get("Instructors", None)
+        for event in events:
+            event: ElectiveEvent
+            vevent = icalendar.Event()
+            vevent['summary'] = elective.name
+            vevent['dtstart'] = event.start.strftime("%Y%m%dT%H%M%S")
+            vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
+            vevent['location'] = event.location
+            desc = f"{elective.name}"
 
-        extra_desc = [name, instructors]
-        filtered = filter(None, extra_desc)
-        extra_desc = list(filtered)
+            if group is not None:
+                desc += f"\n{group}"
 
-        for lesson in lessons:
-            event = icalendar.Event()
-            event['summary'] = course
-            event['dtstart'] = lesson["dtstart"]
-            event['dtend'] = lesson["dtend"]
+            if elective.instructor:
+                desc += f"\n{elective.instructor}"
 
-            event['description'] = "\n".join(
-                [lesson["description"]] + extra_desc
-            )
-            event['location'] = lesson["location"]
-            cal.add_component(event)
+            if elective.type:
+                desc += f"\n{elective.type}"
 
-    return output
+            vevent['description'] = desc
+            cal.add_component(vevent)
+            # print(vevent)
+    return dict(output)
 
 
 if __name__ == '__main__':
-    parser = ElectivesParser()
+    parser = ElectiveParser()
 
     calendars = {
-        "filters"  : [{
+        "filters": [{
             "title": "Elective type",
             "alias": "elective_type",
         }],
-        "title"    : "Electives",
+        "title": "Electives",
         "calendars": []
     }
 
@@ -312,38 +372,36 @@ if __name__ == '__main__':
             target_range=config.TARGET_RANGES[i]
         )
 
-        course_names = list(
-            map(lambda elective: elective["Short name"], config.ELECTIVES[i])
-        )
-        parsed = parser.parse_df(df, course_names)
-        converted = convert_separation(parsed, config.ELECTIVES[i])
+        parsed = parser.parse_df(df, config.ELECTIVES[i])
+        converted = convert_separation(parsed)
 
-        for course, calendar_dict in converted.items():
+        for course_name, calendar_dict in converted.items():
             calendar = calendar_dict["calendar"]
+            # print
             calendar['prodid'] = '-//one-zero-eight//InNoHassle Calendar'
             calendar['version'] = '2.0'
-            calendar['x-wr-calname'] = course
+            calendar['x-wr-calname'] = course_name
             calendar['x-wr-caldesc'] = 'Generated by InNoHassle Calendar'
             calendar['x-wr-timezone'] = config.TIMEZONE
 
-            file_name = f"{course}.ics"
+            file_name = f"{course_name}.ics"
             calendars["calendars"].append(
                 {
-                    "name"         : course,
+                    "name": course_name,
                     "elective_type": config.TARGET_SHEET_TITLES[i],
-                    "file"         : "electives/" + file_name
+                    "file": "electives/" + file_name
                 }
             )
 
             with open(
-                PARSER_PATH / config.SAVE_PATH / file_name,
-                'wb'
+                    PARSER_PATH / config.SAVE_PATH / file_name,
+                    'wb'
             ) as f:
                 f.write(calendar.to_ical())
 
     # create a new .json file with information about calendar
     with open(
-        PARSER_PATH / config.SAVE_JSON_PATH,
-        "w"
+            PARSER_PATH / config.SAVE_JSON_PATH,
+            "w"
     ) as f:
         json.dump(calendars, f, indent=4)
