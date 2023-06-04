@@ -18,6 +18,9 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from schedule.parser.config import PARSER_PATH, electives_config as config, Elective
 
 from pydantic import BaseModel
+import re
+
+BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
 
 class ElectiveEvent(BaseModel):
@@ -192,22 +195,32 @@ class ElectiveParser:
                 return result
 
             occurences = (cell
-                          .replace('(', ' ')
-                          .replace(')', ' ')
                           .strip()
                           .split('\n'))
 
             for line in occurences:
                 dct = {}
+                # find event_type in brackets "BDLD(lec) 312"
+                r = re.search(BRACKETS_PATTERN, line)
+                if r:
+                    event_type = r.group(1)
+                    line = line.replace(r.group(0), ' ')
+                    if event_type.startswith('lab'):
+                        if "/" in event_type:
+                            dct['group'] = event_type.split("/")[1]
+                        event_type = 'lab'
+                    elif not event_type.startswith(("lec", "tut")):
+                        dct['group'] = event_type
+                        event_type = 'other'
+
+                    dct['type'] = event_type
+
                 parts = line.split()
-                if len(parts) == 3:
-                    event_name, event_type, event_location = parts
-                elif len(parts) == 2:
+
+                if len(parts) == 2:
                     event_name, event_location = parts
-                    event_type = None
                 else:
                     event_name = parts[0]
-                    event_type = None
                     event_location = None
 
                 elective = next(
@@ -221,14 +234,6 @@ class ElectiveParser:
 
                 dct['elective'] = elective
                 dct['location'] = event_location
-
-                if event_type:
-                    dct['type'] = event_type
-
-                    if 'lab' in event_type and '/' in event_type:
-                        event_type, group = event_type.split('/')
-                        dct['group'] = group
-                        dct['type'] = event_type
 
                 result.append(dct)
             return result

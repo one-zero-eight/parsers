@@ -143,14 +143,24 @@
             "file": "electives/DFA.ics"
         },
         {
-            "name": "PSY",
+            "name": "PSY-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/PSY.ics"
+            "file": "electives/PSY-BS1.ics"
         },
         {
-            "name": "BPM",
+            "name": "BPM-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/BPM.ics"
+            "file": "electives/BPM-BS1.ics"
+        },
+        {
+            "name": "PSY-BS 2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/PSY-BS 2.ics"
+        },
+        {
+            "name": "BPM-BS2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/BPM-BS2.ics"
         },
         {
             "name": "AEIE",
@@ -178,9 +188,14 @@
             "file": "electives/PES.ics"
         },
         {
-            "name": "ICD",
+            "name": "ICD-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/ICD.ics"
+            "file": "electives/ICD-BS1.ics"
+        },
+        {
+            "name": "ICD-BS2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/ICD-BS2.ics"
         },
         {
             "name": "CL",
@@ -188,14 +203,29 @@
             "file": "electives/CL.ics"
         },
         {
-            "name": "IPS",
+            "name": "IPS-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/IPS.ics"
+            "file": "electives/IPS-BS1.ics"
         },
         {
-            "name": "DT",
+            "name": "PSY-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/DT.ics"
+            "file": "electives/PSY-BS2.ics"
+        },
+        {
+            "name": "IPS-BS2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/IPS-BS2.ics"
+        },
+        {
+            "name": "DT-BS1",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/DT-BS1.ics"
+        },
+        {
+            "name": "DT-BS2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/DT-BS2.ics"
         },
         {
             "name": "BC",
@@ -213,9 +243,14 @@
             "file": "electives/CEOT.ics"
         },
         {
-            "name": "SE",
+            "name": "SE-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/SE.ics"
+            "file": "electives/SE-BS1.ics"
+        },
+        {
+            "name": "SE-BS2",
+            "elective_type": "BS/MS Hum",
+            "file": "electives/SE-BS2.ics"
         }
     ]
 }
