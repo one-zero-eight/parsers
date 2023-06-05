@@ -29,7 +29,7 @@ class AcademicParser:
     ):
 
         self.credentials = self.init_api(
-            config.CREDENTIALS_PATH,
+            Path(config.CREDENTIALS_PATH),
             scopes=config.API_SCOPES
         )
         self.spreadsheets = self.connect_spreadsheets()
@@ -61,7 +61,7 @@ class AcademicParser:
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    credentials, scopes
+                    str(credentials), scopes
                 )
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
@@ -254,7 +254,7 @@ def convert_course_df(
         dtstart: datetime,
         dtstamp: datetime,
         rrule: dict
-) -> list[dict]:
+):
     for timeslot, by_groups in course_df.iterrows():  # type: str, dict
         for name, event_lines in by_groups.items():  # type: str, list[str]
             formatted_group_name = format_group_name(name)
@@ -295,7 +295,7 @@ def convert_course_df(
                 vevent['location'] = location
                 vevent['dtstart'] = event_start.strftime("%Y%m%dT%H%M%S")
                 vevent['dtend'] = event_end.strftime("%Y%m%dT%H%M%S")
-                vevent['dtstamp'] = dtstamp
+                vevent['dtstamp'] = dtstamp.strftime("%Y%m%dT%H%M%S")
                 vevent['uid'] = str(
                     uuid4()
                 ) + "@innohassle.campus.innopolis.university"
@@ -328,7 +328,7 @@ def convert_separation(
     :rtype: defaultdict[icalendar.Calendar]
     """
     print("Parsing into ics...")
-    now_dtstamp = datetime.now().strftime("%Y%m%dT%H%M%S")
+    now_dtstamp = datetime.now()
     calendars_dict = defaultdict(lambda: {"calendar": icalendar.Calendar()})
 
     for day_name, separation_by_courses in separation_by_days.items():

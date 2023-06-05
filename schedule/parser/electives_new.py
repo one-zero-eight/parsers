@@ -29,7 +29,7 @@ class ElectiveEvent(BaseModel):
     end: datetime
     location: Optional[str]
     description: Optional[str]
-
+    event_type: Optional[str]
     group: Optional[str] = None
 
 
@@ -211,9 +211,9 @@ class ElectiveParser:
                         event_type = 'lab'
                     elif not event_type.startswith(("lec", "tut")):
                         dct['group'] = event_type
-                        event_type = 'other'
+                        event_type = None
 
-                    dct['type'] = event_type
+                    dct['event_type'] = event_type
 
                 parts = line.split()
 
@@ -338,6 +338,8 @@ def convert_separation(
             event: ElectiveEvent
             vevent = icalendar.Event()
             vevent['summary'] = elective.name
+            if event.event_type is not None:
+                vevent['summary'] += f" ({event.event_type})"
             vevent['dtstart'] = event.start.strftime("%Y%m%dT%H%M%S")
             vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
             vevent['location'] = event.location
