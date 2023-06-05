@@ -2,11 +2,13 @@
   "categories": [
     {
       "title": "Academic",
-      "path": "academic.json"
+      "path": "academic.json",
+      "slug": "academic"
     },
     {
       "title": "Electives",
-      "path": "electives.json"
+      "path": "electives.json",
+      "slug": "electives"
     }
   ]
 }
