@@ -1,3 +1,4 @@
+from datetime import datetime
 from pprint import pprint
 from pathlib import Path
 from typing import Optional
@@ -6,6 +7,8 @@ from pydantic import BaseModel, validator
 from pydantic.tools import parse_obj_as
 from pydantic.dataclasses import dataclass
 import json
+
+from schedule.parser.utils import remove_trailing_spaces, symbol_translation
 
 PARSER_PATH = Path(__file__).parent
 CONFIG_PATH = PARSER_PATH / "config.json"
@@ -35,6 +38,7 @@ class AcademicParserConfig:
             'SUNDAY']
 
     IGNORING_CLASSES = ["Elective courses on Physical Education"]
+    CURRENT_YEAR = datetime.now().year
 
 
 class Elective(BaseModel):
@@ -43,9 +47,12 @@ class Elective(BaseModel):
     instructor: Optional[str]
     type: Optional[str]
 
-    @validator('name')
-    def strip_name(cls, v):
-        return v.strip() if v else v
+    @validator('name', 'instructor', 'type', pre=True, always=True)
+    def beatify_string(cls, v):
+        if v:
+            v = remove_trailing_spaces(v)
+            v = v.translate(symbol_translation)
+        return v
 
 
 @dataclass

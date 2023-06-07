@@ -1,24 +1,22 @@
 import json
 import logging
-import os.path
+import re
 from collections import defaultdict
 from datetime import datetime
 from itertools import pairwise, groupby
 from pathlib import Path
 from typing import Optional, Collection
+from uuid import uuid4
 
 import googleapiclient.discovery
 import icalendar
 import numpy as np
 import pandas as pd
-from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-
-from schedule.parser.config import PARSER_PATH, electives_config as config, Elective
-
 from pydantic import BaseModel
-import re
+
+from config import PARSER_PATH, electives_config as config, Elective
+from utils import *
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
@@ -38,66 +36,14 @@ class ElectiveParser:
     credentials: Credentials
     logger = logging.getLogger(__name__ + "." + "Parser")
 
-    def __init__(
-            self,
-    ):
+    def __init__(self):
 
-        self.credentials = self.init_api(
+        self.credentials = get_credentials(
             Path(config.CREDENTIALS_PATH),
+            PARSER_PATH / "token.json",
             scopes=config.API_SCOPES
         )
-        self.spreadsheets = self.connect_spreadsheets()
-
-    @staticmethod
-    def init_api(credentials: Path, scopes: list[str]) -> Credentials:
-        """
-        Initialize API credentials.
-        @param credentials: Path to credentials file.
-        @type credentials: Path
-        @param scopes: List of scopes to authorize.
-        @type scopes: list[str]
-        @return Current Credentials object.
-        :rtype: Credentials
-        """
-        creds = None
-        token_path = PARSER_PATH / "token.json"
-        # The file token.json stores the user's access and refresh tokens, and
-        # is created automatically when the authorization flow completes for
-        # the first time.
-        if os.path.exists(token_path):
-            creds = Credentials.from_authorized_user_file(
-                token_path, scopes
-            )
-
-        # If there are no (valid) credentials available, let the user log in.
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    str(credentials), scopes
-                )
-                creds = flow.run_local_server(port=0)
-            # Save the credentials for the next run
-            with open(token_path, 'w') as token:
-                token.write(creds.to_json())
-
-        return creds
-
-    def connect_spreadsheets(self):
-        """
-        Connect to Google Sheets API.
-        @return service.spreadsheets()
-        :rtype: googleapiclient.discovery.Resource
-        """
-
-        service = googleapiclient.discovery.build(
-            'sheets',
-            'v4',
-            credentials=self.credentials
-        )
-        # Call the Sheets API
-        return service.spreadsheets()
+        self.spreadsheets = connect_spreadsheets(self.credentials)
 
     def get_clear_df(
             self,
@@ -105,26 +51,13 @@ class ElectiveParser:
             target_range: str,
             target_title: str
     ) -> pd.DataFrame:
-        """
-        Get data from Google Sheets and return it as a DataFrame with merged
-        cells and empty cells in the course row filled by left value.
-
-        Args:
-            spreadsheet_id (str): ID of the spreadsheet to get data from.
-            target_range (str): A1 notation of the values to retrieve. Or
-             named range.
-            target_title (str): Title of the sheet to retrieve data from.
-
-        Returns:
-            DataFrame with merged cells and empty cells in the course row
-        """
+        """ Get data from Google Sheets and return it as a DataFrame with merged
+        cells and empty cells in the course row filled by left value. """
 
         self.logger.debug("Getting dataframe from Google Sheets...")
-        self.logger.info(
-            f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}"
-        )
+        self.logger.info(f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}")
 
-        values = self.spreadsheets.values().get(
+        values = self.spreadsheets.values().get(  # type : ignore
             spreadsheetId=spreadsheet_id,
             range=target_range
         ).execute()["values"]
@@ -157,23 +90,8 @@ class ElectiveParser:
         if target_sheet is None:
             raise ValueError(f"Target sheet {target_title} not found")
 
-        self.logger.info(
-            f"Target sheet: {target_sheet['properties']['title']}" +
-            f"> Sheet index: ({target_sheet['properties']['index']})"
-        )
-
-        if "merges" in target_sheet:
-            self.logger.info(f"> Sheet merges: ({len(target_sheet['merges'])})")
-            self.logger.info("Merging cells")
-
-            for merge in target_sheet["merges"]:
-                x0 = merge["startRowIndex"]
-                y0 = merge["startColumnIndex"]
-                x1 = merge["endRowIndex"]
-                y1 = merge["endColumnIndex"]
-
-                if x0 < max_x and y0 < max_y:
-                    df.iloc[x0: x1, y0: y1] = df.iloc[x0][y0]
+        self.logger.info(f"Target sheet: {target_sheet['properties']['title']}" +
+                         f"> Sheet index: ({target_sheet['properties']['index']})")
 
         df.fillna('', inplace=True)
 
@@ -289,14 +207,7 @@ class ElectiveParser:
         return events
 
     def parse_df(self, df: pd.DataFrame, electives: list[Elective]) -> list[ElectiveEvent]:
-        """
-        Parse DataFrame to dict with separation by groups.
-        @param df: DataFrame to parse.
-        @type df: pd.DataFrame
-        @return Dict with groups and their lessons. Day of week is a first
-        key. Group is a second key.
-        :rtype: dict
-        """
+        """Parse DataFrame to dict with separation by groups."""
 
         self.logger.debug("Parsing dataframe to separation by days|groups...")
         self.logger.info("Get 'week' indexes...")
@@ -322,17 +233,17 @@ class ElectiveParser:
 
 def convert_separation(
         events: list[ElectiveEvent],
-):
-    output = defaultdict(lambda: {"calendar": icalendar.Calendar()})
+) -> dict[str, icalendar.Calendar]:
+    output = defaultdict(lambda: icalendar.Calendar())
     # group events by Elective and group
     grouping = groupby(events, lambda e: (e.elective, e.group))
 
     for (elective, group), events in grouping:
         elective: Elective
         if group is None:
-            cal = output[elective.alias]["calendar"]
+            cal = output[elective.alias]
         else:
-            cal = output[f"{elective.alias}-{group}"]["calendar"]
+            cal = output[f"{elective.alias}-{group}"]
 
         for event in events:
             event: ElectiveEvent
@@ -343,6 +254,7 @@ def convert_separation(
             vevent['dtstart'] = event.start.strftime("%Y%m%dT%H%M%S")
             vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
             vevent['location'] = event.location
+            vevent['uid'] = str(uuid4()) + "@innohassle.ru"
             desc = f"{elective.name}"
 
             if group is not None:
@@ -356,7 +268,7 @@ def convert_separation(
 
             vevent['description'] = desc
             cal.add_component(vevent)
-            # print(vevent)
+
     return dict(output)
 
 
@@ -373,37 +285,38 @@ if __name__ == '__main__':
     }
 
     for i in range(len(config.TARGET_SHEET_TITLES)):
+        sheet_title = config.TARGET_SHEET_TITLES[i]
+
         df = parser.get_clear_df(
             spreadsheet_id=config.SPREADSHEET_ID,
-            target_title=config.TARGET_SHEET_TITLES[i],
+            target_title=sheet_title,
             target_range=config.TARGET_RANGES[i]
         )
 
         parsed = parser.parse_df(df, config.ELECTIVES[i])
         converted = convert_separation(parsed)
 
-        for course_name, calendar_dict in converted.items():
-            calendar = calendar_dict["calendar"]
+        directory = PARSER_PATH / config.SAVE_PATH / sheet_title.replace("/", "-")
+        directory.mkdir(parents=True, exist_ok=True)
+
+        for elective_name, calendar in converted.items():
             # print
             calendar['prodid'] = '-//one-zero-eight//InNoHassle Calendar'
             calendar['version'] = '2.0'
-            calendar['x-wr-calname'] = course_name
+            calendar['x-wr-calname'] = elective_name
             calendar['x-wr-caldesc'] = 'Generated by InNoHassle Calendar'
             calendar['x-wr-timezone'] = config.TIMEZONE
 
-            file_name = f"{course_name}.ics"
+            file_path = directory / f"{elective_name}.ics"
             calendars["calendars"].append(
                 {
-                    "name": course_name,
+                    "name": elective_name,
                     "elective_type": config.TARGET_SHEET_TITLES[i],
-                    "file": "electives/" + file_name
+                    "file": str(file_path.relative_to(PARSER_PATH))
                 }
             )
 
-            with open(
-                    PARSER_PATH / config.SAVE_PATH / file_name,
-                    'wb'
-            ) as f:
+            with open(file_path, 'wb') as f:
                 f.write(calendar.to_ical())
 
     # create a new .json file with information about calendar
