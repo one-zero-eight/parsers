@@ -10,247 +10,247 @@
         {
             "name": "BDLD",
             "elective_type": "BS Tech",
-            "file": "electives/BDLD.ics"
+            "file": "BS Tech\\BDLD.ics"
         },
         {
             "name": "DWV",
             "elective_type": "BS Tech",
-            "file": "electives/DWV.ics"
+            "file": "BS Tech\\DWV.ics"
         },
         {
             "name": "AML",
             "elective_type": "BS Tech",
-            "file": "electives/AML.ics"
+            "file": "BS Tech\\AML.ics"
         },
         {
             "name": "ASEM",
             "elective_type": "BS Tech",
-            "file": "electives/ASEM.ics"
+            "file": "BS Tech\\ASEM.ics"
         },
         {
             "name": "PP",
             "elective_type": "BS Tech",
-            "file": "electives/PP.ics"
+            "file": "BS Tech\\PP.ics"
         },
         {
             "name": "IROS",
             "elective_type": "BS Tech",
-            "file": "electives/IROS.ics"
+            "file": "BS Tech\\IROS.ics"
         },
         {
             "name": "PH",
             "elective_type": "BS Tech",
-            "file": "electives/PH.ics"
+            "file": "BS Tech\\PH.ics"
         },
         {
             "name": "FWD",
             "elective_type": "BS Tech",
-            "file": "electives/FWD.ics"
+            "file": "BS Tech\\FWD.ics"
         },
         {
             "name": "SP",
             "elective_type": "BS Tech",
-            "file": "electives/SP.ics"
+            "file": "BS Tech\\SP.ics"
         },
         {
             "name": "PP-group1",
             "elective_type": "BS Tech",
-            "file": "electives/PP-group1.ics"
+            "file": "BS Tech\\PP-group1.ics"
         },
         {
             "name": "CPMD",
             "elective_type": "BS Tech",
-            "file": "electives/CPMD.ics"
+            "file": "BS Tech\\CPMD.ics"
         },
         {
             "name": "PP-group2",
             "elective_type": "BS Tech",
-            "file": "electives/PP-group2.ics"
+            "file": "BS Tech\\PP-group2.ics"
         },
         {
             "name": "IME",
             "elective_type": "BS Tech",
-            "file": "electives/IME.ics"
+            "file": "BS Tech\\IME.ics"
         },
         {
             "name": "PP-group3",
             "elective_type": "BS Tech",
-            "file": "electives/PP-group3.ics"
+            "file": "BS Tech\\PP-group3.ics"
         },
         {
             "name": "FWD-gr1",
             "elective_type": "BS Tech",
-            "file": "electives/FWD-gr1.ics"
+            "file": "BS Tech\\FWD-gr1.ics"
         },
         {
             "name": "PP-group4",
             "elective_type": "BS Tech",
-            "file": "electives/PP-group4.ics"
+            "file": "BS Tech\\PP-group4.ics"
         },
         {
             "name": "RTST",
             "elective_type": "BS Tech",
-            "file": "electives/RTST.ics"
+            "file": "BS Tech\\RTST.ics"
         },
         {
             "name": "COOP",
             "elective_type": "BS Tech",
-            "file": "electives/COOP.ics"
+            "file": "BS Tech\\COOP.ics"
         },
         {
             "name": "FWD-gr2",
             "elective_type": "BS Tech",
-            "file": "electives/FWD-gr2.ics"
+            "file": "BS Tech\\FWD-gr2.ics"
         },
         {
             "name": "FWD-gr3",
             "elective_type": "BS Tech",
-            "file": "electives/FWD-gr3.ics"
+            "file": "BS Tech\\FWD-gr3.ics"
         },
         {
             "name": "IOSD",
             "elective_type": "BS Tech",
-            "file": "electives/IOSD.ics"
+            "file": "BS Tech\\IOSD.ics"
         },
         {
             "name": "IDV",
             "elective_type": "BS Tech",
-            "file": "electives/IDV.ics"
+            "file": "BS Tech\\IDV.ics"
         },
         {
             "name": "CGGD",
             "elective_type": "BS Tech",
-            "file": "electives/CGGD.ics"
+            "file": "BS Tech\\CGGD.ics"
         },
         {
             "name": "DVE",
             "elective_type": "MS Tech",
-            "file": "electives/DVE.ics"
+            "file": "MS Tech\\DVE.ics"
         },
         {
             "name": "UXD",
             "elective_type": "MS Tech",
-            "file": "electives/UXD.ics"
+            "file": "MS Tech\\UXD.ics"
         },
         {
             "name": "AAI",
             "elective_type": "MS Tech",
-            "file": "electives/AAI.ics"
+            "file": "MS Tech\\AAI.ics"
         },
         {
             "name": "DFA",
             "elective_type": "BS/MS Hum",
-            "file": "electives/DFA.ics"
+            "file": "BS-MS Hum\\DFA.ics"
         },
         {
             "name": "PSY-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/PSY-BS1.ics"
+            "file": "BS-MS Hum\\PSY-BS1.ics"
         },
         {
             "name": "BPM-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/BPM-BS1.ics"
+            "file": "BS-MS Hum\\BPM-BS1.ics"
         },
         {
             "name": "PSY-BS 2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/PSY-BS 2.ics"
+            "file": "BS-MS Hum\\PSY-BS 2.ics"
         },
         {
             "name": "BPM-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/BPM-BS2.ics"
+            "file": "BS-MS Hum\\BPM-BS2.ics"
         },
         {
             "name": "AEIE",
             "elective_type": "BS/MS Hum",
-            "file": "electives/AEIE.ics"
+            "file": "BS-MS Hum\\AEIE.ics"
         },
         {
             "name": "ARLU",
             "elective_type": "BS/MS Hum",
-            "file": "electives/ARLU.ics"
+            "file": "BS-MS Hum\\ARLU.ics"
         },
         {
             "name": "IMG",
             "elective_type": "BS/MS Hum",
-            "file": "electives/IMG.ics"
+            "file": "BS-MS Hum\\IMG.ics"
         },
         {
             "name": "UXD",
             "elective_type": "BS/MS Hum",
-            "file": "electives/UXD.ics"
+            "file": "BS-MS Hum\\UXD.ics"
         },
         {
             "name": "PES",
             "elective_type": "BS/MS Hum",
-            "file": "electives/PES.ics"
+            "file": "BS-MS Hum\\PES.ics"
         },
         {
             "name": "ICD-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/ICD-BS1.ics"
+            "file": "BS-MS Hum\\ICD-BS1.ics"
         },
         {
             "name": "ICD-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/ICD-BS2.ics"
+            "file": "BS-MS Hum\\ICD-BS2.ics"
         },
         {
             "name": "CL",
             "elective_type": "BS/MS Hum",
-            "file": "electives/CL.ics"
+            "file": "BS-MS Hum\\CL.ics"
         },
         {
             "name": "IPS-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/IPS-BS1.ics"
+            "file": "BS-MS Hum\\IPS-BS1.ics"
         },
         {
             "name": "PSY-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/PSY-BS2.ics"
+            "file": "BS-MS Hum\\PSY-BS2.ics"
         },
         {
             "name": "IPS-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/IPS-BS2.ics"
+            "file": "BS-MS Hum\\IPS-BS2.ics"
         },
         {
             "name": "DT-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/DT-BS1.ics"
+            "file": "BS-MS Hum\\DT-BS1.ics"
         },
         {
             "name": "DT-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/DT-BS2.ics"
+            "file": "BS-MS Hum\\DT-BS2.ics"
         },
         {
             "name": "BC",
             "elective_type": "BS/MS Hum",
-            "file": "electives/BC.ics"
+            "file": "BS-MS Hum\\BC.ics"
         },
         {
             "name": "HBIT",
             "elective_type": "BS/MS Hum",
-            "file": "electives/HBIT.ics"
+            "file": "BS-MS Hum\\HBIT.ics"
         },
         {
             "name": "CEOT",
             "elective_type": "BS/MS Hum",
-            "file": "electives/CEOT.ics"
+            "file": "BS-MS Hum\\CEOT.ics"
         },
         {
             "name": "SE-BS1",
             "elective_type": "BS/MS Hum",
-            "file": "electives/SE-BS1.ics"
+            "file": "BS-MS Hum\\SE-BS1.ics"
         },
         {
             "name": "SE-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/SE-BS2.ics"
+            "file": "BS-MS Hum\\SE-BS2.ics"
         }
     ]
 }
