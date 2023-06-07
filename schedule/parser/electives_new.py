@@ -312,7 +312,7 @@ if __name__ == '__main__':
                 {
                     "name": elective_name,
                     "elective_type": config.TARGET_SHEET_TITLES[i],
-                    "file": str(file_path.relative_to(PARSER_PATH / config.SAVE_PATH))
+                    "file": str(file_path.relative_to((PARSER_PATH / config.SAVE_JSON_PATH).parent))
                 }
             )
 
@@ -320,8 +320,5 @@ if __name__ == '__main__':
                 f.write(calendar.to_ical())
 
     # create a new .json file with information about calendar
-    with open(
-            PARSER_PATH / config.SAVE_JSON_PATH,
-            "w"
-    ) as f:
+    with open(PARSER_PATH / config.SAVE_JSON_PATH, "w") as f:
         json.dump(calendars, f, indent=4)
