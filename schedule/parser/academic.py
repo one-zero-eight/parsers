@@ -169,7 +169,7 @@ class AcademicParser:
             target_title: str
     ) -> pd.DataFrame:
         """Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
-        row filled by left value."""
+        row filled by left value. Also remove trailing spaces and translate russian letters to english ones."""
 
         self.logger.debug("Getting dataframe from Google Sheets...")
         self.logger.info(f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}")

@@ -30,8 +30,8 @@ pattern_multiple_spaces = re.compile(r'\s{2,}')
 CURRENT_YEAR = datetime.datetime.now().year
 
 symbol_translation = str.maketrans(
-    "АВЕКМНОРСТУХ",
-    "ABEKMHOPCTYX",
+    "АВЕКМНОРСТУХаср",
+    "ABEKMHOPCTYXacp",
     ' \n\t'
 )
 

@@ -296,7 +296,8 @@ if __name__ == '__main__':
         parsed = parser.parse_df(df, config.ELECTIVES[i])
         converted = convert_separation(parsed)
 
-        directory = PARSER_PATH / config.SAVE_PATH / sheet_title.replace("/", "-")
+        directory = PARSER_PATH / config.SAVE_PATH / sheet_title.replace("/", "-").replace(" ", "-")
+
         directory.mkdir(parents=True, exist_ok=True)
 
         for elective_name, calendar in converted.items():
