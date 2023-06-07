@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230605T105000
 DTEND:20230605T122000
-UID:b7340329-b501-40b3-a49a-392c52c5c92f@innohassle.ru
+UID:2a75c798-f80e-437b-8666-a00cbdd9c1a4@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230605T125000
 DTEND:20230605T142000
-UID:d3c8299d-6a5e-4f8d-8406-34f80e528535@innohassle.ru
+UID:446ab30b-6af8-4fd3-9a1e-9c4bd762584d@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -24,7 +24,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230605T143000
 DTEND:20230605T160000
-UID:23f7ed95-68dc-42b2-b2de-d0404158efd2@innohassle.ru
+UID:76918865-3dca-44aa-b7e8-ec35b78c23b4@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230605T161000
 DTEND:20230605T174000
-UID:42b31b3b-44b3-42f5-80dd-11ac8908ca6c@innohassle.ru
+UID:44e23a9e-5813-4af1-941c-474b9dd77905@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230612T105000
 DTEND:20230612T122000
-UID:7c593c2b-014b-4488-8fd0-71185933edbf@innohassle.ru
+UID:96565b63-384e-4646-b269-380401d456ee@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -48,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230612T125000
 DTEND:20230612T142000
-UID:0347eb04-29bf-4721-b186-7aa9983db13e@innohassle.ru
+UID:9ae072b1-e376-4d85-9f25-3f82de31c06a@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -56,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230612T143000
 DTEND:20230612T160000
-UID:5cc0945b-f780-4c5b-9f64-7650805529fb@innohassle.ru
+UID:a5be46cb-4a10-4b2d-80b0-ae2978445cbc@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230612T161000
 DTEND:20230612T174000
-UID:021d6079-c1c1-4100-8b04-377c1b54950f@innohassle.ru
+UID:821c0524-a15d-4099-864d-53965f384b35@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -72,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230619T105000
 DTEND:20230619T122000
-UID:1ff45f1b-9bc4-4875-93e2-7e3b0c617bca@innohassle.ru
+UID:b42bd962-a951-4480-8981-4b9357e21e08@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230619T125000
 DTEND:20230619T142000
-UID:a2253bda-c62b-47fd-872b-314a22ce7fd9@innohassle.ru
+UID:ef1e7b57-3e08-473c-a387-13c0643a0e78@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230619T143000
 DTEND:20230619T160000
-UID:42a318af-8707-4003-8e35-de7fddfea4e3@innohassle.ru
+UID:bf41a11d-1ac9-434c-9faf-46544fb32d3c@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -96,7 +96,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:1b655a5b-c836-4b31-b507-241f6fcad715@innohassle.ru
+UID:c345001d-2867-4872-b3fd-ac10392aa92e@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -104,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230626T105000
 DTEND:20230626T122000
-UID:89ad855c-8010-429c-a171-38f6293931a7@innohassle.ru
+UID:11c1b92e-52a2-40f2-a667-59c51706a798@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230626T125000
 DTEND:20230626T142000
-UID:197e9496-1c5f-4366-8346-e7b74bdaa9dc@innohassle.ru
+UID:1bbe6c8b-ea3d-41ae-854f-b729a3623f95@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -120,7 +120,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230626T143000
 DTEND:20230626T160000
-UID:dac586e4-e2fa-4fc1-8744-1b0c0cc94c8e@innohassle.ru
+UID:29e0967f-d8b3-43d6-bc29-4131747e9bc8@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:f3b807e2-63dc-460a-a510-fa3595e28103@innohassle.ru
+UID:ba64d01e-3ac7-4629-b153-3dc2cb3166a4@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -136,7 +136,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230703T105000
 DTEND:20230703T122000
-UID:321b10f5-5934-4e23-9292-5933605f19c2@innohassle.ru
+UID:74ba5168-deb6-4c4b-a6ef-e4c8e87ec70c@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -144,7 +144,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lec)
 DTSTART:20230703T125000
 DTEND:20230703T142000
-UID:f0586bd9-f788-467a-bcc1-72c4b38df520@innohassle.ru
+UID:89bfc978-5290-4490-889b-67a4c7c795d6@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230703T143000
 DTEND:20230703T160000
-UID:b8aee535-f318-475a-85ba-1ee022e6386f@innohassle.ru
+UID:9c061a3d-1aa1-4937-b009-560904be501a@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT
@@ -160,7 +160,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain:DistributedLedgerDevelopment (lab)
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:bff5f42e-9c54-4dd0-9561-0b291ee2047f@innohassle.ru
+UID:6cbaa3c1-2ffa-47c9-b115-9814079210e9@innohassle.ru
 DESCRIPTION:Blockchain:DistributedLedgerDevelopment\nHamzaSalem\noffline
 LOCATION:312
 END:VEVENT

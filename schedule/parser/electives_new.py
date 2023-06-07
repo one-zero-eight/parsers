@@ -308,11 +308,12 @@ if __name__ == '__main__':
             calendar['x-wr-timezone'] = config.TIMEZONE
 
             file_path = directory / f"{elective_name}.ics"
+            relative_directory = file_path.relative_to((PARSER_PATH / config.SAVE_JSON_PATH).parent)
             calendars["calendars"].append(
                 {
                     "name": elective_name,
                     "elective_type": config.TARGET_SHEET_TITLES[i],
-                    "file": str(file_path.relative_to((PARSER_PATH / config.SAVE_JSON_PATH).parent))
+                    "file": relative_directory.as_posix()
                 }
             )
 
