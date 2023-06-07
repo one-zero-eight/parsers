@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230612T161000
 DTEND:20230612T174000
-UID:e8daa128-7e02-4e43-85ee-7fa8522141bb@innohassle.ru
+UID:d984eeab-89a4-4dbc-a44d-2d24a59fdf62@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230612T175000
 DTEND:20230612T192000
-UID:950927de-2ab6-4495-adec-ed4a97b706e2@innohassle.ru
+UID:08d31b92-6c8f-4995-bc42-28ba0d419b37@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -24,7 +24,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230617T161000
 DTEND:20230617T174000
-UID:8389938d-481c-4d31-8b44-e92b3e6e536b@innohassle.ru
+UID:242821d4-b97f-4b00-b40b-d2956e47800c@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230617T175000
 DTEND:20230617T192000
-UID:9026b21b-17c4-4225-a531-aeb8a73e7afd@innohassle.ru
+UID:58561e44-441d-4363-9d93-f5048b8f9e01@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:8885b43f-19b1-4da4-9fb5-59a634ad422a@innohassle.ru
+UID:5bc83c05-0d98-426f-a9ac-dcd90f6b8256@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -48,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:f4c702a4-4c9a-4145-8851-873a296b0f63@innohassle.ru
+UID:bff5ba9e-721a-40e3-bbf3-ef1e977d7591@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -56,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230624T161000
 DTEND:20230624T174000
-UID:41814828-83fb-48c7-8323-7c8f0b312d94@innohassle.ru
+UID:67932c2c-4087-41bc-858a-d8d6cc1428b6@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230624T175000
 DTEND:20230624T192000
-UID:15d4902e-1f11-4eb4-82ae-d9fdbc0837cc@innohassle.ru
+UID:267ce434-c3d9-4f25-b127-679fef363432@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -72,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:1427aa5a-2a7b-4587-ae17-7dee5052156c@innohassle.ru
+UID:d6b272a3-0f7f-4591-801d-e3353b84c706@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:0345c670-1aa3-49a0-baa2-a70825893527@innohassle.ru
+UID:b55ed39a-0cec-4d7f-846e-0e566be70afa@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230701T161000
 DTEND:20230701T174000
-UID:f1731c81-7bd2-43ed-897c-9d80a75f9280@innohassle.ru
+UID:ec2252a6-0b08-48ee-9854-cb45c7ae6a05@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -96,7 +96,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230701T175000
 DTEND:20230701T192000
-UID:9c5aab58-d15b-45fb-8dcf-80b0f8b188d8@innohassle.ru
+UID:44051e29-9366-4483-85ec-ef37956ef3d3@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -104,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:6ce6441f-2661-4247-8db0-302c5187f96b@innohassle.ru
+UID:1d027095-7178-47cc-9322-68c9e52305fe@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:99bb931c-049d-40a4-9a59-23d25e6818d1@innohassle.ru
+UID:af04f1b0-4fa6-4150-9e23-996a349c3705@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -120,7 +120,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230708T161000
 DTEND:20230708T174000
-UID:faf8a222-42c4-49f6-bcbc-52ac81c0c588@innohassle.ru
+UID:266a7c21-ca1f-4418-beda-f7564b2829ce@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230708T175000
 DTEND:20230708T192000
-UID:8e23845d-b403-4a84-bf72-e08af5010b28@innohassle.ru
+UID:621b2a80-be1e-4b96-b4cc-a5a3fc12e54b@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -136,7 +136,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230710T161000
 DTEND:20230710T174000
-UID:c455492c-1f5c-405d-a3a5-103956537fd9@innohassle.ru
+UID:4d697971-846b-470e-90d7-015e87adc6f3@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -144,7 +144,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:33e53cea-e38a-4e0d-9df1-121e29540b8b@innohassle.ru
+UID:1ce3013d-81f9-4779-9310-e974df0b6edd@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:314
 END:VEVENT
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lec)
 DTSTART:20230715T161000
 DTEND:20230715T174000
-UID:5b944e54-8ff3-4c67-ba94-dab1551d50f1@innohassle.ru
+UID:0e5c3dff-870f-49ff-a394-a520598003be@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT
@@ -160,7 +160,7 @@ BEGIN:VEVENT
 SUMMARY:IntroductiontoDevOps (lab)
 DTSTART:20230715T175000
 DTEND:20230715T192000
-UID:1fa9838a-26b5-4748-ad52-b3589b66ba1f@innohassle.ru
+UID:fe34d43e-ef21-44e7-bea3-f78990ba3526@innohassle.ru
 DESCRIPTION:IntroductiontoDevOps\nDmitryCreed\noffline
 LOCATION:318
 END:VEVENT

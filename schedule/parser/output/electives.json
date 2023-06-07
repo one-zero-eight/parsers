@@ -153,9 +153,9 @@
             "file": "electives/BS-MS-Hum/BPM-BS1.ics"
         },
         {
-            "name": "PSY-BS 2",
+            "name": "PSY-BS2",
             "elective_type": "BS/MS Hum",
-            "file": "electives/BS-MS-Hum/PSY-BS 2.ics"
+            "file": "electives/BS-MS-Hum/PSY-BS2.ics"
         },
         {
             "name": "BPM-BS2",
@@ -206,11 +206,6 @@
             "name": "IPS-BS1",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IPS-BS1.ics"
-        },
-        {
-            "name": "PSY-BS2",
-            "elective_type": "BS/MS Hum",
-            "file": "electives/BS-MS-Hum/PSY-BS2.ics"
         },
         {
             "name": "IPS-BS2",

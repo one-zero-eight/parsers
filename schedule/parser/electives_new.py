@@ -122,6 +122,7 @@ class ElectiveParser:
                 r = re.search(BRACKETS_PATTERN, line)
                 if r:
                     event_type = r.group(1)
+                    event_type = event_type.replace(" ", "")
                     line = line.replace(r.group(0), ' ')
                     if event_type.startswith('lab'):
                         if "/" in event_type:

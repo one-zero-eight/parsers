@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:baf5ca52-fcdf-44a0-9046-a808cfb3f465@innohassle.ru
+UID:3cf88af0-2d64-42e6-9481-aa02083a92e8@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:5229cbc0-6dfc-4ace-a651-0ca919dbe4f1@innohassle.ru
+UID:41e38660-de2a-460f-8782-4ae11b9bd5a7@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -24,7 +24,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230608T175000
 DTEND:20230608T192000
-UID:c4a9fee5-9687-4ab7-b673-0469eb346761@innohassle.ru
+UID:a7870a57-3226-417f-8753-b3296cbfd1b9@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230608T193000
 DTEND:20230608T210000
-UID:c42c37cc-f3c7-4bb2-afc7-0d888c391a07@innohassle.ru
+UID:48fcbffe-6bda-47a9-a71f-216e56dff7c6@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230612T175000
 DTEND:20230612T192000
-UID:e1924f18-1fe4-434f-ace6-24faff8f8659@innohassle.ru
+UID:b8f715a9-7d05-4496-aadf-a456349f2d8c@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -48,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230612T193000
 DTEND:20230612T210000
-UID:65ef84ed-e543-455d-a012-c5214b79eb2a@innohassle.ru
+UID:00d5baf4-4690-4a1d-8961-e3feb7ee8bb0@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -56,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230615T175000
 DTEND:20230615T192000
-UID:0925d467-5d4d-4ce2-b035-586adffcb38f@innohassle.ru
+UID:3527d71c-933e-4317-bd7d-7f03aa723307@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230615T193000
 DTEND:20230615T210000
-UID:ac367601-a939-4415-bf13-065a1acc6539@innohassle.ru
+UID:ebcde52b-b51a-419a-a10d-dc65b566d158@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -72,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:eb9fe32b-be70-41d7-93e9-a7bf08917cb1@innohassle.ru
+UID:67d9895a-b967-449f-96d5-6e55c5e21e99@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:8a4729b8-a0f5-4366-b170-9f0deb6a44d8@innohassle.ru
+UID:7b41217d-cfee-4b0d-a0f7-5db3b6a6ce8a@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:a8429d68-6277-4bd8-8a7f-ff0af8525827@innohassle.ru
+UID:473c751b-8fd5-4abd-ab3f-44c26e3f192e@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -96,7 +96,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:8bf97b52-58a9-4b2c-8743-a3ddf118b3f3@innohassle.ru
+UID:73224978-e114-4e59-a9ba-ebd3599d2511@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -104,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:ad73ac99-4406-40c3-870d-3f8d121fc8ba@innohassle.ru
+UID:ba8c1c82-f6cc-4149-91a2-29c321d58411@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230629T175000
 DTEND:20230629T192000
-UID:796098d5-77a1-4826-9b0c-06a2fb788d1d@innohassle.ru
+UID:73de3842-653b-4473-9b34-c25d6f8b55e5@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -120,7 +120,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230629T193000
 DTEND:20230629T210000
-UID:195e381f-084f-4dce-a920-fec1b22a353f@innohassle.ru
+UID:6b544afb-0ec4-4efe-917e-b2726b547f7e@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:28730d4f-259d-4cf8-9b71-1fc4c4a39fe1@innohassle.ru
+UID:8c949549-e486-4f4b-8c29-ba93227d7500@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -136,7 +136,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:22653e82-ebcb-4cc6-b7fe-c3c5b6440359@innohassle.ru
+UID:19e84e4e-1688-49db-b820-4296a1589143@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:303
 END:VEVENT
@@ -144,7 +144,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230713T175000
 DTEND:20230713T192000
-UID:79fc3c40-b309-42ae-a92f-2e5b2a43ce80@innohassle.ru
+UID:d74fff3e-c060-42e7-a23c-369a191c5deb@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:ProgramminginHaskell
 DTSTART:20230713T193000
 DTEND:20230713T210000
-UID:983c6770-bf79-4246-85e9-c7dca1883c6c@innohassle.ru
+UID:d30eba1f-162f-4cc7-9211-ae16807b40c6@innohassle.ru
 DESCRIPTION:ProgramminginHaskell\nNikolayKudasov\noffline
 LOCATION:314
 END:VEVENT

@@ -6,9 +6,17 @@ X-WR-CALNAME:PSY-BS2
 X-WR-TIMEZONE:Europe/Moscow
 BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
+DTSTART:20230606T125000
+DTEND:20230606T142000
+UID:a7b1068c-db3a-448b-b684-22f9aae9a954@innohassle.ru
+DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:PsychologyofIT-specialist
 DTSTART:20230608T161000
 DTEND:20230608T174000
-UID:d534ddab-e329-4abe-bcc9-1aa5b53182f6@innohassle.ru
+UID:e7970c39-8bf3-407e-82e0-46a1a02861cc@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -16,7 +24,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230609T161000
 DTEND:20230609T174000
-UID:061c6a38-d981-4b47-8072-3c131b2f0748@innohassle.ru
+UID:f8771db8-1641-4505-b738-c06e5ba59fc0@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -24,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230613T125000
 DTEND:20230613T142000
-UID:e4321fe8-878d-4a2a-84a0-1da6cf7f3c0e@innohassle.ru
+UID:7aa44acc-6f81-419e-8640-28574621012b@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -32,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230615T161000
 DTEND:20230615T174000
-UID:177f13ac-1ed3-461b-b88a-3636b549f364@innohassle.ru
+UID:7355eb52-b6f9-48de-aeb6-b2388db23b79@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -40,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230616T161000
 DTEND:20230616T174000
-UID:b3534afc-b9b8-41af-9a8b-bfb0a09f3331@innohassle.ru
+UID:84ca189f-9d6c-4309-8c74-496627c7b990@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -48,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230620T125000
 DTEND:20230620T142000
-UID:bd3b8568-c4b5-4ce1-9708-a8a04ec31876@innohassle.ru
+UID:ea35efc0-5116-4a56-ba2b-c459ac9c1065@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -56,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230622T161000
 DTEND:20230622T174000
-UID:e5de6f37-dc4f-4d3e-ae8a-bedabd02e95b@innohassle.ru
+UID:cb6d9fbf-3e00-4e57-b99c-76d66d700405@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -64,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230623T161000
 DTEND:20230623T174000
-UID:373b4771-8472-4592-87f5-7897ca881ffb@innohassle.ru
+UID:0c76b1cf-7ab9-4900-9631-ae24f0842339@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -72,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230627T125000
 DTEND:20230627T142000
-UID:800bcae7-7cde-4e4e-87c9-22cb2f27cf50@innohassle.ru
+UID:1303976a-8e90-4e2c-8e0f-3cef7df1eba7@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -80,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230629T161000
 DTEND:20230629T174000
-UID:1ddff495-bb50-41e1-aa06-513635cddd92@innohassle.ru
+UID:d78cf3e2-c1f2-45d4-8e24-a9951922d2d1@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -88,7 +96,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230630T161000
 DTEND:20230630T174000
-UID:6d879b6e-e4b8-4819-bfcd-b159e8dfce65@innohassle.ru
+UID:8f703c86-6f4c-4268-b55c-8fa2d8cbc025@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -96,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230704T125000
 DTEND:20230704T142000
-UID:d9591fb8-0517-4c6f-a709-a448bbae9b4e@innohassle.ru
+UID:0d928a18-26a8-4bb4-91e7-a03f1c694b2a@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -104,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230706T161000
 DTEND:20230706T174000
-UID:bd59c585-fd29-40b3-a61d-fc86f78a76ec@innohassle.ru
+UID:dff41ded-1dda-46c4-a7eb-0630ca150877@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT
@@ -112,7 +120,7 @@ BEGIN:VEVENT
 SUMMARY:PsychologyofIT-specialist
 DTSTART:20230707T161000
 DTEND:20230707T174000
-UID:06de33a7-f0f0-4240-bf52-eb62db6dceb5@innohassle.ru
+UID:2b5e337c-9f60-469a-9fce-192bfa487655@innohassle.ru
 DESCRIPTION:PsychologyofIT-specialist\nBS2\nEleonoraIlina\noffline
 LOCATION:320
 END:VEVENT

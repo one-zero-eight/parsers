@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230530T105000
 DTEND:20230530T122000
-UID:ba2042a1-7b3c-494f-ab20-0b5787f04449@innohassle.ru
+UID:552910a9-c070-49ca-abcc-95494619579a@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230530T125000
 DTEND:20230530T142000
-UID:d5b15d53-ee94-4120-996e-cec8bbfd3749@innohassle.ru
+UID:23d21c25-82c3-4156-aea1-d2c5b66942c0@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -24,7 +24,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230601T105000
 DTEND:20230601T122000
-UID:0265231a-f33d-47e4-9384-e78a297de142@innohassle.ru
+UID:55c7be96-4c4d-41e9-a521-2f0e7346c2e5@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230601T125000
 DTEND:20230601T142000
-UID:9c93d7b3-430e-4251-875e-4993aa5a5999@innohassle.ru
+UID:9fd97a10-f17f-4000-a90e-a6de5de0a2b0@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230613T105000
 DTEND:20230613T122000
-UID:89c0e9eb-d48c-4e94-b773-687485de83e2@innohassle.ru
+UID:003aa4d8-7719-41fa-ba07-66122fbbb754@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -48,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230613T125000
 DTEND:20230613T142000
-UID:52131bea-50c6-4ec3-a628-5c9a6bb3daf6@innohassle.ru
+UID:5d037502-f1b0-486a-82ee-0e6ed01cd0e7@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -56,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230615T105000
 DTEND:20230615T122000
-UID:e18984ca-b568-4fb7-990d-3245323e3acc@innohassle.ru
+UID:d8bc3cdd-6378-4722-b2f7-d8790f8dd184@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230615T125000
 DTEND:20230615T142000
-UID:bf3f9264-fc20-43eb-abb9-87581e1641d0@innohassle.ru
+UID:db696e40-112b-4aad-9e9e-8fbee889a027@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -72,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230620T105000
 DTEND:20230620T122000
-UID:3daef9c9-0601-4b84-8f58-657da1a68baa@innohassle.ru
+UID:55941eaf-1d27-4d8e-9aee-074761721f77@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230620T125000
 DTEND:20230620T142000
-UID:fd448af6-54a6-47e3-9fdf-a960adf39a56@innohassle.ru
+UID:e8143a09-8423-45af-a4f7-9d033fd46dd9@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230627T105000
 DTEND:20230627T122000
-UID:7a816938-4d06-4130-b7e7-e4e13b9f78de@innohassle.ru
+UID:8b9fabb5-f9f3-4167-925b-310dc1a4e993@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -96,7 +96,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230627T125000
 DTEND:20230627T142000
-UID:10cabd51-2d25-4401-9665-2f592f219ed4@innohassle.ru
+UID:646a4e4d-eb0a-4df7-bf87-a2b3a3cdb50a@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -104,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230704T105000
 DTEND:20230704T122000
-UID:90af88cd-6d0b-4c67-b73c-79dfd6b046aa@innohassle.ru
+UID:ce492e0e-4a3a-481f-b3f1-182e5709750c@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230704T125000
 DTEND:20230704T142000
-UID:cc30760d-79a1-4214-9934-f9111839638d@innohassle.ru
+UID:f0528fa0-ac69-4c36-9590-105015722296@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -120,7 +120,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230711T105000
 DTEND:20230711T122000
-UID:5534bb29-f964-4705-b2c0-658ebcf9face@innohassle.ru
+UID:391cedbd-f86c-4b76-a0eb-fbd60cf53622@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230711T125000
 DTEND:20230711T142000
-UID:feb38503-4cef-4dc0-a494-0730e38879eb@innohassle.ru
+UID:ee0be91a-2a42-47ea-ab83-37950ab18cce@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -136,7 +136,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230718T105000
 DTEND:20230718T122000
-UID:77ad3939-4ff1-46f5-8f76-2c9c8683ca9a@innohassle.ru
+UID:8d2bdee2-f8cb-4000-a792-690ddb1f44cd@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -144,7 +144,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230718T125000
 DTEND:20230718T142000
-UID:99c1dcd5-413a-448b-a41f-93795b279729@innohassle.ru
+UID:a7c901e8-7293-4589-b0cf-8252a5d48d13@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lec)
 DTSTART:20230725T105000
 DTEND:20230725T122000
-UID:b3eabde8-1259-425f-ba53-7137e6d2b104@innohassle.ru
+UID:94314f28-be3d-4676-9070-b955d2b835a1@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
@@ -160,7 +160,7 @@ BEGIN:VEVENT
 SUMMARY:DevOpsEngineering(Advanced) (lab)
 DTSTART:20230725T125000
 DTEND:20230725T142000
-UID:5c7f93eb-bc24-49f6-82a3-9d00ba76b4f0@innohassle.ru
+UID:2d7727a6-7580-49f6-89e2-a80fbf54767d@innohassle.ru
 DESCRIPTION:DevOpsEngineering(Advanced)\nDmitryCreed\noffline
 LOCATION:312
 END:VEVENT
