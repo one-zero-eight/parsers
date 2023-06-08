@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230123T091000
 DTEND:20230123T104000
-DTSTAMP:20230608T141409
-UID:28f1b9d0-ff1b-401c-928c-3daf2409c2f7@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:03728c8a-6e1f-4d64-b6c0-35a810138b0e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -20,8 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230608T141409
-UID:1ad3fda5-fd3e-465c-bb48-239f1c9b096e@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:0a4ac7b5-b293-46b3-a94f-97dcb1da4ae2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230125T105000
 DTEND:20230125T122000
-DTSTAMP:20230608T141409
-UID:e3309e64-a211-44c3-84bc-30d6d6c9b2df@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:6c22d0ef-1fde-4431-8eb7-3654521d0f35@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
@@ -44,8 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230125T143000
 DTEND:20230125T160000
-DTSTAMP:20230608T141409
-UID:6d439bf2-f038-4b71-a1a6-cd3372c14060@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:5cd20913-6446-4d46-9a40-1d57a8591b9b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
@@ -56,8 +56,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230320T091000
 DTEND:20230320T104000
-DTSTAMP:20230608T141409
-UID:da662347-8c7e-444c-b051-ee551f8bdd8d@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:9ebd7f7d-3bd5-4a52-be15-0565d28d5711@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -68,8 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230608T141409
-UID:28d5099b-69f9-4ac4-82eb-7a5ec246d03b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:54e63f79-eba1-4ee5-a1df-6d7f9e526c0f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -80,8 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced compiler construction and program analysis (lec)
 DTSTART:20230321T091000
 DTEND:20230321T104000
-DTSTAMP:20230608T141409
-UID:77ac7002-d31f-4fc7-983c-63d7ec90ebb9@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:062b6652-0aa8-4c32-a84f-6386533f32fa@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
@@ -93,8 +93,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced compiler construction and program analysis (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T141409
-UID:fbac9c4c-d82d-4141-a10e-0b56e6311956@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:65e8ca46-f9f2-4974-b2ba-19040715dcb1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
@@ -106,8 +106,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230322T105000
 DTEND:20230322T122000
-DTSTAMP:20230608T141409
-UID:e7b7482e-dbbd-4f67-bd17-3bfdc48d054c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:da0aa6b1-9de1-40b6-bfcc-958f4b88219f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
@@ -118,8 +118,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230322T143000
 DTEND:20230322T160000
-DTSTAMP:20230608T141409
-UID:12fe5d15-2822-486a-a56f-d9df2e32fda9@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:f0f52c5f-40fa-4b6d-b3b7-50aa1098cdca@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
@@ -130,8 +130,8 @@ BEGIN:VEVENT
 SUMMARY:ACC and program analysis (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230608T141409
-UID:cee92948-3b3d-4d02-868c-00a0230f5c4e@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:28642f0e-5c3f-4095-b766-7704a2707b59@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 421\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
@@ -142,8 +142,8 @@ BEGIN:VEVENT
 SUMMARY:Lean Software Development (lab)
 DTSTART:20230323T143000
 DTEND:20230323T160000
-DTSTAMP:20230608T141409
-UID:709e7078-a902-4daf-83be-e9e1c41ea645@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:a1242b7f-d157-4d64-9a5d-e8f0dc6b42cd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 300\nInstructor: Artem Kruglov\nType: lab\nGroup: B2

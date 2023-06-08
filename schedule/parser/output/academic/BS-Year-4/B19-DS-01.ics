@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T111000
 DTEND:20230123T124000
-DTSTAMP:20230608T141409
-UID:3716f105-c119-47e0-a168-d41dce35e44d@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:638f9466-bf5e-4fe0-9eb5-ec951cba3fd4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -21,8 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230608T141409
-UID:5a1db78b-86ea-455d-b55e-e799fd9f3060@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:00601432-d187-41d6-8811-8aca57f2d0a6@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230608T141409
-UID:49078e0b-32c3-43c9-85ee-17dd092d83fd@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:7af5bb0a-c4e1-4c42-84fc-2f4bb12d6740@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -43,8 +43,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230126T131000
 DTEND:20230126T144000
-DTSTAMP:20230608T141409
-UID:a90f0af9-a38b-4997-8dba-e8395a35817b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:120bd4ae-5014-4acf-a0c4-3e8e2a187d69@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 105\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
@@ -55,8 +55,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230126T145000
 DTEND:20230126T162000
-DTSTAMP:20230608T141409
-UID:c756c5a4-95b3-4d69-901f-49e7a86088f1@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:c430a373-3af3-4bba-9a0c-9b73ab154de1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -67,8 +67,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230608T141409
-UID:c0c1196d-25cc-477b-a18a-4d49a2a28def@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:811edbb1-edc6-457e-85ff-8e621568738a@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -78,8 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T111000
 DTEND:20230320T124000
-DTSTAMP:20230608T141409
-UID:19ded223-54d8-4e8a-bf62-ae6106854120@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:b8c87899-68d2-4859-8d28-a693a1493ddf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -91,8 +91,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230608T141409
-UID:4b1d35cc-45d6-4018-9f39-9115030e54f9@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:cf1af817-c0d5-4a26-9f76-c574f67bf0d2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
@@ -104,8 +104,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230608T141409
-UID:c4ae0396-336c-45dc-b9ca-4750cdaf5a62@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:93b364db-d4b4-48ba-95da-2d6b0c0915bf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Zamira Kholmatova\nType: lab\nGroup

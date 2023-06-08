@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T111000
 DTEND:20230123T124000
-DTSTAMP:20230608T141409
-UID:213561fd-fcb0-4028-886d-0cb4dd2ebd3b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:bb086a7c-c2e7-4a55-a789-b8f714cea8dc@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -21,8 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230608T141409
-UID:a96b5c59-44eb-4ffd-bf23-0ae938605593@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:684ae113-5a8a-499e-9af7-a555bbdbbe62@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230608T141409
-UID:419eb320-6ff7-4354-8d52-26a223421fcb@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:dddcf295-74a2-4215-b285-b133aa843c6e@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -43,8 +43,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230126T131000
 DTEND:20230126T144000
-DTSTAMP:20230608T141409
-UID:e5bcb3d5-b5a0-49bb-a561-3331ae68024f@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:9244d56a-3445-43e8-beea-0b09e03a2008@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 105\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
@@ -55,8 +55,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230126T145000
 DTEND:20230126T162000
-DTSTAMP:20230608T141409
-UID:2f790b64-ae54-46ac-941b-b5bf239f81a8@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:069055c1-3b84-4d48-9af9-b0b2d92aa8a5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 105\nInstructor: Maxim Evgrafov\nType: lab\nGroup: B
@@ -67,8 +67,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230608T141409
-UID:fc72abe3-a933-460e-91ad-7d0eaf0f1eb2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:0e5fc34e-c665-425b-86f2-8e63f763432a@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -78,8 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T111000
 DTEND:20230320T124000
-DTSTAMP:20230608T141409
-UID:55558a00-17e4-4f50-bbc4-2d1eb8272316@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:90c1fc6e-4d79-41de-92c6-d9b3841c73c6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -91,8 +91,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230608T141409
-UID:ff03b18e-b0dc-486a-a657-8cc8cb2dbdec@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:9c1da4cd-209e-491f-af67-6b7647a948c7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
@@ -104,8 +104,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230608T141409
-UID:cdc7d4f5-4719-44fe-8bbe-bedbc590cc91@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:d156736c-34d8-4223-9131-2afd5c7d63da@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 105 (Room 108 on 20/04)\nInstructor: Maxim Evgrafov\

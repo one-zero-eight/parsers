@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Computational Intelligence (lec)
 DTSTART:20230124T142000
 DTEND:20230124T155000
-DTSTAMP:20230608T141409
-UID:1e362983-4bb5-4c89-a0d9-fb098336eeef@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:70556a34-39ac-4f56-b85b-0be44fb9840b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
@@ -20,8 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Computational Intelligence (lab)
 DTSTART:20230124T160000
 DTEND:20230124T173000
-DTSTAMP:20230608T141409
-UID:d0d09d01-d49f-4e15-8cf6-efe1791a714b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:17019f0a-6a05-47c9-821e-38a25aa5698e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: Computational Intelligence (lab)\nInstructor: Comput
@@ -33,8 +33,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Vision (lec)
 DTSTART:20230126T090000
 DTEND:20230126T103000
-DTSTAMP:20230608T141409
-UID:4ac822f6-4725-4766-92e4-b08817ff6e10@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:f751bf18-ccd1-409a-996e-05fc3c95788f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: M22
@@ -45,8 +45,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Vision (lab)
 DTSTART:20230126T104000
 DTEND:20230126T121000
-DTSTAMP:20230608T141409
-UID:098530ea-5d44-45a3-bb30-417b693c8cd8@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:faedbca9-1646-49dc-9a1d-7af0affde8a5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Yaseen Albatoul\nType: lab\nGroup: 
@@ -57,8 +57,8 @@ BEGIN:VEVENT
 SUMMARY:Computational Intelligence (lec)
 DTSTART:20230126T142000
 DTEND:20230126T155000
-DTSTAMP:20230608T141409
-UID:86248536-4f10-40a5-8c48-346131ae1585@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:7d380953-f1f7-42cd-a1ab-b7db480082bf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
@@ -69,8 +69,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for Robotics (lab)
 DTSTART:20230126T160000
 DTEND:20230126T173000
-DTSTAMP:20230608T141409
-UID:a95f3f1d-add4-4adf-aff3-7d9806935d0c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:34198535-343d-4b28-8eb3-90c8377d9871@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
@@ -82,8 +82,8 @@ BEGIN:VEVENT
 SUMMARY:Computational Intelligence (lab)
 DTSTART:20230127T090000
 DTEND:20230127T103000
-DTSTAMP:20230608T141409
-UID:579c4190-cc4a-49d6-b7bd-5ce263d83304@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:120f6d1b-4560-4dc5-aaa2-306977068d0a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 301\nInstructor: Anastasiya Andronova\nType: lab\nGr
@@ -94,8 +94,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Robotics(lec) (lec)
 DTSTART:20230320T104000
 DTEND:20230320T121000
-DTSTAMP:20230608T141409
-UID:cb3c2655-9696-4df1-9556-2b4a3c4269af@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:81e20dd4-aa8e-4728-b626-586d1610d31d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kolyubin\nType: lec\nGrou
@@ -106,8 +106,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Robotics(lec) (lec)
 DTSTART:20230320T124000
 DTEND:20230320T141000
-DTSTAMP:20230608T141409
-UID:f8a54b93-ebbc-4e1c-a8d7-6fa54b53d405@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:3fd2ceae-e5e3-4bd1-ba83-bb3eb503dd80@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kolyubin\nType: lec\nGrou
@@ -118,8 +118,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Robotics(lab) (lab)
 DTSTART:20230322T104000
 DTEND:20230322T121000
-DTSTAMP:20230608T141409
-UID:8447b4f2-c13e-45e7-8fd3-0ce7b5ae4505@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:eaea722c-14c3-469f-83da-dc35356f2884@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Albert Demian\nType: lab\nGroup: M2
@@ -130,8 +130,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Robotics(lab) (lab)
 DTSTART:20230322T124000
 DTEND:20230322T141000
-DTSTAMP:20230608T141409
-UID:0b1fbec7-9850-4078-a8c2-19894a232d11@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:e29d4672-4d4b-4d28-b921-c09076c5d20b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Albert Demian\nType: lab\nGroup: M2
@@ -142,8 +142,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Vision (lec)
 DTSTART:20230323T090000
 DTEND:20230323T103000
-DTSTAMP:20230608T141409
-UID:f85c0c3a-2ef8-4d5d-9907-04248931c455@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:cf4994e3-d0ab-42b4-8822-f03c2023b8be@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: M22
@@ -154,8 +154,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Vision (lab)
 DTSTART:20230323T104000
 DTEND:20230323T121000
-DTSTAMP:20230608T141409
-UID:899e5e91-4a42-416e-b384-bf25274cd10e@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:a57ff7f5-5a1d-436a-8fa7-f75144b3534c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Yaseen Albatoul\nType: lab\nGroup: 
@@ -166,8 +166,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for Data Science & Robotics (lec)
 DTSTART:20230323T124000
 DTEND:20230323T141000
-DTSTAMP:20230608T141409
-UID:3d4adfbd-dc96-4bf2-a986-5b7afb4ea420@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:2af40ead-2477-40fd-a03c-f40d1f1a32ac@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313 (week 1\, 2\, 7\, 8)\nInstructor: Mirko Farina\n
@@ -179,8 +179,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for Robotics(lab) (lab)
 DTSTART:20230323T160000
 DTEND:20230323T173000
-DTSTAMP:20230608T141409
-UID:8a34b0b0-e63e-41bf-90ce-7edf54937fcf@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:7d930d15-845a-495e-a96f-832584ae69e8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22

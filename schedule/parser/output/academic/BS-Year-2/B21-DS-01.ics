@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230123T092000
 DTEND:20230123T105000
-DTSTAMP:20230608T141409
-UID:557164ac-6387-42b7-94b1-f4433bdba785@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:7aaeb648-ef69-49d2-948c-48fd99ce1cb9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
@@ -20,8 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230123T130000
 DTEND:20230123T143000
-DTSTAMP:20230608T141409
-UID:b1674e7b-6335-44f2-b33e-4fab6d25cbd3@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:0752d46a-16e7-454b-a36d-5ba47fd2bcd4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 421\nInstructor: Yusuf Mesbah\nType: lab\nGroup: B21
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (lec)
 DTSTART:20230124T110000
 DTEND:20230124T123000
-DTSTAMP:20230608T141409
-UID:79156864-1a4b-4741-b831-470a4a2176fb@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:699bbad8-743d-400f-b9e2-7187f9edd7a9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
@@ -44,8 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (tut)
 DTSTART:20230124T130000
 DTEND:20230124T143000
-DTSTAMP:20230608T141409
-UID:0ed8b829-b6fc-4ceb-ab2f-6745df57b279@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:45538506-3e6c-4a72-a9e4-02cdfa2ead13@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
@@ -56,8 +56,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (lab)
 DTSTART:20230124T144000
 DTEND:20230124T161000
-DTSTAMP:20230608T141409
-UID:53f2f0e9-e720-4b18-813d-b53b119bc9c6@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:97c163c1-930b-45b9-a0a1-6dcc099af528@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 316\nInstructor: Pavel Kozlov\nType: lab\nGroup: B21
@@ -68,8 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (lec)
 DTSTART:20230125T110000
 DTEND:20230125T123000
-DTSTAMP:20230608T141409
-UID:557029d9-08b7-4a9c-95e3-025a4a1a27d9@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:8eee7eff-3167-457c-954a-b7c03cf375fe@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
@@ -80,8 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (tut)
 DTSTART:20230125T130000
 DTEND:20230125T143000
-DTSTAMP:20230608T141409
-UID:d861d952-fb88-4784-b278-75a916c5323c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:f9b45fdb-ccbb-49a8-bd58-4f8ac311427f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 105\nInstructor: Artem Burmyakov\nType: tut\nGroup: 
@@ -92,8 +92,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (lab)
 DTSTART:20230125T144000
 DTEND:20230125T161000
-DTSTAMP:20230608T141409
-UID:89d759da-711d-4f63-9304-2926fd2d4668@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:459a9ca8-7941-49a7-b592-d96135051e8e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
@@ -104,8 +104,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230126T130000
 DTEND:20230126T143000
-DTSTAMP:20230608T141409
-UID:01a60721-ba5c-42fb-9b89-455add78359f@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:bc1bc931-71f5-4f1c-a3a4-aec92abbc67f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 105 (STARTS AT 13:10)\nInstructor: Vladimir Ivanov\n
@@ -117,8 +117,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230126T144000
 DTEND:20230126T161000
-DTSTAMP:20230608T141409
-UID:a9eff7bf-084c-4fc5-adc7-bd0dc271d20f@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143735
+UID:cf0f4240-01d5-454d-8486-d0dc782280a0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Sofya Mukhamedjanova\nType: lab\nGr
@@ -129,8 +129,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230320T092000
 DTEND:20230320T105000
-DTSTAMP:20230608T141409
-UID:7d181ae2-f242-498b-9951-e714a6d92117@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:0210e55d-afbd-44fc-8de9-a7778d264642@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
@@ -141,8 +141,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230320T130000
 DTEND:20230320T143000
-DTSTAMP:20230608T141409
-UID:07b4aa92-2b43-4b5e-81e2-d3fc5e16cf59@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:e149900e-5920-45cc-80ee-7f96ed145c43@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 421\nInstructor: Yusuf Mesbah\nType: lab\nGroup: B21
@@ -153,8 +153,8 @@ BEGIN:VEVENT
 SUMMARY:Nature Inspired Computing (lec)
 DTSTART:20230321T092000
 DTEND:20230321T105000
-DTSTAMP:20230608T141409
-UID:7869db0e-9893-43c9-9106-c8acb6e557e5@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:562142ba-0fb3-4989-8c5b-6c868a314307@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Muhammad Fahim\nType: lec\nGroup
@@ -165,8 +165,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (lec)
 DTSTART:20230321T110000
 DTEND:20230321T123000
-DTSTAMP:20230608T141409
-UID:38738850-5d39-4cc0-8820-ed394c0eb7e2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:0bd7dd4b-2d75-4539-899b-c217ae030999@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
@@ -177,8 +177,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (tut)
 DTSTART:20230321T130000
 DTEND:20230321T143000
-DTSTAMP:20230608T141409
-UID:efa7b60d-f00b-4728-90aa-88509727d6d9@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:44cfbc98-2dbc-4849-9b7f-5fdef4bd5ec7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
@@ -189,8 +189,8 @@ BEGIN:VEVENT
 SUMMARY:Databases (lab)
 DTSTART:20230321T144000
 DTEND:20230321T161000
-DTSTAMP:20230608T141409
-UID:f42c64e8-81cc-4f47-bec4-d5fe12bd81d0@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:ce12f60b-28de-4f7f-a8f6-ed17f23917e2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 316\nInstructor: Pavel Kozlov\nType: lab\nGroup: B21
@@ -201,8 +201,8 @@ BEGIN:VEVENT
 SUMMARY:Nature Inspired Computing (lab)
 DTSTART:20230321T162000
 DTEND:20230321T175000
-DTSTAMP:20230608T141409
-UID:f091820b-0cd0-428e-8b74-eb6090e6507e@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:4bcac2d8-9999-43a7-aa33-57b2e56142b4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 321\nInstructor: Yusuf Mesbah\nType: lab\nGroup: B21
@@ -213,8 +213,8 @@ BEGIN:VEVENT
 SUMMARY:Nature Inspired Computing (lab)
 DTSTART:20230321T180000
 DTEND:20230321T193000
-DTSTAMP:20230608T141409
-UID:774e6e2c-cc07-4441-a188-a58ad9e6aa44@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:33ed166b-41c8-4146-b524-c256f1f8e41b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: Nature Inspired Computing (lab)\nInstructor: Nature 
@@ -226,8 +226,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (lec)
 DTSTART:20230322T110000
 DTEND:20230322T123000
-DTSTAMP:20230608T141409
-UID:f6deeace-8efb-445a-bed1-9b91a5ab4072@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:ff0f7435-eed9-4830-8b18-71fa05357914@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
@@ -238,8 +238,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (tut)
 DTSTART:20230322T130000
 DTEND:20230322T143000
-DTSTAMP:20230608T141409
-UID:386fe7f4-5674-44d8-b24b-1a7da22e7ef2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:23c6c141-0470-4791-af23-9df2abbb17e8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 105 (Room 106 on 19/04)\nInstructor: Artem Burmyakov
@@ -250,8 +250,8 @@ BEGIN:VEVENT
 SUMMARY:Networks (lab)
 DTSTART:20230322T144000
 DTEND:20230322T161000
-DTSTAMP:20230608T141409
-UID:0179bc1f-7cfc-4fba-9eeb-47b28d7d8445@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:499ea240-febd-4297-af2a-0bfff1f5626a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
@@ -262,8 +262,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230323T130000
 DTEND:20230323T143000
-DTSTAMP:20230608T141409
-UID:2d66ab1d-6547-41d6-8f84-229d5cfcee8b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:1194d5b1-6a51-4c15-8aed-0b207822f7b2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
@@ -275,8 +275,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230323T144000
 DTEND:20230323T161000
-DTSTAMP:20230608T141409
-UID:bc1cc1e9-e59b-4543-8c95-e38496b74b2c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:7743154e-2711-464a-9ac4-cdfa8e2fed59@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Sofya Mukhamedjanova\nType: lab\nGr
@@ -287,8 +287,8 @@ BEGIN:VEVENT
 SUMMARY:Nature Inspired Computing (lec)
 DTSTART:20230324T092000
 DTEND:20230324T105000
-DTSTAMP:20230608T141409
-UID:924482b7-36e2-4e83-8c14-21a13ca10a36@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143736
+UID:8964128b-b2bc-4143-8c6d-69ace63cec2f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Muhammad Fahim\nType: lec\nGroup
@@ -299,8 +299,8 @@ BEGIN:VEVENT
 SUMMARY:Capstone Project (lec)
 DTSTART:20230606T110000
 DTEND:20230606T123000
-DTSTAMP:20230608T141410
-UID:33b558ad-c8fa-42cd-a9ab-1d70f57dfdc7@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:847c71b0-a6a1-45d8-928c-b50ed86faddf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
@@ -312,8 +312,8 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T144000
 DTEND:20230613T161000
-DTSTAMP:20230608T141410
-UID:50015f50-49a6-4033-b9ea-cfc13ad30fc6@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:d4f36277-4ce8-4cab-a343-f4dd3855d903@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-DS-01\nSubject: Life Safety\nTime: 14:40 - 16:10
@@ -323,8 +323,8 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T162000
 DTEND:20230613T175000
-DTSTAMP:20230608T141410
-UID:6e41a8c2-4776-4aa9-abe6-0477c3358d0b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:2e639561-07e6-4160-87ba-610e9c442fa8@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-DS-01\nSubject: Life Safety\nTime: 16:20 - 17:50
@@ -334,8 +334,8 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T144000
 DTEND:20230614T161000
-DTSTAMP:20230608T141410
-UID:04cf1712-a89e-4dd4-8820-5698e0888ebf@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:34831cdc-8ce8-4616-8ebc-f5c9e5651b6b@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-DS-01\nSubject: Life Safety\nTime: 14:40 - 16:10
@@ -345,8 +345,8 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T162000
 DTEND:20230614T175000
-DTSTAMP:20230608T141410
-UID:615d1973-51ee-49dd-8ecc-7c9470d00aa4@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:b72d043d-c367-4bde-9580-52e193ab2a2d@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-DS-01\nSubject: Life Safety\nTime: 16:20 - 17:50
@@ -356,8 +356,8 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230615T130000
 DTEND:20230615T143000
-DTSTAMP:20230608T141410
-UID:262525ac-bc23-4474-9c54-94e23e9c6410@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T143737
+UID:1d6c6610-0050-42d5-bc33-3ddb9b440b08@innohassle.campus.innopolis.unive
  rsity
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-DS-01\nSubject: Life Safety\nTime: 13:00 - 14:30
