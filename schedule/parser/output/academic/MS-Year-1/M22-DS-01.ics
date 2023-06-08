@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lec)
 DTSTART:20230123T090000
 DTEND:20230123T103000
-DTSTAMP:20230608T140920
-UID:a8b5f4c4-9b2b-4d0d-9b7b-405e481efa01@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:cf6746a1-b859-4212-91d0-37067500dd8a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305 (ROOM 101 ON 13/03)\nInstructor: Nikola Zlatanov
@@ -21,8 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lab)
 DTSTART:20230123T104000
 DTEND:20230123T121000
-DTSTAMP:20230608T140920
-UID:580af851-e00b-49d3-814d-5f7b1751d60a@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:9435e420-de42-4132-8744-ee97bedbc5db@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -33,8 +33,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lec)
 DTSTART:20230124T090000
 DTEND:20230124T103000
-DTSTAMP:20230608T140920
-UID:0705b55c-3f80-4710-aec7-9a1a53c5e5b4@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:8d34612c-040f-41f3-8f63-dd4125b43dee@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -46,8 +46,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lab)
 DTSTART:20230124T104000
 DTEND:20230124T121000
-DTSTAMP:20230608T140920
-UID:ba5cf3b6-5e03-43c3-9863-cb1eb41ed884@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7d35b645-5ee6-4489-b51c-f98ffbc621a3@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 304\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -58,8 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lec)
 DTSTART:20230125T174000
 DTEND:20230125T191000
-DTSTAMP:20230608T140920
-UID:4655c585-52ee-4337-9ac0-963af3acb505@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:12d13d1d-4b34-4b60-b19f-191ae829acfb@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
@@ -73,8 +73,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lab)
 DTSTART:20230126T090000
 DTEND:20230126T103000
-DTSTAMP:20230608T140920
-UID:2ca32bad-f7df-47ea-a461-348751d0f0cd@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:65911553-645b-4909-af56-416f2c6f6e7e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
@@ -85,8 +85,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lab)
 DTSTART:20230126T104000
 DTEND:20230126T121000
-DTSTAMP:20230608T140920
-UID:067b85b9-fb75-407b-9fb7-80cb43da0077@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:d576617d-9907-49d9-b853-c6b812de3d40@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
@@ -97,8 +97,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for DS(lab) (lab)
 DTSTART:20230126T142000
 DTEND:20230126T155000
-DTSTAMP:20230608T140920
-UID:d8ac9960-4ea1-4650-a96f-bc5ddd915843@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:d083920d-614e-4183-aa3e-2aa72d1d74d8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
@@ -110,8 +110,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T104000
 DTEND:20230127T121000
-DTSTAMP:20230608T140920
-UID:1669270e-4149-4640-94a8-f0408d3811e0@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:2488fabc-d5da-4309-ad73-4a92afcc0810@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -124,8 +124,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T124000
 DTEND:20230127T141000
-DTSTAMP:20230608T140920
-UID:15bbd5ca-6e3a-4dc4-bf2d-d35027b4f451@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7a3c211c-8616-4a99-8f8f-3d9b6835b5c2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -138,8 +138,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lec)
 DTSTART:20230320T090000
 DTEND:20230320T103000
-DTSTAMP:20230608T140921
-UID:d1fab5cd-3f5d-4061-8c86-5fd563d18bf0@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:baea168e-5851-41a9-b62d-c52794ff4407@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Nikola Zlatanov\nType: lec\nGroup: 
@@ -150,8 +150,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lab)
 DTSTART:20230320T104000
 DTEND:20230320T121000
-DTSTAMP:20230608T140921
-UID:49a29151-c7a2-4399-897f-7798951ad081@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:bf6b1a53-bbd5-4f05-9524-e86e2068c0bb@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -162,8 +162,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lec)
 DTSTART:20230321T090000
 DTEND:20230321T103000
-DTSTAMP:20230608T140921
-UID:4959bc7b-e256-4158-98c2-63cb853fcab8@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:9ffd7d39-7e3f-4879-b19e-e8b76646c49c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -175,8 +175,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lab)
 DTSTART:20230321T104000
 DTEND:20230321T121000
-DTSTAMP:20230608T140921
-UID:0ab3ca9f-bf3e-4e5b-8e05-5fb4d753e79b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:514c777e-4cfd-4b34-9bbb-91a4783797e0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 303\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -187,8 +187,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lec)
 DTSTART:20230322T174000
 DTEND:20230322T191000
-DTSTAMP:20230608T140921
-UID:81fcc994-e1f7-4e8f-b0b5-57c6cffda24d@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:29ba8acf-75e9-4b15-a577-bf76df16c744@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
@@ -202,8 +202,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lab)
 DTSTART:20230323T090000
 DTEND:20230323T103000
-DTSTAMP:20230608T140921
-UID:68d372a2-fa9f-48b6-8ae3-4f417674283c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:edcfe9a6-df1d-4278-8ee3-ce52615f9593@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
@@ -214,8 +214,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lab)
 DTSTART:20230323T104000
 DTEND:20230323T121000
-DTSTAMP:20230608T140921
-UID:6d07cebc-5395-4801-9a12-00d8c497aa1f@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:ec472495-2d89-4620-ac5e-aaa633e5a58d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
@@ -226,8 +226,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for Data Science & Robotics (lec)
 DTSTART:20230323T124000
 DTEND:20230323T141000
-DTSTAMP:20230608T140921
-UID:7d609dec-00b8-4fa3-9c5e-87bd1592131d@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:6882d9b2-2759-496a-928e-0eb913b441cf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313 (week 1\, 2\, 7\, 8)\nInstructor: Mirko Farina\n
@@ -239,8 +239,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for DS (lab)
 DTSTART:20230323T142000
 DTEND:20230323T155000
-DTSTAMP:20230608T140921
-UID:88b5dec4-652a-466f-9649-5a79f4e14a30@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:12326562-e036-41c3-b04d-ed42d1ea57b6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
@@ -251,8 +251,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec)
 DTSTART:20230324T104000
 DTEND:20230324T121000
-DTSTAMP:20230608T140921
-UID:fed14b17-bdd8-4619-a138-a84e227638e5@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:db7e3697-43a0-4877-894c-121b1da6cc22@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -264,8 +264,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec)
 DTSTART:20230324T124000
 DTEND:20230324T141000
-DTSTAMP:20230608T140921
-UID:c33c322a-a836-4c65-a826-4e67f9cc5f4b@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:9dbc8865-6593-4a79-bf66-3be72a79bdcd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0

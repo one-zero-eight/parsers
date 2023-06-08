@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230123T091000
 DTEND:20230123T104000
-DTSTAMP:20230608T140920
-UID:60a24148-6199-4841-9136-f41ea09aa4c8@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:705f38bc-c657-4c00-8aa9-e18d21f279fd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -20,8 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230123T105000
 DTEND:20230123T122000
-DTSTAMP:20230608T140920
-UID:aa1f5b67-9f17-48a8-9377-f58468330629@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:c23ee8b5-80bd-4f07-bcb7-d4a933dd2845@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Fundamentals of Information Security (lec)
 DTSTART:20230124T105000
 DTEND:20230124T122000
-DTSTAMP:20230608T140920
-UID:5b0d1c6f-2349-4210-bf0c-007d05b92f86@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:4d15a488-0a99-4538-a178-253d5efed247@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: Shynnazar Seytnazarov\nType: lec\nG
@@ -45,8 +45,8 @@ BEGIN:VEVENT
 SUMMARY:Fundamentals of Information Security (lab)
 DTSTART:20230124T125000
 DTEND:20230124T142000
-DTSTAMP:20230608T140920
-UID:423a094c-4986-4617-aeb6-aba5c46d9779@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:974c3c4b-3482-46b0-8a89-d2a5ecc9bb6a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
@@ -58,8 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230125T105000
 DTEND:20230125T122000
-DTSTAMP:20230608T140920
-UID:40f074d0-7683-48bd-b41d-42935cd5a915@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:02b9e595-a4a2-4e09-b9fe-88c041999c61@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
@@ -70,8 +70,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230125T125000
 DTEND:20230125T142000
-DTSTAMP:20230608T140920
-UID:73b31845-5b2d-4951-8e69-e956071ccc82@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:efc4d5a8-5d9d-4afc-a166-47893896e0ab@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 303\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
@@ -82,8 +82,8 @@ BEGIN:VEVENT
 SUMMARY:Fundamentals of Information Security (lec)
 DTSTART:20230126T125000
 DTEND:20230126T142000
-DTSTAMP:20230608T140920
-UID:a84735fb-2fd6-433a-903a-289af655e350@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:e662693b-46f0-4d9e-822c-181149820d60@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: Shynnazar Seytnazarov\nType: lec\nG
@@ -95,8 +95,8 @@ BEGIN:VEVENT
 SUMMARY:Fundamentals of Information Security (lab)
 DTSTART:20230126T143000
 DTEND:20230126T160000
-DTSTAMP:20230608T140920
-UID:444880d6-f828-4e97-8a62-a502e137d730@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:a811edb9-bea7-42c0-ad74-cfc5f7f397e4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
@@ -108,8 +108,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230320T091000
 DTEND:20230320T104000
-DTSTAMP:20230608T140921
-UID:3fcc6356-61d7-4c8e-900a-de0ffee53cd8@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:aead43bc-2bea-44ef-badf-ff4b9c450927@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -120,8 +120,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230320T105000
 DTEND:20230320T122000
-DTSTAMP:20230608T140921
-UID:6b50d389-5936-4763-bc30-b4a688959f4c@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:d3a64fd6-c7cf-4694-b0e1-369eb8e54f7d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
@@ -132,8 +132,8 @@ BEGIN:VEVENT
 SUMMARY:Network and Cyber Security (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T140921
-UID:1e4bb714-bdb7-4330-ac0d-1302f1614ff1@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:2f3fe34b-e534-43f6-ac00-00b49d1c4a1e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 321\nInstructor: Niyaz Kashapov\nType: lec\nGroup: B
@@ -144,8 +144,8 @@ BEGIN:VEVENT
 SUMMARY:Network and Cyber Security (lab)
 DTSTART:20230321T125000
 DTEND:20230321T142000
-DTSTAMP:20230608T140921
-UID:a57fc0a3-3367-4343-be6c-1f5febc26ee2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:5d505cca-92c8-4c61-a0b4-9fce9c2b66ad@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
@@ -156,8 +156,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230322T105000
 DTEND:20230322T122000
-DTSTAMP:20230608T140921
-UID:6f6d9394-d931-47fc-9c9f-5ce0c726f131@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:fa6f0b9c-d06b-4f86-8497-5b0b77969420@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
@@ -168,8 +168,8 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230322T125000
 DTEND:20230322T142000
-DTSTAMP:20230608T140921
-UID:e286c248-d806-401e-89bd-3d8e436c10ae@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:6bd39463-5cc2-4eb9-bd3c-6eebff58ead6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 303\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
@@ -180,8 +180,8 @@ BEGIN:VEVENT
 SUMMARY:Network and Cyber Security (lec)
 DTSTART:20230323T105000
 DTEND:20230323T122000
-DTSTAMP:20230608T140921
-UID:82e0d2e3-a8e9-4bea-bcb4-a40a2e744e98@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:077ed23d-4653-4df2-9604-63273f1206c0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 303\nInstructor: Niyaz Kashapov\nType: lec\nGroup: B
@@ -192,8 +192,8 @@ BEGIN:VEVENT
 SUMMARY:Network and Cyber Security (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230608T140921
-UID:d0fba2b0-9a9b-4a8a-ac2d-2fb8c75ae946@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7224950f-f201-4bc8-8388-8f57a09c01ba@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 303\nInstructor: John Adewale Olatunde\nType: lab\nG

@@ -8,8 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230123T105000
 DTEND:20230123T122000
-DTSTAMP:20230608T140920
-UID:604274c5-bfc6-49de-ac8d-8e63a4ca49f7@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:b97b1cea-f810-462d-84c5-209e4ea1f2f9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
@@ -20,8 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230608T140920
-UID:780f5813-ec29-4042-a1ac-fad4a84053ee@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:461a9e8f-b484-4fb9-b1f5-cf126432a2cd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
@@ -32,8 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lab)
 DTSTART:20230124T105000
 DTEND:20230124T122000
-DTSTAMP:20230608T140920
-UID:e42c71e8-9cea-4a3e-9c93-cb1a47b6f10f@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:0add380d-2ab4-4a33-a773-a20a5ffbb408@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
@@ -45,8 +45,8 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lab)
 DTSTART:20230124T125000
 DTEND:20230124T142000
-DTSTAMP:20230608T140920
-UID:dcd9cc77-c996-46a5-a993-52bee1dfe379@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7d4c01f1-9ca2-4b04-9eda-9cc6ec337aa5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
@@ -58,8 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230126T105000
 DTEND:20230126T122000
-DTSTAMP:20230608T140920
-UID:6e4e3fbc-d844-42b8-8b11-da6b1345c198@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7e189f5b-fdfc-4db0-8f57-46330a5f4b27@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
@@ -71,8 +71,8 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230126T125000
 DTEND:20230126T142000
-DTSTAMP:20230608T140920
-UID:0ad6199b-fd46-4726-9e29-61d87e2995b2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:1ce00373-21f3-4571-8f60-c531168c75a6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
@@ -84,8 +84,8 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lec)
 DTSTART:20230126T143000
 DTEND:20230126T160000
-DTSTAMP:20230608T140920
-UID:9724c629-2f31-4f21-b1c2-02a6dea732c7@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:eed2615f-dd5c-465d-9a3f-df84667e7026@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
@@ -96,8 +96,8 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lec)
 DTSTART:20230126T161000
 DTEND:20230126T174000
-DTSTAMP:20230608T140920
-UID:f76e7427-3888-4658-afac-78eaeea0c873@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:57d479d8-a8cc-48cd-ad42-dc0f9c1fb8bc@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
@@ -108,8 +108,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230320T105000
 DTEND:20230320T122000
-DTSTAMP:20230608T140921
-UID:8fa424f5-9197-4423-9d91-63e386b70691@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:d161a1cc-fc7b-48ca-9a5a-18bb59a10520@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
@@ -120,8 +120,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230608T140921
-UID:a667026c-61a5-45db-b696-c9fe5e4da42a@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:59cec4d0-440b-4e05-be79-63ae54b940e0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
@@ -132,8 +132,8 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T140921
-UID:05dbee54-90e6-449e-88f8-f7a2c53ead40@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:f117d76c-03fe-454c-9d0b-61e15552eb50@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
@@ -144,8 +144,8 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lec)
 DTSTART:20230321T125000
 DTEND:20230321T142000
-DTSTAMP:20230608T140921
-UID:28570140-fd41-41fe-b74f-bdb65da0e30d@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:fce9a2ec-50a3-460d-87e0-44dd30f5de38@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
@@ -156,8 +156,8 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230323T105000
 DTEND:20230323T122000
-DTSTAMP:20230608T140921
-UID:96d0735c-5cac-453d-9c7b-f54945b422db@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:d8a165b2-c135-4f06-b9e5-bc857a452196@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lec\nGroup: B2
@@ -168,8 +168,8 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230608T140921
-UID:e841675a-230f-41f7-a24e-808252a7f1b2@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:54896181-10cc-40cc-9ae5-0c6b185ab72e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
@@ -180,8 +180,8 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lab)
 DTSTART:20230323T143000
 DTEND:20230323T160000
-DTSTAMP:20230608T140921
-UID:863425ee-84d2-432d-9e82-b62429282291@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:6c255771-0da3-424b-876e-9240fcdc97ab@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-
@@ -192,8 +192,8 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lab)
 DTSTART:20230323T161000
 DTEND:20230323T174000
-DTSTAMP:20230608T140921
-UID:78e0e78f-ce3d-4950-ba27-fb2c74edc5d6@innohassle.campus.innopolis.unive
+DTSTAMP:20230608T141409
+UID:7a6b36f3-dac3-4abf-9023-bfbe59fed93a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-

@@ -463,22 +463,22 @@ if __name__ == '__main__':
                     vevent['dtend'] = group_event.dtend.strftime("%Y%m%dT%H%M%S")
                     vevent.add('rrule', group_event.recurrence)
 
-                    calendar.add_component(vevent)
+                calendar.add_component(vevent)
 
-                    file_name = f"{group_name}.ics"
-                    file_path = course_path / file_name
+            file_name = f"{group_name}.ics"
+            file_path = course_path / file_name
 
-                    calendars["calendars"].append(
-                        {
-                            "name": group_name,
-                            "course": course_name,
-                            "file": file_path.relative_to(json_file.parent).as_posix()
-                        }
-                    )
+            calendars["calendars"].append(
+                {
+                    "name": group_name,
+                    "course": course_name,
+                    "file": file_path.relative_to(json_file.parent).as_posix()
+                }
+            )
 
-                    with open(file_path, 'wb') as f:
-                        f.write(calendar.to_ical())
+            with open(file_path, 'wb') as f:
+                f.write(calendar.to_ical())
 
-                    # create a new .json file with information about calendar
-                    with open(json_file, "w") as f:
-                        json.dump(calendars, f, indent=4)
+    # create a new .json file with information about calendars
+    with open(json_file, "w") as f:
+        json.dump(calendars, f, indent=4)
