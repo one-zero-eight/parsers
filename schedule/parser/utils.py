@@ -32,7 +32,7 @@ CURRENT_YEAR = datetime.datetime.now().year
 symbol_translation = str.maketrans(
     "АВЕКМНОРСТУХаср",
     "ABEKMHOPCTYXacp",
-    ' \n\t'
+   #  ' \n\t'
 )
 
 
