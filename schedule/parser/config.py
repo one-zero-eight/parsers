@@ -37,7 +37,7 @@ class AcademicParserConfig:
             'SATURDAY',
             'SUNDAY']
 
-    IGNORING_CLASSES = ["Elective courses on Physical Education"]
+    IGNORING_SUBJECTS = ["Elective courses on Physical Education"]
     CURRENT_YEAR = datetime.now().year
 
 
