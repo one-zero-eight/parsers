@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:362ce30c-fad5-4ce1-bf6a-246bdb2296e4@innohassle.ru
+UID:580dbec7-89e3-49cc-8e09-0040ce485f17@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:ec8b363e-3937-465a-84bb-7f150a3218a8@innohassle.ru
+UID:26a53731-2e4f-43af-abcb-a4ce438f8e76@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230606T175000
 DTEND:20230606T192000
-UID:2a67256d-8f60-4118-ab04-bdda6721f396@innohassle.ru
+UID:7e5d9b28-2688-4eb8-9501-e1deafa99f7f@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230606T193000
 DTEND:20230606T210000
-UID:6164c2b8-1754-4177-abf4-2e5800b7ece5@innohassle.ru
+UID:acebc2fd-5185-4175-a060-6eff966d4ad7@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:00fe3c01-7fd2-494e-8287-b4c848b2a13e@innohassle.ru
+UID:d78e5104-8da5-4e7b-9b05-4c87330d7e59@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230613T193000
 DTEND:20230613T210000
-UID:ca5ca5d5-e059-471b-b1a1-ee75a4b277c0@innohassle.ru
+UID:d6788d35-b9fa-46a9-a21b-55adc47d6250@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:5f94c42a-4168-453f-84cc-edff98e79f86@innohassle.ru
+UID:1313c08e-41c2-426b-9307-f5fd179aa183@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:da5a912f-1065-412d-ba06-d76161fc542f@innohassle.ru
+UID:c154a47b-9794-465a-b411-a3497582744c@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:d0eaf664-779b-4982-840f-47eee5e35e76@innohassle.ru
+UID:936ef3f2-0492-4c70-8886-9fdc50dbd85d@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230622T193000
 DTEND:20230622T210000
-UID:2d0a165a-355e-4a67-941f-d0ff5e076f41@innohassle.ru
+UID:a920c25c-a726-4a73-8f0e-a23692dfdafc@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -88,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:22c343a5-f4e1-437a-8b7e-7cf7721a5f6d@innohassle.ru
+UID:3870e44e-b299-440c-ad95-c594e125ae3e@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -96,7 +107,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:e0236ebc-c482-4e50-bccb-2fe0d5261dea@innohassle.ru
+UID:e8561450-cb02-4a16-af9a-3fe55a9a57f0@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -104,7 +116,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230629T175000
 DTEND:20230629T192000
-UID:1fe8fca6-92a7-47f5-92a7-b8942684a625@innohassle.ru
+UID:92a6b869-16ce-4982-bd87-d63454fd8545@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -112,7 +125,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230629T193000
 DTEND:20230629T210000
-UID:843c1bab-23b4-4d00-b961-124b7c769ca7@innohassle.ru
+UID:679aa3b9-46ae-4f4a-9a92-7ea9a15b46f1@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -120,7 +134,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:2ce33252-34bd-4d83-b851-68d80909bc86@innohassle.ru
+UID:33b5bb12-b622-4d32-830c-22849c95dc33@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -128,7 +143,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:80029fb6-edec-4bd4-b424-f2b55a90b538@innohassle.ru
+UID:1683db90-14d1-45e2-8794-3599f8a1db89@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -136,7 +152,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230713T175000
 DTEND:20230713T192000
-UID:2f5fe3f0-9b24-44fd-b3f8-26e71fae81eb@innohassle.ru
+UID:6deecac5-4134-4fb3-8a4b-0e855f63f988@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -144,7 +161,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230713T193000
 DTEND:20230713T210000
-UID:e90a86dd-29dd-4e8a-a137-6932bbdccbd0@innohassle.ru
+UID:abb9ff40-55d6-490a-852d-5e98ffcd8096@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -152,7 +170,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:10998a3c-62c1-4a69-a08a-67accae0d17b@innohassle.ru
+UID:56cc83ef-bcb3-40b7-a3be-d724af7b6bc6@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -160,7 +179,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230717T193000
 DTEND:20230717T210000
-UID:871cb079-e5ba-4bef-8970-7d29700c9e48@innohassle.ru
+UID:7797f4e7-d44a-4372-99f3-c1f14a70d079@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -168,7 +188,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230720T175000
 DTEND:20230720T192000
-UID:da3dbdef-a42d-4529-a227-f11e5e43213c@innohassle.ru
+UID:ae032362-dc81-4bc7-923e-1b70a1acc26f@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT
@@ -176,7 +197,8 @@ BEGIN:VEVENT
 SUMMARY:System Programming
 DTSTART:20230720T193000
 DTEND:20230720T210000
-UID:0b997136-245f-455d-bfa5-8b4e8a9981b5@innohassle.ru
+UID:fdab4bca-1712-4f99-8fa8-a6d323681a15@innohassle.ru
+CATEGORIES:System Programming
 DESCRIPTION:System Programming\nVladislav Shpilevoy\nonline
 LOCATION:online
 END:VEVENT

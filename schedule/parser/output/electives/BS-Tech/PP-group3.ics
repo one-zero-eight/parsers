@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230607T175000
 DTEND:20230607T192000
-UID:bd974f9b-b739-415a-8737-cb7706d4061b@innohassle.ru
+UID:7e2008e8-0c70-41a4-a1cf-ab243e0547e6@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230610T175000
 DTEND:20230610T192000
-UID:0ac9bb59-207b-4124-9d24-042a20ab43fa@innohassle.ru
+UID:8b8ae9de-bf2d-44f6-873a-74ac77bffe89@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230614T175000
 DTEND:20230614T192000
-UID:c2623bcd-4e86-4864-9cbe-9e14fd981bb4@innohassle.ru
+UID:9a93914c-6de9-499d-90ec-19c0fa2daa2f@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230617T175000
 DTEND:20230617T192000
-UID:12b4e4ef-8434-45bc-a38f-aa2b7a444486@innohassle.ru
+UID:56fe0816-d03d-4e48-96b1-0db0dbcb46b0@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230621T175000
 DTEND:20230621T192000
-UID:fd3e0f2c-0735-445c-bbe5-c847e43d7732@innohassle.ru
+UID:ba037c3c-d739-46d6-8bc8-30bce5593e8d@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230624T175000
 DTEND:20230624T192000
-UID:9cfe214b-49fd-4dc6-b5df-af882d00576b@innohassle.ru
+UID:0d0240d0-2ffd-46e2-9d8f-aa9582dec7f8@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230628T175000
 DTEND:20230628T192000
-UID:d81a4a40-5298-43f1-b1d7-8515f04dfc41@innohassle.ru
+UID:e1097545-c3e5-4611-a4e1-b0cfa63e2d96@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230701T175000
 DTEND:20230701T192000
-UID:1d586ef7-3d35-4dee-bf5d-52a2d02bada4@innohassle.ru
+UID:8e83718f-63f7-4c9e-8f98-b594d18c80e6@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230705T175000
 DTEND:20230705T192000
-UID:9eb2f2e9-5466-4288-a2b6-6fd619fbfaae@innohassle.ru
+UID:ac97800f-1240-4caa-ac7b-ca3a56ca7f7b@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230708T175000
 DTEND:20230708T192000
-UID:784e3f0a-82ec-465b-9e27-66fa4d4ef0d7@innohassle.ru
+UID:ec0c5f2d-334f-4321-8697-0546e68a2d76@innohassle.ru
+CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
 LOCATION:303
 END:VEVENT

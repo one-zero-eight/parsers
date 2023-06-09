@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230530T105000
 DTEND:20230530T122000
-UID:8d6883b9-be6f-4900-8c56-84b190049617@innohassle.ru
+UID:ec5f6bb4-a935-4d68-9ebd-1ee884c23789@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230530T125000
 DTEND:20230530T142000
-UID:158cd925-4014-4b64-a55d-799e6ca4729f@innohassle.ru
+UID:6c0c88cc-cd3c-459d-b39d-99d610eb24e4@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230601T105000
 DTEND:20230601T122000
-UID:b20c662d-c3a9-48d0-bec8-209679ac1d7f@innohassle.ru
+UID:baad20b7-a862-44ef-9f27-39d07a026c97@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230601T125000
 DTEND:20230601T142000
-UID:37721993-2be5-4aa4-9eb6-d7d7c31eda12@innohassle.ru
+UID:a1d7c15f-6ba5-453c-b905-a4a7621ab55a@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230613T105000
 DTEND:20230613T122000
-UID:252626d2-da70-4647-9a97-e35fd2178f72@innohassle.ru
+UID:c8d842c1-9b73-4ec8-b024-901b662c9fa2@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230613T125000
 DTEND:20230613T142000
-UID:24622740-d1bf-446c-a011-d39808c2b442@innohassle.ru
+UID:c5d71a2c-0b99-4602-84cb-f335d3829960@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230615T105000
 DTEND:20230615T122000
-UID:c2732b62-b58d-4765-b52d-923265069a29@innohassle.ru
+UID:fb9b219d-6c6f-4bfa-a1f7-16fa13968dba@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230615T125000
 DTEND:20230615T142000
-UID:603c7e84-40a0-4551-b288-ee5d918fabd0@innohassle.ru
+UID:db4b186f-b51a-424f-9635-583f69e841cb@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230620T105000
 DTEND:20230620T122000
-UID:4763e5ce-9e50-4c1e-a880-aa3f381672d2@innohassle.ru
+UID:071adb52-1ddc-4185-a80f-f1b63bbce0fb@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230620T125000
 DTEND:20230620T142000
-UID:402ca779-ed19-4210-b217-5751f4167c45@innohassle.ru
+UID:04b8bba3-47a0-4de8-85e5-e126bbcc3acb@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -88,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230627T105000
 DTEND:20230627T122000
-UID:396cb1fe-782e-45ac-9520-8f7f69190379@innohassle.ru
+UID:98ffc04f-dff0-4118-bc4e-e86165f8e3cd@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -96,7 +107,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230627T125000
 DTEND:20230627T142000
-UID:4ca1648e-4660-48a0-910a-1272a28d0444@innohassle.ru
+UID:ecbbfdbc-53ab-4e0c-a2a5-5e91cbf4d57b@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -104,7 +116,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230704T105000
 DTEND:20230704T122000
-UID:b7d5baab-ed1a-456d-ba9b-8b131eba123e@innohassle.ru
+UID:162b5059-051a-4d19-abcc-e168dc668ee4@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -112,7 +125,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230704T125000
 DTEND:20230704T142000
-UID:2a22aa9e-bef3-4721-964b-6f478e8812ec@innohassle.ru
+UID:4ad771a1-2ce4-47d9-961a-818a192fe7c6@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -120,7 +134,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230711T105000
 DTEND:20230711T122000
-UID:30a298fc-a178-4dbd-aabf-fc004a74ea4b@innohassle.ru
+UID:4c4b8efe-bb0e-423a-8418-e0da92624393@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -128,7 +143,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230711T125000
 DTEND:20230711T142000
-UID:9475f831-3900-46aa-9445-97dc6890ca7e@innohassle.ru
+UID:57a73faf-072f-44a9-b249-f465991519b3@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -136,7 +152,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230718T105000
 DTEND:20230718T122000
-UID:df0fdf4f-0d14-49a6-aa09-d49c0e6e6459@innohassle.ru
+UID:65262dee-686e-4eff-a22d-1dd84a7f4e22@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -144,7 +161,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230718T125000
 DTEND:20230718T142000
-UID:64d0d294-03d6-4fae-afb1-cafe691ea796@innohassle.ru
+UID:3682aada-3fe9-4f46-b11e-8804df58ba7f@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -152,7 +170,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230725T105000
 DTEND:20230725T122000
-UID:58fd2384-ea27-40f1-9892-76ad8ed231a0@innohassle.ru
+UID:727cdbad-1532-4c03-bc37-fb33da05325a@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT
@@ -160,7 +179,8 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230725T125000
 DTEND:20230725T142000
-UID:98631973-2f8b-415e-9bab-f5039480ed1f@innohassle.ru
+UID:29696c09-8831-4a2e-8c84-1e9010ae96e7@innohassle.ru
+CATEGORIES:DevOps Engineering (Advanced)
 DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
 LOCATION:312
 END:VEVENT

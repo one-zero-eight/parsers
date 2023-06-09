@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230123T091000
 DTEND:20230123T104000
-DTSTAMP:20230608T143735
-UID:2654bdac-602d-462c-b4e1-6b7439482fea@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:ce5127f4-4185-4aab-b53b-cbef0b93af07@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-DS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230123T105000
 DTEND:20230123T122000
-DTSTAMP:20230608T143735
-UID:1a3ab9be-f715-42d9-aea8-621b3f61bf7b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:7e7f3033-43ac-494e-842b-d3e8117d8014@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230608T143735
-UID:fbb1311b-8ed5-402c-8413-19b241df641a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:51543ec1-f2c5-4225-860c-1f67bf210528@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lab\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:300
@@ -44,10 +47,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230124T125000
 DTEND:20230124T142000
-DTSTAMP:20230608T143735
-UID:b263f4bd-3dee-4fb2-adbf-e2dde725146a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:6dda4831-789f-4796-94a6-40d9d045c457@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 316\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-DS\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:316
@@ -56,10 +60,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lab)
 DTSTART:20230125T105000
 DTEND:20230125T122000
-DTSTAMP:20230608T143735
-UID:b821cc5d-10c4-4b1f-84d1-c31a49356f4e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:bbe7f958-bbe5-4259-a9b5-e504caa78e17@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Mining
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : B20-DS\nSubject: Data Mining\nTime: 10:50 - 12:20
 LOCATION:303
@@ -68,10 +73,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T143000
 DTEND:20230127T160000
-DTSTAMP:20230608T143735
-UID:efd1d3f6-ffe2-42e2-8f81-ecf3f31fcc76@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a2e5aa38-c481-4709-912b-5c44de8443b0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Mining (lec) STARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining (lec) STARTS ON 3/02\nTime: 14:30 - 16:00
@@ -81,10 +87,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T161000
 DTEND:20230127T174000
-DTSTAMP:20230608T143735
-UID:289b3041-30fd-4afa-b19f-da25c13bebec@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:318707b7-bcd1-4651-b3c6-141642b7e32e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Mining (lec) STARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining (lec) STARTS ON 3/02\nTime: 16:10 - 17:40
@@ -94,10 +101,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230320T091000
 DTEND:20230320T104000
-DTSTAMP:20230608T143736
-UID:90ef231e-1c0c-49b4-9279-2ae873d2474b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:a87cc10d-09b6-409b-8dc5-4d4b89ff81df@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-DS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -106,10 +114,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230320T105000
 DTEND:20230320T122000
-DTSTAMP:20230608T143736
-UID:8f0cdb2a-1b70-4406-93d2-c428b50ddacd@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:0bd81b55-a194-440d-808c-71ba368111c5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -118,10 +127,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230608T143736
-UID:6ccf15a1-4354-45a3-a1b7-6dfaa2f8ad57@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:1dcb98fb-18e8-4e68-9c3e-faeb4cf32c99@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lab\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:300
@@ -130,10 +140,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T143736
-UID:160475bb-a1d3-466d-b92d-0071ffa575f3@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:822db247-effe-42e3-be4d-86104053a997@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -DS\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -142,10 +153,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230321T125000
 DTEND:20230321T142000
-DTSTAMP:20230608T143736
-UID:06368d52-b706-4f95-85b3-22ee5ef92aa9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:d5f1f897-1392-432c-9fb9-c9ff17355ed3@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 316\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-DS\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:316
@@ -154,10 +166,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lab)
 DTSTART:20230321T143000
 DTEND:20230321T160000
-DTSTAMP:20230608T143736
-UID:71dee9be-a0cc-4218-82d9-f0aa5fc3368a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:0ee23300-b8a2-404a-909e-c55d03422128@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 304\nInstructor: Firas Jolha\nType: lab\nGroup: B20-
  DS\nSubject: Introduction to Big Data\nTime: 14:30 - 16:00
 LOCATION:304
@@ -166,10 +179,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lab)
 DTSTART:20230322T105000
 DTEND:20230322T122000
-DTSTAMP:20230608T143736
-UID:0ad5ef8d-cf08-405c-8b4a-5e3e204a8ae5@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:c6d05341-fd6a-4ef9-acad-d92bdff8baa7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Mining
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : B20-DS\nSubject: Data Mining\nTime: 10:50 - 12:20
 LOCATION:303
@@ -178,10 +192,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lec)
 DTSTART:20230323T105000
 DTEND:20230323T122000
-DTSTAMP:20230608T143736
-UID:4e2927fa-44c7-4bee-b85e-b370ac39888b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:00c74038-23ed-462f-bed1-5bd4a80ea85a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -DS\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -190,10 +205,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lab)
 DTSTART:20230323T143000
 DTEND:20230323T160000
-DTSTAMP:20230608T143736
-UID:3217a94a-e98e-4bc9-b5f6-1d52400a9879@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:27a5f889-4731-497e-bc6b-6727e1bb8674@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 304 (ROOM #102 ON 20/04)\nInstructor: Firas Jolha\nT
  ype: lab\nGroup: B20-DS\nSubject: Introduction to Big Data\nTime: 14:30 - 
  16:00
@@ -203,10 +219,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lec)
 DTSTART:20230324T143000
 DTEND:20230324T160000
-DTSTAMP:20230608T143736
-UID:314f6f25-ef00-48a2-8c06-1c5471c48af3@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:070362ca-ecf1-43e9-a9bc-025adc77de43@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Mining
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining\nTime: 14:30 - 16:00
@@ -216,10 +233,11 @@ BEGIN:VEVENT
 SUMMARY:Data Mining (lec)
 DTSTART:20230324T161000
 DTEND:20230324T174000
-DTSTAMP:20230608T143736
-UID:c2af4fd8-1eb1-42ef-98f2-df3295cd9cd2@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:f045870f-72ff-4dda-968e-55ac84bedcaf@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Mining
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining\nTime: 16:10 - 17:40

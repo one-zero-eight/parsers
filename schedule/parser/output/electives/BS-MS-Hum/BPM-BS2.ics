@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230606T125000
 DTEND:20230606T142000
-UID:d87f9a47-f47c-44aa-a5ca-5ff5b512bd72@innohassle.ru
+UID:d8fbe260-f764-44df-b13d-145b822bc6c9@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -17,7 +18,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230608T161000
 DTEND:20230608T174000
-UID:fc29f50b-5048-46f3-b29d-f21633bf74bd@innohassle.ru
+UID:aa0079ca-030e-4843-86e3-714f0f842d41@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -26,7 +28,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230608T175000
 DTEND:20230608T192000
-UID:1ef27828-fe51-494d-9408-14fa73c6ad48@innohassle.ru
+UID:c6596858-40ba-4aba-bbf4-96a94d2ce9e2@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -35,7 +38,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230614T091000
 DTEND:20230614T104000
-UID:305ecfe8-5b8f-4206-93f1-51eb51b97a66@innohassle.ru
+UID:deee3d62-ef10-4a0e-b6c8-40cf4c44b95a@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -44,7 +48,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:dbd26915-fab3-46ec-9ec4-01f23f78ac16@innohassle.ru
+UID:931aa534-cee7-483d-803d-6631324aa989@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -53,7 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:ba12b743-c49d-4517-bc1a-1c09488706f3@innohassle.ru
+UID:83fe02f2-b184-4c4d-9667-b8b297b519af@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -62,7 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230623T105000
 DTEND:20230623T122000
-UID:a12117f4-d6b4-434c-bbbd-7679e8d54560@innohassle.ru
+UID:ad2565a2-6ad5-4780-92fe-fd7387586af1@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -71,7 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230629T091000
 DTEND:20230629T104000
-UID:2879fb43-4d9d-4f6d-981e-32cfa5dd21b4@innohassle.ru
+UID:7118ca70-7914-41c0-a657-059cd3dfbc6d@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -80,7 +88,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230629T105000
 DTEND:20230629T122000
-UID:2af2391a-df6b-4028-8423-cd1fbc01a601@innohassle.ru
+UID:20ba73cc-4dc0-45c2-adff-f1b1bd765707@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -89,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:b9c2695d-d460-4347-8b29-e363d40f9a5c@innohassle.ru
+UID:d07d035e-30fe-4cc2-a5b6-de05e8a694ad@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:300
@@ -98,7 +108,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230706T161000
 DTEND:20230706T174000
-UID:55279eaa-fbaa-4799-8a9f-23eb1488e8e0@innohassle.ru
+UID:72d98a88-3c3d-4d21-bb65-672683cbd466@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:300
@@ -107,7 +118,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230706T175000
 DTEND:20230706T192000
-UID:6e9358e5-56f6-410e-a3bc-0d2e4aee3ef6@innohassle.ru
+UID:7ead0b60-0e7c-44ea-acaf-9d3fa080cc22@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:300
@@ -116,7 +128,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230712T091000
 DTEND:20230712T104000
-UID:970e675d-a497-46ef-b914-60d33f793eab@innohassle.ru
+UID:9ce1e802-e31d-4d47-bf7a-e7d96bf17211@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online
@@ -125,7 +138,8 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230712T105000
 DTEND:20230712T122000
-UID:0f888b8b-a449-45f7-9e45-c1f7c1369096@innohassle.ru
+UID:b08cde7a-e9b7-4b98-9c54-6ae52ded89f9@innohassle.ru
+CATEGORIES:Basics of Product Management
 DESCRIPTION:Basics of Product Management\nBS2\nIuliia Metelskaia\noffline/
  online
 LOCATION:online

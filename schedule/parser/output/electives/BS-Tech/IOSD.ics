@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230610T161000
 DTEND:20230610T174000
-UID:dfef6063-850f-4efd-a046-7c5ef82f4f5a@innohassle.ru
+UID:81c8e17d-50b7-422e-880e-9604bf29cd05@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230610T175000
 DTEND:20230610T192000
-UID:744e77e2-8261-42d8-8b7b-ef77899947bd@innohassle.ru
+UID:a4b12129-5f98-4fe5-abfd-8a2a5c1e97e9@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230617T161000
 DTEND:20230617T174000
-UID:79a193aa-0480-4a6f-a27d-c6d4d97ac036@innohassle.ru
+UID:a4ccbd29-ff84-4773-aa25-2501b64fc80c@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230617T175000
 DTEND:20230617T192000
-UID:ed33a5f4-e236-4a80-9bce-342daf9d2160@innohassle.ru
+UID:798ccd5d-f58e-43e2-b217-2bad3ada336a@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:f3bbf1da-eb8b-40bd-a286-8449ccab27c7@innohassle.ru
+UID:263fa5a5-33f7-41fa-948c-da1fd1a51647@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:5a99df60-111b-4f04-903f-1efdf5e09ed5@innohassle.ru
+UID:da3f579d-fb2b-4d05-afa7-1e096a7d90bf@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:6e66636f-bad9-4576-aba9-6290dd11a730@innohassle.ru
+UID:1d851938-1a2c-4b36-b5de-485e462e4795@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:776f669e-2c91-4027-a857-e5db80d22587@innohassle.ru
+UID:bf1032fb-9524-4bb3-9996-0142e572cb62@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230628T175000
 DTEND:20230628T192000
-UID:a6c353e0-1db3-45ba-be7c-9b84d3b577d2@innohassle.ru
+UID:9e861f45-f459-4672-be4f-84eb786e870e@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:318
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230628T193000
 DTEND:20230628T210000
-UID:e52b4730-48fa-4e4d-bae7-be11b0df4056@innohassle.ru
+UID:cdcda675-5aef-4712-8aae-f9b1b7d65424@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:318
 END:VEVENT
@@ -88,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:77e1289e-9725-4c6d-bc67-49d3166ce3cd@innohassle.ru
+UID:80950003-d443-4529-a16c-dfeb1e1a38a5@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -96,7 +107,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230703T193000
 DTEND:20230703T210000
-UID:8981e74e-ac5f-4c58-8a0b-682dd8d05451@innohassle.ru
+UID:ccfcec97-9109-4f61-b763-67d22c492dba@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -104,7 +116,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230705T175000
 DTEND:20230705T192000
-UID:13c0112f-e372-4b55-8046-3e84efa82728@innohassle.ru
+UID:6cae1185-340b-42d9-8553-5e1bccc519bf@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:318
 END:VEVENT
@@ -112,7 +125,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230705T193000
 DTEND:20230705T210000
-UID:df29679c-a72f-4128-a5af-4937c05d05ca@innohassle.ru
+UID:125cad0b-8edd-445e-81f2-c40efa4ab118@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:318
 END:VEVENT
@@ -120,7 +134,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:a793b067-6cd5-4cd7-af26-95942d85b23a@innohassle.ru
+UID:f5d935b3-3e12-4e27-8f38-d90f3074d84b@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -128,7 +143,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:7331404c-e691-4655-b415-298656f16c76@innohassle.ru
+UID:8aa2db3b-e8f3-41c5-b055-6f2b0c01b765@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:312
 END:VEVENT
@@ -136,7 +152,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230715T161000
 DTEND:20230715T174000
-UID:915de78b-9609-48d3-9f4d-8c1b1450539e@innohassle.ru
+UID:1f4550f6-1049-4a8a-b00c-5ac52e908320@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -144,7 +161,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230715T175000
 DTEND:20230715T192000
-UID:b62daed5-c746-4f99-bebb-90422e89c983@innohassle.ru
+UID:b07a623e-c8dd-4215-a13e-d3195cf6d939@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -152,7 +170,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230722T161000
 DTEND:20230722T174000
-UID:77108a15-823c-4e11-b854-6e31657525ec@innohassle.ru
+UID:89c6a961-4005-4599-a1f0-5ecc1519ae10@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT
@@ -160,7 +179,8 @@ BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
 DTSTART:20230722T175000
 DTEND:20230722T192000
-UID:6da4b3b7-45dd-40c0-ba4d-059811e90d84@innohassle.ru
+UID:d3230d7c-91b2-4750-a739-f042393d830e@innohassle.ru
+CATEGORIES:iOS Development with Swift
 DESCRIPTION:iOS Development with Swift\nRozaliya Amirova\noffline
 LOCATION:314
 END:VEVENT

@@ -9,10 +9,11 @@ SUMMARY:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law (le
  c)
 DTSTART:20230124T104000
 DTEND:20230124T121000
-DTSTAMP:20230608T143735
-UID:8aa94cee-e719-4291-8e64-070f674f17e0@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:3392708b-3812-4038-a195-e5e89c65b35f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lec\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 10:40 - 12:10
@@ -23,10 +24,11 @@ SUMMARY:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law (la
  b)
 DTSTART:20230124T124000
 DTEND:20230124T141000
-DTSTAMP:20230608T143735
-UID:c6c4f49f-67da-4090-ba23-94126e76c901@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f2ac01d9-0874-4b17-a078-2f88c55f9d9d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lab\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 12:40 - 14:10
@@ -36,10 +38,11 @@ BEGIN:VEVENT
 SUMMARY:CTO Toolkit: Quality\, Process\, and Team (lec)
 DTSTART:20230125T090000
 DTEND:20230125T103000
-DTSTAMP:20230608T143735
-UID:09896e70-201d-4fff-b9c8-3ca9bd192a3d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:94397623-64dd-4849-b748-1ce28904a73e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
 DESCRIPTION:Location: ONLINE\nInstructor: Alexey Mustafin\nType: lec\nGrou
  p: M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 09
  :00 - 10:30
@@ -49,10 +52,11 @@ BEGIN:VEVENT
 SUMMARY:CTO Toolkit: Quality\, Process\, and Team (lab)
 DTSTART:20230127T090000
 DTEND:20230127T103000
-DTSTAMP:20230608T143735
-UID:f1713521-ebb2-4cc5-9eb1-9c554ed5db5f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:7425f21f-d4dc-4210-ae78-631dbbafb8f2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
 DESCRIPTION:Location: 312\nInstructor: Ahmed Elbatanony\nType: lab\nGroup:
   M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 09:0
  0 - 10:30
@@ -62,10 +66,11 @@ BEGIN:VEVENT
 SUMMARY:Marketing and Sales for IT Business (lec)
 DTSTART:20230127T104000
 DTEND:20230127T121000
-DTSTAMP:20230608T143735
-UID:d053c6ed-a66d-46d7-ba64-797c2e0a8f31@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f492fb2d-6a4a-400c-9f0f-7f76e78468e4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Marketing and Sales for IT Business
 DESCRIPTION:Location: ONLINE (STARTS AT 11am)\nInstructor: Konstantin Anis
  imov\nType: lec\nGroup: M22-TE-01\nSubject: Marketing and Sales for IT Bus
  iness\nTime: 10:40 - 12:10
@@ -76,10 +81,11 @@ SUMMARY:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law (le
  c)
 DTSTART:20230321T104000
 DTEND:20230321T121000
-DTSTAMP:20230608T143736
-UID:50a0bec9-95bf-452a-ba80-b324c7464aa3@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:705ee3d4-ff9e-4e5a-9ca3-5f5b7701186d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lec\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 10:40 - 12:10
@@ -90,10 +96,11 @@ SUMMARY:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law (la
  b)
 DTSTART:20230321T124000
 DTEND:20230321T141000
-DTSTAMP:20230608T143736
-UID:ecab674c-e526-42e5-a9b3-781448d8274b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:7fbb011e-35a7-430f-bd02-21b1e2582113@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lab\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 12:40 - 14:10
@@ -103,10 +110,11 @@ BEGIN:VEVENT
 SUMMARY:CTO Toolkit: Quality\, Process\, and Team (lec)
 DTSTART:20230321T160000
 DTEND:20230321T173000
-DTSTAMP:20230608T143736
-UID:c2968329-924c-4ce7-a35e-43152852de1a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:14043068-9595-4302-b0a9-19624ad5e9c3@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
 DESCRIPTION:Location: CTO Toolkit: Quality\, Process\, and Team (lec)\nIns
  tructor: CTO Toolkit: Quality\, Process\, and Team (lec)\nType: lec\nGroup
  : M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 16:
@@ -117,10 +125,11 @@ BEGIN:VEVENT
 SUMMARY:Marketing and Sales for IT Business (lec)
 DTSTART:20230324T104000
 DTEND:20230324T121000
-DTSTAMP:20230608T143736
-UID:79d573b4-9bc9-4c69-b991-f17d3bc9bffe@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:a917b783-b0e3-4517-b96a-f1fbd1a7103d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Marketing and Sales for IT Business
 DESCRIPTION:Location: ONLINE (STARTS AT 11am)\nInstructor: Konstantin Anis
  imov\nType: lec\nGroup: M22-TE-01\nSubject: Marketing and Sales for IT Bus
  iness\nTime: 10:40 - 12:10
@@ -130,10 +139,11 @@ BEGIN:VEVENT
 SUMMARY:CTO Toolkit: Quality\, Process\, and Team (lab)
 DTSTART:20230324T160000
 DTEND:20230324T173000
-DTSTAMP:20230608T143736
-UID:bf3b7dd1-88b1-4f3d-859d-0e645a9b2b13@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:30d91fb5-4df2-49ea-a2de-46bb51ddd45a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
 DESCRIPTION:Location: 103\nInstructor: Ahmed Elbatanony\nType: lab\nGroup:
   M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 16:0
  0 - 17:30
@@ -143,10 +153,11 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking(lab) (lab)
 DTSTART:20230607T104000
 DTEND:20230607T121000
-DTSTAMP:20230608T143737
-UID:013f25c2-4b9e-4e59-9fce-185700a00341@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:38cf7d3b-0471-4c84-9d1b-074080e47d89@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Venture Capital and Growth Hacking(lab)
 DESCRIPTION:Location: 321 (STARTS ON 14/06)\nInstructor: Sinan Ibrahim\nTy
  pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking(lab
  )\nTime: 10:40 - 12:10
@@ -156,10 +167,11 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking(lab) (lab)
 DTSTART:20230607T124000
 DTEND:20230607T141000
-DTSTAMP:20230608T143737
-UID:ba5f118d-f2db-4b24-a4b6-8a1e40911fed@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:d39e547e-a815-46ee-93a0-0e6453957583@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Venture Capital and Growth Hacking(lab)
 DESCRIPTION:Location: 321 (STARTS ON 14/06)\nInstructor: Sinan Ibrahim\nTy
  pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking(lab
  )\nTime: 12:40 - 14:10
@@ -169,10 +181,11 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking(lec) (lec)
 DTSTART:20230610T160000
 DTEND:20230610T173000
-DTSTAMP:20230608T143737
-UID:12aceb21-883c-4b52-91b8-50e8bf7a34c5@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:59c28328-5864-4d73-8163-6b279b73c9e4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Venture Capital and Growth Hacking(lec)
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
  ure Capital and Growth Hacking(lec)\nTime: 16:00 - 17:30
@@ -182,10 +195,11 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking(lec) (lec)
 DTSTART:20230610T174000
 DTEND:20230610T191000
-DTSTAMP:20230608T143737
-UID:3d0e7838-45a5-44f7-bcbe-d13226a2d707@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:1ecbf3ea-0a96-4dcb-b26e-802f4a1eac20@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Venture Capital and Growth Hacking(lec)
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
  ure Capital and Growth Hacking(lec)\nTime: 17:40 - 19:10

@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230123T092000
 DTEND:20230123T105000
-DTSTAMP:20230608T143735
-UID:b1e5667f-12e6-4568-96ff-8fbdfd4c0843@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:b927a594-1289-4d63-ad06-14fe43f37bb5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -SD-03\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230123T130000
 DTEND:20230123T143000
-DTSTAMP:20230608T143735
-UID:25830ac1-4ef7-4c5e-a15f-e15b3dfe36a0@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:50603ecd-a2aa-4de6-8298-1a889174ac66@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: 318\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-SD-03\nSubject: Introduction to Machine Learning\nTime: 13:00 - 14:30
 LOCATION:318
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (lec)
 DTSTART:20230124T110000
 DTEND:20230124T123000
-DTSTAMP:20230608T143735
-UID:d8294f35-a2eb-4de5-aba1-9a8f74c064e5@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a8c53012-7865-4264-bd12-422c4639dc04@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-SD-03\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -44,10 +47,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (tut)
 DTSTART:20230124T130000
 DTEND:20230124T143000
-DTSTAMP:20230608T143735
-UID:792a81ae-47e1-4d80-a215-98ca0c61c171@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:7aaee8ed-9f0c-41b8-b341-3b9301aaec5c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  SD-03\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -56,10 +60,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (lab)
 DTSTART:20230124T144000
 DTEND:20230124T161000
-DTSTAMP:20230608T143735
-UID:18e614ea-3ce0-4c25-a494-1442f3b4cb5d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:bec0daff-06b6-4300-8c13-a09761fa4525@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: 317\nInstructor: Gerald B. Imbugwa\nType: lab\nGroup
  : B21-SD-03\nSubject: Databases\nTime: 14:40 - 16:10
 LOCATION:317
@@ -68,10 +73,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (lec)
 DTSTART:20230125T110000
 DTEND:20230125T123000
-DTSTAMP:20230608T143735
-UID:f228c1be-60cf-45c4-a338-0ca39c3ccfac@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:53fa898d-75f3-4493-a352-53dfa6ddded6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-SD-03\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -80,10 +86,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (tut)
 DTSTART:20230125T130000
 DTEND:20230125T143000
-DTSTAMP:20230608T143735
-UID:cc173636-e8cc-419b-ac4a-d3a030cc1e8f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a2851d6c-8026-41ec-9d75-989a4178bea4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: 105\nInstructor: Artem Burmyakov\nType: tut\nGroup: 
  B21-SD-03\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105
@@ -92,10 +99,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (lab)
 DTSTART:20230125T144000
 DTEND:20230125T161000
-DTSTAMP:20230608T143735
-UID:c825dc1a-10f6-42a5-9bfd-d664490efe25@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:9207b5d2-9e33-4e0a-adbb-b14a68276b20@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: 101\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-SD-03\nSubject: Networks\nTime: 14:40 - 16:10
 LOCATION:101
@@ -104,10 +112,11 @@ BEGIN:VEVENT
 SUMMARY:System and Network Administration (lec)
 DTSTART:20230127T092000
 DTEND:20230127T105000
-DTSTAMP:20230608T143735
-UID:36babd86-a053-4e75-8975-5e6a71041384@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:1ca702ef-be54-4638-ab59-b90bf3ee54f8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:System and Network Administration
 DESCRIPTION:Location: ONLINE\nInstructor: Kirill Saltanov\nType: lec\nGrou
  p: B21-SD-03\nSubject: System and Network Administration\nTime: 09:20 - 10
  :50
@@ -117,10 +126,11 @@ BEGIN:VEVENT
 SUMMARY:System and Network Administration (lab)
 DTSTART:20230127T162000
 DTEND:20230127T175000
-DTSTAMP:20230608T143735
-UID:df45217f-b0e6-4c6b-aae6-b79ad0ef6d2b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:8ff8766f-13a3-4ad0-81ce-e491eea5d254@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:System and Network Administration
 DESCRIPTION:Location: 101\nInstructor: Awwal Ishiaku\nType: lab\nGroup: B2
  1-SD-03\nSubject: System and Network Administration\nTime: 16:20 - 17:50
 LOCATION:101
@@ -129,10 +139,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230320T092000
 DTEND:20230320T105000
-DTSTAMP:20230608T143736
-UID:a5b58303-a284-4dfb-9f0a-df6ef95a79f9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:5c24db3b-1f40-476e-86c7-ce26307fc9b1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -SD-03\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -141,10 +152,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230320T130000
 DTEND:20230320T143000
-DTSTAMP:20230608T143736
-UID:29d1017b-d3b2-41f1-8455-0d0b6dff1a37@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:44554a2a-47f3-4227-9358-d4463786ec66@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: 318\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-SD-03\nSubject: Introduction to Machine Learning\nTime: 13:00 - 14:30
 LOCATION:318
@@ -153,10 +165,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (lec)
 DTSTART:20230321T110000
 DTEND:20230321T123000
-DTSTAMP:20230608T143736
-UID:003c8909-0bb7-4aca-85fc-1983c6773b7b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:e6f2814d-5187-44d5-a494-b4b857859b9b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-SD-03\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -165,10 +178,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (tut)
 DTSTART:20230321T130000
 DTEND:20230321T143000
-DTSTAMP:20230608T143736
-UID:25b85cf7-4341-47b7-a12f-6da32d89b3ee@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:d6fddcf7-8266-4143-ba25-03f4cb769074@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  SD-03\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -177,10 +191,11 @@ BEGIN:VEVENT
 SUMMARY:Databases (lab)
 DTSTART:20230321T144000
 DTEND:20230321T161000
-DTSTAMP:20230608T143736
-UID:71d8ff03-c3dd-437e-a2c0-a424a246af80@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:26fbf6a4-5bb4-4165-8a69-1f440249b820@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Databases
 DESCRIPTION:Location: 317\nInstructor: Gerald B. Imbugwa\nType: lab\nGroup
  : B21-SD-03\nSubject: Databases\nTime: 14:40 - 16:10
 LOCATION:317
@@ -189,10 +204,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (lec)
 DTSTART:20230322T110000
 DTEND:20230322T123000
-DTSTAMP:20230608T143736
-UID:b5a86880-725d-44ca-aa7a-fd896fa4283c@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:b8313a0d-8bcb-49c0-ba5d-5b0846413764@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-SD-03\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -201,10 +217,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (tut)
 DTSTART:20230322T130000
 DTEND:20230322T143000
-DTSTAMP:20230608T143736
-UID:9908d85a-81c1-4624-ad07-2d0c3a055deb@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:7b738a65-8975-44dd-aaf4-73ea729e9472@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: 105 (Room 106 on 19/04)\nInstructor: Artem Burmyakov
  \nType: tut\nGroup: B21-SD-03\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105 (Room 106 on 19/04)
@@ -213,10 +230,11 @@ BEGIN:VEVENT
 SUMMARY:Networks (lab)
 DTSTART:20230322T144000
 DTEND:20230322T161000
-DTSTAMP:20230608T143736
-UID:be278176-d3b1-4c4e-94ec-c7d5ba3e300d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:00ff6786-829c-4940-937d-82355204cbfd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Networks
 DESCRIPTION:Location: 101\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-SD-03\nSubject: Networks\nTime: 14:40 - 16:10
 LOCATION:101
@@ -225,10 +243,11 @@ BEGIN:VEVENT
 SUMMARY:Distributed and Network Programming (lec)
 DTSTART:20230323T110000
 DTEND:20230323T123000
-DTSTAMP:20230608T143736
-UID:a072d1ee-da78-4829-ba88-5aae34276b5f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:8e728fb9-b3aa-43ef-96ce-71017880a1ca@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Distributed and Network Programming
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Shynnazar Seytn
  azarov\nType: lec\nGroup: B21-SD-03\nSubject: Distributed and Network Prog
  ramming\nTime: 11:00 - 12:30
@@ -238,10 +257,11 @@ BEGIN:VEVENT
 SUMMARY:Distributed and Network Programming(lab) (lab)
 DTSTART:20230323T130000
 DTEND:20230323T143000
-DTSTAMP:20230608T143736
-UID:59c9d4f3-e532-4e28-a95b-8ac8c5f78765@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:755181ed-2ed7-4522-9123-541ce60fc77b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Distributed and Network Programming(lab)
 DESCRIPTION:Location: 316\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-SD-03\nSubject: Distributed and Network Programming(lab)\nTime: 13:00 -
   14:30
@@ -251,10 +271,11 @@ BEGIN:VEVENT
 SUMMARY:System and Network Administration (lec)
 DTSTART:20230324T092000
 DTEND:20230324T105000
-DTSTAMP:20230608T143736
-UID:c21c5847-2e4a-49a0-9f4c-15b1fab99299@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:1c6f8a53-0e6d-40b5-a672-eec521dd54b8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:System and Network Administration
 DESCRIPTION:Location: ONLINE\nInstructor: Kirill Saltanov\nType: lec\nGrou
  p: B21-SD-03\nSubject: System and Network Administration\nTime: 09:20 - 10
  :50
@@ -264,10 +285,11 @@ BEGIN:VEVENT
 SUMMARY:Distributed and Network Programming (lec)
 DTSTART:20230324T110000
 DTEND:20230324T123000
-DTSTAMP:20230608T143736
-UID:3012f8da-5d42-4173-a326-f32b9ffa2b72@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:42c21aa3-1312-4aa9-b6fe-3f8dd3bdda40@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Distributed and Network Programming
 DESCRIPTION:Location: 105 (room 106 on 21/04)\nInstructor: Shynnazar Seytn
  azarov\nType: lec\nGroup: B21-SD-03\nSubject: Distributed and Network Prog
  ramming\nTime: 11:00 - 12:30
@@ -277,10 +299,11 @@ BEGIN:VEVENT
 SUMMARY:Distributed and Network Programming(lab) (lab)
 DTSTART:20230324T130000
 DTEND:20230324T143000
-DTSTAMP:20230608T143736
-UID:e2b857ad-e39c-45f8-9bbd-9af05f6ac491@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:82b5e2bb-dc7f-4176-b62e-3839994169e6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Distributed and Network Programming(lab)
 DESCRIPTION:Location: 312\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-SD-03\nSubject: Distributed and Network Programming(lab)\nTime: 13:00 -
   14:30
@@ -290,10 +313,11 @@ BEGIN:VEVENT
 SUMMARY:System and Network Administration (lab)
 DTSTART:20230324T162000
 DTEND:20230324T175000
-DTSTAMP:20230608T143736
-UID:859f86d6-80f6-4eb5-a6db-04d506013119@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:9b769635-190d-4a1d-be19-4b45d5a34347@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:System and Network Administration
 DESCRIPTION:Location: 101\nInstructor: Awwal Ishiaku\nType: lab\nGroup: B2
  1-SD-03\nSubject: System and Network Administration\nTime: 16:20 - 17:50
 LOCATION:101
@@ -302,10 +326,11 @@ BEGIN:VEVENT
 SUMMARY:Capstone Project (lec)
 DTSTART:20230606T110000
 DTEND:20230606T123000
-DTSTAMP:20230608T143737
-UID:19cf7168-e5c6-4937-acce-3570f5c487aa@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:03fee158-f666-4bb1-95ff-e8b609015897@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Capstone Project
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-SD-03\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30
@@ -315,9 +340,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T144000
 DTEND:20230613T161000
-DTSTAMP:20230608T143737
-UID:11f99881-92bc-45a2-b5a8-d5dabd6d6124@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:3b91f410-da06-4a37-a1d6-141e9d2e2831@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-SD-03\nSubject: Life Safety\nTime: 14:40 - 16:10
 LOCATION:108
@@ -326,9 +352,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T162000
 DTEND:20230613T175000
-DTSTAMP:20230608T143737
-UID:284dd49e-6ab5-443a-8c24-3f6ddc01a5a6@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:881bfb26-5b4b-49db-acfb-f5a1c2e39768@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-SD-03\nSubject: Life Safety\nTime: 16:20 - 17:50
 LOCATION:108
@@ -337,9 +364,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T144000
 DTEND:20230614T161000
-DTSTAMP:20230608T143737
-UID:a00904d9-e47e-4117-90f2-da471d3fe517@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:f59e0dc3-9f0b-4a57-98a6-a23c6152553e@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-SD-03\nSubject: Life Safety\nTime: 14:40 - 16:10
 LOCATION:108
@@ -348,9 +376,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T162000
 DTEND:20230614T175000
-DTSTAMP:20230608T143737
-UID:8c3198ee-86d4-4ba9-89cb-cf6ac88e8cef@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:99105432-2c94-4321-b5e6-7b3a01740e38@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-SD-03\nSubject: Life Safety\nTime: 16:20 - 17:50
 LOCATION:108
@@ -359,9 +388,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230615T130000
 DTEND:20230615T143000
-DTSTAMP:20230608T143737
-UID:d18f750f-6423-4c2c-bd8c-9d837591f519@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:2529758d-4b81-4209-91b9-bbb0e76765c1@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-SD-03\nSubject: Life Safety\nTime: 13:00 - 14:30
 LOCATION:108

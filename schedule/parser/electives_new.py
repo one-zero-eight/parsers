@@ -256,6 +256,7 @@ def convert_separation(
             vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
             vevent['location'] = event.location
             vevent['uid'] = str(uuid4()) + "@innohassle.ru"
+            vevent['categories'] = elective.name
             desc = f"{elective.name}"
 
             if group is not None:

@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230616T161000
 DTEND:20230616T174000
-UID:59e5cf3e-ae7d-438c-97f3-5b958bfca807@innohassle.ru
+UID:a0366cc8-9742-4559-84f9-bcde15ff27ea@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -17,7 +18,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230616T175000
 DTEND:20230616T192000
-UID:03a897cd-a58d-4b7a-be9c-c88e7ec92e9c@innohassle.ru
+UID:d7d70748-7cf5-4362-b592-1cdc47e76544@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -26,7 +28,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230616T193000
 DTEND:20230616T210000
-UID:cf41ea65-33a7-45f8-8566-bde306f94f51@innohassle.ru
+UID:f57d852f-2bfa-4560-aa7a-c1ca79a28b33@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -35,7 +38,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230617T091000
 DTEND:20230617T104000
-UID:a1a13295-4408-4057-95c0-7d633cc56fd3@innohassle.ru
+UID:5151e8d0-05f3-4a07-8fc5-1c3fde163386@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -44,7 +48,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230617T105000
 DTEND:20230617T122000
-UID:4918f436-8cd6-4b70-96a1-105032fe2d76@innohassle.ru
+UID:ad2f4158-6e8a-46cc-964d-e4a1170b4e47@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -53,7 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230623T161000
 DTEND:20230623T174000
-UID:2e6e8e02-9586-471b-80c8-eb0a176f4c99@innohassle.ru
+UID:28cd3397-00d5-4b5d-b64e-fae436de42f1@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -62,7 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230623T175000
 DTEND:20230623T192000
-UID:34be0bb6-04e5-44a4-80ec-941ebbc95d02@innohassle.ru
+UID:adc285e5-42a3-4807-a46b-4ae9f5a6bd01@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -71,7 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230623T193000
 DTEND:20230623T210000
-UID:e5f0f397-1b0a-48fb-ad9f-bd939e2700d0@innohassle.ru
+UID:0ca678f2-657c-496d-9e2a-cdd27e3f9c11@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -80,7 +88,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230624T091000
 DTEND:20230624T104000
-UID:6e2aef74-aab4-4cdc-820e-73a7a0209d15@innohassle.ru
+UID:814a5842-cff1-48d6-887e-239657f90ec6@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -89,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230624T105000
 DTEND:20230624T122000
-UID:bf75d908-280e-4a26-ba9f-56d526872285@innohassle.ru
+UID:6504dbc8-bee6-4e9b-94b9-70b32a2a88e4@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -98,7 +108,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230707T161000
 DTEND:20230707T174000
-UID:7b667d6f-2df6-4b11-a0ad-a54c93d02086@innohassle.ru
+UID:afd6e276-7969-41ba-b815-eb8949a251d1@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -107,7 +118,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230707T175000
 DTEND:20230707T192000
-UID:867ab378-d028-475c-8184-22138c1fd05b@innohassle.ru
+UID:86280a08-02c6-486d-bcd6-3740f2da4bd8@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -116,7 +128,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230707T193000
 DTEND:20230707T210000
-UID:5c5db3fe-91eb-4588-8846-b96080b81cd9@innohassle.ru
+UID:abce27a7-2a8a-48ba-ad0a-b32892da5b05@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -125,7 +138,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230708T091000
 DTEND:20230708T104000
-UID:801d4737-0791-4d98-aabc-e7854f65c404@innohassle.ru
+UID:34d8acae-0be8-4573-8b28-ba0e32472956@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -134,7 +148,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230708T105000
 DTEND:20230708T122000
-UID:e125591e-115e-4d64-aad9-83226ddd353d@innohassle.ru
+UID:7d5206ac-bd2a-46be-b014-5766b9180059@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -143,7 +158,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230721T161000
 DTEND:20230721T174000
-UID:bbf283a0-cc4c-40f8-b4a2-f63008e5cb06@innohassle.ru
+UID:d9ab1492-15e7-4b44-adfb-dd37f6bc6b5c@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -152,7 +168,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230721T175000
 DTEND:20230721T192000
-UID:bfb3e946-ea70-4753-806a-ca2e466169f8@innohassle.ru
+UID:50446abb-ed5c-456f-9736-12325aa891fa@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -161,7 +178,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230721T193000
 DTEND:20230721T210000
-UID:2851390a-5f22-4906-ab67-cc64216a2430@innohassle.ru
+UID:336828d3-ff19-41a6-ab04-77313df90741@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -170,7 +188,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230722T091000
 DTEND:20230722T104000
-UID:cca825c1-2b98-49c0-a98f-371f0f85247e@innohassle.ru
+UID:db1bcd34-9a1f-44ea-bbc8-e0a755d83f79@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303
@@ -179,7 +198,8 @@ BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20230722T105000
 DTEND:20230722T122000
-UID:8b3ec5a6-531c-4a3c-bb7a-127c20f799e1@innohassle.ru
+UID:6f658391-a51d-4661-8508-28d6427c2fef@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
 DESCRIPTION:Computer Graphics in Game Development\nIvan Belyavtsev\nofflin
  e
 LOCATION:303

@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T093000
 DTEND:20230123T110000
-DTSTAMP:20230608T143735
-UID:f28279c6-be3e-432b-83af-7c81465306b8@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:7acba21b-ccb1-442e-83e7-e2a89829493c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-SD-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 09:30 - 11:00
@@ -21,9 +22,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230608T143735
-UID:0638bd4c-7a7a-4e69-bb01-35ac87b58e36@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:e6fcd415-28d4-4483-bbf9-41ee91d19bbf@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
 LOCATION:105
@@ -32,9 +34,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230608T143735
-UID:271577eb-82ec-4037-887b-34acc338279c@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:3a875e84-9fb5-4e25-9f2f-a62ee73418ab@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
 LOCATION:105
@@ -43,10 +46,11 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230124T111000
 DTEND:20230124T124000
-DTSTAMP:20230608T143735
-UID:057f3ff9-b6c6-4dd8-bdfd-0520ce3b8958@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:5e39eed4-de02-4289-8ad9-0720f697e053@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
  \nType: lec\nGroup: B19-SD-01\nSubject: History\nTime: 11:10 - 12:40
 LOCATION:ONLINE (starts on 14/03)
@@ -55,10 +59,11 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (tut)
 DTSTART:20230126T111000
 DTEND:20230126T124000
-DTSTAMP:20230608T143735
-UID:5f5420aa-e726-4454-beb9-f3dee628243a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:dae9d201-3860-4fe9-b100-4fe4d3f7929f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: 106 (STARTS ON 09/02)\nInstructor: Danil Kolesnilov\
  nType: tut\nGroup: B19-SD-01\nSubject: Software Quality and Reliability\nT
  ime: 11:10 - 12:40
@@ -68,9 +73,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230608T143735
-UID:d65f21e1-c59d-4a64-922c-5c31e9553f43@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:9d8669c2-855f-4536-8a17-4b68bcc1472b@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
 LOCATION:105
@@ -79,10 +85,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230128T131000
 DTEND:20230128T144000
-DTSTAMP:20230608T143735
-UID:e2ade4ab-703c-41d6-a928-5e81af5fd6ea@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:ac189ec1-6d84-40bc-986c-c720b9c0fee8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: Theoretical Sports (lec) - Physiology\nInstructor: T
  heoretical Sports (lec) - Physiology\nType: lec\nGroup: B19-SD-01\nSubject
  : Theoretical Sports (lec)\nTime: 13:10 - 14:40
@@ -92,10 +99,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230128T145000
 DTEND:20230128T162000
-DTSTAMP:20230608T143735
-UID:b899ba17-e0fd-4eba-910b-810ef257384e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:679df77c-b43b-49e2-9e4b-73a74002786a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: Theoretical Sports (lec) - Physiology\nInstructor: T
  heoretical Sports (lec) - Physiology\nType: lec\nGroup: B19-SD-01\nSubject
  : Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -105,10 +113,11 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T093000
 DTEND:20230320T110000
-DTSTAMP:20230608T143736
-UID:9b67244e-ee43-470e-bc67-b9e5712dbfbd@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:cec2ee77-8f11-493c-8019-33c2e1bfcd33@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-SD-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 09:30 - 11:00
@@ -118,10 +127,11 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230321T111000
 DTEND:20230321T124000
-DTSTAMP:20230608T143736
-UID:b369a411-d750-4084-8aa1-d038f761d4de@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:ccf3621c-d070-45c9-a964-60807814330c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
  \nType: lec\nGroup: B19-SD-01\nSubject: History\nTime: 11:10 - 12:40
 LOCATION:ONLINE (starts on 14/03)
@@ -130,10 +140,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports- Optimal Nutrition(lec) (lec)
 DTSTART:20230321T131000
 DTEND:20230321T144000
-DTSTAMP:20230608T143736
-UID:7c6f4bf0-f969-43d0-b864-46f5c17f9a49@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:03810d97-ffc5-4e95-88bf-c431bbfe7e6c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Theoretical Sports- Optimal Nutrition(lec)
 DESCRIPTION:Location: ONLINE (FINAL QUIZ)\nInstructor: Alexey Petrenko\nTy
  pe: lec\nGroup: B19-SD-01\nSubject: Theoretical Sports- Optimal Nutrition(
  lec)\nTime: 13:10 - 14:40
@@ -143,10 +154,11 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T111000
 DTEND:20230323T124000
-DTSTAMP:20230608T143736
-UID:813c2dab-9dde-4700-b66b-92cc269069cc@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3e89ac2a-9d74-4e16-9cc3-efde75a299a3@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: B19-SD-01\nSubject: Software Quality and Reliability\nTime: 11:10 - 12:
  40
@@ -156,10 +168,11 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230608T143736
-UID:29488ea8-d2ec-4343-a4f9-fb0539eda82e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3ec4898e-a7e1-4153-b975-27326a0dcb6e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: B19-SD-01\nSubject: Software Quality and Reliability\nTime: 13:10 - 14:
  40
@@ -169,10 +182,11 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230608T143736
-UID:86434857-3468-4800-a291-86a9ab8bad4e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:bd84251f-ca9c-4338-9137-f1974aa1a157@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: B19-SD-01\nSubject: Software Quality and Reliability\nTime: 14:50 - 16:
  20

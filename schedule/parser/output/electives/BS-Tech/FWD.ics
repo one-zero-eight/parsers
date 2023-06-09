@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:bbdc8271-92a3-4322-a1b2-286b81cb7637@innohassle.ru
+UID:6b42caec-1534-4973-bb1e-c56831270628@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:313
@@ -17,7 +18,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:ed4a23ab-703a-4369-89a2-fdf881b19ba5@innohassle.ru
+UID:60f9d461-ae11-4bea-8d09-df8d312e3618@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:106
@@ -26,7 +28,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:d6a02a5b-ac02-4a77-9f81-4a65e2bde081@innohassle.ru
+UID:7d832349-9582-4565-bf8c-a4ab1efd691e@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:106
@@ -35,7 +38,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:1062e310-d169-4812-a79f-7217deb85049@innohassle.ru
+UID:6f10e7c4-a890-4030-bb3b-e3c4d779aae0@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:106
@@ -44,7 +48,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230628T175000
 DTEND:20230628T192000
-UID:f71b0dc6-9441-4715-9e37-5c29e2ae6e9f@innohassle.ru
+UID:6fea49c2-013a-4b71-b5f6-aa43b1f4f1bb@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:106
@@ -53,7 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:7f882df4-557e-4086-a411-3bf5cd5eb873@innohassle.ru
+UID:465a2db1-aae4-4851-b34e-6ef581ba68e6@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:107
@@ -62,7 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230706T175000
 DTEND:20230706T192000
-UID:f1688027-1003-462d-ba52-10f149657879@innohassle.ru
+UID:828f4267-5118-4439-a5d3-13882a475550@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:107
@@ -71,7 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230712T175000
 DTEND:20230712T192000
-UID:f3806637-81c8-425b-917e-448e3ca492ab@innohassle.ru
+UID:c42fdd47-4aff-4657-a20d-42d7b6ab7b46@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:107
@@ -80,7 +88,8 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:81f90070-5a43-47b0-99e1-e2513e057cac@innohassle.ru
+UID:655667dc-af08-427f-9f34-dcdcc266faa1@innohassle.ru
+CATEGORIES:Front-end Web Development
 DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
  noffline
 LOCATION:105

@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230123T092000
 DTEND:20230123T105000
-DTSTAMP:20230608T143735
-UID:f1edb972-af86-469d-afd0-4a6ccf11e7c9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:bde229b0-2c1e-4758-be63-0be6aba7d80a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -RO-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230123T110000
 DTEND:20230123T123000
-DTSTAMP:20230608T143735
-UID:619453df-ba1a-4cac-9cf5-d5a6c39c45f0@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:ddee7483-deeb-491f-93c2-8acbf061d5b9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-RO-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Mechanics (lec)
 DTSTART:20230123T130000
 DTEND:20230123T143000
-DTSTAMP:20230608T143735
-UID:49210bcb-b61e-4750-ba15-3b3daa36f3ac@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:5c7185fd-bb85-40e2-b38a-7f821b493c26@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Mechanics
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Theoretical Mechanics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -44,10 +47,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Mechanics (lab)
 DTSTART:20230123T144000
 DTEND:20230123T161000
-DTSTAMP:20230608T143735
-UID:5dfddf0d-a12b-41df-a2d1-fdba64b8be24@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:36aafd1b-1ac6-4d16-86e5-27315c4b23bd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Mechanics
 DESCRIPTION:Location: 102\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  1-RO-01\nSubject: Theoretical Mechanics\nTime: 14:40 - 16:10
 LOCATION:102
@@ -56,10 +60,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (lec)
 DTSTART:20230124T110000
 DTEND:20230124T123000
-DTSTAMP:20230608T143735
-UID:68196715-8eba-4fca-be2b-a529a52f011f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:2bd6fd85-7b7b-4bce-9d25-ac9d96cf64d0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lec\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 11:00 - 12:30
 LOCATION:102
@@ -68,10 +73,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (tut)
 DTSTART:20230124T130000
 DTEND:20230124T143000
-DTSTAMP:20230608T143735
-UID:042980f7-48b7-436f-a30b-bde01d0e7eca@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:31145ed1-60da-46a7-b360-e0930c7765e7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: tut\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 13:00 - 14:30
 LOCATION:102
@@ -80,10 +86,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (lab)
 DTSTART:20230124T144000
 DTEND:20230124T161000
-DTSTAMP:20230608T143735
-UID:76f0ec07-bb01-4a9c-a1ae-5c7125ac006b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:e6387549-e8d5-4b22-b384-2868baf6ea75@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lab\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 14:40 - 16:10
 LOCATION:102
@@ -92,10 +99,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Mechanics (lec)
 DTSTART:20230125T110000
 DTEND:20230125T123000
-DTSTAMP:20230608T143735
-UID:29bb5b76-39ae-4f33-9631-28059e905416@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f1a34ff6-04dd-424c-9dc7-b0f400793855@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Mechanics
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Theoretical Mechanics\nTime: 11:00 - 12:30
 LOCATION:102
@@ -104,10 +112,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Mechanics (lab)
 DTSTART:20230125T130000
 DTEND:20230125T143000
-DTSTAMP:20230608T143735
-UID:689201fa-6763-407b-babd-6b35e9db6c64@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:24a1452f-395a-4481-b681-bde2a67387e1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Mechanics
 DESCRIPTION:Location: 102\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  1-RO-01\nSubject: Theoretical Mechanics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -116,10 +125,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (lec)
 DTSTART:20230126T110000
 DTEND:20230126T123000
-DTSTAMP:20230608T143735
-UID:cabc2bd5-fb7e-4a38-bff9-89a2abbdbf68@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:fb1117ff-31d9-4f43-afa5-bbd4cbc142d5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  B21-RO-01\nSubject: Control Theory\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -128,10 +138,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (tut)
 DTSTART:20230126T130000
 DTEND:20230126T143000
-DTSTAMP:20230608T143735
-UID:59300795-3b7d-4212-a2db-5c20aadbfa34@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:db5846b3-92c6-49c7-8e91-119417386814@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: tut\nGroup:
   B21-RO-01\nSubject: Control Theory\nTime: 13:00 - 14:30
 LOCATION:103
@@ -140,10 +151,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (lab)
 DTSTART:20230126T144000
 DTEND:20230126T161000
-DTSTAMP:20230608T143735
-UID:1eb0897f-c651-4ec4-a0fa-03b09ee0f0c9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:14ee0cf1-9ad5-4dfe-ab85-80e60ce575a5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: 103\nInstructor: Valeria Skvortsova\nType: lab\nGrou
  p: B21-RO-01\nSubject: Control Theory\nTime: 14:40 - 16:10
 LOCATION:103
@@ -152,10 +164,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lec)
 DTSTART:20230320T092000
 DTEND:20230320T105000
-DTSTAMP:20230608T143736
-UID:4da6ad32-2075-4066-842f-cd1c971712b9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:47051328-88cf-419d-8962-0f689f0e82f7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -RO-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -164,10 +177,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)
 DTSTART:20230320T110000
 DTEND:20230320T123000
-DTSTAMP:20230608T143736
-UID:865567ec-3ee9-4fb8-94b2-3cf35c829198@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:bebb6b02-303e-473d-a1cf-4f97a304d3c2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Introduction to Machine Learning
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-RO-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -176,10 +190,11 @@ BEGIN:VEVENT
 SUMMARY:Fundamental of Robotics (lec)
 DTSTART:20230320T130000
 DTEND:20230320T143000
-DTSTAMP:20230608T143736
-UID:2e08d004-9bf7-42f3-bf99-b551b6ac4867@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:f305ab73-60a6-43be-9faa-1f985055ace4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Fundamental of Robotics
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Fundamental of Robotics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -188,10 +203,11 @@ BEGIN:VEVENT
 SUMMARY:Fundamental of Robotics (lab)
 DTSTART:20230320T144000
 DTEND:20230320T161000
-DTSTAMP:20230608T143736
-UID:cc8db675-3c09-4fca-8e3a-e609d8843b98@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:7364b825-ec7b-4e4e-8457-2995178d400c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Fundamental of Robotics
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lab\nGrou
  p: B21-RO-01\nSubject: Fundamental of Robotics\nTime: 14:40 - 16:10
 LOCATION:102
@@ -200,10 +216,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (lec)
 DTSTART:20230321T110000
 DTEND:20230321T123000
-DTSTAMP:20230608T143736
-UID:fae92487-20a7-4117-a526-b8ab26bc66f1@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:452a9af8-0f9b-481d-8841-c8c98a53f415@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lec\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 11:00 - 12:30
 LOCATION:102
@@ -212,10 +229,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (tut)
 DTSTART:20230321T130000
 DTEND:20230321T143000
-DTSTAMP:20230608T143736
-UID:1a50ceb6-074f-41f2-8350-0062e7ae2a14@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:916e78d4-e7f1-416d-953c-878f01bba4c1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: tut\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 13:00 - 14:30
 LOCATION:102
@@ -224,10 +242,11 @@ BEGIN:VEVENT
 SUMMARY:Physics II (lab)
 DTSTART:20230321T144000
 DTEND:20230321T161000
-DTSTAMP:20230608T143736
-UID:4df2a89b-ec68-445c-86de-aa6b86bda2a6@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:6e0ca532-14a6-4bbc-a920-365587ef471e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Physics II
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lab\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 14:40 - 16:10
 LOCATION:102
@@ -236,10 +255,11 @@ BEGIN:VEVENT
 SUMMARY:Fundamental of Robotics (lec)
 DTSTART:20230322T144000
 DTEND:20230322T161000
-DTSTAMP:20230608T143736
-UID:0b6c9b85-d499-42c5-a407-b246c3a7c895@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3254491c-7ba6-4eed-a3e3-d9709005c417@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Fundamental of Robotics
 DESCRIPTION:Location: 422\nInstructor: Albert Demian\nType: lec\nGroup: B2
  1-RO-01\nSubject: Fundamental of Robotics\nTime: 14:40 - 16:10
 LOCATION:422
@@ -248,10 +268,11 @@ BEGIN:VEVENT
 SUMMARY:Fundamental of Robotics (lab)
 DTSTART:20230322T162000
 DTEND:20230322T175000
-DTSTAMP:20230608T143736
-UID:87c09f68-b303-4c40-a5dd-dc23294e84c3@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:73e8c42e-ba69-4bef-85e7-5b90a2b3ba2c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Fundamental of Robotics
 DESCRIPTION:Location: 422\nInstructor: Albert Demian\nType: lab\nGroup: B2
  1-RO-01\nSubject: Fundamental of Robotics\nTime: 16:20 - 17:50
 LOCATION:422
@@ -260,10 +281,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (lec)
 DTSTART:20230323T110000
 DTEND:20230323T123000
-DTSTAMP:20230608T143736
-UID:20cf01bf-0362-4a39-8fa9-1bf8e3bb4a5a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:37d238ad-1803-4648-a3c9-e4ae0e10c305@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  B21-RO-01\nSubject: Control Theory\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -272,10 +294,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (tut)
 DTSTART:20230323T130000
 DTEND:20230323T143000
-DTSTAMP:20230608T143736
-UID:02f7b6c6-6007-4676-8063-4871706e281d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:bdbcb9e0-c1da-476f-a012-c427048ed3ad@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: tut\nGroup:
   B21-RO-01\nSubject: Control Theory\nTime: 13:00 - 14:30
 LOCATION:103
@@ -284,10 +307,11 @@ BEGIN:VEVENT
 SUMMARY:Control Theory (lab)
 DTSTART:20230323T144000
 DTEND:20230323T161000
-DTSTAMP:20230608T143736
-UID:29c25886-7858-42b4-99f6-34aa28f0112e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:bcbcf4c8-ed4a-4fa4-abb3-9046804a112b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Control Theory
 DESCRIPTION:Location: 103\nInstructor: Valeria Skvortsova\nType: lab\nGrou
  p: B21-RO-01\nSubject: Control Theory\nTime: 14:40 - 16:10
 LOCATION:103
@@ -296,10 +320,11 @@ BEGIN:VEVENT
 SUMMARY:Capstone Project (lec)
 DTSTART:20230606T110000
 DTEND:20230606T123000
-DTSTAMP:20230608T143737
-UID:88b08868-e5f4-4372-9d13-b0ccd1960d18@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:d21c2b8c-ada5-405a-baac-a490dbdb7fbc@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Capstone Project
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-RO-01\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30
@@ -309,9 +334,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T144000
 DTEND:20230613T161000
-DTSTAMP:20230608T143737
-UID:6cd94166-11fb-48e1-aa70-9ee0d14a5c87@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:b265622e-9b3c-4504-b27c-8fc0be61e041@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-RO-01\nSubject: Life Safety\nTime: 14:40 - 16:10
 LOCATION:108
@@ -320,9 +346,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230613T162000
 DTEND:20230613T175000
-DTSTAMP:20230608T143737
-UID:e6aa7c35-b822-4bbb-9744-a75a244cffe7@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:11d267c4-9a3b-4b21-b93e-ffd557cd4d94@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-RO-01\nSubject: Life Safety\nTime: 16:20 - 17:50
 LOCATION:108
@@ -331,9 +358,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T144000
 DTEND:20230614T161000
-DTSTAMP:20230608T143737
-UID:4cc403f1-106f-409f-850c-49a4faa25045@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:8e08c6a7-5b40-4a9c-9f63-c5bc759a6672@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-RO-01\nSubject: Life Safety\nTime: 14:40 - 16:10
 LOCATION:108
@@ -342,9 +370,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230614T162000
 DTEND:20230614T175000
-DTSTAMP:20230608T143737
-UID:ff5bc238-b0b7-4d57-8a5c-b286c409b65b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:e5dda455-f3ff-4b91-9e58-dbf5e72067f8@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-RO-01\nSubject: Life Safety\nTime: 16:20 - 17:50
 LOCATION:108
@@ -353,9 +382,10 @@ BEGIN:VEVENT
 SUMMARY:Life Safety (lec)
 DTSTART:20230615T130000
 DTEND:20230615T143000
-DTSTAMP:20230608T143737
-UID:9093a622-f796-4586-8566-c26244478a7f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:e595857a-f04f-4df0-8d6f-0a99738b54e8@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Life Safety
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B21-RO-01\nSubject: Life Safety\nTime: 13:00 - 14:30
 LOCATION:108

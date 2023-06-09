@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230605T105000
 DTEND:20230605T122000
-UID:c28e81a0-77d8-41af-9ad1-820a51323589@innohassle.ru
+UID:96ca9e09-7593-47e3-891e-b613e49c5893@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230608T105000
 DTEND:20230608T122000
-UID:1434c86e-fa53-495b-92a0-67c9e5e6c515@innohassle.ru
+UID:e7806acd-719d-4c1c-bc3c-29dd62d5efcc@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230612T105000
 DTEND:20230612T122000
-UID:172c8a48-e3a3-4f0f-b997-bd730c5db2bd@innohassle.ru
+UID:a56a7ce4-7c89-4560-81d0-d0178516d93b@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230615T105000
 DTEND:20230615T122000
-UID:aa569e80-dc9c-4961-ac89-d1edab991398@innohassle.ru
+UID:f451b4f2-f735-4214-8393-e42bcd24a0c6@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230619T105000
 DTEND:20230619T122000
-UID:9dca8d22-f39f-45a6-b9d1-d8bac0647e1e@innohassle.ru
+UID:d970f37f-24b5-431e-a7c8-215708d230ff@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230622T105000
 DTEND:20230622T122000
-UID:53499ced-d20d-47ab-b438-20b53220b3bf@innohassle.ru
+UID:1c9e833b-528a-4f4e-b402-d604e51c71df@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230626T105000
 DTEND:20230626T122000
-UID:fc7e3607-7f47-40dd-9d13-6df6eb61e983@innohassle.ru
+UID:67c3e35c-50e1-45a2-ab21-ff4ddbce5e40@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230629T105000
 DTEND:20230629T122000
-UID:c1ee1697-7191-464d-a3a7-db650c170f2d@innohassle.ru
+UID:fe63e07a-4f6a-4130-8f1e-cd879498ba30@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230703T105000
 DTEND:20230703T122000
-UID:43073406-f902-4729-88cf-d9abf2bdd61d@innohassle.ru
+UID:0fd376f8-9bf0-4d21-900b-1007d8d36cf7@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230703T125000
 DTEND:20230703T142000
-UID:9a1521d2-08dd-4c36-b5e2-f696ee2018d8@innohassle.ru
+UID:8cdc6422-538c-4250-94f6-c5774dc33805@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:316
 END:VEVENT
@@ -88,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230706T091000
 DTEND:20230706T104000
-UID:b1f6f882-c658-4642-b59a-a6b3c285ef60@innohassle.ru
+UID:4143f453-f8ff-40e5-9eb0-7f533607e05a@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -96,7 +107,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230706T105000
 DTEND:20230706T122000
-UID:2df1da8e-c7b6-4dc9-86b7-93844927cf91@innohassle.ru
+UID:f912ac44-2354-463a-83a6-3cabd283e1ad@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -104,7 +116,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230710T105000
 DTEND:20230710T122000
-UID:d687084f-87d3-446c-8ea9-aa6db1e81ab2@innohassle.ru
+UID:a83235c0-1330-4467-829a-09f25070a725@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -112,7 +125,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230710T125000
 DTEND:20230710T142000
-UID:073aec58-65b8-47e5-80d4-9dbe17a8e099@innohassle.ru
+UID:8634a1a4-fda3-4d76-82f9-4d5aa719d898@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:316
 END:VEVENT
@@ -120,7 +134,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230713T091000
 DTEND:20230713T104000
-UID:d5d8134f-eba2-4d45-aa91-069cf6f7dbf3@innohassle.ru
+UID:db6c784b-11bc-4853-be9f-3f6f171f0e28@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -128,7 +143,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230713T105000
 DTEND:20230713T122000
-UID:cb9e2a8e-ec14-49fd-9be9-ba9077b4813e@innohassle.ru
+UID:a149233c-1fe8-4c15-ab63-2759cda486e8@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -136,7 +152,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230717T105000
 DTEND:20230717T122000
-UID:9e1d2449-511d-4e7e-88e1-f3e53bcd289e@innohassle.ru
+UID:1a9ca183-9760-4a62-997c-b09903e0ccf0@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:314
 END:VEVENT
@@ -144,7 +161,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230717T125000
 DTEND:20230717T142000
-UID:b8e41b5a-047a-4212-88b2-2cb9ecfdf144@innohassle.ru
+UID:89d4c2f0-7654-4dd5-b694-0c0f0916e165@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:316
 END:VEVENT
@@ -152,7 +170,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230720T091000
 DTEND:20230720T104000
-UID:fb770b3e-2fee-415f-974c-ad1c3fcd33ce@innohassle.ru
+UID:7f794505-f79f-49f6-9c98-d70ff574b3c7@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT
@@ -160,7 +179,8 @@ BEGIN:VEVENT
 SUMMARY:Data Wrangling and Visualization
 DTSTART:20230720T105000
 DTEND:20230720T122000
-UID:55c98bfe-2545-4b4a-b8f3-b71fd1bcc2ee@innohassle.ru
+UID:0478974b-d791-4388-b27b-7e96868ad1ec@innohassle.ru
+CATEGORIES:Data Wrangling and Visualization
 DESCRIPTION:Data Wrangling and Visualization\nRustam Lukmanov\noffline
 LOCATION:317
 END:VEVENT

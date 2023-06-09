@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230123T091000
 DTEND:20230123T104000
-DTSTAMP:20230608T143735
-UID:03728c8a-6e1f-4d64-b6c0-35a810138b0e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a7b3d282-0c5c-4d3e-afbc-132bee4c6556@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-SD-02\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230608T143735
-UID:0a4ac7b5-b293-46b3-a94f-97dcb1da4ae2@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:c0e05151-f4a3-4c71-9807-8e6e2fe18499@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-SD-02\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:301
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230125T105000
 DTEND:20230125T122000
-DTSTAMP:20230608T143735
-UID:6c22d0ef-1fde-4431-8eb7-3654521d0f35@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:b5fcf206-7f65-4013-b6f9-b17e442d99bc@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Compiler Construction
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -SD-02\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -44,10 +47,11 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230125T143000
 DTEND:20230125T160000
-DTSTAMP:20230608T143735
-UID:5cd20913-6446-4d46-9a40-1d57a8591b9b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:5900d16a-8f67-4496-adf5-516dbf9d6199@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Compiler Construction(lab)
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: Compiler Construction(lab)\nTime: 14:30 - 16:00
 LOCATION:313
@@ -56,10 +60,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230320T091000
 DTEND:20230320T104000
-DTSTAMP:20230608T143736
-UID:9ebd7f7d-3bd5-4a52-be15-0565d28d5711@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:03a94494-9a31-4b26-9be0-fe823fdedd41@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-SD-02\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -68,10 +73,11 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230608T143736
-UID:54e63f79-eba1-4ee5-a1df-6d7f9e526c0f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:abfc34f2-9190-456d-908f-65c1019c16f5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-SD-02\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:301
@@ -80,10 +86,11 @@ BEGIN:VEVENT
 SUMMARY:Advanced compiler construction and program analysis (lec)
 DTSTART:20230321T091000
 DTEND:20230321T104000
-DTSTAMP:20230608T143736
-UID:062b6652-0aa8-4c32-a84f-6386533f32fa@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:89fe1b2c-c187-4ebe-9cc2-3808667632c7@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Advanced compiler construction and program analysis
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B20-SD-02\nSubject: Advanced compiler construction and program analysis\nT
  ime: 09:10 - 10:40
@@ -93,10 +100,11 @@ BEGIN:VEVENT
 SUMMARY:Advanced compiler construction and program analysis (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T143736
-UID:65e8ca46-f9f2-4974-b2ba-19040715dcb1@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:b66e3b6b-c6cb-4b37-a4e7-64b368546e7d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Advanced compiler construction and program analysis
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B20-SD-02\nSubject: Advanced compiler construction and program analysis\nT
  ime: 10:50 - 12:20
@@ -106,10 +114,11 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction (lec)
 DTSTART:20230322T105000
 DTEND:20230322T122000
-DTSTAMP:20230608T143736
-UID:da0aa6b1-9de1-40b6-bfcc-958f4b88219f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:b1f1deb2-41e2-40a6-a735-499c0cdbff19@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Compiler Construction
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -SD-02\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -118,10 +127,11 @@ BEGIN:VEVENT
 SUMMARY:Compiler Construction(lab) (lab)
 DTSTART:20230322T143000
 DTEND:20230322T160000
-DTSTAMP:20230608T143736
-UID:f0f52c5f-40fa-4b6d-b3b7-50aa1098cdca@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:f3999473-8760-4b1c-82a4-b3741d94055d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Compiler Construction(lab)
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: Compiler Construction(lab)\nTime: 14:30 - 16:00
 LOCATION:313
@@ -130,10 +140,11 @@ BEGIN:VEVENT
 SUMMARY:ACC and program analysis (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230608T143736
-UID:28642f0e-5c3f-4095-b766-7704a2707b59@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:5d28d457-076d-4c9b-87db-1bf0c890b275@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:ACC and program analysis
 DESCRIPTION:Location: 421\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: ACC and program analysis\nTime: 12:50 - 14:20
 LOCATION:421
@@ -142,10 +153,11 @@ BEGIN:VEVENT
 SUMMARY:Lean Software Development (lab)
 DTSTART:20230323T143000
 DTEND:20230323T160000
-DTSTAMP:20230608T143736
-UID:a1242b7f-d157-4d64-9a5d-e8f0dc6b42cd@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:a8019e19-f6e9-4b55-8017-fdb6ad282f48@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Lean Software Development
 DESCRIPTION:Location: 300\nInstructor: Artem Kruglov\nType: lab\nGroup: B2
  0-SD-02\nSubject: Lean Software Development\nTime: 14:30 - 16:00
 LOCATION:300

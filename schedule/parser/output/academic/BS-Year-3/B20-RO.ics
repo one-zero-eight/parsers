@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230123T105000
 DTEND:20230123T122000
-DTSTAMP:20230608T143735
-UID:0c5916f9-e2ac-4bba-8708-f07c945d233b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:14cce884-bb58-4996-a58f-df98c527fadb@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-RO\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230608T143735
-UID:f3638dd3-bb6d-4154-b1b5-7339fe422737@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:655fa38f-dfb6-43e5-b906-3152395277f1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-RO\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:317
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lab)
 DTSTART:20230124T105000
 DTEND:20230124T122000
-DTSTAMP:20230608T143735
-UID:258dd5ac-83d2-4567-9c11-93b6bd4561ef@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:be792de8-99ea-4a96-a802-02d9cab579fd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Sensors & Sensing
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
  ov\nType: lab\nGroup: B20-RO\nSubject: Sensors & Sensing\nTime: 10:50 - 12
  :20
@@ -45,10 +48,11 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lab)
 DTSTART:20230124T125000
 DTEND:20230124T142000
-DTSTAMP:20230608T143735
-UID:e8d1914f-f568-42e4-b43d-7de611c2adbb@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:856bf1df-c606-4a4f-929d-efd7b1d081d4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Sensors & Sensing
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
  ov\nType: lab\nGroup: B20-RO\nSubject: Sensors & Sensing\nTime: 12:50 - 14
  :20
@@ -58,10 +62,11 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230126T105000
 DTEND:20230126T122000
-DTSTAMP:20230608T143735
-UID:6ca50ce9-655d-4ea5-a5e1-1991557fe31d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:11607843-cf5a-417a-b3f7-7444459b17c0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Mechanics & Machines
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
  Type: lec\nGroup: B20-RO\nSubject: Mechanics & Machines\nTime: 10:50 - 12:
  20
@@ -71,10 +76,11 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230126T125000
 DTEND:20230126T142000
-DTSTAMP:20230608T143735
-UID:2a63e02f-9056-4d37-847b-5023dc4a3ee1@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:67b10e88-1522-47a3-acdb-00ab303b8561@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Mechanics & Machines
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
  Type: lec\nGroup: B20-RO\nSubject: Mechanics & Machines\nTime: 12:50 - 14:
  20
@@ -84,10 +90,11 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lec)
 DTSTART:20230126T143000
 DTEND:20230126T160000
-DTSTAMP:20230608T143735
-UID:6be1090d-17ab-48b7-a9db-07912c5c738d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:3f528cdc-91c5-4684-a7be-57710d9e1620@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Sensors & Sensing
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
  : B20-RO\nSubject: Sensors & Sensing\nTime: 14:30 - 16:00
 LOCATION:ONLINE
@@ -96,10 +103,11 @@ BEGIN:VEVENT
 SUMMARY:Sensors & Sensing (lec)
 DTSTART:20230126T161000
 DTEND:20230126T174000
-DTSTAMP:20230608T143735
-UID:549b6aa3-b888-48ab-8a90-7b0920965735@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:df427854-ae08-4bb4-8168-07b7ef13b529@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Sensors & Sensing
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
  : B20-RO\nSubject: Sensors & Sensing\nTime: 16:10 - 17:40
 LOCATION:ONLINE
@@ -108,10 +116,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230320T105000
 DTEND:20230320T122000
-DTSTAMP:20230608T143736
-UID:8ec72313-3f71-4d22-9aef-17f00f0e35f7@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:1e26e676-f143-40c1-988a-844701fdc93a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-RO\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -120,10 +129,11 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230608T143736
-UID:6c8d29d8-3701-4166-b879-21e35ae8443c@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:92218f56-991e-463c-bcbe-77f4c40aa8a9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-RO\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:317
@@ -132,10 +142,11 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230608T143736
-UID:209cc1db-fd46-4e33-90af-c4ced830bc14@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:8701ef7e-89ea-432c-adcc-7758e2ad5449@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Robotic Systems
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
   B20-RO\nSubject: Robotic Systems\nTime: 10:50 - 12:20
 LOCATION:103
@@ -144,10 +155,11 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lec)
 DTSTART:20230321T125000
 DTEND:20230321T142000
-DTSTAMP:20230608T143736
-UID:a296eba5-6dbf-4751-9123-16cee87b4839@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:1d92212a-250e-4883-bce2-5c245f3c541c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Robotic Systems
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
   B20-RO\nSubject: Robotic Systems\nTime: 12:50 - 14:20
 LOCATION:103
@@ -156,10 +168,11 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lec)
 DTSTART:20230323T105000
 DTEND:20230323T122000
-DTSTAMP:20230608T143736
-UID:c7c2e562-e225-4583-ac54-37c1aa712db2@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:8c51c969-7488-4936-b64e-d50ff493c2c5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Mechanics & Machines
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lec\nGroup: B2
  0-RO\nSubject: Mechanics & Machines\nTime: 10:50 - 12:20
 LOCATION:305
@@ -168,10 +181,11 @@ BEGIN:VEVENT
 SUMMARY:Mechanics & Machines (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230608T143736
-UID:fa67cc84-e0dc-4c6d-9961-20a084751f22@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:40cbf753-e790-4ce7-881b-71b3915e56a4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Mechanics & Machines
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  0-RO\nSubject: Mechanics & Machines\nTime: 12:50 - 14:20
 LOCATION:305
@@ -180,10 +194,11 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lab)
 DTSTART:20230323T143000
 DTEND:20230323T160000
-DTSTAMP:20230608T143736
-UID:02c55794-876a-4f45-b4ee-6056e4a854ff@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:a680e14c-64ce-46e2-9795-4c98925221c9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Robotic Systems
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-
  RO\nSubject: Robotic Systems\nTime: 14:30 - 16:00
 LOCATION:305
@@ -192,10 +207,11 @@ BEGIN:VEVENT
 SUMMARY:Robotic Systems (lab)
 DTSTART:20230323T161000
 DTEND:20230323T174000
-DTSTAMP:20230608T143736
-UID:4daaa454-9d9f-44cb-a938-9ff92241abf8@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:85a88f22-5c05-41d3-80b9-44900a05e04c@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Robotic Systems
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-
  RO\nSubject: Robotic Systems\nTime: 16:10 - 17:40
 LOCATION:305

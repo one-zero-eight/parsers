@@ -448,6 +448,7 @@ if __name__ == '__main__':
                     description=group_event.description,
                     dtstamp=group_event.dtstamp.strftime("%Y%m%dT%H%M%S"),
                     uid=str(uuid4()) + "@innohassle.campus.innopolis.university",
+                    categories=group_event.subject.name,
                 )
 
                 if group_event.location:

@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T111000
 DTEND:20230123T124000
-DTSTAMP:20230608T143735
-UID:bb086a7c-c2e7-4a55-a789-b8f714cea8dc@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a2a2ff90-0e92-4f60-98fb-155761597580@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-RO-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -21,9 +22,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230608T143735
-UID:684ae113-5a8a-499e-9af7-a555bbdbbe62@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:41b91741-499b-436e-9709-98a13693e6e5@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
 LOCATION:105
@@ -32,9 +34,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230608T143735
-UID:dddcf295-74a2-4215-b285-b133aa843c6e@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f65b8a2a-6c77-4c88-9b3e-6ad24cecadcd@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
 LOCATION:105
@@ -43,10 +46,11 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230126T131000
 DTEND:20230126T144000
-DTSTAMP:20230608T143735
-UID:9244d56a-3445-43e8-beea-0b09e03a2008@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:8a9edf35-2f9f-44ff-8a46-b05fa846ab47@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Statistical Techniques\nTime: 13:10 - 14:40
 LOCATION:105
@@ -55,10 +59,11 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230126T145000
 DTEND:20230126T162000
-DTSTAMP:20230608T143735
-UID:069055c1-3b84-4d48-9af9-b0b2d92aa8a5@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:4743e56c-ec61-4af6-9439-4c7c1b107975@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105\nInstructor: Maxim Evgrafov\nType: lab\nGroup: B
  19-RO-01\nSubject: Statistical Techniques\nTime: 14:50 - 16:20
 LOCATION:105
@@ -67,9 +72,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230608T143735
-UID:0e5fc34e-c665-425b-86f2-8e63f763432a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:878e0bc2-ff4c-4235-8a08-5b787277f38e@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
 LOCATION:105
@@ -78,10 +84,11 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T111000
 DTEND:20230320T124000
-DTSTAMP:20230608T143736
-UID:90c1fc6e-4d79-41de-92c6-d9b3841c73c6@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:253f6331-d26b-4eef-8d2b-42c49c7db78a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-RO-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -91,10 +98,11 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230608T143736
-UID:9c1da4cd-209e-491f-af67-6b7647a948c7@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:1a8671a8-ee99-4228-8ab6-c27015ed4df8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
  \nType: lec\nGroup: B19-RO-01\nSubject: Statistical Techniques\nTime: 13:1
  0 - 14:40
@@ -104,10 +112,11 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230608T143736
-UID:d156736c-34d8-4223-9131-2afd5c7d63da@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:e17af530-f43f-4ab3-ba80-ab06d2db96cd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105 (Room 108 on 20/04)\nInstructor: Maxim Evgrafov\
  nType: lab\nGroup: B19-RO-01\nSubject: Statistical Techniques\nTime: 14:50
   - 16:20

@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230608T105000
 DTEND:20230608T122000
-UID:5f64619f-3122-46d2-aabd-c04de7aa13fb@innohassle.ru
+UID:d0d1152d-d6dd-4b7f-a8b5-2ce7fcd46ca4@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -16,7 +17,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230608T125000
 DTEND:20230608T142000
-UID:ec35dcf8-8ca8-4217-bf80-17dbdf5338de@innohassle.ru
+UID:4206f015-e347-43b1-a65f-f800fe33dfed@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -24,7 +26,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230615T105000
 DTEND:20230615T122000
-UID:56bad696-f7f1-49cc-9c42-9f8a4af1a2ef@innohassle.ru
+UID:1ae240a9-f7e9-4acb-b215-c446cdeb3f86@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -32,7 +35,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230615T125000
 DTEND:20230615T142000
-UID:8b540d94-a505-40f6-96ef-47c35a559b90@innohassle.ru
+UID:99f2621a-05ae-438a-addb-c1ceb180c7de@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -40,7 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230622T105000
 DTEND:20230622T122000
-UID:14b38af5-4c09-4852-94b8-6273630335cd@innohassle.ru
+UID:9a4ccd94-783d-4167-bebe-2d049fa3ea62@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -48,7 +53,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230622T125000
 DTEND:20230622T142000
-UID:c8725bff-c3e3-428a-8ce6-331e1ff41277@innohassle.ru
+UID:b11aebcf-5b68-4e63-9730-f453ee43535f@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -56,7 +62,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230629T105000
 DTEND:20230629T122000
-UID:c1117b7c-2403-4744-8a08-6d76906b3fbe@innohassle.ru
+UID:32371ddf-d225-43bc-9c3a-38349398cf29@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -64,7 +71,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230629T125000
 DTEND:20230629T142000
-UID:064ca900-37b7-4634-a5d3-891eec472384@innohassle.ru
+UID:d18f83cd-aace-4301-a571-974bc3b93109@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -72,7 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230706T105000
 DTEND:20230706T122000
-UID:fa4a4007-ca27-403a-8fc1-98130d49078d@innohassle.ru
+UID:62dac2e9-0a36-48a5-99c2-19429432066e@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -80,7 +89,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230706T125000
 DTEND:20230706T142000
-UID:73d45bca-dea6-42c4-93c0-4e344fa8369c@innohassle.ru
+UID:66431210-a8fc-40fe-b8a5-a98a36af499b@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -88,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230713T105000
 DTEND:20230713T122000
-UID:b36a67ca-bf60-4dfb-92cd-06e7a875c18a@innohassle.ru
+UID:37799ef8-9b1f-4e62-afec-e7459e41e0f9@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -96,7 +107,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230713T125000
 DTEND:20230713T142000
-UID:c9eaee14-78d1-48f5-b038-4a11c5376194@innohassle.ru
+UID:681fd6c3-1c54-439f-8aad-8f922ee9fa09@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -104,7 +116,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230720T105000
 DTEND:20230720T122000
-UID:bf73628c-d74a-489e-b6d8-681b6804e116@innohassle.ru
+UID:8b8e8946-3faa-4b2d-b588-4d3526caebd4@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT
@@ -112,7 +125,8 @@ BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
 DTSTART:20230720T125000
 DTEND:20230720T142000
-UID:51b4fbad-3049-49e7-a12d-4c8269169c19@innohassle.ru
+UID:ba4e886d-ab74-48b6-97b1-d07caf0d38bb@innohassle.ru
+CATEGORIES:Real-Time Scheduling Theory
 DESCRIPTION:Real-Time Scheduling Theory\nArtem Burmyakov\noffline
 LOCATION:303
 END:VEVENT

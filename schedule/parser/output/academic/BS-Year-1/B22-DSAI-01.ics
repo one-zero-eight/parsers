@@ -8,10 +8,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (lec)
 DTSTART:20230123T090000
 DTEND:20230123T103000
-DTSTAMP:20230608T143735
-UID:2995f139-1ee7-4a4b-8972-dd6527dd1c21@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:baaef9d1-f263-4dd3-b2d3-bae5ee9275b2@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 09:00 - 10:30
 LOCATION:108
@@ -20,10 +21,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (tut)
 DTSTART:20230123T104000
 DTEND:20230123T121000
-DTSTAMP:20230608T143735
-UID:3d5f6453-c82b-49e1-a88f-e0dd9e925c66@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:520f9bc4-3741-4542-9a75-a0e7ca174bf0@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: tut\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 10:40 - 12:10
 LOCATION:108
@@ -32,10 +34,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (lab)
 DTSTART:20230123T124000
 DTEND:20230123T141000
-DTSTAMP:20230608T143735
-UID:f0c34479-ed1c-4c5d-8ea8-4481a5c30e9b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:ca676ca9-f59d-4c6d-9008-9c40a4ac3579@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 101\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 12:40 - 14:10
 LOCATION:101
@@ -44,10 +47,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (lec)
 DTSTART:20230124T090000
 DTEND:20230124T103000
-DTSTAMP:20230608T143735
-UID:0b7e0176-ff36-4d21-86fc-a555f00803a6@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:6f428862-2446-487c-b6f8-5c77ffbd1bad@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: 108\nInstructor: Evgeni Zouev\nType: lec\nGroup: B22
  -DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 09:00 - 10:
  30
@@ -57,10 +61,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (tut)
 DTSTART:20230124T104000
 DTEND:20230124T121000
-DTSTAMP:20230608T143735
-UID:453f188a-f694-4935-a84a-dce721b74ed6@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f50c39b4-7014-4646-a1bb-68f1d7d1692a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: ONLINE\nInstructor: Imam Muwaffaq\nType: tut\nGroup:
   B22-DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 10:40 -
   12:10
@@ -70,10 +75,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230124T124000
 DTEND:20230124T141000
-DTSTAMP:20230608T143735
-UID:4c900afd-4756-446e-af4c-5a1ff5356689@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:c1ad817a-45bb-4225-bced-b9b4d4c6bf1f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -83,10 +89,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (lab)
 DTSTART:20230124T142000
 DTEND:20230124T155000
-DTSTAMP:20230608T143735
-UID:ea680f28-1c65-4cc3-a24f-140c8aefccc4@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:0390d861-e642-49a5-893e-104fba67f053@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: 301\nInstructor: Daniel Elambo Atonge\nType: lab\nGr
  oup: B22-DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 14:
  20 - 15:50
@@ -96,10 +103,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230124T160000
 DTEND:20230124T173000
-DTSTAMP:20230608T143735
-UID:1f80ecbb-5744-41d6-b29a-91a0c32aa6b4@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:0775ec60-c982-4915-a4f0-c23057533a5a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 16:00 - 17:30
@@ -109,10 +117,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (lec)
 DTSTART:20230125T104000
 DTEND:20230125T121000
-DTSTAMP:20230608T143735
-UID:61ec86be-012d-4aa1-abe8-29cfb57f4492@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:18479949-4ac5-4366-86bc-101ebb9b7820@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 108\nInstructor: Manuel Mazzara\nType: lec\nGroup: B
  22-DSAI-01\nSubject: Theoretical Computer Science\nTime: 10:40 - 12:10
 LOCATION:108
@@ -121,10 +130,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (tut)
 DTSTART:20230125T124000
 DTEND:20230125T141000
-DTSTAMP:20230608T143735
-UID:de737744-7e8d-4c96-ae83-63a74209fb26@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:51636ca3-e49f-44db-9ecb-45cccd9a386e@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 108\nInstructor: Andrey Frolov\nType: tut\nGroup: B2
  2-DSAI-01\nSubject: Theoretical Computer Science\nTime: 12:40 - 14:10
 LOCATION:108
@@ -133,10 +143,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (lab)
 DTSTART:20230125T160000
 DTEND:20230125T173000
-DTSTAMP:20230608T143735
-UID:920e27ad-5287-4d7a-9564-b9c0f24b7246@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:99cb6bed-62a3-4189-b0d6-2b97682b9cba@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 320\nInstructor: Rustam Lukmanov\nType: lab\nGroup: 
  B22-DSAI-01\nSubject: Theoretical Computer Science\nTime: 16:00 - 17:30
 LOCATION:320
@@ -145,10 +156,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (lec)
 DTSTART:20230126T104000
 DTEND:20230126T121000
-DTSTAMP:20230608T143735
-UID:5223eb76-f59d-47e9-8721-471f1ff5d964@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:5febf84d-9e83-4351-969b-08cedf5aaccd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: lec\nGroup
  : B22-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 1
  0:40 - 12:10
@@ -158,10 +170,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (tut)
 DTSTART:20230126T124000
 DTEND:20230126T141000
-DTSTAMP:20230608T143735
-UID:a585ade0-4a56-449e-bc65-4de9e7f15d95@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:b97d4439-da20-42bf-ae1b-b62ad753778d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: tut\nGroup
  : B22-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 1
  2:40 - 14:10
@@ -171,10 +184,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (lab)
 DTSTART:20230126T160000
 DTEND:20230126T173000
-DTSTAMP:20230608T143735
-UID:902ecdf0-a745-4532-b952-aa33d4ee15fa@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:9c8e3990-06ce-4859-b5e2-3149e94782f5@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 101\nInstructor: Zlata Shchedrikova\nType: lab\nGrou
  p: B22-DSAI-01\nSubject: Mathematical Analysis II\nTime: 16:00 - 17:30
 LOCATION:101
@@ -183,10 +197,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (lab)
 DTSTART:20230126T174000
 DTEND:20230126T191000
-DTSTAMP:20230608T143735
-UID:4d34755a-2365-4fee-881c-ba4863ea61f4@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:6ffb2750-1a80-4da8-b82a-915f11eb1b88@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 303\nInstructor: Daniil Arapov\nType: lab\nGroup: B2
  2-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 17:40
   - 19:10
@@ -196,10 +211,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (lec)
 DTSTART:20230127T090000
 DTEND:20230127T103000
-DTSTAMP:20230608T143735
-UID:d37473c2-21d6-40c4-a934-d0a48189d2b4@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:a345cf59-228c-46a1-aca2-9414efb2466b@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 108\nInstructor: Oleg Kiselev\nType: lec\nGroup: B22
  -DSAI-01\nSubject: Mathematical Analysis II\nTime: 09:00 - 10:30
 LOCATION:108
@@ -208,10 +224,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (tut)
 DTSTART:20230127T104000
 DTEND:20230127T121000
-DTSTAMP:20230608T143735
-UID:a5f72088-f6bc-46a8-895b-46c87a88565a@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:b437cd2f-920f-4f8a-ab8a-0d852b98fc86@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 108\nInstructor: Imre Delgado\nType: tut\nGroup: B22
  -DSAI-01\nSubject: Mathematical Analysis II\nTime: 10:40 - 12:10
 LOCATION:108
@@ -220,10 +237,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230127T124000
 DTEND:20230127T141000
-DTSTAMP:20230608T143735
-UID:b7cede1c-bb1d-4d8a-9a77-346397c0a8b0@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:527e6d01-65d3-4629-be40-c198b5ebdda8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 314/313/316/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -233,10 +251,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230127T160000
 DTEND:20230127T173000
-DTSTAMP:20230608T143735
-UID:d1c5e89c-3777-4d92-ae0d-c46eb2488e2d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181912
+UID:f6a7e1bf-915d-46ea-8897-b3d4cb16b9f9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 314/313/318/320/421\nInstructor: Gelvanovsky\,Kruglo
  va\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubject: E
  nglish for Academic Purposes I\nTime: 16:00 - 17:30
@@ -246,10 +265,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (lec)
 DTSTART:20230320T090000
 DTEND:20230320T103000
-DTSTAMP:20230608T143736
-UID:f1796231-771f-4bd6-bf0d-2aa0816a1d26@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:24602f33-643f-4893-9bc0-d44c64f72eb9@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 09:00 - 10:30
 LOCATION:108
@@ -258,10 +278,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (tut)
 DTSTART:20230320T104000
 DTEND:20230320T121000
-DTSTAMP:20230608T143736
-UID:d5b2ad2c-b641-45ca-9f93-3b7d906b4ce4@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:4f428e58-69a4-47d8-bbde-ab0de7bb2657@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: tut\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 10:40 - 12:10
 LOCATION:108
@@ -270,10 +291,11 @@ BEGIN:VEVENT
 SUMMARY:Data Structures and Algorithms (lab)
 DTSTART:20230320T124000
 DTEND:20230320T141000
-DTSTAMP:20230608T143736
-UID:e5c743b6-574e-4d46-b40f-396baa7cf0e8@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:053c9079-c017-4802-b9b4-bd86cf133138@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Data Structures and Algorithms
 DESCRIPTION:Location: 101\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
  B22-DSAI-01\nSubject: Data Structures and Algorithms\nTime: 12:40 - 14:10
 LOCATION:101
@@ -282,10 +304,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (lec)
 DTSTART:20230321T090000
 DTEND:20230321T103000
-DTSTAMP:20230608T143736
-UID:395ced2c-3724-4d50-bba6-891d1ca70ff9@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:f50ae90c-05b2-444e-a1a5-27c6820c30e8@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: 108\nInstructor: Evgeni Zouev\nType: lec\nGroup: B22
  -DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 09:00 - 10:
  30
@@ -295,10 +318,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (tut)
 DTSTART:20230321T104000
 DTEND:20230321T121000
-DTSTAMP:20230608T143736
-UID:c834cd9d-9d8c-49d3-8e9c-f3c09a9e03de@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:c7f82552-7845-45d5-be58-74be675368e4@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: ONLINE\nInstructor: Imam Muwaffaq\nType: tut\nGroup:
   B22-DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 10:40 -
   12:10
@@ -308,10 +332,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230321T124000
 DTEND:20230321T141000
-DTSTAMP:20230608T143736
-UID:cb3af220-d9a4-4ffb-a54c-93c0e24d7019@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:fc58dad1-d9bf-4ea0-9a30-65a3b87a9cfd@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -321,10 +346,11 @@ BEGIN:VEVENT
 SUMMARY:Software Systems Analysis and Design (lab)
 DTSTART:20230321T142000
 DTEND:20230321T155000
-DTSTAMP:20230608T143736
-UID:b2a40448-3853-455c-9511-6402c3260338@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:d7f80e72-051f-4ac3-af43-8f8f05309f22@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Software Systems Analysis and Design
 DESCRIPTION:Location: 301\nInstructor: Daniel Elambo Atonge\nType: lab\nGr
  oup: B22-DSAI-01\nSubject: Software Systems Analysis and Design\nTime: 14:
  20 - 15:50
@@ -334,10 +360,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230321T160000
 DTEND:20230321T173000
-DTSTAMP:20230608T143736
-UID:8b2412ec-cb62-4dca-ae44-601bc8de183c@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:19df5a4f-9e34-4293-826b-b72ccbcb0eac@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 16:00 - 17:30
@@ -347,10 +374,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (lec)
 DTSTART:20230322T104000
 DTEND:20230322T121000
-DTSTAMP:20230608T143736
-UID:03b18169-c9c2-403f-b7e8-6f7e5a0bed72@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:b3d3e14a-1894-44c8-97ae-43b8fb587f90@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 108\nInstructor: Manuel Mazzara\nType: lec\nGroup: B
  22-DSAI-01\nSubject: Theoretical Computer Science\nTime: 10:40 - 12:10
 LOCATION:108
@@ -359,10 +387,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (tut)
 DTSTART:20230322T124000
 DTEND:20230322T141000
-DTSTAMP:20230608T143736
-UID:4cc561d8-7664-475d-b88f-db41c180286f@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3a8dbe7a-2975-4e1c-b977-53eb37b2c6ab@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 108\nInstructor: Andrey Frolov\nType: tut\nGroup: B2
  2-DSAI-01\nSubject: Theoretical Computer Science\nTime: 12:40 - 14:10
 LOCATION:108
@@ -371,10 +400,11 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Computer Science (lab)
 DTSTART:20230322T160000
 DTEND:20230322T173000
-DTSTAMP:20230608T143736
-UID:e6cc0159-d433-4614-ba51-94defea73e4d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:51fe0616-d806-4d1d-bfb0-772733d6e744@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Theoretical Computer Science
 DESCRIPTION:Location: 320\nInstructor: Rustam Lukmanov\nType: lab\nGroup: 
  B22-DSAI-01\nSubject: Theoretical Computer Science\nTime: 16:00 - 17:30
 LOCATION:320
@@ -383,10 +413,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (lec)
 DTSTART:20230323T104000
 DTEND:20230323T121000
-DTSTAMP:20230608T143736
-UID:7ca32d3e-2048-4c40-966b-ce2b0a688f62@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:eb4c11a1-2dc3-45c0-baef-5210d4199699@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: lec\nGroup
  : B22-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 1
  0:40 - 12:10
@@ -396,10 +427,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (tut)
 DTSTART:20230323T124000
 DTEND:20230323T141000
-DTSTAMP:20230608T143736
-UID:ad9d8f40-6017-4c7d-a1d4-6416a0004a32@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:387a165c-f2d8-4ac2-901c-feca22eec0fe@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: tut\nGroup
  : B22-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 1
  2:40 - 14:10
@@ -409,10 +441,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (lab)
 DTSTART:20230323T160000
 DTEND:20230323T173000
-DTSTAMP:20230608T143736
-UID:c7c3b612-804a-4fca-ad1b-3ce4fd864a42@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:2bdae309-3775-4968-8469-f4acccb5599a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 101\nInstructor: Zlata Shchedrikova\nType: lab\nGrou
  p: B22-DSAI-01\nSubject: Mathematical Analysis II\nTime: 16:00 - 17:30
 LOCATION:101
@@ -421,10 +454,11 @@ BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (lab)
 DTSTART:20230323T174000
 DTEND:20230323T191000
-DTSTAMP:20230608T143736
-UID:17cc9025-deb8-46cb-ada0-e56fc7257d53@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:b6036e46-a09d-4589-a033-7ec283ce90d6@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Analytical Geometry and Linear Algebra II
 DESCRIPTION:Location: 303\nInstructor: Daniil Arapov\nType: lab\nGroup: B2
  2-DSAI-01\nSubject: Analytical Geometry and Linear Algebra II\nTime: 17:40
   - 19:10
@@ -434,10 +468,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (lec)
 DTSTART:20230324T090000
 DTEND:20230324T103000
-DTSTAMP:20230608T143736
-UID:dadd63a6-080e-4192-bd7c-296ab162de66@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3847d654-89f9-4373-bd82-9fdfe669fd6f@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 108\nInstructor: Oleg Kiselev\nType: lec\nGroup: B22
  -DSAI-01\nSubject: Mathematical Analysis II\nTime: 09:00 - 10:30
 LOCATION:108
@@ -446,10 +481,11 @@ BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (tut)
 DTSTART:20230324T104000
 DTEND:20230324T121000
-DTSTAMP:20230608T143736
-UID:f86a26ab-ffe7-4fd3-b28d-eba238de42ca@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:23217e2d-a788-4d19-b3f6-612f8c48c37d@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:Mathematical Analysis II
 DESCRIPTION:Location: 108\nInstructor: Imre Delgado\nType: tut\nGroup: B22
  -DSAI-01\nSubject: Mathematical Analysis II\nTime: 10:40 - 12:10
 LOCATION:108
@@ -458,10 +494,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230324T124000
 DTEND:20230324T141000
-DTSTAMP:20230608T143736
-UID:902ff274-60b1-4d2b-9c70-ac3c476a376d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:3b05aedf-413c-4a04-b2a1-41f80cd3f44a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 314/313/316/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubjec
  t: English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -471,10 +508,11 @@ BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230324T160000
 DTEND:20230324T173000
-DTSTAMP:20230608T143736
-UID:ddcb8727-2d52-449c-b5ec-3320cf642478@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181913
+UID:a71114e6-f026-4380-99d9-320bad33e391@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
+CATEGORIES:English for Academic Purposes I
 DESCRIPTION:Location: 314/313/318/320/421\nInstructor: Gelvanovsky\,Kruglo
  va\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-DSAI-01\nSubject: E
  nglish for Academic Purposes I\nTime: 16:00 - 17:30
@@ -484,10 +522,11 @@ BEGIN:VEVENT
 SUMMARY:Software Project (lec)
 DTSTART:20230605T090000
 DTEND:20230605T103000
-DTSTAMP:20230608T143737
-UID:a7ca781c-4e9e-40dc-8b51-d11764460993@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:ef9cd760-89be-443e-9bc3-3485cd459b5a@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Software Project
 DESCRIPTION:Location: 108\nInstructor: Nursultan Askarbekuly\nType: lec\nG
  roup: B22-DSAI-01\nSubject: Software Project\nTime: 09:00 - 10:30
 LOCATION:108
@@ -496,10 +535,11 @@ BEGIN:VEVENT
 SUMMARY:Software Project (tut)
 DTSTART:20230605T104000
 DTEND:20230605T121000
-DTSTAMP:20230608T143737
-UID:95f4f9d3-95f0-49b4-bd86-3612c38689b8@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:451e69fa-0c8b-4f29-aaa2-9536e5954372@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Software Project
 DESCRIPTION:Location: 108\nInstructor: Nursultan Askarbekuly\nType: tut\nG
  roup: B22-DSAI-01\nSubject: Software Project\nTime: 10:40 - 12:10
 LOCATION:108
@@ -508,10 +548,11 @@ BEGIN:VEVENT
 SUMMARY:Software Project (lab)
 DTSTART:20230605T124000
 DTEND:20230605T141000
-DTSTAMP:20230608T143737
-UID:06a3c3e9-274e-4b0b-89f7-ab9fc41abd3b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:84e978c5-df3f-4ad0-aafd-fe128d5f17f1@innohassle.campus.innopolis.unive
  rsity
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
+CATEGORIES:Software Project
 DESCRIPTION:Location: 314\nInstructor: Munir Makhmutov\nType: lab\nGroup: 
  B22-DSAI-01\nSubject: Software Project\nTime: 12:40 - 14:10
 LOCATION:314
@@ -520,9 +561,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports(lec)- Physiology of sports (lec)
 DTSTART:20230613T104000
 DTEND:20230613T121000
-DTSTAMP:20230608T143737
-UID:47122004-c883-4b8a-a9a1-311b299896de@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:67c3af7e-bd7d-4e97-a3f8-e298129a4efe@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical sports(lec)- Physiology of sports
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Theoretical sports(lec)- Physiology of sports\nTime:
   10:40 - 12:10
@@ -532,9 +574,10 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports(lec)- Physiology of sports (lec)
 DTSTART:20230613T124000
 DTEND:20230613T141000
-DTSTAMP:20230608T143737
-UID:7187b882-240b-4ed5-9974-f43047e5bc0d@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:58eab396-1fe8-40cf-a7e6-e77c228615b6@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Theoretical sports(lec)- Physiology of sports
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Theoretical sports(lec)- Physiology of sports\nTime:
   12:40 - 14:10
@@ -544,9 +587,10 @@ BEGIN:VEVENT
 SUMMARY:Physical Education (lec)- Physiology of sports (lec)
 DTSTART:20230614T104000
 DTEND:20230614T121000
-DTSTAMP:20230608T143737
-UID:43be2eb7-c70c-433d-b177-d8a3ca395727@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:dc262ea7-23ee-40a0-ac23-96e629d5649a@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Physical Education (lec)- Physiology of sports
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Physical Education (lec)- Physiology of sports\nTime
  : 10:40 - 12:10
@@ -556,9 +600,10 @@ BEGIN:VEVENT
 SUMMARY:Physical Education (lec)- Physiology of sports (lec)
 DTSTART:20230614T124000
 DTEND:20230614T141000
-DTSTAMP:20230608T143737
-UID:53be4cf7-5f12-47a4-91a3-d0adc7f2de95@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:9cd95da6-da92-428d-85e1-7f8cfeb0b0eb@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Physical Education (lec)- Physiology of sports
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Physical Education (lec)- Physiology of sports\nTime
  : 12:40 - 14:10
@@ -568,9 +613,10 @@ BEGIN:VEVENT
 SUMMARY:Physical Education (lec)- Physiology of sports (lec)
 DTSTART:20230615T104000
 DTEND:20230615T121000
-DTSTAMP:20230608T143737
-UID:2ad7a7d0-da72-4775-9e14-662be7d58c3b@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:26863fca-e718-48ab-9c8b-2631e03c2eb9@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Physical Education (lec)- Physiology of sports
 DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
  B22-DSAI-01\nSubject: Physical Education (lec)- Physiology of sports\nTime
  : 10:40 - 12:10
@@ -580,9 +626,10 @@ BEGIN:VEVENT
 SUMMARY:Software Project (tut)
 DTSTART:20230610T104000
 DTEND:20230610T121000
-DTSTAMP:20230608T143737
-UID:e7551ebf-9f58-4971-8d8e-7ba4150e8744@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:89162b05-9188-44f1-82fc-9334da585c46@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Software Project
 DESCRIPTION:Location: 106\nInstructor: Nursultan Askarbekuly\nType: tut\nG
  roup: B22-DSAI-01\nSubject: Software Project\nTime: 10:40 - 12:10
 LOCATION:106
@@ -591,9 +638,10 @@ BEGIN:VEVENT
 SUMMARY:Software Project (tut)
 DTSTART:20230610T124000
 DTEND:20230610T141000
-DTSTAMP:20230608T143737
-UID:b52402bd-449d-40e5-893b-e30c97777d70@innohassle.campus.innopolis.unive
+DTSTAMP:20230609T181914
+UID:d5889c18-b403-4eaf-a360-b8d701b61487@innohassle.campus.innopolis.unive
  rsity
+CATEGORIES:Software Project
 DESCRIPTION:Location: 106\nInstructor: Nursultan Askarbekuly\nType: tut\nG
  roup: B22-DSAI-01\nSubject: Software Project\nTime: 12:40 - 14:10
 LOCATION:106
