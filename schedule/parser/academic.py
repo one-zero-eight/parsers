@@ -1,3 +1,5 @@
+"""Parser for academic schedule"""
+
 import datetime
 import itertools
 import json

@@ -32,7 +32,7 @@ CURRENT_YEAR = datetime.datetime.now().year
 symbol_translation = str.maketrans(
     "АВЕКМНОРСТУХаср",
     "ABEKMHOPCTYXacp",
-   #  ' \n\t'
+    #  ' \n\t'
 )
 
 
@@ -90,5 +90,6 @@ __all__ = [
     'remove_trailing_spaces',
     'beautify_string',
     'get_credentials',
-    'connect_spreadsheets'
+    'connect_spreadsheets',
+    'symbol_translation'
 ]

@@ -5,7 +5,7 @@ from typing import Optional
 
 from pydantic import BaseModel, validator
 from pydantic.tools import parse_obj_as
-from pydantic.dataclasses import dataclass
+
 import json
 
 from schedule.parser.utils import remove_trailing_spaces, symbol_translation
@@ -14,8 +14,7 @@ PARSER_PATH = Path(__file__).parent
 CONFIG_PATH = PARSER_PATH / "config.json"
 
 
-@dataclass
-class AcademicParserConfig:
+class AcademicParserConfig(BaseModel):
     SPREADSHEET_ID: str
     TARGET_RANGES: list[str]
     TARGET_SHEET_TITLES: list[str]
@@ -55,8 +54,7 @@ class Elective(BaseModel):
         return v
 
 
-@dataclass
-class ElectivesParserConfig:
+class ElectivesParserConfig(BaseModel):
     SPREADSHEET_ID: str
     TARGET_RANGES: list[str]
     TARGET_SHEET_TITLES: list[str]
@@ -100,7 +98,10 @@ electives_config: ElectivesParserConfig = parse_obj_as(
 __all__ = ['academic_config',
            'electives_config',
            'Elective',
-           'PARSER_PATH']
+           'PARSER_PATH',
+           'ElectivesParserConfig',
+           'AcademicParserConfig',
+           ]
 
 if __name__ == '__main__':
     pprint(academic_config)

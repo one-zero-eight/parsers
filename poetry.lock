@@ -12,6 +12,26 @@ files = [
 ]
 
 [[package]]
+name = "autodoc-pydantic"
+version = "1.8.0"
+description = "Seamlessly integrate pydantic models in your Sphinx documentation."
+optional = false
+python-versions = ">=3.6,<4.0.0"
+files = [
+    {file = "autodoc_pydantic-1.8.0-py3-none-any.whl", hash = "sha256:f1bf9318f37369fec906ab523ebe65c1894395a6fc859dbc6fd02ffd90d3242f"},
+    {file = "autodoc_pydantic-1.8.0.tar.gz", hash = "sha256:77da1cbbe4434fa9963f85a1555c63afff9a4acec06b318dc4f54c4f28a04f2c"},
+]
+
+[package.dependencies]
+pydantic = ">=1.5"
+Sphinx = ">=3.4"
+
+[package.extras]
+dev = ["coverage (>=5,<6)", "flake8 (>=3,<4)", "pytest (>=6,<7)", "sphinx-copybutton (>=0.4,<0.5)", "sphinx-rtd-theme (>=1.0,<2.0)", "sphinx-tabs (>=3,<4)", "sphinxcontrib-mermaid (>=0.7,<0.8)", "tox (>=3,<4)"]
+docs = ["sphinx-copybutton (>=0.4,<0.5)", "sphinx-rtd-theme (>=1.0,<2.0)", "sphinx-tabs (>=3,<4)", "sphinxcontrib-mermaid (>=0.7,<0.8)"]
+test = ["coverage (>=5,<6)", "pytest (>=6,<7)"]
+
+[[package]]
 name = "babel"
 version = "2.12.1"
 description = "Internationalization utilities"
@@ -159,13 +179,13 @@ files = [
 
 [[package]]
 name = "docutils"
-version = "0.20.1"
+version = "0.18.1"
 description = "Docutils -- Python Documentation Utilities"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 files = [
-    {file = "docutils-0.20.1-py3-none-any.whl", hash = "sha256:96f387a2c5562db4476f09f13bbab2192e764cac08ebbf3a34a95d9b1e4a59d6"},
-    {file = "docutils-0.20.1.tar.gz", hash = "sha256:f08a4e276c3a1583a86dce3e34aba3fe04d02bba2dd51ed16106244e8a923e3b"},
+    {file = "docutils-0.18.1-py2.py3-none-any.whl", hash = "sha256:23010f129180089fbcd3bc08cfefccb3b890b0050e1ca00c867036e9d161b98c"},
+    {file = "docutils-0.18.1.tar.gz", hash = "sha256:679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06"},
 ]
 
 [[package]]
@@ -776,24 +796,24 @@ files = [
 
 [[package]]
 name = "sphinx"
-version = "7.0.1"
+version = "6.0.0"
 description = "Python documentation generator"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Sphinx-7.0.1.tar.gz", hash = "sha256:61e025f788c5977d9412587e733733a289e2b9fdc2fef8868ddfbfc4ccfe881d"},
-    {file = "sphinx-7.0.1-py3-none-any.whl", hash = "sha256:60c5e04756c1709a98845ed27a2eed7a556af3993afb66e77fec48189f742616"},
+    {file = "Sphinx-6.0.0.tar.gz", hash = "sha256:58c140ecd9aa0abbc8ff6da48a266648eac9e5bfc8e49576efd2979bf46f5961"},
+    {file = "sphinx-6.0.0-py3-none-any.whl", hash = "sha256:c2aeebfcb0e7474f5a820eac6177c7492b1d3c9c535aa21d5ae77cab2f3600e4"},
 ]
 
 [package.dependencies]
 alabaster = ">=0.7,<0.8"
 babel = ">=2.9"
 colorama = {version = ">=0.4.5", markers = "sys_platform == \"win32\""}
-docutils = ">=0.18.1,<0.21"
+docutils = ">=0.18,<0.20"
 imagesize = ">=1.3"
 Jinja2 = ">=3.0"
 packaging = ">=21.0"
-Pygments = ">=2.13"
+Pygments = ">=2.12"
 requests = ">=2.25.0"
 snowballstemmer = ">=2.0"
 sphinxcontrib-applehelp = "*"
@@ -805,8 +825,27 @@ sphinxcontrib-serializinghtml = ">=1.1.5"
 
 [package.extras]
 docs = ["sphinxcontrib-websupport"]
-lint = ["docutils-stubs", "flake8 (>=3.5.0)", "flake8-simplify", "isort", "mypy (>=0.990)", "ruff", "sphinx-lint", "types-requests"]
-test = ["cython", "filelock", "html5lib", "pytest (>=4.6)"]
+lint = ["docutils-stubs", "flake8 (>=3.5.0)", "flake8-bugbear", "flake8-comprehensions", "flake8-simplify", "isort", "mypy (>=0.990)", "sphinx-lint", "types-requests"]
+test = ["cython", "html5lib", "pytest (>=4.6)"]
+
+[[package]]
+name = "sphinx-rtd-theme"
+version = "1.2.2"
+description = "Read the Docs theme for Sphinx"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
+files = [
+    {file = "sphinx_rtd_theme-1.2.2-py2.py3-none-any.whl", hash = "sha256:6a7e7d8af34eb8fc57d52a09c6b6b9c46ff44aea5951bc831eeb9245378f3689"},
+    {file = "sphinx_rtd_theme-1.2.2.tar.gz", hash = "sha256:01c5c5a72e2d025bd23d1f06c59a4831b06e6ce6c01fdd5ebfe9986c0a880fc7"},
+]
+
+[package.dependencies]
+docutils = "<0.19"
+sphinx = ">=1.6,<7"
+sphinxcontrib-jquery = ">=4,<5"
+
+[package.extras]
+dev = ["bump2version", "sphinxcontrib-httpdomain", "transifex-client", "wheel"]
 
 [[package]]
 name = "sphinxcontrib-applehelp"
@@ -852,6 +891,20 @@ files = [
 [package.extras]
 lint = ["docutils-stubs", "flake8", "mypy"]
 test = ["html5lib", "pytest"]
+
+[[package]]
+name = "sphinxcontrib-jquery"
+version = "4.1"
+description = "Extension to include jQuery on newer Sphinx releases"
+optional = false
+python-versions = ">=2.7"
+files = [
+    {file = "sphinxcontrib-jquery-4.1.tar.gz", hash = "sha256:1620739f04e36a2c779f1a131a2dfd49b2fd07351bf1968ced074365933abc7a"},
+    {file = "sphinxcontrib_jquery-4.1-py2.py3-none-any.whl", hash = "sha256:f936030d7d0147dd026a4f2b5a57343d233f1fc7b363f68b3d4f1cb0993878ae"},
+]
+
+[package.dependencies]
+Sphinx = ">=1.8"
 
 [[package]]
 name = "sphinxcontrib-jsmath"
@@ -938,4 +991,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7329e5cd4403c044248cdaa871bb83e7ccd68c48b6deff28ba6a80aebcd87c46"
+content-hash = "36cea7bf1ed63ce94b464206115e42c1484a10d1afc9146b5ffd153efa58122f"
