@@ -1,21 +1,22 @@
 Submodules
 =======================
 
-parser.academic module
-----------------------
+parser.core_courses module
+----------------------------
 
-.. automodule:: parser.academic
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. automodule:: parser.core_courses
+    :members:
+    :undoc-members:
+    :show-inheritance:
 
 parser.config module
 --------------------
 
 .. automodule:: parser.config
-   :members:
-   :undoc-members:
-   :show-inheritance:
+    :members:
+    :undoc-members:
+    :show-inheritance:
+    :exclude-members: PARSER_PATH, CONFIG_PATH
 
 parser.electives module
 -----------------------

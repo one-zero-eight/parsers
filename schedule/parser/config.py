@@ -91,8 +91,8 @@ class Elective(BaseModel):
 
     @validator("name", "instructor", "elective_type", pre=True)
     def beatify_string(cls: type["Elective"], string: str) -> str:  # noqa
-        """
-        Beatify string
+        """Beatify string
+
         :param string: string to beatify
         :type string: str
         :return: beatified string

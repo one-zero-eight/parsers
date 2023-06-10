@@ -42,6 +42,7 @@ class Subject(BaseModel):
         """
         Create Subject instance from name of the subject
         Note: uses flyweight pattern to prevent copies
+
         :param dirt_name: name from the table as it is. For ex.: "Software Project  (lec)                  "
         :type dirt_name: str
         :return: Subject instance
@@ -60,6 +61,7 @@ class Subject(BaseModel):
     def get(cls: type["Subject"], name: str) -> Optional["Subject"]:
         """
         Get instance by name
+
         :param name: name of the subject
         :type name: str
         :return: Subject instance if it is exists
@@ -71,6 +73,7 @@ class Subject(BaseModel):
     def get_all(cls: type["Subject"]) -> list["Subject"]:
         """
         Get all instances of the Subject
+
         :return: list of Subject instances
         :rtype: list[Subject]
         """
@@ -120,6 +123,7 @@ class ScheduleEvent(BaseModel):
     def summary(self: "ScheduleEvent") -> str:
         """
         Summary of the event
+
         :return: summary of the event
         :rtype: str
         """
@@ -132,6 +136,7 @@ class ScheduleEvent(BaseModel):
     def description(self: "ScheduleEvent") -> str:
         """
         Description of the event
+
         :return: description of the event
         :rtype: str
         """
@@ -151,6 +156,7 @@ class ScheduleEvent(BaseModel):
     def dtstart(self: "ScheduleEvent") -> datetime.datetime:
         """
         Datetime of the start of the event
+
         :return: datetime of the start of the event
         :rtype: datetime.datetime
         """
@@ -160,6 +166,7 @@ class ScheduleEvent(BaseModel):
     def dtend(self: "ScheduleEvent") -> datetime.datetime:
         """
         Datetime of the end of the event
+
         :return: datetime of the end of the event
         :rtype: datetime.datetime
         """
@@ -168,6 +175,7 @@ class ScheduleEvent(BaseModel):
     def __hash__(self: "ScheduleEvent") -> int:
         """
         Hash of the event
+
         :return: hash of the event
         :rtype: int
         """
@@ -185,6 +193,7 @@ class ScheduleEvent(BaseModel):
     def get_uid(self: "ScheduleEvent") -> str:
         """
         Get unique id of the event
+
         :return: unique id of the event
         :rtype: str
         """
@@ -193,22 +202,24 @@ class ScheduleEvent(BaseModel):
     def __eq__(self: "ScheduleEvent", other: "ScheduleEvent") -> bool:
         """
         Check if the event is equal to other event
+
         :param other: other event
         :type other: ScheduleEvent
         :return: is the event is equal to other event
         :rtype: bool
         """
         return (
-                self.subject == other.subject
-                and self.event_type == other.event_type
-                and self.start_time == other.start_time
-                and self.end_time == other.end_time
-                and self.group == other.group
+            self.subject == other.subject
+            and self.event_type == other.event_type
+            and self.start_time == other.start_time
+            and self.end_time == other.end_time
+            and self.group == other.group
         )
 
     def from_cell(self: "ScheduleEvent", lines: list[str]) -> None:
         """
         Parse event from cell
+
         :param lines: list of lines in the cell
         :type lines: list[str]
         :return: None
@@ -272,6 +283,7 @@ class CoreCoursesParser:
     def merge_cells(df: pd.DataFrame, target_sheet: dict["str", ...]) -> None:
         """
         Merge cells in the DataFrame according to the Google Sheets data
+
         :param df: DataFrame to merge cells in
         :type df: pd.DataFrame
         :param target_sheet: Target sheet from Google Sheets API
@@ -294,14 +306,15 @@ class CoreCoursesParser:
                 df.iloc[x0:x1, y0:y1] = df.iloc[x0][y0]
 
     def get_clear_df(
-            self: "CoreCoursesParser",
-            spreadsheet_id: str,
-            target_range: str,
-            target_title: str,
+        self: "CoreCoursesParser",
+        spreadsheet_id: str,
+        target_range: str,
+        target_title: str,
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
         row filled by left value. Also remove trailing spaces and translate russian letters to english ones.
+
         :param spreadsheet_id: ID of the spreadsheet to get data from
         :type spreadsheet_id: str
         :param target_range: Range of the data to get
@@ -380,11 +393,12 @@ class CoreCoursesParser:
 
     @staticmethod
     def refactor_course_df(
-            course_df: pd.DataFrame, group_names: list[str]
+        course_df: pd.DataFrame, group_names: list[str]
     ) -> pd.DataFrame:
         """
         Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
         to one event.
+
         :param course_df: DataFrame to refactor
         :type course_df: pd.DataFrame
         :param group_names: List of group names
@@ -406,6 +420,7 @@ class CoreCoursesParser:
     def parse_df(self, df: pd.DataFrame) -> dict[str, dict[str, list[ScheduleEvent]]]:
         """
         Parse DataFrame into a dictionary with separation by days and then by course.
+
         :param df: DataFrame to parse
         :type df: pd.DataFrame
         :return: Dictionary with separation by days and then by course
@@ -451,6 +466,7 @@ def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
     """
     Convert course DataFrame (timeslot as index, group name as column name, list of event lines in cell value) to list
     of ScheduleEvents.
+
     :param course_df: DataFrame to convert
     :type course_df: pd.DataFrame
     :return: List of ScheduleEvents
@@ -475,13 +491,14 @@ def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
 
 
 def convert_separation(
-        separation_by_days: dict,
-        very_first_date: datetime.date,
-        very_last_date: datetime.date,
-        logger: logging.Logger,
+    separation_by_days: dict,
+    very_first_date: datetime.date,
+    very_last_date: datetime.date,
+    logger: logging.Logger,
 ) -> Iterable[ScheduleEvent]:
     """
     Convert separation by days and then by courses to list of ScheduleEvents.
+
     :param separation_by_days: Dictionary with separation by days and then by courses
     :type separation_by_days: dict
     :param very_first_date: first date of schedule
@@ -611,7 +628,7 @@ if __name__ == "__main__":
         course_path = directory / replace_spaces_pattern.sub("-", course_name)
         course_path.mkdir(parents=True, exist_ok=True)
         for group_name, group_events in itertools.groupby(
-                course_events, lambda x: x.group
+            course_events, lambda x: x.group
         ):
             logger.info(f"  > {group_name}...")
             calendar = icalendar.Calendar()
