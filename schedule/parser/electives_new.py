@@ -30,6 +30,10 @@ class ElectiveEvent(BaseModel):
     event_type: Optional[str]
     group: Optional[str] = None
 
+    def __hash__(self):
+        return hash((self.elective.alias, self.start.isoformat(), self.end.isoformat(), self.location, self.event_type,
+                     self.group))
+
 
 class ElectiveParser:
     spreadsheets: googleapiclient.discovery.Resource
@@ -255,7 +259,7 @@ def convert_separation(
             vevent['dtstart'] = event.start.strftime("%Y%m%dT%H%M%S")
             vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
             vevent['location'] = event.location
-            vevent['uid'] = str(uuid4()) + "@innohassle.ru"
+            vevent['uid'] = str(hash(event)) + "@innohassle.ru"
             vevent['categories'] = elective.name
             desc = f"{elective.name}"
 
@@ -327,4 +331,4 @@ if __name__ == '__main__':
 
     # create a new .json file with information about calendar
     with open(PARSER_PATH / config.SAVE_JSON_PATH, "w") as f:
-        json.dump(calendars, f, indent=4)
+        json.dump(calendars, f, indent=4, sort_keys=True)

@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T111000
 DTEND:20230123T124000
-DTSTAMP:20230609T181912
-UID:761592da-4e1a-4ce0-bae7-fde58cbc8500@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-6109456746278736003@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -22,9 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230609T181912
-UID:648f7251-63d5-4d09-ad1f-ebf7d466627f@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-7671119432177303329@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -34,9 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230609T181912
-UID:5c2884e0-76b5-4604-afa2-e0a2698a2202@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-69417111961633247@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -46,9 +43,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230126T131000
 DTEND:20230126T144000
-DTSTAMP:20230609T181912
-UID:e387dd62-cc86-497e-a502-79cc528ac27b@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:2986629568104142579@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
@@ -59,9 +55,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230126T145000
 DTEND:20230126T162000
-DTSTAMP:20230609T181912
-UID:b125511b-0f46-49a9-a10c-9ec5577f09e5@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-1012872144871255915@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 106\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -72,9 +67,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230609T181912
-UID:c587b6dd-6ef2-4cef-a5a5-f0af71217983@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-2256524811610174533@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-DS-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -84,9 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T111000
 DTEND:20230320T124000
-DTSTAMP:20230609T181913
-UID:767cebca-5510-4e79-af6c-adb71540ac75@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-6109456746278736003@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -98,9 +91,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230609T181913
-UID:b23180b4-4758-4b55-a644-44f4e33ca336@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:2986629568104142579@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
@@ -112,9 +104,8 @@ BEGIN:VEVENT
 SUMMARY:Statistical Techniques (lab)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230609T181913
-UID:3d89def6-b6eb-44ff-9a1d-8b6b28165181@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-1012872144871255915@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Statistical Techniques
 DESCRIPTION:Location: 106\nInstructor: Zamira Kholmatova\nType: lab\nGroup

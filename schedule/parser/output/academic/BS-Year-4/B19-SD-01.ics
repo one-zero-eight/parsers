@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T093000
 DTEND:20230123T110000
-DTSTAMP:20230609T181912
-UID:7acba21b-ccb1-442e-83e7-e2a89829493c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-244009786379332690@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -22,9 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230609T181912
-UID:e6fcd415-28d4-4483-bbf9-41ee91d19bbf@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-7705115423397487356@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -34,9 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230609T181912
-UID:3a875e84-9fb5-4e25-9f2f-a62ee73418ab@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:6942616185453039551@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -46,9 +43,8 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230124T111000
 DTEND:20230124T124000
-DTSTAMP:20230609T181912
-UID:5e39eed4-de02-4289-8ad9-0720f697e053@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:8011037027339621170@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
@@ -59,9 +55,8 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (tut)
 DTSTART:20230126T111000
 DTEND:20230126T124000
-DTSTAMP:20230609T181912
-UID:dae9d201-3860-4fe9-b100-4fe4d3f7929f@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-6196685130631008694@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: 106 (STARTS ON 09/02)\nInstructor: Danil Kolesnilov\
@@ -73,9 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230609T181912
-UID:9d8669c2-855f-4536-8a17-4b68bcc1472b@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:4755508485804498265@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -85,9 +79,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230128T131000
 DTEND:20230128T144000
-DTSTAMP:20230609T181912
-UID:ac189ec1-6d84-40bc-986c-c720b9c0fee8@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:664580732141264728@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: Theoretical Sports (lec) - Physiology\nInstructor: T
@@ -99,9 +92,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230128T145000
 DTEND:20230128T162000
-DTSTAMP:20230609T181912
-UID:679df77c-b43b-49e2-9e4b-73a74002786a@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-7705115423397487356@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: Theoretical Sports (lec) - Physiology\nInstructor: T
@@ -113,9 +105,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T093000
 DTEND:20230320T110000
-DTSTAMP:20230609T181913
-UID:cec2ee77-8f11-493c-8019-33c2e1bfcd33@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-244009786379332690@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -127,9 +118,8 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230321T111000
 DTEND:20230321T124000
-DTSTAMP:20230609T181913
-UID:ccf3621c-d070-45c9-a964-60807814330c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:8011037027339621170@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
@@ -140,9 +130,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports- Optimal Nutrition(lec) (lec)
 DTSTART:20230321T131000
 DTEND:20230321T144000
-DTSTAMP:20230609T181913
-UID:03810d97-ffc5-4e95-88bf-c431bbfe7e6c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:1898730039186381305@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Sports- Optimal Nutrition(lec)
 DESCRIPTION:Location: ONLINE (FINAL QUIZ)\nInstructor: Alexey Petrenko\nTy
@@ -154,9 +143,8 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T111000
 DTEND:20230323T124000
-DTSTAMP:20230609T181913
-UID:3e89ac2a-9d74-4e16-9cc3-efde75a299a3@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-8554952873366205906@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
@@ -168,9 +156,8 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T131000
 DTEND:20230323T144000
-DTSTAMP:20230609T181913
-UID:3ec4898e-a7e1-4153-b975-27326a0dcb6e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-2334703725776955359@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
@@ -182,9 +169,8 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T145000
 DTEND:20230323T162000
-DTSTAMP:20230609T181913
-UID:bd84251f-ca9c-4338-9137-f1974aa1a157@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-7686753673526512478@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou

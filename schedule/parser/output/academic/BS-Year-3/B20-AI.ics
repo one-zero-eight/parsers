@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230123T091000
 DTEND:20230123T104000
-DTSTAMP:20230609T181912
-UID:7143828f-b1dd-4f38-8983-ee5ffaba4efc@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:7064903442056771815@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -21,9 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230123T105000
 DTEND:20230123T122000
-DTSTAMP:20230609T181912
-UID:32d7f2c5-bbae-4885-a8cb-c9f3c6861760@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:7712952809070628411@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
@@ -34,9 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230123T125000
 DTEND:20230123T142000
-DTSTAMP:20230609T181912
-UID:40d70e01-aede-4edb-8203-4b8766c6aca1@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-4600068057674767346@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
@@ -47,9 +44,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230123T143000
 DTEND:20230123T160000
-DTSTAMP:20230609T181912
-UID:6f4c88b2-1688-4813-89c6-31cc0200ccab@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-3929430932804109861@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 313\nInstructor: Albert Nasybullin\nType: lab\nGroup
@@ -60,9 +56,8 @@ BEGIN:VEVENT
 SUMMARY:Natural Language Processing (lec)
 DTSTART:20230125T143000
 DTEND:20230125T160000
-DTSTAMP:20230609T181912
-UID:28791412-f2b0-4192-9e1a-c796b2bd9b12@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:4428605842089417065@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Natural Language Processing
 DESCRIPTION:Location: 300\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
@@ -73,9 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Natural Language Processing (lab)
 DTSTART:20230125T161000
 DTEND:20230125T174000
-DTSTAMP:20230609T181912
-UID:3ae22a15-d001-4127-842e-9694d13f3d75@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:1567726936610333623@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Natural Language Processing
 DESCRIPTION:Location: 300\nInstructor: Aidar Valeev\nType: lab\nGroup: B20
@@ -86,9 +80,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lec)
 DTSTART:20230320T091000
 DTEND:20230320T104000
-DTSTAMP:20230609T181913
-UID:af20c10c-28d3-4c5a-b59c-56c58a2bec2c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:7064903442056771815@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -99,9 +92,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lec)
 DTSTART:20230320T105000
 DTEND:20230320T122000
-DTSTAMP:20230609T181913
-UID:09fc745f-83c8-4e96-866b-ab8c8e3ca5b3@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:7712952809070628411@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
@@ -112,9 +104,8 @@ BEGIN:VEVENT
 SUMMARY:Information Retrieval (lab)
 DTSTART:20230320T125000
 DTEND:20230320T142000
-DTSTAMP:20230609T181913
-UID:616fde97-662d-43e1-9c95-3767868b640f@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-4600068057674767346@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
@@ -125,9 +116,8 @@ BEGIN:VEVENT
 SUMMARY:Signals and Systems (lab)
 DTSTART:20230320T143000
 DTEND:20230320T160000
-DTSTAMP:20230609T181913
-UID:79a32f80-9f33-4810-bd0c-acf5c69c9985@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-3929430932804109861@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
 DESCRIPTION:Location: 313\nInstructor: Albert Nasybullin\nType: lab\nGroup
@@ -138,9 +128,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lec)
 DTSTART:20230321T105000
 DTEND:20230321T122000
-DTSTAMP:20230609T181913
-UID:33eb5007-3eda-4922-acc2-7eb33e5206e3@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:7586042585762218521@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
@@ -151,9 +140,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lab)
 DTSTART:20230321T125000
 DTEND:20230321T142000
-DTSTAMP:20230609T181913
-UID:f6c701f4-8d86-4e24-9739-271ed91214f1@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-4813704188577745714@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 304\nInstructor: Firas Jolha\nType: lab\nGroup: B20-
@@ -164,9 +152,8 @@ BEGIN:VEVENT
 SUMMARY:Natural Language Processing (lec)
 DTSTART:20230322T143000
 DTEND:20230322T160000
-DTSTAMP:20230609T181913
-UID:e1be45c0-2673-4d0b-ba40-b5d2ccec61a5@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:4428605842089417065@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Natural Language Processing
 DESCRIPTION:Location: 300\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
@@ -177,9 +164,8 @@ BEGIN:VEVENT
 SUMMARY:Natural Language Processing (lab)
 DTSTART:20230322T161000
 DTEND:20230322T174000
-DTSTAMP:20230609T181913
-UID:d6108d20-7e09-4e79-a410-3d924df227fd@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:1567726936610333623@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Natural Language Processing
 DESCRIPTION:Location: 300\nInstructor: Aidar Valeev\nType: lab\nGroup: B20
@@ -190,9 +176,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lec)
 DTSTART:20230323T105000
 DTEND:20230323T122000
-DTSTAMP:20230609T181913
-UID:6fc702d0-bb87-41d4-a95f-862451f925f2@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:7586042585762218521@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
@@ -203,9 +188,8 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Big Data (lab)
 DTSTART:20230323T125000
 DTEND:20230323T142000
-DTSTAMP:20230609T181913
-UID:29b17b12-7f47-4ffb-8a32-0894d1c6dd16@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-4813704188577745714@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
 DESCRIPTION:Location: 304 (ROOM #102 ON 20/04)\nInstructor: Firas Jolha\nT

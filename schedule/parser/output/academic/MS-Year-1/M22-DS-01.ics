@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lec)
 DTSTART:20230123T090000
 DTEND:20230123T103000
-DTSTAMP:20230609T181912
-UID:3413ae1e-fda5-4e4e-893b-957c22906067@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:2165864851706956416@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Statistics
 DESCRIPTION:Location: 305 (ROOM 101 ON 13/03)\nInstructor: Nikola Zlatanov
@@ -22,9 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lab)
 DTSTART:20230123T104000
 DTEND:20230123T121000
-DTSTAMP:20230609T181912
-UID:60105725-e442-4dd9-b752-56f468734e2f@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:6082454366083738674@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Statistics
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -35,9 +33,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lec)
 DTSTART:20230124T090000
 DTEND:20230124T103000
-DTSTAMP:20230609T181912
-UID:40820e0a-b7f8-4d44-8e90-44b9806c6ed4@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:2905762915491376369@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -49,9 +46,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lab)
 DTSTART:20230124T104000
 DTEND:20230124T121000
-DTSTAMP:20230609T181912
-UID:7e4da400-2c25-4463-a75b-65973b1a5059@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:3749804239292431697@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
 DESCRIPTION:Location: 304\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -62,9 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lec)
 DTSTART:20230125T174000
 DTEND:20230125T191000
-DTSTAMP:20230609T181912
-UID:6857bdc1-251e-47e7-b30b-faa273b4d1bd@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-8297832510914859423@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
@@ -78,9 +73,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lab)
 DTSTART:20230126T090000
 DTEND:20230126T103000
-DTSTAMP:20230609T181912
-UID:dcdd8d1a-8db0-41c4-8392-f294ae4bc47e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-6094564181015688072@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
@@ -91,9 +85,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lab)
 DTSTART:20230126T104000
 DTEND:20230126T121000
-DTSTAMP:20230609T181912
-UID:8a8f3a28-49b2-447f-9c0f-8404da60e445@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:8938109566943246774@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
@@ -104,9 +97,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for DS(lab) (lab)
 DTSTART:20230126T142000
 DTEND:20230126T155000
-DTSTAMP:20230609T181912
-UID:86799cf3-18fc-4df0-8891-95eadc06a2b9@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-7438003455324162290@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Systematic Literature Review for DS(lab)
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
@@ -118,9 +110,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T104000
 DTEND:20230127T121000
-DTSTAMP:20230609T181912
-UID:3170f14b-823a-4205-a74a-60cd8c5ce209@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-3634894860152440988@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics (lec) STARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -133,9 +124,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
 DTSTART:20230127T124000
 DTEND:20230127T141000
-DTSTAMP:20230609T181912
-UID:43530683-0d02-4295-83b3-5299dffff3fe@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:2209050599782791462@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics (lec) STARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -148,9 +138,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lec)
 DTSTART:20230320T090000
 DTEND:20230320T103000
-DTSTAMP:20230609T181913
-UID:31168d5e-ccb4-4a5f-ada9-89ba143740ba@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:2165864851706956416@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Statistics
 DESCRIPTION:Location: 305\nInstructor: Nikola Zlatanov\nType: lec\nGroup: 
@@ -161,9 +150,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistics (lab)
 DTSTART:20230320T104000
 DTEND:20230320T121000
-DTSTAMP:20230609T181913
-UID:0cdf984a-a7e8-4da7-b053-67c25f9af274@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:6082454366083738674@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Statistics
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
@@ -174,9 +162,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lec)
 DTSTART:20230321T090000
 DTEND:20230321T103000
-DTSTAMP:20230609T181913
-UID:1d1272d5-5bf1-4f5c-a801-a6300e755516@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:2905762915491376369@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
@@ -188,9 +175,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lab)
 DTSTART:20230321T104000
 DTEND:20230321T121000
-DTSTAMP:20230609T181913
-UID:a27ac116-66bb-4a08-806f-88aec85d62c6@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:3749804239292431697@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
 DESCRIPTION:Location: 303\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
@@ -201,9 +187,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lec)
 DTSTART:20230322T174000
 DTEND:20230322T191000
-DTSTAMP:20230609T181913
-UID:582b28a4-fad1-4d1f-adf2-3343a17a7ddb@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-8297832510914859423@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
@@ -217,9 +202,8 @@ BEGIN:VEVENT
 SUMMARY:Advanced Machine Learning (lab)
 DTSTART:20230323T090000
 DTEND:20230323T103000
-DTSTAMP:20230609T181913
-UID:99a4dd82-bc03-4e16-b97e-bb38c50562a0@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-6094564181015688072@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
@@ -230,9 +214,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lab)
 DTSTART:20230323T104000
 DTEND:20230323T121000
-DTSTAMP:20230609T181913
-UID:716e0dce-7940-4bfa-a0eb-61d9a6ede31e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:8938109566943246774@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
@@ -243,9 +226,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for Data Science & Robotics (lec)
 DTSTART:20230323T124000
 DTEND:20230323T141000
-DTSTAMP:20230609T181913
-UID:3263c106-4df2-458b-9e9f-e74dead22b3a@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:5418688545925883662@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for Data Science & Robotics
 DESCRIPTION:Location: 313 (week 1\, 2\, 7\, 8)\nInstructor: Mirko Farina\n
@@ -257,9 +239,8 @@ BEGIN:VEVENT
 SUMMARY:Systematic Literature Review for DS (lab)
 DTSTART:20230323T142000
 DTEND:20230323T155000
-DTSTAMP:20230609T181913
-UID:a0bf250c-34de-4640-b8e1-0a88b16ed86e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:935290570774952606@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for DS
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
@@ -270,9 +251,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec)
 DTSTART:20230324T104000
 DTEND:20230324T121000
-DTSTAMP:20230609T181913
-UID:212c8bbf-c131-4235-a791-e38944eb5ce6@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-7897187058094741207@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
@@ -284,9 +264,8 @@ BEGIN:VEVENT
 SUMMARY:Big Data Technologies and Analytics (lec)
 DTSTART:20230324T124000
 DTEND:20230324T141000
-DTSTAMP:20230609T181913
-UID:74713346-d2d4-427d-8ea8-ff261536538c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-8609872899056319800@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0

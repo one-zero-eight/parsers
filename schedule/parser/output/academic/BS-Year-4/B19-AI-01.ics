@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T093000
 DTEND:20230123T110000
-DTSTAMP:20230609T181912
-UID:f4d97272-f4bd-44ab-93c2-6638cea22d9d@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:3063596830513752384@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -22,9 +21,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230609T181912
-UID:d5737fea-2c59-40c3-aad7-c645a5597ef2@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:848576479965846@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -34,9 +32,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230609T181912
-UID:138838bc-3bad-408d-91e8-9a2fbe2b0b8c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-3798163888379058863@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -46,9 +43,8 @@ BEGIN:VEVENT
 SUMMARY:Human-AI Interaction Design (lec)
 DTSTART:20230124T181000
 DTEND:20230124T194000
-DTSTAMP:20230609T181912
-UID:e33652db-a660-473c-9278-35ab759fe0c0@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:8662785860563435205@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Human-AI Interaction Design
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
@@ -59,9 +55,8 @@ BEGIN:VEVENT
 SUMMARY:Human-AI Interaction Design (lab)
 DTSTART:20230125T145000
 DTEND:20230125T162000
-DTSTAMP:20230609T181912
-UID:1848f861-2893-4e32-9699-e2d9bfccd028@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-5088682046278311993@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Human-AI Interaction Design
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
@@ -72,9 +67,8 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230609T181912
-UID:977e700c-442b-401a-b013-d606414533ad@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:8063115102697583339@innohassle.campus.innopolis.university
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -84,9 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T093000
 DTEND:20230320T110000
-DTSTAMP:20230609T181913
-UID:e6e62e87-e332-4dd5-8a59-2342fc081d37@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:3063596830513752384@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -98,9 +91,8 @@ BEGIN:VEVENT
 SUMMARY:Human-AI Interaction Design (lec)
 DTSTART:20230321T181000
 DTEND:20230321T194000
-DTSTAMP:20230609T181913
-UID:869166ed-e2dd-4410-b42f-bfc6ab9138ca@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:8662785860563435205@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Human-AI Interaction Design
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
@@ -111,9 +103,8 @@ BEGIN:VEVENT
 SUMMARY:Human-AI Interaction Design (lab)
 DTSTART:20230322T145000
 DTEND:20230322T162000
-DTSTAMP:20230609T181913
-UID:44b0f308-1dff-46de-b316-fc29ff9a7267@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-5088682046278311993@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Human-AI Interaction Design
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 

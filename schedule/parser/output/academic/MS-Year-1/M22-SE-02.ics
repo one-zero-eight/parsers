@@ -8,9 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230123T104000
 DTEND:20230123T121000
-DTSTAMP:20230609T181912
-UID:f9c00e77-f23d-4ceb-a17f-64f6bb306006@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-5312053386510751526@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
@@ -21,9 +20,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230227T124000
 DTEND:20230227T141000
-DTSTAMP:20230609T181912
-UID:6183964d-3b27-4c88-a60e-a1e0c37f4aab@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:5256238812222623790@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 12:40 - 14:10
@@ -33,9 +31,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230227T142000
 DTEND:20230227T155000
-DTSTAMP:20230609T181912
-UID:545b1a77-82f2-4331-b580-b8d47610c83d@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-1229353523929494485@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 14:20 - 15:50
@@ -45,9 +42,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230228T124000
 DTEND:20230228T141000
-DTSTAMP:20230609T181912
-UID:77fc796d-02b1-4101-8d14-3f454a6cbaa0@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:5256238812222623790@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 12:40 - 14:10
@@ -57,9 +53,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230228T142000
 DTEND:20230228T155000
-DTSTAMP:20230609T181912
-UID:a7680cc6-1858-464d-90aa-08ce4bc2b0b1@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-1229353523929494485@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 14:20 - 15:50
@@ -69,9 +64,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230125T104000
 DTEND:20230125T121000
-DTSTAMP:20230609T181912
-UID:1e3fb606-e201-482f-bc31-9302499fbe29@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-5312053386510751526@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
@@ -82,9 +76,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230125T142000
 DTEND:20230125T155000
-DTSTAMP:20230609T181912
-UID:41c479f7-3c69-4537-aefb-82f532e06a51@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-1229353523929494485@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
 DESCRIPTION:Location: ONLINE (ROOM #308 ON 01/03)\nInstructor: Sergey Klad
@@ -96,9 +89,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230125T160000
 DTEND:20230125T173000
-DTSTAMP:20230609T181912
-UID:0cb8bfa0-c661-4e25-888c-0d75b422d14c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-1251061551959472271@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
 DESCRIPTION:Location: ONLINE (ROOM #308 ON 01/03)\nInstructor: Sergey Klad
@@ -110,9 +102,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (lec)
 DTSTART:20230126T104000
 DTEND:20230126T121000
-DTSTAMP:20230609T181912
-UID:90e80681-bfd4-4c90-871a-506a6e834cc1@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:5689589310185192577@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Manuel Mazzara\nType: lec\nGroup: M
@@ -123,9 +114,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (tut)
 DTSTART:20230126T124000
 DTEND:20230126T141000
-DTSTAMP:20230609T181912
-UID:39e8c697-3cbd-4b64-8f79-b809d6e06086@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:1175633636953893325@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev\nType: tut\nGroup: M
@@ -136,9 +126,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (lab)
 DTSTART:20230126T142000
 DTEND:20230126T155000
-DTSTAMP:20230609T181912
-UID:ab0f396a-5044-4d51-be4a-12a4046fbafe@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:9167070183104565819@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev/ Hamna Aslam\nType: 
@@ -150,9 +139,8 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230303T090000
 DTEND:20230303T103000
-DTSTAMP:20230609T181912
-UID:a75e7252-14fa-47a9-97ef-4d95805fee5c@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-75147212741425054@innohassle.campus.innopolis.university
 CATEGORIES:Architecture of Software Systems
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:
   M22-SE-02\nSubject: Architecture of Software Systems\nTime: 09:00 - 10:30
@@ -162,9 +150,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230303T104000
 DTEND:20230303T121000
-DTSTAMP:20230609T181912
-UID:d203f549-708b-44d1-994b-82942fe1d5d3@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:2508573211593253961@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 10:40 - 12:10
@@ -174,9 +161,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230303T124000
 DTEND:20230303T141000
-DTSTAMP:20230609T181912
-UID:fa5c36f6-8e38-4fbe-9770-c38508ab62d5@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:5256238812222623790@innohassle.campus.innopolis.university
 CATEGORIES:Communications
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-02\nSubject: Communications\nTime: 12:40 - 14:10
@@ -186,9 +172,8 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230303T142000
 DTEND:20230303T155000
-DTSTAMP:20230609T181912
-UID:56d82d7e-109c-48fa-a759-e8afb810ffe6@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120853
+UID:-2635941205066459213@innohassle.campus.innopolis.university
 CATEGORIES:Architecture of Software Systems
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:
   M22-SE-02\nSubject: Architecture of Software Systems\nTime: 14:20 - 15:50
@@ -198,9 +183,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230320T090000
 DTEND:20230320T103000
-DTSTAMP:20230609T181913
-UID:d71a3e1d-d587-41f8-ad67-c62d46e7f6b6@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-3836692750230788689@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
@@ -212,9 +196,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230320T104000
 DTEND:20230320T121000
-DTSTAMP:20230609T181913
-UID:3e33b453-1db6-4e61-8ce0-49587e0f731e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-5312053386510751526@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
@@ -226,9 +209,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230320T124000
 DTEND:20230320T141000
-DTSTAMP:20230609T181913
-UID:062432fc-7688-46f9-bcab-a73db2633013@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-3328573961450122833@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
@@ -240,9 +222,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230322T090000
 DTEND:20230322T103000
-DTSTAMP:20230609T181913
-UID:383c2ad1-492b-448f-8287-9a8860fec6c6@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-3836692750230788689@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
@@ -254,9 +235,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230322T104000
 DTEND:20230322T121000
-DTSTAMP:20230609T181913
-UID:a39fd851-f7e7-40ba-abb2-8b4ef7d4b40b@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-5312053386510751526@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
@@ -268,9 +248,8 @@ BEGIN:VEVENT
 SUMMARY:Analysis of Sofware Artifacts (lec)
 DTSTART:20230322T124000
 DTEND:20230322T141000
-DTSTAMP:20230609T181913
-UID:3c91c323-1a9e-4651-9ef7-d9d7a8d08bd0@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-3328573961450122833@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
@@ -282,9 +261,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230322T142000
 DTEND:20230322T155000
-DTSTAMP:20230609T181913
-UID:07ed6ca9-e355-4eec-a3b6-765fa0fc21ee@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-1229353523929494485@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Communications
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kladko\nType: lec\nGroup:
@@ -295,9 +273,8 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230322T160000
 DTEND:20230322T173000
-DTSTAMP:20230609T181913
-UID:040de05c-5702-4082-ae8e-4f867717a396@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-1251061551959472271@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Communications
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kladko\nType: lec\nGroup:
@@ -308,9 +285,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (lec)
 DTSTART:20230323T104000
 DTEND:20230323T121000
-DTSTAMP:20230609T181913
-UID:284cfde3-998e-4830-8c7b-bdd6f0dc447e@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:5689589310185192577@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Manuel Mazzara\nType: lec\nGroup: M
@@ -321,9 +297,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (tut)
 DTSTART:20230323T124000
 DTEND:20230323T141000
-DTSTAMP:20230609T181913
-UID:7328e921-c4ca-468e-b462-653bdc6c2744@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:1175633636953893325@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev\nType: tut\nGroup: M
@@ -334,9 +309,8 @@ BEGIN:VEVENT
 SUMMARY:Models of Software Systems (lab)
 DTSTART:20230323T142000
 DTEND:20230323T155000
-DTSTAMP:20230609T181913
-UID:75d32306-6eb8-4216-9f47-b264945a3d74@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:9167070183104565819@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev/ Hamna Aslam\nType: 
@@ -348,9 +322,8 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230324T090000
 DTEND:20230324T103000
-DTSTAMP:20230609T181913
-UID:20778707-07fb-4751-88ba-5bc6b58f6172@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-75147212741425054@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Architecture of Software Systems
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
@@ -362,9 +335,8 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230324T142000
 DTEND:20230324T155000
-DTSTAMP:20230609T181913
-UID:16da7313-3f20-4158-bc03-d6944ce61348@innohassle.campus.innopolis.unive
- rsity
+DTSTAMP:20230610T120854
+UID:-2635941205066459213@innohassle.campus.innopolis.university
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Architecture of Software Systems
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro

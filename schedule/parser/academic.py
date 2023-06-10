@@ -99,7 +99,7 @@ class ScheduleEvent(BaseModel):
         return datetime.datetime.combine(self.day, self.end_time)
 
     def __hash__(self):
-        return hash((self.subject, self.event_type, self.start_time, self.end_time, self.group))
+        return hash((self.subject.name, self.event_type, self.start_time, self.end_time, self.group))
 
     def __eq__(self, other: 'ScheduleEvent'):
         return (self.subject == other.subject and
@@ -447,7 +447,7 @@ if __name__ == '__main__':
                     summary=group_event.summary,
                     description=group_event.description,
                     dtstamp=group_event.dtstamp.strftime("%Y%m%dT%H%M%S"),
-                    uid=str(uuid4()) + "@innohassle.campus.innopolis.university",
+                    uid=str(hash(group_event)) + "@innohassle.campus.innopolis.university",
                     categories=group_event.subject.name,
                 )
 
@@ -482,4 +482,5 @@ if __name__ == '__main__':
 
     # create a new .json file with information about calendars
     with open(json_file, "w") as f:
-        json.dump(calendars, f, indent=4)
+
+        json.dump(calendars, f, indent=4, sort_keys=True)
