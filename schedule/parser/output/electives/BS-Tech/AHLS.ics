@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230619T091000
 DTEND:20230619T104000
-UID:56b1474aa2e33ceb@innopolis.ru
+UID:52e75f699040a762@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:318
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230619T105000
 DTEND:20230619T122000
-UID:47e14feef6cb83fb@innopolis.ru
+UID:6e1908f4428617f8@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:318
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230619T125000
 DTEND:20230619T142000
-UID:8254e77e7e0698f@innopolis.ru
+UID:29cd8c7ade958be5@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:318
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230619T143000
 DTEND:20230619T160000
-UID:1ab718d55a0cd236@innopolis.ru
+UID:400e9d94e355103c@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:318
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:624514c06b70e6ec@innopolis.ru
+UID:241e9868ce34e320@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230624T161000
 DTEND:20230624T174000
-UID:663b8dd4b8952c85@innopolis.ru
+UID:1a73d4fa0a2375@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -62,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230626T091000
 DTEND:20230626T104000
-UID:2f97a3ce141ab84c@innopolis.ru
+UID:2d9ce9bc3f92ba40@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230626T105000
 DTEND:20230626T122000
-UID:671d53308a30368e@innopolis.ru
+UID:3f5ff3c013127fbb@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230701T161000
 DTEND:20230701T174000
-UID:11614c05d4d7686b@innopolis.ru
+UID:347639029eb7c58b@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -89,7 +89,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230703T091000
 DTEND:20230703T104000
-UID:6982c0b6629b16cf@innopolis.ru
+UID:17a9539b07e4920b@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230703T105000
 DTEND:20230703T122000
-UID:15277779d37edbcd@innopolis.ru
+UID:64f4ff5ed539a819@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230708T161000
 DTEND:20230708T174000
-UID:6e104ed6aef251d3@innopolis.ru
+UID:5d4af7f27a751bfc@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -116,7 +116,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230710T091000
 DTEND:20230710T104000
-UID:7d516c66b5e86c94@innopolis.ru
+UID:50e2622c6fe9c3f2@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:320
@@ -125,7 +125,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230710T105000
 DTEND:20230710T122000
-UID:1152f05b9fcdd9d9@innopolis.ru
+UID:7061b71e04015075@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:320
@@ -134,7 +134,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230710T125000
 DTEND:20230710T142000
-UID:6871ca51c340e661@innopolis.ru
+UID:e1ca3e8c2d3c8d8@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:320
@@ -143,7 +143,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230710T143000
 DTEND:20230710T160000
-UID:1d63be9eb803e567@innopolis.ru
+UID:66c98b06ddfbaf43@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:320
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230715T161000
 DTEND:20230715T174000
-UID:4a3ac58910783fce@innopolis.ru
+UID:f48cbe90daefd87@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -161,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230717T091000
 DTEND:20230717T104000
-UID:4d8990aded9bbf80@innopolis.ru
+UID:7f7870f31a02b03a@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online
@@ -170,7 +170,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of high-load systems
 DTSTART:20230717T105000
 DTEND:20230717T122000
-UID:5349c98522e758d5@innopolis.ru
+UID:42a7de9a17b3c795@innohassle.ru
 CATEGORIES:Architecture of high-load systems
 DESCRIPTION:Architecture of high-load systems\nVadim Podolniy
 LOCATION:online

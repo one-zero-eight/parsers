@@ -33,8 +33,8 @@ class ElectiveEvent(BaseModel):
         return hash(
             (
                 self.elective.alias,
-                self.start,
-                self.end,
+                self.start.isoformat(),
+                self.end.isoformat(),
                 self.location,
                 self.event_type,
                 self.group,
@@ -42,7 +42,7 @@ class ElectiveEvent(BaseModel):
         )
 
     def get_uid(self) -> str:
-        return "%x@innopolis.ru" % abs(hash(self))
+        return "%x@innohassle.ru" % abs(hash(self))
 
 
 class ElectiveParser:
@@ -314,7 +314,7 @@ if __name__ == "__main__":
 
         directory = (
             PARSER_PATH
-            / config.SAVE_PATH
+            / config.SAVE_ICS_PATH
             / sheet_title.replace("/", "-").replace(" ", "-")
         )
 

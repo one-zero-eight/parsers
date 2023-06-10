@@ -183,10 +183,10 @@ class ScheduleEvent(BaseModel):
             (
                 self.subject.name,
                 self.event_type,
-                self.start_time,
-                self.end_time,
+                self.start_time.isoformat(),
+                self.end_time.isoformat(),
                 self.group,
-                self.day,
+                self.day.isoformat(),
             )
         )
 
@@ -197,7 +197,7 @@ class ScheduleEvent(BaseModel):
         :return: unique id of the event
         :rtype: str
         """
-        return "%x@innopolis.ru" % abs(hash(self))
+        return "%x@innohassle.ru" % abs(hash(self))
 
     def __eq__(self: "ScheduleEvent", other: "ScheduleEvent") -> bool:
         """
