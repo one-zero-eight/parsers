@@ -8,8 +8,9 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230123T111000
 DTEND:20230123T124000
-DTSTAMP:20230610T120853
-UID:6538175840740941359@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:a909cfc4c78fd7b2bea397ff4742261b17033b57e3c62e9aced5728dff4a798a@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -21,8 +22,9 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-DTSTAMP:20230610T120853
-UID:4976513154842374033@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:1bd26c01c5f2ee06806bc3b147ddc4a10128843924df9828a8b9ab69793004d5@innoh
+ assle.ru
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
@@ -32,8 +34,9 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-DTSTAMP:20230610T120853
-UID:1177500689983349324@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:762a70cd3a05d4fc8709ef0fc8afbb3780e90a42a317f64299a6608a1215ab69@innoh
+ assle.ru
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
@@ -43,8 +46,9 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230124T111000
 DTEND:20230124T124000
-DTSTAMP:20230610T120853
-UID:2245921531869930943@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:9b5bfb5b8ca58645cb538e23f9d3f9b93749f3292e8df9aa23c905af4a1d885f@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
@@ -55,8 +59,9 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (tut)
 DTSTART:20230126T111000
 DTEND:20230126T124000
-DTSTAMP:20230610T120853
-UID:6484943447608852695@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:cfdd521bdb7c248cfc4b9dcbf70bcbb8aea8d3a330b63e0de8bfff0fd3d8ba47@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: 106 (STARTS ON 09/02)\nInstructor: Danil Kolesnilov\
@@ -68,8 +73,9 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec) (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-DTSTAMP:20230610T120853
-UID:-5407964392649560090@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122815
+UID:f11ca0e780c5a9bf04decad0016cf71848982017bc0659fe984c6e4984d929fd@innoh
+ assle.ru
 CATEGORIES:Theoretical Sports (lec)
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
@@ -79,8 +85,9 @@ BEGIN:VEVENT
 SUMMARY:Academic Research and Writing Culture
 DTSTART:20230320T111000
 DTEND:20230320T124000
-DTSTAMP:20230610T120854
-UID:6538175840740941359@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122816
+UID:a909cfc4c78fd7b2bea397ff4742261b17033b57e3c62e9aced5728dff4a798a@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
@@ -92,8 +99,9 @@ BEGIN:VEVENT
 SUMMARY:History (lec)
 DTSTART:20230321T111000
 DTEND:20230321T124000
-DTSTAMP:20230610T120854
-UID:2245921531869930943@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122816
+UID:9b5bfb5b8ca58645cb538e23f9d3f9b93749f3292e8df9aa23c905af4a1d885f@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:History
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
@@ -104,8 +112,9 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports- Optimal Nutrition(lec) (lec)
 DTSTART:20230321T131000
 DTEND:20230321T144000
-DTSTAMP:20230610T120854
-UID:-8264742839267677050@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122816
+UID:900c37ff41e6bdb5b4fd5f2515c73e5f85fbb6fb49edafd2ee3fd0f1ec5f3afb@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Sports- Optimal Nutrition(lec)
 DESCRIPTION:Location: ONLINE (FINAL QUIZ)\nInstructor: Alexey Petrenko\nTy
@@ -117,8 +126,9 @@ BEGIN:VEVENT
 SUMMARY:Software Quality and Reliability (lec)
 DTSTART:20230323T111000
 DTEND:20230323T124000
-DTSTAMP:20230610T120854
-UID:4126675704873655483@innohassle.campus.innopolis.university
+DTSTAMP:20230610T122816
+UID:b0f7de0f3a37eecf18300b3f255d5f14b168005d6a274b3ce0f65d3485c606de@innoh
+ assle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
