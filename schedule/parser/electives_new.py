@@ -14,8 +14,8 @@ import pandas as pd
 from google.oauth2.credentials import Credentials
 from pydantic import BaseModel
 
-from config import PARSER_PATH, electives_config as config, Elective
-from utils import *
+from parser.config import PARSER_PATH, electives_config as config, Elective
+from parser.utils import *
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 

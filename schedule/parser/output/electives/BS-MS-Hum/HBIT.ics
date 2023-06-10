@@ -6,27 +6,9 @@ X-WR-CALNAME:HBIT
 X-WR-TIMEZONE:Europe/Moscow
 BEGIN:VEVENT
 SUMMARY:How to build an IT team
-DTSTART:20230610T143000
-DTEND:20230610T160000
-UID:239509e187ef74ad@innopolis.ru
-CATEGORIES:How to build an IT team
-DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:How to build an IT team
-DTSTART:20230610T161000
-DTEND:20230610T174000
-UID:501909b39df962fd@innopolis.ru
-CATEGORIES:How to build an IT team
-DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:How to build an IT team
 DTSTART:20230617T143000
 DTEND:20230617T160000
-UID:6421e5d1dd0bdf19@innopolis.ru
+UID:735b267e00590306@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -35,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230617T161000
 DTEND:20230617T174000
-UID:34feb3eb4340a36d@innopolis.ru
+UID:196a568c6c2dea81@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -44,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230624T143000
 DTEND:20230624T160000
-UID:77e4aba170ed410d@innopolis.ru
+UID:7f19030481be5daf@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -53,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230624T161000
 DTEND:20230624T174000
-UID:447de17c9372797f@innopolis.ru
+UID:277a1c65f3897b6e@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -62,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230701T143000
 DTEND:20230701T160000
-UID:6a4dfa723418a4bd@innopolis.ru
+UID:6cc5480ce5d46509@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -71,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230701T161000
 DTEND:20230701T174000
-UID:2e260be169ff522b@innopolis.ru
+UID:7902cdeb042a1dbe@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -80,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230708T143000
 DTEND:20230708T160000
-UID:2472b1ecedefb138@innopolis.ru
+UID:702dd52183c20968@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -89,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230708T161000
 DTEND:20230708T174000
-UID:4617f5fe529fff2b@innopolis.ru
+UID:2f74734cc2d2ab4b@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -98,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230715T143000
 DTEND:20230715T160000
-UID:17f92b2842f579fc@innopolis.ru
+UID:5ee49653997e3d8a@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -107,7 +89,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230715T161000
 DTEND:20230715T174000
-UID:5fccda0374806f25@innopolis.ru
+UID:403d6f1842405594@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -116,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230722T143000
 DTEND:20230722T160000
-UID:2a36e0d0ff441188@innopolis.ru
+UID:771591b728e694e1@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320
@@ -125,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:How to build an IT team
 DTSTART:20230722T161000
 DTEND:20230722T174000
-UID:23dff5dc5e46fd0a@innopolis.ru
+UID:11360289e8f0e749@innopolis.ru
 CATEGORIES:How to build an IT team
 DESCRIPTION:How to build an IT team\nPetr Grachev\noffline/online
 LOCATION:320

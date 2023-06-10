@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230607T143000
 DTEND:20230607T160000
-UID:19bcbb1fccc96587@innopolis.ru
+UID:fe2e734afb0d16b@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230607T161000
 DTEND:20230607T174000
-UID:201f0c3322a807b@innopolis.ru
+UID:783c032420d42a0c@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -28,7 +28,17 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230609T143000
 DTEND:20230609T160000
-UID:36c1915a099d23eb@innopolis.ru
+UID:538d26affa815a45@innopolis.ru
+CATEGORIES:Personal Efficiency Skills of IT-specialist
+DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
+ nov\noffline
+LOCATION:314
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Personal Efficiency Skills of IT-specialist
+DTSTART:20230609T161000
+DTEND:20230609T174000
+UID:5454eb4f6951487d@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -38,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230614T143000
 DTEND:20230614T160000
-UID:2f3a801161e3f84c@innopolis.ru
+UID:4e6988c14926bd4e@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -48,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230614T161000
 DTEND:20230614T174000
-UID:1b6f7b59e5a04d2@innopolis.ru
+UID:6119300a38bf4345@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -58,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230616T143000
 DTEND:20230616T160000
-UID:716a6ffd78c8fcaf@innopolis.ru
+UID:7d3ce5de397577e1@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -68,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230616T161000
 DTEND:20230616T174000
-UID:1555d2cf73ad3f9a@innopolis.ru
+UID:14fddf8aaf34764d@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -78,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230712T143000
 DTEND:20230712T160000
-UID:362f76928535b744@innopolis.ru
+UID:5e9cc3afbb0c8ec@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -88,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230712T161000
 DTEND:20230712T174000
-UID:4b988beeebd2af3a@innopolis.ru
+UID:5bbcfd56573b6ac0@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -98,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230714T143000
 DTEND:20230714T160000
-UID:9f9b470c0d5d8da@innopolis.ru
+UID:1747d7329290b420@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -108,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230714T161000
 DTEND:20230714T174000
-UID:6c444bec1a40b971@innopolis.ru
+UID:6dde25b2fdf61823@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -118,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230719T143000
 DTEND:20230719T160000
-UID:4452bb8971b8fb30@innopolis.ru
+UID:37b815fc04e38dd6@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -128,7 +138,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230719T161000
 DTEND:20230719T174000
-UID:68e0953485268a5e@innopolis.ru
+UID:776cacd0de39f1b7@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline
@@ -138,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230721T143000
 DTEND:20230721T160000
-UID:124f6605eab9aa2d@innopolis.ru
+UID:286a8a01fa3ec63d@innopolis.ru
 CATEGORIES:Personal Efficiency Skills of IT-specialist
 DESCRIPTION:Personal Efficiency Skills of IT-specialist\nEvgenii Serochudi
  nov\noffline

@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230608T161000
 DTEND:20230608T174000
-UID:7d4117a17abaf5e@innopolis.ru
+UID:352de5722ebbd5c0@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -18,27 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230609T161000
 DTEND:20230609T174000
-UID:37dfbc252cb41ddd@innopolis.ru
-CATEGORIES:Introduction to Public Speaking for IT-specialist
-DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
-  Kladko\noffline/online
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Introduction to Public Speaking for IT-specialist
-DTSTART:20230613T161000
-DTEND:20230613T174000
-UID:1ed35e4b5f6816fb@innopolis.ru
-CATEGORIES:Introduction to Public Speaking for IT-specialist
-DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
-  Kladko\noffline/online
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Introduction to Public Speaking for IT-specialist
-DTSTART:20230614T161000
-DTEND:20230614T174000
-UID:59ad3cd3cc6f8474@innopolis.ru
+UID:3ea9a8e5d0070264@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -48,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:46b28be36ca4c87d@innopolis.ru
+UID:3ad55923a8381048@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -58,7 +38,27 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230620T161000
 DTEND:20230620T174000
-UID:44bc8c709faad9d9@innopolis.ru
+UID:d2f943f3431fa86@innopolis.ru
+CATEGORIES:Introduction to Public Speaking for IT-specialist
+DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
+  Kladko\noffline/online
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Public Speaking for IT-specialist
+DTSTART:20230621T143000
+DTEND:20230621T160000
+UID:3a94189a9d2aa77@innopolis.ru
+CATEGORIES:Introduction to Public Speaking for IT-specialist
+DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
+  Kladko\noffline/online
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Public Speaking for IT-specialist
+DTSTART:20230621T161000
+DTEND:20230621T174000
+UID:2ec0c0d868558368@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -68,67 +68,67 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230622T161000
 DTEND:20230622T174000
-UID:2d1e788bc4063a@innopolis.ru
+UID:62b2c4ea7f3b7a13@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230623T161000
 DTEND:20230623T174000
-UID:24c42b8978fbc198@innopolis.ru
+UID:7ea824ee6f137aba@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230627T161000
 DTEND:20230627T174000
-UID:7997c4b99e21b536@innopolis.ru
+UID:5dcdc6c3d88f3360@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230628T161000
 DTEND:20230628T174000
-UID:7a27098f5f9ae17e@innopolis.ru
+UID:e5d7cefbfb0fcb0@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230629T161000
 DTEND:20230629T174000
-UID:7a22144e3a0aab92@innopolis.ru
+UID:5248d818b49ce3b3@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230630T161000
 DTEND:20230630T174000
-UID:2f2575a6ccd29d3f@innopolis.ru
+UID:7ba46d36477946d5@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
-LOCATION:312
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:3d8b5bb7498434fb@innopolis.ru
+UID:2107212cefc1af69@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -138,7 +138,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230704T161000
 DTEND:20230704T174000
-UID:112db10c3ac7b463@innopolis.ru
+UID:559b03ad0d085b68@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online
@@ -148,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230705T161000
 DTEND:20230705T174000
-UID:1f3c906286276f9@innopolis.ru
+UID:630b39bdee771ea@innopolis.ru
 CATEGORIES:Introduction to Public Speaking for IT-specialist
 DESCRIPTION:Introduction to Public Speaking for IT-specialist\nBS2\nSergey
   Kladko\noffline/online

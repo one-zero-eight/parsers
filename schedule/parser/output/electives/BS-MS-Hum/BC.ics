@@ -6,29 +6,9 @@ X-WR-CALNAME:BC
 X-WR-TIMEZONE:Europe/Moscow
 BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
-DTSTART:20230610T105000
-DTEND:20230610T122000
-UID:558c28fa75273752@innopolis.ru
-CATEGORIES:Business communications for IT-specialist
-DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
- ne/online
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Business communications for IT-specialist
-DTSTART:20230610T125000
-DTEND:20230610T142000
-UID:9b02bbd0d1655e7@innopolis.ru
-CATEGORIES:Business communications for IT-specialist
-DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
- ne/online
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Business communications for IT-specialist
 DTSTART:20230617T105000
 DTEND:20230617T122000
-UID:6c3e7c243e686765@innopolis.ru
+UID:3653cf14913a0c2b@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -38,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230617T125000
 DTEND:20230617T142000
-UID:28277d5faf0e9590@innopolis.ru
+UID:a88f05428c0dbcc@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -48,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230624T105000
 DTEND:20230624T122000
-UID:3db1ae96cd00152c@innopolis.ru
+UID:3cc6492081b6ca27@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -58,7 +38,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230624T125000
 DTEND:20230624T142000
-UID:2fb96845882b4b47@innopolis.ru
+UID:7b3c6f5d5eeb663e@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -68,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230701T105000
 DTEND:20230701T122000
-UID:1ee4d8ecf4cf261a@innopolis.ru
+UID:592bac176490a445@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -78,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230701T125000
 DTEND:20230701T142000
-UID:76cc8e6f43c1765e@innopolis.ru
+UID:e2ccb59ecbcaf94@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -88,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230708T105000
 DTEND:20230708T122000
-UID:4b6b0c6b27219a55@innopolis.ru
+UID:4adb602bcf278468@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -98,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230708T125000
 DTEND:20230708T142000
-UID:72ecea5ac1e016dc@innopolis.ru
+UID:6ce98b2cff7a9757@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -108,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230715T105000
 DTEND:20230715T122000
-UID:2ab67cbb4bc3c648@innopolis.ru
+UID:3d63e495694f0815@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -118,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230715T125000
 DTEND:20230715T142000
-UID:43a7ee54b912bd74@innopolis.ru
+UID:73ee00536934b732@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -128,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230722T105000
 DTEND:20230722T122000
-UID:27a3821cf61ee7a6@innopolis.ru
+UID:35c484c508ee9413@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online
@@ -138,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:Business communications for IT-specialist
 DTSTART:20230722T125000
 DTEND:20230722T142000
-UID:4dc200e8a6c27e47@innopolis.ru
+UID:6ab66e36fd5ef50c@innopolis.ru
 CATEGORIES:Business communications for IT-specialist
 DESCRIPTION:Business communications for IT-specialist\nPetr Grachev\noffli
  ne/online

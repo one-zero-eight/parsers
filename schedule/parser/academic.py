@@ -15,8 +15,8 @@ import pandas as pd
 from google.oauth2.credentials import Credentials
 from pydantic import BaseModel, Field
 
-from config import academic_config as config, PARSER_PATH
-from utils import *
+from parser.config import academic_config as config, PARSER_PATH
+from parser.utils import *
 
 CURRENT_YEAR = datetime.datetime.now().year
 

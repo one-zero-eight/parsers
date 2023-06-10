@@ -3,7 +3,7 @@ name = "innohassle-parsers"
 version = "0.1.0"
 description = ""
 authors = ["Ruslan Bel'kov <ruslan.belckov@yandex.ru>"]
-readme = "README.md"
+readme = "schedule/README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -15,7 +15,6 @@ pydantic = "^1.10.4"
 icalendar = "^5.0.4"
 google = "^3.0.0"
 
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.0.1"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

@@ -122,43 +122,8 @@
         },
         {
             "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/DFA.ics",
-            "name": "DFA"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/PSY-BS1.ics",
-            "name": "PSY-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/BPM-BS1.ics",
-            "name": "BPM-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/PSY-BS2.ics",
-            "name": "PSY-BS2"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/BPM-BS2.ics",
-            "name": "BPM-BS2"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/AEIE.ics",
-            "name": "AEIE"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/ARLU.ics",
-            "name": "ARLU"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/IMG.ics",
-            "name": "IMG"
+            "file": "electives/MS-Tech/DVE.ics",
+            "name": "DVE"
         },
         {
             "elective_type": "MS Tech",
@@ -167,68 +132,8 @@
         },
         {
             "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/PES.ics",
-            "name": "PES"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/ICD-BS1.ics",
-            "name": "ICD-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/ICD-BS2.ics",
-            "name": "ICD-BS2"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/CL.ics",
-            "name": "CL"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/IPS-BS1.ics",
-            "name": "IPS-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/IPS-BS2.ics",
-            "name": "IPS-BS2"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/DT-BS1.ics",
-            "name": "DT-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/DT-BS2.ics",
-            "name": "DT-BS2"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/CEOT.ics",
-            "name": "CEOT"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/BC.ics",
-            "name": "BC"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/HBIT.ics",
-            "name": "HBIT"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/SE-BS1.ics",
-            "name": "SE-BS1"
-        },
-        {
-            "elective_type": "MS Tech",
-            "file": "electives/MS-Tech/SE-BS2.ics",
-            "name": "SE-BS2"
+            "file": "electives/MS-Tech/AAI.ics",
+            "name": "AAI"
         },
         {
             "elective_type": "BS/MS Hum",
@@ -317,6 +222,11 @@
         },
         {
             "elective_type": "BS/MS Hum",
+            "file": "electives/BS-MS-Hum/CEOT.ics",
+            "name": "CEOT"
+        },
+        {
+            "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BC.ics",
             "name": "BC"
         },
@@ -324,11 +234,6 @@
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/HBIT.ics",
             "name": "HBIT"
-        },
-        {
-            "elective_type": "BS/MS Hum",
-            "file": "electives/BS-MS-Hum/CEOT.ics",
-            "name": "CEOT"
         },
         {
             "elective_type": "BS/MS Hum",
