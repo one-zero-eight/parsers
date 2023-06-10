@@ -38,24 +38,42 @@ class Subject(BaseModel):
     """
 
     @classmethod
-    def from_str(cls, s: str):
-        # "Software Project  (lec)                  " -> "Software Project"
-        # "Software Project  (lab)                  " -> "Software Project"
-        # "Theoretical sports(lec)- Physiology of sports									" -> "Theoretical sports"
-        s = re.sub(r"\s+\(.*\)\s*$", "", s)
-        s = re.sub(r"\s+-.*$", "", s)
-        s = re.sub(r"\s+$", "", s)
+    def from_str(cls: type["Subject"], dirt_name: str) -> "Subject":
+        """
+        Create Subject instance from name of the subject
+        Note: uses flyweight pattern to prevent copies
+        :param dirt_name: name from the table as it is. For ex.: "Software Project  (lec)                  "
+        :type dirt_name: str
+        :return: Subject instance
+        :rtype: Subject
+        """
 
-        if s not in cls.__instances__:
-            cls.__instances__[s] = cls(name=s)
-        return cls.__instances__[s]
+        dirt_name = re.sub(r"\s+\(.*\)\s*$", "", dirt_name)
+        dirt_name = re.sub(r"\s+-.*$", "", dirt_name)
+        clear_name = re.sub(r"\s+$", "", dirt_name)
+
+        if clear_name not in cls.__instances__:
+            cls.__instances__[clear_name] = cls(name=clear_name)
+        return cls.__instances__[clear_name]
 
     @classmethod
-    def get(cls, s: str) -> Optional['Subject']:
-        return cls.__instances__.get(s)
+    def get(cls: type["Subject"], name: str) -> Optional["Subject"]:
+        """
+        Get instance by name
+        :param name: name of the subject
+        :type name: str
+        :return: Subject instance if it is exists
+        :rtype: Optional[Subject]
+        """
+        return cls.__instances__.get(name)
 
     @classmethod
-    def get_all(cls):
+    def get_all(cls: type["Subject"]) -> list["Subject"]:
+        """
+        Get all instances of the Subject
+        :return: list of Subject instances
+        :rtype: list[Subject]
+        """
         return list(cls.__instances__.values())
 
     __instances__: dict[str, "Subject"] = {}
