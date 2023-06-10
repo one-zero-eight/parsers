@@ -8,90 +8,90 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230607T175000
 DTEND:20230607T192000
-UID:2a838c86bfdda3dc@innopolis.ru
+UID:612ea1df0fa24b52@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230610T175000
 DTEND:20230610T192000
-UID:533078bdd2bea1c7@innopolis.ru
+UID:65f7b2083f2d977d@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230614T175000
 DTEND:20230614T192000
-UID:2eebd09081bbdea0@innopolis.ru
+UID:63e44cf7013a88b1@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230617T175000
 DTEND:20230617T192000
-UID:625fa2e787009744@innopolis.ru
+UID:4f8bf7b795b55a54@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230621T175000
 DTEND:20230621T192000
-UID:675f97e17de38997@innopolis.ru
+UID:39964674eb776207@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230624T175000
 DTEND:20230624T192000
-UID:34fa5ede237924d0@innopolis.ru
+UID:1d56b6a9e08b1bf0@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230628T175000
 DTEND:20230628T192000
-UID:199789e01c2eefa9@innopolis.ru
+UID:781d36b81e930895@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230701T175000
 DTEND:20230701T192000
-UID:4e55e4d1f5b649be@innopolis.ru
+UID:3019684c33f28890@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230705T175000
 DTEND:20230705T192000
-UID:57d0d67be0908270@innopolis.ru
+UID:1afdb4882c194de6@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
 DTSTART:20230708T175000
 DTEND:20230708T192000
-UID:5d1119d4454dfbd9@innopolis.ru
+UID:2efba16f265a610a@innopolis.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar\noffline
+DESCRIPTION:Programming in Python\ngroup3\nAlaa Aldin Hajjar
 LOCATION:303
 END:VEVENT
 END:VCALENDAR

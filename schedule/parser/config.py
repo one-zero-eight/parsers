@@ -28,7 +28,7 @@ class BaseParserConfig(BaseModel):
     """Target ranges from spreadsheet"""
     TARGET_SHEET_TITLES: list[str]
     """Target sheet titles from spreadsheet"""
-    SAVE_PATH: str
+    SAVE_ICS_PATH: str
     """Path to save .ics files"""
     SAVE_JSON_PATH: str
     """Path to save .json file"""
@@ -55,9 +55,9 @@ class BaseParserConfig(BaseModel):
     """Days of week"""
 
 
-class AcademicParserConfig(BaseParserConfig):
+class CoreCoursesParserConfig(BaseParserConfig):
     """
-    Config for academic parser from Google Sheets
+    Config for core courses parser from Google Sheets
     """
 
     RECURRENCE: list[dict]
@@ -89,7 +89,7 @@ class Elective(BaseModel):
     elective_type: Optional[str]
     """Type of elective"""
 
-    @validator("name", "instructor", "type", pre=True, always=True)
+    @validator("name", "instructor", "elective_type", pre=True)
     def beatify_string(cls: type["Elective"], string: str) -> str:  # noqa
         """
         Beatify string
@@ -118,13 +118,13 @@ class ElectivesParserConfig(BaseParserConfig):
 
 with open(CONFIG_PATH, "r") as f:
     config_dict = json.load(f)
-    academic_config_dict = config_dict["academic"]
+    core_courses_config_dict = config_dict["core-courses"]
     sport_config_dict = config_dict["sport"]
     elective_config_dict = config_dict["electives"]
     dormitory_config_dict = config_dict["dormitory"]
 
-academic_config: AcademicParserConfig = parse_obj_as(
-    AcademicParserConfig, academic_config_dict
+core_courses_config: CoreCoursesParserConfig = parse_obj_as(
+    CoreCoursesParserConfig, core_courses_config_dict
 )
 
 electives_config: ElectivesParserConfig = parse_obj_as(
@@ -132,14 +132,14 @@ electives_config: ElectivesParserConfig = parse_obj_as(
 )
 
 __all__ = [
-    "academic_config",
+    "core_courses_config",
     "electives_config",
     "Elective",
     "PARSER_PATH",
     "ElectivesParserConfig",
-    "AcademicParserConfig",
+    "CoreCoursesParserConfig",
 ]
 
 if __name__ == "__main__":
-    pprint(academic_config)
+    pprint(core_courses_config)
     pprint(electives_config)

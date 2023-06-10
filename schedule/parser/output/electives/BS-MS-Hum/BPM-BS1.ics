@@ -8,150 +8,135 @@ BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230606T105000
 DTEND:20230606T122000
-UID:7a80f1b5c83cfd4c@innopolis.ru
+UID:48dbd0ffcf7abcf5@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230609T105000
 DTEND:20230609T122000
-UID:3f17b254bdc25b6a@innopolis.ru
+UID:cdce10a600cfecb@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230609T125000
 DTEND:20230609T142000
-UID:52bf11573f7e1261@innopolis.ru
+UID:125911842c7b4a84@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230614T105000
 DTEND:20230614T122000
-UID:676511aa8951bffa@innopolis.ru
+UID:3b67d18c46fc3510@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230620T091000
 DTEND:20230620T104000
-UID:3c97dffda5c55b05@innopolis.ru
+UID:cfb57a744cb7909@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230620T105000
 DTEND:20230620T122000
-UID:32898ff43fdda7b1@innopolis.ru
+UID:3b9fb7f71a87c4c2@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230623T125000
 DTEND:20230623T142000
-UID:15dd71bf6595d68f@innopolis.ru
+UID:6c94548de59c5d3e@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230630T125000
 DTEND:20230630T142000
-UID:54f69381a59fda8d@innopolis.ru
+UID:82acdb82a36db7e@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230630T143000
 DTEND:20230630T160000
-UID:15b95b7cbb3e5cd0@innopolis.ru
+UID:790aadc22d59aa38@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:49cff24f9afc0e35@innopolis.ru
+UID:5ee4fc905a20358a@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230707T105000
 DTEND:20230707T122000
-UID:528fb7412561d886@innopolis.ru
+UID:402a36be6d451315@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230707T125000
 DTEND:20230707T142000
-UID:6158972aa1a6ae7c@innopolis.ru
+UID:41c8c8c944755aff@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230707T143000
 DTEND:20230707T160000
-UID:66ac3bd67b80e78e@innopolis.ru
+UID:4c315d39a98eb732@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230713T091000
 DTEND:20230713T104000
-UID:19210575b23dd0d3@innopolis.ru
+UID:a46301cdbea7003@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Basics of Product Management
 DTSTART:20230713T105000
 DTEND:20230713T122000
-UID:81f0eafe4e6b58e@innopolis.ru
+UID:5e61055311ea8ec8@innopolis.ru
 CATEGORIES:Basics of Product Management
-DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia\noffline/
- online
+DESCRIPTION:Basics of Product Management\nBS1\nIuliia Metelskaia
 LOCATION:online
 END:VEVENT
 END:VCALENDAR

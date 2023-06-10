@@ -1,5 +1,5 @@
 {
-  "academic": {
+  "core-courses": {
     "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
     "TARGET_RANGES": [
       "AcademicRange1",
@@ -28,8 +28,8 @@
         "end": "20230724T000000"
       }
     ],
-    "SAVE_PATH": "output/academic",
-    "SAVE_JSON_PATH": "output/academic.json",
+    "SAVE_ICS_PATH": "output/core-courses",
+    "SAVE_JSON_PATH": "output/core-courses.json",
     "TARGET_ID": 0
   },
   "sport": null,
@@ -45,7 +45,7 @@
       "MS Tech",
       "BS/MS Hum"
     ],
-    "SAVE_PATH": "output/electives",
+    "SAVE_ICS_PATH": "output/electives",
     "SAVE_JSON_PATH": "output/electives.json",
     "ELECTIVES": [
       {

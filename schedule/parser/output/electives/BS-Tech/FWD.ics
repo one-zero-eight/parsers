@@ -8,90 +8,81 @@ BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:2c910dba0621d85@innopolis.ru
+UID:447b7d5fb5e61d64@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:106
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:74289c0122cb6d2f@innopolis.ru
+UID:230bc79376fff028@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:106
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:cc1de9105803edf@innopolis.ru
+UID:18d2364542c83831@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:106
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:e75cf418a645112@innopolis.ru
+UID:3a2e61014b8a60aa@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:106
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230628T175000
 DTEND:20230628T192000
-UID:559a24f1aa532f0f@innopolis.ru
+UID:289561b71d2c9477@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:106
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:2f17837864b819a1@innopolis.ru
+UID:1dbc1bff9db5ab05@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:107
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230706T175000
 DTEND:20230706T192000
-UID:428e7409177ad25d@innopolis.ru
+UID:1c168a4ef6869787@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:107
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230712T175000
 DTEND:20230712T192000
-UID:1f792bdbcae75976@innopolis.ru
+UID:5ba98bce67eae410@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:108
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lec)
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:8110b20b6fe54e3@innopolis.ru
+UID:41d1cec9fcfeaf43@innopolis.ru
 CATEGORIES:Front-end Web Development
-DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge\
- noffline
+DESCRIPTION:Front-end Web Development\nAbdelRahman Abounegm/Daniel Atonge
 LOCATION:105
 END:VEVENT
 END:VCALENDAR

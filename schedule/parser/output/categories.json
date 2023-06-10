@@ -1,14 +1,14 @@
 {
   "categories": [
     {
-      "title": "Academic",
-      "shortDescription": "Academic courses in Sum23.",
-      "path": "academic.json",
-      "slug": "academic"
+      "title": "Core Courses",
+      "shortDescription": "Academic schedule for core courses in Sum23.",
+      "path": "core-courses.json",
+      "slug": "core-courses"
     },
     {
       "title": "Electives",
-      "shortDescription": "Elective courses in Sum23.",
+      "shortDescription": "Academic schedule for electives in Sum23.",
       "path": "electives.json",
       "slug": "electives"
     }

@@ -8,171 +8,171 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:7e4cfa6a605d578@innopolis.ru
+UID:19e85b4d4c2586a2@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:63a183816e9c511@innopolis.ru
+UID:2fbe1a8c34f09107@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T175000
 DTEND:20230608T192000
-UID:1c94d0ff4647d06a@innopolis.ru
+UID:4ddcf0d51339241f@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T193000
 DTEND:20230608T210000
-UID:4694cbbfec84ec9f@innopolis.ru
+UID:75e83b984668126e@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:6ec3fea240297c51@innopolis.ru
+UID:3ff5b23510155fb1@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T193000
 DTEND:20230613T210000
-UID:2e1b17f16f672dea@innopolis.ru
+UID:7d534b150fe50880@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T175000
 DTEND:20230615T192000
-UID:216aa3120812845a@innopolis.ru
+UID:71456b1bdec2f84e@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T193000
 DTEND:20230615T210000
-UID:4155b04206ed2ba@innopolis.ru
+UID:2fcde78b04b1b3c@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:1c20d97dd50cc2a@innopolis.ru
+UID:696e73affdb1813e@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:4abec54fc4f98433@innopolis.ru
+UID:6b30bae1c935ca38@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:72a82c8ee022f6f5@innopolis.ru
+UID:29871f9a095d91db@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:512b760e974299c5@innopolis.ru
+UID:7aced184ab2e2c91@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:25f4a63dc92ce3d1@innopolis.ru
+UID:62ae3f68d47a0a6e@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T175000
 DTEND:20230629T192000
-UID:76253f1852e8e2e2@innopolis.ru
+UID:748cf23b83c2b9a7@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T193000
 DTEND:20230629T210000
-UID:2b292c23d62a476@innopolis.ru
+UID:18c81e5e7bb4c417@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:413ac5f98c067d3a@innopolis.ru
+UID:3bdcb309f6364bfb@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:17cc5d7983a78467@innopolis.ru
+UID:200f9cf66fd0d7ea@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T175000
 DTEND:20230713T192000
-UID:171d53b76f336f0d@innopolis.ru
+UID:493a75f67f1e138f@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T193000
 DTEND:20230713T210000
-UID:4fbb78a9aa8a1279@innopolis.ru
+UID:7087722aae5b42d4@innopolis.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
+DESCRIPTION:Programming in Haskell\nNikolay Kudasov
 LOCATION:314
 END:VEVENT
 END:VCALENDAR

@@ -8,180 +8,180 @@ BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230530T105000
 DTEND:20230530T122000
-UID:73bac66b14a4ed22@innopolis.ru
+UID:3eb70cbf431e3a9c@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230530T125000
 DTEND:20230530T142000
-UID:3f8a2a9f3d7dc09f@innopolis.ru
+UID:4792462e8f1e0b2d@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230601T105000
 DTEND:20230601T122000
-UID:3573e211c5e45586@innopolis.ru
+UID:32897ca069f116e4@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230601T125000
 DTEND:20230601T142000
-UID:685f63c163e90a2c@innopolis.ru
+UID:57ae9f6f6e1418f6@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230613T105000
 DTEND:20230613T122000
-UID:3b3d32bd42bbf1bb@innopolis.ru
+UID:2887551d58032956@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230613T125000
 DTEND:20230613T142000
-UID:6c56fcc6451b12bf@innopolis.ru
+UID:449818ce02ad0b6b@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230615T105000
 DTEND:20230615T122000
-UID:31250c28b8f86652@innopolis.ru
+UID:3b69edd6aed420fb@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230615T125000
 DTEND:20230615T142000
-UID:80ecfcb07018db6@innopolis.ru
+UID:1f58ae5bf550b8c0@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230620T105000
 DTEND:20230620T122000
-UID:7883be79ae521483@innopolis.ru
+UID:22d06fd573fab130@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230620T125000
 DTEND:20230620T142000
-UID:396196d970673c43@innopolis.ru
+UID:2b79af0d385fdae4@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230627T105000
 DTEND:20230627T122000
-UID:5ff436f69ccd1c3f@innopolis.ru
+UID:7b8e957914a54fe0@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230627T125000
 DTEND:20230627T142000
-UID:2a43bbf69f119221@innopolis.ru
+UID:98a270a7fe05e69@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230704T105000
 DTEND:20230704T122000
-UID:15747db2665d135e@innopolis.ru
+UID:63dcd25e65b3672@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230704T125000
 DTEND:20230704T142000
-UID:1855da9554315ffc@innopolis.ru
+UID:4f3e8c699ba0a9c@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230711T105000
 DTEND:20230711T122000
-UID:21bcda3197268e3a@innopolis.ru
+UID:4881eb3c1fd290fa@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230711T125000
 DTEND:20230711T142000
-UID:298f85d9912df8aa@innopolis.ru
+UID:1e0acf22b8c24b2a@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230718T105000
 DTEND:20230718T122000
-UID:48cb6eb2ef4abe05@innopolis.ru
+UID:bf01604045414be@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230718T125000
 DTEND:20230718T142000
-UID:2e3d24543d6d8d78@innopolis.ru
+UID:744759c77b5ac304@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lec)
 DTSTART:20230725T105000
 DTEND:20230725T122000
-UID:72e161b8f112e3fc@innopolis.ru
+UID:309b6ec24ef00d9e@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DevOps Engineering (Advanced) (lab)
 DTSTART:20230725T125000
 DTEND:20230725T142000
-UID:5b0c36deff299acf@innopolis.ru
+UID:49a9ba1ebaabe930@innopolis.ru
 CATEGORIES:DevOps Engineering (Advanced)
-DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed\noffline
+DESCRIPTION:DevOps Engineering (Advanced)\nDmitry Creed
 LOCATION:312
 END:VEVENT
 END:VCALENDAR
