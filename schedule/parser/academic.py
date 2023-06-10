@@ -24,8 +24,18 @@ CURRENT_YEAR = datetime.datetime.now().year
 
 
 class Subject(BaseModel):
+    """
+    Subject model for the schedule parser
+    """
+
     name: str
+    """Name of the subject
+    For ex. "Elective courses on Physical Education"
+    """
     is_ignored: bool = False
+    """Is the current subject will be ignored by the parser
+    For ex. for the "Elective courses on Physical Education"
+    """
 
     @classmethod
     def from_str(cls, s: str):
@@ -48,72 +58,144 @@ class Subject(BaseModel):
     def get_all(cls):
         return list(cls.__instances__.values())
 
-    __instances__ = {}
+    __instances__: dict[str, "Subject"] = {}
+    """Flyweight pattern storage"""
 
 
 class Flags(BaseModel):
+    """External flags for the event"""
+
     only_on_specific_date: bool | datetime.date = False
+    """If the event is only on specific date, this flag will be set to that date
+    For ex. if the event is only on 2021-09-01, this flag will be set to 2021-09-01"""
 
 
 class ScheduleEvent(BaseModel):
+    """Schedule event model for the schedule parser"""
+
     subject: Optional[Subject]
+    """Subject of the event"""
     start_time: Optional[datetime.time]
+    """Start time of the event"""
     end_time: Optional[datetime.time]
+    """End time of the event"""
     day: Optional[datetime.date]
+    """Day of the event"""
     dtstamp: Optional[datetime.datetime]
+    """Timestamp of the event"""
     location: Optional[str]
+    """Location of the event"""
     instructor: Optional[str]
+    """Instructor of the event"""
     event_type: Optional[str]
+    """Type of the event"""
     recurrence: Optional[list[dict]]
+    """Recurrence of the event"""
     flags: Flags = Field(default_factory=Flags)
+    """External flags for the event"""
     group: Optional[str]
+    """Group for which the event is"""
     course: Optional[str]
+    """Course for which the event is"""
 
     @property
-    def summary(self):
+    def summary(self: "ScheduleEvent") -> str:
+        """
+        Summary of the event
+        :return: summary of the event
+        :rtype: str
+        """
         r = f"{self.subject.name}"
         if self.event_type:
             r += f" ({self.event_type})"
         return r
 
     @property
-    def description(self):
+    def description(self: "ScheduleEvent") -> str:
+        """
+        Description of the event
+        :return: description of the event
+        :rtype: str
+        """
         r = {
             "Location": self.location,
             "Instructor": self.instructor,
             "Type": self.event_type,
             "Group": self.group,
             "Subject": self.subject.name,
-            "Time": f"{self.start_time.strftime('%H:%M')} - {self.end_time.strftime('%H:%M')}"
-
+            "Time": f"{self.start_time.strftime('%H:%M')} - {self.end_time.strftime('%H:%M')}",
         }
 
         r = {k: v for k, v in r.items() if v}
         return "\n".join([f"{k}: {v}" for k, v in r.items()])
 
     @property
-    def dtstart(self):
+    def dtstart(self: "ScheduleEvent") -> datetime.datetime:
+        """
+        Datetime of the start of the event
+        :return: datetime of the start of the event
+        :rtype: datetime.datetime
+        """
         return datetime.datetime.combine(self.day, self.start_time)
 
     @property
-    def dtend(self):
+    def dtend(self: "ScheduleEvent") -> datetime.datetime:
+        """
+        Datetime of the end of the event
+        :return: datetime of the end of the event
+        :rtype: datetime.datetime
+        """
         return datetime.datetime.combine(self.day, self.end_time)
 
-    def __hash__(self):
+    def __hash__(self: "ScheduleEvent") -> int:
+        """
+        Hash of the event
+        :return: hash of the event
+        :rtype: int
+        """
         return hash(
-            (self.subject.name, self.event_type, self.start_time, self.end_time, self.group, self.day))
+            (
+                self.subject.name,
+                self.event_type,
+                self.start_time,
+                self.end_time,
+                self.group,
+                self.day,
+            )
+        )
 
-    def get_uid(self) -> str:
-        return '%x@innopolis.ru' % abs(hash(self))
+    def get_uid(self: "ScheduleEvent") -> str:
+        """
+        Get unique id of the event
+        :return: unique id of the event
+        :rtype: str
+        """
+        return "%x@innopolis.ru" % abs(hash(self))
 
-    def __eq__(self, other: 'ScheduleEvent'):
-        return (self.subject == other.subject and
-                self.event_type == other.event_type and
-                self.start_time == other.start_time and
-                self.end_time == other.end_time and
-                self.group == other.group)
+    def __eq__(self: "ScheduleEvent", other: "ScheduleEvent") -> bool:
+        """
+        Check if the event is equal to other event
+        :param other: other event
+        :type other: ScheduleEvent
+        :return: is the event is equal to other event
+        :rtype: bool
+        """
+        return (
+            self.subject == other.subject
+            and self.event_type == other.event_type
+            and self.start_time == other.start_time
+            and self.end_time == other.end_time
+            and self.group == other.group
+        )
 
-    def from_cell(self, lines: list[str]):
+    def from_cell(self: "ScheduleEvent", lines: list[str]) -> None:
+        """
+        Parse event from cell
+        :param lines: list of lines in the cell
+        :type lines: list[str]
+        :return: None
+        :rtype: None
+        """
         # lines = [pretty for line in lines if (pretty := remove_trailing_spaces(line))]
         iterator = filter(None, lines)
         _title = next(iterator, None)
@@ -126,7 +208,7 @@ class ScheduleEvent(BaseModel):
         if location:
             # "108 (ONLY ON 14/06)" -> "108", only_on=datetime(6, 14)
             if match := re.search(r"\(ONLY ON (\d+)/(\d+)\)", location):
-                location = location[:match.start()].strip()
+                location = location[: match.start()].strip()
                 day_ = int(match.group(1))
                 month_ = int(match.group(2))
                 only_on = datetime.datetime(CURRENT_YEAR, day=day_, month=month_).date()
@@ -152,6 +234,10 @@ class ScheduleEvent(BaseModel):
 
 
 class AcademicParser:
+    """
+    Parser for academic schedule
+    """
+
     spreadsheets: googleapiclient.discovery.Resource
     credentials: Credentials
     logger = logging.getLogger(__name__ + "." + "Parser")
@@ -160,13 +246,21 @@ class AcademicParser:
         self.credentials = get_credentials(
             Path(config.CREDENTIALS_PATH),
             token_path=Path(PARSER_PATH / "token.json"),
-            scopes=config.API_SCOPES
+            scopes=config.API_SCOPES,
         )
         self.spreadsheets = connect_spreadsheets(self.credentials)
 
     @staticmethod
-    def merge_cells(df: pd.DataFrame, target_sheet: dict):
-
+    def merge_cells(df: pd.DataFrame, target_sheet: dict["str", ...]) -> None:
+        """
+        Merge cells in the DataFrame according to the Google Sheets data
+        :param df: DataFrame to merge cells in
+        :type df: pd.DataFrame
+        :param target_sheet: Target sheet from Google Sheets API
+        :type target_sheet: dict
+        :return: None
+        :rtype: None
+        """
         if "merges" not in target_sheet:
             return
 
@@ -179,28 +273,41 @@ class AcademicParser:
             y1 = merge["endColumnIndex"]
 
             if x0 < max_x and y0 < max_y:
-                df.iloc[x0: x1, y0: y1] = df.iloc[x0][y0]
+                df.iloc[x0:x1, y0:y1] = df.iloc[x0][y0]
 
     def get_clear_df(
-            self,
-            spreadsheet_id: str,
-            target_range: str,
-            target_title: str
+        self: "AcademicParser",
+        spreadsheet_id: str,
+        target_range: str,
+        target_title: str,
     ) -> pd.DataFrame:
-        """Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
-        row filled by left value. Also remove trailing spaces and translate russian letters to english ones."""
+        """
+        Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
+        row filled by left value. Also remove trailing spaces and translate russian letters to english ones.
+        :param spreadsheet_id: ID of the spreadsheet to get data from
+        :type spreadsheet_id: str
+        :param target_range: Range of the data to get
+        :type target_range: str
+        :param target_title: Title of the target sheet
+        :type target_title: str
+        :return: DataFrame with data from Google Sheets
+        :rtype: pd.DataFrame
+        """
 
         self.logger.debug("Getting dataframe from Google Sheets...")
-        self.logger.info(f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}")
+        self.logger.info(
+            f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}"
+        )
 
-        values = self.spreadsheets.values().get(
-            spreadsheetId=spreadsheet_id,
-            range=target_range
-        ).execute()["values"]
+        values = (
+            self.spreadsheets.values()
+            .get(spreadsheetId=spreadsheet_id, range=target_range)
+            .execute()["values"]
+        )
 
         df = pd.DataFrame(data=values)
         # remove trailing spaces and translate
-        df.replace(r'^\s*$', '', regex=True, inplace=True)
+        df.replace(r"^\s*$", "", regex=True, inplace=True)
         df = df.applymap(lambda x: beautify_string(x) if isinstance(x, str) else x)
 
         max_x, max_y = df.shape
@@ -209,20 +316,21 @@ class AcademicParser:
         spreadsheet = self.spreadsheets.get(
             spreadsheetId=config.SPREADSHEET_ID,
             ranges=[target_range],
-            includeGridData=False  # values already fetched
+            includeGridData=False,  # values already fetched
         ).execute()
 
         self.logger.info(
-            f"Spreadsheet {spreadsheet['properties']['title']} retrieved:\n" +
-            f"Sheets({len(spreadsheet['sheets'])}): " + ", ".join(
-                f"{sheet['properties']['title']}"
-                for sheet in spreadsheet['sheets'])
+            f"Spreadsheet {spreadsheet['properties']['title']} retrieved:\n"
+            + f"Sheets({len(spreadsheet['sheets'])}): "
+            + ", ".join(
+                f"{sheet['properties']['title']}" for sheet in spreadsheet["sheets"]
+            )
         )
 
         # get target sheet
         target_sheet = None
-        for sheet in spreadsheet['sheets']:
-            if sheet['properties']['title'] == target_title:
+        for sheet in spreadsheet["sheets"]:
+            if sheet["properties"]["title"] == target_title:
                 target_sheet = sheet
                 break
 
@@ -230,22 +338,22 @@ class AcademicParser:
             raise ValueError(f"Target sheet {target_title} not found")
 
         self.logger.info(
-            f"Target sheet: {target_sheet['properties']['title']} " +
-            f"Sheet index: ({target_sheet['properties']['index']}) " +
-            f"Sheet merges: ({len(target_sheet['merges'])})"
+            f"Target sheet: {target_sheet['properties']['title']} "
+            + f"Sheet index: ({target_sheet['properties']['index']}) "
+            + f"Sheet merges: ({len(target_sheet['merges'])})"
         )
 
         self.logger.info("Merging cells")
 
         self.merge_cells(df, target_sheet)
 
-        df.fillna('', inplace=True)
+        df.fillna("", inplace=True)
 
         self.logger.info("Cells merged")
         self.logger.info("Filling empty cells")
         for y in range(1, max_y):
             course_name = df.iloc[0, y]
-            if course_name == '':
+            if course_name == "":
                 df.iloc[0, y] = df.iloc[0, y - 1]
                 self.logger.info(f"> Filled empty cell in courses line: {y}")
         self.logger.info("Empty cells filled")
@@ -254,22 +362,37 @@ class AcademicParser:
 
     @staticmethod
     def refactor_course_df(
-            course_df: pd.DataFrame,
-            group_names: list[str]
+        course_df: pd.DataFrame, group_names: list[str]
     ) -> pd.DataFrame:
-        """Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
-        to one event. """
+        """
+        Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
+        to one event.
+        :param course_df: DataFrame to refactor
+        :type course_df: pd.DataFrame
+        :param group_names: List of group names
+        :type group_names: list[str]
+        :return: Refactored DataFrame
+        :rtype: pd.DataFrame
+        """
         course_df.columns = ["time", *group_names]
         course_df.set_index("time", inplace=True)
 
-        course_df = course_df.groupby("time").agg(lambda intersecting: list(filter(None, intersecting)))
+        course_df = course_df.groupby("time").agg(
+            lambda intersecting: list(filter(None, intersecting))
+        )
 
-        # course_df.fillna('', inplace=True)
+        # course_df.fillna("", inplace=True)
 
         return course_df
 
     def parse_df(self, df: pd.DataFrame) -> dict[str, dict[str, list[ScheduleEvent]]]:
-        """Parse DataFrame into a dictionary with separation by days and then by course. """
+        """
+        Parse DataFrame into a dictionary with separation by days and then by course.
+        :param df: DataFrame to parse
+        :type df: pd.DataFrame
+        :return: Dictionary with separation by days and then by course
+        :rtype: dict[str, dict[str, list[ScheduleEvent]]]
+        """
 
         self.logger.debug("Parsing dataframe to separation by days|groups...")
         self.logger.info("Get 'week' indexes...")
@@ -296,10 +419,10 @@ class AcademicParser:
                 course_name = courses_line.iloc[start_y]
                 self.logger.info(f"  > {course_name}")
                 group_names = groups_line.iloc[start_y:end_y]
-                group_names = group_names[group_names != ''].values
+                group_names = group_names[group_names != ""].values
                 group_names = list(map(lambda x: format_group_name(x), group_names))
 
-                course_df = week_df.iloc[1:, start_y: end_y]
+                course_df = week_df.iloc[1:, start_y:end_y]
                 course_df = self.refactor_course_df(course_df, group_names)
                 separation_by_days[day_name][course_name] = course_df
 
@@ -307,21 +430,25 @@ class AcademicParser:
 
 
 def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
-    """ Convert course DataFrame (timeslot as index, group name as column name, list of event lines in cell value) to list
-    of ScheduleEvents."""
+    """
+    Convert course DataFrame (timeslot as index, group name as column name, list of event lines in cell value) to list
+    of ScheduleEvents.
+    :param course_df: DataFrame to convert
+    :type course_df: pd.DataFrame
+    :return: List of ScheduleEvents
+    :rtype: Iterable[ScheduleEvent]
+    """
     for timeslot, by_groups in course_df.iterrows():  # type: str, dict
         for name, event_lines in by_groups.items():  # type: str, list[str]
             if not event_lines:
                 continue
 
-            start_time, end_time = timeslot.split('-')
-            start_time = datetime.datetime.strptime(start_time, '%H:%M').time()
-            end_time = datetime.datetime.strptime(end_time, '%H:%M').time()
+            start_time, end_time = timeslot.split("-")
+            start_time = datetime.datetime.strptime(start_time, "%H:%M").time()
+            end_time = datetime.datetime.strptime(end_time, "%H:%M").time()
 
             cell_event = ScheduleEvent(
-                group=name,
-                start_time=start_time,
-                end_time=end_time
+                group=name, start_time=start_time, end_time=end_time
             )
 
             cell_event.from_cell(event_lines)
@@ -330,11 +457,24 @@ def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
 
 
 def convert_separation(
-        separation_by_days: dict,
-        very_first_date: datetime.date,
-        very_last_date: datetime.date,
-        logger: logging.Logger
+    separation_by_days: dict,
+    very_first_date: datetime.date,
+    very_last_date: datetime.date,
+    logger: logging.Logger,
 ) -> Iterable[ScheduleEvent]:
+    """
+    Convert separation by days and then by courses to list of ScheduleEvents.
+    :param separation_by_days: Dictionary with separation by days and then by courses
+    :type separation_by_days: dict
+    :param very_first_date: first date of schedule
+    :type very_first_date: datetime.date
+    :param very_last_date: last date of schedule
+    :type very_last_date: datetime.date
+    :param logger: logger
+    :type logger: logging.Logger
+    :return: List of ScheduleEvents
+    :rtype: Iterable[ScheduleEvent]
+    """
     now_dtstamp = datetime.datetime.now()
 
     rrule = get_weekday_rrule(very_last_date)
@@ -361,46 +501,68 @@ remove_pattern = re.compile(r"\(.*\)")
 
 
 def format_group_name(dirt_group_name: str) -> str:
-    dirt_group_name.replace(' ', '')
+    """
+    Format group name to uppercase and remove all brackets and text inside.
+    :param dirt_group_name: dirty group name
+    :type dirt_group_name: str
+    :return: formatted group name
+    :rtype: str
+    """
+    dirt_group_name.replace(" ", "")
     dirt_group_name = dirt_group_name.upper()
-    dirt_group_name = remove_pattern.sub('', dirt_group_name)
+    dirt_group_name = remove_pattern.sub("", dirt_group_name)
     dirt_group_name = dirt_group_name.strip()
     return dirt_group_name
 
 
-def get_weekday_rrule(end_date):
+def get_weekday_rrule(end_date: datetime.date) -> dict:
+    """
+    Get RRULE for recurrence with weekly interval and end date.
+    :param end_date: end date
+    :type end_date: datetime.date
+    :return:
+    :rtype:
+    """
     return {
-        'FREQ': 'WEEKLY',
-        'INTERVAL': 1,
-        'UNTIL': end_date,
+        "FREQ": "WEEKLY",
+        "INTERVAL": 1,
+        "UNTIL": end_date,
     }
 
 
-def process_target_schedule(target_id) -> Iterable[ScheduleEvent]:
+def process_target_schedule(target_id: int) -> Iterable[ScheduleEvent]:
+    """
+    Process target schedule by target_id.
+    :param target_id: target id
+    :type target_id: int
+    :return: List of ScheduleEvents
+    :rtype: Iterable[ScheduleEvent]
+    """
     df = parser.get_clear_df(
         spreadsheet_id=config.SPREADSHEET_ID,
         target_range=config.TARGET_RANGES[target_id],
-        target_title=config.TARGET_SHEET_TITLES[target_id]
+        target_title=config.TARGET_SHEET_TITLES[target_id],
     )
     separation_by_days = parser.parse_df(df)
 
-    from_date = datetime.datetime.fromisoformat(config.RECURRENCE[target_id]["start"]).date()
-    until_date = datetime.datetime.fromisoformat(config.RECURRENCE[target_id]["end"]).date()
+    from_date = datetime.datetime.fromisoformat(
+        config.RECURRENCE[target_id]["start"]
+    ).date()
+    until_date = datetime.datetime.fromisoformat(
+        config.RECURRENCE[target_id]["end"]
+    ).date()
 
-    events = convert_separation(
-        separation_by_days,
-        from_date,
-        until_date,
-        logger
-    )
+    events = convert_separation(separation_by_days, from_date, until_date, logger)
 
     return events
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
-    ignoring_subjects = [Subject.from_str(subject_name) for subject_name in config.IGNORING_SUBJECTS]
+    ignoring_subjects = [
+        Subject.from_str(subject_name) for subject_name in config.IGNORING_SUBJECTS
+    ]
     for subject in ignoring_subjects:
         subject.is_ignored = True
 
@@ -412,15 +574,12 @@ if __name__ == '__main__':
         all_events.extend(process_target_schedule(i))
 
     calendars = {
-        "filters": [{
-            "title": "Course",
-            "alias": "course"
-        }],
+        "filters": [{"title": "Course", "alias": "course"}],
         "title": "Academic",
-        "calendars": []
+        "calendars": [],
     }
 
-    directory = PARSER_PATH / config.SAVE_PATH
+    directory = PARSER_PATH / config.SAVE_ICS_PATH
     json_file = PARSER_PATH / config.SAVE_JSON_PATH
 
     # replace spaces and dashes with single dash
@@ -429,18 +588,20 @@ if __name__ == '__main__':
     all_events = sorted(all_events, key=lambda x: (x.course, x.group))
 
     logger.info("Writing JSON and iCalendars files...")
-    for course_name, course_events in (itertools.groupby(all_events, lambda x: x.course)):
+    for course_name, course_events in itertools.groupby(all_events, lambda x: x.course):
         logger.info(f" > Writing course {course_name}")
-        course_path = directory / replace_spaces_pattern.sub('-', course_name)
+        course_path = directory / replace_spaces_pattern.sub("-", course_name)
         course_path.mkdir(parents=True, exist_ok=True)
-        for group_name, group_events in (itertools.groupby(course_events, lambda x: x.group)):
+        for group_name, group_events in itertools.groupby(
+            course_events, lambda x: x.group
+        ):
             logger.info(f"  > {group_name}...")
             calendar = icalendar.Calendar()
-            calendar['prodid'] = '-//one-zero-eight//InNoHassle Calendar'
-            calendar['version'] = '2.0'
-            calendar['x-wr-calname'] = group_name
-            calendar['x-wr-caldesc'] = 'Generated by InNoHassle Calendar'
-            calendar['x-wr-timezone'] = config.TIMEZONE
+            calendar["prodid"] = "-//one-zero-eight//InNoHassle Calendar"
+            calendar["version"] = "2.0"
+            calendar["x-wr-calname"] = group_name
+            calendar["x-wr-caldesc"] = "Generated by InNoHassle Calendar"
+            calendar["x-wr-timezone"] = config.TIMEZONE
 
             for group_event in group_events:
                 if group_event.subject.is_ignored:
@@ -457,17 +618,21 @@ if __name__ == '__main__':
                 )
 
                 if group_event.location:
-                    vevent['location'] = group_event.location
+                    vevent["location"] = group_event.location
 
                 if specific_date := group_event.flags.only_on_specific_date:
-                    dtstart = datetime.datetime.combine(specific_date, group_event.start_time)
-                    dtend = datetime.datetime.combine(specific_date, group_event.end_time)
-                    vevent['dtstart'] = dtstart.strftime("%Y%m%dT%H%M%S")
-                    vevent['dtend'] = dtend.strftime("%Y%m%dT%H%M%S")
+                    dtstart = datetime.datetime.combine(
+                        specific_date, group_event.start_time
+                    )
+                    dtend = datetime.datetime.combine(
+                        specific_date, group_event.end_time
+                    )
+                    vevent["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%S")
+                    vevent["dtend"] = dtend.strftime("%Y%m%dT%H%M%S")
                 else:
-                    vevent['dtstart'] = group_event.dtstart.strftime("%Y%m%dT%H%M%S")
-                    vevent['dtend'] = group_event.dtend.strftime("%Y%m%dT%H%M%S")
-                    vevent.add('rrule', group_event.recurrence)
+                    vevent["dtstart"] = group_event.dtstart.strftime("%Y%m%dT%H%M%S")
+                    vevent["dtend"] = group_event.dtend.strftime("%Y%m%dT%H%M%S")
+                    vevent.add("rrule", group_event.recurrence)
 
                 calendar.add_component(vevent)
 
@@ -478,14 +643,13 @@ if __name__ == '__main__':
                 {
                     "name": group_name,
                     "course": course_name,
-                    "file": file_path.relative_to(json_file.parent).as_posix()
+                    "file": file_path.relative_to(json_file.parent).as_posix(),
                 }
             )
 
-            with open(file_path, 'wb') as f:
+            with open(file_path, "wb") as f:
                 f.write(calendar.to_ical())
 
     # create a new .json file with information about calendars
     with open(json_file, "w") as f:
-
         json.dump(calendars, f, indent=4, sort_keys=True)
