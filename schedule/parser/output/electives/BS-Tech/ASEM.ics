@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230605T143000
 DTEND:20230605T160000
-UID:69b5d362-aa45-405c-9bcd-1cae98364022@innohassle.ru
+UID:8987cf81-6b0b-4119-b52b-0cc70abc259b@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -18,27 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230605T161000
 DTEND:20230605T174000
-UID:329c1e67-cba2-45b2-948a-9ff769be0c89@innohassle.ru
-CATEGORIES:Advanced Statistical and Econometric Methods
-DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
- \nonline/offline
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230612T143000
-DTEND:20230612T160000
-UID:14801600-605b-49f0-8cfc-710f60d52632@innohassle.ru
-CATEGORIES:Advanced Statistical and Econometric Methods
-DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
- \nonline/offline
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230612T161000
-DTEND:20230612T174000
-UID:ea4857c3-4ce7-434d-af0c-37f99c389e4a@innohassle.ru
+UID:e7130285-0288-4e38-bac6-a35451e64d36@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -48,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230619T143000
 DTEND:20230619T160000
-UID:0d721303-ca89-4d19-b6db-4508f739197e@innohassle.ru
+UID:c497f57a-3ac4-4e76-bbd7-5546f1818a0b@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -58,7 +38,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:cbf90ced-e363-4e28-899f-b4b31a9b3a0b@innohassle.ru
+UID:5387bf78-ae18-42a9-a617-70fe82e7f7cc@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -66,9 +46,29 @@ LOCATION:316
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
+DTSTART:20230621T175000
+DTEND:20230621T192000
+UID:e3d51a87-a846-427d-b1d7-d81dd543e429@innohassle.ru
+CATEGORIES:Advanced Statistical and Econometric Methods
+DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
+ \nonline/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Advanced Statistical and Econometric Methods
+DTSTART:20230621T193000
+DTEND:20230621T210000
+UID:2d89151a-0bfc-43b2-98a7-ffbd24bb51c0@innohassle.ru
+CATEGORIES:Advanced Statistical and Econometric Methods
+DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
+ \nonline/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230626T143000
 DTEND:20230626T160000
-UID:9de09cf8-d021-48ed-94b4-2a5a69fa7269@innohassle.ru
+UID:f7fe223a-0dd6-45d2-8e6d-ed7ff6b52312@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -78,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:4a88aa5b-daad-422f-884e-c646c0b0b141@innohassle.ru
+UID:2dd44d31-5e63-4fdb-aeb8-9bed3fb8303d@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230703T143000
 DTEND:20230703T160000
-UID:14d84b2f-72c0-4aa3-87e4-f4391021e9cf@innohassle.ru
+UID:4cba6564-dc93-494e-9da0-e0469e33d8fb@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:a72147d4-443a-4a3f-9975-166f6357604b@innohassle.ru
+UID:9cc9b41b-a685-4da3-907c-972727401598@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -108,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T143000
 DTEND:20230705T160000
-UID:38bcecae-0b78-44d4-914a-2f405bae37fe@innohassle.ru
+UID:611702cd-8956-4171-9080-0ec43b5dead3@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -118,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T161000
 DTEND:20230705T174000
-UID:ae7c67df-563d-4dcc-9079-39abd2cf1b4a@innohassle.ru
+UID:3154aa5a-0754-4632-a6df-8ece2ba71de7@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230710T143000
 DTEND:20230710T160000
-UID:0f254511-6bbd-471d-a139-3bf66cc83448@innohassle.ru
+UID:f9848f12-7488-469f-b1d5-976258d82eb0@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -138,7 +138,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230710T161000
 DTEND:20230710T174000
-UID:19fd3d4f-f284-44ae-b945-c2c784cf827d@innohassle.ru
+UID:867b7b98-8a68-439b-a364-cd3d122ff496@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -148,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230712T143000
 DTEND:20230712T160000
-UID:6594002a-c5d6-40b4-bd5e-31efbf9a28e0@innohassle.ru
+UID:3399c70b-d192-4b64-8b00-da8991dc1ade@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -158,7 +158,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230712T161000
 DTEND:20230712T174000
-UID:abda8873-d542-4032-9758-235fad2ed7ea@innohassle.ru
+UID:0571d666-0a65-4b51-8bca-749765de9fc1@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -168,7 +168,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230717T143000
 DTEND:20230717T160000
-UID:ddafa1e5-de2d-4be5-bac7-79e3788b703c@innohassle.ru
+UID:b7e428a0-e50b-41ee-b98f-8ff02e252ab8@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -178,7 +178,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230717T161000
 DTEND:20230717T174000
-UID:5d3aa624-0886-4ff3-8048-773ec3bf875a@innohassle.ru
+UID:0f559edf-cd42-47bf-8619-3980ad9b0e68@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -188,7 +188,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230719T143000
 DTEND:20230719T160000
-UID:c5c94c2a-4889-4ecb-b11c-f821214b8212@innohassle.ru
+UID:29b27a2d-6240-499c-a05b-555940ec044b@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline
@@ -198,7 +198,7 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230719T161000
 DTEND:20230719T174000
-UID:756b9df9-af84-4972-be14-4a3afeaec278@innohassle.ru
+UID:2114d460-5f8f-41cc-932e-948669d54b17@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 DESCRIPTION:Advanced Statistical and Econometric Methods\nRustam Ibragimov
  \nonline/offline

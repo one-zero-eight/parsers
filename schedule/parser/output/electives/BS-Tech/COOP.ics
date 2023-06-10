@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Challenges of Object-Oriented Programming (lec)
 DTSTART:20230608T143000
 DTEND:20230608T160000
-UID:3d9d2411-98a5-4a1b-8e75-834c997d0732@innohassle.ru
+UID:61163766-a048-40a7-8a30-20cd1608e22b@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
@@ -16,39 +16,29 @@ LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230615T143000
-DTEND:20230615T160000
-UID:325e9fd4-eaa6-4be5-b070-c9bf47b314f9@innohassle.ru
+DTSTART:20230615T175000
+DTEND:20230615T192000
+UID:c20375ff-3f78-4c90-98c1-a14e1e088adc@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230622T143000
-DTEND:20230622T160000
-UID:fb0413ce-76c4-45bb-93af-cee0372be9f8@innohassle.ru
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230620T175000
+DTEND:20230620T192000
+UID:544c9fe0-38e1-4a5d-a401-1081c6e21411@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
-LOCATION:303
+LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230629T143000
-DTEND:20230629T160000
-UID:867563e0-a6ce-4d02-95ab-39852c8f7c9c@innohassle.ru
-CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
- line/offline
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230706T143000
-DTEND:20230706T160000
-UID:41e986cd-8895-4bd4-9016-18db91bd9425@innohassle.ru
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230621T175000
+DTEND:20230621T192000
+UID:30cd5491-c5be-45f6-9a32-33fb746caf46@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
@@ -56,22 +46,102 @@ LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230713T143000
-DTEND:20230713T160000
-UID:41a0b98d-b11b-4f5c-8299-0d17c70c79c9@innohassle.ru
+DTSTART:20230622T175000
+DTEND:20230622T192000
+UID:3e83a9d7-46a6-426d-a149-5f28d4f6a29e@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230623T175000
+DTEND:20230623T192000
+UID:b4829d40-fb43-4784-89f9-6fb2f57be905@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:313
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230627T175000
+DTEND:20230627T192000
+UID:f961f162-b601-49b7-ba48-ee5a37029556@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lec)
+DTSTART:20230629T175000
+DTEND:20230629T192000
+UID:42e3ba6f-0347-402a-b178-fbd58111529b@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Challenges of Object-Oriented Programming (lec)
-DTSTART:20230720T143000
-DTEND:20230720T160000
-UID:5e34f590-6b6a-401e-b4b2-fd4a766ad36c@innohassle.ru
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230704T175000
+DTEND:20230704T192000
+UID:2a034b52-c952-4742-a0ab-209f52ee2107@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
 DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
  line/offline
-LOCATION:320
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lec)
+DTSTART:20230706T175000
+DTEND:20230706T192000
+UID:4b9710fd-e014-4eb2-a83f-6753500c8b72@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230711T175000
+DTEND:20230711T192000
+UID:67bb5078-212c-4a36-a11a-d859cae132cf@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lec)
+DTSTART:20230713T175000
+DTEND:20230713T192000
+UID:b56b829b-ef40-4021-80ef-de7a6061013c@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lab)
+DTSTART:20230718T175000
+DTEND:20230718T192000
+UID:373c0045-9051-4c7b-bdf5-8fedf133d409@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:321
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Challenges of Object-Oriented Programming (lec)
+DTSTART:20230720T175000
+DTEND:20230720T192000
+UID:ce5ff6fb-5348-49b9-a7e3-f0c211a2c261@innohassle.ru
+CATEGORIES:Challenges of Object-Oriented Programming
+DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko\non
+ line/offline
+LOCATION:313
 END:VEVENT
 END:VCALENDAR

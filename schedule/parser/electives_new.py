@@ -275,6 +275,8 @@ def convert_separation(
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+
     parser = ElectiveParser()
 
     calendars = {
@@ -295,7 +297,7 @@ if __name__ == '__main__':
             target_range=config.TARGET_RANGES[i]
         )
 
-        parsed = parser.parse_df(df, config.ELECTIVES[i])
+        parsed = parser.parse_df(df, config.ELECTIVES)
         converted = convert_separation(parsed)
 
         directory = PARSER_PATH / config.SAVE_PATH / sheet_title.replace("/", "-").replace(" ", "-")

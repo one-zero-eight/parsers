@@ -63,7 +63,7 @@ class ElectivesParserConfig:
     SAVE_PATH: str
     SAVE_JSON_PATH: str
 
-    ELECTIVES: list[list[Elective]]
+    ELECTIVES: list[Elective]
 
     CREDENTIALS_PATH: str = "credentials.json"
 

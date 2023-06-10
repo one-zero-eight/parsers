@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230605T125000
 DTEND:20230605T142000
-UID:15d20dd3-9370-44a9-83c0-093f47098051@innohassle.ru
+UID:ef8ea3f1-b1fe-4f9a-a6c8-c68e47245f97@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -17,25 +17,25 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230605T143000
 DTEND:20230605T160000
-UID:76260645-9fc9-403a-addb-3e1a1197c882@innohassle.ru
+UID:af17065c-5f9a-4810-9e0c-2d9a158c7e26@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230610T161000
-DTEND:20230610T174000
-UID:2e15e840-4903-4f63-b60c-f5b6bf2189ae@innohassle.ru
+DTSTART:20230610T175000
+DTEND:20230610T192000
+UID:a4dc280d-e6bf-4201-8791-4922da3fcdbf@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230617T161000
-DTEND:20230617T174000
-UID:a7764574-6ae5-403a-a57e-aeb986538d92@innohassle.ru
+DTSTART:20230617T175000
+DTEND:20230617T192000
+UID:b082ac1a-ea2c-47bc-85e5-3e794b211ba3@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230619T125000
 DTEND:20230619T142000
-UID:543921ba-9ac3-4b0d-ad79-9e4402e0d515@innohassle.ru
+UID:3108c1e8-2cb4-4858-aea2-7e094dae6094@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -53,16 +53,16 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230619T143000
 DTEND:20230619T160000
-UID:aa1b04ad-8052-4d28-8c97-bf8da367459b@innohassle.ru
+UID:6bb448aa-6c16-421e-b09c-c5b29eb9e52c@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230624T161000
-DTEND:20230624T174000
-UID:30ad99e6-6060-41a7-8d78-1936e6407cf4@innohassle.ru
+DTSTART:20230624T175000
+DTEND:20230624T192000
+UID:3081aa11-5108-469c-8714-077667e35e84@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230626T125000
 DTEND:20230626T142000
-UID:75c5411d-3dfa-4ec2-8aa9-7a3f846c4a9c@innohassle.ru
+UID:924b927e-ce24-4e04-9fb5-5e02ae1a006b@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -80,25 +80,16 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230626T143000
 DTEND:20230626T160000
-UID:0179e7a3-7678-49ef-be9b-85910e453761@innohassle.ru
+UID:75f32797-be8e-44ce-a408-3ce9a86b4f2b@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230627T091000
-DTEND:20230627T104000
-UID:2c55f716-f26b-4a91-a1a8-ea5b4728d3db@innohassle.ru
-CATEGORIES:Applied Machine Learning
-DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
-LOCATION:101
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Applied Machine Learning
-DTSTART:20230701T161000
-DTEND:20230701T174000
-UID:f8c69878-58f4-4ea4-8df8-42cb4d2c889e@innohassle.ru
+DTSTART:20230701T175000
+DTEND:20230701T192000
+UID:8a3992b9-50c3-41c2-bacb-476667247b95@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -107,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230703T125000
 DTEND:20230703T142000
-UID:835f2233-ad8e-4952-aa1d-5a2df1ab8857@innohassle.ru
+UID:94b73054-5345-4612-bf7a-ebf45f8a72ce@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -116,16 +107,16 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230703T143000
 DTEND:20230703T160000
-UID:1fab5b05-e440-4e9a-ac91-adc9b9742150@innohassle.ru
+UID:c50b5759-a008-4824-9cce-2f3b6448dadc@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230708T161000
-DTEND:20230708T174000
-UID:241920e6-a9ed-4252-bb6f-1c254e9c19d7@innohassle.ru
+DTSTART:20230708T175000
+DTEND:20230708T192000
+UID:6593d076-d3f1-4be3-9310-9ccdd2688ea5@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -134,7 +125,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230710T125000
 DTEND:20230710T142000
-UID:4e6b7f55-4995-4a5f-899a-2d09b516683e@innohassle.ru
+UID:6c65943d-ad3c-4784-bd25-1cccc0c626d5@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -143,16 +134,16 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230710T143000
 DTEND:20230710T160000
-UID:610788d5-1123-4727-8598-cd345f289f9b@innohassle.ru
+UID:bd552c87-a76b-4381-9dea-089cb566fff0@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230715T161000
-DTEND:20230715T174000
-UID:b685e297-7f78-49cf-8bb0-210bce4751a0@innohassle.ru
+DTSTART:20230715T175000
+DTEND:20230715T192000
+UID:b6157413-441c-4a21-a089-a1d1e9fe02f4@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -161,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230717T125000
 DTEND:20230717T142000
-UID:2ed83502-3c7e-4224-8dfb-0611f8dbafae@innohassle.ru
+UID:f1d68d73-589d-433c-a37a-2082404f08fa@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
@@ -170,16 +161,16 @@ BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
 DTSTART:20230717T143000
 DTEND:20230717T160000
-UID:6656e2e7-4594-4741-b3da-ec8bd2843659@innohassle.ru
+UID:b162f6fc-51fd-4cd8-8b7b-b2aff765e6b0@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Applied Machine Learning
-DTSTART:20230722T161000
-DTEND:20230722T174000
-UID:13e95e51-95f7-4afe-a0ae-d225f06222ca@innohassle.ru
+DTSTART:20230722T175000
+DTEND:20230722T192000
+UID:0f503a0b-bc84-4a19-b295-5bc15b72ea45@innohassle.ru
 CATEGORIES:Applied Machine Learning
 DESCRIPTION:Applied Machine Learning\nImad Eddine Ibrahim Bekkouch\nonline
 LOCATION:online

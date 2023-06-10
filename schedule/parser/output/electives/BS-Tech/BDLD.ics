@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230605T105000
 DTEND:20230605T122000
-UID:e8c9347b-28ab-4aaa-b75d-26079f5bf758@innohassle.ru
+UID:287c09a2-0234-46ba-bfa9-b0c6546bcbea@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230605T125000
 DTEND:20230605T142000
-UID:2a6df702-1c84-43e1-aba3-61cf421d1082@innohassle.ru
+UID:0d486585-10e3-4840-b31f-0e2f61b85382@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230605T143000
 DTEND:20230605T160000
-UID:7bceb23c-7758-4bd5-8680-c8ef6d9c55ba@innohassle.ru
+UID:c8340e0b-707c-4dcf-aea8-dc15195980f4@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -38,47 +38,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230605T161000
 DTEND:20230605T174000
-UID:791e8616-9a4e-43cf-8203-66cc92e4fe1d@innohassle.ru
-CATEGORIES:Blockchain: Distributed Ledger Development
-DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
- ne
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Blockchain: Distributed Ledger Development (lec)
-DTSTART:20230612T105000
-DTEND:20230612T122000
-UID:d0668f08-94a5-4bca-b588-5dc02d82f425@innohassle.ru
-CATEGORIES:Blockchain: Distributed Ledger Development
-DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
- ne
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Blockchain: Distributed Ledger Development (lec)
-DTSTART:20230612T125000
-DTEND:20230612T142000
-UID:c45ed17c-7777-4583-a0f0-09021ada1b3a@innohassle.ru
-CATEGORIES:Blockchain: Distributed Ledger Development
-DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
- ne
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Blockchain: Distributed Ledger Development (lab)
-DTSTART:20230612T143000
-DTEND:20230612T160000
-UID:0a59cf3b-1e60-42c2-a616-1239912164b5@innohassle.ru
-CATEGORIES:Blockchain: Distributed Ledger Development
-DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
- ne
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Blockchain: Distributed Ledger Development (lab)
-DTSTART:20230612T161000
-DTEND:20230612T174000
-UID:edb38bc3-2ff3-4ada-8f7a-a833b1cb95a3@innohassle.ru
+UID:2ead5dfb-be74-43b3-9924-97044cbbc28f@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -88,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230619T105000
 DTEND:20230619T122000
-UID:33a4f698-0f0d-4591-b003-d7bad4065df6@innohassle.ru
+UID:0bf6a601-21ae-4b9a-9599-299223b2bfd0@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -98,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230619T125000
 DTEND:20230619T142000
-UID:e6b89f3b-f942-45d9-a919-56423731e903@innohassle.ru
+UID:c0e82411-fa78-4834-9247-891075ddbb95@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -108,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230619T143000
 DTEND:20230619T160000
-UID:fd5437dd-2f4c-447b-8b7e-57d96aa5b13e@innohassle.ru
+UID:27a42a68-b807-47eb-b625-07d246b8fcb4@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -118,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:c6e4551f-83a7-4777-979a-f5edf3d453b0@innohassle.ru
+UID:94ed7990-7d7e-4c96-a685-74f6ab846d55@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -128,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230626T105000
 DTEND:20230626T122000
-UID:78b299e6-98a7-4140-936e-19031e5fc7b8@innohassle.ru
+UID:099a033b-42f9-4c60-bf86-de4c80e84aab@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -138,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230626T125000
 DTEND:20230626T142000
-UID:9b791263-77ab-4d86-a579-f177643c95ce@innohassle.ru
+UID:e1e48aa4-ca9f-466a-9ff2-63228420b030@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -148,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230626T143000
 DTEND:20230626T160000
-UID:59b848fa-ee40-4dea-bb0d-3a8bcd4d0a7d@innohassle.ru
+UID:50d83128-f4d5-4071-b023-9349241dbbe7@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -158,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:29dbd22e-05bb-409f-a758-75a70c9b8b03@innohassle.ru
+UID:25801f17-7c17-4fdd-a998-78bad7be7a86@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -168,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230703T105000
 DTEND:20230703T122000
-UID:80460e1e-101a-45ba-b9d0-beb0237f3419@innohassle.ru
+UID:a5484a55-0772-43c6-9471-b679f93c066f@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -178,7 +138,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lec)
 DTSTART:20230703T125000
 DTEND:20230703T142000
-UID:3b6425f5-81fd-4cd0-b92e-3c33768b2d0e@innohassle.ru
+UID:c4f0184b-7acd-44d1-80c1-c7edaad90564@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -188,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230703T143000
 DTEND:20230703T160000
-UID:a26b2dd3-e61c-4557-9f32-391a96df4ecd@innohassle.ru
+UID:f5c6a89b-6b0b-47fe-82fe-8950f41ebcdf@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
@@ -198,7 +158,47 @@ BEGIN:VEVENT
 SUMMARY:Blockchain: Distributed Ledger Development (lab)
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:20ee5433-70d9-44fa-9580-bfe16b1ea5eb@innohassle.ru
+UID:abac27f1-f2a6-45fb-89c9-13dde787b124@innohassle.ru
+CATEGORIES:Blockchain: Distributed Ledger Development
+DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
+ ne
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blockchain: Distributed Ledger Development (lec)
+DTSTART:20230710T105000
+DTEND:20230710T122000
+UID:2428049d-16a3-46dc-a2bd-4e9daf1b85f4@innohassle.ru
+CATEGORIES:Blockchain: Distributed Ledger Development
+DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
+ ne
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blockchain: Distributed Ledger Development (lec)
+DTSTART:20230710T125000
+DTEND:20230710T142000
+UID:543b3cd7-eccb-4de0-9e7e-c6e3d2210c26@innohassle.ru
+CATEGORIES:Blockchain: Distributed Ledger Development
+DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
+ ne
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blockchain: Distributed Ledger Development (lab)
+DTSTART:20230710T143000
+DTEND:20230710T160000
+UID:ef8a8c06-f005-4f88-af27-376254b5dc18@innohassle.ru
+CATEGORIES:Blockchain: Distributed Ledger Development
+DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
+ ne
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blockchain: Distributed Ledger Development (lab)
+DTSTART:20230710T161000
+DTEND:20230710T174000
+UID:29f533b1-a4f4-4a15-835c-615d52111f17@innohassle.ru
 CATEGORIES:Blockchain: Distributed Ledger Development
 DESCRIPTION:Blockchain: Distributed Ledger Development\nHamza Salem\noffli
  ne
