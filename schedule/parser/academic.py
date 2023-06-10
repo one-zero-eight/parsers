@@ -102,8 +102,8 @@ class ScheduleEvent(BaseModel):
     def __hash__(self):
         return hash((self.subject.name, self.event_type, self.start_time, self.end_time, self.group))
 
-    def get_sha(self):
-        return hashlib.sha256(str(hash(self)).encode()).hexdigest()  # noqa
+    def get_uid(self) -> str:
+        return '%x@innopolis.ru' % abs(hash(self))
 
     def __eq__(self, other: 'ScheduleEvent'):
         return (self.subject == other.subject and
@@ -451,7 +451,7 @@ if __name__ == '__main__':
                     summary=group_event.summary,
                     description=group_event.description,
                     dtstamp=group_event.dtstamp.strftime("%Y%m%dT%H%M%S"),
-                    uid=group_event.get_sha() + "@innohassle.ru",
+                    uid=group_event.get_uid(),
                     categories=group_event.subject.name,
                 )
 
