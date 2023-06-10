@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:5ea99a20ead2a090@innopolis.ru
+UID:4f5a8ef4d39688e8@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:efba739a915c2a4@innopolis.ru
+UID:3784300b648a32a7@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230609T091000
 DTEND:20230609T104000
-UID:23bee684ac2b1a6c@innopolis.ru
+UID:51c30ffd66d16f57@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:None
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:3658986d41a2a949@innopolis.ru
+UID:48699742606c6352@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:6a0103fa8a5b61dd@innopolis.ru
+UID:4b2cbe602d70fdf5@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:75a5671b61642d37@innopolis.ru
+UID:bfba9428d6dee20@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -62,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:6c8b46b8221420ad@innopolis.ru
+UID:636ebb0b1a396005@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:40b4f357c6e0b95e@innopolis.ru
+UID:50e129dbab9e4b29@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Python (lec)
 DTSTART:20230703T193000
 DTEND:20230703T210000
-UID:64f9cfb07b4ef4d8@innopolis.ru
+UID:147921958d1ed8e9@innopolis.ru
 CATEGORIES:Programming in Python
 DESCRIPTION:Programming in Python\nAlaa Aldin Hajjar\noffline
 LOCATION:108

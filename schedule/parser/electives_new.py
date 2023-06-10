@@ -16,7 +16,6 @@ from pydantic import BaseModel
 
 from config import PARSER_PATH, electives_config as config, Elective
 from utils import *
-import hashlib
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
@@ -31,7 +30,7 @@ class ElectiveEvent(BaseModel):
     group: Optional[str] = None
 
     def __hash__(self):
-        return hash((self.elective.alias, self.start.isoformat(), self.end.isoformat(), self.location, self.event_type,
+        return hash((self.elective.alias, self.start, self.end, self.location, self.event_type,
                      self.group))
 
     def get_uid(self) -> str:

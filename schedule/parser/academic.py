@@ -7,7 +7,6 @@ from collections import defaultdict
 from itertools import pairwise
 from pathlib import Path
 from typing import Optional, Iterable
-from uuid import uuid4
 
 import googleapiclient.discovery
 import icalendar
@@ -18,7 +17,6 @@ from pydantic import BaseModel, Field
 
 from config import academic_config as config, PARSER_PATH
 from utils import *
-import hashlib
 
 CURRENT_YEAR = datetime.datetime.now().year
 
@@ -101,7 +99,7 @@ class ScheduleEvent(BaseModel):
 
     def __hash__(self):
         return hash(
-            (self.subject.name, self.event_type, self.start_time, self.end_time, self.group, self.day.isoformat()))
+            (self.subject.name, self.event_type, self.start_time, self.end_time, self.group, self.day))
 
     def get_uid(self) -> str:
         return '%x@innopolis.ru' % abs(hash(self))

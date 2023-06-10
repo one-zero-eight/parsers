@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230616T175000
 DTEND:20230616T192000
-UID:ba7f1b0c66e7bf@innopolis.ru
+UID:442f064f8afcf4f@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230616T193000
 DTEND:20230616T210000
-UID:7d37ff8a589c0b9d@innopolis.ru
+UID:be25a0df8e8ebaa@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:4d1bbc0b7a08f801@innopolis.ru
+UID:16771d574aa0b0df@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:71f883b00c0dbd4e@innopolis.ru
+UID:b4ee82f17bbbc26@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230623T175000
 DTEND:20230623T192000
-UID:2c7544db831670a5@innopolis.ru
+UID:5e0c5a0d96f61c82@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230623T193000
 DTEND:20230623T210000
-UID:72ced3438b34cc99@innopolis.ru
+UID:1e568fe85e2ad4c4@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -62,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:79224882c9224145@innopolis.ru
+UID:2e307f339c2df04e@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:7d6c4c5f3032e6ce@innopolis.ru
+UID:d0ed426190203d2@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230630T175000
 DTEND:20230630T192000
-UID:6aaf2651c3807ab0@innopolis.ru
+UID:190589c48c880681@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -89,7 +89,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230630T193000
 DTEND:20230630T210000
-UID:26453fd24f2dcb8f@innopolis.ru
+UID:4003dc07938e5f6b@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:283e15755200b744@innopolis.ru
+UID:30bcaf86eb884c99@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:5a3431649c674919@innopolis.ru
+UID:50e339eaf5ecc52d@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -116,7 +116,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230707T175000
 DTEND:20230707T192000
-UID:ccc95c843ca5c97@innopolis.ru
+UID:24f2eabab38b99bb@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -125,7 +125,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230707T193000
 DTEND:20230707T210000
-UID:7279b45acabaaf7f@innopolis.ru
+UID:232c1974f2f8f79f@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -134,7 +134,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230710T161000
 DTEND:20230710T174000
-UID:2dbbe6df93681470@innopolis.ru
+UID:554b001d03c80a46@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -143,7 +143,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:4ee9698b92faaf2b@innopolis.ru
+UID:450c147e0164603@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230714T175000
 DTEND:20230714T192000
-UID:2c17b5e9af3028ef@innopolis.ru
+UID:133b90a35eeb3551@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -161,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230714T193000
 DTEND:20230714T210000
-UID:6289d002ff2f8776@innopolis.ru
+UID:7c33bd8268b3a705@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:318
@@ -170,7 +170,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230717T161000
 DTEND:20230717T174000
-UID:783232e0bc4d50b4@innopolis.ru
+UID:6e02a9f57365b7f8@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314
@@ -179,7 +179,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:5ac0c3df6e938682@innopolis.ru
+UID:2ff355ab31a0cd55@innopolis.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed\noffline
 LOCATION:314

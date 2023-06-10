@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:2cb982d1505d5bfc@innopolis.ru
+UID:3faf02e658735b03@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:123915285c64aa6a@innopolis.ru
+UID:179ee1f4c486fbe4@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T175000
 DTEND:20230608T192000
-UID:654611505b03f2c2@innopolis.ru
+UID:df95fa54007668a@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T193000
 DTEND:20230608T210000
-UID:717b3842513d66d4@innopolis.ru
+UID:24b3dc7a70208d82@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:42886d6c65300c3f@innopolis.ru
+UID:4082596d901f75aa@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:312
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T193000
 DTEND:20230613T210000
-UID:31e42ac5862fece0@innopolis.ru
+UID:3aa2e395ba183d85@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:312
@@ -62,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T175000
 DTEND:20230615T192000
-UID:535f200a843aac60@innopolis.ru
+UID:5a44badcc6aee19f@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T193000
 DTEND:20230615T210000
-UID:5609f811a0c3db04@innopolis.ru
+UID:7f850280765f73@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:4d07db0f0a4a4f6c@innopolis.ru
+UID:277e0d62e921a452@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -89,7 +89,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:2f99918f9ee70e7e@innopolis.ru
+UID:27bb3bd1d660f2c2@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:335fe721fe7a47f4@innopolis.ru
+UID:1a4b27f7f7071152@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:6832b4996e71a56e@innopolis.ru
+UID:7ee3a374913fded7@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -116,7 +116,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:28da0120c6899ad5@innopolis.ru
+UID:6cef7b43b5ca0f50@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -125,7 +125,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T175000
 DTEND:20230629T192000
-UID:25c155cb5e8cfcd3@innopolis.ru
+UID:41fa1bf5323dffa9@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -134,7 +134,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T193000
 DTEND:20230629T210000
-UID:7c44d50c54423117@innopolis.ru
+UID:3ad8850f4209e8e1@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -143,7 +143,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:3d41ca45727392d2@innopolis.ru
+UID:73dc18ba449c60f0@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:223b35cbfcbaa240@innopolis.ru
+UID:1ee81ca8946bad46@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -161,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T175000
 DTEND:20230713T192000
-UID:194fd07e4690dd2e@innopolis.ru
+UID:52a6353a0047bb02@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -170,7 +170,7 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T193000
 DTEND:20230713T210000
-UID:41343ac5d3a67148@innopolis.ru
+UID:1aeaf0999468b133@innopolis.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
