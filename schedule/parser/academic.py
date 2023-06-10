@@ -100,7 +100,8 @@ class ScheduleEvent(BaseModel):
         return datetime.datetime.combine(self.day, self.end_time)
 
     def __hash__(self):
-        return hash((self.subject.name, self.event_type, self.start_time, self.end_time, self.group))
+        return hash(
+            (self.subject.name, self.event_type, self.start_time, self.end_time, self.group, self.day.isoformat()))
 
     def get_uid(self) -> str:
         return '%x@innopolis.ru' % abs(hash(self))
