@@ -8,7 +8,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T175000
 DTEND:20230605T192000
-UID:596881611779128183@innohassle.ru
+UID:c61933a04f481c248ff1b81287c95fd4a7a74ec93176ec7436ab075f6cb841ec@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -17,7 +18,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230605T193000
 DTEND:20230605T210000
-UID:7337086799362425839@innohassle.ru
+UID:12ec9ddb7a2efa6243f1343598f7ed11acc4f9519d37abc3f9bc6acaf8301619@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -26,7 +28,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T175000
 DTEND:20230608T192000
-UID:6150231954206366347@innohassle.ru
+UID:bc2276ad65fdafcc25841d491a73011cb627bdcafc236cc3dfff58789cc3810c@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -35,7 +38,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230608T193000
 DTEND:20230608T210000
-UID:-3565295205256777767@innohassle.ru
+UID:f20dbd93cbbe42c8c6a8e308fd4ede94e79061e8c7dbfde86199e20112ee9d05@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -44,7 +48,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T175000
 DTEND:20230613T192000
-UID:-1077537459598434076@innohassle.ru
+UID:1096d549d0ef5cc69455af33dc4a57c64f588577fc7ddbbc17909a1a3f4c3411@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:312
@@ -53,7 +58,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230613T193000
 DTEND:20230613T210000
-UID:-6692468179151943040@innohassle.ru
+UID:6f6c954cebe2210178f647e9b28f3b03bf8976932c5d5885711dbb0f8fc13ff6@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:312
@@ -62,7 +68,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T175000
 DTEND:20230615T192000
-UID:1686938472397347237@innohassle.ru
+UID:7bd33e6658c68e403fe18885d14a01582eb9738349d0c0f48d606cf06e99b334@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -71,7 +78,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230615T193000
 DTEND:20230615T210000
-UID:-5442440844451865404@innohassle.ru
+UID:cbe763117514738ec53e467ac471655139287bdc0a68dfe5a16666725e7b6a39@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -80,7 +88,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:-2546768000390788295@innohassle.ru
+UID:918a8efcdbcd007e34de83e3ebd867628d6b495403685f1b00ba0003728c9563@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -89,7 +98,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230619T193000
 DTEND:20230619T210000
-UID:-4140916739979862585@innohassle.ru
+UID:2cef1d9eae2c00767802c6dd69385720bdf293b2d7e02aaea792c78cd0336500@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -98,7 +108,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230622T175000
 DTEND:20230622T192000
-UID:175019083184326907@innohassle.ru
+UID:5399397aa265dc2c8906ed526ae22974024d8b12544edeaf48012e57b724e4b0@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -107,7 +118,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:-7140487777138533122@innohassle.ru
+UID:5595b568a117af506c7093ec2926871e226ac3fa079829c49091de851f4d6c1d@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -116,7 +128,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230626T193000
 DTEND:20230626T210000
-UID:-4343653175872742390@innohassle.ru
+UID:0883f4c74e66b21f449bf3cb90ff1da6c3771a2ae1860b0d2e9ebc36c7d287f3@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -125,7 +138,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T175000
 DTEND:20230629T192000
-UID:-5193922894496546647@innohassle.ru
+UID:35dd8650a15255d2a4b34689a48e016c4b10a810339ebecaf29bd213f4ff0ae3@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -134,7 +148,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230629T193000
 DTEND:20230629T210000
-UID:-5330701307210363399@innohassle.ru
+UID:4e24236666986c01f621477ce8805fca11c17245818b751be4d7e10be85be728@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -143,7 +158,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:-6781202939143367620@innohassle.ru
+UID:fc6132a9767773a6c6ba20a03215998e130bcd3a1e475a40d579804994dffdc2@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -152,7 +168,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230710T193000
 DTEND:20230710T210000
-UID:8519128817645438348@innohassle.ru
+UID:282052a617b8f0a66c75e16394fbe7637dfaeaba05ae4c209af9d45af10cfbdf@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:303
@@ -161,7 +178,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T175000
 DTEND:20230713T192000
-UID:-678584948460165197@innohassle.ru
+UID:9f596db7b633527bcc0aa819a7c95e1325914f58af5616e4ec7228063ee63106@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314
@@ -170,7 +188,8 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20230713T193000
 DTEND:20230713T210000
-UID:-769483402338339642@innohassle.ru
+UID:d78fd646cc5f6609c3bcc8519139d33871102120f5f940c7bafa40b2a0700f99@innoh
+ assle.ru
 CATEGORIES:Programming in Haskell
 DESCRIPTION:Programming in Haskell\nNikolay Kudasov\noffline
 LOCATION:314

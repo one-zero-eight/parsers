@@ -6,7 +6,6 @@ from datetime import datetime
 from itertools import pairwise, groupby
 from pathlib import Path
 from typing import Optional, Collection
-from uuid import uuid4
 
 import googleapiclient.discovery
 import icalendar
@@ -17,6 +16,7 @@ from pydantic import BaseModel
 
 from config import PARSER_PATH, electives_config as config, Elective
 from utils import *
+import hashlib
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
@@ -33,6 +33,9 @@ class ElectiveEvent(BaseModel):
     def __hash__(self):
         return hash((self.elective.alias, self.start.isoformat(), self.end.isoformat(), self.location, self.event_type,
                      self.group))
+
+    def get_sha(self):
+        return hashlib.sha256(str(hash(self)).encode()).hexdigest()  # noqa
 
 
 class ElectiveParser:
@@ -259,7 +262,7 @@ def convert_separation(
             vevent['dtstart'] = event.start.strftime("%Y%m%dT%H%M%S")
             vevent['dtend'] = event.end.strftime("%Y%m%dT%H%M%S")
             vevent['location'] = event.location
-            vevent['uid'] = str(hash(event)) + "@innohassle.ru"
+            vevent['uid'] = event.get_sha() + "@innohassle.ru"
             vevent['categories'] = elective.name
             desc = f"{elective.name}"
 
