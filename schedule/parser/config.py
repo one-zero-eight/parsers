@@ -17,28 +17,58 @@ CONFIG_PATH = PARSER_PATH / "config.json"
 """Path to config.json file"""
 
 
-class AcademicParserConfig(BaseModel):
+class BaseParserConfig(BaseModel):
+    """
+    Base config for parsers
+    """
+
     SPREADSHEET_ID: str
+    """Spreadsheet ID from Google Sheets URL"""
     TARGET_RANGES: list[str]
+    """Target ranges from spreadsheet"""
     TARGET_SHEET_TITLES: list[str]
-    RECURRENCE: list[dict]
+    """Target sheet titles from spreadsheet"""
     SAVE_PATH: str
+    """Path to save .ics files"""
     SAVE_JSON_PATH: str
+    """Path to save .json file"""
 
     CREDENTIALS_PATH: str = "credentials.json"
+    """Path to credentials.json file"""
 
-    API_SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-    TIMEZONE = 'Europe/Moscow'
-    TIMEZONE_DELTA = '+03:00'
+    API_SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+    """API scopes for Google Sheets API"""
+    TIMEZONE = "Europe/Moscow"
+    """Timezone for events"""
+    TIMEZONE_DELTA = "+03:00"
+    """Timezone delta for events"""
 
-    DAYS = ['MONDAY',
-            'TUESDAY',
-            'WEDNESDAY',
-            'THURSDAY',
-            'FRIDAY',
-            'SATURDAY',
-            'SUNDAY']
+    DAYS = [
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY",
+        "SUNDAY",
+    ]
+    """Days of week"""
 
+
+class AcademicParserConfig(BaseParserConfig):
+    """
+    Config for academic parser from Google Sheets
+    """
+
+    RECURRENCE: list[dict]
+    """Recurrence for events
+    For ex.:
+    [{
+        "desc": "From 23.01.2023 to 19.03.2023",
+        "start": "20230123T000000",
+        "end": "20230319T000000"
+    }]
+    """
     IGNORING_SUBJECTS = ["Elective courses on Physical Education"]
     """Subjects to ignore"""
     CURRENT_YEAR = datetime.now().year
@@ -85,13 +115,6 @@ class ElectivesParserConfig(BaseParserConfig):
     CREDENTIALS_PATH: str = "credentials.json"
     """Path to credentials.json file"""
 
-    DAYS = ['Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday',
-            'Sunday']
 
 with open(CONFIG_PATH, "r") as f:
     config_dict = json.load(f)
