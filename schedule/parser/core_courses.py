@@ -17,6 +17,8 @@ import pandas as pd
 from google.oauth2.credentials import Credentials
 from pydantic import BaseModel, Field
 
+from zlib import crc32
+
 from parser.config import core_courses_config as config, PARSER_PATH
 from parser.utils import *
 
@@ -179,7 +181,7 @@ class ScheduleEvent(BaseModel):
         :return: hash of the event
         :rtype: int
         """
-        return hash(
+        string_to_hash = str(
             (
                 self.subject.name,
                 self.event_type,
@@ -189,6 +191,8 @@ class ScheduleEvent(BaseModel):
                 self.day.isoformat(),
             )
         )
+
+        return crc32(string_to_hash.encode("utf-8"))
 
     def get_uid(self: "ScheduleEvent") -> str:
         """

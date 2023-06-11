@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230616T175000
 DTEND:20230616T192000
-UID:11919e9f18d50c54@innohassle.ru
+UID:7d1f5a33@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230616T193000
 DTEND:20230616T210000
-UID:37276d9da3b29298@innohassle.ru
+UID:adf08213@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230619T161000
 DTEND:20230619T174000
-UID:7e91399fa435d76@innohassle.ru
+UID:33a5f17d@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230619T175000
 DTEND:20230619T192000
-UID:71f1ea18e4359bdd@innohassle.ru
+UID:ba4a9cb2@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230623T175000
 DTEND:20230623T192000
-UID:1390afc7ff142cac@innohassle.ru
+UID:2aeabf8f@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230623T193000
 DTEND:20230623T210000
-UID:67ee50ac3feec803@innohassle.ru
+UID:fa0567af@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -62,7 +62,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230626T161000
 DTEND:20230626T174000
-UID:6a969269d821409e@innohassle.ru
+UID:30ead561@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -71,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230626T175000
 DTEND:20230626T192000
-UID:74d38569be50f302@innohassle.ru
+UID:b905b8ae@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -80,7 +80,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230630T175000
 DTEND:20230630T192000
-UID:25c00719fb6e04d1@innohassle.ru
+UID:ae96e124@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -89,7 +89,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230630T193000
 DTEND:20230630T210000
-UID:6230333b6f2cbd5a@innohassle.ru
+UID:7e793904@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230703T161000
 DTEND:20230703T174000
-UID:6cd632992e1565ef@innohassle.ru
+UID:c921aba2@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230703T175000
 DTEND:20230703T192000
-UID:593c02835fadbc9d@innohassle.ru
+UID:40cec66d@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -116,7 +116,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230707T175000
 DTEND:20230707T192000
-UID:6489619070191e40@innohassle.ru
+UID:f877f6@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -125,7 +125,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230707T193000
 DTEND:20230707T210000
-UID:6248eb9ed9d0059b@innohassle.ru
+UID:d017afd6@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -134,7 +134,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230710T161000
 DTEND:20230710T174000
-UID:61e963da1c5b6983@innohassle.ru
+UID:4d5df509@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -143,7 +143,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230710T175000
 DTEND:20230710T192000
-UID:2e03233bec0841ab@innohassle.ru
+UID:c4b298c6@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230714T175000
 DTEND:20230714T192000
-UID:3e1b36f30feff506@innohassle.ru
+UID:8484295d@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -161,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230714T193000
 DTEND:20230714T210000
-UID:639c960a7575f2ca@innohassle.ru
+UID:546bf17d@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:318
@@ -170,7 +170,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lec)
 DTSTART:20230717T161000
 DTEND:20230717T174000
-UID:56ae3c41ffd99c4b@innohassle.ru
+UID:1bc2feec@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314
@@ -179,7 +179,7 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:3a96577320c8004f@innohassle.ru
+UID:922d9323@innohassle.ru
 CATEGORIES:Introduction to DevOps
 DESCRIPTION:Introduction to DevOps\nDmitry Creed
 LOCATION:314

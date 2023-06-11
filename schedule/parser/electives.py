@@ -6,6 +6,7 @@ from datetime import datetime
 from itertools import pairwise, groupby
 from pathlib import Path
 from typing import Optional, Collection
+from zlib import crc32
 
 import googleapiclient.discovery
 import icalendar
@@ -30,7 +31,7 @@ class ElectiveEvent(BaseModel):
     group: Optional[str] = None
 
     def __hash__(self):
-        return hash(
+        string_to_hash = str(
             (
                 self.elective.alias,
                 self.start.isoformat(),
@@ -40,6 +41,8 @@ class ElectiveEvent(BaseModel):
                 self.group,
             )
         )
+
+        return crc32(string_to_hash.encode("utf-8"))
 
     def get_uid(self) -> str:
         return "%x@innohassle.ru" % abs(hash(self))
