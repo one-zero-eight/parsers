@@ -47,6 +47,41 @@ class ElectiveEvent(BaseModel):
     def get_uid(self) -> str:
         return "%x@innohassle.ru" % abs(hash(self))
 
+    @property
+    def description(self: "ElectiveEvent") -> str:
+        """
+        Description of the event
+
+        :return: description of the event
+        :rtype: str
+        """
+
+        r = {
+            "Location": self.location,
+            "Instructor": self.elective.instructor,
+            "Type": self.event_type,
+            "Group": self.group,
+            "Subject": self.elective.name,
+            "Time": f"{self.start.strftime('%H:%M')} - {self.end.strftime('%H:%M')} {self.start.strftime('%d.%m.%Y')}",
+        }
+
+        r = {k: v for k, v in r.items() if v}
+        return "\n".join([f"{k}: {v}" for k, v in r.items()])
+
+    def get_vevent(self) -> icalendar.Event:
+        vevent = icalendar.Event()
+        vevent["summary"] = self.elective.name
+        if self.event_type is not None:
+            vevent["summary"] += f" ({self.event_type})"
+        vevent["dtstart"] = self.start.strftime("%Y%m%dT%H%M%S")
+        vevent["dtend"] = self.end.strftime("%Y%m%dT%H%M%S")
+        vevent["location"] = self.location
+        vevent["uid"] = self.get_uid()
+        vevent["categories"] = self.elective.name
+        vevent["description"] = self.description
+
+        return vevent
+
 
 class ElectiveParser:
     spreadsheets: googleapiclient.discovery.Resource
@@ -261,27 +296,7 @@ def convert_separation(
 
         for event in events:
             event: ElectiveEvent
-            vevent = icalendar.Event()
-            vevent["summary"] = elective.name
-            if event.event_type is not None:
-                vevent["summary"] += f" ({event.event_type})"
-            vevent["dtstart"] = event.start.strftime("%Y%m%dT%H%M%S")
-            vevent["dtend"] = event.end.strftime("%Y%m%dT%H%M%S")
-            vevent["location"] = event.location
-            vevent["uid"] = event.get_uid()
-            vevent["categories"] = elective.name
-            desc = f"{elective.name}"
-
-            if group is not None:
-                desc += f"\n{group}"
-
-            if elective.instructor:
-                desc += f"\n{elective.instructor}"
-
-            if elective.elective_type:
-                desc += f"\n{elective.elective_type}"
-
-            vevent["description"] = desc
+            vevent = event.get_vevent()
             cal.add_component(vevent)
 
     return dict(output)

@@ -10,7 +10,8 @@ DTSTART:20230605T175000
 DTEND:20230605T192000
 UID:1ac3d322@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 05.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -19,7 +20,8 @@ DTSTART:20230605T193000
 DTEND:20230605T210000
 UID:44b5555@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 05.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -28,7 +30,8 @@ DTSTART:20230608T175000
 DTEND:20230608T192000
 UID:67f3026a@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 08.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -37,7 +40,8 @@ DTSTART:20230608T193000
 DTEND:20230608T210000
 UID:797b841d@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 08.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -46,7 +50,8 @@ DTSTART:20230613T175000
 DTEND:20230613T192000
 UID:fd04a8b3@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 312\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 13.06.2023
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -55,7 +60,8 @@ DTSTART:20230613T193000
 DTEND:20230613T210000
 UID:e38c2ec4@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 312\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 13.06.2023
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -64,7 +70,8 @@ DTSTART:20230615T175000
 DTEND:20230615T192000
 UID:fc73fb13@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 15.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -73,7 +80,8 @@ DTSTART:20230615T193000
 DTEND:20230615T210000
 UID:e2fb7d64@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 15.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -82,7 +90,8 @@ DTSTART:20230619T175000
 DTEND:20230619T192000
 UID:8e016b3c@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 19.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -91,7 +100,8 @@ DTSTART:20230619T193000
 DTEND:20230619T210000
 UID:9089ed4b@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 19.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -100,7 +110,8 @@ DTSTART:20230622T175000
 DTEND:20230622T192000
 UID:7fa7e0a9@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 22.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -109,7 +120,8 @@ DTSTART:20230626T175000
 DTEND:20230626T192000
 UID:77c77bbe@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 26.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -118,7 +130,8 @@ DTSTART:20230626T193000
 DTEND:20230626T210000
 UID:694ffdc9@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 26.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -127,7 +140,8 @@ DTSTART:20230629T175000
 DTEND:20230629T192000
 UID:14732838@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 29.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -136,7 +150,8 @@ DTSTART:20230629T193000
 DTEND:20230629T210000
 UID:afbae4f@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 29.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -145,7 +160,8 @@ DTSTART:20230710T175000
 DTEND:20230710T192000
 UID:c779a231@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 10.07.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -154,7 +170,8 @@ DTSTART:20230710T193000
 DTEND:20230710T210000
 UID:d9f12446@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 303\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 10.07.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -163,7 +180,8 @@ DTSTART:20230713T175000
 DTEND:20230713T192000
 UID:e3d6ff13@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 17:50 - 19:20 13.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -172,7 +190,8 @@ DTSTART:20230713T193000
 DTEND:20230713T210000
 UID:fd5e7964@innohassle.ru
 CATEGORIES:Programming in Haskell
-DESCRIPTION:Programming in Haskell\nNikolay Kudasov
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 19:30 - 21:00 13.07.2023
 LOCATION:314
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,8 @@ DTSTART:20230606T175000
 DTEND:20230606T192000
 UID:9600f5f0@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 06.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -19,7 +20,8 @@ DTSTART:20230608T175000
 DTEND:20230608T192000
 UID:7f3b8a4f@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 08.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -28,7 +30,8 @@ DTSTART:20230613T175000
 DTEND:20230613T192000
 UID:660ef416@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 13.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -37,7 +40,8 @@ DTSTART:20230615T175000
 DTEND:20230615T192000
 UID:317198d@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 15.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -46,7 +50,8 @@ DTSTART:20230620T175000
 DTEND:20230620T192000
 UID:675e2b4b@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 20.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -55,7 +60,8 @@ DTSTART:20230622T175000
 DTEND:20230622T192000
 UID:44568fc2@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 22.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -64,7 +70,8 @@ DTSTART:20230627T175000
 DTEND:20230627T192000
 UID:fe7b17b4@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 27.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -73,7 +80,8 @@ DTSTART:20230629T175000
 DTEND:20230629T192000
 UID:1740680b@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 29.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -82,7 +90,8 @@ DTSTART:20230704T175000
 DTEND:20230704T192000
 UID:4d9abaa0@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 04.07.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -91,7 +100,8 @@ DTSTART:20230706T175000
 DTEND:20230706T192000
 UID:6e921e29@innohassle.ru
 CATEGORIES:Programming in Python
-DESCRIPTION:Programming in Python\ngroup1\nAlaa Aldin Hajjar
+DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
+ : group1\nSubject: Programming in Python\nTime: 17:50 - 19:20 06.07.2023
 LOCATION:303
 END:VEVENT
 END:VCALENDAR

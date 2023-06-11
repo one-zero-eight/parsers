@@ -10,7 +10,9 @@ DTSTART:20230608T143000
 DTEND:20230608T160000
 UID:4d85a6d6@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 303\nInstructor: Yegor Bugayenko\nType: lec\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 14:30 - 16:00 08.06.202
+ 3
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
@@ -19,7 +21,9 @@ DTSTART:20230615T175000
 DTEND:20230615T192000
 UID:611d6756@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: online\nInstructor: Yegor Bugayenko\nType: lec\nSubj
+ ect: Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 15.06.
+ 2023
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
@@ -28,7 +32,9 @@ DTSTART:20230620T175000
 DTEND:20230620T192000
 UID:3fb7d35f@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 313\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 20.06.202
+ 3
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
@@ -37,7 +43,9 @@ DTSTART:20230621T175000
 DTEND:20230621T192000
 UID:ec6e65e5@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 313\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 21.06.202
+ 3
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
@@ -46,7 +54,9 @@ DTSTART:20230622T175000
 DTEND:20230622T192000
 UID:f38b73e2@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 300\nInstructor: Yegor Bugayenko\nType: lec\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 22.06.202
+ 3
 LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
@@ -55,7 +65,9 @@ DTSTART:20230623T175000
 DTEND:20230623T192000
 UID:90ac0ed0@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 313\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 23.06.202
+ 3
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
@@ -64,7 +76,9 @@ DTSTART:20230627T175000
 DTEND:20230627T192000
 UID:bd12a65d@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 321\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 27.06.202
+ 3
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
@@ -73,7 +87,9 @@ DTSTART:20230629T175000
 DTEND:20230629T192000
 UID:3730ae4a@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: online\nInstructor: Yegor Bugayenko\nType: lec\nSubj
+ ect: Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 29.06.
+ 2023
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
@@ -82,7 +98,9 @@ DTSTART:20230704T175000
 DTEND:20230704T192000
 UID:c19f65c1@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 321\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 04.07.202
+ 3
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
@@ -91,7 +109,9 @@ DTSTART:20230706T175000
 DTEND:20230706T192000
 UID:a3cdbacd@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 321\nInstructor: Yegor Bugayenko\nType: lec\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 06.07.202
+ 3
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
@@ -100,7 +120,9 @@ DTSTART:20230711T175000
 DTEND:20230711T192000
 UID:c0a58635@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 321\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 11.07.202
+ 3
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
@@ -109,7 +131,9 @@ DTSTART:20230713T175000
 DTEND:20230713T192000
 UID:386c8ad3@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: online\nInstructor: Yegor Bugayenko\nType: lec\nSubj
+ ect: Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 13.07.
+ 2023
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
@@ -118,7 +142,9 @@ DTSTART:20230718T175000
 DTEND:20230718T192000
 UID:3b049a1a@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 321\nInstructor: Yegor Bugayenko\nType: lab\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 18.07.202
+ 3
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
@@ -127,7 +153,9 @@ DTSTART:20230720T175000
 DTEND:20230720T192000
 UID:a47e7f3d@innohassle.ru
 CATEGORIES:Challenges of Object-Oriented Programming
-DESCRIPTION:Challenges of Object-Oriented Programming\nYegor Bugayenko
+DESCRIPTION:Location: 313\nInstructor: Yegor Bugayenko\nType: lec\nSubject
+ : Challenges of Object-Oriented Programming\nTime: 17:50 - 19:20 20.07.202
+ 3
 LOCATION:313
 END:VEVENT
 END:VCALENDAR

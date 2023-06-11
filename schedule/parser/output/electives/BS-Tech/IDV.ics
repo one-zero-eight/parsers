@@ -10,7 +10,8 @@ DTSTART:20230616T175000
 DTEND:20230616T192000
 UID:7d1f5a33@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 16.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -19,7 +20,8 @@ DTSTART:20230616T193000
 DTEND:20230616T210000
 UID:adf08213@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 19:30 - 21:00 16.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -28,7 +30,8 @@ DTSTART:20230619T161000
 DTEND:20230619T174000
 UID:33a5f17d@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 16:10 - 17:40 19.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -37,7 +40,8 @@ DTSTART:20230619T175000
 DTEND:20230619T192000
 UID:ba4a9cb2@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 19.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -46,7 +50,8 @@ DTSTART:20230623T175000
 DTEND:20230623T192000
 UID:2aeabf8f@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 23.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -55,7 +60,8 @@ DTSTART:20230623T193000
 DTEND:20230623T210000
 UID:fa0567af@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 19:30 - 21:00 23.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -64,7 +70,8 @@ DTSTART:20230626T161000
 DTEND:20230626T174000
 UID:30ead561@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 16:10 - 17:40 26.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -73,7 +80,8 @@ DTSTART:20230626T175000
 DTEND:20230626T192000
 UID:b905b8ae@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 26.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -82,7 +90,8 @@ DTSTART:20230630T175000
 DTEND:20230630T192000
 UID:ae96e124@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 30.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -91,7 +100,8 @@ DTSTART:20230630T193000
 DTEND:20230630T210000
 UID:7e793904@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 19:30 - 21:00 30.06.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -100,7 +110,8 @@ DTSTART:20230703T161000
 DTEND:20230703T174000
 UID:c921aba2@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 16:10 - 17:40 03.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -109,7 +120,8 @@ DTSTART:20230703T175000
 DTEND:20230703T192000
 UID:40cec66d@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 03.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -118,7 +130,8 @@ DTSTART:20230707T175000
 DTEND:20230707T192000
 UID:f877f6@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 07.07.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -127,7 +140,8 @@ DTSTART:20230707T193000
 DTEND:20230707T210000
 UID:d017afd6@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 19:30 - 21:00 07.07.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -136,7 +150,8 @@ DTSTART:20230710T161000
 DTEND:20230710T174000
 UID:4d5df509@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 16:10 - 17:40 10.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -145,7 +160,8 @@ DTSTART:20230710T175000
 DTEND:20230710T192000
 UID:c4b298c6@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 10.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -154,7 +170,8 @@ DTSTART:20230714T175000
 DTEND:20230714T192000
 UID:8484295d@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 14.07.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -163,7 +180,8 @@ DTSTART:20230714T193000
 DTEND:20230714T210000
 UID:546bf17d@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 318\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 19:30 - 21:00 14.07.2023
 LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
@@ -172,7 +190,8 @@ DTSTART:20230717T161000
 DTEND:20230717T174000
 UID:1bc2feec@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lec\nSubject: I
+ ntroduction to DevOps\nTime: 16:10 - 17:40 17.07.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
@@ -181,7 +200,8 @@ DTSTART:20230717T175000
 DTEND:20230717T192000
 UID:922d9323@innohassle.ru
 CATEGORIES:Introduction to DevOps
-DESCRIPTION:Introduction to DevOps\nDmitry Creed
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 17.07.2023
 LOCATION:314
 END:VEVENT
 END:VCALENDAR
