@@ -75,10 +75,12 @@ class ElectiveEvent(BaseModel):
             vevent["summary"] += f" ({self.event_type})"
         vevent["dtstart"] = self.start.strftime("%Y%m%dT%H%M%S")
         vevent["dtend"] = self.end.strftime("%Y%m%dT%H%M%S")
-        vevent["location"] = self.location
         vevent["uid"] = self.get_uid()
         vevent["categories"] = self.elective.name
         vevent["description"] = self.description
+
+        if self.location is not None:
+            vevent["location"] = self.location
 
         return vevent
 
