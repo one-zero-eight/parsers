@@ -269,7 +269,7 @@ class ScheduleEvent(BaseModel):
         vevent = icalendar.Event(
             summary=self.summary,
             description=self.description,
-            dtstamp=self.dtstamp.strftime("%Y%m%dT%H%M%S"),
+            # dtstamp=self.dtstamp.strftime("%Y%m%dT%H%M%S")
             uid=self.get_uid(),
             categories=self.subject.name,
         )
