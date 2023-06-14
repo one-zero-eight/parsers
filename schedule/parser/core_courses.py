@@ -565,6 +565,7 @@ remove_pattern = re.compile(r"\(.*\)")
 def format_group_name(dirt_group_name: str) -> str:
     """
     Format group name to uppercase and remove all brackets and text inside.
+
     :param dirt_group_name: dirty group name
     :type dirt_group_name: str
     :return: formatted group name
@@ -580,6 +581,7 @@ def format_group_name(dirt_group_name: str) -> str:
 def get_weekday_rrule(end_date: datetime.date) -> dict:
     """
     Get RRULE for recurrence with weekly interval and end date.
+
     :param end_date: end date
     :type end_date: datetime.date
     :return:
@@ -595,6 +597,7 @@ def get_weekday_rrule(end_date: datetime.date) -> dict:
 def process_target_schedule(target_id: int) -> Iterable[ScheduleEvent]:
     """
     Process target schedule by target_id.
+
     :param target_id: target id
     :type target_id: int
     :return: List of ScheduleEvents
