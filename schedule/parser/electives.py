@@ -22,13 +22,23 @@ BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
 
 class ElectiveEvent(BaseModel):
+    """
+    Elective event model
+    """
     elective: Elective
+    """ Elective object """
     start: datetime
+    """ Event start time """""
     end: datetime
+    """ Event end time """
     location: Optional[str]
+    """ Event location """
     description: Optional[str]
+    """ Event description """
     event_type: Optional[str]
+    """ Event type """
     group: Optional[str] = None
+    """ Group to which the event belongs """
 
     def __hash__(self):
         string_to_hash = str(
@@ -44,7 +54,13 @@ class ElectiveEvent(BaseModel):
 
         return crc32(string_to_hash.encode("utf-8"))
 
-    def get_uid(self) -> str:
+    def get_uid(self: "ElectiveEvent") -> str:
+        """
+        Get unique identifier for the event
+
+        :return: unique identifier
+        :rtype: str
+        """
         return "%x@innohassle.ru" % abs(hash(self))
 
     @property
@@ -68,7 +84,13 @@ class ElectiveEvent(BaseModel):
         r = {k: v for k, v in r.items() if v}
         return "\n".join([f"{k}: {v}" for k, v in r.items()])
 
-    def get_vevent(self) -> icalendar.Event:
+    def get_vevent(self: "ElectiveEvent") -> icalendar.Event:
+        """
+        Get icalendar event
+
+        :return: icalendar event
+        :rtype: icalendar.Event
+        """
         vevent = icalendar.Event()
         vevent["summary"] = self.elective.name
         if self.event_type is not None:
@@ -86,9 +108,15 @@ class ElectiveEvent(BaseModel):
 
 
 class ElectiveParser:
+    """
+    Elective parser class
+    """
     spreadsheets: googleapiclient.discovery.Resource
+    """ Google Sheets API object """
     credentials: Credentials
+    """ Google API credentials object """
     logger = logging.getLogger(__name__ + "." + "Parser")
+    """ Logger object """
 
     def __init__(self):
         self.credentials = get_credentials(
@@ -101,8 +129,19 @@ class ElectiveParser:
     def get_clear_df(
         self, spreadsheet_id: str, target_range: str, target_title: str
     ) -> pd.DataFrame:
-        """Get data from Google Sheets and return it as a DataFrame with merged
-        cells and empty cells in the course row filled by left value."""
+        """
+        Get data from Google Sheets and return it as a DataFrame with merged
+        cells and empty cells in the course row filled by left value.
+
+        :param spreadsheet_id: ID of the spreadsheet to get data from
+        :type spreadsheet_id: str
+        :param target_range: range of the spreadsheet to get data from
+        :type target_range: str
+        :param target_title: title of the sheet to get data from
+        :type target_title: str
+        :return: dataframe with merged cells and empty cells filled
+        :rtype: pd.DataFrame
+        """
 
         self.logger.debug("Getting dataframe from Google Sheets...")
         self.logger.info(
@@ -158,8 +197,26 @@ class ElectiveParser:
     def parse_week_df(
         df: pd.DataFrame, electives: Collection[Elective]
     ) -> list[ElectiveEvent]:
+        """
+        Parse dataframe with week schedule
+
+        :param df: dataframe with week schedule
+        :type df: pd.DataFrame
+        :param electives: list of electives to parse
+        :type electives: Collection[Elective]
+        :return: list of parsed events
+        :rtype: list[ElectiveEvent]
+        """
         # for each cell in day column
-        def process_cell(cell: str):
+        def process_cell(cell: str) -> list[dict[str, str]]:
+            """
+            Process cell, find events in it and return list of parsed events
+
+            :param cell: cell to process
+            :type cell: str
+            :return: list of parsed events
+            :rtype: list[dict[str, str]]
+            """
             #           "BDLD(lec) 312" ->
             #           {"ele"BDLD", "lec", "312"
             #           "PP(lab/group2)303" -> "PP", "lab/group2", "303"
@@ -258,7 +315,16 @@ class ElectiveParser:
     def parse_df(
         self, df: pd.DataFrame, electives: list[Elective]
     ) -> list[ElectiveEvent]:
-        """Parse DataFrame to dict with separation by groups."""
+        """
+        Parse DataFrame to dict with separation by groups.
+
+        :param df: dataframe to parse
+        :type df: pd.DataFrame
+        :param electives: list of electives to parse
+        :type electives: list[Elective]
+        :return: list of parsed events
+        :rtype: list[ElectiveEvent]
+        """
 
         self.logger.debug("Parsing dataframe to separation by days|groups...")
         self.logger.info("Get 'week' indexes...")
@@ -285,6 +351,14 @@ class ElectiveParser:
 def convert_separation(
     events: list[ElectiveEvent],
 ) -> dict[str, icalendar.Calendar]:
+    """
+    Convert list of events to dict with separation by Elective and group.
+
+    :param events: list of events to convert
+    :type events: list[ElectiveEvent]
+    :return: dict with separation by Elective and group
+    :rtype: dict[str, icalendar.Calendar]
+    """
     output = defaultdict(lambda: icalendar.Calendar())
     # group events by Elective and group
     grouping = groupby(events, lambda e: (e.elective, e.group))
