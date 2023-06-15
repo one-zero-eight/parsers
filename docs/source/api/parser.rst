@@ -1,35 +1,42 @@
 Submodules
 =======================
 
-parser.core_courses module
+models module
 ----------------------------
-
-.. automodule:: parser.core_courses
+.. automodule:: models
     :members:
     :undoc-members:
     :show-inheritance:
 
-parser.config module
+core_courses module
+----------------------------
+
+.. automodule:: core_courses
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+config module
 --------------------
 
-.. automodule:: parser.config
+.. automodule:: config
     :members:
     :undoc-members:
     :show-inheritance:
     :exclude-members: PARSER_PATH, CONFIG_PATH
 
-parser.electives module
+electives module
 -----------------------
 
-.. automodule:: parser.electives
+.. automodule:: electives
    :members:
    :undoc-members:
    :show-inheritance:
 
-parser.utils module
+utils module
 -------------------
 
-.. automodule:: parser.utils
+.. automodule:: utils
    :members:
    :undoc-members:
    :show-inheritance:
@@ -37,7 +44,7 @@ parser.utils module
 Module contents
 ---------------
 
-.. automodule:: parser
+.. automodule:: schedule
    :members:
    :undoc-members:
    :show-inheritance:
