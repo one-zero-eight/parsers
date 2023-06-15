@@ -19,6 +19,7 @@ from pydantic import BaseModel
 
 from parser.config import core_courses_config as config, PARSER_PATH
 from parser.models import Subject, ScheduleEvent
+from parser.temp.history_events import history_events
 from parser.utils import *
 
 
@@ -66,10 +67,10 @@ class CoreCoursesParser:
                 df.iloc[x0:x1, y0:y1] = df.iloc[x0][y0]
 
     def get_clear_df(
-        self: "CoreCoursesParser",
-        spreadsheet_id: str,
-        target_range: str,
-        target_title: str,
+            self: "CoreCoursesParser",
+            spreadsheet_id: str,
+            target_range: str,
+            target_title: str,
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
@@ -153,7 +154,7 @@ class CoreCoursesParser:
 
     @staticmethod
     def refactor_course_df(
-        course_df: pd.DataFrame, group_names: list[str]
+            course_df: pd.DataFrame, group_names: list[str]
     ) -> pd.DataFrame:
         """
         Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
@@ -251,10 +252,10 @@ def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
 
 
 def convert_separation(
-    separation_by_days: dict,
-    very_first_date: datetime.date,
-    very_last_date: datetime.date,
-    logger: logging.Logger,
+        separation_by_days: dict,
+        very_first_date: datetime.date,
+        very_last_date: datetime.date,
+        logger: logging.Logger,
 ) -> Iterable[ScheduleEvent]:
     """
     Convert separation by days and then by courses to list of ScheduleEvents.
@@ -394,7 +395,7 @@ if __name__ == "__main__":
         course_path = directory / replace_spaces_pattern.sub("-", course_name)
         course_path.mkdir(parents=True, exist_ok=True)
         for group_name, group_events in itertools.groupby(
-            course_events, lambda x: x.group
+                course_events, lambda x: x.group
         ):
             logger.info(f"  > {group_name}...")
             calendar = icalendar.Calendar(
@@ -417,6 +418,12 @@ if __name__ == "__main__":
                 vevent = group_event.get_vevent()
                 vevents.append(vevent)
                 calendar.add_component(vevent)
+
+            if course_name == "BS - Year 1":
+                for event in history_events:
+                    vevent = event.get_vevent()
+                    vevents.append(vevent)
+                    calendar.add_component(vevent)
 
             file_name = f"{group_name}.ics"
             file_path = course_path / file_name

@@ -315,11 +315,11 @@ class ScheduleEvent(BaseModel):
         :rtype: bool
         """
         return (
-            self.subject == other.subject
-            and self.event_type == other.event_type
-            and self.start_time == other.start_time
-            and self.end_time == other.end_time
-            and self.group == other.group
+                self.subject == other.subject
+                and self.event_type == other.event_type
+                and self.start_time == other.start_time
+                and self.end_time == other.end_time
+                and self.group == other.group
         )
 
     def from_cell(self: "ScheduleEvent", lines: list[str]) -> None:
@@ -383,15 +383,14 @@ class ScheduleEvent(BaseModel):
 
         if self.location:
             vevent["location"] = self.location
+        vevent["dtstart"] = self.dtstart.strftime("%Y%m%dT%H%M%S")
+        vevent["dtend"] = self.dtend.strftime("%Y%m%dT%H%M%S")
 
         if specific_date := self.flags.only_on_specific_date:
             dtstart = datetime.datetime.combine(specific_date, self.start_time)
             dtend = datetime.datetime.combine(specific_date, self.end_time)
             vevent["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%S")
             vevent["dtend"] = dtend.strftime("%Y%m%dT%H%M%S")
-        else:
-            vevent["dtstart"] = self.dtstart.strftime("%Y%m%dT%H%M%S")
-            vevent["dtend"] = self.dtend.strftime("%Y%m%dT%H%M%S")
+        elif self.recurrence:
             vevent.add("rrule", self.recurrence)
-
         return vevent
