@@ -48,12 +48,12 @@
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr1.ics",
-            "name": "FWD-gr1"
+            "name": "FWD group1"
         },
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group1.ics",
-            "name": "PP-group1"
+            "name": "PP group1"
         },
         {
             "elective_type": "BS Tech",
@@ -63,7 +63,7 @@
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group2.ics",
-            "name": "PP-group2"
+            "name": "PP group2"
         },
         {
             "elective_type": "BS Tech",
@@ -73,22 +73,22 @@
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr2.ics",
-            "name": "FWD-gr2"
+            "name": "FWD group2"
         },
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group3.ics",
-            "name": "PP-group3"
+            "name": "PP group3"
         },
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr3.ics",
-            "name": "FWD-gr3"
+            "name": "FWD group3"
         },
         {
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group4.ics",
-            "name": "PP-group4"
+            "name": "PP group4"
         },
         {
             "elective_type": "BS Tech",
@@ -143,22 +143,22 @@
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/PSY-BS1.ics",
-            "name": "PSY-BS1"
+            "name": "PSY BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BPM-BS1.ics",
-            "name": "BPM-BS1"
+            "name": "BPM BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/PSY-BS2.ics",
-            "name": "PSY-BS2"
+            "name": "PSY BS2"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BPM-BS2.ics",
-            "name": "BPM-BS2"
+            "name": "BPM BS2"
         },
         {
             "elective_type": "BS/MS Hum",
@@ -188,12 +188,12 @@
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/ICD-BS1.ics",
-            "name": "ICD-BS1"
+            "name": "ICD BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/ICD-BS2.ics",
-            "name": "ICD-BS2"
+            "name": "ICD BS2"
         },
         {
             "elective_type": "BS/MS Hum",
@@ -203,22 +203,22 @@
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IPS-BS1.ics",
-            "name": "IPS-BS1"
+            "name": "IPS BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IPS-BS2.ics",
-            "name": "IPS-BS2"
+            "name": "IPS BS2"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/DT-BS1.ics",
-            "name": "DT-BS1"
+            "name": "DT BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/DT-BS2.ics",
-            "name": "DT-BS2"
+            "name": "DT BS2"
         },
         {
             "elective_type": "BS/MS Hum",
@@ -238,12 +238,12 @@
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/SE-BS1.ics",
-            "name": "SE-BS1"
+            "name": "SE BS1"
         },
         {
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/SE-BS2.ics",
-            "name": "SE-BS2"
+            "name": "SE BS2"
         }
     ],
     "filters": [

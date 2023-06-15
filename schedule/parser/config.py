@@ -1,14 +1,13 @@
 from datetime import datetime
 from pprint import pprint
 from pathlib import Path
-from typing import Optional
 
-from pydantic import BaseModel, validator
+from pydantic import BaseModel
 from pydantic.tools import parse_obj_as
 
 import json
 
-from schedule.parser.utils import remove_trailing_spaces, symbol_translation
+from parser.models import Elective
 
 PARSER_PATH = Path(__file__).parent
 """Path to parser directory"""
@@ -75,35 +74,6 @@ class CoreCoursesParserConfig(BaseParserConfig):
     """Current year"""
 
 
-class Elective(BaseModel):
-    """
-    Elective model for ElectivesParserConfig
-    """
-
-    alias: str
-    """Alias for elective"""
-    name: Optional[str]
-    """Name of elective"""
-    instructor: Optional[str]
-    """Instructor of elective"""
-    elective_type: Optional[str]
-    """Type of elective"""
-
-    @validator("name", "instructor", "elective_type", pre=True)
-    def beatify_string(cls: type["Elective"], string: str) -> str:  # noqa
-        """Beatify string
-
-        :param string: string to beatify
-        :type string: str
-        :return: beatified string
-        :rtype: str
-        """
-        if string:
-            string = remove_trailing_spaces(string)
-            string = string.translate(symbol_translation)
-        return string
-
-
 class ElectivesParserConfig(BaseParserConfig):
     """
     Config for electives parser from Google Sheets
@@ -134,7 +104,6 @@ electives_config: ElectivesParserConfig = parse_obj_as(
 __all__ = [
     "core_courses_config",
     "electives_config",
-    "Elective",
     "PARSER_PATH",
     "ElectivesParserConfig",
     "CoreCoursesParserConfig",

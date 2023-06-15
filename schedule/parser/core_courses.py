@@ -8,286 +8,18 @@ import re
 from collections import defaultdict
 from itertools import pairwise
 from pathlib import Path
-from typing import Optional, Iterable
+from typing import Iterable
 
 import googleapiclient.discovery
 import icalendar
 import numpy as np
 import pandas as pd
 from google.oauth2.credentials import Credentials
-from pydantic import BaseModel, Field
-
-from zlib import crc32
+from pydantic import BaseModel
 
 from parser.config import core_courses_config as config, PARSER_PATH
+from parser.models import Subject, ScheduleEvent
 from parser.utils import *
-
-CURRENT_YEAR = datetime.datetime.now().year
-
-
-class Subject(BaseModel):
-    """
-    Subject model for the schedule parser
-    """
-
-    name: str
-    """Name of the subject
-    For ex. "Elective courses on Physical Education"
-    """
-    is_ignored: bool = False
-    """Is the current subject will be ignored by the parser
-    For ex. for the "Elective courses on Physical Education"
-    """
-
-    @classmethod
-    def from_str(cls: type["Subject"], dirt_name: str) -> "Subject":
-        """
-        Create Subject instance from name of the subject
-        Note: uses flyweight pattern to prevent copies
-
-        :param dirt_name: name from the table as it is. For ex.: "Software Project  (lec)                  "
-        :type dirt_name: str
-        :return: Subject instance
-        :rtype: Subject
-        """
-
-        dirt_name = re.sub(r"\s+\(.*\)\s*$", "", dirt_name)
-        dirt_name = re.sub(r"\s+-.*$", "", dirt_name)
-        clear_name = re.sub(r"\s+$", "", dirt_name)
-
-        if clear_name not in cls.__instances__:
-            cls.__instances__[clear_name] = cls(name=clear_name)
-        return cls.__instances__[clear_name]
-
-    @classmethod
-    def get(cls: type["Subject"], name: str) -> Optional["Subject"]:
-        """
-        Get instance by name
-
-        :param name: name of the subject
-        :type name: str
-        :return: Subject instance if it is exists
-        :rtype: Optional[Subject]
-        """
-        return cls.__instances__.get(name)
-
-    @classmethod
-    def get_all(cls: type["Subject"]) -> list["Subject"]:
-        """
-        Get all instances of the Subject
-
-        :return: list of Subject instances
-        :rtype: list[Subject]
-        """
-        return list(cls.__instances__.values())
-
-    __instances__: dict[str, "Subject"] = {}
-    """Flyweight pattern storage"""
-
-
-class Flags(BaseModel):
-    """External flags for the event"""
-
-    only_on_specific_date: bool | datetime.date = False
-    """If the event is only on specific date, this flag will be set to that date
-    For ex. if the event is only on 2021-09-01, this flag will be set to 2021-09-01"""
-
-
-class ScheduleEvent(BaseModel):
-    """Schedule event model for the schedule parser"""
-
-    subject: Optional[Subject]
-    """Subject of the event"""
-    start_time: Optional[datetime.time]
-    """Start time of the event"""
-    end_time: Optional[datetime.time]
-    """End time of the event"""
-    day: Optional[datetime.date]
-    """Day of the event"""
-    dtstamp: Optional[datetime.datetime]
-    """Timestamp of the event"""
-    location: Optional[str]
-    """Location of the event"""
-    instructor: Optional[str]
-    """Instructor of the event"""
-    event_type: Optional[str]
-    """Type of the event"""
-    recurrence: Optional[list[dict]]
-    """Recurrence of the event"""
-    flags: Flags = Field(default_factory=Flags)
-    """External flags for the event"""
-    group: Optional[str]
-    """Group for which the event is"""
-    course: Optional[str]
-    """Course for which the event is"""
-
-    @property
-    def summary(self: "ScheduleEvent") -> str:
-        """
-        Summary of the event
-
-        :return: summary of the event
-        :rtype: str
-        """
-        r = f"{self.subject.name}"
-        if self.event_type:
-            r += f" ({self.event_type})"
-        return r
-
-    @property
-    def description(self: "ScheduleEvent") -> str:
-        """
-        Description of the event
-
-        :return: description of the event
-        :rtype: str
-        """
-        r = {
-            "Location": self.location,
-            "Instructor": self.instructor,
-            "Type": self.event_type,
-            "Group": self.group,
-            "Subject": self.subject.name,
-            "Time": f"{self.start_time.strftime('%H:%M')} - {self.end_time.strftime('%H:%M')}",
-        }
-
-        r = {k: v for k, v in r.items() if v}
-        return "\n".join([f"{k}: {v}" for k, v in r.items()])
-
-    @property
-    def dtstart(self: "ScheduleEvent") -> datetime.datetime:
-        """
-        Datetime of the start of the event
-
-        :return: datetime of the start of the event
-        :rtype: datetime.datetime
-        """
-        return datetime.datetime.combine(self.day, self.start_time)
-
-    @property
-    def dtend(self: "ScheduleEvent") -> datetime.datetime:
-        """
-        Datetime of the end of the event
-
-        :return: datetime of the end of the event
-        :rtype: datetime.datetime
-        """
-        return datetime.datetime.combine(self.day, self.end_time)
-
-    def __hash__(self: "ScheduleEvent") -> int:
-        """
-        Hash of the event
-
-        :return: hash of the event
-        :rtype: int
-        """
-        string_to_hash = str(
-            (
-                self.subject.name,
-                self.event_type,
-                self.start_time.isoformat(),
-                self.end_time.isoformat(),
-                self.group,
-                self.day.isoformat(),
-            )
-        )
-
-        return crc32(string_to_hash.encode("utf-8"))
-
-    def get_uid(self: "ScheduleEvent") -> str:
-        """
-        Get unique id of the event
-
-        :return: unique id of the event
-        :rtype: str
-        """
-        return "%x@innohassle.ru" % abs(hash(self))
-
-    def __eq__(self: "ScheduleEvent", other: "ScheduleEvent") -> bool:
-        """
-        Check if the event is equal to other event
-
-        :param other: other event
-        :type other: ScheduleEvent
-        :return: is the event is equal to other event
-        :rtype: bool
-        """
-        return (
-            self.subject == other.subject
-            and self.event_type == other.event_type
-            and self.start_time == other.start_time
-            and self.end_time == other.end_time
-            and self.group == other.group
-        )
-
-    def from_cell(self: "ScheduleEvent", lines: list[str]) -> None:
-        """
-        Parse event from cell
-
-        :param lines: list of lines in the cell
-        :type lines: list[str]
-        :return: None
-        :rtype: None
-        """
-        # lines = [pretty for line in lines if (pretty := remove_trailing_spaces(line))]
-        iterator = filter(None, lines)
-        _title = next(iterator, None)
-        subject = Subject.from_str(_title)
-        instructor = next(iterator, None)
-        location = next(iterator, None)
-
-        only_on = False
-
-        if location:
-            # "108 (ONLY ON 14/06)" -> "108", only_on=datetime(6, 14)
-            if match := re.search(r"\(ONLY ON (\d+)/(\d+)\)", location):
-                location = location[: match.start()].strip()
-                day_ = int(match.group(1))
-                month_ = int(match.group(2))
-                only_on = datetime.datetime(CURRENT_YEAR, day=day_, month=month_).date()
-        event_type = None
-
-        if match := re.search(r"\((.+)\)", _title):
-            # "Software Project (lec)" -> "lec"
-            # "Software Project (lab )" -> "lab"
-            event_type = match.group(1)
-            # remove spaces
-            event_type = re.sub(r"\s+", "", event_type)
-
-        if subject:
-            self.subject = subject
-        if instructor:
-            self.instructor = instructor
-        if location:
-            self.location = location
-        if event_type:
-            self.event_type = event_type
-        if only_on:
-            self.flags.only_on_specific_date = only_on
-
-    def get_vevent(self) -> icalendar.Event:
-        vevent = icalendar.Event(
-            summary=self.summary,
-            description=self.description,
-            # dtstamp=self.dtstamp.strftime("%Y%m%dT%H%M%S")
-            uid=self.get_uid(),
-            categories=self.subject.name,
-        )
-
-        if self.location:
-            vevent["location"] = self.location
-
-        if specific_date := self.flags.only_on_specific_date:
-            dtstart = datetime.datetime.combine(specific_date, self.start_time)
-            dtend = datetime.datetime.combine(specific_date, self.end_time)
-            vevent["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%S")
-            vevent["dtend"] = dtend.strftime("%Y%m%dT%H%M%S")
-        else:
-            vevent["dtstart"] = self.dtstart.strftime("%Y%m%dT%H%M%S")
-            vevent["dtend"] = self.dtend.strftime("%Y%m%dT%H%M%S")
-            vevent.add("rrule", self.recurrence)
-
-        return vevent
 
 
 class CoreCoursesParser:
@@ -584,8 +316,12 @@ def get_weekday_rrule(end_date: datetime.date) -> dict:
 
     :param end_date: end date
     :type end_date: datetime.date
-    :return:
-    :rtype:
+    :return: RRULE dictionary with weekly interval and end date.
+        See `here <https://icalendar.org/iCalendar-RFC-5545/3-8-5-3-recurrence-rule.html>`__
+    :rtype: dict
+
+    >>> get_weekday_rrule(datetime.date(2021, 1, 1))
+    {'FREQ': 'WEEKLY', 'INTERVAL': 1, 'UNTIL': datetime.date(2021, 1, 1)}
     """
     return {
         "FREQ": "WEEKLY",
@@ -661,13 +397,17 @@ if __name__ == "__main__":
             course_events, lambda x: x.group
         ):
             logger.info(f"  > {group_name}...")
-            calendar = icalendar.Calendar()
-            calendar["prodid"] = "-//one-zero-eight//InNoHassle Calendar"
-            calendar["version"] = "2.0"
-            calendar["created"] = now_str
-            calendar["x-wr-calname"] = group_name
-            calendar["x-wr-caldesc"] = "Generated by InNoHassle Calendar"
-            calendar["x-wr-timezone"] = config.TIMEZONE
+            calendar = icalendar.Calendar(
+                prodid="-//one-zero-eight//InNoHassle Calendar",
+                version="2.0",
+                x_wr_calname=group_name,
+                x_wr_caldesc="Generated by InNoHassle Calendar",
+                x_wr_timezone=config.TIMEZONE,
+                created=now_str,
+                method="PUBLISH",
+            )
+
+            vevents = []
 
             for group_event in group_events:
                 if group_event.subject.is_ignored:
@@ -675,14 +415,15 @@ if __name__ == "__main__":
                     continue
                 group_event: ScheduleEvent
                 vevent = group_event.get_vevent()
+                vevents.append(vevent)
                 calendar.add_component(vevent)
 
             file_name = f"{group_name}.ics"
             file_path = course_path / file_name
-
+            calendar_name = group_name
             calendars["calendars"].append(
                 {
-                    "name": group_name,
+                    "name": calendar_name,
                     "course": course_name,
                     "file": file_path.relative_to(json_file.parent).as_posix(),
                 }
