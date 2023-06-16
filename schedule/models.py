@@ -342,7 +342,8 @@ class ScheduleEvent(BaseModel):
 
         if location:
             # "108 (ONLY ON 14/06)" -> "108", only_on=datetime(6, 14)
-            if match := re.search(r"\(ONLY ON (\d+)/(\d+)\)", location):
+
+            if match := re.search(r"\(ONLY ON (\d+)/(\d+)\)", location, flags=re.IGNORECASE):
                 location = location[: match.start()].strip()
                 day_ = int(match.group(1))
                 month_ = int(match.group(2))
