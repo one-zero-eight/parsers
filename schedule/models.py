@@ -67,6 +67,8 @@ class ElectiveEvent(BaseModel):
     """ Event type """
     group: Optional[str] = None
     """ Group to which the event belongs """
+    notes: Optional[str] = None
+    """ Notes for the event """
 
     def __hash__(self):
         string_to_hash = str(
@@ -107,6 +109,7 @@ class ElectiveEvent(BaseModel):
             "Group": self.group,
             "Subject": self.elective.name,
             "Time": f"{self.start.strftime('%H:%M')} - {self.end.strftime('%H:%M')} {self.start.strftime('%d.%m.%Y')}",
+            "Notes": self.notes,
         }
 
         r = {k: v for k, v in r.items() if v}
