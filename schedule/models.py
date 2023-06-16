@@ -4,6 +4,7 @@ from typing import Optional
 from zlib import crc32
 
 import icalendar
+import pytz
 from pydantic import BaseModel, validator, Field
 
 from utils import remove_trailing_spaces, symbol_translation
@@ -126,8 +127,8 @@ class ElectiveEvent(BaseModel):
         vevent["summary"] = self.elective.name
         if self.event_type is not None:
             vevent["summary"] += f" ({self.event_type})"
-        vevent["dtstart"] = self.start.strftime("%Y%m%dT%H%M%S")
-        vevent["dtend"] = self.end.strftime("%Y%m%dT%H%M%S")
+        vevent["dtstart"] = icalendar.vDatetime(self.start)
+        vevent["dtend"] = icalendar.vDatetime(self.end)
         vevent["uid"] = self.get_uid()
         vevent["categories"] = self.elective.name
         vevent["description"] = self.description
@@ -390,15 +391,18 @@ class ScheduleEvent(BaseModel):
 
         if self.location:
             vevent["location"] = self.location
-        vevent["dtstart"] = self.dtstart.strftime("%Y%m%dT%H%M%S")
-        vevent["dtend"] = self.dtend.strftime("%Y%m%dT%H%M%S")
+
+        dtstart = self.dtstart
+        dtend = self.dtend
 
         if specific_date := self.flags.only_on_specific_date:
             dtstart = datetime.datetime.combine(specific_date, self.start_time)
             dtend = datetime.datetime.combine(specific_date, self.end_time)
-            vevent["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%S")
-            vevent["dtend"] = dtend.strftime("%Y%m%dT%H%M%S")
         elif self.recurrence:
             vevent.add("rrule", self.recurrence)
+        dtstart = dtstart.astimezone(tz=pytz.timezone("Europe/Moscow"))
+        dtend = dtend.astimezone(tz=pytz.timezone("Europe/Moscow"))
+        vevent["dtstart"] = icalendar.vDatetime(dtstart)
+        vevent["dtend"] = icalendar.vDatetime(dtend)
 
         return vevent
