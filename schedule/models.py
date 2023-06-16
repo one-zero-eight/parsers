@@ -385,8 +385,8 @@ class ScheduleEvent(BaseModel):
             categories=self.subject.name,
         )
 
-        if self.dtstamp:
-            vevent["dtstamp"] = self.dtstamp.strftime("%Y%m%dT%H%M%S")
+        # if self.dtstamp:
+        #     vevent["dtstamp"] = self.dtstamp.strftime("%Y%m%dT%H%M%S")
 
         if self.location:
             vevent["location"] = self.location
