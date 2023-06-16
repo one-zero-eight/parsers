@@ -274,7 +274,7 @@ def convert_separation(
     rrule = get_weekday_rrule(very_last_date)
 
     logger.info("Converting separation to ScheduleEvent")
-    now_dtstamp = datetime.datetime.now()
+    dtstamp = very_first_date
 
     for day_name, separation_by_courses in separation_by_days.items():
         logger.info(f" > Parsing day {day_name}")
@@ -286,7 +286,7 @@ def convert_separation(
 
             for course_event in course_events:
                 course_event.day = weekday_dtstart
-                course_event.dtstamp = now_dtstamp
+                course_event.dtstamp = dtstamp
                 course_event.recurrence = rrule
                 course_event.course = course_name
                 yield course_event
