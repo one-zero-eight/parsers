@@ -37,8 +37,6 @@ weekday_converter = {
 
 pattern_multiple_spaces = re.compile(r"\s{2,}")
 
-CURRENT_YEAR = datetime.datetime.now().year
-
 symbol_translation = str.maketrans(
     "АВЕКМНОРСТУХаср",
     "ABEKMHOPCTYXacp",
@@ -75,13 +73,13 @@ def beautify_string(string: str | None) -> str | None:
 
 
 def get_credentials(
-    credentials: Path, token_path: Path, scopes: list[str]
+    credentials_path: Path, token_path: Path, scopes: list[str]
 ) -> Credentials:
     """
     Initialize API credentials.
 
-    :param credentials: path to credentials
-    :type credentials: Path
+    :param credentials_path: path to credentials
+    :type credentials_path: Path
     :param token_path: path to token
     :type token_path: Path
     :param scopes: scopes to use
@@ -101,7 +99,7 @@ def get_credentials(
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(str(credentials), scopes)
+            flow = InstalledAppFlow.from_client_secrets_file(str(credentials_path), scopes)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open(token_path, "w") as token:
@@ -128,8 +126,18 @@ def connect_spreadsheets(
     return service.spreadsheets()
 
 
+def get_project_root() -> Path:
+    """Returns project root folder."""
+    return Path(__file__).parent
+
+
+def get_current_year() -> int:
+    """Returns current year."""
+    return datetime.datetime.now().year
+
+
 __all__ = [
-    "CURRENT_YEAR",
+    "get_current_year",
     "weekday_converter",
     "nearest_weekday",
     "remove_trailing_spaces",
@@ -137,4 +145,5 @@ __all__ = [
     "get_credentials",
     "connect_spreadsheets",
     "symbol_translation",
+    "get_project_root",
 ]

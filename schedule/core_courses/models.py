@@ -4,139 +4,9 @@ from typing import Optional
 from zlib import crc32
 
 import icalendar
-import pytz
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, Field
 
-from utils import remove_trailing_spaces, symbol_translation
-
-CURRENT_YEAR = datetime.datetime.now().year
-
-
-class Flags(BaseModel):
-    """External flags for the event"""
-
-    only_on_specific_date: bool | datetime.date = False
-    """If the event is only on specific date, this flag will be set to that date
-    For ex. if the event is only on 2021-09-01, this flag will be set to 2021-09-01"""
-
-
-class Elective(BaseModel):
-    """
-    Elective model for ElectivesParserConfig
-    """
-
-    alias: str
-    """Alias for elective"""
-    name: Optional[str]
-    """Name of elective"""
-    instructor: Optional[str]
-    """Instructor of elective"""
-    elective_type: Optional[str]
-    """Type of elective"""
-
-    @validator("name", "instructor", "elective_type", pre=True)
-    def beatify_string(cls: type["Elective"], string: str) -> str:  # noqa
-        """Beatify string
-
-        :param string: string to beatify
-        :type string: str
-        :return: beatified string
-        :rtype: str
-        """
-        if string:
-            string = remove_trailing_spaces(string)
-            string = string.translate(symbol_translation)
-        return string
-
-
-class ElectiveEvent(BaseModel):
-    """
-    Elective event model
-    """
-
-    elective: Elective
-    """ Elective object """
-    start: datetime.datetime
-    """ Event start time """ ""
-    end: datetime.datetime
-    """ Event end time """
-    location: Optional[str]
-    """ Event location """
-    description: Optional[str]
-    """ Event description """
-    event_type: Optional[str]
-    """ Event type """
-    group: Optional[str] = None
-    """ Group to which the event belongs """
-    notes: Optional[str] = None
-    """ Notes for the event """
-
-    def __hash__(self):
-        string_to_hash = str(
-            (
-                self.elective.alias,
-                self.start.isoformat(),
-                self.end.isoformat(),
-                self.location,
-                self.event_type,
-                self.group,
-            )
-        )
-
-        return crc32(string_to_hash.encode("utf-8"))
-
-    def get_uid(self: "ElectiveEvent") -> str:
-        """
-        Get unique identifier for the event
-
-        :return: unique identifier
-        :rtype: str
-        """
-        return "%x@innohassle.ru" % abs(hash(self))
-
-    @property
-    def description(self: "ElectiveEvent") -> str:
-        """
-        Description of the event
-
-        :return: description of the event
-        :rtype: str
-        """
-
-        r = {
-            "Location": self.location,
-            "Instructor": self.elective.instructor,
-            "Type": self.event_type,
-            "Group": self.group,
-            "Subject": self.elective.name,
-            "Time": f"{self.start.strftime('%H:%M')} - {self.end.strftime('%H:%M')} {self.start.strftime('%d.%m.%Y')}",
-            "Notes": self.notes,
-        }
-
-        r = {k: v for k, v in r.items() if v}
-        return "\n".join([f"{k}: {v}" for k, v in r.items()])
-
-    def get_vevent(self: "ElectiveEvent") -> icalendar.Event:
-        """
-        Get icalendar event
-
-        :return: icalendar event
-        :rtype: icalendar.Event
-        """
-        vevent = icalendar.Event()
-        vevent["summary"] = self.elective.name
-        if self.event_type is not None:
-            vevent["summary"] += f" ({self.event_type})"
-        vevent["dtstart"] = icalendar.vDatetime(self.start)
-        vevent["dtend"] = icalendar.vDatetime(self.end)
-        vevent["uid"] = self.get_uid()
-        vevent["categories"] = self.elective.name
-        vevent["description"] = self.description
-
-        if self.location is not None:
-            vevent["location"] = self.location
-
-        return vevent
+from schedule.utils import get_current_year
 
 
 class Subject(BaseModel):
@@ -220,7 +90,7 @@ class ScheduleEvent(BaseModel):
     """Type of the event"""
     recurrence: Optional[list[dict]]
     """Recurrence of the event"""
-    flags: Flags = Field(default_factory=Flags)
+    flags: 'Flags' = Field(default_factory=lambda: Flags())
     """External flags for the event"""
     group: Optional[str]
     """Group for which the event is"""
@@ -351,7 +221,7 @@ class ScheduleEvent(BaseModel):
                 location = location[: match.start()].strip()
                 day_ = int(match.group(1))
                 month_ = int(match.group(2))
-                only_on = datetime.datetime(CURRENT_YEAR, day=day_, month=month_).date()
+                only_on = datetime.datetime(get_current_year(), day=day_, month=month_).date()
         event_type = None
 
         if match := re.search(r"\((.+)\)", _title):
@@ -400,9 +270,16 @@ class ScheduleEvent(BaseModel):
             dtend = datetime.datetime.combine(specific_date, self.end_time)
         elif self.recurrence:
             vevent.add("rrule", self.recurrence)
-        dtstart = dtstart.astimezone(tz=pytz.timezone("Europe/Moscow"))
-        dtend = dtend.astimezone(tz=pytz.timezone("Europe/Moscow"))
+
         vevent["dtstart"] = icalendar.vDatetime(dtstart)
         vevent["dtend"] = icalendar.vDatetime(dtend)
 
         return vevent
+
+
+class Flags(BaseModel):
+    """External flags for the event"""
+
+    only_on_specific_date: bool | datetime.date = False
+    """If the event is only on specific date, this flag will be set to that date
+    For ex. if the event is only on 2021-09-01, this flag will be set to 2021-09-01"""

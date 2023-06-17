@@ -1,0 +1,32 @@
+{
+  "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
+  "TARGET_RANGES": [
+    "AcademicRange1",
+    "AcademicRange2",
+    "SummerRange"
+  ],
+  "TARGET_SHEET_TITLES": [
+    "Academic1",
+    "Academic2",
+    "Summer"
+  ],
+  "RECURRENCE": [
+    {
+      "desc": "From 23.01.2023 to 19.03.2023",
+      "start": "20230123T000000",
+      "end": "20230319T000000"
+    },
+    {
+      "desc": "From 20.03.2023 to 26.05.2023",
+      "start": "20230320T000000",
+      "end": "20230526T000000"
+    },
+    {
+      "desc": "From 05.06.2023 to 24.07.2023",
+      "start": "20230605T000000",
+      "end": "20230724T000000"
+    }
+  ],
+  "SAVE_ICS_PATH": "output/core-courses",
+  "SAVE_JSON_PATH": "output/core-courses.json"
+}

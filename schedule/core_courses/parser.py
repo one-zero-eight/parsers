@@ -7,7 +7,6 @@ import logging
 import re
 from collections import defaultdict
 from itertools import pairwise
-from pathlib import Path
 from typing import Iterable
 
 import googleapiclient.discovery
@@ -15,10 +14,9 @@ import icalendar
 import numpy as np
 import pandas as pd
 from google.oauth2.credentials import Credentials
-from pydantic import BaseModel
 
-from config import core_courses_config as config, PARSER_PATH
-from models import Subject, ScheduleEvent
+from config import core_courses_config as config
+from schedule.core_courses.models import Subject, ScheduleEvent
 from temp.history_events import history_events
 from utils import *
 
@@ -34,8 +32,8 @@ class CoreCoursesParser:
 
     def __init__(self):
         self.credentials = get_credentials(
-            Path(config.CREDENTIALS_PATH),
-            token_path=Path(PARSER_PATH / "token.json"),
+            credentials_path=config.CREDENTIALS_PATH,
+            token_path=config.TOKEN_PATH,
             scopes=config.API_SCOPES,
         )
         self.spreadsheets = connect_spreadsheets(self.credentials)
@@ -67,10 +65,10 @@ class CoreCoursesParser:
                 df.iloc[x0:x1, y0:y1] = df.iloc[x0][y0]
 
     def get_clear_df(
-            self: "CoreCoursesParser",
-            spreadsheet_id: str,
-            target_range: str,
-            target_title: str,
+        self: "CoreCoursesParser",
+        spreadsheet_id: str,
+        target_range: str,
+        target_title: str,
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
@@ -154,7 +152,7 @@ class CoreCoursesParser:
 
     @staticmethod
     def refactor_course_df(
-            course_df: pd.DataFrame, group_names: list[str]
+        course_df: pd.DataFrame, group_names: list[str]
     ) -> pd.DataFrame:
         """
         Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
@@ -252,10 +250,10 @@ def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
 
 
 def convert_separation(
-        separation_by_days: dict,
-        very_first_date: datetime.date,
-        very_last_date: datetime.date,
-        logger: logging.Logger,
+    separation_by_days: dict,
+    very_first_date: datetime.date,
+    very_last_date: datetime.date,
+    logger: logging.Logger,
 ) -> Iterable[ScheduleEvent]:
     """
     Convert separation by days and then by courses to list of ScheduleEvents.
@@ -381,8 +379,8 @@ if __name__ == "__main__":
         "calendars": [],
     }
 
-    directory = PARSER_PATH / config.SAVE_ICS_PATH
-    json_file = PARSER_PATH / config.SAVE_JSON_PATH
+    directory = config.SAVE_ICS_PATH
+    json_file = config.SAVE_JSON_PATH
 
     # replace spaces and dashes with single dash
     replace_spaces_pattern = re.compile(r"[\s-]+")
@@ -395,7 +393,7 @@ if __name__ == "__main__":
         course_path = directory / replace_spaces_pattern.sub("-", course_name)
         course_path.mkdir(parents=True, exist_ok=True)
         for group_name, group_events in itertools.groupby(
-                course_events, lambda x: x.group
+            course_events, lambda x: x.group
         ):
             logger.info(f"  > {group_name}...")
             calendar = icalendar.Calendar(

@@ -1,4 +1,4 @@
-from models import ScheduleEvent, Subject
+from core_courses.models import Subject, ScheduleEvent
 import datetime
 
 history = Subject(name='History')

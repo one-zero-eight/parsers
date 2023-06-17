@@ -1,0 +1,233 @@
+{
+  "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
+  "TARGET_RANGES": [
+    "ElectivesBSTechRange",
+    "ElectivesMSTechRange",
+    "ElectivesHumRange"
+  ],
+  "TARGET_SHEET_TITLES": [
+    "BS Tech",
+    "MS Tech",
+    "BS/MS Hum"
+  ],
+  "SAVE_ICS_PATH": "output/electives",
+  "SAVE_JSON_PATH": "output/electives.json",
+  "ELECTIVES": [
+    {
+      "alias": "COOP",
+      "name": "Challenges of Object-Oriented Programming",
+      "instructor": "Yegor Bugayenko",
+      "type": "online/offline"
+    },
+    {
+      "alias": "IDV",
+      "name": "Introduction to DevOps",
+      "instructor": "Dmitry Creed",
+      "type": "offline"
+    },
+    {
+      "alias": "CGGD",
+      "name": "Computer Graphics in Game Development ",
+      "instructor": "Ivan Belyavtsev",
+      "type": "offline"
+    },
+    {
+      "alias": "ASEM",
+      "name": "Advanced Statistical and Econometric Methods ",
+      "instructor": "Rustam Ibragimov",
+      "type": "online/offline"
+    },
+    {
+      "alias": "PP",
+      "name": "Programming in Python",
+      "instructor": "Alaa Aldin Hajjar",
+      "type": "offline"
+    },
+    {
+      "alias": "RTST",
+      "name": "Real-Time Scheduling Theory ",
+      "instructor": "Artem Burmyakov",
+      "type": "offline"
+    },
+    {
+      "alias": "FWD",
+      "name": "Front-end Web Development ",
+      "instructor": "AbdelRahman Abounegm/Daniel Atonge",
+      "type": "offline"
+    },
+    {
+      "alias": "BDLD",
+      "name": "Blockchain: Distributed Ledger Development ",
+      "instructor": "Hamza Salem",
+      "type": "offline"
+    },
+    {
+      "alias": "AML",
+      "name": "Applied Machine Learning ",
+      "instructor": "Imad Eddine Ibrahim Bekkouch",
+      "type": "online"
+    },
+    {
+      "alias": "DWV",
+      "name": "Data Wrangling and Visualization ",
+      "instructor": "Rustam Lukmanov",
+      "type": "offline"
+    },
+    {
+      "alias": "IME",
+      "name": "Introduction to Mechanical Engineering",
+      "instructor": "Oleg Bulichev",
+      "type": "offline"
+    },
+    {
+      "alias": "CPMD",
+      "name": "Cross-platform Mobile Development with Flutter",
+      "instructor": "Muwaffaq Imam",
+      "type": "offline"
+    },
+    {
+      "alias": "IOSD",
+      "name": "iOS Development with Swift ",
+      "instructor": "Rozaliya Amirova",
+      "type": "offline"
+    },
+    {
+      "alias": "PH",
+      "name": "Programming in Haskell",
+      "instructor": "Nikolay Kudasov",
+      "type": "offline"
+    },
+    {
+      "alias": "IROS",
+      "name": "Introduction to Robot Operating System: Basics, Motion, and Vision",
+      "instructor": "Geesara Prathap Kulathunga",
+      "type": "offline"
+    },
+    {
+      "alias": "AHLS",
+      "name": "Architecture of high-load systems ",
+      "instructor": "Vadim Podolniy",
+      "type": ""
+    },
+    {
+      "alias": "SP",
+      "name": "System Programming",
+      "instructor": "Vladislav Shpilevoy",
+      "type": "online"
+    },
+    {
+      "alias": "DVE",
+      "name": "DevOps Engineering (Advanced) ",
+      "instructor": "Dmitry Creed",
+      "type": "offline"
+    },
+    {
+      "alias": "AAI",
+      "name": "Application of Artificial Intelligence in Software Engineering ",
+      "instructor": "Giancarlo Succi",
+      "type": "online/offline"
+    },
+    {
+      "alias": "UXD",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed/Hamna Aslam",
+      "type": "offline"
+    },
+    {
+      "alias": "PES",
+      "name": "Personal Efficiency Skills of IT-specialist",
+      "instructor": "Evgenii Serochudinov",
+      "type": "offline"
+    },
+    {
+      "alias": "PSY",
+      "name": "Psychology of IT-specialist",
+      "instructor": "Eleonora Ilina",
+      "type": "offline"
+    },
+    {
+      "alias": "AEIE",
+      "name": "Applied Economics: Introduction to IT Entrepreneurship",
+      "instructor": "Tatiana Kamaletdinova",
+      "type": "offline"
+    },
+    {
+      "alias": "DT",
+      "name": "Design-thinking ",
+      "instructor": "Pavel Voloschuk",
+      "type": "offline/online"
+    },
+    {
+      "alias": "ARLU",
+      "name": "Art of Reading (Learning and Understanding) ",
+      "instructor": "Viktoria Kondratieva",
+      "type": "offline"
+    },
+    {
+      "alias": "SE",
+      "name": "Social Entrepreneurship",
+      "instructor": "Olga Ustyuzhnantseva",
+      "type": "offline"
+    },
+    {
+      "alias": "ICD",
+      "name": "Introduction to Career Development for IT-specialist ",
+      "instructor": "Gulnaz Ibragimova",
+      "type": "offline"
+    },
+    {
+      "alias": "IPS",
+      "name": "Introduction to Public Speaking for IT-specialist",
+      "instructor": "Sergey Kladko",
+      "type": "offline/online"
+    },
+    {
+      "alias": "CL",
+      "name": "Career and Leadership",
+      "instructor": "Alina Valencia",
+      "type": "offline/online"
+    },
+    {
+      "alias": "CEOT",
+      "name": "Startup CEO Toolkit",
+      "instructor": "Vasil Zakiev",
+      "type": "online"
+    },
+    {
+      "alias": "BPM",
+      "name": "Basics of Product Management",
+      "instructor": "Iuliia Metelskaia",
+      "type": "offline/online"
+    },
+    {
+      "alias": "BC",
+      "name": "Business communications for IT-specialist",
+      "instructor": "Petr Grachev",
+      "type": "offline/online"
+    },
+    {
+      "alias": "IMG",
+      "name": "Introduction to Music Generation for IT-specialist ",
+      "instructor": "Munir Makhmutov",
+      "type": "offline"
+    },
+    {
+      "alias": "HBIT",
+      "name": "How to build an IT team",
+      "instructor": "Petr Grachev",
+      "type": "offline/online"
+    },
+    {
+      "alias": "DFA",
+      "name": "Design Fiction (Advanced)",
+      "instructor": "Olga Ignateva",
+      "type": "online"
+    },
+    {
+      "alias": "UXD",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed",
+      "type": "offline"
+    }
+  ]
+}

@@ -13,8 +13,8 @@ import numpy as np
 import pandas as pd
 from google.oauth2.credentials import Credentials
 
-from config import PARSER_PATH, electives_config as config
-from models import ElectiveEvent, Elective
+from schedule.electives.models import Elective, ElectiveEvent
+from config import electives_config as config
 from utils import *
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
@@ -33,9 +33,10 @@ class ElectiveParser:
     """ Logger object """
 
     def __init__(self):
+
         self.credentials = get_credentials(
-            Path(config.CREDENTIALS_PATH),
-            PARSER_PATH / "token.json",
+            credentials_path=config.CREDENTIALS_PATH,
+            token_path=config.TOKEN_PATH,
             scopes=config.API_SCOPES,
         )
         self.spreadsheets = connect_spreadsheets(self.credentials)
@@ -323,8 +324,8 @@ if __name__ == "__main__":
         converted = convert_separation(parsed)
 
         directory = (
-                PARSER_PATH
-                / config.SAVE_ICS_PATH
+
+                config.SAVE_ICS_PATH
                 / sheet_title.replace("/", "-").replace(" ", "-")
         )
 
@@ -346,7 +347,7 @@ if __name__ == "__main__":
 
             file_path = directory / f"{elective_alias}.ics"
             relative_directory = file_path.relative_to(
-                (PARSER_PATH / config.SAVE_JSON_PATH).parent
+                (config.SAVE_JSON_PATH).parent
             )
 
             calendar_name = elective_alias
@@ -367,5 +368,5 @@ if __name__ == "__main__":
                 f.write(calendar.to_ical())
 
     # create a new .json file with information about calendar
-    with open(PARSER_PATH / config.SAVE_JSON_PATH, "w") as f:
+    with open(config.SAVE_JSON_PATH, "w") as f:
         json.dump(calendars, f, indent=4, sort_keys=True)
