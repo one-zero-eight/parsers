@@ -70,8 +70,13 @@ class BaseParserConfig(BaseModel):
     """Timezone delta for events"""
 
     @validator(
-        "CREDENTIALS_PATH", "TOKEN_PATH", "SAVE_ICS_PATH", "SAVE_JSON_PATH",
-        pre=True, always=True)
+        "CREDENTIALS_PATH",
+        "TOKEN_PATH",
+        "SAVE_ICS_PATH",
+        "SAVE_JSON_PATH",
+        pre=True,
+        always=True,
+    )
     def relative_path(cls, v):
         """If not absolute path, then with respect to the main directory"""
         v = Path(v)

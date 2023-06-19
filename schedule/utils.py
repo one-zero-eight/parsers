@@ -36,7 +36,7 @@ weekday_converter = {
 
 
 def get_credentials(
-        credentials_path: Path, token_path: Path, scopes: list[str]
+    credentials_path: Path, token_path: Path, scopes: list[str]
 ) -> Credentials:
     """
     Initialize API credentials.
@@ -62,7 +62,9 @@ def get_credentials(
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(str(credentials_path), scopes)
+            flow = InstalledAppFlow.from_client_secrets_file(
+                str(credentials_path), scopes
+            )
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open(token_path, "w") as token:
@@ -72,7 +74,7 @@ def get_credentials(
 
 
 def connect_spreadsheets(
-        credentials: Credentials,
+    credentials: Credentials,
 ) -> googleapiclient.discovery.Resource:
     """
     Connect to Google Sheets API.

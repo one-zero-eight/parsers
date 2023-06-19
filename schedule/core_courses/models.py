@@ -7,7 +7,11 @@ from zlib import crc32
 import icalendar
 from pydantic import BaseModel, Field, validator
 
-from processors.regex import process_only_on, process_desc_in_parentheses, remove_trailing_spaces
+from processors.regex import (
+    process_only_on,
+    process_desc_in_parentheses,
+    remove_trailing_spaces,
+)
 from config_base import CSS3Color
 
 
@@ -212,11 +216,11 @@ class ScheduleEvent(BaseModel):
         :rtype: bool
         """
         return (
-                self.subject == other.subject
-                and self.event_type == other.event_type
-                and self.start_time == other.start_time
-                and self.end_time == other.end_time
-                and self.group == other.group
+            self.subject == other.subject
+            and self.event_type == other.event_type
+            and self.start_time == other.start_time
+            and self.end_time == other.end_time
+            and self.group == other.group
         )
 
     def from_cell(self: "ScheduleEvent", lines: list[str]) -> None:

@@ -33,7 +33,6 @@ class ElectiveParser:
     """ Logger object """
 
     def __init__(self):
-
         self.credentials = get_credentials(
             credentials_path=config.CREDENTIALS_PATH,
             token_path=config.TOKEN_PATH,
@@ -42,7 +41,7 @@ class ElectiveParser:
         self.spreadsheets = connect_spreadsheets(self.credentials)
 
     def get_clear_df(
-            self, spreadsheet_id: str, target_range: str, target_title: str
+        self, spreadsheet_id: str, target_range: str, target_title: str
     ) -> pd.DataFrame:
         """
         Get data from Google Sheets and return it as a DataFrame with merged
@@ -110,7 +109,7 @@ class ElectiveParser:
 
     @staticmethod
     def parse_week_df(
-            df: pd.DataFrame, electives: Collection[Elective]
+        df: pd.DataFrame, electives: Collection[Elective]
     ) -> list[ElectiveEvent]:
         """
         Parse dataframe with week schedule
@@ -233,7 +232,7 @@ class ElectiveParser:
         return events
 
     def parse_df(
-            self, df: pd.DataFrame, electives: list[Elective]
+        self, df: pd.DataFrame, electives: list[Elective]
     ) -> list[ElectiveEvent]:
         """
         Parse DataFrame to dict with separation by groups.
@@ -269,7 +268,7 @@ class ElectiveParser:
 
 
 def convert_separation(
-        events: list[ElectiveEvent],
+    events: list[ElectiveEvent],
 ) -> dict[str, list[ElectiveEvent]]:
     """
     Convert list of events to dict with separation by Elective and group.
@@ -323,16 +322,13 @@ if __name__ == "__main__":
         parsed = parser.parse_df(df, config.ELECTIVES)
         converted = convert_separation(parsed)
 
-        directory = (
-
-                config.SAVE_ICS_PATH
-                / sheet_title.replace("/", "-").replace(" ", "-")
+        directory = config.SAVE_ICS_PATH / sheet_title.replace("/", "-").replace(
+            " ", "-"
         )
 
         directory.mkdir(parents=True, exist_ok=True)
 
         for calendar_name, events in converted.items():
-
             calendar = icalendar.Calendar()
 
             elective = None
@@ -352,9 +348,7 @@ if __name__ == "__main__":
             calendar["method"] = "PUBLISH"
 
             file_path = directory / f"{calendar_name}.ics"
-            relative_directory = file_path.relative_to(
-                config.SAVE_JSON_PATH.parent
-            )
+            relative_directory = file_path.relative_to(config.SAVE_JSON_PATH.parent)
 
             # change 'gr1' to 'group1' through re
             calendar_name = re.sub(r"gr(oup)?", "group", calendar_name)
