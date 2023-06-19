@@ -13,7 +13,7 @@ DTEND:20230124T121000
 UID:c41b6e93@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
-COLOR:floralwhite
+COLOR:crimson
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lec\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 10:40 - 12:10
@@ -27,7 +27,7 @@ DTEND:20230124T141000
 UID:ff132521@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
-COLOR:floralwhite
+COLOR:crimson
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lab\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 12:40 - 14:10
@@ -40,7 +40,7 @@ DTEND:20230125T103000
 UID:c56d20f3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: ONLINE\nInstructor: Alexey Mustafin\nType: lec\nGrou
  p: M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 09
  :00 - 10:30
@@ -53,7 +53,7 @@ DTEND:20230127T103000
 UID:4f42916b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: 312\nInstructor: Ahmed Elbatanony\nType: lab\nGroup:
   M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 09:0
  0 - 10:30
@@ -66,7 +66,7 @@ DTEND:20230127T121000
 UID:c9e2a92c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Marketing and Sales for IT Business
-COLOR:dodgerblue
+COLOR:crimson
 DESCRIPTION:Location: ONLINE (STARTS AT 11am)\nInstructor: Konstantin Anis
  imov\nType: lec\nGroup: M22-TE-01\nSubject: Marketing and Sales for IT Bus
  iness\nTime: 10:40 - 12:10
@@ -80,7 +80,7 @@ DTEND:20230321T121000
 UID:8f180d73@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
-COLOR:floralwhite
+COLOR:crimson
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lec\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 10:40 - 12:10
@@ -94,7 +94,7 @@ DTEND:20230321T141000
 UID:b41046c1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, IP Law
-COLOR:floralwhite
+COLOR:crimson
 DESCRIPTION:Location: 101\nInstructor: Vasil Zakiev\nType: lab\nGroup: M22
  -TE-01\nSubject: CEO Toolkit: Operations\, Finance\, HR\, Legal Aspect\, I
  P Law\nTime: 12:40 - 14:10
@@ -107,7 +107,7 @@ DTEND:20230321T173000
 UID:daafc3eb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: CTO Toolkit: Quality\, Process\, and Team (lec)\nIns
  tructor: CTO Toolkit: Quality\, Process\, and Team (lec)\nType: lec\nGroup
  : M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 16:
@@ -121,7 +121,7 @@ DTEND:20230324T121000
 UID:866cb67e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Marketing and Sales for IT Business
-COLOR:dodgerblue
+COLOR:crimson
 DESCRIPTION:Location: ONLINE (STARTS AT 11am)\nInstructor: Konstantin Anis
  imov\nType: lec\nGroup: M22-TE-01\nSubject: Marketing and Sales for IT Bus
  iness\nTime: 10:40 - 12:10
@@ -134,7 +134,7 @@ DTEND:20230324T173000
 UID:55cf64f6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:CTO Toolkit: Quality\, Process\, and Team
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: 103\nInstructor: Ahmed Elbatanony\nType: lab\nGroup:
   M22-TE-01\nSubject: CTO Toolkit: Quality\, Process\, and Team\nTime: 16:0
  0 - 17:30
@@ -147,7 +147,7 @@ DTEND:20230605T141000
 UID:373f2216@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: 421 (STARTS ON 19/06)\nInstructor: Sinan Ibrahim\nTy
  pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking\nTi
  me: 12:40 - 14:10
@@ -160,7 +160,7 @@ DTEND:20230605T155000
 UID:662687b8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: 421 (STARTS ON 19/06)\nInstructor: Sinan Ibrahim\nTy
  pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking\nTi
  me: 14:20 - 15:50
@@ -172,7 +172,7 @@ DTSTART:20230712T104000
 DTEND:20230712T121000
 UID:8618d83c@innohassle.ru
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2
  2-TE-01\nSubject: Venture Capital and Growth Hacking\nTime: 10:40 - 12:10
 LOCATION:300
@@ -183,7 +183,7 @@ DTSTART:20230712T124000
 DTEND:20230712T141000
 UID:34bbf678@innohassle.ru
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2
  2-TE-01\nSubject: Venture Capital and Growth Hacking\nTime: 12:40 - 14:10
 LOCATION:300
@@ -195,7 +195,7 @@ DTEND:20230610T173000
 UID:ff97e081@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
  ure Capital and Growth Hacking\nTime: 16:00 - 17:30
@@ -208,7 +208,7 @@ DTEND:20230610T191000
 UID:161580ee@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Venture Capital and Growth Hacking
-COLOR:gainsboro
+COLOR:coral
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
  ure Capital and Growth Hacking\nTime: 17:40 - 19:10

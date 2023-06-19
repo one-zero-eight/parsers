@@ -12,7 +12,7 @@ DTEND:20230123T103000
 UID:5aa1f2d0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B22-CS-03\nSubject: Data Structures and Algorithms\nTime: 09:00 - 10:30
 LOCATION:108
@@ -24,7 +24,7 @@ DTEND:20230123T121000
 UID:ff776d9c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: tut\nGroup: 
  B22-CS-03\nSubject: Data Structures and Algorithms\nTime: 10:40 - 12:10
 LOCATION:108
@@ -36,7 +36,7 @@ DTEND:20230123T155000
 UID:3a5ce9e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 320\nInstructor: Ramil Nasibullin\nType: lab\nGroup:
   B22-CS-03\nSubject: Mathematical Analysis II\nTime: 14:20 - 15:50
 LOCATION:320
@@ -48,7 +48,7 @@ DTEND:20230123T173000
 UID:86097de9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 303\nInstructor: Khaled Ismaeel\nType: lab\nGroup: B
  22-CS-03\nSubject: Data Structures and Algorithms\nTime: 16:00 - 17:30
 LOCATION:303
@@ -60,7 +60,7 @@ DTEND:20230124T103000
 UID:4bb7085b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Evgeni Zouev\nType: lec\nGroup: B22
  -CS-03\nSubject: Software Systems Analysis and Design\nTime: 09:00 - 10:30
 LOCATION:108
@@ -72,7 +72,7 @@ DTEND:20230124T121000
 UID:ee619717@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: ONLINE\nInstructor: Imam Muwaffaq\nType: tut\nGroup:
   B22-CS-03\nSubject: Software Systems Analysis and Design\nTime: 10:40 - 1
  2:10
@@ -85,7 +85,7 @@ DTEND:20230124T141000
 UID:d23ebbe9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -98,7 +98,7 @@ DTEND:20230124T173000
 UID:2d4ab906@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 16:00 - 17:30
@@ -111,7 +111,7 @@ DTEND:20230125T121000
 UID:e9e4b618@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 108\nInstructor: Manuel Mazzara\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical Computer Science\nTime: 10:40 - 12:10
 LOCATION:108
@@ -123,7 +123,7 @@ DTEND:20230125T141000
 UID:e645c174@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 108\nInstructor: Andrey Frolov\nType: tut\nGroup: B2
  2-CS-03\nSubject: Theoretical Computer Science\nTime: 12:40 - 14:10
 LOCATION:108
@@ -135,7 +135,7 @@ DTEND:20230125T173000
 UID:2d98ff45@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 318\nInstructor: Munir Makhmutov\nType: lab\nGroup: 
  B22-CS-03\nSubject: Theoretical Computer Science\nTime: 16:00 - 17:30
 LOCATION:318
@@ -147,7 +147,7 @@ DTEND:20230126T121000
 UID:7db82368@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: lec\nGroup
  : B22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 10:
  40 - 12:10
@@ -160,7 +160,7 @@ DTEND:20230126T141000
 UID:72195404@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: tut\nGroup
  : B22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 12:
  40 - 14:10
@@ -173,7 +173,7 @@ DTEND:20230126T173000
 UID:949b530c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: 301\nInstructor: Marko Pezer\nType: lab\nGroup: B22-
  CS-03\nSubject: Software Systems Analysis and Design\nTime: 16:00 - 17:30
 LOCATION:301
@@ -185,7 +185,7 @@ DTEND:20230126T191000
 UID:50460a5a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 314\nInstructor: Ivan Konyukhov\nType: lab\nGroup: B
  22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 17:40 
  - 19:10
@@ -198,7 +198,7 @@ DTEND:20230127T103000
 UID:76694e3a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 108\nInstructor: Oleg Kiselev\nType: lec\nGroup: B22
  -CS-03\nSubject: Mathematical Analysis II\nTime: 09:00 - 10:30
 LOCATION:108
@@ -210,7 +210,7 @@ DTEND:20230127T121000
 UID:d3bfd176@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 108\nInstructor: Imre Delgado\nType: tut\nGroup: B22
  -CS-03\nSubject: Mathematical Analysis II\nTime: 10:40 - 12:10
 LOCATION:108
@@ -222,7 +222,7 @@ DTEND:20230127T141000
 UID:d07805b0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 314/313/316/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -235,7 +235,7 @@ DTEND:20230127T173000
 UID:2f0c075f@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 314/313/318/320/421\nInstructor: Gelvanovsky\,Kruglo
  va\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject: Eng
  lish for Academic Purposes I\nTime: 16:00 - 17:30
@@ -248,7 +248,7 @@ DTEND:20230320T103000
 UID:152fed82@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B22-CS-03\nSubject: Data Structures and Algorithms\nTime: 09:00 - 10:30
 LOCATION:108
@@ -260,7 +260,7 @@ DTEND:20230320T121000
 UID:b0f972ce@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 108\nInstructor: Nikolay Kudasov\nType: tut\nGroup: 
  B22-CS-03\nSubject: Data Structures and Algorithms\nTime: 10:40 - 12:10
 LOCATION:108
@@ -272,7 +272,7 @@ DTEND:20230320T155000
 UID:4c2bd1cc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 320\nInstructor: Ramil Nasibullin\nType: lab\nGroup:
   B22-CS-03\nSubject: Mathematical Analysis II\nTime: 14:20 - 15:50
 LOCATION:320
@@ -284,7 +284,7 @@ DTEND:20230320T173000
 UID:c98762bb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Structures and Algorithms
-COLOR:dimgray
+COLOR:firebrick
 DESCRIPTION:Location: 303\nInstructor: Khaled Ismaeel\nType: lab\nGroup: B
  22-CS-03\nSubject: Data Structures and Algorithms\nTime: 16:00 - 17:30
 LOCATION:303
@@ -296,7 +296,7 @@ DTEND:20230321T103000
 UID:b46bbb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Evgeni Zouev\nType: lec\nGroup: B22
  -CS-03\nSubject: Software Systems Analysis and Design\nTime: 09:00 - 10:30
 LOCATION:108
@@ -308,7 +308,7 @@ DTEND:20230321T121000
 UID:a562f4f7@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: ONLINE\nInstructor: Imam Muwaffaq\nType: tut\nGroup:
   B22-CS-03\nSubject: Software Systems Analysis and Design\nTime: 10:40 - 1
  2:10
@@ -321,7 +321,7 @@ DTEND:20230321T141000
 UID:993dd809@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -334,7 +334,7 @@ DTEND:20230321T173000
 UID:6649dae6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 105/314/313/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 16:00 - 17:30
@@ -347,7 +347,7 @@ DTEND:20230322T121000
 UID:a1630196@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 108\nInstructor: Manuel Mazzara\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical Computer Science\nTime: 10:40 - 12:10
 LOCATION:108
@@ -359,7 +359,7 @@ DTEND:20230322T141000
 UID:aec276fa@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 108\nInstructor: Andrey Frolov\nType: tut\nGroup: B2
  2-CS-03\nSubject: Theoretical Computer Science\nTime: 12:40 - 14:10
 LOCATION:108
@@ -371,7 +371,7 @@ DTEND:20230322T173000
 UID:651f48cb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Computer Science
-COLOR:darkseagreen
+COLOR:crimson
 DESCRIPTION:Location: 318\nInstructor: Munir Makhmutov\nType: lab\nGroup: 
  B22-CS-03\nSubject: Theoretical Computer Science\nTime: 16:00 - 17:30
 LOCATION:318
@@ -383,7 +383,7 @@ DTEND:20230323T121000
 UID:36bb4088@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: lec\nGroup
  : B22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 10:
  40 - 12:10
@@ -396,7 +396,7 @@ DTEND:20230323T141000
 UID:391a37e4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Yaroslav Kholodov\nType: tut\nGroup
  : B22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 12:
  40 - 14:10
@@ -409,7 +409,7 @@ DTEND:20230323T173000
 UID:df9830ec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Systems Analysis and Design
-COLOR:darkolivegreen
+COLOR:burlywood
 DESCRIPTION:Location: 301\nInstructor: Marko Pezer\nType: lab\nGroup: B22-
  CS-03\nSubject: Software Systems Analysis and Design\nTime: 16:00 - 17:30
 LOCATION:301
@@ -421,7 +421,7 @@ DTEND:20230323T191000
 UID:1b4569ba@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analytical Geometry and Linear Algebra II
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 314\nInstructor: Ivan Konyukhov\nType: lab\nGroup: B
  22-CS-03\nSubject: Analytical Geometry and Linear Algebra II\nTime: 17:40 
  - 19:10
@@ -434,7 +434,7 @@ DTEND:20230324T103000
 UID:39e75168@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 108\nInstructor: Oleg Kiselev\nType: lec\nGroup: B22
  -CS-03\nSubject: Mathematical Analysis II\nTime: 09:00 - 10:30
 LOCATION:108
@@ -446,7 +446,7 @@ DTEND:20230324T121000
 UID:9c31ce24@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Mathematical Analysis II
-COLOR:black
+COLOR:chocolate
 DESCRIPTION:Location: 108\nInstructor: Imre Delgado\nType: tut\nGroup: B22
  -CS-03\nSubject: Mathematical Analysis II\nTime: 10:40 - 12:10
 LOCATION:108
@@ -458,7 +458,7 @@ DTEND:20230324T141000
 UID:9ff61ae2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 314/313/316/318/320/421\nInstructor: Gelvanovsky\,Kr
  uglova\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject:
   English for Academic Purposes I\nTime: 12:40 - 14:10
@@ -471,7 +471,7 @@ DTEND:20230324T173000
 UID:6082180d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:English for Academic Purposes I
-COLOR:cornsilk
+COLOR:darkblue
 DESCRIPTION:Location: 314/313/318/320/421\nInstructor: Gelvanovsky\,Kruglo
  va\,Rednikova\,Melnikova\, Saduov\, Marouf\nGroup: B22-CS-03\nSubject: Eng
  lish for Academic Purposes I\nTime: 16:00 - 17:30
@@ -484,7 +484,7 @@ DTEND:20230605T103000
 UID:f0cd8a5c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Software Project
-COLOR:darkkhaki
+COLOR:darkblue
 DESCRIPTION:Location: 108\nInstructor: Nursultan Askarbekuly\nType: lec\nG
  roup: B22-CS-03\nSubject: Software Project\nTime: 09:00 - 10:30
 LOCATION:108
@@ -496,7 +496,7 @@ DTEND:20230605T121000
 UID:551b1510@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Software Project
-COLOR:darkkhaki
+COLOR:darkblue
 DESCRIPTION:Location: 108\nInstructor: Nursultan Askarbekuly\nType: tut\nG
  roup: B22-CS-03\nSubject: Software Project\nTime: 10:40 - 12:10
 LOCATION:108
@@ -508,7 +508,7 @@ DTEND:20230605T141000
 UID:d311078a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Software Project
-COLOR:darkkhaki
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Marko Pezer\nType: lab\nGroup: B22-
  CS-03\nSubject: Software Project\nTime: 12:40 - 14:10
 LOCATION:321
@@ -519,7 +519,7 @@ DTSTART:20230620T104000
 DTEND:20230620T121000
 UID:ee42548a@innohassle.ru
 CATEGORIES:Theoretical sports
-COLOR:ivory
+COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
@@ -530,7 +530,7 @@ DTSTART:20230627T104000
 DTEND:20230627T121000
 UID:ee42548a@innohassle.ru
 CATEGORIES:Theoretical sports
-COLOR:ivory
+COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
@@ -541,7 +541,7 @@ DTSTART:20230621T104000
 DTEND:20230621T121000
 UID:ef803ebd@innohassle.ru
 CATEGORIES:Theoretical sports
-COLOR:ivory
+COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
@@ -552,7 +552,7 @@ DTSTART:20230628T104000
 DTEND:20230628T121000
 UID:ef803ebd@innohassle.ru
 CATEGORIES:Theoretical sports
-COLOR:ivory
+COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
@@ -563,7 +563,7 @@ DTSTART:20230622T104000
 DTEND:20230622T121000
 UID:e4dc7980@innohassle.ru
 CATEGORIES:Theoretical sports
-COLOR:ivory
+COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
  22-CS-03\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108

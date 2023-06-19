@@ -12,7 +12,7 @@ DTEND:20230123T124000
 UID:cbd0e7f2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
-COLOR:floralwhite
+COLOR:chocolate
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-RO-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -24,7 +24,7 @@ DTSTART:20230306T145000
 DTEND:20230306T162000
 UID:159421d8@innohassle.ru
 CATEGORIES:Theoretical Sports
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
@@ -35,7 +35,7 @@ DTSTART:20230306T163000
 DTEND:20230306T180000
 UID:455743f5@innohassle.ru
 CATEGORIES:Theoretical Sports
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
@@ -47,7 +47,7 @@ DTEND:20230126T144000
 UID:9f55d350@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Statistical Techniques
-COLOR:gainsboro
+COLOR:burlywood
 DESCRIPTION:Location: 105\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Statistical Techniques\nTime: 13:10 - 14:40
 LOCATION:105
@@ -59,7 +59,7 @@ DTEND:20230126T162000
 UID:a8211160@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Statistical Techniques
-COLOR:gainsboro
+COLOR:burlywood
 DESCRIPTION:Location: 105\nInstructor: Maxim Evgrafov\nType: lab\nGroup: B
  19-RO-01\nSubject: Statistical Techniques\nTime: 14:50 - 16:20
 LOCATION:105
@@ -70,7 +70,7 @@ DTSTART:20230311T093000
 DTEND:20230311T110000
 UID:a5610009@innohassle.ru
 CATEGORIES:Theoretical Sports
-COLOR:lavender
+COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-RO-01\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
@@ -82,7 +82,7 @@ DTEND:20230320T124000
 UID:845ef8a0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
-COLOR:floralwhite
+COLOR:chocolate
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-RO-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -95,7 +95,7 @@ DTEND:20230323T144000
 UID:d456b0b0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Statistical Techniques
-COLOR:gainsboro
+COLOR:burlywood
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Vladimir Ivanov
  \nType: lec\nGroup: B19-RO-01\nSubject: Statistical Techniques\nTime: 13:1
  0 - 14:40
@@ -108,7 +108,7 @@ DTEND:20230323T162000
 UID:e3227280@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Statistical Techniques
-COLOR:gainsboro
+COLOR:burlywood
 DESCRIPTION:Location: 105 (Room 108 on 20/04)\nInstructor: Maxim Evgrafov\
  nType: lab\nGroup: B19-RO-01\nSubject: Statistical Techniques\nTime: 14:50
   - 16:20

@@ -12,7 +12,7 @@ DTEND:20230123T104000
 UID:b58db315@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:goldenrod
+COLOR:indigo
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-AI\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -24,7 +24,7 @@ DTEND:20230123T122000
 UID:ab6dd2a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-AI\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -36,7 +36,7 @@ DTEND:20230123T142000
 UID:65b1eed5@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:goldenrod
+COLOR:indigo
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
  \nGroup: B20-AI\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:312
@@ -48,7 +48,7 @@ DTEND:20230123T160000
 UID:d01dd10a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 313\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-AI\nSubject: Signals and Systems\nTime: 14:30 - 16:00
 LOCATION:313
@@ -60,7 +60,7 @@ DTEND:20230125T160000
 UID:3e31be6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Natural Language Processing
-COLOR:honeydew
+COLOR:indigo
 DESCRIPTION:Location: 300\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
  B20-AI\nSubject: Natural Language Processing\nTime: 14:30 - 16:00
 LOCATION:300
@@ -72,7 +72,7 @@ DTEND:20230125T174000
 UID:aa889698@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Natural Language Processing
-COLOR:honeydew
+COLOR:indigo
 DESCRIPTION:Location: 300\nInstructor: Aidar Valeev\nType: lab\nGroup: B20
  -AI\nSubject: Natural Language Processing\nTime: 16:10 - 17:40
 LOCATION:300
@@ -84,7 +84,7 @@ DTEND:20230320T104000
 UID:fa03ac47@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:goldenrod
+COLOR:indigo
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-AI\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -96,7 +96,7 @@ DTEND:20230320T122000
 UID:4538c278@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-AI\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -108,7 +108,7 @@ DTEND:20230320T142000
 UID:2a3ff187@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:goldenrod
+COLOR:indigo
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
  \nGroup: B20-AI\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:312
@@ -120,7 +120,7 @@ DTEND:20230320T160000
 UID:9f93ce58@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 313\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-AI\nSubject: Signals and Systems\nTime: 14:30 - 16:00
 LOCATION:313
@@ -132,7 +132,7 @@ DTEND:20230321T122000
 UID:d116db23@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:darkslateblue
+COLOR:rebeccapurple
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -AI\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -144,7 +144,7 @@ DTEND:20230321T142000
 UID:4d18ea36@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:darkslateblue
+COLOR:rebeccapurple
 DESCRIPTION:Location: 304\nInstructor: Firas Jolha\nType: lab\nGroup: B20-
  AI\nSubject: Introduction to Big Data\nTime: 12:50 - 14:20
 LOCATION:304
@@ -156,7 +156,7 @@ DTEND:20230322T160000
 UID:4b64ac68@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Natural Language Processing
-COLOR:honeydew
+COLOR:indigo
 DESCRIPTION:Location: 300\nInstructor: Vladimir Ivanov\nType: lec\nGroup: 
  B20-AI\nSubject: Natural Language Processing\nTime: 14:30 - 16:00
 LOCATION:300
@@ -168,7 +168,7 @@ DTEND:20230322T174000
 UID:e20f2116@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Natural Language Processing
-COLOR:honeydew
+COLOR:indigo
 DESCRIPTION:Location: 300\nInstructor: Aidar Valeev\nType: lab\nGroup: B20
  -AI\nSubject: Natural Language Processing\nTime: 16:10 - 17:40
 LOCATION:300
@@ -180,7 +180,7 @@ DTEND:20230323T122000
 UID:d2920f4d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:darkslateblue
+COLOR:rebeccapurple
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -AI\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -192,7 +192,7 @@ DTEND:20230323T142000
 UID:4e9c3e58@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:darkslateblue
+COLOR:rebeccapurple
 DESCRIPTION:Location: 304 (ROOM #102 ON 20/04)\nInstructor: Firas Jolha\nT
  ype: lab\nGroup: B20-AI\nSubject: Introduction to Big Data\nTime: 12:50 - 
  14:20

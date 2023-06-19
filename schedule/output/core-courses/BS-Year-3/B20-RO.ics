@@ -12,7 +12,7 @@ DTEND:20230123T122000
 UID:69a7eb58@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-RO\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -24,7 +24,7 @@ DTEND:20230123T142000
 UID:f5a9da4d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-RO\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:317
@@ -36,7 +36,7 @@ DTEND:20230124T122000
 UID:b7df9dad@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Sensors & Sensing
-COLOR:brown
+COLOR:blueviolet
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
  ov\nType: lab\nGroup: B20-RO\nSubject: Sensors & Sensing\nTime: 10:50 - 12
  :20
@@ -49,7 +49,7 @@ DTEND:20230124T142000
 UID:9dada95e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Sensors & Sensing
-COLOR:brown
+COLOR:blueviolet
 DESCRIPTION:Location: 305 (ROOM 317 0N 14/03)\nInstructor: Ruslan Damindar
  ov\nType: lab\nGroup: B20-RO\nSubject: Sensors & Sensing\nTime: 12:50 - 14
  :20
@@ -62,7 +62,7 @@ DTEND:20230126T122000
 UID:3ffa6918@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Mechanics & Machines
-COLOR:green
+COLOR:crimson
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
  Type: lec\nGroup: B20-RO\nSubject: Mechanics & Machines\nTime: 10:50 - 12:
  20
@@ -75,7 +75,7 @@ DTEND:20230126T142000
 UID:15885deb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Mechanics & Machines
-COLOR:green
+COLOR:crimson
 DESCRIPTION:Location: 305 (room 301 on 16/03)\nInstructor: Oleg Bulichev\n
  Type: lec\nGroup: B20-RO\nSubject: Mechanics & Machines\nTime: 12:50 - 14:
  20
@@ -88,7 +88,7 @@ DTEND:20230126T160000
 UID:6ef045e3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Sensors & Sensing
-COLOR:brown
+COLOR:blueviolet
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
  : B20-RO\nSubject: Sensors & Sensing\nTime: 14:30 - 16:00
 LOCATION:ONLINE
@@ -100,7 +100,7 @@ DTEND:20230126T174000
 UID:71e7cd7b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Sensors & Sensing
-COLOR:brown
+COLOR:blueviolet
 DESCRIPTION:Location: ONLINE\nInstructor: Ilya Afanasyev\nType: lec\nGroup
  : B20-RO\nSubject: Sensors & Sensing\nTime: 16:10 - 17:40
 LOCATION:ONLINE
@@ -112,7 +112,7 @@ DTEND:20230320T122000
 UID:2629f40a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-RO\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -124,7 +124,7 @@ DTEND:20230320T142000
 UID:ba27c51f@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:honeydew
+COLOR:blueviolet
 DESCRIPTION:Location: 317\nInstructor: Albert Nasybullin\nType: lab\nGroup
  : B20-RO\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:317
@@ -136,7 +136,7 @@ DTEND:20230321T122000
 UID:1f236d43@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Robotic Systems
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
   B20-RO\nSubject: Robotic Systems\nTime: 10:50 - 12:20
 LOCATION:103
@@ -148,7 +148,7 @@ DTEND:20230321T142000
 UID:355159b0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Robotic Systems
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: lec\nGroup:
   B20-RO\nSubject: Robotic Systems\nTime: 12:50 - 14:20
 LOCATION:103
@@ -160,7 +160,7 @@ DTEND:20230323T122000
 UID:74f90af8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Mechanics & Machines
-COLOR:green
+COLOR:crimson
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lec\nGroup: B2
  0-RO\nSubject: Mechanics & Machines\nTime: 10:50 - 12:20
 LOCATION:305
@@ -172,7 +172,7 @@ DTEND:20230323T142000
 UID:e8f73bed@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Mechanics & Machines
-COLOR:green
+COLOR:crimson
 DESCRIPTION:Location: 305\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  0-RO\nSubject: Mechanics & Machines\nTime: 12:50 - 14:20
 LOCATION:305
@@ -184,7 +184,7 @@ DTEND:20230323T160000
 UID:c60cb50d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Robotic Systems
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-
  RO\nSubject: Robotic Systems\nTime: 14:30 - 16:00
 LOCATION:305
@@ -196,7 +196,7 @@ DTEND:20230323T174000
 UID:d91b3d95@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Robotic Systems
-COLOR:greenyellow
+COLOR:burlywood
 DESCRIPTION:Location: 305\nInstructor: Cham An Fam\nType: lab\nGroup: B20-
  RO\nSubject: Robotic Systems\nTime: 16:10 - 17:40
 LOCATION:305
