@@ -12,7 +12,7 @@ DTEND:20230123T121000
 UID:c1edadd0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTime: 10:40 - 12:10
 LOCATION:ONLINE
@@ -23,7 +23,7 @@ DTSTART:20230227T124000
 DTEND:20230227T141000
 UID:59210377@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 12:40 - 14:10
 LOCATION:308
@@ -34,7 +34,7 @@ DTSTART:20230227T142000
 DTEND:20230227T155000
 UID:838a6d9@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 14:20 - 15:50
 LOCATION:308
@@ -45,7 +45,7 @@ DTSTART:20230228T124000
 DTEND:20230228T141000
 UID:5c6e15f2@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 12:40 - 14:10
 LOCATION:307
@@ -56,7 +56,7 @@ DTSTART:20230228T142000
 DTEND:20230228T155000
 UID:d77b05c@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 14:20 - 15:50
 LOCATION:307
@@ -68,7 +68,7 @@ DTEND:20230125T121000
 UID:c560d162@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTime: 10:40 - 12:10
 LOCATION:ONLINE
@@ -80,7 +80,7 @@ DTEND:20230125T155000
 UID:cb5da6b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: ONLINE (ROOM #308 ON 01/03)\nInstructor: Sergey Klad
  ko\nType: lec\nGroup: M22-SE-01\nSubject: Communications\nTime: 14:20 - 15
  :50
@@ -93,7 +93,7 @@ DTEND:20230125T173000
 UID:a2d87d2a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: ONLINE (ROOM #308 ON 01/03)\nInstructor: Sergey Klad
  ko\nType: lec\nGroup: M22-SE-01\nSubject: Communications\nTime: 16:00 - 17
  :30
@@ -106,7 +106,7 @@ DTEND:20230126T121000
 UID:755c7a4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Manuel Mazzara\nType: lec\nGroup: M
  22-SE-01\nSubject: Models of Software Systems\nTime: 10:40 - 12:10
 LOCATION:321
@@ -118,7 +118,7 @@ DTEND:20230126T141000
 UID:8f4b0c8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev\nType: tut\nGroup: M
  22-SE-01\nSubject: Models of Software Systems\nTime: 12:40 - 14:10
 LOCATION:321
@@ -130,7 +130,7 @@ DTEND:20230126T155000
 UID:6d4429b8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev/ Hamna Aslam\nType: 
  lab\nGroup: M22-SE-01\nSubject: Models of Software Systems\nTime: 14:20 - 
  15:50
@@ -143,7 +143,7 @@ DTEND:20230126T173000
 UID:a09ec373@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: Communications (lec)\nInstructor: Communications (le
  c)\nType: lec\nGroup: M22-SE-01\nSubject: Communications\nTime: 16:00 - 17
  :30
@@ -156,7 +156,7 @@ DTEND:20230126T191000
 UID:491ca31c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: Communications (lec)\nInstructor: Communications (le
  c)\nType: lec\nGroup: M22-SE-01\nSubject: Communications\nTime: 17:40 - 19
  :10
@@ -168,7 +168,7 @@ DTSTART:20230303T090000
 DTEND:20230303T103000
 UID:9c15cc8f@innohassle.ru
 CATEGORIES:Architecture of Software Systems
-COLOR:darkorchid
+COLOR:indigo
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:
   M22-SE-01\nSubject: Architecture of Software Systems\nTime: 09:00 - 10:30
 LOCATION:303
@@ -179,7 +179,7 @@ DTSTART:20230303T104000
 DTEND:20230303T121000
 UID:ec8b85ef@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 10:40 - 12:10
 LOCATION:308
@@ -190,7 +190,7 @@ DTSTART:20230303T124000
 DTEND:20230303T141000
 UID:5e28abab@innohassle.ru
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
  2-SE-01\nSubject: Communications\nTime: 12:40 - 14:10
 LOCATION:308
@@ -201,7 +201,7 @@ DTSTART:20230303T142000
 DTEND:20230303T155000
 UID:677b8101@innohassle.ru
 CATEGORIES:Architecture of Software Systems
-COLOR:darkorchid
+COLOR:indigo
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:
   M22-SE-01\nSubject: Architecture of Software Systems\nTime: 14:20 - 15:50
 LOCATION:303
@@ -213,7 +213,7 @@ DTEND:20230320T103000
 UID:96b774e6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 09:00 - 10:30
@@ -226,7 +226,7 @@ DTEND:20230320T121000
 UID:8e63b282@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 10:40 - 12:10
@@ -239,7 +239,7 @@ DTEND:20230320T141000
 UID:3cc09cc6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 27/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 12:40 - 14:10
@@ -252,7 +252,7 @@ DTEND:20230322T103000
 UID:9533a088@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 09:00 - 10:30
@@ -265,7 +265,7 @@ DTEND:20230322T121000
 UID:8de766ec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 10:40 - 12:10
@@ -278,7 +278,7 @@ DTEND:20230322T141000
 UID:3f4448a8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Analysis of Sofware Artifacts
-COLOR:green
+COLOR:darkseagreen
 DESCRIPTION:Location: ONLINE (STARTS ON 29/03)\nInstructor: Andrey Sadovyk
  h\nType: lec\nGroup: M22-SE-01\nSubject: Analysis of Sofware Artifacts\nTi
  me: 12:40 - 14:10
@@ -291,7 +291,7 @@ DTEND:20230322T155000
 UID:44326de5@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kladko\nType: lec\nGroup:
   M22-SE-01\nSubject: Communications\nTime: 14:20 - 15:50
 LOCATION:ONLINE
@@ -303,7 +303,7 @@ DTEND:20230322T173000
 UID:ea5fcaa4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Communications
-COLOR:dodgerblue
+COLOR:darkmagenta
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kladko\nType: lec\nGroup:
   M22-SE-01\nSubject: Communications\nTime: 16:00 - 17:30
 LOCATION:ONLINE
@@ -315,7 +315,7 @@ DTEND:20230323T121000
 UID:4c56a444@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Manuel Mazzara\nType: lec\nGroup: M
  22-SE-01\nSubject: Models of Software Systems\nTime: 10:40 - 12:10
 LOCATION:321
@@ -327,7 +327,7 @@ DTEND:20230323T141000
 UID:43f7d328@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev\nType: tut\nGroup: M
  22-SE-01\nSubject: Models of Software Systems\nTime: 12:40 - 14:10
 LOCATION:321
@@ -339,7 +339,7 @@ DTEND:20230323T155000
 UID:26474a58@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Models of Software Systems
-COLOR:darkolivegreen
+COLOR:chartreuse
 DESCRIPTION:Location: 321\nInstructor: Mansur Khazeev/ Hamna Aslam\nType: 
  lab\nGroup: M22-SE-01\nSubject: Models of Software Systems\nTime: 14:20 - 
  15:50
@@ -352,7 +352,7 @@ DTEND:20230324T103000
 UID:d39bd3dd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Architecture of Software Systems
-COLOR:darkorchid
+COLOR:indigo
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: M22-SE-01\nSubject: Architecture of Software Systems\nTime: 09:00 - 10
  :30
@@ -365,7 +365,7 @@ DTEND:20230324T155000
 UID:28f59e53@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Architecture of Software Systems
-COLOR:darkorchid
+COLOR:indigo
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: M22-SE-01\nSubject: Architecture of Software Systems\nTime: 14:20 - 15
  :50

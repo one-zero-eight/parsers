@@ -12,7 +12,7 @@ DTEND:20230123T105000
 UID:5cd167dd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
-COLOR:ivory
+COLOR:darkkhaki
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -AI-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -24,7 +24,7 @@ DTEND:20230123T123000
 UID:b9d23360@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
-COLOR:ivory
+COLOR:darkkhaki
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-AI-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -36,7 +36,7 @@ DTEND:20230124T123000
 UID:7d3d915c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-AI-01\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -48,7 +48,7 @@ DTEND:20230124T143000
 UID:729ce630@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  AI-01\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -60,7 +60,7 @@ DTEND:20230124T161000
 UID:6ae339f0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: 101\nInstructor: Marko Pezer\nType: lab\nGroup: B21-
  AI-01\nSubject: Databases\nTime: 14:40 - 16:10
 LOCATION:101
@@ -72,7 +72,7 @@ DTEND:20230125T123000
 UID:4ac60b39@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-AI-01\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -84,7 +84,7 @@ DTEND:20230125T143000
 UID:45677c55@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: 105\nInstructor: Artem Burmyakov\nType: tut\nGroup: 
  B21-AI-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105
@@ -96,7 +96,7 @@ DTEND:20230126T143000
 UID:7388fed2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: 317\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
  21-AI-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:317
@@ -108,7 +108,7 @@ DTEND:20230320T105000
 UID:135f788f@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
-COLOR:ivory
+COLOR:darkkhaki
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -AI-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -120,7 +120,7 @@ DTEND:20230320T123000
 UID:f65c2c32@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
-COLOR:ivory
+COLOR:darkkhaki
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-AI-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -132,7 +132,7 @@ DTEND:20230320T161000
 UID:55d19eca@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Reinforcement Learning
-COLOR:hotpink
+COLOR:lemonchiffon
 DESCRIPTION:Location: ONLINE\nInstructor: Ahsan Kazmi\nType: lec\nGroup: B
  21-AI-01\nSubject: Reinforcement Learning\nTime: 14:40 - 16:10
 LOCATION:ONLINE
@@ -144,7 +144,7 @@ DTEND:20230320T175000
 UID:7ba4ede2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Reinforcement Learning
-COLOR:hotpink
+COLOR:lemonchiffon
 DESCRIPTION:Location: 314\nInstructor: Amirreza Darvishzadeh\nType: lab\nG
  roup: B21-AI-01\nSubject: Reinforcement Learning\nTime: 16:20 - 17:50
 LOCATION:314
@@ -156,7 +156,7 @@ DTEND:20230321T123000
 UID:363ef2bc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-AI-01\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -168,7 +168,7 @@ DTEND:20230321T143000
 UID:399f85d0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  AI-01\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -180,7 +180,7 @@ DTEND:20230321T161000
 UID:21e05a10@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
-COLOR:coral
+COLOR:azure
 DESCRIPTION:Location: 101\nInstructor: Marko Pezer\nType: lab\nGroup: B21-
  AI-01\nSubject: Databases\nTime: 14:40 - 16:10
 LOCATION:101
@@ -192,7 +192,7 @@ DTEND:20230322T123000
 UID:241bcb7@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-AI-01\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -204,7 +204,7 @@ DTEND:20230322T143000
 UID:de0cbdb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: 105 (Room 106 on 19/04)\nInstructor: Artem Burmyakov
  \nType: tut\nGroup: B21-AI-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105 (Room 106 on 19/04)
@@ -216,7 +216,7 @@ DTEND:20230323T123000
 UID:8c0e4853@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
-COLOR:darkmagenta
+COLOR:gold
 DESCRIPTION:Location: 105\nInstructor: Shynnazar Seytnazarov\nType: lec\nG
  roup: B21-AI-01\nSubject: Distributed and Network Programming\nTime: 11:00
   - 12:30
@@ -229,7 +229,7 @@ DTEND:20230323T143000
 UID:388b9d32@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
-COLOR:chartreuse
+COLOR:darkturquoise
 DESCRIPTION:Location: 317\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
  21-AI-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:317
@@ -241,7 +241,7 @@ DTEND:20230323T175000
 UID:3c0ef621@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
-COLOR:darkmagenta
+COLOR:gold
 DESCRIPTION:Location: 312\nInstructor: Naghmeh Mohammadifar\nType: lab\nGr
  oup: B21-AI-01\nSubject: Distributed and Network Programming\nTime: 16:20 
  - 17:50
@@ -254,7 +254,7 @@ DTEND:20230324T123000
 UID:89415ed6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
-COLOR:darkmagenta
+COLOR:gold
 DESCRIPTION:Location: 105 (room 106 on 21/04)\nInstructor: Shynnazar Seytn
  azarov\nType: lec\nGroup: B21-AI-01\nSubject: Distributed and Network Prog
  ramming\nTime: 11:00 - 12:30
@@ -267,7 +267,7 @@ DTEND:20230324T143000
 UID:b2491564@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
-COLOR:darkmagenta
+COLOR:gold
 DESCRIPTION:Location: 305\nInstructor: Naghmeh Mohammadifar\nType: lab\nGr
  oup: B21-AI-01\nSubject: Distributed and Network Programming\nTime: 13:00 
  - 14:30
@@ -280,7 +280,7 @@ DTEND:20230324T161000
 UID:52d83616@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Reinforcement Learning
-COLOR:hotpink
+COLOR:lemonchiffon
 DESCRIPTION:Location: ONLINE\nInstructor: Ahsan Kazmi\nType: lec\nGroup: B
  21-AI-01\nSubject: Reinforcement Learning\nTime: 14:40 - 16:10
 LOCATION:ONLINE
@@ -292,7 +292,7 @@ DTEND:20230324T175000
 UID:7cad453e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Reinforcement Learning
-COLOR:hotpink
+COLOR:lemonchiffon
 DESCRIPTION:Location: 301\nInstructor: Amirreza Darvishzadeh\nType: lab\nG
  roup: B21-AI-01\nSubject: Reinforcement Learning\nTime: 16:20 - 17:50
 LOCATION:301
@@ -304,7 +304,7 @@ DTEND:20230606T123000
 UID:63de6e8e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Capstone Project
-COLOR:lawngreen
+COLOR:blue
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-AI-01\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30

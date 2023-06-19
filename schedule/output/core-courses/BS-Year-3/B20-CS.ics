@@ -12,7 +12,7 @@ DTEND:20230123T104000
 UID:95249eb2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-CS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -24,7 +24,7 @@ DTEND:20230123T122000
 UID:6f6af781@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
  \nGroup: B20-CS\nSubject: Information Retrieval\nTime: 10:50 - 12:20
 LOCATION:312
@@ -36,7 +36,7 @@ DTEND:20230124T122000
 UID:7e7c5160@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Fundamentals of Information Security
-COLOR:darkturquoise
+COLOR:crimson
 DESCRIPTION:Location: 312\nInstructor: Shynnazar Seytnazarov\nType: lec\nG
  roup: B20-CS\nSubject: Fundamentals of Information Security\nTime: 10:50 -
   12:20
@@ -49,7 +49,7 @@ DTEND:20230124T142000
 UID:e2726075@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Fundamentals of Information Security
-COLOR:darkturquoise
+COLOR:crimson
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
  roup: B20-CS\nSubject: Fundamentals of Information Security\nTime: 12:50 -
   14:20
@@ -62,7 +62,7 @@ DTEND:20230125T122000
 UID:ae660dec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Compiler Construction
-COLOR:darkorange
+COLOR:ghostwhite
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -CS\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -74,7 +74,7 @@ DTEND:20230125T142000
 UID:32683cf9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Compiler Construction
-COLOR:darkorange
+COLOR:ghostwhite
 DESCRIPTION:Location: 303\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
  20-CS\nSubject: Compiler Construction\nTime: 12:50 - 14:20
 LOCATION:303
@@ -86,7 +86,7 @@ DTEND:20230126T142000
 UID:578ab1fd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Fundamentals of Information Security
-COLOR:darkturquoise
+COLOR:crimson
 DESCRIPTION:Location: 312\nInstructor: Shynnazar Seytnazarov\nType: lec\nG
  roup: B20-CS\nSubject: Fundamentals of Information Security\nTime: 12:50 -
   14:20
@@ -99,7 +99,7 @@ DTEND:20230126T160000
 UID:a753892e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Fundamentals of Information Security
-COLOR:darkturquoise
+COLOR:crimson
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
  roup: B20-CS\nSubject: Fundamentals of Information Security\nTime: 14:30 -
   16:00
@@ -112,7 +112,7 @@ DTEND:20230320T104000
 UID:daaa81e0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-CS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -124,7 +124,7 @@ DTEND:20230320T122000
 UID:20e4e8d3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: 312\nInstructor: Lionel Randall Kharkrang\nType: lab
  \nGroup: B20-CS\nSubject: Information Retrieval\nTime: 10:50 - 12:20
 LOCATION:312
@@ -136,7 +136,7 @@ DTEND:20230321T122000
 UID:84b44583@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Network and Cyber Security
-COLOR:indianred
+COLOR:darkslategray
 DESCRIPTION:Location: 321\nInstructor: Niyaz Kashapov\nType: lec\nGroup: B
  20-CS\nSubject: Network and Cyber Security\nTime: 10:50 - 12:20
 LOCATION:321
@@ -148,7 +148,7 @@ DTEND:20230321T142000
 UID:18ba7496@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Network and Cyber Security
-COLOR:indianred
+COLOR:darkslategray
 DESCRIPTION:Location: 312\nInstructor: John Adewale Olatunde\nType: lab\nG
  roup: B20-CS\nSubject: Network and Cyber Security\nTime: 12:50 - 14:20
 LOCATION:312
@@ -160,7 +160,7 @@ DTEND:20230322T122000
 UID:e6e1ba62@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Compiler Construction
-COLOR:darkorange
+COLOR:ghostwhite
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -CS\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -172,7 +172,7 @@ DTEND:20230322T142000
 UID:7aef8b77@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Compiler Construction
-COLOR:darkorange
+COLOR:ghostwhite
 DESCRIPTION:Location: 303\nInstructor: Mikhail Kuskov\nType: lab\nGroup: B
  20-CS\nSubject: Compiler Construction\nTime: 12:50 - 14:20
 LOCATION:303
@@ -184,7 +184,7 @@ DTEND:20230323T122000
 UID:873091ed@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Network and Cyber Security
-COLOR:indianred
+COLOR:darkslategray
 DESCRIPTION:Location: 303\nInstructor: Niyaz Kashapov\nType: lec\nGroup: B
  20-CS\nSubject: Network and Cyber Security\nTime: 10:50 - 12:20
 LOCATION:303
@@ -196,7 +196,7 @@ DTEND:20230323T142000
 UID:1b3ea0f8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Network and Cyber Security
-COLOR:indianred
+COLOR:darkslategray
 DESCRIPTION:Location: 303\nInstructor: John Adewale Olatunde\nType: lab\nG
  roup: B20-CS\nSubject: Network and Cyber Security\nTime: 12:50 - 14:20
 LOCATION:303

@@ -20,7 +20,6 @@ class DayOfWeek(StrEnum):
 
 class CSS3Color(StrEnum):
     ALICE_BLUE = "aliceblue"
-    ANTIQUE_WHITE = "antiquewhite"
     AQUA = "aqua"
     AQUAMARINE = "aquamarine"
     AZURE = "azure"
@@ -82,16 +81,6 @@ class CSS3Color(StrEnum):
     LAVENDER_BLUSH = "lavenderblush"
     LAWN_GREEN = "lawngreen"
     LEMON_CHIFFON = "lemonchiffon"
-    LIGHT_BLUE = "lightblue"
-    LIGHT_CORAL = "lightcoral"
-    LIGHT_CYAN = "lightcyan"
-    LIGHT_GOLDENROD_YELLOW = "lightgoldenrodyellow"
-    LIGHT_GRAY = "lightgray"
-    LIGHT_GREEN = "lightgreen"
-    LIGHT_PINK = "lightpink"
-    LIGHT_SALMON = "lightsalmon"
-    LIGHT_SEA_GREEN = "lightseagreen"
-    LIGHT_SKY_BLUE = "lightskyblue"
 
     @classmethod
     def __len__(cls):

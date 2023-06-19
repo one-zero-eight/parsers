@@ -12,7 +12,7 @@ DTEND:20230123T104000
 UID:740a94d6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-DS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -24,7 +24,7 @@ DTEND:20230123T122000
 UID:cb31fae9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:indigo
+COLOR:honeydew
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -36,7 +36,7 @@ DTEND:20230123T142000
 UID:573fcbfc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:indigo
+COLOR:honeydew
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lab\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:300
@@ -48,7 +48,7 @@ DTEND:20230124T142000
 UID:a179df93@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: 316\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-DS\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:316
@@ -60,7 +60,7 @@ DTEND:20230125T122000
 UID:47336cfe@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data Mining
-COLOR:lavender
+COLOR:cornflowerblue
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : B20-DS\nSubject: Data Mining\nTime: 10:50 - 12:20
 LOCATION:303
@@ -72,7 +72,7 @@ DTEND:20230127T160000
 UID:acf6d10a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data MiningSTARTS ON 3/02
-COLOR:lightsalmon
+COLOR:beige
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  iningSTARTS ON 3/02\nTime: 14:30 - 16:00
@@ -85,7 +85,7 @@ DTEND:20230127T174000
 UID:b3e15992@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Data MiningSTARTS ON 3/02
-COLOR:lightsalmon
+COLOR:beige
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  iningSTARTS ON 3/02\nTime: 16:10 - 17:40
@@ -98,7 +98,7 @@ DTEND:20230320T104000
 UID:3b848b84@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-DS\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -110,7 +110,7 @@ DTEND:20230320T122000
 UID:84bfe5bb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:indigo
+COLOR:honeydew
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lec\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 10:50 - 12:20
 LOCATION:300
@@ -122,7 +122,7 @@ DTEND:20230320T142000
 UID:18b1d4ae@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Signals and Systems
-COLOR:indigo
+COLOR:honeydew
 DESCRIPTION:Location: 300\nInstructor: Nikolay Shilov\nType: lab\nGroup: B
  20-DS\nSubject: Signals and Systems\nTime: 12:50 - 14:20
 LOCATION:300
@@ -134,7 +134,7 @@ DTEND:20230321T122000
 UID:1091fce0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:lightgoldenrodyellow
+COLOR:darkslateblue
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -DS\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -146,7 +146,7 @@ DTEND:20230321T142000
 UID:ea7abc73@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
-COLOR:lightgoldenrodyellow
+COLOR:goldenrod
 DESCRIPTION:Location: 316\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-DS\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:316
@@ -158,7 +158,7 @@ DTEND:20230321T160000
 UID:ca3af0c0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:lightgoldenrodyellow
+COLOR:darkslateblue
 DESCRIPTION:Location: 304\nInstructor: Firas Jolha\nType: lab\nGroup: B20-
  DS\nSubject: Introduction to Big Data\nTime: 14:30 - 16:00
 LOCATION:304
@@ -170,7 +170,7 @@ DTEND:20230322T122000
 UID:fb4db70@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Mining
-COLOR:lavender
+COLOR:cornflowerblue
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : B20-DS\nSubject: Data Mining\nTime: 10:50 - 12:20
 LOCATION:303
@@ -182,7 +182,7 @@ DTEND:20230323T122000
 UID:1315288e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:lightgoldenrodyellow
+COLOR:darkslateblue
 DESCRIPTION:Location: 300\nInstructor: Azat Yakupov\nType: lec\nGroup: B20
  -DS\nSubject: Introduction to Big Data\nTime: 10:50 - 12:20
 LOCATION:300
@@ -194,7 +194,7 @@ DTEND:20230323T160000
 UID:c9be24ae@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Big Data
-COLOR:lightgoldenrodyellow
+COLOR:darkslateblue
 DESCRIPTION:Location: 304 (ROOM #102 ON 20/04)\nInstructor: Firas Jolha\nT
  ype: lab\nGroup: B20-DS\nSubject: Introduction to Big Data\nTime: 14:30 - 
  16:00
@@ -207,7 +207,7 @@ DTEND:20230324T160000
 UID:d192abe2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Mining
-COLOR:lavender
+COLOR:cornflowerblue
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining\nTime: 14:30 - 16:00
@@ -220,7 +220,7 @@ DTEND:20230324T174000
 UID:ce85237a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Data Mining
-COLOR:lavender
+COLOR:cornflowerblue
 DESCRIPTION:Location: ONLINE (ROOM 321 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4)\nInstructor: Armen Beklaryan\nType: lec\nGroup: B20-DS\nSubject: Data M
  ining\nTime: 16:10 - 17:40
