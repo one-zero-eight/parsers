@@ -1,13 +1,14 @@
 import datetime
 import re
+from functools import cached_property
 from typing import Optional
 from zlib import crc32
 
 import icalendar
 from pydantic import BaseModel, Field, validator
 
-import utils
 from processors.regex import process_only_on, process_desc_in_parentheses, remove_trailing_spaces
+from config_base import CSS3Color
 
 
 class Subject(BaseModel):
@@ -65,6 +66,18 @@ class Subject(BaseModel):
         :rtype: list[Subject]
         """
         return list(cls.__instances__.values())
+
+    @property
+    def color(self: "Subject") -> CSS3Color:
+        """
+        Get color for the subject
+
+        :return: color for the subject
+        """
+
+        color_count = len(CSS3Color)
+        hash_ = crc32(self.name.encode("utf-8"))
+        return CSS3Color.get_by_index(hash_ % color_count)
 
     __instances__: dict[str, "Subject"] = {}
     """Flyweight pattern storage"""
@@ -262,6 +275,9 @@ class ScheduleEvent(BaseModel):
 
         # if self.dtstamp:
         #     vevent["dtstamp"] = self.dtstamp.strftime("%Y%m%dT%H%M%S")
+
+        if hasattr(self.subject, "color"):
+            vevent["color"] = self.subject.color
 
         if self.location:
             vevent["location"] = self.location

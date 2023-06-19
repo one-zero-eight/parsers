@@ -12,6 +12,7 @@ DTEND:20230124T155000
 UID:86e8e51d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computational Intelligence
+COLOR:lemonchiffon
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  M22-RO-01\nSubject: Computational Intelligence\nTime: 14:20 - 15:50
 LOCATION:ONLINE
@@ -23,6 +24,7 @@ DTEND:20230124T173000
 UID:a12e27aa@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computational Intelligence
+COLOR:lemonchiffon
 DESCRIPTION:Location: Computational Intelligence (lab)\nInstructor: Comput
  ational Intelligence (lab)\nType: lab\nGroup: M22-RO-01\nSubject: Computat
  ional Intelligence\nTime: 16:00 - 17:30
@@ -35,6 +37,7 @@ DTEND:20230126T103000
 UID:bf5cfb50@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computer Vision
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: M22
  -RO-01\nSubject: Computer Vision\nTime: 09:00 - 10:30
 LOCATION:ONLINE
@@ -46,6 +49,7 @@ DTEND:20230126T121000
 UID:2e2358c2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computer Vision
+COLOR:goldenrod
 DESCRIPTION:Location: 101\nInstructor: Yaseen Albatoul\nType: lab\nGroup: 
  M22-RO-01\nSubject: Computer Vision\nTime: 10:40 - 12:10
 LOCATION:101
@@ -57,6 +61,7 @@ DTEND:20230126T155000
 UID:856c3173@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computational Intelligence
+COLOR:lemonchiffon
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  M22-RO-01\nSubject: Computational Intelligence\nTime: 14:20 - 15:50
 LOCATION:ONLINE
@@ -68,6 +73,7 @@ DTEND:20230126T173000
 UID:fc26ef@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Systematic Literature Review for Robotics
+COLOR:lightskyblue
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
  -RO-01\nSubject: Systematic Literature Review for Robotics\nTime: 16:00 - 
  17:30
@@ -80,6 +86,7 @@ DTEND:20230127T103000
 UID:f66b733c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Computational Intelligence
+COLOR:lemonchiffon
 DESCRIPTION:Location: 301\nInstructor: Anastasiya Andronova\nType: lab\nGr
  oup: M22-RO-01\nSubject: Computational Intelligence\nTime: 09:00 - 10:30
 LOCATION:301
@@ -91,6 +98,7 @@ DTEND:20230320T121000
 UID:d9351aca@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Robotics
+COLOR:hotpink
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kolyubin\nType: lec\nGrou
  p: M22-RO-01\nSubject: Advanced Robotics\nTime: 10:40 - 12:10
 LOCATION:ONLINE
@@ -102,6 +110,7 @@ DTEND:20230320T141000
 UID:6b96348e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Robotics
+COLOR:hotpink
 DESCRIPTION:Location: ONLINE\nInstructor: Sergey Kolyubin\nType: lec\nGrou
  p: M22-RO-01\nSubject: Advanced Robotics\nTime: 12:40 - 14:10
 LOCATION:ONLINE
@@ -113,6 +122,7 @@ DTEND:20230322T121000
 UID:531aab52@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Robotics
+COLOR:hotpink
 DESCRIPTION:Location: 101\nInstructor: Albert Demian\nType: lab\nGroup: M2
  2-RO-01\nSubject: Advanced Robotics\nTime: 10:40 - 12:10
 LOCATION:101
@@ -124,6 +134,7 @@ DTEND:20230322T141000
 UID:e1b98516@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Robotics
+COLOR:hotpink
 DESCRIPTION:Location: 101\nInstructor: Albert Demian\nType: lab\nGroup: M2
  2-RO-01\nSubject: Advanced Robotics\nTime: 12:40 - 14:10
 LOCATION:101
@@ -135,6 +146,7 @@ DTEND:20230323T103000
 UID:f45f98b0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Computer Vision
+COLOR:goldenrod
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: M22
  -RO-01\nSubject: Computer Vision\nTime: 09:00 - 10:30
 LOCATION:ONLINE
@@ -146,6 +158,7 @@ DTEND:20230323T121000
 UID:65203b22@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Computer Vision
+COLOR:goldenrod
 DESCRIPTION:Location: 101\nInstructor: Yaseen Albatoul\nType: lab\nGroup: 
  M22-RO-01\nSubject: Computer Vision\nTime: 10:40 - 12:10
 LOCATION:101
@@ -157,6 +170,7 @@ DTEND:20230323T141000
 UID:cd74744@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for Data Science & Robotics
+COLOR:darkmagenta
 DESCRIPTION:Location: 313 (week 1\, 2\, 7\, 8)\nInstructor: Mirko Farina\n
  Type: lec\nGroup: M22-RO-01\nSubject: Systematic Literature Review for Dat
  a Science & Robotics\nTime: 12:40 - 14:10
@@ -169,6 +183,7 @@ DTEND:20230323T173000
 UID:4bff450f@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for Robotics
+COLOR:lightskyblue
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
  -RO-01\nSubject: Systematic Literature Review for Robotics\nTime: 16:00 - 
  17:30

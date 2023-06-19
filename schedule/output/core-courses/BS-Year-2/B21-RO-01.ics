@@ -12,6 +12,7 @@ DTEND:20230123T105000
 UID:e8086a07@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -RO-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -23,6 +24,7 @@ DTEND:20230123T123000
 UID:d0b3eba@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-RO-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -34,6 +36,7 @@ DTEND:20230123T143000
 UID:31ee111e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Mechanics
+COLOR:hotpink
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Theoretical Mechanics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -45,6 +48,7 @@ DTEND:20230123T161000
 UID:949397f6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Mechanics
+COLOR:hotpink
 DESCRIPTION:Location: 102\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  1-RO-01\nSubject: Theoretical Mechanics\nTime: 14:40 - 16:10
 LOCATION:102
@@ -56,6 +60,7 @@ DTEND:20230124T123000
 UID:aa9f3260@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lec\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 11:00 - 12:30
 LOCATION:102
@@ -67,6 +72,7 @@ DTEND:20230124T143000
 UID:a53e450c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: tut\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 13:00 - 14:30
 LOCATION:102
@@ -78,6 +84,7 @@ DTEND:20230124T161000
 UID:bd419acc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lab\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 14:40 - 16:10
 LOCATION:102
@@ -89,6 +96,7 @@ DTEND:20230125T123000
 UID:87c043e8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Mechanics
+COLOR:hotpink
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Theoretical Mechanics\nTime: 11:00 - 12:30
 LOCATION:102
@@ -100,6 +108,7 @@ DTEND:20230125T143000
 UID:bcc8085a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Theoretical Mechanics
+COLOR:hotpink
 DESCRIPTION:Location: 102\nInstructor: Oleg Bulichev\nType: lab\nGroup: B2
  1-RO-01\nSubject: Theoretical Mechanics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -111,6 +120,7 @@ DTEND:20230126T123000
 UID:91b0122a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  B21-RO-01\nSubject: Control Theory\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -122,6 +132,7 @@ DTEND:20230126T143000
 UID:9e116546@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: tut\nGroup:
   B21-RO-01\nSubject: Control Theory\nTime: 13:00 - 14:30
 LOCATION:103
@@ -133,6 +144,7 @@ DTEND:20230126T161000
 UID:866eba86@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: 103\nInstructor: Valeria Skvortsova\nType: lab\nGrou
  p: B21-RO-01\nSubject: Control Theory\nTime: 14:40 - 16:10
 LOCATION:103
@@ -144,6 +156,7 @@ DTEND:20230320T105000
 UID:a7867555@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -RO-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -155,6 +168,7 @@ DTEND:20230320T123000
 UID:428521e8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: 106\nInstructor: Mostafa Hegazy\nType: lab\nGroup: B
  21-RO-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:106
@@ -166,6 +180,7 @@ DTEND:20230320T143000
 UID:cb009992@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Fundamental of Robotics
+COLOR:green
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lec\nGrou
  p: B21-RO-01\nSubject: Fundamental of Robotics\nTime: 13:00 - 14:30
 LOCATION:102
@@ -177,6 +192,7 @@ DTEND:20230320T161000
 UID:6e7d1f7a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Fundamental of Robotics
+COLOR:green
 DESCRIPTION:Location: 102\nInstructor: Alexandr Maloletov\nType: lab\nGrou
  p: B21-RO-01\nSubject: Fundamental of Robotics\nTime: 14:40 - 16:10
 LOCATION:102
@@ -188,6 +204,7 @@ DTEND:20230321T123000
 UID:e19c5180@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lec\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 11:00 - 12:30
 LOCATION:102
@@ -199,6 +216,7 @@ DTEND:20230321T143000
 UID:ee3d26ec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: tut\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 13:00 - 14:30
 LOCATION:102
@@ -210,6 +228,7 @@ DTEND:20230321T161000
 UID:f642f92c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Physics II
+COLOR:lightblue
 DESCRIPTION:Location: 102\nInstructor: Victor Nikiforov\nType: lab\nGroup:
   B21-RO-01\nSubject: Physics II\nTime: 14:40 - 16:10
 LOCATION:102
@@ -221,6 +240,7 @@ DTEND:20230322T161000
 UID:e452aee2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Fundamental of Robotics
+COLOR:green
 DESCRIPTION:Location: 422\nInstructor: Albert Demian\nType: lec\nGroup: B2
  1-RO-01\nSubject: Fundamental of Robotics\nTime: 14:40 - 16:10
 LOCATION:422
@@ -232,6 +252,7 @@ DTEND:20230322T175000
 UID:ca27ddca@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Fundamental of Robotics
+COLOR:green
 DESCRIPTION:Location: 422\nInstructor: Albert Demian\nType: lab\nGroup: B2
  1-RO-01\nSubject: Fundamental of Robotics\nTime: 16:20 - 17:50
 LOCATION:422
@@ -243,6 +264,7 @@ DTEND:20230323T123000
 UID:dab371ca@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: ONLINE\nInstructor: Sergei Savin\nType: lec\nGroup: 
  B21-RO-01\nSubject: Control Theory\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -254,6 +276,7 @@ DTEND:20230323T143000
 UID:d51206a6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: 103\nInstructor: Simeon Nedelchev\nType: tut\nGroup:
   B21-RO-01\nSubject: Control Theory\nTime: 13:00 - 14:30
 LOCATION:103
@@ -265,6 +288,7 @@ DTEND:20230323T161000
 UID:cd6dd966@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Control Theory
+COLOR:darkorchid
 DESCRIPTION:Location: 103\nInstructor: Valeria Skvortsova\nType: lab\nGrou
  p: B21-RO-01\nSubject: Control Theory\nTime: 14:40 - 16:10
 LOCATION:103
@@ -276,6 +300,7 @@ DTEND:20230606T123000
 UID:d7076354@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Capstone Project
+COLOR:lawngreen
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-RO-01\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30

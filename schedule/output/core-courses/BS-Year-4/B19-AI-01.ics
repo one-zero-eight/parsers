@@ -12,6 +12,7 @@ DTEND:20230123T110000
 UID:cfd5ad9a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
+COLOR:darkseagreen
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-AI-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 09:30 - 11:00
@@ -23,6 +24,7 @@ DTSTART:20230306T145000
 DTEND:20230306T162000
 UID:a14d2c02@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
@@ -33,6 +35,7 @@ DTSTART:20230306T163000
 DTEND:20230306T180000
 UID:f18e4e2f@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
@@ -44,6 +47,7 @@ DTEND:20230124T194000
 UID:146fb47b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Human
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
  B19-AI-01\nSubject: Human\nTime: 18:10 - 19:40
 LOCATION:ONLINE
@@ -55,6 +59,7 @@ DTEND:20230125T162000
 UID:8f757495@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Human
+COLOR:darkturquoise
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
  B19-AI-01\nSubject: Human\nTime: 14:50 - 16:20
 LOCATION:104
@@ -65,6 +70,7 @@ DTSTART:20230311T093000
 DTEND:20230311T110000
 UID:11b80dd3@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-AI-01\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
@@ -76,6 +82,7 @@ DTEND:20230320T110000
 UID:805bb2c8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
+COLOR:darkseagreen
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-AI-01\nSubject: Aca
  demic Research and Writing Culture\nTime: 09:30 - 11:00
@@ -88,6 +95,7 @@ DTEND:20230321T194000
 UID:5f6cd79b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Human
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
  B19-AI-01\nSubject: Human\nTime: 18:10 - 19:40
 LOCATION:ONLINE
@@ -99,6 +107,7 @@ DTEND:20230322T162000
 UID:c7f2c31b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Human
+COLOR:darkturquoise
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
  B19-AI-01\nSubject: Human\nTime: 14:50 - 16:20
 LOCATION:104

@@ -12,6 +12,7 @@ DTEND:20230123T105000
 UID:fc66dbb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -CS-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -23,6 +24,7 @@ DTEND:20230123T123000
 UID:eac53906@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: 303\nInstructor: Rustam Lukmanov\nType: lab\nGroup: 
  B21-CS-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:303
@@ -34,6 +36,7 @@ DTEND:20230124T123000
 UID:2e2a9b3a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-CS-01\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -45,6 +48,7 @@ DTEND:20230124T143000
 UID:218bec56@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  CS-01\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -56,6 +60,7 @@ DTEND:20230124T175000
 UID:9e2a2548@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: 317\nInstructor: Gerald B. Imbugwa\nType: lab\nGroup
  : B21-CS-01\nSubject: Databases\nTime: 16:20 - 17:50
 LOCATION:317
@@ -67,6 +72,7 @@ DTEND:20230125T123000
 UID:19d1015f@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-CS-01\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -78,6 +84,7 @@ DTEND:20230125T143000
 UID:16707633@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: 105\nInstructor: Artem Burmyakov\nType: tut\nGroup: 
  B21-CS-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105
@@ -89,6 +96,7 @@ DTEND:20230125T175000
 UID:a9d1bf2d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: 101\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-CS-01\nSubject: Networks\nTime: 16:20 - 17:50
 LOCATION:101
@@ -100,6 +108,7 @@ DTEND:20230127T105000
 UID:a6644e08@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:System and Network Administration
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Kirill Saltanov\nType: lec\nGrou
  p: B21-CS-01\nSubject: System and Network Administration\nTime: 09:20 - 10
  :50
@@ -112,6 +121,7 @@ DTEND:20230127T143000
 UID:f1c434f1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:System and Network Administration
+COLOR:darkturquoise
 DESCRIPTION:Location: 321\nInstructor: John Olatunde\nType: lab\nGroup: B2
  1-CS-01\nSubject: System and Network Administration\nTime: 13:00 - 14:30
 LOCATION:321
@@ -123,6 +133,7 @@ DTEND:20230320T105000
 UID:404872e9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: ONLINE\nInstructor: Adil Khan\nType: lec\nGroup: B21
  -CS-01\nSubject: Introduction to Machine Learning\nTime: 09:20 - 10:50
 LOCATION:ONLINE
@@ -134,6 +145,7 @@ DTEND:20230320T123000
 UID:a54b2654@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Introduction to Machine Learning
+COLOR:ivory
 DESCRIPTION:Location: 303\nInstructor: Rustam Lukmanov\nType: lab\nGroup: 
  B21-CS-01\nSubject: Introduction to Machine Learning\nTime: 11:00 - 12:30
 LOCATION:303
@@ -145,6 +157,7 @@ DTEND:20230321T123000
 UID:6529f8da@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: ONLINE\nInstructor: Darko Bozhinoski\nType: lec\nGro
  up: B21-CS-01\nSubject: Databases\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -156,6 +169,7 @@ DTEND:20230321T143000
 UID:6a888fb6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: 108\nInstructor: Hamza Salem\nType: tut\nGroup: B21-
  CS-01\nSubject: Databases\nTime: 13:00 - 14:30
 LOCATION:108
@@ -167,6 +181,7 @@ DTEND:20230321T175000
 UID:d52946a8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Databases
+COLOR:coral
 DESCRIPTION:Location: 317\nInstructor: Gerald B. Imbugwa\nType: lab\nGroup
  : B21-CS-01\nSubject: Databases\nTime: 16:20 - 17:50
 LOCATION:317
@@ -178,6 +193,7 @@ DTEND:20230322T123000
 UID:5156b6d1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: ONLINE\nInstructor: Paolo Ciancarini\nType: lec\nGro
  up: B21-CS-01\nSubject: Networks\nTime: 11:00 - 12:30
 LOCATION:ONLINE
@@ -189,6 +205,7 @@ DTEND:20230322T143000
 UID:5ef7c1bd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: 105 (Room 106 on 19/04)\nInstructor: Artem Burmyakov
  \nType: tut\nGroup: B21-CS-01\nSubject: Networks\nTime: 13:00 - 14:30
 LOCATION:105 (Room 106 on 19/04)
@@ -200,6 +217,7 @@ DTEND:20230322T175000
 UID:e15608a3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Networks
+COLOR:chartreuse
 DESCRIPTION:Location: 101\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-CS-01\nSubject: Networks\nTime: 16:20 - 17:50
 LOCATION:101
@@ -211,6 +229,7 @@ DTEND:20230323T123000
 UID:df194235@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
+COLOR:darkmagenta
 DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Shynnazar Seytn
  azarov\nType: lec\nGroup: B21-CS-01\nSubject: Distributed and Network Prog
  ramming\nTime: 11:00 - 12:30
@@ -223,6 +242,7 @@ DTEND:20230323T161000
 UID:c8c7ea99@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
+COLOR:darkmagenta
 DESCRIPTION:Location: 316\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-CS-01\nSubject: Distributed and Network Programming\nTime: 14:40 - 16:1
  0
@@ -235,6 +255,7 @@ DTEND:20230324T105000
 UID:e9ea515a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:System and Network Administration
+COLOR:darkturquoise
 DESCRIPTION:Location: ONLINE\nInstructor: Kirill Saltanov\nType: lec\nGrou
  p: B21-CS-01\nSubject: System and Network Administration\nTime: 09:20 - 10
  :50
@@ -247,6 +268,7 @@ DTEND:20230324T123000
 UID:da5654b0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
+COLOR:darkmagenta
 DESCRIPTION:Location: 105 (room 106 on 21/04)\nInstructor: Shynnazar Seytn
  azarov\nType: lec\nGroup: B21-CS-01\nSubject: Distributed and Network Prog
  ramming\nTime: 11:00 - 12:30
@@ -259,6 +281,7 @@ DTEND:20230324T143000
 UID:be4a2ba3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:System and Network Administration
+COLOR:darkturquoise
 DESCRIPTION:Location: 321\nInstructor: John Olatunde\nType: lab\nGroup: B2
  1-CS-01\nSubject: System and Network Administration\nTime: 13:00 - 14:30
 LOCATION:321
@@ -270,6 +293,7 @@ DTEND:20230324T161000
 UID:cd88fc1c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Distributed and Network Programming
+COLOR:darkmagenta
 DESCRIPTION:Location: 312\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
  21-CS-01\nSubject: Distributed and Network Programming\nTime: 14:40 - 16:1
  0
@@ -282,6 +306,7 @@ DTEND:20230606T123000
 UID:30c964e8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
 CATEGORIES:Capstone Project
+COLOR:lawngreen
 DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-CS-01\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30

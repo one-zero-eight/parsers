@@ -12,6 +12,7 @@ DTEND:20230123T103000
 UID:5803421a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Statistics
+COLOR:forestgreen
 DESCRIPTION:Location: 305 (ROOM 101 ON 13/03)\nInstructor: Nikola Zlatanov
  \nType: lec\nGroup: M22-DS-01\nSubject: Advanced Statistics\nTime: 09:00 -
   10:30
@@ -24,6 +25,7 @@ DTEND:20230123T121000
 UID:c97ce188@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Statistics
+COLOR:forestgreen
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
  : M22-DS-01\nSubject: Advanced Statistics\nTime: 10:40 - 12:10
 LOCATION:305
@@ -35,6 +37,7 @@ DTEND:20230124T103000
 UID:1769710c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
+COLOR:firebrick
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: M22-DS-01\nSubject: Advanced Information Retrieval\nTime: 09:00 - 10
  :30
@@ -47,6 +50,7 @@ DTEND:20230124T121000
 UID:8616d29e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
+COLOR:firebrick
 DESCRIPTION:Location: 304\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : M22-DS-01\nSubject: Advanced Information Retrieval\nTime: 10:40 - 12:10
 LOCATION:304
@@ -58,6 +62,7 @@ DTEND:20230125T191000
 UID:ee56c84c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
+COLOR:lightgray
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
  , 15/03\, 22/03\, 26/04)\nInstructor: Witold Pedrycz/Leonard Johard\nType:
   lec\nGroup: M22-DS-01\nSubject: Advanced Machine Learning\nTime: 17:40 - 
@@ -72,6 +77,7 @@ DTEND:20230126T103000
 UID:d93a9943@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
+COLOR:lightgray
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
   M22-DS-01\nSubject: Advanced Machine Learning\nTime: 09:00 - 10:30
 LOCATION:101
@@ -83,6 +89,7 @@ DTEND:20230126T121000
 UID:94dc0a6a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
+COLOR:aquamarine
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
  DS-01\nSubject: Big Data Technologies and Analytics\nTime: 10:40 - 12:10
 LOCATION:314
@@ -94,6 +101,7 @@ DTEND:20230126T155000
 UID:eae900fb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Systematic Literature Review for DS
+COLOR:lightgreen
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
  -DS-01\nSubject: Systematic Literature Review for DS\nTime: 14:20 - 15:50
 LOCATION:313
@@ -105,6 +113,7 @@ DTEND:20230127T121000
 UID:4510d1c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and AnalyticsSTARTS ON 3/02
+COLOR:darkgray
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
  g Data Technologies and AnalyticsSTARTS ON 3/02\nTime: 10:40 - 12:10
@@ -117,6 +126,7 @@ DTEND:20230127T141000
 UID:b6f22358@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Big Data Technologies and AnalyticsSTARTS ON 3/02
+COLOR:darkgray
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
  g Data Technologies and AnalyticsSTARTS ON 3/02\nTime: 12:40 - 14:10
@@ -129,6 +139,7 @@ DTEND:20230320T103000
 UID:178d5d48@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Statistics
+COLOR:forestgreen
 DESCRIPTION:Location: 305\nInstructor: Nikola Zlatanov\nType: lec\nGroup: 
  M22-DS-01\nSubject: Advanced Statistics\nTime: 09:00 - 10:30
 LOCATION:305
@@ -140,6 +151,7 @@ DTEND:20230320T121000
 UID:86f2feda@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Statistics
+COLOR:forestgreen
 DESCRIPTION:Location: 305\nInstructor: Zamira Kholmatova\nType: lab\nGroup
  : M22-DS-01\nSubject: Advanced Statistics\nTime: 10:40 - 12:10
 LOCATION:305
@@ -151,6 +163,7 @@ DTEND:20230321T103000
 UID:5c6a12ec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
+COLOR:firebrick
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: M22-DS-01\nSubject: Advanced Information Retrieval\nTime: 09:00 - 10
  :30
@@ -163,6 +176,7 @@ DTEND:20230321T121000
 UID:cd15b17e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Information Retrieval
+COLOR:firebrick
 DESCRIPTION:Location: 303\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : M22-DS-01\nSubject: Advanced Information Retrieval\nTime: 10:40 - 12:10
 LOCATION:303
@@ -174,6 +188,7 @@ DTEND:20230322T191000
 UID:a6d17fc2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
+COLOR:lightgray
 DESCRIPTION:Location: ONLINE ( ROOM #303 ON 25/01\, 01/02\, 08/02\, 15/02\
  , 15/03\, 22/03\, 26/04)\nInstructor: Witold Pedrycz/Leonard Johard\nType:
   lec\nGroup: M22-DS-01\nSubject: Advanced Machine Learning\nTime: 17:40 - 
@@ -188,6 +203,7 @@ DTEND:20230323T103000
 UID:9239faa3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced Machine Learning
+COLOR:lightgray
 DESCRIPTION:Location: 101\nInstructor: Gcinizwe Dlamini\nType: lab\nGroup:
   M22-DS-01\nSubject: Advanced Machine Learning\nTime: 09:00 - 10:30
 LOCATION:101
@@ -199,6 +215,7 @@ DTEND:20230323T121000
 UID:dfdf698a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
+COLOR:aquamarine
 DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
  DS-01\nSubject: Big Data Technologies and Analytics\nTime: 10:40 - 12:10
 LOCATION:314
@@ -210,6 +227,7 @@ DTEND:20230323T141000
 UID:82fec6a0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for Data Science & Robotics
+COLOR:darkmagenta
 DESCRIPTION:Location: 313 (week 1\, 2\, 7\, 8)\nInstructor: Mirko Farina\n
  Type: lec\nGroup: M22-DS-01\nSubject: Systematic Literature Review for Dat
  a Science & Robotics\nTime: 12:40 - 14:10
@@ -222,6 +240,7 @@ DTEND:20230323T155000
 UID:a1ea631b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Systematic Literature Review for DS
+COLOR:lightgreen
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
  -DS-01\nSubject: Systematic Literature Review for DS\nTime: 14:20 - 15:50
 LOCATION:313
@@ -233,6 +252,7 @@ DTEND:20230324T121000
 UID:533b1af9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
+COLOR:aquamarine
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
  g Data Technologies and Analytics\nTime: 10:40 - 12:10
@@ -245,6 +265,7 @@ DTEND:20230324T141000
 UID:e19834bd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Big Data Technologies and Analytics
+COLOR:aquamarine
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
  g Data Technologies and Analytics\nTime: 12:40 - 14:10

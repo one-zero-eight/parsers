@@ -12,6 +12,7 @@ DTEND:20230123T104000
 UID:37f40260@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
+COLOR:lightgoldenrodyellow
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-SD-02\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -23,6 +24,7 @@ DTEND:20230123T142000
 UID:8621cb6e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Information Retrieval
+COLOR:lightgoldenrodyellow
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-SD-02\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:301
@@ -34,6 +36,7 @@ DTEND:20230125T122000
 UID:41bc672b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Compiler Construction
+COLOR:darkorange
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -SD-02\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -45,6 +48,7 @@ DTEND:20230125T160000
 UID:9440147d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Compiler Construction
+COLOR:darkorange
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: Compiler Construction\nTime: 14:30 - 16:00
 LOCATION:313
@@ -56,6 +60,7 @@ DTEND:20230320T104000
 UID:787a1d32@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
+COLOR:lightgoldenrodyellow
 DESCRIPTION:Location: ONLINE\nInstructor: Stanislav Protasov\nType: lec\nG
  roup: B20-SD-02\nSubject: Information Retrieval\nTime: 09:10 - 10:40
 LOCATION:ONLINE
@@ -67,6 +72,7 @@ DTEND:20230320T142000
 UID:c9afd43c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Information Retrieval
+COLOR:lightgoldenrodyellow
 DESCRIPTION:Location: 301\nInstructor: Awais Ch Muhammad\nType: lab\nGroup
  : B20-SD-02\nSubject: Information Retrieval\nTime: 12:50 - 14:20
 LOCATION:301
@@ -78,6 +84,7 @@ DTEND:20230321T104000
 UID:4ef1eab9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced compiler construction and program analysis
+COLOR:fuchsia
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B20-SD-02\nSubject: Advanced compiler construction and program analysis\nT
  ime: 09:10 - 10:40
@@ -90,6 +97,7 @@ DTEND:20230321T122000
 UID:c42c6805@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Advanced compiler construction and program analysis
+COLOR:fuchsia
 DESCRIPTION:Location: 106\nInstructor: Nikolay Kudasov\nType: lec\nGroup: 
  B20-SD-02\nSubject: Advanced compiler construction and program analysis\nT
  ime: 10:50 - 12:20
@@ -102,6 +110,7 @@ DTEND:20230322T122000
 UID:93bd0a5@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Compiler Construction
+COLOR:darkorange
 DESCRIPTION:Location: 106\nInstructor: Evgeni Zouev\nType: lec\nGroup: B20
  -SD-02\nSubject: Compiler Construction\nTime: 10:50 - 12:20
 LOCATION:106
@@ -113,6 +122,7 @@ DTEND:20230322T160000
 UID:dcc7a3f3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Compiler Construction
+COLOR:darkorange
 DESCRIPTION:Location: 313\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: Compiler Construction\nTime: 14:30 - 16:00
 LOCATION:313
@@ -124,6 +134,7 @@ DTEND:20230323T142000
 UID:5b836aed@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:ACC and program analysis
+COLOR:lightseagreen
 DESCRIPTION:Location: 421\nInstructor: Alexey Stepanov\nType: lab\nGroup: 
  B20-SD-02\nSubject: ACC and program analysis\nTime: 12:50 - 14:20
 LOCATION:421
@@ -135,6 +146,7 @@ DTEND:20230323T160000
 UID:fe83b41e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Lean Software Development
+COLOR:coral
 DESCRIPTION:Location: 300\nInstructor: Artem Kruglov\nType: lab\nGroup: B2
  0-SD-02\nSubject: Lean Software Development\nTime: 14:30 - 16:00
 LOCATION:300

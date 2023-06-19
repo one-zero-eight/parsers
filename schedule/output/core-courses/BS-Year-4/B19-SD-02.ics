@@ -12,6 +12,7 @@ DTEND:20230123T124000
 UID:35e2a490@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
+COLOR:darkseagreen
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-SD-02\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -23,6 +24,7 @@ DTSTART:20230306T145000
 DTEND:20230306T162000
 UID:eba662ba@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
@@ -33,6 +35,7 @@ DTSTART:20230306T163000
 DTEND:20230306T180000
 UID:bb650097@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
@@ -44,6 +47,7 @@ DTEND:20230124T124000
 UID:a082626d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:History
+COLOR:fuchsia
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
  \nType: lec\nGroup: B19-SD-02\nSubject: History\nTime: 11:10 - 12:40
 LOCATION:ONLINE (starts on 14/03)
@@ -55,6 +59,7 @@ DTEND:20230126T124000
 UID:2ad6623c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
+COLOR:chartreuse
 DESCRIPTION:Location: 106 (STARTS ON 09/02)\nInstructor: Danil Kolesnilov\
  nType: tut\nGroup: B19-SD-02\nSubject: Software Quality and Reliability\nT
  ime: 11:10 - 12:40
@@ -66,6 +71,7 @@ DTSTART:20230311T093000
 DTEND:20230311T110000
 UID:5b53436b@innohassle.ru
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
  B19-SD-02\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
@@ -77,6 +83,7 @@ DTEND:20230320T124000
 UID:7a6cbbc2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Academic Research and Writing Culture
+COLOR:darkseagreen
 DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
  bab Marouf\, Ruslan Saduov. Oksana Zhirosh\nGroup: B19-SD-02\nSubject: Aca
  demic Research and Writing Culture\nTime: 11:10 - 12:40
@@ -89,6 +96,7 @@ DTEND:20230321T124000
 UID:eb81018d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:History
+COLOR:fuchsia
 DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
  \nType: lec\nGroup: B19-SD-02\nSubject: History\nTime: 11:10 - 12:40
 LOCATION:ONLINE (starts on 14/03)
@@ -100,6 +108,7 @@ DTEND:20230321T144000
 UID:1b35b019@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Theoretical Sports
+COLOR:firebrick
 DESCRIPTION:Location: ONLINE (FINAL QUIZ)\nInstructor: Alexey Petrenko\nTy
  pe: lec\nGroup: B19-SD-02\nSubject: Theoretical Sports\nTime: 13:10 - 14:4
  0
@@ -112,6 +121,7 @@ DTEND:20230323T124000
 UID:dcd758f4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
 CATEGORIES:Software Quality and Reliability
+COLOR:chartreuse
 DESCRIPTION:Location: ONLINE\nInstructor: Andrey Sadovykh\nType: lec\nGrou
  p: B19-SD-02\nSubject: Software Quality and Reliability\nTime: 11:10 - 12:
  40
