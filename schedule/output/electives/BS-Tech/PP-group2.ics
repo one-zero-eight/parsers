@@ -11,6 +11,7 @@ DTSTART:20230606T193000
 DTEND:20230606T210000
 UID:2ce1eb76@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 06.06.2023
 LOCATION:303
@@ -21,6 +22,7 @@ DTSTART:20230608T193000
 DTEND:20230608T210000
 UID:c5da94c9@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 08.06.2023
 LOCATION:303
@@ -31,6 +33,7 @@ DTSTART:20230614T161000
 DTEND:20230614T174000
 UID:1af452aa@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 16:10 - 17:40 14.06.2023
 LOCATION:303
@@ -41,6 +44,7 @@ DTSTART:20230615T193000
 DTEND:20230615T210000
 UID:b9f6070b@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 15.06.2023
 LOCATION:303
@@ -51,6 +55,7 @@ DTSTART:20230620T193000
 DTEND:20230620T210000
 UID:ddbf35cd@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 20.06.2023
 LOCATION:303
@@ -61,6 +66,7 @@ DTSTART:20230627T193000
 DTEND:20230627T210000
 UID:449a0932@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 27.06.2023
 LOCATION:303
@@ -71,6 +77,7 @@ DTSTART:20230629T193000
 DTEND:20230629T210000
 UID:ada1768d@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 29.06.2023
 LOCATION:303
@@ -81,6 +88,7 @@ DTSTART:20230704T193000
 DTEND:20230704T210000
 UID:f77ba426@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 04.07.2023
 LOCATION:303
@@ -91,6 +99,7 @@ DTSTART:20230706T193000
 DTEND:20230706T210000
 UID:d47300af@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
  : group2\nSubject: Programming in Python\nTime: 19:30 - 21:00 06.07.2023
 LOCATION:303

@@ -11,6 +11,7 @@ DTSTART:20230605T105000
 DTEND:20230605T122000
 UID:ef1d345@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 05.06.2023
 LOCATION:314
@@ -21,6 +22,7 @@ DTSTART:20230608T105000
 DTEND:20230608T122000
 UID:57d5f6ff@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 08.06.2023
 LOCATION:317
@@ -31,6 +33,7 @@ DTSTART:20230615T105000
 DTEND:20230615T122000
 UID:cc550f86@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 15.06.2023
 LOCATION:317
@@ -41,6 +44,7 @@ DTSTART:20230619T105000
 DTEND:20230619T122000
 UID:9a336b5b@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 19.06.2023
 LOCATION:314
@@ -51,6 +55,7 @@ DTSTART:20230622T091000
 DTEND:20230622T104000
 UID:6777097b@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 09:10 - 10:40 22.06.2023\nNotes: starts at 
  9.30
@@ -62,6 +67,7 @@ DTSTART:20230622T105000
 DTEND:20230622T122000
 UID:4f81143c@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 22.06.2023
 LOCATION:317
@@ -72,6 +78,7 @@ DTSTART:20230626T105000
 DTEND:20230626T122000
 UID:63f57bd9@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 26.06.2023
 LOCATION:314
@@ -82,6 +89,7 @@ DTSTART:20230629T105000
 DTEND:20230629T122000
 UID:2455dcad@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 29.06.2023
 LOCATION:317
@@ -92,6 +100,7 @@ DTSTART:20230703T105000
 DTEND:20230703T122000
 UID:1154d745@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 03.07.2023
 LOCATION:314
@@ -102,6 +111,7 @@ DTSTART:20230703T125000
 DTEND:20230703T142000
 UID:f36289fd@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 316\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 12:50 - 14:20 03.07.2023
 LOCATION:316
@@ -112,6 +122,7 @@ DTSTART:20230706T091000
 DTEND:20230706T104000
 UID:1a94e480@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 09:10 - 10:40 06.07.2023
 LOCATION:317
@@ -122,6 +133,7 @@ DTSTART:20230706T105000
 DTEND:20230706T122000
 UID:3262f9c7@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 06.07.2023
 LOCATION:317
@@ -132,6 +144,7 @@ DTSTART:20230710T105000
 DTEND:20230710T122000
 UID:d34ba256@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 10.07.2023
 LOCATION:314
@@ -142,6 +155,7 @@ DTSTART:20230710T125000
 DTEND:20230710T142000
 UID:317dfcee@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 316\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 12:50 - 14:20 10.07.2023
 LOCATION:316
@@ -152,6 +166,7 @@ DTSTART:20230713T091000
 DTEND:20230713T104000
 UID:fb0616c1@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 09:10 - 10:40 13.07.2023
 LOCATION:317
@@ -162,6 +177,7 @@ DTSTART:20230713T105000
 DTEND:20230713T122000
 UID:d3f00b86@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 13.07.2023
 LOCATION:317
@@ -172,6 +188,7 @@ DTSTART:20230717T105000
 DTEND:20230717T122000
 UID:ff846463@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 314\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 17.07.2023
 LOCATION:314
@@ -182,6 +199,7 @@ DTSTART:20230717T125000
 DTEND:20230717T142000
 UID:1db23adb@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 316\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 12:50 - 14:20 17.07.2023
 LOCATION:316
@@ -192,6 +210,7 @@ DTSTART:20230720T091000
 DTEND:20230720T104000
 UID:45db08e7@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 09:10 - 10:40 20.07.2023
 LOCATION:317
@@ -202,6 +221,7 @@ DTSTART:20230720T105000
 DTEND:20230720T122000
 UID:6d2d15a0@innohassle.ru
 CATEGORIES:Data Wrangling and Visualization
+COLOR:rebeccapurple
 DESCRIPTION:Location: 317\nInstructor: Rustam Lukmanov\nSubject: Data Wran
  gling and Visualization\nTime: 10:50 - 12:20 20.07.2023
 LOCATION:317

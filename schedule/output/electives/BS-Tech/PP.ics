@@ -11,6 +11,7 @@ DTSTART:20230605T175000
 DTEND:20230605T192000
 UID:223594d3@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 17:50 - 19:20 05.06.2023
 LOCATION:108
@@ -21,6 +22,7 @@ DTSTART:20230605T193000
 DTEND:20230605T210000
 UID:ec4af8ca@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 19:30 - 21:00 05.06.2023
 LOCATION:108
@@ -31,6 +33,7 @@ DTSTART:20230609T091000
 DTEND:20230609T104000
 UID:d6051c4f@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Instructor: Alaa Aldin Hajjar\nSubject: Programming in Python\
  nTime: 09:10 - 10:40 09.06.2023\nNotes: lec) 106 (8-11am
 END:VEVENT
@@ -40,6 +43,7 @@ DTSTART:20230619T175000
 DTEND:20230619T192000
 UID:d8ae6b08@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 17:50 - 19:20 19.06.2023
 LOCATION:108
@@ -50,6 +54,7 @@ DTSTART:20230619T193000
 DTEND:20230619T210000
 UID:16d10711@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 19:30 - 21:00 19.06.2023
 LOCATION:108
@@ -60,6 +65,7 @@ DTSTART:20230626T175000
 DTEND:20230626T192000
 UID:dbe14f14@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 17:50 - 19:20 26.06.2023
 LOCATION:108
@@ -70,6 +76,7 @@ DTSTART:20230626T193000
 DTEND:20230626T210000
 UID:159e230d@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 19:30 - 21:00 26.06.2023
 LOCATION:108
@@ -80,6 +87,7 @@ DTSTART:20230703T175000
 DTEND:20230703T192000
 UID:222a31d7@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 17:50 - 19:20 03.07.2023
 LOCATION:108
@@ -90,6 +98,7 @@ DTSTART:20230703T193000
 DTEND:20230703T210000
 UID:ec555dce@innohassle.ru
 CATEGORIES:Programming in Python
+COLOR:burlywood
 DESCRIPTION:Location: 108\nInstructor: Alaa Aldin Hajjar\nType: lec\nSubje
  ct: Programming in Python\nTime: 19:30 - 21:00 03.07.2023
 LOCATION:108

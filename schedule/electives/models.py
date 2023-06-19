@@ -5,6 +5,7 @@ from zlib import crc32
 import icalendar
 from pydantic import BaseModel, validator
 
+from config_base import CSS3Color
 from processors.regex import symbol_translation, remove_trailing_spaces
 
 
@@ -35,6 +36,18 @@ class Elective(BaseModel):
             string = remove_trailing_spaces(string)
             string = string.translate(symbol_translation)
         return string
+
+    @property
+    def color(self: "Elective") -> CSS3Color:
+        """
+        Get color for the subject
+
+        :return: color for the subject
+        """
+
+        color_count = len(CSS3Color)
+        hash_ = crc32(self.name.encode("utf-8"))
+        return CSS3Color.get_by_index(hash_ % color_count)
 
 
 class ElectiveEvent(BaseModel):
@@ -123,5 +136,8 @@ class ElectiveEvent(BaseModel):
 
         if self.location is not None:
             vevent["location"] = self.location
+
+        if hasattr(self.elective, "color"):
+            vevent["color"] = self.elective.color
 
         return vevent

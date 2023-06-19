@@ -1,246 +1,295 @@
 {
     "calendars": [
         {
+            "description": "Blockchain: Distributed Ledger Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/BDLD.ics",
             "name": "BDLD"
         },
         {
+            "description": "Data Wrangling and Visualization",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/DWV.ics",
             "name": "DWV"
         },
         {
+            "description": "Applied Machine Learning",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/AML.ics",
             "name": "AML"
         },
         {
+            "description": "Advanced Statistical and Econometric Methods",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/ASEM.ics",
             "name": "ASEM"
         },
         {
+            "description": "Programming in Python",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP.ics",
             "name": "PP"
         },
         {
+            "description": "Introduction to Robot Operating System: Basics, Motion, and Vision",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/IROS.ics",
             "name": "IROS"
         },
         {
+            "description": "Programming in Haskell",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PH.ics",
             "name": "PH"
         },
         {
+            "description": "Front-end Web Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD.ics",
             "name": "FWD"
         },
         {
+            "description": "System Programming",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/SP.ics",
             "name": "SP"
         },
         {
+            "description": "Front-end Web Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr1.ics",
             "name": "FWD group1"
         },
         {
+            "description": "Programming in Python",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group1.ics",
             "name": "PP group1"
         },
         {
+            "description": "Cross-platform Mobile Development with Flutter",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/CPMD.ics",
             "name": "CPMD"
         },
         {
+            "description": "Programming in Python",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group2.ics",
             "name": "PP group2"
         },
         {
+            "description": "Introduction to Mechanical Engineering",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/IME.ics",
             "name": "IME"
         },
         {
+            "description": "Front-end Web Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr2.ics",
             "name": "FWD group2"
         },
         {
+            "description": "Programming in Python",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group3.ics",
             "name": "PP group3"
         },
         {
+            "description": "Front-end Web Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/FWD-gr3.ics",
             "name": "FWD group3"
         },
         {
+            "description": "Programming in Python",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/PP-group4.ics",
             "name": "PP group4"
         },
         {
+            "description": "Real-Time Scheduling Theory",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/RTST.ics",
             "name": "RTST"
         },
         {
+            "description": "Challenges of Object-Oriented Programming",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/COOP.ics",
             "name": "COOP"
         },
         {
+            "description": "iOS Development with Swift",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/IOSD.ics",
             "name": "IOSD"
         },
         {
+            "description": "Computer Graphics in Game Development",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/CGGD.ics",
             "name": "CGGD"
         },
         {
+            "description": "Introduction to DevOps",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/IDV.ics",
             "name": "IDV"
         },
         {
+            "description": "Architecture of high-load systems",
             "elective_type": "BS Tech",
             "file": "electives/BS-Tech/AHLS.ics",
             "name": "AHLS"
         },
         {
+            "description": "DevOps Engineering (Advanced)",
             "elective_type": "MS Tech",
             "file": "electives/MS-Tech/DVE.ics",
             "name": "DVE"
         },
         {
+            "description": "UX/UI Design",
             "elective_type": "MS Tech",
             "file": "electives/MS-Tech/UXD.ics",
             "name": "UXD"
         },
         {
+            "description": "Application of Artificial Intelligence in Software Engineering",
             "elective_type": "MS Tech",
             "file": "electives/MS-Tech/AAI.ics",
             "name": "AAI"
         },
         {
+            "description": "Design Fiction (Advanced)",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/DFA.ics",
             "name": "DFA"
         },
         {
+            "description": "Psychology of IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/PSY-BS1.ics",
             "name": "PSY BS1"
         },
         {
+            "description": "Basics of Product Management",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BPM-BS1.ics",
             "name": "BPM BS1"
         },
         {
+            "description": "Psychology of IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/PSY-BS2.ics",
             "name": "PSY BS2"
         },
         {
+            "description": "Basics of Product Management",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BPM-BS2.ics",
             "name": "BPM BS2"
         },
         {
+            "description": "Applied Economics: Introduction to IT Entrepreneurship",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/AEIE.ics",
             "name": "AEIE"
         },
         {
+            "description": "Art of Reading (Learning and Understanding)",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/ARLU.ics",
             "name": "ARLU"
         },
         {
+            "description": "Introduction to Music Generation for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IMG.ics",
             "name": "IMG"
         },
         {
+            "description": "UX/UI Design",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/UXD.ics",
             "name": "UXD"
         },
         {
+            "description": "Personal Efficiency Skills of IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/PES.ics",
             "name": "PES"
         },
         {
+            "description": "Introduction to Career Development for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/ICD-BS1.ics",
             "name": "ICD BS1"
         },
         {
+            "description": "Introduction to Career Development for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/ICD-BS2.ics",
             "name": "ICD BS2"
         },
         {
+            "description": "Career and Leadership",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/CL.ics",
             "name": "CL"
         },
         {
+            "description": "Introduction to Public Speaking for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IPS-BS1.ics",
             "name": "IPS BS1"
         },
         {
+            "description": "Introduction to Public Speaking for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/IPS-BS2.ics",
             "name": "IPS BS2"
         },
         {
+            "description": "Design-thinking",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/DT-BS1.ics",
             "name": "DT BS1"
         },
         {
+            "description": "Design-thinking",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/DT-BS2.ics",
             "name": "DT BS2"
         },
         {
+            "description": "Startup CEO Toolkit",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/CEOT.ics",
             "name": "CEOT"
         },
         {
+            "description": "Business communications for IT-specialist",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/BC.ics",
             "name": "BC"
         },
         {
+            "description": "How to build an IT team",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/HBIT.ics",
             "name": "HBIT"
         },
         {
+            "description": "Social Entrepreneurship",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/SE-BS1.ics",
             "name": "SE BS1"
         },
         {
+            "description": "Social Entrepreneurship",
             "elective_type": "BS/MS Hum",
             "file": "electives/BS-MS-Hum/SE-BS2.ics",
             "name": "SE BS2"

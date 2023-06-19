@@ -11,6 +11,7 @@ DTSTART:20230605T175000
 DTEND:20230605T192000
 UID:c7f2773c@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 05.06.2023
 LOCATION:online
@@ -21,6 +22,7 @@ DTSTART:20230605T193000
 DTEND:20230605T210000
 UID:18f63d28@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 05.06.2023
 LOCATION:online
@@ -31,6 +33,7 @@ DTSTART:20230606T175000
 DTEND:20230606T192000
 UID:838bf2ca@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 06.06.2023
 LOCATION:online
@@ -41,6 +44,7 @@ DTSTART:20230606T193000
 DTEND:20230606T210000
 UID:5c8fb8de@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 06.06.2023
 LOCATION:online
@@ -51,6 +55,7 @@ DTSTART:20230613T175000
 DTEND:20230613T192000
 UID:ca58648b@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 13.06.2023
 LOCATION:online
@@ -61,6 +66,7 @@ DTSTART:20230613T193000
 DTEND:20230613T210000
 UID:155c2e9f@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 13.06.2023
 LOCATION:online
@@ -71,6 +77,7 @@ DTSTART:20230619T175000
 DTEND:20230619T192000
 UID:883c7efe@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 19.06.2023
 LOCATION:online
@@ -81,6 +88,7 @@ DTSTART:20230619T193000
 DTEND:20230619T210000
 UID:573834ea@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 19.06.2023
 LOCATION:online
@@ -91,6 +99,7 @@ DTSTART:20230622T175000
 DTEND:20230622T192000
 UID:a2eac975@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 22.06.2023
 LOCATION:online
@@ -101,6 +110,7 @@ DTSTART:20230622T193000
 DTEND:20230622T210000
 UID:7dee8361@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 22.06.2023
 LOCATION:online
@@ -111,6 +121,7 @@ DTSTART:20230626T175000
 DTEND:20230626T192000
 UID:5248c43d@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 26.06.2023
 LOCATION:online
@@ -121,6 +132,7 @@ DTSTART:20230626T193000
 DTEND:20230626T210000
 UID:8d4c8e29@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 26.06.2023
 LOCATION:online
@@ -131,6 +143,7 @@ DTSTART:20230629T175000
 DTEND:20230629T192000
 UID:dca65052@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 29.06.2023
 LOCATION:online
@@ -141,6 +154,7 @@ DTSTART:20230629T193000
 DTEND:20230629T210000
 UID:3a21a46@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 29.06.2023
 LOCATION:online
@@ -151,6 +165,7 @@ DTSTART:20230710T175000
 DTEND:20230710T192000
 UID:c40278ed@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 10.07.2023
 LOCATION:online
@@ -161,6 +176,7 @@ DTSTART:20230710T193000
 DTEND:20230710T210000
 UID:1b0632f9@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 10.07.2023
 LOCATION:online
@@ -171,6 +187,7 @@ DTSTART:20230713T175000
 DTEND:20230713T192000
 UID:807bfd1b@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 13.07.2023
 LOCATION:online
@@ -181,6 +198,7 @@ DTSTART:20230713T193000
 DTEND:20230713T210000
 UID:5f7fb70f@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 13.07.2023
 LOCATION:online
@@ -191,6 +209,7 @@ DTSTART:20230717T175000
 DTEND:20230717T192000
 UID:70d9f053@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 17.07.2023
 LOCATION:online
@@ -201,6 +220,7 @@ DTSTART:20230717T193000
 DTEND:20230717T210000
 UID:afddba47@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 17.07.2023
 LOCATION:online
@@ -211,6 +231,7 @@ DTSTART:20230720T175000
 DTEND:20230720T192000
 UID:90985641@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 17:50 - 19:20 20.07.2023
 LOCATION:online
@@ -221,6 +242,7 @@ DTSTART:20230720T193000
 DTEND:20230720T210000
 UID:4f9c1c55@innohassle.ru
 CATEGORIES:System Programming
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Vladislav Shpilevoy\nSubject: Sy
  stem Programming\nTime: 19:30 - 21:00 20.07.2023
 LOCATION:online

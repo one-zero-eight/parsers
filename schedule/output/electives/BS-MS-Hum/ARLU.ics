@@ -11,6 +11,7 @@ DTSTART:20230606T143000
 DTEND:20230606T160000
 UID:ad8713c@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 06.06.2023
 LOCATION:421
@@ -21,6 +22,7 @@ DTSTART:20230606T161000
 DTEND:20230606T174000
 UID:ab34a3ff@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 06.06.2023
 LOCATION:421
@@ -31,6 +33,7 @@ DTSTART:20230613T143000
 DTEND:20230613T160000
 UID:eb4a837d@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 13.06.2023
 LOCATION:421
@@ -41,6 +44,7 @@ DTSTART:20230613T161000
 DTEND:20230613T174000
 UID:4aa651be@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 13.06.2023
 LOCATION:421
@@ -51,6 +55,7 @@ DTSTART:20230620T143000
 DTEND:20230620T160000
 UID:55979d5b@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 20.06.2023
 LOCATION:421
@@ -61,6 +66,7 @@ DTSTART:20230620T161000
 DTEND:20230620T174000
 UID:f47b4f98@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 20.06.2023
 LOCATION:421
@@ -71,6 +77,7 @@ DTSTART:20230627T143000
 DTEND:20230627T160000
 UID:79585b6e@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 27.06.2023
 LOCATION:421
@@ -81,48 +88,9 @@ DTSTART:20230627T161000
 DTEND:20230627T174000
 UID:d8b489ad@innohassle.ru
 CATEGORIES:Art of Reading (Learning and Understanding)
+COLOR:burlywood
 DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
  of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 27.06.2023
-LOCATION:421
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Art of Reading (Learning and Understanding)
-DTSTART:20230704T143000
-DTEND:20230704T160000
-UID:287470a0@innohassle.ru
-CATEGORIES:Art of Reading (Learning and Understanding)
-DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
- of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 04.07.2023
-LOCATION:421
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Art of Reading (Learning and Understanding)
-DTSTART:20230704T161000
-DTEND:20230704T174000
-UID:8998a263@innohassle.ru
-CATEGORIES:Art of Reading (Learning and Understanding)
-DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
- of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 04.07.2023
-LOCATION:421
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Art of Reading (Learning and Understanding)
-DTSTART:20230711T143000
-DTEND:20230711T160000
-UID:c9e682e1@innohassle.ru
-CATEGORIES:Art of Reading (Learning and Understanding)
-DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
- of Reading (Learning and Understanding)\nTime: 14:30 - 16:00 11.07.2023
-LOCATION:421
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Art of Reading (Learning and Understanding)
-DTSTART:20230711T161000
-DTEND:20230711T174000
-UID:680a5022@innohassle.ru
-CATEGORIES:Art of Reading (Learning and Understanding)
-DESCRIPTION:Location: 421\nInstructor: Viktoria Kondratieva\nSubject: Art 
- of Reading (Learning and Understanding)\nTime: 16:10 - 17:40 11.07.2023
 LOCATION:421
 END:VEVENT
 END:VCALENDAR

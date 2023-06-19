@@ -11,6 +11,7 @@ DTSTART:20230610T091000
 DTEND:20230610T104000
 UID:382dd7e3@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 09:10 - 10:40 10.06.2023
 LOCATION:321
@@ -21,6 +22,7 @@ DTSTART:20230610T105000
 DTEND:20230610T122000
 UID:d0bdf5cd@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 10:50 - 12:20 10.06.2023
 LOCATION:321
@@ -31,6 +33,7 @@ DTSTART:20230610T125000
 DTEND:20230610T142000
 UID:9245dd4e@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 12:50 - 14:20 10.06.2023
 LOCATION:321
@@ -41,6 +44,7 @@ DTSTART:20230610T143000
 DTEND:20230610T160000
 UID:88cd0f4f@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 14:30 - 16:00 10.06.2023
 LOCATION:321
@@ -51,6 +55,7 @@ DTSTART:20230624T091000
 DTEND:20230624T104000
 UID:bc0184e5@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 09:10 - 10:40 24.06.2023
 LOCATION:321
@@ -61,6 +66,7 @@ DTSTART:20230624T105000
 DTEND:20230624T122000
 UID:5491a6cb@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 10:50 - 12:20 24.06.2023
 LOCATION:321
@@ -71,6 +77,7 @@ DTSTART:20230624T125000
 DTEND:20230624T142000
 UID:16698e48@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 12:50 - 14:20 24.06.2023
 LOCATION:321
@@ -81,48 +88,9 @@ DTSTART:20230624T143000
 DTEND:20230624T160000
 UID:ce15c49@innohassle.ru
 CATEGORIES:Design-thinking
+COLOR:darkblue
 DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
  t: Design-thinking\nTime: 14:30 - 16:00 24.06.2023
-LOCATION:321
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Design-thinking
-DTSTART:20230715T091000
-DTEND:20230715T104000
-UID:9729af68@innohassle.ru
-CATEGORIES:Design-thinking
-DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
- t: Design-thinking\nTime: 09:10 - 10:40 15.07.2023
-LOCATION:321
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Design-thinking
-DTSTART:20230715T105000
-DTEND:20230715T122000
-UID:7fb98d46@innohassle.ru
-CATEGORIES:Design-thinking
-DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
- t: Design-thinking\nTime: 10:50 - 12:20 15.07.2023
-LOCATION:321
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Design-thinking
-DTSTART:20230715T125000
-DTEND:20230715T142000
-UID:3d41a5c5@innohassle.ru
-CATEGORIES:Design-thinking
-DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
- t: Design-thinking\nTime: 12:50 - 14:20 15.07.2023
-LOCATION:321
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Design-thinking
-DTSTART:20230715T143000
-DTEND:20230715T160000
-UID:27c977c4@innohassle.ru
-CATEGORIES:Design-thinking
-DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS2\nSubjec
- t: Design-thinking\nTime: 14:30 - 16:00 15.07.2023
 LOCATION:321
 END:VEVENT
 END:VCALENDAR

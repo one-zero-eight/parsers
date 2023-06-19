@@ -11,6 +11,7 @@ DTSTART:20230606T091000
 DTEND:20230606T104000
 UID:41f926e1@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 09:10 - 10:40 06.06.2023
 LOCATION:320
@@ -21,6 +22,7 @@ DTSTART:20230608T143000
 DTEND:20230608T160000
 UID:5c27e987@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 08.06.2023
 LOCATION:320
@@ -31,6 +33,7 @@ DTSTART:20230609T143000
 DTEND:20230609T160000
 UID:8ffe5f3d@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 09.06.2023
 LOCATION:320
@@ -41,6 +44,7 @@ DTSTART:20230613T091000
 DTEND:20230613T104000
 UID:40c3c515@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 09:10 - 10:40 13.06.2023
 LOCATION:320
@@ -51,6 +55,7 @@ DTSTART:20230615T143000
 DTEND:20230615T160000
 UID:7565a0e6@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 15.06.2023
 LOCATION:320
@@ -61,6 +66,7 @@ DTSTART:20230616T143000
 DTEND:20230616T160000
 UID:da7e7d69@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 16.06.2023
 LOCATION:320
@@ -71,6 +77,7 @@ DTSTART:20230620T091000
 DTEND:20230620T104000
 UID:92709df6@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 09:10 - 10:40 20.06.2023
 LOCATION:320
@@ -81,6 +88,7 @@ DTSTART:20230622T143000
 DTEND:20230622T160000
 UID:5e522e6f@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 22.06.2023
 LOCATION:320
@@ -91,6 +99,7 @@ DTSTART:20230623T143000
 DTEND:20230623T160000
 UID:8d8b98d5@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 23.06.2023
 LOCATION:320
@@ -101,6 +110,7 @@ DTSTART:20230627T091000
 DTEND:20230627T104000
 UID:c4ef9613@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 09:10 - 10:40 27.06.2023
 LOCATION:320
@@ -111,6 +121,7 @@ DTSTART:20230629T143000
 DTEND:20230629T160000
 UID:d9315975@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 29.06.2023
 LOCATION:320
@@ -121,28 +132,9 @@ DTSTART:20230630T143000
 DTEND:20230630T160000
 UID:9f7c67e@innohassle.ru
 CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
 DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
  : Psychology of IT-specialist\nTime: 14:30 - 16:00 30.06.2023
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Psychology of IT-specialist
-DTSTART:20230704T091000
-DTEND:20230704T104000
-UID:b862558f@innohassle.ru
-CATEGORIES:Psychology of IT-specialist
-DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
- : Psychology of IT-specialist\nTime: 09:10 - 10:40 04.07.2023
-LOCATION:320
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Psychology of IT-specialist
-DTSTART:20230707T143000
-DTEND:20230707T160000
-UID:a79950ac@innohassle.ru
-CATEGORIES:Psychology of IT-specialist
-DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
- : Psychology of IT-specialist\nTime: 14:30 - 16:00 07.07.2023
 LOCATION:320
 END:VEVENT
 END:VCALENDAR

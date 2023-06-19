@@ -11,6 +11,7 @@ DTSTART:20230605T143000
 DTEND:20230605T160000
 UID:13e5d2c6@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.06.2023
 LOCATION:online
@@ -21,6 +22,7 @@ DTSTART:20230605T161000
 DTEND:20230605T174000
 UID:9abef3b0@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.06.2023
 LOCATION:online
@@ -31,6 +33,7 @@ DTSTART:20230619T143000
 DTEND:20230619T160000
 UID:f518256d@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 19.06.2023
 LOCATION:316
@@ -41,6 +44,7 @@ DTSTART:20230619T161000
 DTEND:20230619T174000
 UID:54f4f7ae@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 19.06.2023
 LOCATION:316
@@ -51,6 +55,7 @@ DTSTART:20230621T175000
 DTEND:20230621T192000
 UID:9e34e4fa@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 321\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 17:50 - 19:20 21.06.2023
 LOCATION:321
@@ -61,6 +66,7 @@ DTSTART:20230621T193000
 DTEND:20230621T210000
 UID:80bc628d@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 321\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 19:30 - 21:00 21.06.2023
 LOCATION:321
@@ -71,6 +77,7 @@ DTSTART:20230626T143000
 DTEND:20230626T160000
 UID:865f61c7@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 26.06.2023
 LOCATION:online
@@ -81,6 +88,7 @@ DTSTART:20230626T161000
 DTEND:20230626T174000
 UID:f0440b1@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 26.06.2023
 LOCATION:online
@@ -91,6 +99,7 @@ DTSTART:20230703T143000
 DTEND:20230703T160000
 UID:d13540ba@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 03.07.2023
 LOCATION:online
@@ -101,6 +110,7 @@ DTSTART:20230703T161000
 DTEND:20230703T174000
 UID:586e61cc@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
  ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 03.07.2023
 LOCATION:online
@@ -111,6 +121,7 @@ DTSTART:20230705T143000
 DTEND:20230705T160000
 UID:e409c5c9@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.07.2023
 LOCATION:317
@@ -121,6 +132,7 @@ DTSTART:20230705T161000
 DTEND:20230705T174000
 UID:45e5170a@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.07.2023
 LOCATION:317
@@ -131,6 +143,7 @@ DTSTART:20230710T143000
 DTEND:20230710T160000
 UID:bc60ec60@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 10.07.2023
 LOCATION:316
@@ -141,6 +154,7 @@ DTSTART:20230710T161000
 DTEND:20230710T174000
 UID:1d8c3ea3@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 10.07.2023
 LOCATION:316
@@ -151,6 +165,7 @@ DTSTART:20230712T143000
 DTEND:20230712T160000
 UID:1b1fb546@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 12.07.2023
 LOCATION:317
@@ -161,6 +176,7 @@ DTSTART:20230712T161000
 DTEND:20230712T174000
 UID:baf36785@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 12.07.2023
 LOCATION:317
@@ -171,6 +187,7 @@ DTSTART:20230717T143000
 DTEND:20230717T160000
 UID:90af2a55@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 17.07.2023
 LOCATION:316
@@ -181,6 +198,7 @@ DTSTART:20230717T161000
 DTEND:20230717T174000
 UID:3143f896@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 316\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 17.07.2023
 LOCATION:316
@@ -191,6 +209,7 @@ DTSTART:20230719T143000
 DTEND:20230719T160000
 UID:70cb7dd7@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 14:30 - 16:00 19.07.2023
 LOCATION:317
@@ -201,6 +220,7 @@ DTSTART:20230719T161000
 DTEND:20230719T174000
 UID:d127af14@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
 DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
   Statistical and Econometric Methods\nTime: 16:10 - 17:40 19.07.2023
 LOCATION:317
