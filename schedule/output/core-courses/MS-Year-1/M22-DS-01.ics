@@ -88,41 +88,38 @@ DESCRIPTION:Location: 314\nInstructor: Firas Jolha\nType: lab\nGroup: M22-
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Systematic Literature Review for DS(lab) (lab)
+SUMMARY:Systematic Literature Review for DS (lab)
 DTSTART:20230126T142000
 DTEND:20230126T155000
-UID:ba3eb90a@innohassle.ru
+UID:eae900fb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
-CATEGORIES:Systematic Literature Review for DS(lab)
+CATEGORIES:Systematic Literature Review for DS
 DESCRIPTION:Location: 313\nInstructor: Mirko Farina\nType: lab\nGroup: M22
- -DS-01\nSubject: Systematic Literature Review for DS(lab)\nTime: 14:20 - 1
- 5:50
+ -DS-01\nSubject: Systematic Literature Review for DS\nTime: 14:20 - 15:50
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
+SUMMARY:Big Data Technologies and AnalyticsSTARTS ON 3/02 (lec)
 DTSTART:20230127T104000
 DTEND:20230127T121000
-UID:3dcf54f@innohassle.ru
+UID:4510d1c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
-CATEGORIES:Big Data Technologies and Analytics (lec) STARTS ON 3/02
+CATEGORIES:Big Data Technologies and AnalyticsSTARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
- g Data Technologies and Analytics (lec) STARTS ON 3/02\nTime: 10:40 - 12:1
- 0
+ g Data Technologies and AnalyticsSTARTS ON 3/02\nTime: 10:40 - 12:10
 LOCATION:ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/04 )
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Big Data Technologies and Analytics (lec) STARTS ON 3/02 (lec)
+SUMMARY:Big Data Technologies and AnalyticsSTARTS ON 3/02 (lec)
 DTSTART:20230127T124000
 DTEND:20230127T141000
-UID:b17fdb0b@innohassle.ru
+UID:b6f22358@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
-CATEGORIES:Big Data Technologies and Analytics (lec) STARTS ON 3/02
+CATEGORIES:Big Data Technologies and AnalyticsSTARTS ON 3/02
 DESCRIPTION:Location: ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/0
  4 )\nInstructor: Armen Beklaryan\nType: lec\nGroup: M22-DS-01\nSubject: Bi
- g Data Technologies and Analytics (lec) STARTS ON 3/02\nTime: 12:40 - 14:1
- 0
+ g Data Technologies and AnalyticsSTARTS ON 3/02\nTime: 12:40 - 14:10
 LOCATION:ONLINE (ROOM 107 ON 03/02\,17/02\,17/03\,14/04\,21/04 )
 END:VEVENT
 BEGIN:VEVENT

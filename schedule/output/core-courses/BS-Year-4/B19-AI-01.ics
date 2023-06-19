@@ -18,55 +18,55 @@ DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
 LOCATION:313/314/320/321
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-UID:e3a3d760@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:a14d2c02@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
+ B19-AI-01\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-UID:b360b54d@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:f18e4e2f@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
+ B19-AI-01\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Human-AI Interaction Design (lec)
+SUMMARY:Human (lec)
 DTSTART:20230124T181000
 DTEND:20230124T194000
-UID:510fc220@innohassle.ru
+UID:146fb47b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
-CATEGORIES:Human-AI Interaction Design
+CATEGORIES:Human
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
- B19-AI-01\nSubject: Human-AI Interaction Design\nTime: 18:10 - 19:40
+ B19-AI-01\nSubject: Human\nTime: 18:10 - 19:40
 LOCATION:ONLINE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Human-AI Interaction Design (lab)
+SUMMARY:Human (lab)
 DTSTART:20230125T145000
 DTEND:20230125T162000
-UID:ca1502ce@innohassle.ru
+UID:8f757495@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230319;INTERVAL=1
-CATEGORIES:Human-AI Interaction Design
+CATEGORIES:Human
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
- B19-AI-01\nSubject: Human-AI Interaction Design\nTime: 14:50 - 16:20
+ B19-AI-01\nSubject: Human\nTime: 14:50 - 16:20
 LOCATION:104
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-UID:5356f6b1@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:11b80dd3@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-AI-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
+ B19-AI-01\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
@@ -82,25 +82,25 @@ DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
 LOCATION:313/314/320/321
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Human-AI Interaction Design (lec)
+SUMMARY:Human (lec)
 DTSTART:20230321T181000
 DTEND:20230321T194000
-UID:1a0ca1c0@innohassle.ru
+UID:5f6cd79b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
-CATEGORIES:Human-AI Interaction Design
+CATEGORIES:Human
 DESCRIPTION:Location: ONLINE\nInstructor: Andrea Calì\nType: lec\nGroup: 
- B19-AI-01\nSubject: Human-AI Interaction Design\nTime: 18:10 - 19:40
+ B19-AI-01\nSubject: Human\nTime: 18:10 - 19:40
 LOCATION:ONLINE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Human-AI Interaction Design (lab)
+SUMMARY:Human (lab)
 DTSTART:20230322T145000
 DTEND:20230322T162000
-UID:8292b540@innohassle.ru
+UID:c7f2c31b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
-CATEGORIES:Human-AI Interaction Design
+CATEGORIES:Human
 DESCRIPTION:Location: 104\nInstructor: Ali Belal Jnadi\nType: lab\nGroup: 
- B19-AI-01\nSubject: Human-AI Interaction Design\nTime: 14:50 - 16:20
+ B19-AI-01\nSubject: Human\nTime: 14:50 - 16:20
 LOCATION:104
 END:VEVENT
 END:VCALENDAR

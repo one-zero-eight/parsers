@@ -18,23 +18,23 @@ DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
 LOCATION:313/314/320/321
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-UID:b0b4dd06@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:f25a2664@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-CS-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
+ B19-CS-01\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-UID:e077bf2b@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:a2994449@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-CS-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
+ B19-CS-01\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
@@ -61,13 +61,13 @@ DESCRIPTION:Location: 106 (STARTS ON 09/02)\nInstructor: Danil Kolesnilov\
 LOCATION:106 (STARTS ON 09/02)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-UID:41fcd7@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:42af07b5@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-CS-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
+ B19-CS-01\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
@@ -94,15 +94,15 @@ DESCRIPTION:Location: ONLINE (starts on 14/03)\nInstructor: Andrey Vasilev
 LOCATION:ONLINE (starts on 14/03)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports- Optimal Nutrition(lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230321T131000
 DTEND:20230321T144000
-UID:9045e9d1@innohassle.ru
+UID:2c9f4c7@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
-CATEGORIES:Theoretical Sports- Optimal Nutrition(lec)
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: ONLINE (FINAL QUIZ)\nInstructor: Alexey Petrenko\nTy
- pe: lec\nGroup: B19-CS-01\nSubject: Theoretical Sports- Optimal Nutrition(
- lec)\nTime: 13:10 - 14:40
+ pe: lec\nGroup: B19-CS-01\nSubject: Theoretical Sports\nTime: 13:10 - 14:4
+ 0
 LOCATION:ONLINE (FINAL QUIZ)
 END:VEVENT
 BEGIN:VEVENT

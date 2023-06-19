@@ -18,23 +18,23 @@ DESCRIPTION:Location: 313/314/320/321\nInstructor: Georgiy Gelvanovsky\,Ra
 LOCATION:313/314/320/321
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-UID:577adaba@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:159421d8@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 14:50 - 16:20
+ B19-RO-01\nSubject: Theoretical Sports\nTime: 14:50 - 16:20
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-UID:7b9b897@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:455743f5@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 16:30 - 18:00
+ B19-RO-01\nSubject: Theoretical Sports\nTime: 16:30 - 18:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
@@ -60,13 +60,13 @@ DESCRIPTION:Location: 105\nInstructor: Maxim Evgrafov\nType: lab\nGroup: B
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical Sports (lec) (lec)
+SUMMARY:Theoretical Sports (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-UID:e78ffb6b@innohassle.ru
-CATEGORIES:Theoretical Sports (lec)
+UID:a5610009@innohassle.ru
+CATEGORIES:Theoretical Sports
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
- B19-RO-01\nSubject: Theoretical Sports (lec)\nTime: 09:30 - 11:00
+ B19-RO-01\nSubject: Theoretical Sports\nTime: 09:30 - 11:00
 LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
