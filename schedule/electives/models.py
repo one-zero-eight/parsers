@@ -5,7 +5,7 @@ from zlib import crc32
 import icalendar
 from pydantic import BaseModel, validator
 
-from utils import remove_trailing_spaces, symbol_translation
+from processors.regex import symbol_translation, remove_trailing_spaces
 
 
 class Elective(BaseModel):

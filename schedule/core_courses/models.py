@@ -4,9 +4,10 @@ from typing import Optional
 from zlib import crc32
 
 import icalendar
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 
-from schedule.utils import get_current_year
+import utils
+from processors.regex import process_only_on, process_desc_in_parentheses, remove_trailing_spaces
 
 
 class Subject(BaseModel):
@@ -35,9 +36,9 @@ class Subject(BaseModel):
         :rtype: Subject
         """
 
-        dirt_name = re.sub(r"\s+\(.*\)\s*$", "", dirt_name)
-        dirt_name = re.sub(r"\s+-.*$", "", dirt_name)
-        clear_name = re.sub(r"\s+$", "", dirt_name)
+        dirt_name = re.sub(r"\s*\(.*\)\s*", "", dirt_name)
+        dirt_name = re.sub(r"\s*-.*$", "", dirt_name)
+        clear_name = remove_trailing_spaces(dirt_name)
 
         if clear_name not in cls.__instances__:
             cls.__instances__[clear_name] = cls(name=clear_name)
@@ -80,7 +81,7 @@ class ScheduleEvent(BaseModel):
     """End time of the event"""
     day: Optional[datetime.date]
     """Day of the event"""
-    dtstamp: Optional[datetime.datetime]
+    dtstamp: Optional[datetime.date]
     """Timestamp of the event"""
     location: Optional[str]
     """Location of the event"""
@@ -88,14 +89,23 @@ class ScheduleEvent(BaseModel):
     """Instructor of the event"""
     event_type: Optional[str]
     """Type of the event"""
-    recurrence: Optional[list[dict]]
+    recurrence: Optional[icalendar.vRecur]
     """Recurrence of the event"""
-    flags: 'Flags' = Field(default_factory=lambda: Flags())
+    flags: "Flags" = Field(default_factory=lambda: Flags())
     """External flags for the event"""
     group: Optional[str]
     """Group for which the event is"""
     course: Optional[str]
     """Course for which the event is"""
+
+    class Config:
+        validate_assignment = True
+
+    @validator("recurrence", pre=True, always=True)
+    def convert_to_ical(cls, v: dict | None) -> Optional[icalendar.vRecur]:
+        if isinstance(v, dict):
+            v = icalendar.vRecur(**v)
+        return v
 
     @property
     def summary(self: "ScheduleEvent") -> str:
@@ -211,25 +221,14 @@ class ScheduleEvent(BaseModel):
         subject = Subject.from_str(_title)
         instructor = next(iterator, None)
         location = next(iterator, None)
-
-        only_on = False
-
-        if location:
-            # "108 (ONLY ON 14/06)" -> "108", only_on=datetime(6, 14)
-
-            if match := re.search(r"\(ONLY ON (\d+)/(\d+)\)", location, flags=re.IGNORECASE):
-                location = location[: match.start()].strip()
-                day_ = int(match.group(1))
-                month_ = int(match.group(2))
-                only_on = datetime.datetime(get_current_year(), day=day_, month=month_).date()
         event_type = None
+        only_on = None
 
-        if match := re.search(r"\((.+)\)", _title):
-            # "Software Project (lec)" -> "lec"
-            # "Software Project (lab )" -> "lab"
-            event_type = match.group(1)
-            # remove spaces
-            event_type = re.sub(r"\s+", "", event_type)
+        if location and (r := process_only_on(location)):
+            location, only_on = r
+
+        if _title and (r := process_desc_in_parentheses(_title)):
+            _, event_type = r
 
         if subject:
             self.subject = subject
@@ -242,18 +241,23 @@ class ScheduleEvent(BaseModel):
         if only_on:
             self.flags.only_on_specific_date = only_on
 
-    def get_vevent(self) -> icalendar.Event:
+    def get_vevents(self) -> list[icalendar.Event]:
         """Convert event to icalendar.Event
 
         :return: VEVENT for the event with all fields filled
         :rtype: icalendar.Event
         """
 
+        vevents = []
+        dtstart = datetime.datetime.combine(self.day, self.start_time)
+        dtend = datetime.datetime.combine(self.day, self.end_time)
         vevent = icalendar.Event(
             summary=self.summary,
             description=self.description,
             uid=self.get_uid(),
             categories=self.subject.name,
+            dtstart=icalendar.vDatetime(dtstart),
+            dtend=icalendar.vDatetime(dtend),
         )
 
         # if self.dtstamp:
@@ -262,24 +266,26 @@ class ScheduleEvent(BaseModel):
         if self.location:
             vevent["location"] = self.location
 
-        dtstart = self.dtstart
-        dtend = self.dtend
-
         if specific_date := self.flags.only_on_specific_date:
-            dtstart = datetime.datetime.combine(specific_date, self.start_time)
-            dtend = datetime.datetime.combine(specific_date, self.end_time)
+            for date in specific_date:
+                date = date.replace(year=self.day.year)
+                dtstart = datetime.datetime.combine(date, self.start_time)
+                dtend = datetime.datetime.combine(date, self.end_time)
+                _vevent = vevent.copy()
+                _vevent["dtstart"] = icalendar.vDatetime(dtstart)
+                _vevent["dtend"] = icalendar.vDatetime(dtend)
+                vevents.append(_vevent)
         elif self.recurrence:
-            vevent.add("rrule", self.recurrence)
+            _vevent = vevent.copy()
+            _vevent["rrule"] = self.recurrence
+            vevents.append(_vevent)
 
-        vevent["dtstart"] = icalendar.vDatetime(dtstart)
-        vevent["dtend"] = icalendar.vDatetime(dtend)
-
-        return vevent
+        return vevents
 
 
 class Flags(BaseModel):
     """External flags for the event"""
 
-    only_on_specific_date: bool | datetime.date = False
+    only_on_specific_date: list[datetime.date] | None = None
     """If the event is only on specific date, this flag will be set to that date
     For ex. if the event is only on 2021-09-01, this flag will be set to 2021-09-01"""

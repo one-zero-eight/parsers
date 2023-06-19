@@ -44,17 +44,6 @@ class BaseParserConfig(BaseModel):
     TIMEZONE_DELTA = "+03:00"
     """Timezone delta for events"""
 
-    DAYS = [
-        "MONDAY",
-        "TUESDAY",
-        "WEDNESDAY",
-        "THURSDAY",
-        "FRIDAY",
-        "SATURDAY",
-        "SUNDAY",
-    ]
-    """Days of week"""
-
     @validator(
         "CREDENTIALS_PATH", "TOKEN_PATH", "SAVE_ICS_PATH", "SAVE_JSON_PATH",
         pre=True, always=True)
@@ -65,8 +54,7 @@ class BaseParserConfig(BaseModel):
             v = PROJECT_ROOT / v
         return v
 
-    @validator("CREDENTIALS_PATH",
-               "TOKEN_PATH", always=True)
+    @validator("CREDENTIALS_PATH", always=True)
     def file_exists(cls, v: Path):
         """Check if file exists"""
         if not v.exists():

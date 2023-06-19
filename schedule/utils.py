@@ -1,6 +1,5 @@
 import datetime
 import os
-import re
 from pathlib import Path
 
 import googleapiclient.discovery
@@ -35,45 +34,9 @@ weekday_converter = {
     "SUNDAY": 6,
 }
 
-pattern_multiple_spaces = re.compile(r"\s{2,}")
-
-symbol_translation = str.maketrans(
-    "АВЕКМНОРСТУХаср",
-    "ABEKMHOPCTYXacp",
-    #  ' \n\t'
-)
-
-
-def remove_trailing_spaces(s: str) -> str:
-    """
-    Remove multiple spaces and trailing spaces.
-
-    :param s: string to remove spaces from
-    :type s: str
-    :return: string without multiple spaces and trailing spaces
-    :rtype: str
-    """
-    return pattern_multiple_spaces.sub(" ", s).strip()
-
-
-def beautify_string(string: str | None) -> str | None:
-    """
-    Remove trailing spaces and translate cyrillic symbols to latin ??.
-    #TODO
-
-    :param string: string to beautify
-    :type string: str
-    :return: beautified string
-    :rtype: str
-    """
-    if string is not None:
-        string = remove_trailing_spaces(string)
-        string = string.translate(symbol_translation)
-    return string
-
 
 def get_credentials(
-    credentials_path: Path, token_path: Path, scopes: list[str]
+        credentials_path: Path, token_path: Path, scopes: list[str]
 ) -> Credentials:
     """
     Initialize API credentials.
@@ -109,7 +72,7 @@ def get_credentials(
 
 
 def connect_spreadsheets(
-    credentials: Credentials,
+        credentials: Credentials,
 ) -> googleapiclient.discovery.Resource:
     """
     Connect to Google Sheets API.
@@ -136,14 +99,23 @@ def get_current_year() -> int:
     return datetime.datetime.now().year
 
 
+DAYS = [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY",
+]
+"""Days of week"""
+
 __all__ = [
     "get_current_year",
     "weekday_converter",
     "nearest_weekday",
-    "remove_trailing_spaces",
-    "beautify_string",
     "get_credentials",
     "connect_spreadsheets",
-    "symbol_translation",
     "get_project_root",
+    "DAYS",
 ]

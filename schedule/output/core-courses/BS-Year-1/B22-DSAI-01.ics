@@ -477,198 +477,53 @@ DESCRIPTION:Location: 314\nInstructor: Munir Makhmutov\nType: lab\nGroup:
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical sports(lec) Physiology of sports (lec)
-DTSTART:20230613T104000
-DTEND:20230613T121000
-UID:3ef9961b@innohassle.ru
-CATEGORIES:Theoretical sports(lec) Physiology of sports
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B22-DSAI-01\nSubject: Theoretical sports(lec) Physiology of sports\nTime: 
- 10:40 - 12:10
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230620T104000
+DTEND:20230620T121000
+UID:b16a16e@innohassle.ru
+CATEGORIES:Theoretical sports
+DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
+ 22-DSAI-01\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical sports(lec) Physiology of sports (lec)
-DTSTART:20230613T124000
-DTEND:20230613T141000
-UID:763aa376@innohassle.ru
-CATEGORIES:Theoretical sports(lec) Physiology of sports
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B22-DSAI-01\nSubject: Theoretical sports(lec) Physiology of sports\nTime: 
- 12:40 - 14:10
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230627T104000
+DTEND:20230627T121000
+UID:b16a16e@innohassle.ru
+CATEGORIES:Theoretical sports
+DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
+ 22-DSAI-01\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical sports (lec) Physiology of sports (lec)
-DTSTART:20230614T104000
-DTEND:20230614T121000
-UID:c104d381@innohassle.ru
-CATEGORIES:Theoretical sports (lec) Physiology of sports
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B22-DSAI-01\nSubject: Theoretical sports (lec) Physiology of sports\nTime:
-  10:40 - 12:10
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230621T104000
+DTEND:20230621T121000
+UID:ad4cb59@innohassle.ru
+CATEGORIES:Theoretical sports
+DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
+ 22-DSAI-01\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical sports (lec) Physiology of sports (lec)
-DTSTART:20230614T124000
-DTEND:20230614T141000
-UID:89c7e6ec@innohassle.ru
-CATEGORIES:Theoretical sports (lec) Physiology of sports
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B22-DSAI-01\nSubject: Theoretical sports (lec) Physiology of sports\nTime:
-  12:40 - 14:10
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230628T104000
+DTEND:20230628T121000
+UID:ad4cb59@innohassle.ru
+CATEGORIES:Theoretical sports
+DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
+ 22-DSAI-01\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theoretical sports (lec) Physiology of sports (lec)
-DTSTART:20230615T104000
-DTEND:20230615T121000
-UID:ca5894bc@innohassle.ru
-CATEGORIES:Theoretical sports (lec) Physiology of sports
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B22-DSAI-01\nSubject: Theoretical sports (lec) Physiology of sports\nTime:
-  10:40 - 12:10
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230622T104000
+DTEND:20230622T121000
+UID:1888c64@innohassle.ru
+CATEGORIES:Theoretical sports
+DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
+ 22-DSAI-01\nSubject: Theoretical sports\nTime: 10:40 - 12:10
 LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230617T142000
-DTEND:20230617T155000
-UID:ddd40b90@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 14:20 - 15:50
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230621T193000
-DTEND:20230621T210000
-UID:4ab4a603@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 19:30 - 21:00
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230622T193000
-DTEND:20230622T210000
-UID:48f2185a@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 19:30 - 21:00
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230624T193000
-DTEND:20230624T210000
-UID:4c7f64e8@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 19:30 - 21:00
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230630T160000
-DTEND:20230630T173000
-UID:9e880a40@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 16:00 - 17:30
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230630T174000
-DTEND:20230630T191000
-UID:756f91bd@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Offline\nInstructor: Andrey Vasilev\nSubject: Histor
- y\nTime: 17:40 - 19:10
-LOCATION:Offline
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230701T090000
-DTEND:20230701T103000
-UID:cd71f4c7@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 09:00 - 10:30
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230701T142000
-DTEND:20230701T155000
-UID:aab9c3e2@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Offline\nInstructor: Andrey Vasilev\nSubject: Histor
- y\nTime: 14:20 - 15:50
-LOCATION:Offline
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230704T104000
-DTEND:20230704T121000
-UID:55ae1240@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Offline\nInstructor: Andrey Vasilev\nSubject: Histor
- y\nTime: 10:40 - 12:10
-LOCATION:Offline
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230705T104000
-DTEND:20230705T121000
-UID:546c7877@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 10:40 - 12:10
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230711T090000
-DTEND:20230711T103000
-UID:75cd93a2@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 09:00 - 10:30
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230711T104000
-DTEND:20230711T121000
-UID:ebd9b7ce@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 10:40 - 12:10
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230712T090000
-DTEND:20230712T103000
-UID:778b2dfb@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 09:00 - 10:30
-LOCATION:Online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:History
-DTSTART:20230712T104000
-DTEND:20230712T121000
-UID:e99f0997@innohassle.ru
-CATEGORIES:History
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 10:40 - 12:10
-LOCATION:Online
 END:VEVENT
 END:VCALENDAR

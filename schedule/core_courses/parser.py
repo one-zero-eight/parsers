@@ -16,6 +16,7 @@ import pandas as pd
 from google.oauth2.credentials import Credentials
 
 from config import core_courses_config as config
+from processors.regex import beautify_string
 from schedule.core_courses.models import Subject, ScheduleEvent
 from temp.history_events import history_events
 from utils import *
@@ -189,7 +190,7 @@ class CoreCoursesParser:
         self.logger.debug("Parsing dataframe to separation by days|groups...")
         self.logger.info("Get 'week' indexes...")
         week_column = df.iloc[:, 0]
-        week_mask = week_column.isin(config.DAYS).values
+        week_mask = week_column.isin(DAYS).values
         week_indexes = np.argwhere(week_mask).flatten().tolist()
         self.logger.info(f"> Found {len(week_indexes)} indexes:")
 
@@ -204,7 +205,7 @@ class CoreCoursesParser:
             self.logger.info(f" > Separating day {day_name}")
             week_df = df.iloc[start_x:end_x]
             day_row = week_df.iloc[0]
-            day_mask = day_row.isin(config.DAYS).values
+            day_mask = day_row.isin(DAYS).values
             day_indexes = np.argwhere(day_mask).flatten().tolist()
 
             for start_y, end_y in pairwise(day_indexes + [max_y]):
@@ -413,15 +414,17 @@ if __name__ == "__main__":
                     logger.info(f"   > Ignoring {group_event.subject.name}")
                     continue
                 group_event: ScheduleEvent
-                vevent = group_event.get_vevent()
-                vevents.append(vevent)
-                calendar.add_component(vevent)
+                group_vevents = group_event.get_vevents()
+                vevents.extend(group_vevents)
+                for vevent in group_vevents:
+                    calendar.add_component(vevent)
 
             if course_name == "BS - Year 1":
                 for event in history_events:
-                    vevent = event.get_vevent()
-                    vevents.append(vevent)
-                    calendar.add_component(vevent)
+                    history_vevents = event.get_vevents()
+                    vevents.extend(history_vevents)
+                    for vevent in history_vevents:
+                        calendar.add_component(vevent)
 
             file_name = f"{group_name}.ics"
             file_path = course_path / file_name

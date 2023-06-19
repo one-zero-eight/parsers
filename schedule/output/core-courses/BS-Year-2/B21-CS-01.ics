@@ -217,15 +217,15 @@ DESCRIPTION:Location: 105 (Room 106 on 20/04)\nInstructor: Shynnazar Seytn
 LOCATION:105 (Room 106 on 20/04)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Distributed and Network Programming(lab) (lab)
+SUMMARY:Distributed and Network Programming (lab)
 DTSTART:20230323T144000
 DTEND:20230323T161000
-UID:7ad40255@innohassle.ru
+UID:c8c7ea99@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
-CATEGORIES:Distributed and Network Programming(lab)
+CATEGORIES:Distributed and Network Programming
 DESCRIPTION:Location: 316\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
- 21-CS-01\nSubject: Distributed and Network Programming(lab)\nTime: 14:40 -
-  16:10
+ 21-CS-01\nSubject: Distributed and Network Programming\nTime: 14:40 - 16:1
+ 0
 LOCATION:316
 END:VEVENT
 BEGIN:VEVENT
@@ -264,15 +264,15 @@ DESCRIPTION:Location: 321\nInstructor: John Olatunde\nType: lab\nGroup: B2
 LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Distributed and Network Programming(lab) (lab)
+SUMMARY:Distributed and Network Programming (lab)
 DTSTART:20230324T144000
 DTEND:20230324T161000
-UID:7f9b14d0@innohassle.ru
+UID:cd88fc1c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230526;INTERVAL=1
-CATEGORIES:Distributed and Network Programming(lab)
+CATEGORIES:Distributed and Network Programming
 DESCRIPTION:Location: 312\nInstructor: Ahmed Nouralla\nType: lab\nGroup: B
- 21-CS-01\nSubject: Distributed and Network Programming(lab)\nTime: 14:40 -
-  16:10
+ 21-CS-01\nSubject: Distributed and Network Programming\nTime: 14:40 - 16:1
+ 0
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -286,55 +286,5 @@ DESCRIPTION:Location: 107( room 105 on 20/06-18/07)\nInstructor: Rustam Lu
  kmanov\nType: lec\nGroup: B21-CS-01\nSubject: Capstone Project\nTime: 11:0
  0 - 12:30
 LOCATION:107( room 105 on 20/06-18/07)
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Life Safety (lec)
-DTSTART:20230613T144000
-DTEND:20230613T161000
-UID:747094a5@innohassle.ru
-CATEGORIES:Life Safety
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B21-CS-01\nSubject: Life Safety\nTime: 14:40 - 16:10
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Life Safety (lec)
-DTSTART:20230613T162000
-DTEND:20230613T175000
-UID:d3ae827b@innohassle.ru
-CATEGORIES:Life Safety
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B21-CS-01\nSubject: Life Safety\nTime: 16:20 - 17:50
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Life Safety (lec)
-DTSTART:20230614T144000
-DTEND:20230614T161000
-UID:75b2fe92@innohassle.ru
-CATEGORIES:Life Safety
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B21-CS-01\nSubject: Life Safety\nTime: 14:40 - 16:10
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Life Safety (lec)
-DTSTART:20230614T162000
-DTEND:20230614T175000
-UID:d26ce84c@innohassle.ru
-CATEGORIES:Life Safety
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B21-CS-01\nSubject: Life Safety\nTime: 16:20 - 17:50
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Life Safety (lec)
-DTSTART:20230615T130000
-DTEND:20230615T143000
-UID:52385ab1@innohassle.ru
-CATEGORIES:Life Safety
-DESCRIPTION:Location: 108\nInstructor: Andrey Anisimov\nType: lec\nGroup: 
- B21-CS-01\nSubject: Life Safety\nTime: 13:00 - 14:30
-LOCATION:108
 END:VEVENT
 END:VCALENDAR

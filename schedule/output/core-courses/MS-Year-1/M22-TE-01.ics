@@ -131,51 +131,71 @@ DESCRIPTION:Location: 103\nInstructor: Ahmed Elbatanony\nType: lab\nGroup:
 LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Venture Capital and Growth Hacking(lab) (lab)
+SUMMARY:Venture Capital and Growth Hacking (lab)
 DTSTART:20230605T124000
 DTEND:20230605T141000
-UID:3a8fea5@innohassle.ru
+UID:373f2216@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
-CATEGORIES:Venture Capital and Growth Hacking(lab)
+CATEGORIES:Venture Capital and Growth Hacking
 DESCRIPTION:Location: 421 (STARTS ON 19/06)\nInstructor: Sinan Ibrahim\nTy
- pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking(lab
- )\nTime: 12:40 - 14:10
+ pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking\nTi
+ me: 12:40 - 14:10
 LOCATION:421 (STARTS ON 19/06)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Venture Capital and Growth Hacking(lab) (lab)
+SUMMARY:Venture Capital and Growth Hacking (lab)
 DTSTART:20230605T142000
 DTEND:20230605T155000
-UID:52b15b0b@innohassle.ru
+UID:662687b8@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
-CATEGORIES:Venture Capital and Growth Hacking(lab)
+CATEGORIES:Venture Capital and Growth Hacking
 DESCRIPTION:Location: 421 (STARTS ON 19/06)\nInstructor: Sinan Ibrahim\nTy
- pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking(lab
- )\nTime: 14:20 - 15:50
+ pe: lab\nGroup: M22-TE-01\nSubject: Venture Capital and Growth Hacking\nTi
+ me: 14:20 - 15:50
 LOCATION:421 (STARTS ON 19/06)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Venture Capital and Growth Hacking(lec) (lec)
+SUMMARY:Venture Capital and Growth Hacking (lab)
+DTSTART:20230712T104000
+DTEND:20230712T121000
+UID:8618d83c@innohassle.ru
+CATEGORIES:Venture Capital and Growth Hacking
+DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2
+ 2-TE-01\nSubject: Venture Capital and Growth Hacking\nTime: 10:40 - 12:10
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Venture Capital and Growth Hacking (lab)
+DTSTART:20230712T124000
+DTEND:20230712T141000
+UID:34bbf678@innohassle.ru
+CATEGORIES:Venture Capital and Growth Hacking
+DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2
+ 2-TE-01\nSubject: Venture Capital and Growth Hacking\nTime: 12:40 - 14:10
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Venture Capital and Growth Hacking (lec)
 DTSTART:20230610T160000
 DTEND:20230610T173000
-UID:e4a77173@innohassle.ru
+UID:ff97e081@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
-CATEGORIES:Venture Capital and Growth Hacking(lec)
+CATEGORIES:Venture Capital and Growth Hacking
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
- ure Capital and Growth Hacking(lec)\nTime: 16:00 - 17:30
+ ure Capital and Growth Hacking\nTime: 16:00 - 17:30
 LOCATION:ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,22/07)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Venture Capital and Growth Hacking(lec) (lec)
+SUMMARY:Venture Capital and Growth Hacking (lec)
 DTSTART:20230610T174000
 DTEND:20230610T191000
-UID:d25111c@innohassle.ru
+UID:161580ee@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20230724;INTERVAL=1
-CATEGORIES:Venture Capital and Growth Hacking(lec)
+CATEGORIES:Venture Capital and Growth Hacking
 DESCRIPTION:Location: ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,2
  2/07)\nInstructor: Azat Mardan\nType: lec\nGroup: M22-TE-01\nSubject: Vent
- ure Capital and Growth Hacking(lec)\nTime: 17:40 - 19:10
+ ure Capital and Growth Hacking\nTime: 17:40 - 19:10
 LOCATION:ONLIINE (10/06\,17/06\,24/06\,01/07\,08/07\,15/07\,22/07)
 END:VEVENT
 END:VCALENDAR
