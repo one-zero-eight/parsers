@@ -295,6 +295,8 @@ class ScheduleEvent(BaseModel):
             _vevent = vevent.copy()
             _vevent["rrule"] = self.recurrence
             vevents.append(_vevent)
+        else:
+            vevents.append(vevent)
 
         return vevents
 
