@@ -170,7 +170,7 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking (lab)
 DTSTART:20230712T104000
 DTEND:20230712T121000
-UID:8618d83c@innohassle.ru
+UID:0_8618d83c@innohassle.ru
 CATEGORIES:Venture Capital and Growth Hacking
 COLOR:coral
 DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2
@@ -181,7 +181,7 @@ BEGIN:VEVENT
 SUMMARY:Venture Capital and Growth Hacking (lab)
 DTSTART:20230712T124000
 DTEND:20230712T141000
-UID:34bbf678@innohassle.ru
+UID:0_34bbf678@innohassle.ru
 CATEGORIES:Venture Capital and Growth Hacking
 COLOR:coral
 DESCRIPTION:Location: 300\nInstructor: Sinan Ibrahim\nType: lab\nGroup: M2

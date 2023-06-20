@@ -21,7 +21,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230227T124000
 DTEND:20230227T141000
-UID:59210377@innohassle.ru
+UID:0_59210377@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230227T142000
 DTEND:20230227T155000
-UID:838a6d9@innohassle.ru
+UID:0_838a6d9@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -43,7 +43,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230228T124000
 DTEND:20230228T141000
-UID:5c6e15f2@innohassle.ru
+UID:0_5c6e15f2@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -54,7 +54,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230228T142000
 DTEND:20230228T155000
-UID:d77b05c@innohassle.ru
+UID:0_d77b05c@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 307\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -166,7 +166,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230303T090000
 DTEND:20230303T103000
-UID:9c15cc8f@innohassle.ru
+UID:0_9c15cc8f@innohassle.ru
 CATEGORIES:Architecture of Software Systems
 COLOR:coral
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:
@@ -177,7 +177,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230303T104000
 DTEND:20230303T121000
-UID:ec8b85ef@innohassle.ru
+UID:0_ec8b85ef@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -188,7 +188,7 @@ BEGIN:VEVENT
 SUMMARY:Communications (lec)
 DTSTART:20230303T124000
 DTEND:20230303T141000
-UID:5e28abab@innohassle.ru
+UID:0_5e28abab@innohassle.ru
 CATEGORIES:Communications
 COLOR:chocolate
 DESCRIPTION:Location: 308\nInstructor: Sergey Kladko\nType: lec\nGroup: M2
@@ -199,7 +199,7 @@ BEGIN:VEVENT
 SUMMARY:Architecture of Software Systems (lec)
 DTSTART:20230303T142000
 DTEND:20230303T155000
-UID:677b8101@innohassle.ru
+UID:0_677b8101@innohassle.ru
 CATEGORIES:Architecture of Software Systems
 COLOR:coral
 DESCRIPTION:Location: 303\nInstructor: Darko Bozhinoski\nType: lec\nGroup:

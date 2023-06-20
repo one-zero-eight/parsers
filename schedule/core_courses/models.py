@@ -287,13 +287,14 @@ class ScheduleEvent(BaseModel):
             vevent["location"] = self.location
 
         if specific_date := self.flags.only_on_specific_date:
-            for date in specific_date:
+            for i, date in enumerate(specific_date):
                 date = date.replace(year=self.day.year)
                 dtstart = datetime.datetime.combine(date, self.start_time)
                 dtend = datetime.datetime.combine(date, self.end_time)
                 _vevent = vevent.copy()
                 _vevent["dtstart"] = icalendar.vDatetime(dtstart)
                 _vevent["dtend"] = icalendar.vDatetime(dtend)
+                _vevent["uid"] = f"{i}_" + _vevent["uid"]
                 vevents.append(_vevent)
         elif self.recurrence:
             _vevent = vevent.copy()

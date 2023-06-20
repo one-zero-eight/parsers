@@ -22,7 +22,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T145000
 DTEND:20230306T162000
-UID:159421d8@innohassle.ru
+UID:0_159421d8@innohassle.ru
 CATEGORIES:Theoretical Sports
 COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
@@ -33,7 +33,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec)
 DTSTART:20230306T163000
 DTEND:20230306T180000
-UID:455743f5@innohassle.ru
+UID:0_455743f5@innohassle.ru
 CATEGORIES:Theoretical Sports
 COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 
@@ -68,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical Sports (lec)
 DTSTART:20230311T093000
 DTEND:20230311T110000
-UID:a5610009@innohassle.ru
+UID:0_a5610009@innohassle.ru
 CATEGORIES:Theoretical Sports
 COLOR:chocolate
 DESCRIPTION:Location: 105\nInstructor: Andrei Anisimov\nType: lec\nGroup: 

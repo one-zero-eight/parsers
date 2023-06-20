@@ -519,7 +519,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
 DTSTART:20230620T104000
 DTEND:20230620T121000
-UID:3a7ec44d@innohassle.ru
+UID:0_3a7ec44d@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
@@ -530,7 +530,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
 DTSTART:20230627T104000
 DTEND:20230627T121000
-UID:3a7ec44d@innohassle.ru
+UID:1_3a7ec44d@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
@@ -541,7 +541,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
 DTSTART:20230621T104000
 DTEND:20230621T121000
-UID:3bbcae7a@innohassle.ru
+UID:0_3bbcae7a@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
@@ -552,7 +552,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
 DTSTART:20230628T104000
 DTEND:20230628T121000
-UID:3bbcae7a@innohassle.ru
+UID:1_3bbcae7a@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
@@ -563,7 +563,7 @@ BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
 DTSTART:20230622T104000
 DTEND:20230622T121000
-UID:30e0e947@innohassle.ru
+UID:0_30e0e947@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
 DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
