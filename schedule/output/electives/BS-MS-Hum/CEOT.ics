@@ -55,4 +55,64 @@ COLOR:indigo
 DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
  09:10 - 10:40 27.06.2023
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230703T091000
+DTEND:20230703T104000
+UID:b80802f@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 09:10 - 10:40 03.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230704T091000
+DTEND:20230704T104000
+UID:1dd83e91@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 09:10 - 10:40 04.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230710T091000
+DTEND:20230710T104000
+UID:c30a3493@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 09:10 - 10:40 10.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230710T105000
+DTEND:20230710T122000
+UID:37afedab@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 10:50 - 12:20 10.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230711T091000
+DTEND:20230711T104000
+UID:81b267da@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 09:10 - 10:40 11.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Startup CEO Toolkit
+DTSTART:20230711T105000
+DTEND:20230711T122000
+UID:7517bee2@innohassle.ru
+CATEGORIES:Startup CEO Toolkit
+COLOR:indigo
+DESCRIPTION:Instructor: Vasil Zakiev\nSubject: Startup CEO Toolkit\nTime: 
+ 10:50 - 12:20 11.07.2023
+END:VEVENT
 END:VCALENDAR

@@ -137,4 +137,37 @@ DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS2\nSubject
  : Psychology of IT-specialist\nTime: 16:10 - 17:40 30.06.2023
 LOCATION:320
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Psychology of IT-specialist
+DTSTART:20230704T125000
+DTEND:20230704T142000
+UID:104ce17b@innohassle.ru
+CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
+DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS2\nSubject
+ : Psychology of IT-specialist\nTime: 12:50 - 14:20 04.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Psychology of IT-specialist
+DTSTART:20230706T161000
+DTEND:20230706T174000
+UID:74ca2797@innohassle.ru
+CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
+DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS2\nSubject
+ : Psychology of IT-specialist\nTime: 16:10 - 17:40 06.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Psychology of IT-specialist
+DTSTART:20230707T161000
+DTEND:20230707T174000
+UID:a713912d@innohassle.ru
+CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
+DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS2\nSubject
+ : Psychology of IT-specialist\nTime: 16:10 - 17:40 07.07.2023
+LOCATION:320
+END:VEVENT
 END:VCALENDAR

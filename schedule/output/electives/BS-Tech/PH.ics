@@ -117,13 +117,24 @@ LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
-DTSTART:20230622T175000
-DTEND:20230622T192000
-UID:7fa7e0a9@innohassle.ru
+DTSTART:20230622T091000
+DTEND:20230622T104000
+UID:430bc21b@innohassle.ru
 CATEGORIES:Programming in Haskell
 COLOR:chartreuse
 DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
- ng in Haskell\nTime: 17:50 - 19:20 22.06.2023
+ ng in Haskell\nTime: 09:10 - 10:40 22.06.2023
+LOCATION:314
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Programming in Haskell
+DTSTART:20230622T125000
+DTEND:20230622T142000
+UID:214d3075@innohassle.ru
+CATEGORIES:Programming in Haskell
+COLOR:chartreuse
+DESCRIPTION:Location: 314\nInstructor: Nikolay Kudasov\nSubject: Programmi
+ ng in Haskell\nTime: 12:50 - 14:20 22.06.2023
 LOCATION:314
 END:VEVENT
 BEGIN:VEVENT

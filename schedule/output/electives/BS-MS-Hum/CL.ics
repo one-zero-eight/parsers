@@ -148,4 +148,26 @@ DESCRIPTION:Location: online\nInstructor: Alina Valencia\nSubject: Career
  and Leadership\nTime: 12:50 - 14:20 30.06.2023
 LOCATION:online
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Career and Leadership
+DTSTART:20230707T091000
+DTEND:20230707T104000
+UID:dc1a3a4a@innohassle.ru
+CATEGORIES:Career and Leadership
+COLOR:coral
+DESCRIPTION:Location: online\nInstructor: Alina Valencia\nSubject: Career 
+ and Leadership\nTime: 09:10 - 10:40 07.07.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Career and Leadership
+DTSTART:20230707T105000
+DTEND:20230707T122000
+UID:27d9a12@innohassle.ru
+CATEGORIES:Career and Leadership
+COLOR:coral
+DESCRIPTION:Location: online\nInstructor: Alina Valencia\nSubject: Career 
+ and Leadership\nTime: 10:50 - 12:20 07.07.2023
+LOCATION:online
+END:VEVENT
 END:VCALENDAR

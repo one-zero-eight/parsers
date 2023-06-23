@@ -125,4 +125,34 @@ COLOR:brown
 DESCRIPTION:Instructor: Olga Ignateva\nSubject: Design Fiction (Advanced)\
  nTime: 14:30 - 16:00 01.07.2023
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design Fiction (Advanced)
+DTSTART:20230708T091000
+DTEND:20230708T104000
+UID:2e8cac01@innohassle.ru
+CATEGORIES:Design Fiction (Advanced)
+COLOR:brown
+DESCRIPTION:Instructor: Olga Ignateva\nSubject: Design Fiction (Advanced)\
+ nTime: 09:10 - 10:40 08.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design Fiction (Advanced)
+DTSTART:20230708T105000
+DTEND:20230708T122000
+UID:da297539@innohassle.ru
+CATEGORIES:Design Fiction (Advanced)
+COLOR:brown
+DESCRIPTION:Instructor: Olga Ignateva\nSubject: Design Fiction (Advanced)\
+ nTime: 10:50 - 12:20 08.07.2023
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design Fiction (Advanced)
+DTSTART:20230715T105000
+DTEND:20230715T122000
+UID:3e12bcf9@innohassle.ru
+CATEGORIES:Design Fiction (Advanced)
+COLOR:brown
+DESCRIPTION:Instructor: Olga Ignateva\nSubject: Design Fiction (Advanced)\
+ nTime: 10:50 - 12:20 15.07.2023
+END:VEVENT
 END:VCALENDAR

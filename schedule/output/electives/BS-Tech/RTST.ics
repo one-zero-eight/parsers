@@ -51,13 +51,13 @@ LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Real-Time Scheduling Theory
-DTSTART:20230622T105000
-DTEND:20230622T122000
-UID:2befa423@innohassle.ru
+DTSTART:20230622T091000
+DTEND:20230622T104000
+UID:319b964@innohassle.ru
 CATEGORIES:Real-Time Scheduling Theory
 COLOR:rebeccapurple
 DESCRIPTION:Location: 303\nInstructor: Artem Burmyakov\nSubject: Real-Time
-  Scheduling Theory\nTime: 10:50 - 12:20 22.06.2023
+  Scheduling Theory\nTime: 09:10 - 10:40 22.06.2023
 LOCATION:303
 END:VEVENT
 BEGIN:VEVENT

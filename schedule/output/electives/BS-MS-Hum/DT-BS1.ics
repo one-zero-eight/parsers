@@ -93,4 +93,48 @@ DESCRIPTION:Location: 321\nInstructor: Pavel Voloschuk\nGroup: BS1\nSubjec
  t: Design-thinking\nTime: 17:50 - 19:20 23.06.2023
 LOCATION:321
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design-thinking
+DTSTART:20230714T125000
+DTEND:20230714T142000
+UID:42b63cb7@innohassle.ru
+CATEGORIES:Design-thinking
+COLOR:darkblue
+DESCRIPTION:Location: 320\nInstructor: Pavel Voloschuk\nGroup: BS1\nSubjec
+ t: Design-thinking\nTime: 12:50 - 14:20 14.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design-thinking
+DTSTART:20230714T143000
+DTEND:20230714T160000
+UID:583eeeb6@innohassle.ru
+CATEGORIES:Design-thinking
+COLOR:darkblue
+DESCRIPTION:Location: 320\nInstructor: Pavel Voloschuk\nGroup: BS1\nSubjec
+ t: Design-thinking\nTime: 14:30 - 16:00 14.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design-thinking
+DTSTART:20230714T161000
+DTEND:20230714T174000
+UID:5af2916e@innohassle.ru
+CATEGORIES:Design-thinking
+COLOR:darkblue
+DESCRIPTION:Location: 320\nInstructor: Pavel Voloschuk\nGroup: BS1\nSubjec
+ t: Design-thinking\nTime: 16:10 - 17:40 14.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Design-thinking
+DTSTART:20230714T175000
+DTEND:20230714T192000
+UID:cd8d4898@innohassle.ru
+CATEGORIES:Design-thinking
+COLOR:darkblue
+DESCRIPTION:Location: 320\nInstructor: Pavel Voloschuk\nGroup: BS1\nSubjec
+ t: Design-thinking\nTime: 17:50 - 19:20 14.07.2023
+LOCATION:320
+END:VEVENT
 END:VCALENDAR

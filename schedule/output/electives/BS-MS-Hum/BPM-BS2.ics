@@ -104,4 +104,70 @@ DESCRIPTION:Location: online\nInstructor: Iuliia Metelskaia\nGroup: BS2\nS
  ubject: Basics of Product Management\nTime: 10:50 - 12:20 29.06.2023
 LOCATION:online
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230703T161000
+DTEND:20230703T174000
+UID:1f3ef09e@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: 300\nInstructor: Iuliia Metelskaia\nGroup: BS2\nSubj
+ ect: Basics of Product Management\nTime: 16:10 - 17:40 03.07.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230706T143000
+DTEND:20230706T160000
+UID:37afef96@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: 300\nInstructor: Iuliia Metelskaia\nGroup: BS2\nSubj
+ ect: Basics of Product Management\nTime: 14:30 - 16:00 06.07.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230706T161000
+DTEND:20230706T174000
+UID:3563904e@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: 300\nInstructor: Iuliia Metelskaia\nGroup: BS2\nSubj
+ ect: Basics of Product Management\nTime: 16:10 - 17:40 06.07.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230706T175000
+DTEND:20230706T192000
+UID:a21c49b8@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: 300\nInstructor: Iuliia Metelskaia\nGroup: BS2\nSubj
+ ect: Basics of Product Management\nTime: 17:50 - 19:20 06.07.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230712T091000
+DTEND:20230712T104000
+UID:1977dfc8@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: online\nInstructor: Iuliia Metelskaia\nGroup: BS2\nS
+ ubject: Basics of Product Management\nTime: 09:10 - 10:40 12.07.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Basics of Product Management
+DTSTART:20230712T105000
+DTEND:20230712T122000
+UID:7c1961ae@innohassle.ru
+CATEGORIES:Basics of Product Management
+COLOR:firebrick
+DESCRIPTION:Location: online\nInstructor: Iuliia Metelskaia\nGroup: BS2\nS
+ ubject: Basics of Product Management\nTime: 10:50 - 12:20 12.07.2023
+LOCATION:online
+END:VEVENT
 END:VCALENDAR

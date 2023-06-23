@@ -71,4 +71,48 @@ DESCRIPTION:Location: 320\nInstructor: Petr Grachev\nSubject: How to build
   an IT team\nTime: 16:10 - 17:40 01.07.2023
 LOCATION:320
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:How to build an IT team
+DTSTART:20230708T143000
+DTEND:20230708T160000
+UID:8fbf6311@innohassle.ru
+CATEGORIES:How to build an IT team
+COLOR:rebeccapurple
+DESCRIPTION:Location: 320\nInstructor: Petr Grachev\nSubject: How to build
+  an IT team\nTime: 14:30 - 16:00 08.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:How to build an IT team
+DTSTART:20230708T161000
+DTEND:20230708T174000
+UID:2e53b1d2@innohassle.ru
+CATEGORIES:How to build an IT team
+COLOR:rebeccapurple
+DESCRIPTION:Location: 320\nInstructor: Petr Grachev\nSubject: How to build
+  an IT team\nTime: 16:10 - 17:40 08.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:How to build an IT team
+DTSTART:20230715T143000
+DTEND:20230715T160000
+UID:143f9a68@innohassle.ru
+CATEGORIES:How to build an IT team
+COLOR:rebeccapurple
+DESCRIPTION:Location: 320\nInstructor: Petr Grachev\nSubject: How to build
+  an IT team\nTime: 14:30 - 16:00 15.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:How to build an IT team
+DTSTART:20230715T161000
+DTEND:20230715T174000
+UID:b5d348ab@innohassle.ru
+CATEGORIES:How to build an IT team
+COLOR:rebeccapurple
+DESCRIPTION:Location: 320\nInstructor: Petr Grachev\nSubject: How to build
+  an IT team\nTime: 16:10 - 17:40 15.07.2023
+LOCATION:320
+END:VEVENT
 END:VCALENDAR
