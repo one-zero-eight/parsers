@@ -38,21 +38,21 @@ history_events: list[ScheduleEvent] = [
         start_time=datetime.time(hour=16, minute=0),
         end_time=datetime.time(hour=17, minute=30),
         day=datetime.date(year=2023, month=6, day=30),
-        location="Online",
+        location="105",
     ),
     # {#    30/06: 17:40-19:10 OFFLINE #}
     ScheduleEvent(
         start_time=datetime.time(hour=17, minute=40),
         end_time=datetime.time(hour=19, minute=10),
         day=datetime.date(year=2023, month=6, day=30),
-        location="Offline",
+        location="105",
     ),
     # {#    01/07: 09:00-10:30,
     ScheduleEvent(
         start_time=datetime.time(hour=9, minute=0),
         end_time=datetime.time(hour=10, minute=30),
         day=datetime.date(year=2023, month=7, day=1),
-        location="Online",
+        location="Offline",
     ),
     # {#    01/07: 14:20-15:50 OFFLINE #}
     ScheduleEvent(

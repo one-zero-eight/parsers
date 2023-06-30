@@ -625,9 +625,9 @@ DTEND:20230630T173000
 UID:9e880a40@innohassle.ru
 CATEGORIES:History
 COLOR:rebeccapurple
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 16:00 - 17:30
-LOCATION:Online
+DESCRIPTION:Location: 105\nInstructor: Andrey Vasilev\nSubject: History\nT
+ ime: 16:00 - 17:30
+LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:History
@@ -636,9 +636,9 @@ DTEND:20230630T191000
 UID:756f91bd@innohassle.ru
 CATEGORIES:History
 COLOR:rebeccapurple
-DESCRIPTION:Location: Offline\nInstructor: Andrey Vasilev\nSubject: Histor
- y\nTime: 17:40 - 19:10
-LOCATION:Offline
+DESCRIPTION:Location: 105\nInstructor: Andrey Vasilev\nSubject: History\nT
+ ime: 17:40 - 19:10
+LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:History
@@ -647,9 +647,9 @@ DTEND:20230701T103000
 UID:cd71f4c7@innohassle.ru
 CATEGORIES:History
 COLOR:rebeccapurple
-DESCRIPTION:Location: Online\nInstructor: Andrey Vasilev\nSubject: History
- \nTime: 09:00 - 10:30
-LOCATION:Online
+DESCRIPTION:Location: Offline\nInstructor: Andrey Vasilev\nSubject: Histor
+ y\nTime: 09:00 - 10:30
+LOCATION:Offline
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:History
