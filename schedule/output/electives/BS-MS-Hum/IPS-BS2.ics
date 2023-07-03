@@ -151,18 +151,6 @@ LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Public Speaking for IT-specialist
-DTSTART:20230703T161000
-DTEND:20230703T174000
-UID:87a1d227@innohassle.ru
-CATEGORIES:Introduction to Public Speaking for IT-specialist
-COLOR:crimson
-DESCRIPTION:Location: online\nInstructor: Sergey Kladko\nGroup: BS2\nSubje
- ct: Introduction to Public Speaking for IT-specialist\nTime: 16:10 - 17:40
-  03.07.2023
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Introduction to Public Speaking for IT-specialist
 DTSTART:20230704T161000
 DTEND:20230704T174000
 UID:abcc9724@innohassle.ru
@@ -183,6 +171,30 @@ COLOR:crimson
 DESCRIPTION:Location: online\nInstructor: Sergey Kladko\nGroup: BS2\nSubje
  ct: Introduction to Public Speaking for IT-specialist\nTime: 16:10 - 17:40
   05.07.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Public Speaking for IT-specialist
+DTSTART:20230706T143000
+DTEND:20230706T160000
+UID:c3e02efb@innohassle.ru
+CATEGORIES:Introduction to Public Speaking for IT-specialist
+COLOR:crimson
+DESCRIPTION:Location: online\nInstructor: Sergey Kladko\nGroup: BS2\nSubje
+ ct: Introduction to Public Speaking for IT-specialist\nTime: 14:30 - 16:00
+  06.07.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Public Speaking for IT-specialist
+DTSTART:20230706T161000
+DTEND:20230706T174000
+UID:7a0fa1d3@innohassle.ru
+CATEGORIES:Introduction to Public Speaking for IT-specialist
+COLOR:crimson
+DESCRIPTION:Location: online\nInstructor: Sergey Kladko\nGroup: BS2\nSubje
+ ct: Introduction to Public Speaking for IT-specialist\nTime: 16:10 - 17:40
+  06.07.2023
 LOCATION:online
 END:VEVENT
 END:VCALENDAR
