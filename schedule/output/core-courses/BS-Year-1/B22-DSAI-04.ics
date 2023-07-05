@@ -521,58 +521,47 @@ LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
-DTSTART:20230620T104000
-DTEND:20230620T121000
-UID:0_ffb84de2@innohassle.ru
-CATEGORIES:Theoretical sports
-COLOR:darkgreen
-DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
- 22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Theoretical sports (lec)
-DTSTART:20230627T104000
-DTEND:20230627T121000
-UID:1_ffb84de2@innohassle.ru
-CATEGORIES:Theoretical sports
-COLOR:darkgreen
-DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
- 22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Theoretical sports (lec)
-DTSTART:20230621T104000
-DTEND:20230621T121000
+DTSTART:20230719T104000
+DTEND:20230719T121000
 UID:0_fe7a27d5@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
-DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
- 22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
-LOCATION:108
+DESCRIPTION:Location: 105\nInstructor: Andrey Krikunov\nType: lec\nGroup: 
+ B22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
+LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
-DTSTART:20230628T104000
-DTEND:20230628T121000
-UID:1_fe7a27d5@innohassle.ru
+DTSTART:20230719T124000
+DTEND:20230719T141000
+UID:0_b6b912b8@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
-DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
- 22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
-LOCATION:108
+DESCRIPTION:Location: 105\nInstructor: Andrey Krikunov\nType: lec\nGroup: 
+ B22-DSAI-04\nSubject: Theoretical sports\nTime: 12:40 - 14:10
+LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
-DTSTART:20230622T104000
-DTEND:20230622T121000
+DTSTART:20230720T104000
+DTEND:20230720T121000
 UID:0_f52660e8@innohassle.ru
 CATEGORIES:Theoretical sports
 COLOR:darkgreen
-DESCRIPTION:Location: 108\nInstructor: Eleonora Ilina\nType: lec\nGroup: B
- 22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
-LOCATION:108
+DESCRIPTION:Location: 105\nInstructor: Andrey Krikunov\nType: lec\nGroup: 
+ B22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
+LOCATION:105
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Theoretical sports (lec)
+DTSTART:20230721T104000
+DTEND:20230721T121000
+UID:0_f4e40adf@innohassle.ru
+CATEGORIES:Theoretical sports
+COLOR:darkgreen
+DESCRIPTION:Location: 105\nInstructor: Andrey Krikunov\nType: lec\nGroup: 
+ B22-DSAI-04\nSubject: Theoretical sports\nTime: 10:40 - 12:10
+LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:History

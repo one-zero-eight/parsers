@@ -150,6 +150,17 @@ LOCATION:320
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Psychology of IT-specialist
+DTSTART:20230706T143000
+DTEND:20230706T160000
+UID:7440e616@innohassle.ru
+CATEGORIES:Psychology of IT-specialist
+COLOR:blueviolet
+DESCRIPTION:Location: 320\nInstructor: Eleonora Ilina\nGroup: BS1\nSubject
+ : Psychology of IT-specialist\nTime: 14:30 - 16:00 06.07.2023
+LOCATION:320
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Psychology of IT-specialist
 DTSTART:20230707T143000
 DTEND:20230707T160000
 UID:a79950ac@innohassle.ru

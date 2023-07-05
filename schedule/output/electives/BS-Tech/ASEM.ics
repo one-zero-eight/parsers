@@ -119,23 +119,23 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T143000
 DTEND:20230705T160000
-UID:e409c5c9@innohassle.ru
+UID:59c64b56@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
-DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
-  Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.07.2023
-LOCATION:317
+DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
+ ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.07.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T161000
 DTEND:20230705T174000
-UID:45e5170a@innohassle.ru
+UID:d09d6a20@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
-DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
-  Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.07.2023
-LOCATION:317
+DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
+ ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.07.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
