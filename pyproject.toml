@@ -9,11 +9,11 @@ readme = "schedule/README.md"
 python = "^3.10"
 google-api-python-client = "^2.73.0"
 google-auth-httplib2 = "^0.1.0"
-google-auth-oauthlib = "^0.8.0"
-pandas = "^1.5.3"
-pydantic = "^1.10.4"
+google-auth-oauthlib = "^1.0.0"
+pandas = "^2.0.3"
+pydantic = "~1.10"
 icalendar = "^5.0.4"
-google = "^3.0.0"
+google = {extras = ["auth"], version = "^3.0.0"}
 
 [tool.poetry.group.dev.dependencies]
 sphinx-rtd-theme = "^1.2.2"
