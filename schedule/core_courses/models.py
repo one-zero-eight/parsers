@@ -1,18 +1,17 @@
 import datetime
 import re
-from functools import cached_property
 from typing import Optional
 from zlib import crc32
 
 import icalendar
 from pydantic import BaseModel, Field, validator
 
-from processors.regex import (
+from schedule.config_base import CSS3Color
+from schedule.processors.regex import (
     process_only_on,
     process_desc_in_parentheses,
     remove_trailing_spaces,
 )
-from config_base import CSS3Color
 
 
 class Subject(BaseModel):

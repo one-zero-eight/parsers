@@ -3,7 +3,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, validator, Field
 
-from utils import get_project_root
+from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
 

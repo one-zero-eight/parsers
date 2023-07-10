@@ -3,9 +3,9 @@ from pathlib import Path
 
 from pydantic import parse_obj_as
 
-from config_base import BaseParserConfig
+from schedule.config_base import BaseParserConfig
 from schedule.electives.models import Elective
-from utils import get_project_root
+from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
 

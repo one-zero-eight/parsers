@@ -1,11 +1,10 @@
 import json
-from datetime import datetime
 from pathlib import Path
 
 from pydantic import parse_obj_as
 
-from config_base import BaseParserConfig
-from utils import get_project_root, get_current_year
+from schedule.config_base import BaseParserConfig
+from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
 

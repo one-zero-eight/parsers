@@ -5,8 +5,8 @@ from zlib import crc32
 import icalendar
 from pydantic import BaseModel, validator
 
-from config_base import CSS3Color
-from processors.regex import symbol_translation, remove_trailing_spaces
+from schedule.config_base import CSS3Color
+from schedule.processors.regex import symbol_translation, remove_trailing_spaces
 
 
 class Elective(BaseModel):
