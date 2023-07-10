@@ -3,7 +3,7 @@ __all__ = ['sports_config', 'SportsParserConfig']
 from pathlib import Path
 
 import requests
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, validator, SecretStr
 
 from schedule.utils import get_project_root
 
@@ -14,11 +14,11 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 
 class Credentials(BaseModel):
     email: str
-    password: str
+    password: SecretStr
 
 
 class Token(BaseModel):
-    token: str
+    token: SecretStr
 
 
 class SportsParserConfig(BaseModel):
@@ -70,8 +70,8 @@ class SportsParserConfig(BaseModel):
             # get from credentials
             creds = self.credentials
             login_url = f'{self.website_url}/oauth2/login'
-            token = get_token(creds.email, creds.password, login_url)
-            token = Token(token=token)
+            token = get_token(creds.email, creds.password.get_secret_value(), login_url)
+            token = Token(token=SecretStr(token))
             with open(self.token_path, 'w') as f:
                 f.write(token.json())
             return token

@@ -52,7 +52,7 @@ def get_sport_schedule(sport_id: int, session: requests.Session):
 if __name__ == '__main__':
     session = requests.Session()
     session.headers.update({'Content-Type': 'application/json'})
-    session.headers.update({'Authorization': f'Bearer {config.token}'})
+    session.headers.update({'Authorization': f'Bearer {config.token.token.get_secret_value()}'})
     sports_id = (get_sports(session))
     pprint(sports_id.sports)
 
