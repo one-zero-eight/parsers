@@ -1,61 +1,57 @@
+import asyncio
 import datetime
-from pprint import pprint
-from typing import Optional
 
-import requests
-from pydantic import BaseModel
+import aiohttp as aiohttp
 
 from schedule.sport.config import sports_config as config
+from schedule.sport.models import ResponseSports, ResponseSportSchedule
 
 
-class ResponseSports(BaseModel):
-    class Sports(BaseModel):
-        id: int
-        name: str
-        special: bool
+class SportParser:
+    def __init__(self, session: aiohttp.ClientSession):
+        self.session = session
 
-    sports: list[Sports]
+    async def get_sports(self) -> ResponseSports:
+        async with self.session.get(f"{config.api_url}/sports") as response:
+            text = await response.text()
+            response_schema = ResponseSports.parse_raw(text)
+            return response_schema
 
-
-class ResponseSportSchedule(BaseModel):
-    class SportScheduleEvent(BaseModel):
-        class ExtendedProps(BaseModel):
-            group_id: int
-            training_class: str
-            current_load: int
-            capacity: int
-
-        title: Optional[str]
-        daysOfWeek: list[int]
-        startTime: str
-        endTime: str
-        extendedProps: ExtendedProps
-
-    __root__: list[SportScheduleEvent]
+    async def get_sport_schedule(self, sport_id: int) -> ResponseSportSchedule:
+        finalDate = config.END_OF_SEMESTER.strftime("%Y-%m-%d")
+        url = f"{config.api_url}/calendar/{sport_id}/schedule?start={datetime.date.today()}T00%3A00&end={finalDate}T00%3A00"
+        async with self.session.get(url) as response:
+            text = await response.text()
+            response_schema = ResponseSportSchedule.parse_raw(text)
+            return response_schema
 
 
-def get_sports(session: requests.Session) -> ResponseSports:
-    r = session.get(f'{config.api_url}/sports')
-    response_schema = ResponseSports.parse_raw(r.text, content_type="application/json")
-    return response_schema
+async def main():
+    async with aiohttp.ClientSession(
+        headers={"Content-Type": "application/json"}
+    ) as session:
+        parser = SportParser(session)
+
+        get_sports_answer = await parser.get_sports()
+        print(
+            get_sports_answer.json(
+                indent=4,
+            )
+        )
+
+        tasks = {}
+        for sport in get_sports_answer.sports:
+            task = asyncio.create_task(parser.get_sport_schedule(sport.id))
+            tasks[sport.id] = task
+
+        await asyncio.gather(*tasks.values())
+
+        sport_schedules = {sport_id: task.result() for sport_id, task in tasks.items()}
+
+        for sport_id, sport_schedule in sport_schedules.items():
+            print(sport_id)
+            print(sport_schedule.json(indent=4))
 
 
-def get_sport_schedule(sport_id: int, session: requests.Session):
-    dateTime = datetime.date
-    finalDate = '2099-12-30'  # may be have to be set up in config
-    url = f'{config.api_url}/calendar/{sport_id}/schedule?start={dateTime.today()}T00%3A00&end={finalDate}T00%3A00'
-    r = session.get(url)
-    response_schema = ResponseSportSchedule.parse_raw(r.text, content_type="application/json")
-    return response_schema
-
-
-if __name__ == '__main__':
-    session = requests.Session()
-    session.headers.update({'Content-Type': 'application/json'})
-    session.headers.update({'Authorization': f'Bearer {config.token.token.get_secret_value()}'})
-    sports_id = (get_sports(session))
-    pprint(sports_id.sports)
-
-    for sport in sports_id.sports:
-        schedule = get_sport_schedule(sport.id, session)
-        pprint(schedule)
+if __name__ == "__main__":
+    asyncio.run(main())

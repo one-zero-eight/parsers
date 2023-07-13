@@ -94,6 +94,8 @@ class BaseParserConfig(BaseModel):
 
 __all__ = [
     "BaseParserConfig",
+    "CSS3Color",
+    "DayOfWeek",
 ]
 
 if __name__ == "__main__":
