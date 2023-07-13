@@ -148,15 +148,4 @@ DESCRIPTION:Location: online\nInstructor: Iuliia Metelskaia\nGroup: BS1\nS
  ubject: Basics of Product Management\nTime: 09:10 - 10:40 13.07.2023
 LOCATION:online
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Basics of Product Management
-DTSTART:20230713T105000
-DTEND:20230713T122000
-UID:fb06c7ac@innohassle.ru
-CATEGORIES:Basics of Product Management
-COLOR:firebrick
-DESCRIPTION:Location: online\nInstructor: Iuliia Metelskaia\nGroup: BS1\nS
- ubject: Basics of Product Management\nTime: 10:50 - 12:20 13.07.2023
-LOCATION:online
-END:VEVENT
 END:VCALENDAR

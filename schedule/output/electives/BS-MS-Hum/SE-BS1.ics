@@ -84,6 +84,17 @@ LOCATION:316
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Social Entrepreneurship
+DTSTART:20230706T143000
+DTEND:20230706T160000
+UID:24df8bd6@innohassle.ru
+CATEGORIES:Social Entrepreneurship
+COLOR:chocolate
+DESCRIPTION:Location: 316\nInstructor: Olga Ustyuzhnantseva\nGroup: BS1\nS
+ ubject: Social Entrepreneurship\nTime: 14:30 - 16:00 06.07.2023
+LOCATION:316
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social Entrepreneurship
 DTSTART:20230707T143000
 DTEND:20230707T160000
 UID:f7063d6c@innohassle.ru

@@ -103,14 +103,14 @@ LOCATION:318
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Front-end Web Development (lab)
-DTSTART:20230718T125000
-DTEND:20230718T142000
-UID:7fe1ecac@innohassle.ru
+DTSTART:20230719T091000
+DTEND:20230719T104000
+UID:fc4bd8d7@innohassle.ru
 CATEGORIES:Front-end Web Development
 COLOR:chocolate
 DESCRIPTION:Location: 318\nInstructor: AbdelRahman Abounegm/Daniel Atonge\
- nType: lab\nGroup: gr1\nSubject: Front-end Web Development\nTime: 12:50 - 
- 14:20 18.07.2023
+ nType: lab\nGroup: gr1\nSubject: Front-end Web Development\nTime: 09:10 - 
+ 10:40 19.07.2023
 LOCATION:318
 END:VEVENT
 END:VCALENDAR

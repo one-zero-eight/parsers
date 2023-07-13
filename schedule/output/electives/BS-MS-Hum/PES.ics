@@ -73,28 +73,6 @@ LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Personal Efficiency Skills of IT-specialist
-DTSTART:20230711T143000
-DTEND:20230711T160000
-UID:8a9efb8e@innohassle.ru
-CATEGORIES:Personal Efficiency Skills of IT-specialist
-COLOR:indigo
-DESCRIPTION:Location: 314\nInstructor: Evgenii Serochudinov\nSubject: Pers
- onal Efficiency Skills of IT-specialist\nTime: 14:30 - 16:00 11.07.2023
-LOCATION:314
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Personal Efficiency Skills of IT-specialist
-DTSTART:20230711T161000
-DTEND:20230711T174000
-UID:2b72294d@innohassle.ru
-CATEGORIES:Personal Efficiency Skills of IT-specialist
-COLOR:indigo
-DESCRIPTION:Location: 314\nInstructor: Evgenii Serochudinov\nSubject: Pers
- onal Efficiency Skills of IT-specialist\nTime: 16:10 - 17:40 11.07.2023
-LOCATION:314
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Personal Efficiency Skills of IT-specialist
 DTSTART:20230712T143000
 DTEND:20230712T160000
 UID:8117325e@innohassle.ru
