@@ -58,7 +58,7 @@ class ElectiveEvent(BaseModel):
     elective: Elective
     """ Elective object """
     start: datetime.datetime
-    """ Event start time """ ""
+    """ Event start time """
     end: datetime.datetime
     """ Event end time """
     location: Optional[str]
