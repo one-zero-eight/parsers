@@ -1,3 +1,14 @@
+__all__ = [
+    "get_current_year",
+    "weekday_converter",
+    "nearest_weekday",
+    "get_weekday_rrule",
+    "get_credentials",
+    "connect_spreadsheets",
+    "get_project_root",
+    "DAYS",
+]
+
 import datetime
 import os
 from pathlib import Path
@@ -111,16 +122,6 @@ DAYS = [
     "SUNDAY",
 ]
 """Days of week"""
-
-__all__ = [
-    "get_current_year",
-    "weekday_converter",
-    "nearest_weekday",
-    "get_credentials",
-    "connect_spreadsheets",
-    "get_project_root",
-    "DAYS",
-]
 
 
 def get_weekday_rrule(end_date: datetime.date) -> dict:

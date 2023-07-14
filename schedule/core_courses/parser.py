@@ -306,26 +306,6 @@ def format_group_name(dirt_group_name: str) -> str:
     return dirt_group_name
 
 
-def get_weekday_rrule(end_date: datetime.date) -> dict:
-    """
-    Get RRULE for recurrence with weekly interval and end date.
-
-    :param end_date: end date
-    :type end_date: datetime.date
-    :return: RRULE dictionary with weekly interval and end date.
-        See `here <https://icalendar.org/iCalendar-RFC-5545/3-8-5-3-recurrence-rule.html>`__
-    :rtype: dict
-
-    >>> get_weekday_rrule(datetime.date(2021, 1, 1))
-    {'FREQ': 'WEEKLY', 'INTERVAL': 1, 'UNTIL': datetime.date(2021, 1, 1)}
-    """
-    return {
-        "FREQ": "WEEKLY",
-        "INTERVAL": 1,
-        "UNTIL": end_date,
-    }
-
-
 def process_target_schedule(
     parser: CoreCoursesParser, target_id: int
 ) -> Iterable[ScheduleEvent]:
