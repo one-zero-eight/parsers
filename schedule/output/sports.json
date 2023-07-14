@@ -1,0 +1,126 @@
+{
+    "calendars": [
+        {
+            "file": "sports/badminton-advanced.ics",
+            "name": "Badminton - Advanced",
+            "sport_type": "Badminton"
+        },
+        {
+            "file": "sports/badminton-beginners.ics",
+            "name": "Badminton - Beginners",
+            "sport_type": "Badminton"
+        },
+        {
+            "file": "sports/basketball.ics",
+            "name": "Basketball",
+            "sport_type": "Basketball"
+        },
+        {
+            "file": "sports/boxing.ics",
+            "name": "Boxing",
+            "sport_type": "Boxing"
+        },
+        {
+            "file": "sports/cricket.ics",
+            "name": "Cricket",
+            "sport_type": "Cricket"
+        },
+        {
+            "file": "sports/followthebars-running.ics",
+            "name": "Follow the Bars - Running",
+            "sport_type": "Follow the Bars"
+        },
+        {
+            "file": "sports/football.ics",
+            "name": "Football",
+            "sport_type": "Football"
+        },
+        {
+            "file": "sports/functionallsd.ics",
+            "name": "Functional LSD",
+            "sport_type": "Functional LSD"
+        },
+        {
+            "file": "sports/generalphysicaltraining.ics",
+            "name": "General Physical Training",
+            "sport_type": "General Physical Training"
+        },
+        {
+            "file": "sports/mixedsports.ics",
+            "name": "Mixed sports",
+            "sport_type": "Mixed sports"
+        },
+        {
+            "file": "sports/parkrun-5verst.ics",
+            "name": "Park Run - 5 Verst",
+            "sport_type": "Park Run"
+        },
+        {
+            "file": "sports/rage.ics",
+            "name": "RAGE",
+            "sport_type": "RAGE"
+        },
+        {
+            "file": "sports/rage-knights.ics",
+            "name": "RAGE - Knights",
+            "sport_type": "RAGE"
+        },
+        {
+            "file": "sports/sambo.ics",
+            "name": "Sambo",
+            "sport_type": "Sambo"
+        },
+        {
+            "file": "sports/socialdance.ics",
+            "name": "Social Dance",
+            "sport_type": "Social Dance"
+        },
+        {
+            "file": "sports/streetdance.ics",
+            "name": "Street Dance",
+            "sport_type": "Street Dance"
+        },
+        {
+            "file": "sports/tabletennis-advanced.ics",
+            "name": "Table tennis - Advanced",
+            "sport_type": "Table tennis"
+        },
+        {
+            "file": "sports/tabletennis-beginners.ics",
+            "name": "Table tennis - Beginners",
+            "sport_type": "Table tennis"
+        },
+        {
+            "file": "sports/tennis.ics",
+            "name": "Tennis",
+            "sport_type": "Tennis"
+        },
+        {
+            "file": "sports/trickingclub.ics",
+            "name": "Tricking club",
+            "sport_type": "Tricking club"
+        },
+        {
+            "file": "sports/volleyball.ics",
+            "name": "Volleyball",
+            "sport_type": "Volleyball"
+        },
+        {
+            "file": "sports/yoga-strength.ics",
+            "name": "Yoga - Strength",
+            "sport_type": "Yoga"
+        },
+        {
+            "file": "sports/yoga-stretching.ics",
+            "name": "Yoga - Stretching",
+            "sport_type": "Yoga"
+        }
+    ],
+    "filters": [
+        {
+            "alias": "sport_type",
+            "name": "Sport type"
+        }
+    ],
+    "title": "Sport"
+}

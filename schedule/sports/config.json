@@ -1,0 +1,6 @@
+{
+  "START_OF_SEMESTER": "20230605T000000",
+  "END_OF_SEMESTER": "20230724T000000",
+  "SAVE_ICS_PATH": "output/sports",
+  "SAVE_JSON_PATH": "output/sports.json"
+}

@@ -18,6 +18,24 @@ class DayOfWeek(StrEnum):
     SUNDAY = "SUNDAY"
 
 
+class VDayOfWeek(StrEnum):
+    MONDAY = "MO"
+    TUESDAY = "TU"
+    WEDNESDAY = "WE"
+    THURSDAY = "TH"
+    FRIDAY = "FR"
+    SATURDAY = "SA"
+    SUNDAY = "SU"
+
+    @classmethod
+    def __len__(cls):
+        return 7
+
+    @classmethod
+    def get_by_index(cls, idx: int):
+        return list(cls.__members__.values())[idx]
+
+
 class CSS3Color(StrEnum):
     BLUE_VIOLET = "blueviolet"
     BROWN = "brown"
@@ -41,7 +59,16 @@ class CSS3Color(StrEnum):
         return list(cls.__members__.values())[idx]
 
 
-class BaseParserConfig(BaseModel):
+class VeryBaseParserConfig(BaseModel):
+    SAVE_ICS_PATH: Path
+    """Path to directory to save .ics files"""
+    SAVE_JSON_PATH: Path
+    """Path to save .json file"""
+    TIMEZONE = "Europe/Moscow"
+    """Timezone for events"""
+
+
+class BaseParserConfig(VeryBaseParserConfig):
     """
     Base config for parsers
     """
@@ -52,11 +79,6 @@ class BaseParserConfig(BaseModel):
     """Target ranges from spreadsheet"""
     TARGET_SHEET_TITLES: list[str] = Field(default_factory=list)
     """Target sheet titles from spreadsheet"""
-    SAVE_ICS_PATH: Path
-    """Path to directory to save .ics files"""
-    SAVE_JSON_PATH: Path
-    """Path to save .json file"""
-
     CREDENTIALS_PATH: Path = "credentials.json"
     """Path to credentials.json file for Google Sheets API"""
     TOKEN_PATH: Path = "token.json"
@@ -64,8 +86,6 @@ class BaseParserConfig(BaseModel):
 
     API_SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
     """API scopes for Google Sheets API"""
-    TIMEZONE = "Europe/Moscow"
-    """Timezone for events"""
     TIMEZONE_DELTA = "+03:00"
     """Timezone delta for events"""
 

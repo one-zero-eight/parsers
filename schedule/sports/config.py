@@ -5,6 +5,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, validator, SecretStr
 
+from schedule.config_base import VeryBaseParserConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -21,14 +22,15 @@ class Token(BaseModel):
     token: SecretStr
 
 
-class SportsParserConfig(BaseModel):
+class SportsParserConfig(VeryBaseParserConfig):
+    START_OF_SEMESTER: datetime.datetime
     END_OF_SEMESTER: datetime.datetime
 
     website_url: str = "https://sport.innopolis.university"
     api_url: str = "https://sport.innopolis.university/api"
 
-    @validator("END_OF_SEMESTER", pre=True)
-    def end_of_semester_validator(cls, v):
+    @validator("END_OF_SEMESTER", "START_OF_SEMESTER", pre=True)
+    def fromisoformat(cls, v):
         if isinstance(v, str):
             v = datetime.datetime.fromisoformat(v)
         return v
