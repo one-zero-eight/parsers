@@ -137,4 +137,26 @@ DESCRIPTION:Location: 303\nInstructor: Munir Makhmutov\nSubject: Introduct
  ion to Music Generation for IT-specialist\nTime: 16:10 - 17:40 11.07.2023
 LOCATION:303
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Music Generation for IT-specialist
+DTSTART:20230718T143000
+DTEND:20230718T160000
+UID:17224cd4@innohassle.ru
+CATEGORIES:Introduction to Music Generation for IT-specialist
+COLOR:crimson
+DESCRIPTION:Location: 303\nInstructor: Munir Makhmutov\nSubject: Introduct
+ ion to Music Generation for IT-specialist\nTime: 14:30 - 16:00 18.07.2023
+LOCATION:303
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Music Generation for IT-specialist
+DTSTART:20230718T161000
+DTEND:20230718T174000
+UID:b6ce9e17@innohassle.ru
+CATEGORIES:Introduction to Music Generation for IT-specialist
+COLOR:crimson
+DESCRIPTION:Location: 303\nInstructor: Munir Makhmutov\nSubject: Introduct
+ ion to Music Generation for IT-specialist\nTime: 16:10 - 17:40 18.07.2023
+LOCATION:303
+END:VEVENT
 END:VCALENDAR

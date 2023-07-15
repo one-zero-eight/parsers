@@ -137,4 +137,37 @@ DESCRIPTION:Location: 316\nInstructor: Olga Ustyuzhnantseva\nGroup: BS2\nS
  ubject: Social Entrepreneurship\nTime: 16:10 - 17:40 14.07.2023
 LOCATION:316
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social Entrepreneurship
+DTSTART:20230719T161000
+DTEND:20230719T174000
+UID:71d56803@innohassle.ru
+CATEGORIES:Social Entrepreneurship
+COLOR:chocolate
+DESCRIPTION:Location: 316\nInstructor: Olga Ustyuzhnantseva\nGroup: BS2\nS
+ ubject: Social Entrepreneurship\nTime: 16:10 - 17:40 19.07.2023
+LOCATION:316
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social Entrepreneurship
+DTSTART:20230720T161000
+DTEND:20230720T174000
+UID:f7dcf140@innohassle.ru
+CATEGORIES:Social Entrepreneurship
+COLOR:chocolate
+DESCRIPTION:Location: 316\nInstructor: Olga Ustyuzhnantseva\nGroup: BS2\nS
+ ubject: Social Entrepreneurship\nTime: 16:10 - 17:40 20.07.2023
+LOCATION:316
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social Entrepreneurship
+DTSTART:20230721T161000
+DTEND:20230721T174000
+UID:240547fa@innohassle.ru
+CATEGORIES:Social Entrepreneurship
+COLOR:chocolate
+DESCRIPTION:Location: 316\nInstructor: Olga Ustyuzhnantseva\nGroup: BS2\nS
+ ubject: Social Entrepreneurship\nTime: 16:10 - 17:40 21.07.2023
+LOCATION:316
+END:VEVENT
 END:VCALENDAR

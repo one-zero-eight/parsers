@@ -149,4 +149,28 @@ DESCRIPTION:Location: 321\nInstructor: Gulnaz Ibragimova\nGroup: BS1\nSubj
  0:40 14.07.2023
 LOCATION:321
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Career Development for IT-specialist
+DTSTART:20230719T143000
+DTEND:20230719T160000
+UID:9f56a8c6@innohassle.ru
+CATEGORIES:Introduction to Career Development for IT-specialist
+COLOR:firebrick
+DESCRIPTION:Location: 421\nInstructor: Gulnaz Ibragimova\nGroup: BS1\nSubj
+ ect: Introduction to Career Development for IT-specialist\nTime: 14:30 - 1
+ 6:00 19.07.2023
+LOCATION:421
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Career Development for IT-specialist
+DTSTART:20230721T091000
+DTEND:20230721T104000
+UID:9b4855f7@innohassle.ru
+CATEGORIES:Introduction to Career Development for IT-specialist
+COLOR:firebrick
+DESCRIPTION:Location: 321\nInstructor: Gulnaz Ibragimova\nGroup: BS1\nSubj
+ ect: Introduction to Career Development for IT-specialist\nTime: 09:10 - 1
+ 0:40 21.07.2023
+LOCATION:321
+END:VEVENT
 END:VCALENDAR
