@@ -70,9 +70,12 @@ if __name__ == "__main__":
             calendars["calendars"].append(
                 {
                     "name": calendar_name,
-                    "elective_type": config.TARGET_SHEET_TITLES[i],
-                    "file": relative_directory.as_posix(),
-                    "description": elective.name if elective else "",
+                    "type": "elective",
+                    "path": relative_directory.as_posix(),
+                    "satellite": {
+                        "elective_type": config.TARGET_SHEET_TITLES[i],
+                        "description": elective.name if elective else "",
+                    },
                 }
             )
 

@@ -1,179 +1,284 @@
 {
     "calendars": [
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-01.ics",
-            "name": "B22-CS-01"
+            "name": "B22-CS-01",
+            "path": "core-courses/BS-Year-1/B22-CS-01.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-02.ics",
-            "name": "B22-CS-02"
+            "name": "B22-CS-02",
+            "path": "core-courses/BS-Year-1/B22-CS-02.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-03.ics",
-            "name": "B22-CS-03"
+            "name": "B22-CS-03",
+            "path": "core-courses/BS-Year-1/B22-CS-03.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-04.ics",
-            "name": "B22-CS-04"
+            "name": "B22-CS-04",
+            "path": "core-courses/BS-Year-1/B22-CS-04.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-05.ics",
-            "name": "B22-CS-05"
+            "name": "B22-CS-05",
+            "path": "core-courses/BS-Year-1/B22-CS-05.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-CS-06.ics",
-            "name": "B22-CS-06"
+            "name": "B22-CS-06",
+            "path": "core-courses/BS-Year-1/B22-CS-06.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-DSAI-01.ics",
-            "name": "B22-DSAI-01"
+            "name": "B22-DSAI-01",
+            "path": "core-courses/BS-Year-1/B22-DSAI-01.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-DSAI-02.ics",
-            "name": "B22-DSAI-02"
+            "name": "B22-DSAI-02",
+            "path": "core-courses/BS-Year-1/B22-DSAI-02.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-DSAI-03.ics",
-            "name": "B22-DSAI-03"
+            "name": "B22-DSAI-03",
+            "path": "core-courses/BS-Year-1/B22-DSAI-03.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 1",
-            "file": "core-courses/BS-Year-1/B22-DSAI-04.ics",
-            "name": "B22-DSAI-04"
+            "name": "B22-DSAI-04",
+            "path": "core-courses/BS-Year-1/B22-DSAI-04.ics",
+            "satellite": {
+                "course": "BS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-AI-01.ics",
-            "name": "B21-AI-01"
+            "name": "B21-AI-01",
+            "path": "core-courses/BS-Year-2/B21-AI-01.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-CS-01.ics",
-            "name": "B21-CS-01"
+            "name": "B21-CS-01",
+            "path": "core-courses/BS-Year-2/B21-CS-01.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-DS-01.ics",
-            "name": "B21-DS-01"
+            "name": "B21-DS-01",
+            "path": "core-courses/BS-Year-2/B21-DS-01.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-DS-02.ics",
-            "name": "B21-DS-02"
+            "name": "B21-DS-02",
+            "path": "core-courses/BS-Year-2/B21-DS-02.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-RO-01.ics",
-            "name": "B21-RO-01"
+            "name": "B21-RO-01",
+            "path": "core-courses/BS-Year-2/B21-RO-01.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-SD-01.ics",
-            "name": "B21-SD-01"
+            "name": "B21-SD-01",
+            "path": "core-courses/BS-Year-2/B21-SD-01.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-SD-02.ics",
-            "name": "B21-SD-02"
+            "name": "B21-SD-02",
+            "path": "core-courses/BS-Year-2/B21-SD-02.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 2",
-            "file": "core-courses/BS-Year-2/B21-SD-03.ics",
-            "name": "B21-SD-03"
+            "name": "B21-SD-03",
+            "path": "core-courses/BS-Year-2/B21-SD-03.ics",
+            "satellite": {
+                "course": "BS - Year 2"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-AI.ics",
-            "name": "B20-AI"
+            "name": "B20-AI",
+            "path": "core-courses/BS-Year-3/B20-AI.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-CS.ics",
-            "name": "B20-CS"
+            "name": "B20-CS",
+            "path": "core-courses/BS-Year-3/B20-CS.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-DS.ics",
-            "name": "B20-DS"
+            "name": "B20-DS",
+            "path": "core-courses/BS-Year-3/B20-DS.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-RO.ics",
-            "name": "B20-RO"
+            "name": "B20-RO",
+            "path": "core-courses/BS-Year-3/B20-RO.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-SD-01.ics",
-            "name": "B20-SD-01"
+            "name": "B20-SD-01",
+            "path": "core-courses/BS-Year-3/B20-SD-01.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 3",
-            "file": "core-courses/BS-Year-3/B20-SD-02.ics",
-            "name": "B20-SD-02"
+            "name": "B20-SD-02",
+            "path": "core-courses/BS-Year-3/B20-SD-02.ics",
+            "satellite": {
+                "course": "BS - Year 3"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-AI-01.ics",
-            "name": "B19-AI-01"
+            "name": "B19-AI-01",
+            "path": "core-courses/BS-Year-4/B19-AI-01.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-CS-01.ics",
-            "name": "B19-CS-01"
+            "name": "B19-CS-01",
+            "path": "core-courses/BS-Year-4/B19-CS-01.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-DS-01.ics",
-            "name": "B19-DS-01"
+            "name": "B19-DS-01",
+            "path": "core-courses/BS-Year-4/B19-DS-01.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-RO-01.ics",
-            "name": "B19-RO-01"
+            "name": "B19-RO-01",
+            "path": "core-courses/BS-Year-4/B19-RO-01.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-SD-01.ics",
-            "name": "B19-SD-01"
+            "name": "B19-SD-01",
+            "path": "core-courses/BS-Year-4/B19-SD-01.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "BS - Year 4",
-            "file": "core-courses/BS-Year-4/B19-SD-02.ics",
-            "name": "B19-SD-02"
+            "name": "B19-SD-02",
+            "path": "core-courses/BS-Year-4/B19-SD-02.ics",
+            "satellite": {
+                "course": "BS - Year 4"
+            },
+            "type": "core course"
         },
         {
-            "course": "MS - Year 1",
-            "file": "core-courses/MS-Year-1/M22-DS-01.ics",
-            "name": "M22-DS-01"
+            "name": "M22-DS-01",
+            "path": "core-courses/MS-Year-1/M22-DS-01.ics",
+            "satellite": {
+                "course": "MS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "MS - Year 1",
-            "file": "core-courses/MS-Year-1/M22-RO-01.ics",
-            "name": "M22-RO-01"
+            "name": "M22-RO-01",
+            "path": "core-courses/MS-Year-1/M22-RO-01.ics",
+            "satellite": {
+                "course": "MS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "MS - Year 1",
-            "file": "core-courses/MS-Year-1/M22-SE-01.ics",
-            "name": "M22-SE-01"
+            "name": "M22-SE-01",
+            "path": "core-courses/MS-Year-1/M22-SE-01.ics",
+            "satellite": {
+                "course": "MS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "MS - Year 1",
-            "file": "core-courses/MS-Year-1/M22-SE-02.ics",
-            "name": "M22-SE-02"
+            "name": "M22-SE-02",
+            "path": "core-courses/MS-Year-1/M22-SE-02.ics",
+            "satellite": {
+                "course": "MS - Year 1"
+            },
+            "type": "core course"
         },
         {
-            "course": "MS - Year 1",
-            "file": "core-courses/MS-Year-1/M22-TE-01.ics",
-            "name": "M22-TE-01"
+            "name": "M22-TE-01",
+            "path": "core-courses/MS-Year-1/M22-TE-01.ics",
+            "satellite": {
+                "course": "MS - Year 1"
+            },
+            "type": "core course"
         }
     ],
     "filters": [

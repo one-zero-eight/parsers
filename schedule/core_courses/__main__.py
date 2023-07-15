@@ -85,8 +85,9 @@ if __name__ == "__main__":
             calendars["calendars"].append(
                 {
                     "name": calendar_name,
-                    "course": course_name,
-                    "file": file_path.relative_to(json_file.parent).as_posix(),
+                    "path": file_path.relative_to(json_file.parent).as_posix(),
+                    "type": "core course",
+                    "satellite": {"course": course_name},
                 }
             )
 
