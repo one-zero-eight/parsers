@@ -146,7 +146,7 @@ class SportScheduleEvent(BaseModel):
                 "freq": "weekly",
                 "until": very_last_date,
                 "byday": [
-                    icalendar.vWeekday(VDayOfWeek.get_by_index(day))
+                    icalendar.vWeekday(VDayOfWeek.get_by_index(day - 1))
                     for day in self.sport_schedule_event.daysOfWeek
                 ],
             }
