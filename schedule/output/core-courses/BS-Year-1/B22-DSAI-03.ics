@@ -554,6 +554,17 @@ LOCATION:105
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Theoretical sports (lec)
+DTSTART:20230720T124000
+DTEND:20230720T141000
+UID:0_9d7729ce@innohassle.ru
+CATEGORIES:Theoretical sports
+COLOR:darkgreen
+DESCRIPTION:Location: 105\nInstructor: Andrey Krikunov\nType: lec\nGroup: 
+ B22-DSAI-03\nSubject: Theoretical sports\nTime: 12:40 - 14:10
+LOCATION:105
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Theoretical sports (lec)
 DTSTART:20230721T104000
 DTEND:20230721T121000
 UID:0_d4767694@innohassle.ru
