@@ -1,0 +1,256 @@
+{
+    "calendars": [
+        {
+            "alias": "bootcamp2023-group1",
+            "path": "bootcamp/2023/group1.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group1",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group10",
+            "path": "bootcamp/2023/group10.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group10",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group11",
+            "path": "bootcamp/2023/group11.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group11",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group12",
+            "path": "bootcamp/2023/group12.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group12",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group13",
+            "path": "bootcamp/2023/group13.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group13",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group14",
+            "path": "bootcamp/2023/group14.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group14",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group15",
+            "path": "bootcamp/2023/group15.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group15",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group16",
+            "path": "bootcamp/2023/group16.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group16",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group17",
+            "path": "bootcamp/2023/group17.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group17",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group18",
+            "path": "bootcamp/2023/group18.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group18",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group2",
+            "path": "bootcamp/2023/group2.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group2",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group3",
+            "path": "bootcamp/2023/group3.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group3",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group4",
+            "path": "bootcamp/2023/group4.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group4",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group5",
+            "path": "bootcamp/2023/group5.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group5",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group6",
+            "path": "bootcamp/2023/group6.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group6",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group7",
+            "path": "bootcamp/2023/group7.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group7",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group8",
+            "path": "bootcamp/2023/group8.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group8",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-group9",
+            "path": "bootcamp/2023/group9.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "group9",
+                    "type": "bootcamp2023"
+                }
+            ]
+        }
+    ]
+}

@@ -114,6 +114,7 @@ class BaseParserConfig(VeryBaseParserConfig):
 
 __all__ = [
     "BaseParserConfig",
+    "VeryBaseParserConfig",
     "CSS3Color",
     "DayOfWeek",
 ]
