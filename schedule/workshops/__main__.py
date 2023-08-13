@@ -70,6 +70,7 @@ if __name__ == "__main__":
                     }
                     for timeslot in workshop.timeslots
                 ],
+                "date": workshop.dtstart.date().isoformat(),
                 "location": workshop.location,
                 "speaker": workshop.speaker,
                 "capacity": workshop.capacity,
