@@ -12,7 +12,8 @@ DTEND:20230816T170000
 UID:eb8522@innohassle.ru
 CATEGORIES:bootcamp
 COLOR:chartreuse
-DESCRIPTION:Speaker: Marco Duzlemich\n30 students
+DESCRIPTION:Speaker: Marco Duzlemich\nCapacity: 30 students\nLocation: 321
+  room\nTimeslot: 15:30 - 17:00\n
 LOCATION:321 room
 END:VEVENT
 END:VCALENDAR

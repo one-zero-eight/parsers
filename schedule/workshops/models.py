@@ -45,6 +45,27 @@ class WorkshopEvent(BaseModel):
         self.dtstart = datetime.datetime.combine(date, start_time)
         self.dtend = datetime.datetime.combine(date, end_time)
 
+    @property
+    def description(self):
+        description = ""
+        if self.speaker:
+            description += f"{self.speaker}\n"
+        if self.comments:
+            description += "\n".join(self.comments) + "\n"
+        if self.capacity:
+            description += f"Capacity: {self.capacity}\n"
+        if self.location:
+            description += f"Location: {self.location}\n"
+
+        if len(self.timeslots) > 1:
+            description += "Timeslots:\n"
+            for i, timeslot in enumerate(self.timeslots):
+                description += f"{i + 1}) {timeslot[0].strftime('%H:%M')} - {timeslot[1].strftime('%H:%M')}\n"
+        else:
+            description += f"Timeslot: {self.timeslots[0][0].strftime('%H:%M')} - {self.timeslots[0][1].strftime('%H:%M')}\n"
+
+        return description
+
     def get_vevent(self):
         vevent = icalendar.Event(
             summary=self.summary,
@@ -53,10 +74,7 @@ class WorkshopEvent(BaseModel):
             dtstart=icalendar.vDatetime(self.dtstart),
             dtend=icalendar.vDatetime(self.dtend),
         )
-        description = (
-            "\n".join(
-                [self.speaker, *self.comments, self.capacity])
-        )
+        description = self.description
         if description:
             vevent["description"] = description
         if self.location:

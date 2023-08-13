@@ -13,7 +13,8 @@ DTEND:20230817T163000
 UID:ace882b2@innohassle.ru
 CATEGORIES:bootcamp
 COLOR:firebrick
-DESCRIPTION:Speaker: Data Science Club\n50 people
+DESCRIPTION:Speaker: Data Science Club\nCapacity: 50 people\nLocation: 321
+  Room\nTimeslot: 15:30 - 16:30\n
 LOCATION:321 Room
 END:VEVENT
 END:VCALENDAR

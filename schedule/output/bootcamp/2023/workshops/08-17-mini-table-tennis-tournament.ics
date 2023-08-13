@@ -12,7 +12,8 @@ DTEND:20230817T171500
 UID:3cda1df0@innohassle.ru
 CATEGORIES:bootcamp
 COLOR:chocolate
-DESCRIPTION:Speaker: Table Tennis Club\nOnly 10 people
+DESCRIPTION:Speaker: Table Tennis Club\nCapacity: Only 10 people\nLocation
+ : Sportcomplex 2 floor\nTimeslot: 15:45 - 17:15\n
 LOCATION:Sportcomplex 2 floor
 END:VEVENT
 END:VCALENDAR

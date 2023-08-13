@@ -12,7 +12,8 @@ DTEND:20230817T170000
 UID:1dfbc8ae@innohassle.ru
 CATEGORIES:bootcamp
 COLOR:firebrick
-DESCRIPTION:Speaker: IU graduate Georgy Andryushchenko\nOnly 20 people
+DESCRIPTION:Speaker: IU graduate Georgy Andryushchenko\nCapacity: Only 20 
+ people\nLocation: 320 Room\nTimeslot: 15:30 - 17:00\n
 LOCATION:320 Room
 END:VEVENT
 END:VCALENDAR

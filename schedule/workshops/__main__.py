@@ -29,6 +29,22 @@ if __name__ == "__main__":
         date = event.dtstart.strftime("%m-%d")
         return sluggify(f"{bootcamp_alias}-{date}-{event.summary}")
 
+    calendars_data["workshops"] = [
+        {
+            "alias": get_alias(workshop),
+            "name": workshop.summary,
+            "timeslots": [
+                {"start": timeslot[0].isoformat(), "end": timeslot[1].isoformat()}
+                for timeslot in workshop.timeslots
+            ],
+            "date": workshop.dtstart.date().isoformat(),
+            "location": workshop.location,
+            "speaker": workshop.speaker,
+            "capacity": workshop.capacity,
+            "comments": workshop.comments,
+        }
+        for workshop in events
+    ]
 
     for workshop_event in events:
         workshop_event: WorkshopEvent
@@ -49,10 +65,12 @@ if __name__ == "__main__":
         workshop_slug = sluggify(f"{date}-{workshop_event.summary}")
         file_name = f"{workshop_slug}.ics"
         file_path = directory / file_name
+
         calendars_data["calendars"].append(
             {
                 "path": file_path.relative_to(file_path.parents[-2]).as_posix(),
                 "name": workshop_event.summary,
+                "description": workshop_event.description,
                 "tags": [bootcamp_tag, workshops_tag],
                 "alias": get_alias(workshop_event),
             }
@@ -63,23 +81,3 @@ if __name__ == "__main__":
         # create a new .json file with information about calendars
     with open(json_file, "w") as f:
         json.dump(calendars_data, f, indent=4, sort_keys=True)
-
-    with open(json_file.parent / "workshops.json", "w") as f:
-        workshops = [
-            {
-                "alias": get_alias(workshop),
-                "name": workshop.summary,
-                "timeslots": [
-                    {"start": timeslot[0].isoformat(), "end": timeslot[1].isoformat()}
-                    for timeslot in workshop.timeslots
-                ],
-                "date": workshop.dtstart.date().isoformat(),
-                "location": workshop.location,
-                "speaker": workshop.speaker,
-                "capacity": workshop.capacity,
-                "comments": workshop.comments,
-            }
-            for workshop in events
-        ]
-
-        json.dump({"workshops": workshops}, f, indent=4)

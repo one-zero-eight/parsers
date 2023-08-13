@@ -13,7 +13,8 @@ UID:ce7652c2@innohassle.ru
 CATEGORIES:bootcamp
 COLOR:darkblue
 DESCRIPTION:Speaker: Mezenova Veronika\, specialist for outgoing exchange\
- nThe more the better people
+ nCapacity: The more the better people\nLocation: 321 Room\nTimeslot: 15:30
+  - 17:30\n
 LOCATION:321 Room
 END:VEVENT
 END:VCALENDAR
