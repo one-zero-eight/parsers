@@ -57,3 +57,24 @@ if __name__ == "__main__":
         # create a new .json file with information about calendars
     with open(json_file, "w") as f:
         json.dump(calendars_data, f, indent=4, sort_keys=True)
+
+    with open(json_file.parent / "workshops.json", "w") as f:
+        workshops = [
+            {
+                "name": workshop.summary,
+                "alias": sluggify(workshop.summary),
+                "timeslots": [
+                    {
+                        "start": timeslot[0].isoformat(),
+                        "end": timeslot[1].isoformat()
+                    }
+                    for timeslot in workshop.timeslots
+                ],
+                "location": workshop.location,
+                "speaker": workshop.speaker,
+                "capacity": workshop.capacity,
+                "comments": workshop.comments
+            } for workshop in events
+        ]
+
+        json.dump({"workshops": workshops}, f, indent=4, sort_keys=True)

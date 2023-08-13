@@ -1,0 +1,430 @@
+{
+    "workshops": [
+        {
+            "alias": "machine-learning-in-action-concepts-and-industry-uses",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "speaker": "Speaker: Data Science Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "international-exchange-program",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "321 Room",
+            "name": "International Exchange Program",
+            "speaker": "Speaker: Mezenova Veronika, specialist for outgoing exchange",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "focusing-and-dealing-with-study-and-exam-stress",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "300 Room",
+            "name": "Focusing and dealing with study and exam stress",
+            "speaker": "Speaker: Liliya Ayatskova",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "equilibrium",
+            "capacity": "Only 20 people",
+            "comments": [],
+            "location": "320 Room",
+            "name": "Equilibrium",
+            "speaker": "Speaker: IU graduate Georgy Andryushchenko",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "my-way-at-the-innopolis-university-study-and-work",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "My way at the Innopolis University: study and work",
+            "speaker": "Speaker: IU graduate Daniil Sinelnik",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "street-dance-master-class",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "Main entrance outside",
+            "name": "Street dance master class",
+            "speaker": "Speaker: Inno Street Dance club",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "even-programmers-can-be-creative",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "Even programmer's can be creative",
+            "speaker": "Speaker: one-zero-eight community",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "phrasal-verbs",
+            "capacity": "30 students",
+            "comments": [],
+            "location": "321 room",
+            "name": "Phrasal verbs",
+            "speaker": "Speaker: Marco Duzlemich",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "machine-learning-in-action-concepts-and-industry-uses",
+            "capacity": "50 people",
+            "comments": [],
+            "location": "321 Room",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "speaker": "Speaker: Data Science Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "equilibrium",
+            "capacity": "Only 20 people",
+            "comments": [],
+            "location": "320 Room",
+            "name": "Equilibrium",
+            "speaker": "Speaker: IU graduate Georgy Andryushchenko",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "blockchain-intro",
+            "capacity": "Only 20 people",
+            "comments": [],
+            "location": "320 Room",
+            "name": "Blockchain intro",
+            "speaker": "Speaker: Inno Blockchain Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "badminton-masterclass",
+            "capacity": "Only 14 people for every activity",
+            "comments": [],
+            "location": "Big Sports hall Sportcomplex 1 floor",
+            "name": "Badminton Masterclass",
+            "speaker": "Speaker: Badminton Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "How officially the best speaker of Kazakhstan sold you a gamedev",
+            "speaker": "Speakers: Dudinov Mikhail, Anna Kopeikina, Vladislav Kozikov - GDE club",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "\u0441horus-class",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "\u0421horus class",
+            "speaker": "Speaker: Bona Mente Chamber Choir",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "studying-or-living-both-or-neither",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "Room 300",
+            "name": "Studying or Living? Both or Neither?",
+            "speaker": "Speaker: IU graduate Marina Smirnova",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "ai-research-scientist-starter",
+            "capacity": "The more the better people",
+            "comments": [
+                "Pack: Academia and Industry"
+            ],
+            "location": "Room 300",
+            "name": "AI Research Scientist Starter",
+            "speaker": "Speakers: IU graduates Bulat Maksudov and Vladislav Kurenkov",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "football",
+            "capacity": "Only 22 people for every activity",
+            "comments": [],
+            "location": "Football court",
+            "name": "Football",
+            "speaker": "Speaker: Football Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "badminton-masterclass",
+            "capacity": "Only 14 people for every activity",
+            "comments": [],
+            "location": "Big Sports hall Sportcomplex 1 floor",
+            "name": "Badminton Masterclass",
+            "speaker": "Speaker: Badminton Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "functional-lsd",
+            "capacity": "Only 20 people",
+            "comments": [],
+            "location": "Sportcomplex 3 floor",
+            "name": "Functional LSD",
+            "speaker": "Speaker: Functional LSD club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:00:00"
+                }
+            ]
+        },
+        {
+            "alias": "how-to-trigger-a-fire-alarm",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "on-line",
+            "name": "How to trigger a fire alarm",
+            "speaker": "Speaker: WEGs club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "introduction-to-one-zero-eight-a-place-of-opportunity",
+            "capacity": "The more the better people",
+            "comments": [],
+            "location": "108 Room",
+            "name": "Introduction to one-zero-eight, a place of opportunity",
+            "speaker": "Speaker: one-zero-eight community",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "airsoft",
+            "capacity": "Only 12 people",
+            "comments": [],
+            "location": "Airsoft courte",
+            "name": "Airsoft",
+            "speaker": "Speaker: Innopolis pmc",
+            "timeslots": [
+                {
+                    "end": "17:30:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "football",
+            "capacity": "Only 22 people for every activity",
+            "comments": [],
+            "location": "Football court",
+            "name": "Football",
+            "speaker": "Speaker: Football Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "rage-knights",
+            "capacity": "Only 20 people",
+            "comments": [],
+            "location": "Basketball street court",
+            "name": "RAGE knights",
+            "speaker": "Speaker: RAGE club",
+            "timeslots": [
+                {
+                    "end": "17:00:00",
+                    "start": "15:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "volleyball",
+            "capacity": "Only 20 people for every activity",
+            "comments": [],
+            "location": "Volleyball court",
+            "name": "Volleyball",
+            "speaker": "Speaker: Volleyball Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "volleyball",
+            "capacity": "Only 20 people for every activity",
+            "comments": [],
+            "location": "Volleyball court",
+            "name": "Volleyball",
+            "speaker": "Speaker: Volleyball Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "volleyball",
+            "capacity": "Only 20 people for every activity",
+            "comments": [],
+            "location": "Volleyball court",
+            "name": "Volleyball",
+            "speaker": "Speaker: Volleyball Club",
+            "timeslots": [
+                {
+                    "end": "16:30:00",
+                    "start": "15:30:00"
+                },
+                {
+                    "end": "17:30:00",
+                    "start": "16:30:00"
+                }
+            ]
+        },
+        {
+            "alias": "mini-table-tennis-tournament",
+            "capacity": "Only 10 people",
+            "comments": [],
+            "location": "Sportcomplex 2 floor",
+            "name": "Mini table tennis tournament",
+            "speaker": "Speaker: Table Tennis Club",
+            "timeslots": [
+                {
+                    "end": "17:15:00",
+                    "start": "15:45:00"
+                }
+            ]
+        }
+    ]
+}
