@@ -1,12 +1,12 @@
 import datetime
-from itertools import groupby
+import re
 from typing import Optional
 
 import pandas as pd
 
+from schedule.processors.regex import symbol_translation
 from schedule.workshops.config import bootcamp_config as config
 from schedule.workshops.models import WorkshopEvent
-import re
 
 
 class HashableDict(dict):
@@ -22,6 +22,7 @@ class WorkshopParser:
             self.df = pd.read_excel(f, engine="openpyxl", header=0)
         # self.df.iloc[:, 0].fillna(method="ffill", axis=0, inplace=True)
         # self.df.set_index(self.df.columns[0], inplace=True)
+
         WorkshopParser.process_header_with_dates(self.df)
         self.df = WorkshopParser.remove_trailing_spaces(self.df)
 
@@ -70,6 +71,8 @@ class WorkshopParser:
             return None
         # replace multiple \n with one \n to avoid empty lines using regex
         event_cell = re.sub(r"\n+", "\n", event_cell)
+        # replace cyrillic symbols with their unicode analogs
+        event_cell = event_cell.translate(symbol_translation)
         splitter = event_cell.splitlines()
         splitter = list(map(str.strip, splitter))
         new_splitter = []
