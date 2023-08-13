@@ -1,9 +1,9 @@
 {
     "calendars": [
         {
-            "alias": "bootcamp2023-machine-learning-in-action-concepts-and-industry-uses",
+            "alias": "bootcamp2023-08-14-machine-learning-in-action-concepts-and-industry-uses",
             "name": "Machine Learning in Action: Concepts and Industry Uses",
-            "path": "bootcamp/2023/workshops/machine-learning-in-action-concepts-and-industry-uses.ics",
+            "path": "bootcamp/2023/workshops/08-14-machine-learning-in-action-concepts-and-industry-uses.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -16,9 +16,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-international-exchange-program",
+            "alias": "bootcamp2023-08-15-international-exchange-program",
             "name": "International Exchange Program",
-            "path": "bootcamp/2023/workshops/international-exchange-program.ics",
+            "path": "bootcamp/2023/workshops/08-15-international-exchange-program.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -31,9 +31,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-focusing-and-dealing-with-study-and-exam-stress",
+            "alias": "bootcamp2023-08-16-focusing-and-dealing-with-study-and-exam-stress",
             "name": "Focusing and dealing with study and exam stress",
-            "path": "bootcamp/2023/workshops/focusing-and-dealing-with-study-and-exam-stress.ics",
+            "path": "bootcamp/2023/workshops/08-16-focusing-and-dealing-with-study-and-exam-stress.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -46,9 +46,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-equilibrium",
+            "alias": "bootcamp2023-08-17-equilibrium",
             "name": "Equilibrium",
-            "path": "bootcamp/2023/workshops/equilibrium.ics",
+            "path": "bootcamp/2023/workshops/08-17-equilibrium.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -61,9 +61,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-my-way-at-the-innopolis-university-study-and-work",
+            "alias": "bootcamp2023-08-18-my-way-at-the-innopolis-university-study-and-work",
             "name": "My way at the Innopolis University: study and work",
-            "path": "bootcamp/2023/workshops/my-way-at-the-innopolis-university-study-and-work.ics",
+            "path": "bootcamp/2023/workshops/08-18-my-way-at-the-innopolis-university-study-and-work.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -76,9 +76,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-street-dance-master-class",
+            "alias": "bootcamp2023-08-14-street-dance-master-class",
             "name": "Street dance master class",
-            "path": "bootcamp/2023/workshops/street-dance-master-class.ics",
+            "path": "bootcamp/2023/workshops/08-14-street-dance-master-class.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -91,9 +91,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-even-programmers-can-be-creative",
+            "alias": "bootcamp2023-08-15-even-programmers-can-be-creative",
             "name": "Even programmer's can be creative",
-            "path": "bootcamp/2023/workshops/even-programmers-can-be-creative.ics",
+            "path": "bootcamp/2023/workshops/08-15-even-programmers-can-be-creative.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -106,9 +106,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-phrasal-verbs",
+            "alias": "bootcamp2023-08-16-phrasal-verbs",
             "name": "Phrasal verbs",
-            "path": "bootcamp/2023/workshops/phrasal-verbs.ics",
+            "path": "bootcamp/2023/workshops/08-16-phrasal-verbs.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -121,9 +121,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-machine-learning-in-action-concepts-and-industry-uses",
+            "alias": "bootcamp2023-08-17-machine-learning-in-action-concepts-and-industry-uses",
             "name": "Machine Learning in Action: Concepts and Industry Uses",
-            "path": "bootcamp/2023/workshops/machine-learning-in-action-concepts-and-industry-uses.ics",
+            "path": "bootcamp/2023/workshops/08-17-machine-learning-in-action-concepts-and-industry-uses.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -136,9 +136,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-equilibrium",
+            "alias": "bootcamp2023-08-18-equilibrium",
             "name": "Equilibrium",
-            "path": "bootcamp/2023/workshops/equilibrium.ics",
+            "path": "bootcamp/2023/workshops/08-18-equilibrium.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -151,9 +151,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-blockchain-intro",
+            "alias": "bootcamp2023-08-14-blockchain-intro",
             "name": "Blockchain intro",
-            "path": "bootcamp/2023/workshops/blockchain-intro.ics",
+            "path": "bootcamp/2023/workshops/08-14-blockchain-intro.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -166,9 +166,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-badminton-masterclass",
+            "alias": "bootcamp2023-08-15-badminton-masterclass",
             "name": "Badminton Masterclass",
-            "path": "bootcamp/2023/workshops/badminton-masterclass.ics",
+            "path": "bootcamp/2023/workshops/08-15-badminton-masterclass.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -181,9 +181,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
+            "alias": "bootcamp2023-08-16-how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
             "name": "How officially the best speaker of Kazakhstan sold you a gamedev",
-            "path": "bootcamp/2023/workshops/how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev.ics",
+            "path": "bootcamp/2023/workshops/08-16-how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -196,9 +196,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-chorus-class",
+            "alias": "bootcamp2023-08-17-chorus-class",
             "name": "Chorus class",
-            "path": "bootcamp/2023/workshops/chorus-class.ics",
+            "path": "bootcamp/2023/workshops/08-17-chorus-class.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -211,9 +211,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-studying-or-living-both-or-neither",
+            "alias": "bootcamp2023-08-18-studying-or-living-both-or-neither",
             "name": "Studying or Living? Both or Neither?",
-            "path": "bootcamp/2023/workshops/studying-or-living-both-or-neither.ics",
+            "path": "bootcamp/2023/workshops/08-18-studying-or-living-both-or-neither.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -226,9 +226,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-ai-research-scientist-starter",
+            "alias": "bootcamp2023-08-14-ai-research-scientist-starter",
             "name": "AI Research Scientist Starter",
-            "path": "bootcamp/2023/workshops/ai-research-scientist-starter.ics",
+            "path": "bootcamp/2023/workshops/08-14-ai-research-scientist-starter.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -241,9 +241,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-football",
+            "alias": "bootcamp2023-08-15-football",
             "name": "Football",
-            "path": "bootcamp/2023/workshops/football.ics",
+            "path": "bootcamp/2023/workshops/08-15-football.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -256,9 +256,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-badminton-masterclass",
+            "alias": "bootcamp2023-08-16-badminton-masterclass",
             "name": "Badminton Masterclass",
-            "path": "bootcamp/2023/workshops/badminton-masterclass.ics",
+            "path": "bootcamp/2023/workshops/08-16-badminton-masterclass.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -271,9 +271,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-functional-lsd",
+            "alias": "bootcamp2023-08-17-functional-lsd",
             "name": "Functional LSD",
-            "path": "bootcamp/2023/workshops/functional-lsd.ics",
+            "path": "bootcamp/2023/workshops/08-17-functional-lsd.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -286,9 +286,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-how-to-trigger-a-fire-alarm",
+            "alias": "bootcamp2023-08-18-how-to-trigger-a-fire-alarm",
             "name": "How to trigger a fire alarm",
-            "path": "bootcamp/2023/workshops/how-to-trigger-a-fire-alarm.ics",
+            "path": "bootcamp/2023/workshops/08-18-how-to-trigger-a-fire-alarm.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -301,9 +301,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-introduction-to-one-zero-eight-a-place-of-opportunity",
+            "alias": "bootcamp2023-08-14-introduction-to-one-zero-eight-a-place-of-opportunity",
             "name": "Introduction to one-zero-eight, a place of opportunity",
-            "path": "bootcamp/2023/workshops/introduction-to-one-zero-eight-a-place-of-opportunity.ics",
+            "path": "bootcamp/2023/workshops/08-14-introduction-to-one-zero-eight-a-place-of-opportunity.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -316,9 +316,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-airsoft",
+            "alias": "bootcamp2023-08-15-airsoft",
             "name": "Airsoft",
-            "path": "bootcamp/2023/workshops/airsoft.ics",
+            "path": "bootcamp/2023/workshops/08-15-airsoft.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -331,9 +331,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-football",
+            "alias": "bootcamp2023-08-16-football",
             "name": "Football",
-            "path": "bootcamp/2023/workshops/football.ics",
+            "path": "bootcamp/2023/workshops/08-16-football.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -346,9 +346,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-rage-knights",
+            "alias": "bootcamp2023-08-17-rage-knights",
             "name": "RAGE knights",
-            "path": "bootcamp/2023/workshops/rage-knights.ics",
+            "path": "bootcamp/2023/workshops/08-17-rage-knights.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -361,9 +361,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-volleyball",
+            "alias": "bootcamp2023-08-18-volleyball",
             "name": "Volleyball",
-            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "path": "bootcamp/2023/workshops/08-18-volleyball.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -376,9 +376,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-volleyball",
+            "alias": "bootcamp2023-08-15-volleyball",
             "name": "Volleyball",
-            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "path": "bootcamp/2023/workshops/08-15-volleyball.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -391,9 +391,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-volleyball",
+            "alias": "bootcamp2023-08-16-volleyball",
             "name": "Volleyball",
-            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "path": "bootcamp/2023/workshops/08-16-volleyball.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -406,9 +406,9 @@
             ]
         },
         {
-            "alias": "bootcamp2023-mini-table-tennis-tournament",
+            "alias": "bootcamp2023-08-17-mini-table-tennis-tournament",
             "name": "Mini table tennis tournament",
-            "path": "bootcamp/2023/workshops/mini-table-tennis-tournament.ics",
+            "path": "bootcamp/2023/workshops/08-17-mini-table-tennis-tournament.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",

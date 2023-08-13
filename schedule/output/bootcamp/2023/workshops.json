@@ -1,458 +1,458 @@
 {
     "workshops": [
         {
-            "alias": "machine-learning-in-action-concepts-and-industry-uses",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-14-machine-learning-in-action-concepts-and-industry-uses",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                }
+            ],
             "date": "2023-08-14",
             "location": "108 Room",
-            "name": "Machine Learning in Action: Concepts and Industry Uses",
             "speaker": "Speaker: Data Science Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "international-exchange-program",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-15-international-exchange-program",
+            "name": "International Exchange Program",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-15",
             "location": "321 Room",
-            "name": "International Exchange Program",
             "speaker": "Speaker: Mezenova Veronika, specialist for outgoing exchange",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "focusing-and-dealing-with-study-and-exam-stress",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-focusing-and-dealing-with-study-and-exam-stress",
+            "name": "Focusing and dealing with study and exam stress",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "300 Room",
-            "name": "Focusing and dealing with study and exam stress",
             "speaker": "Speaker: Liliya Ayatskova",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "equilibrium",
-            "capacity": "Only 20 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-17-equilibrium",
+            "name": "Equilibrium",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-17",
             "location": "320 Room",
-            "name": "Equilibrium",
             "speaker": "Speaker: IU graduate Georgy Andryushchenko",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "Only 20 people",
+            "comments": []
         },
         {
-            "alias": "my-way-at-the-innopolis-university-study-and-work",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-18-my-way-at-the-innopolis-university-study-and-work",
+            "name": "My way at the Innopolis University: study and work",
+            "timeslots": [
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-18",
             "location": "108 Room",
-            "name": "My way at the Innopolis University: study and work",
             "speaker": "Speaker: IU graduate Daniil Sinelnik",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "street-dance-master-class",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-14-street-dance-master-class",
+            "name": "Street dance master class",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-14",
             "location": "Main entrance outside",
-            "name": "Street dance master class",
             "speaker": "Speaker: Inno Street Dance club",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "even-programmers-can-be-creative",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-15-even-programmers-can-be-creative",
+            "name": "Even programmer's can be creative",
+            "timeslots": [
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-15",
             "location": "108 Room",
-            "name": "Even programmer's can be creative",
             "speaker": "Speaker: one-zero-eight community",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "phrasal-verbs",
-            "capacity": "30 students",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-phrasal-verbs",
+            "name": "Phrasal verbs",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "321 room",
-            "name": "Phrasal verbs",
             "speaker": "Speaker: Marco Duzlemich",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "30 students",
+            "comments": []
         },
         {
-            "alias": "machine-learning-in-action-concepts-and-industry-uses",
-            "capacity": "50 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-17-machine-learning-in-action-concepts-and-industry-uses",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                }
+            ],
             "date": "2023-08-17",
             "location": "321 Room",
-            "name": "Machine Learning in Action: Concepts and Industry Uses",
             "speaker": "Speaker: Data Science Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "50 people",
+            "comments": []
         },
         {
-            "alias": "equilibrium",
-            "capacity": "Only 20 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-18-equilibrium",
+            "name": "Equilibrium",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-18",
             "location": "320 Room",
-            "name": "Equilibrium",
             "speaker": "Speaker: IU graduate Georgy Andryushchenko",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "Only 20 people",
+            "comments": []
         },
         {
-            "alias": "blockchain-intro",
-            "capacity": "Only 20 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-14-blockchain-intro",
+            "name": "Blockchain intro",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-14",
             "location": "320 Room",
-            "name": "Blockchain intro",
             "speaker": "Speaker: Inno Blockchain Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 20 people",
+            "comments": []
         },
         {
-            "alias": "badminton-masterclass",
-            "capacity": "Only 14 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-15-badminton-masterclass",
+            "name": "Badminton Masterclass",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-15",
             "location": "Big Sports hall Sportcomplex 1 floor",
-            "name": "Badminton Masterclass",
             "speaker": "Speaker: Badminton Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 14 people for every activity",
+            "comments": []
         },
         {
-            "alias": "how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
+            "name": "How officially the best speaker of Kazakhstan sold you a gamedev",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "108 Room",
-            "name": "How officially the best speaker of Kazakhstan sold you a gamedev",
             "speaker": "Speakers: Dudinov Mikhail, Anna Kopeikina, Vladislav Kozikov - GDE club",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "chorus-class",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-17-chorus-class",
+            "name": "Chorus class",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-17",
             "location": "108 Room",
-            "name": "Chorus class",
             "speaker": "Speaker: Bona Mente Chamber Choir",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "studying-or-living-both-or-neither",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-18-studying-or-living-both-or-neither",
+            "name": "Studying or Living? Both or Neither?",
+            "timeslots": [
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-18",
             "location": "Room 300",
-            "name": "Studying or Living? Both or Neither?",
             "speaker": "Speaker: IU graduate Marina Smirnova",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "ai-research-scientist-starter",
-            "capacity": "The more the better people",
-            "comments": [
-                "Pack: Academia and Industry"
+            "alias": "bootcamp2023-08-14-ai-research-scientist-starter",
+            "name": "AI Research Scientist Starter",
+            "timeslots": [
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
             ],
             "date": "2023-08-14",
             "location": "Room 300",
-            "name": "AI Research Scientist Starter",
             "speaker": "Speakers: IU graduates Bulat Maksudov and Vladislav Kurenkov",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
+            "capacity": "The more the better people",
+            "comments": [
+                "Pack: Academia and Industry"
             ]
         },
         {
-            "alias": "football",
-            "capacity": "Only 22 people for every activity",
-            "comments": [],
-            "date": "2023-08-15",
-            "location": "Football court",
+            "alias": "bootcamp2023-08-15-football",
             "name": "Football",
-            "speaker": "Speaker: Football Club",
             "timeslots": [
                 {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
+                    "start": "15:30:00",
+                    "end": "16:30:00"
                 },
                 {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
+                    "start": "16:30:00",
+                    "end": "17:30:00"
                 }
-            ]
+            ],
+            "date": "2023-08-15",
+            "location": "Football court",
+            "speaker": "Speaker: Football Club",
+            "capacity": "Only 22 people for every activity",
+            "comments": []
         },
         {
-            "alias": "badminton-masterclass",
-            "capacity": "Only 14 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-badminton-masterclass",
+            "name": "Badminton Masterclass",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "Big Sports hall Sportcomplex 1 floor",
-            "name": "Badminton Masterclass",
             "speaker": "Speaker: Badminton Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 14 people for every activity",
+            "comments": []
         },
         {
-            "alias": "functional-lsd",
-            "capacity": "Only 20 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-17-functional-lsd",
+            "name": "Functional LSD",
+            "timeslots": [
+                {
+                    "start": "15:00:00",
+                    "end": "16:30:00"
+                }
+            ],
             "date": "2023-08-17",
             "location": "Sportcomplex 3 floor",
-            "name": "Functional LSD",
             "speaker": "Speaker: Functional LSD club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:00:00"
-                }
-            ]
+            "capacity": "Only 20 people",
+            "comments": []
         },
         {
-            "alias": "how-to-trigger-a-fire-alarm",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-18-how-to-trigger-a-fire-alarm",
+            "name": "How to trigger a fire alarm",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                }
+            ],
             "date": "2023-08-18",
             "location": "on-line",
-            "name": "How to trigger a fire alarm",
             "speaker": "Speaker: WEGs club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "introduction-to-one-zero-eight-a-place-of-opportunity",
-            "capacity": "The more the better people",
-            "comments": [],
+            "alias": "bootcamp2023-08-14-introduction-to-one-zero-eight-a-place-of-opportunity",
+            "name": "Introduction to one-zero-eight, a place of opportunity",
+            "timeslots": [
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-14",
             "location": "108 Room",
-            "name": "Introduction to one-zero-eight, a place of opportunity",
             "speaker": "Speaker: one-zero-eight community",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "The more the better people",
+            "comments": []
         },
         {
-            "alias": "airsoft",
-            "capacity": "Only 12 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-15-airsoft",
+            "name": "Airsoft",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-15",
             "location": "Airsoft courte",
-            "name": "Airsoft",
             "speaker": "Speaker: Innopolis pmc",
-            "timeslots": [
-                {
-                    "end": "17:30:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "Only 12 people",
+            "comments": []
         },
         {
-            "alias": "football",
-            "capacity": "Only 22 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-football",
+            "name": "Football",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "Football court",
-            "name": "Football",
             "speaker": "Speaker: Football Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 22 people for every activity",
+            "comments": []
         },
         {
-            "alias": "rage-knights",
-            "capacity": "Only 20 people",
-            "comments": [],
+            "alias": "bootcamp2023-08-17-rage-knights",
+            "name": "RAGE knights",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "17:00:00"
+                }
+            ],
             "date": "2023-08-17",
             "location": "Basketball street court",
-            "name": "RAGE knights",
             "speaker": "Speaker: RAGE club",
-            "timeslots": [
-                {
-                    "end": "17:00:00",
-                    "start": "15:30:00"
-                }
-            ]
+            "capacity": "Only 20 people",
+            "comments": []
         },
         {
-            "alias": "volleyball",
-            "capacity": "Only 20 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-18-volleyball",
+            "name": "Volleyball",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-18",
             "location": "Volleyball court",
-            "name": "Volleyball",
             "speaker": "Speaker: Volleyball Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 20 people for every activity",
+            "comments": []
         },
         {
-            "alias": "volleyball",
-            "capacity": "Only 20 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-15-volleyball",
+            "name": "Volleyball",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-15",
             "location": "Volleyball court",
-            "name": "Volleyball",
             "speaker": "Speaker: Volleyball Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 20 people for every activity",
+            "comments": []
         },
         {
-            "alias": "volleyball",
-            "capacity": "Only 20 people for every activity",
-            "comments": [],
+            "alias": "bootcamp2023-08-16-volleyball",
+            "name": "Volleyball",
+            "timeslots": [
+                {
+                    "start": "15:30:00",
+                    "end": "16:30:00"
+                },
+                {
+                    "start": "16:30:00",
+                    "end": "17:30:00"
+                }
+            ],
             "date": "2023-08-16",
             "location": "Volleyball court",
-            "name": "Volleyball",
             "speaker": "Speaker: Volleyball Club",
-            "timeslots": [
-                {
-                    "end": "16:30:00",
-                    "start": "15:30:00"
-                },
-                {
-                    "end": "17:30:00",
-                    "start": "16:30:00"
-                }
-            ]
+            "capacity": "Only 20 people for every activity",
+            "comments": []
         },
         {
-            "alias": "mini-table-tennis-tournament",
-            "capacity": "Only 10 people",
-            "comments": [],
-            "date": "2023-08-17",
-            "location": "Sportcomplex 2 floor",
+            "alias": "bootcamp2023-08-17-mini-table-tennis-tournament",
             "name": "Mini table tennis tournament",
-            "speaker": "Speaker: Table Tennis Club",
             "timeslots": [
                 {
-                    "end": "17:15:00",
-                    "start": "15:45:00"
+                    "start": "15:45:00",
+                    "end": "17:15:00"
                 }
-            ]
+            ],
+            "date": "2023-08-17",
+            "location": "Sportcomplex 2 floor",
+            "speaker": "Speaker: Table Tennis Club",
+            "capacity": "Only 10 people",
+            "comments": []
         }
     ]
 }
