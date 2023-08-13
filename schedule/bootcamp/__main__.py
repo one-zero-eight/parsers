@@ -19,7 +19,7 @@ if __name__ == "__main__":
     bootcamp_tag = {"alias": bootcamp_alias, "type": "category"}
     academician_tag = {"alias": "academic", "type": bootcamp_alias}
     json_data = {"calendars": [], "tags": [bootcamp_tag, academician_tag]}
-    year_path = directory / str(config.YEAR_OF_BOOTCAMP)
+    year_path = directory
     for group_name, grouper in groupby(specific_events, key=lambda e: e.group):
         group_events = list(grouper) + common_events
         group_calendar = icalendar.Calendar(
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         file_path = year_path / file_name
         json_data["calendars"].append(
             {
-                "path": file_path.relative_to(directory.parent).as_posix(),
+                "path": file_path.relative_to(file_path.parents[-2]).as_posix(),
                 "name": f"Bootcamp ({group_name})",
                 "tags": [bootcamp_tag, academician_tag],
                 "alias": f"{bootcamp_alias}-{group_slug}",

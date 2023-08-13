@@ -1,0 +1,434 @@
+{
+    "calendars": [
+        {
+            "alias": "bootcamp2023-machine-learning-in-action-concepts-and-industry-uses",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "path": "bootcamp/2023/workshops/machine-learning-in-action-concepts-and-industry-uses.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-international-exchange-program",
+            "name": "International Exchange Program",
+            "path": "bootcamp/2023/workshops/international-exchange-program.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-focusing-and-dealing-with-study-and-exam-stress",
+            "name": "Focusing and dealing with study and exam stress",
+            "path": "bootcamp/2023/workshops/focusing-and-dealing-with-study-and-exam-stress.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-equilibrium",
+            "name": "Equilibrium",
+            "path": "bootcamp/2023/workshops/equilibrium.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-my-way-at-the-innopolis-university-study-and-work",
+            "name": "My way at the Innopolis University: study and work",
+            "path": "bootcamp/2023/workshops/my-way-at-the-innopolis-university-study-and-work.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-street-dance-master-class",
+            "name": "Street dance master class",
+            "path": "bootcamp/2023/workshops/street-dance-master-class.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-even-programmers-can-be-creative",
+            "name": "Even programmer's can be creative",
+            "path": "bootcamp/2023/workshops/even-programmers-can-be-creative.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-phrasal-verbs",
+            "name": "Phrasal verbs",
+            "path": "bootcamp/2023/workshops/phrasal-verbs.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-machine-learning-in-action-concepts-and-industry-uses",
+            "name": "Machine Learning in Action: Concepts and Industry Uses",
+            "path": "bootcamp/2023/workshops/machine-learning-in-action-concepts-and-industry-uses.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-equilibrium",
+            "name": "Equilibrium",
+            "path": "bootcamp/2023/workshops/equilibrium.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-blockchain-intro",
+            "name": "Blockchain intro",
+            "path": "bootcamp/2023/workshops/blockchain-intro.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-badminton-masterclass",
+            "name": "Badminton Masterclass",
+            "path": "bootcamp/2023/workshops/badminton-masterclass.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev",
+            "name": "How officially the best speaker of Kazakhstan sold you a gamedev",
+            "path": "bootcamp/2023/workshops/how-officially-the-best-speaker-of-kazakhstan-sold-you-a-gamedev.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-\u0441horus-class",
+            "name": "\u0421horus class",
+            "path": "bootcamp/2023/workshops/\u0441horus-class.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-studying-or-living-both-or-neither",
+            "name": "Studying or Living? Both or Neither?",
+            "path": "bootcamp/2023/workshops/studying-or-living-both-or-neither.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-ai-research-scientist-starter",
+            "name": "AI Research Scientist Starter",
+            "path": "bootcamp/2023/workshops/ai-research-scientist-starter.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-football",
+            "name": "Football",
+            "path": "bootcamp/2023/workshops/football.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-badminton-masterclass",
+            "name": "Badminton Masterclass",
+            "path": "bootcamp/2023/workshops/badminton-masterclass.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-functional-lsd",
+            "name": "Functional LSD",
+            "path": "bootcamp/2023/workshops/functional-lsd.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-how-to-trigger-a-fire-alarm",
+            "name": "How to trigger a fire alarm",
+            "path": "bootcamp/2023/workshops/how-to-trigger-a-fire-alarm.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-introduction-to-one-zero-eight-a-place-of-opportunity",
+            "name": "Introduction to one-zero-eight, a place of opportunity",
+            "path": "bootcamp/2023/workshops/introduction-to-one-zero-eight-a-place-of-opportunity.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-airsoft",
+            "name": "Airsoft",
+            "path": "bootcamp/2023/workshops/airsoft.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-football",
+            "name": "Football",
+            "path": "bootcamp/2023/workshops/football.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-rage-knights",
+            "name": "RAGE knights",
+            "path": "bootcamp/2023/workshops/rage-knights.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-volleyball",
+            "name": "Volleyball",
+            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-volleyball",
+            "name": "Volleyball",
+            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-volleyball",
+            "name": "Volleyball",
+            "path": "bootcamp/2023/workshops/volleyball.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        },
+        {
+            "alias": "bootcamp2023-mini-table-tennis-tournament",
+            "name": "Mini table tennis tournament",
+            "path": "bootcamp/2023/workshops/mini-table-tennis-tournament.ics",
+            "tags": [
+                {
+                    "alias": "bootcamp2023",
+                    "type": "category"
+                },
+                {
+                    "alias": "workshops",
+                    "type": "bootcamp2023"
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "alias": "bootcamp2023",
+            "type": "category"
+        },
+        {
+            "alias": "workshops",
+            "type": "bootcamp2023"
+        }
+    ]
+}

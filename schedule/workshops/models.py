@@ -13,11 +13,14 @@ class Palitre:
         return CSS3Color.get_by_index(h)
 
 
-class BootcampEvent(BaseModel):
+class WorkshopEvent(BaseModel):
     summary: str
-    description: str = None
+    speaker: str = None
+    comments: list[str] = None
     location: str = None
-    group: str = None
+    capacity: str = None
+
+    timeslots: list[tuple[datetime.time, datetime.time]] = None
 
     dtstart: datetime.datetime = None
     dtend: datetime.datetime = None
@@ -26,11 +29,10 @@ class BootcampEvent(BaseModel):
         string_to_hash = str(
             (
                 "bootcamp",
+                "workshops",
                 self.summary,
-                self.description,
                 self.dtstart.isoformat(),
                 self.dtend.isoformat(),
-                self.group,
             )
         )
 
@@ -51,8 +53,12 @@ class BootcampEvent(BaseModel):
             dtstart=icalendar.vDatetime(self.dtstart),
             dtend=icalendar.vDatetime(self.dtend),
         )
-        if self.description is not None:
-            vevent["description"] = self.description
+        description = (
+            "\n".join(
+                [self.speaker, *self.comments, self.capacity])
+        )
+        if description:
+            vevent["description"] = description
         if self.location:
             vevent["location"] = self.location
         vevent["color"] = Palitre.get_by_summary(self.summary)

@@ -3,7 +3,7 @@
         {
             "alias": "bootcamp2023-group1",
             "name": "Bootcamp (Group 1)",
-            "path": "bootcamp/2023/group1.ics",
+            "path": "bootcamp/2023/common/group1.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -18,7 +18,7 @@
         {
             "alias": "bootcamp2023-group10",
             "name": "Bootcamp (Group 10)",
-            "path": "bootcamp/2023/group10.ics",
+            "path": "bootcamp/2023/common/group10.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -33,7 +33,7 @@
         {
             "alias": "bootcamp2023-group11",
             "name": "Bootcamp (Group 11)",
-            "path": "bootcamp/2023/group11.ics",
+            "path": "bootcamp/2023/common/group11.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -48,7 +48,7 @@
         {
             "alias": "bootcamp2023-group12",
             "name": "Bootcamp (Group 12)",
-            "path": "bootcamp/2023/group12.ics",
+            "path": "bootcamp/2023/common/group12.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -63,7 +63,7 @@
         {
             "alias": "bootcamp2023-group13",
             "name": "Bootcamp (Group 13)",
-            "path": "bootcamp/2023/group13.ics",
+            "path": "bootcamp/2023/common/group13.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -78,7 +78,7 @@
         {
             "alias": "bootcamp2023-group14",
             "name": "Bootcamp (Group 14)",
-            "path": "bootcamp/2023/group14.ics",
+            "path": "bootcamp/2023/common/group14.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -93,7 +93,7 @@
         {
             "alias": "bootcamp2023-group15",
             "name": "Bootcamp (Group 15)",
-            "path": "bootcamp/2023/group15.ics",
+            "path": "bootcamp/2023/common/group15.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -108,7 +108,7 @@
         {
             "alias": "bootcamp2023-group16",
             "name": "Bootcamp (Group 16)",
-            "path": "bootcamp/2023/group16.ics",
+            "path": "bootcamp/2023/common/group16.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -123,7 +123,7 @@
         {
             "alias": "bootcamp2023-group17",
             "name": "Bootcamp (Group 17)",
-            "path": "bootcamp/2023/group17.ics",
+            "path": "bootcamp/2023/common/group17.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -138,7 +138,7 @@
         {
             "alias": "bootcamp2023-group18",
             "name": "Bootcamp (Group 18)",
-            "path": "bootcamp/2023/group18.ics",
+            "path": "bootcamp/2023/common/group18.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -153,7 +153,7 @@
         {
             "alias": "bootcamp2023-group2",
             "name": "Bootcamp (Group 2)",
-            "path": "bootcamp/2023/group2.ics",
+            "path": "bootcamp/2023/common/group2.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -168,7 +168,7 @@
         {
             "alias": "bootcamp2023-group3",
             "name": "Bootcamp (Group 3)",
-            "path": "bootcamp/2023/group3.ics",
+            "path": "bootcamp/2023/common/group3.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -183,7 +183,7 @@
         {
             "alias": "bootcamp2023-group4",
             "name": "Bootcamp (Group 4)",
-            "path": "bootcamp/2023/group4.ics",
+            "path": "bootcamp/2023/common/group4.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -198,7 +198,7 @@
         {
             "alias": "bootcamp2023-group5",
             "name": "Bootcamp (Group 5)",
-            "path": "bootcamp/2023/group5.ics",
+            "path": "bootcamp/2023/common/group5.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -213,7 +213,7 @@
         {
             "alias": "bootcamp2023-group6",
             "name": "Bootcamp (Group 6)",
-            "path": "bootcamp/2023/group6.ics",
+            "path": "bootcamp/2023/common/group6.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -228,7 +228,7 @@
         {
             "alias": "bootcamp2023-group7",
             "name": "Bootcamp (Group 7)",
-            "path": "bootcamp/2023/group7.ics",
+            "path": "bootcamp/2023/common/group7.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -243,7 +243,7 @@
         {
             "alias": "bootcamp2023-group8",
             "name": "Bootcamp (Group 8)",
-            "path": "bootcamp/2023/group8.ics",
+            "path": "bootcamp/2023/common/group8.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",
@@ -258,7 +258,7 @@
         {
             "alias": "bootcamp2023-group9",
             "name": "Bootcamp (Group 9)",
-            "path": "bootcamp/2023/group9.ics",
+            "path": "bootcamp/2023/common/group9.ics",
             "tags": [
                 {
                     "alias": "bootcamp2023",

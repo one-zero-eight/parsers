@@ -22,7 +22,11 @@ class BootcampParserConfig(VeryBaseParserConfig):
         always=True,
     )
     def relative_path(cls, v):
-        return Path(v)
+        """If not absolute path, then with respect to the main directory"""
+        v = Path(v)
+        if not v.is_absolute():
+            v = PROJECT_ROOT / v
+        return v
 
 
 with open(CONFIG_PATH, "r") as f:
