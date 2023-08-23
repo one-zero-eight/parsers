@@ -1,37 +1,96 @@
 import datetime
 import re
 
-pattern_multiple_spaces = re.compile(r"\s{2,}")
 symbol_translation = str.maketrans(
     "АВЕКМНОРСТУХаср",
     "ABEKMHOPCTYXacp",
 )
 
 
-def remove_trailing_spaces(s: str) -> str:
+def sluggify(s: str) -> str:
     """
-    Remove multiple spaces and trailing spaces.
+    Sluggify string.
 
-    :param s: string to remove spaces from
+    :param s: string to sluggify
     :type s: str
-    :return: string without multiple spaces and trailing spaces
+    :return: sluggified string
     :rtype: str
     """
-    return pattern_multiple_spaces.sub(" ", s).strip()
+    s = s.lower()
+    s = s.translate(symbol_translation)
+    # also translates special symbols, brackets, commas, etc.
+    s = re.sub(r"[^a-z0-9\s-]", " ", s)
+    s = re.sub(r"\s+", "-", s)
+    # remove multiple dashes
+    s = re.sub(r"-{2,}", "-", s)
+
+    return s
 
 
-def beautify_string(string: str | None) -> str | None:
+def process_spaces(s: str) -> str:
     """
-    Remove trailing spaces and translate cyrillic symbols to latin.
+    Remove multiple spaces and trailing spaces.
+    """
+    return re.sub(r"\s{2,}", " ", s).strip()
+
+
+def process_brackets(s: str) -> str:
+    """
+    Prettify string with brackets.
+
+    :param s: string to prettify
+    :type s: str
+    :return: prettified string
+    :rtype: str
+    """
+    # remove multiple brackets in a row
+    s = re.sub(r"(\(\s*)+\(", "(", s)
+    s = re.sub(r"(\)\s*)+\)", ")", s)
+
+    # set only one space after and before brackets except for brackets in the end of string
+    s = re.sub(r"\s*\(\s*", " (", s)
+    s = re.sub(r"\s*\)\s*", ") ", s)
+    s = s.strip()
+    return s
+
+
+def process_commas(s: str) -> str:
+    """
+    Prettify string with commas.
+
+    :param s: string to prettify
+    :type s: str
+    :return: prettified string
+    :rtype: str
+    """
+    # remove multiple commas in a row
+    s = re.sub(r"(\,\s*)+\,", ",", s)
+    # set only one space after and before commas except for commas in the end of string
+    s = re.sub(r"\s*\,\s*", ", ", s)
+    s = s.strip()
+    return s
+
+
+def prettify_string(string: str | None) -> str | None:
+    """
+    Remove repeating spaces. Strip string.
+    Translate cyrillic symbols to latin alternatives.
+    Set only one whitespace before and after brackets. Remove repeating brackets.
 
     :param string: string to beautify
     :type string: str
     :return: beautified string
     :rtype: str
     """
-    if string is not None:
-        string = remove_trailing_spaces(string)
+    if isinstance(string, str):
+        # translate cyrillic symbols to latin
         string = string.translate(symbol_translation)
+        # set only one space between brackets and remove repeating brackets
+        string = process_brackets(string)
+        # set only one space after commas and remove repeating commas
+        string = process_commas(string)
+        # remove repeating spaces and trailing spaces
+        string = process_spaces(string)
     return string
 
 
