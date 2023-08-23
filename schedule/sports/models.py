@@ -123,7 +123,7 @@ class SportScheduleEvent(BaseModel):
         return "\n".join([f"{k}: {v}" for k, v in r.items()])
 
     def get_vevent(
-        self, very_first_date: datetime.datetime, very_last_date: datetime.datetime
+        self, very_first_date: datetime.date, very_last_date: datetime.date
     ) -> icalendar.Event:
         """
         Get icalendar event

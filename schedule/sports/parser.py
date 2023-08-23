@@ -28,8 +28,9 @@ class SportParser:
             return response_schema
 
     async def get_sport_schedule(self, sport_id: int) -> ResponseSportSchedule:
-        finalDate = config.END_OF_SEMESTER.strftime("%Y-%m-%d")
-        url = f"{config.api_url}/calendar/{sport_id}/schedule?start={datetime.date.today()}T00%3A00&end={finalDate}T00%3A00"
+        start = config.START_OF_SEMESTER.strftime("%Y-%m-%d")
+        final = config.END_OF_SEMESTER.strftime("%Y-%m-%d")
+        url = f"{config.api_url}/calendar/{sport_id}/schedule?start={start}T00%3A00&end={final}T00%3A00"
         self.logger.info(f"Getting sport schedule from {url}")
         async with self.session.get(url) as response:
             text = await response.text()

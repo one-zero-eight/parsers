@@ -23,17 +23,11 @@ class Token(BaseModel):
 
 
 class SportsParserConfig(VeryBaseParserConfig):
-    START_OF_SEMESTER: datetime.datetime
-    END_OF_SEMESTER: datetime.datetime
+    START_OF_SEMESTER: datetime.date
+    END_OF_SEMESTER: datetime.date
 
     website_url: str = "https://sport.innopolis.university"
     api_url: str = "https://sport.innopolis.university/api"
-
-    @validator("END_OF_SEMESTER", "START_OF_SEMESTER", pre=True)
-    def fromisoformat(cls, v):
-        if isinstance(v, str):
-            v = datetime.datetime.fromisoformat(v)
-        return v
 
     class Config:
         validate_assignment = True
