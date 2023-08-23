@@ -115,7 +115,7 @@ async def main():
 
         logger.info(f"Saving calendars information to {json_file}")
         with open(json_file, "w") as f:
-            json.dump(output.dict(), f, indent=2, sort_keys=True)
+            json.dump(output.dict(), f, indent=2, sort_keys=False)
 
         logger.info("Done")
 

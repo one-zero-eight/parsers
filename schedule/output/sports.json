@@ -2,9 +2,9 @@
   "event_groups": [
     {
       "alias": "badminton-advanced",
-      "description": "Sport schedule for 'Badminton - Advanced'",
-      "name": "Badminton - Advanced",
       "path": "sports/badminton-advanced.ics",
+      "name": "Badminton - Advanced",
+      "description": "Sport schedule for 'Badminton - Advanced'",
       "tags": [
         {
           "alias": "sport",
@@ -14,9 +14,9 @@
     },
     {
       "alias": "badminton-beginners",
-      "description": "Sport schedule for 'Badminton - Beginners'",
-      "name": "Badminton - Beginners",
       "path": "sports/badminton-beginners.ics",
+      "name": "Badminton - Beginners",
+      "description": "Sport schedule for 'Badminton - Beginners'",
       "tags": [
         {
           "alias": "sport",
@@ -26,9 +26,9 @@
     },
     {
       "alias": "basketball",
-      "description": "Sport schedule for 'Basketball'",
-      "name": "Basketball",
       "path": "sports/basketball.ics",
+      "name": "Basketball",
+      "description": "Sport schedule for 'Basketball'",
       "tags": [
         {
           "alias": "sport",
@@ -38,9 +38,9 @@
     },
     {
       "alias": "boxing",
-      "description": "Sport schedule for 'Boxing'",
-      "name": "Boxing",
       "path": "sports/boxing.ics",
+      "name": "Boxing",
+      "description": "Sport schedule for 'Boxing'",
       "tags": [
         {
           "alias": "sport",
@@ -50,9 +50,9 @@
     },
     {
       "alias": "cricket",
-      "description": "Sport schedule for 'Cricket'",
-      "name": "Cricket",
       "path": "sports/cricket.ics",
+      "name": "Cricket",
+      "description": "Sport schedule for 'Cricket'",
       "tags": [
         {
           "alias": "sport",
@@ -62,9 +62,9 @@
     },
     {
       "alias": "follow-the-bars-running",
-      "description": "Sport schedule for 'Follow the Bars - Running'",
-      "name": "Follow the Bars - Running",
       "path": "sports/follow-the-bars-running.ics",
+      "name": "Follow the Bars - Running",
+      "description": "Sport schedule for 'Follow the Bars - Running'",
       "tags": [
         {
           "alias": "sport",
@@ -74,9 +74,9 @@
     },
     {
       "alias": "football",
-      "description": "Sport schedule for 'Football'",
-      "name": "Football",
       "path": "sports/football.ics",
+      "name": "Football",
+      "description": "Sport schedule for 'Football'",
       "tags": [
         {
           "alias": "sport",
@@ -86,9 +86,9 @@
     },
     {
       "alias": "functional-lsd",
-      "description": "Sport schedule for 'Functional LSD'",
-      "name": "Functional LSD",
       "path": "sports/functional-lsd.ics",
+      "name": "Functional LSD",
+      "description": "Sport schedule for 'Functional LSD'",
       "tags": [
         {
           "alias": "sport",
@@ -98,9 +98,9 @@
     },
     {
       "alias": "general-physical-training",
-      "description": "Sport schedule for 'General Physical Training'",
-      "name": "General Physical Training",
       "path": "sports/general-physical-training.ics",
+      "name": "General Physical Training",
+      "description": "Sport schedule for 'General Physical Training'",
       "tags": [
         {
           "alias": "sport",
@@ -110,9 +110,9 @@
     },
     {
       "alias": "mixed-sports",
-      "description": "Sport schedule for 'Mixed sports'",
-      "name": "Mixed sports",
       "path": "sports/mixed-sports.ics",
+      "name": "Mixed sports",
+      "description": "Sport schedule for 'Mixed sports'",
       "tags": [
         {
           "alias": "sport",
@@ -122,9 +122,9 @@
     },
     {
       "alias": "park-run-5-verst",
-      "description": "Sport schedule for 'Park Run - 5 Verst'",
-      "name": "Park Run - 5 Verst",
       "path": "sports/park-run-5-verst.ics",
+      "name": "Park Run - 5 Verst",
+      "description": "Sport schedule for 'Park Run - 5 Verst'",
       "tags": [
         {
           "alias": "sport",
@@ -134,9 +134,9 @@
     },
     {
       "alias": "rage",
-      "description": "Sport schedule for 'RAGE'",
-      "name": "RAGE",
       "path": "sports/rage.ics",
+      "name": "RAGE",
+      "description": "Sport schedule for 'RAGE'",
       "tags": [
         {
           "alias": "sport",
@@ -146,9 +146,9 @@
     },
     {
       "alias": "rage-knights",
-      "description": "Sport schedule for 'RAGE - Knights'",
-      "name": "RAGE - Knights",
       "path": "sports/rage-knights.ics",
+      "name": "RAGE - Knights",
+      "description": "Sport schedule for 'RAGE - Knights'",
       "tags": [
         {
           "alias": "sport",
@@ -158,9 +158,9 @@
     },
     {
       "alias": "sambo",
-      "description": "Sport schedule for 'Sambo'",
-      "name": "Sambo",
       "path": "sports/sambo.ics",
+      "name": "Sambo",
+      "description": "Sport schedule for 'Sambo'",
       "tags": [
         {
           "alias": "sport",
@@ -170,9 +170,9 @@
     },
     {
       "alias": "social-dance",
-      "description": "Sport schedule for 'Social Dance'",
-      "name": "Social Dance",
       "path": "sports/social-dance.ics",
+      "name": "Social Dance",
+      "description": "Sport schedule for 'Social Dance'",
       "tags": [
         {
           "alias": "sport",
@@ -182,9 +182,9 @@
     },
     {
       "alias": "street-dance",
-      "description": "Sport schedule for 'Street Dance'",
-      "name": "Street Dance",
       "path": "sports/street-dance.ics",
+      "name": "Street Dance",
+      "description": "Sport schedule for 'Street Dance'",
       "tags": [
         {
           "alias": "sport",
@@ -194,9 +194,9 @@
     },
     {
       "alias": "table-tennis-advanced",
-      "description": "Sport schedule for 'Table tennis - Advanced'",
-      "name": "Table tennis - Advanced",
       "path": "sports/table-tennis-advanced.ics",
+      "name": "Table tennis - Advanced",
+      "description": "Sport schedule for 'Table tennis - Advanced'",
       "tags": [
         {
           "alias": "sport",
@@ -206,9 +206,9 @@
     },
     {
       "alias": "table-tennis-beginners",
-      "description": "Sport schedule for 'Table tennis - Beginners'",
-      "name": "Table tennis - Beginners",
       "path": "sports/table-tennis-beginners.ics",
+      "name": "Table tennis - Beginners",
+      "description": "Sport schedule for 'Table tennis - Beginners'",
       "tags": [
         {
           "alias": "sport",
@@ -218,9 +218,9 @@
     },
     {
       "alias": "tennis",
-      "description": "Sport schedule for 'Tennis'",
-      "name": "Tennis",
       "path": "sports/tennis.ics",
+      "name": "Tennis",
+      "description": "Sport schedule for 'Tennis'",
       "tags": [
         {
           "alias": "sport",
@@ -230,9 +230,9 @@
     },
     {
       "alias": "tricking-club",
-      "description": "Sport schedule for 'Tricking club'",
-      "name": "Tricking club",
       "path": "sports/tricking-club.ics",
+      "name": "Tricking club",
+      "description": "Sport schedule for 'Tricking club'",
       "tags": [
         {
           "alias": "sport",
@@ -242,9 +242,9 @@
     },
     {
       "alias": "volleyball",
-      "description": "Sport schedule for 'Volleyball'",
-      "name": "Volleyball",
       "path": "sports/volleyball.ics",
+      "name": "Volleyball",
+      "description": "Sport schedule for 'Volleyball'",
       "tags": [
         {
           "alias": "sport",
@@ -254,9 +254,9 @@
     },
     {
       "alias": "yoga-strength",
-      "description": "Sport schedule for 'Yoga - Strength'",
-      "name": "Yoga - Strength",
       "path": "sports/yoga-strength.ics",
+      "name": "Yoga - Strength",
+      "description": "Sport schedule for 'Yoga - Strength'",
       "tags": [
         {
           "alias": "sport",
@@ -266,9 +266,9 @@
     },
     {
       "alias": "yoga-stretching",
-      "description": "Sport schedule for 'Yoga - Stretching'",
-      "name": "Yoga - Stretching",
       "path": "sports/yoga-stretching.ics",
+      "name": "Yoga - Stretching",
+      "description": "Sport schedule for 'Yoga - Stretching'",
       "tags": [
         {
           "alias": "sport",
