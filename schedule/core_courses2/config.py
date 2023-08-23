@@ -34,10 +34,22 @@ class CoreCoursesConfig(GoogleSpreadsheetConfig):
         end_date: datetime.date
         """Datetime end"""
 
+    class Tag(BaseModel):
+        """
+        Tag model
+        """
+
+        alias: str
+        """Slugged alias of tag"""
+        type: str
+        """Type"""
+        name: str
+        """Short name"""
+
     TARGETS: list[Target]
     """List of targets"""
-    SEMESTER_TAGNAME: str
-    """Prefix for calendar name"""
+    SEMESTER_TAG: Tag
+    """Semester tag"""
 
     SPREADSHEET_ID: str
     TEMP_DIR: Path = PROJECT_ROOT / "temp" / "core-courses"

@@ -81,9 +81,20 @@ class VeryBaseParserConfig(BaseModel):
             raise ValueError(
                 f"SAVE_ICS_PATH must be children of MOUNT_POINT, but got {v}"
             )
+        return v
 
-        if not v.exists():
-            v.mkdir(parents=True, exist_ok=True)
+    @validator("SAVE_JSON_PATH", pre=False, always=True)
+    def create_parent_dir(cls, v, values):
+        """Create parent directory if not exists"""
+        v = Path(v)
+        v.parent.mkdir(parents=True, exist_ok=True)
+        return v
+
+    @validator("SAVE_ICS_PATH", pre=False, always=True)
+    def create_dir(cls, v, values):
+        """Create directory if not exists"""
+        v = Path(v)
+        v.mkdir(parents=True, exist_ok=True)
         return v
 
 

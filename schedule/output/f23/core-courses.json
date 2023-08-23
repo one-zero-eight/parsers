@@ -1,0 +1,841 @@
+{
+  "event_groups": [
+    {
+      "alias": "f23-b23-dsai-01",
+      "path": "f23/core-courses/bs-year-1/f23-b23-dsai-01.ics",
+      "name": "B23-DSAI-01",
+      "description": "Core courses schedule for 'B23-DSAI-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-dsai-02",
+      "path": "f23/core-courses/bs-year-1/f23-b23-dsai-02.ics",
+      "name": "B23-DSAI-02",
+      "description": "Core courses schedule for 'B23-DSAI-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-dsai-03",
+      "path": "f23/core-courses/bs-year-1/f23-b23-dsai-03.ics",
+      "name": "B23-DSAI-03",
+      "description": "Core courses schedule for 'B23-DSAI-03'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-dsai-04",
+      "path": "f23/core-courses/bs-year-1/f23-b23-dsai-04.ics",
+      "name": "B23-DSAI-04",
+      "description": "Core courses schedule for 'B23-DSAI-04'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-dsai-05",
+      "path": "f23/core-courses/bs-year-1/f23-b23-dsai-05.ics",
+      "name": "B23-DSAI-05",
+      "description": "Core courses schedule for 'B23-DSAI-05'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-ise-01",
+      "path": "f23/core-courses/bs-year-1/f23-b23-ise-01.ics",
+      "name": "B23-ISE-01",
+      "description": "Core courses schedule for 'B23-ISE-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-ise-02",
+      "path": "f23/core-courses/bs-year-1/f23-b23-ise-02.ics",
+      "name": "B23-ISE-02",
+      "description": "Core courses schedule for 'B23-ISE-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-ise-03",
+      "path": "f23/core-courses/bs-year-1/f23-b23-ise-03.ics",
+      "name": "B23-ISE-03",
+      "description": "Core courses schedule for 'B23-ISE-03'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-ise-04",
+      "path": "f23/core-courses/bs-year-1/f23-b23-ise-04.ics",
+      "name": "B23-ISE-04",
+      "description": "Core courses schedule for 'B23-ISE-04'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b23-ise-05",
+      "path": "f23/core-courses/bs-year-1/f23-b23-ise-05.ics",
+      "name": "B23-ISE-05",
+      "description": "Core courses schedule for 'B23-ISE-05'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-01",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-01.ics",
+      "name": "B22-CS-01",
+      "description": "Core courses schedule for 'B22-CS-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-02",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-02.ics",
+      "name": "B22-CS-02",
+      "description": "Core courses schedule for 'B22-CS-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-03",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-03.ics",
+      "name": "B22-CS-03",
+      "description": "Core courses schedule for 'B22-CS-03'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-04",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-04.ics",
+      "name": "B22-CS-04",
+      "description": "Core courses schedule for 'B22-CS-04'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-05",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-05.ics",
+      "name": "B22-CS-05",
+      "description": "Core courses schedule for 'B22-CS-05'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-cs-06",
+      "path": "f23/core-courses/bs-year-2/f23-b22-cs-06.ics",
+      "name": "B22-CS-06",
+      "description": "Core courses schedule for 'B22-CS-06'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-dsai-01",
+      "path": "f23/core-courses/bs-year-2/f23-b22-dsai-01.ics",
+      "name": "B22-DSAI-01",
+      "description": "Core courses schedule for 'B22-DSAI-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-dsai-02",
+      "path": "f23/core-courses/bs-year-2/f23-b22-dsai-02.ics",
+      "name": "B22-DSAI-02",
+      "description": "Core courses schedule for 'B22-DSAI-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-dsai-03",
+      "path": "f23/core-courses/bs-year-2/f23-b22-dsai-03.ics",
+      "name": "B22-DSAI-03",
+      "description": "Core courses schedule for 'B22-DSAI-03'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b22-dsai-04",
+      "path": "f23/core-courses/bs-year-2/f23-b22-dsai-04.ics",
+      "name": "B22-DSAI-04",
+      "description": "Core courses schedule for 'B22-DSAI-04'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-2",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-ai",
+      "path": "f23/core-courses/bs-year-3/f23-b21-ai.ics",
+      "name": "B21-AI",
+      "description": "Core courses schedule for 'B21-AI'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-cs",
+      "path": "f23/core-courses/bs-year-3/f23-b21-cs.ics",
+      "name": "B21-CS",
+      "description": "Core courses schedule for 'B21-CS'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-ds-01",
+      "path": "f23/core-courses/bs-year-3/f23-b21-ds-01.ics",
+      "name": "B21-DS-01",
+      "description": "Core courses schedule for 'B21-DS-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-ds-02",
+      "path": "f23/core-courses/bs-year-3/f23-b21-ds-02.ics",
+      "name": "B21-DS-02",
+      "description": "Core courses schedule for 'B21-DS-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-ro",
+      "path": "f23/core-courses/bs-year-3/f23-b21-ro.ics",
+      "name": "B21-RO",
+      "description": "Core courses schedule for 'B21-RO'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-sd-01",
+      "path": "f23/core-courses/bs-year-3/f23-b21-sd-01.ics",
+      "name": "B21-SD-01",
+      "description": "Core courses schedule for 'B21-SD-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-sd-02",
+      "path": "f23/core-courses/bs-year-3/f23-b21-sd-02.ics",
+      "name": "B21-SD-02",
+      "description": "Core courses schedule for 'B21-SD-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b21-sd-03",
+      "path": "f23/core-courses/bs-year-3/f23-b21-sd-03.ics",
+      "name": "B21-SD-03",
+      "description": "Core courses schedule for 'B21-SD-03'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-3",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-ai-01",
+      "path": "f23/core-courses/bs-year-4/f23-b20-ai-01.ics",
+      "name": "B20-AI-01",
+      "description": "Core courses schedule for 'B20-AI-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-cs-01",
+      "path": "f23/core-courses/bs-year-4/f23-b20-cs-01.ics",
+      "name": "B20-CS-01",
+      "description": "Core courses schedule for 'B20-CS-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-ds-01",
+      "path": "f23/core-courses/bs-year-4/f23-b20-ds-01.ics",
+      "name": "B20-DS-01",
+      "description": "Core courses schedule for 'B20-DS-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-ro-01",
+      "path": "f23/core-courses/bs-year-4/f23-b20-ro-01.ics",
+      "name": "B20-RO-01",
+      "description": "Core courses schedule for 'B20-RO-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-sd-01",
+      "path": "f23/core-courses/bs-year-4/f23-b20-sd-01.ics",
+      "name": "B20-SD-01",
+      "description": "Core courses schedule for 'B20-SD-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-b20-sd-02",
+      "path": "f23/core-courses/bs-year-4/f23-b20-sd-02.ics",
+      "name": "B20-SD-02",
+      "description": "Core courses schedule for 'B20-SD-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "bs-year-4",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m22-ds-01",
+      "path": "f23/core-courses/ms-year-1/f23-m22-ds-01.ics",
+      "name": "M22-DS-01",
+      "description": "Core courses schedule for 'M22-DS-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m22-ro-01",
+      "path": "f23/core-courses/ms-year-1/f23-m22-ro-01.ics",
+      "name": "M22-RO-01",
+      "description": "Core courses schedule for 'M22-RO-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m22-se-01",
+      "path": "f23/core-courses/ms-year-1/f23-m22-se-01.ics",
+      "name": "M22-SE-01",
+      "description": "Core courses schedule for 'M22-SE-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m22-se-02",
+      "path": "f23/core-courses/ms-year-1/f23-m22-se-02.ics",
+      "name": "M22-SE-02",
+      "description": "Core courses schedule for 'M22-SE-02'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m22-te-01",
+      "path": "f23/core-courses/ms-year-1/f23-m22-te-01.ics",
+      "name": "M22-TE-01",
+      "description": "Core courses schedule for 'M22-TE-01'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-1",
+          "type": "core-courses"
+        }
+      ]
+    },
+    {
+      "alias": "f23-m21-ds",
+      "path": "f23/core-courses/ms-year-2/f23-m21-ds.ics",
+      "name": "M21-DS",
+      "description": "Core courses schedule for 'M21-DS'",
+      "tags": [
+        {
+          "alias": "core-courses",
+          "type": "category"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        },
+        {
+          "alias": "ms-year-2",
+          "type": "core-courses"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "event_groups_count": 40,
+    "tags": [
+      {
+        "alias": "ms-year-2",
+        "type": "core-courses"
+      },
+      {
+        "alias": "core-courses",
+        "type": "category"
+      },
+      {
+        "alias": "bs-year-3",
+        "type": "core-courses"
+      },
+      {
+        "alias": "bs-year-2",
+        "type": "core-courses"
+      },
+      {
+        "alias": "bs-year-1",
+        "type": "core-courses"
+      },
+      {
+        "alias": "f23",
+        "type": "semester"
+      },
+      {
+        "alias": "ms-year-1",
+        "type": "core-courses"
+      },
+      {
+        "alias": "bs-year-4",
+        "type": "core-courses"
+      }
+    ]
+  }
+}

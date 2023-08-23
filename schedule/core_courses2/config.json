@@ -1,6 +1,10 @@
 {
   "SPREADSHEET_ID": "1wJtbTxo-ZPmBIt27BKQizwxtVM4_1sKA9vDyxGBAq-w",
-  "SEMESTER_TAGNAME": "Fall 23",
+  "SEMESTER_TAG": {
+    "alias": "f23",
+    "name": "Fall 2023",
+    "type": "semester"
+  },
   "TARGETS": [
     {
       "sheet_name": "1st block common  (starts on 2",
@@ -16,6 +20,6 @@
       ]
     }
   ],
-  "SAVE_ICS_PATH": "core-courses",
-  "SAVE_JSON_PATH": "core-courses.json"
+  "SAVE_ICS_PATH": "f23/core-courses",
+  "SAVE_JSON_PATH": "f23/core-courses.json"
 }

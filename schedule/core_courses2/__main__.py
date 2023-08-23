@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from hashlib import sha1
 from itertools import chain, groupby
 from typing import Any
@@ -117,7 +118,7 @@ if __name__ == "__main__":
     )
 
     semester_tag_reference = PredefinedEventGroup.TagReference(
-        alias=sluggify(config.SEMESTER_TAGNAME), type="semester"
+        alias=config.SEMESTER_TAG.alias, type=config.SEMESTER_TAG.type
     )
     parser.logger.info("Writing JSON and iCalendars files...")
     parser.logger.info(f"> Mount point: {config.MOUNT_POINT}")
@@ -187,4 +188,4 @@ if __name__ == "__main__":
     output = Output(event_groups=predefined_event_groups)
     # create a new .json file with information about calendar
     with open(config.SAVE_JSON_PATH, "w") as f:
-        json.dump(output.dict(), f, indent=4, sort_keys=True)
+        json.dump(output.dict(), f, indent=2, sort_keys=False)
