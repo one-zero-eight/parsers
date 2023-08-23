@@ -1,0 +1,21 @@
+{
+  "SPREADSHEET_ID": "1wJtbTxo-ZPmBIt27BKQizwxtVM4_1sKA9vDyxGBAq-w",
+  "SEMESTER_TAGNAME": "Fall 23",
+  "TARGETS": [
+    {
+      "sheet_name": "1st block common  (starts on 2",
+      "range": "A1:AS116",
+      "start_date": "2023-08-28",
+      "end_date": "2023-10-23",
+      "time_columns": [
+        "A",
+        "L",
+        "W",
+        "AF",
+        "AM"
+      ]
+    }
+  ],
+  "SAVE_ICS_PATH": "core-courses",
+  "SAVE_JSON_PATH": "core-courses.json"
+}
