@@ -1,195 +1,289 @@
 {
-    "calendars": [
+  "event_groups": [
+    {
+      "alias": "badminton-advanced",
+      "description": "Sport schedule for 'Badminton - Advanced'",
+      "name": "Badminton - Advanced",
+      "path": "sports/badminton-advanced.ics",
+      "tags": [
         {
-            "name": "Badminton - Advanced",
-            "path": "sports/badminton-advanced.ics",
-            "satellite": {
-                "sport_type": "Badminton - Advanced"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Badminton - Beginners",
-            "path": "sports/badminton-beginners.ics",
-            "satellite": {
-                "sport_type": "Badminton - Beginners"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Basketball",
-            "path": "sports/basketball.ics",
-            "satellite": {
-                "sport_type": "Basketball"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Boxing",
-            "path": "sports/boxing.ics",
-            "satellite": {
-                "sport_type": "Boxing"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Cricket",
-            "path": "sports/cricket.ics",
-            "satellite": {
-                "sport_type": "Cricket"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Follow the Bars - Running",
-            "path": "sports/followthebars-running.ics",
-            "satellite": {
-                "sport_type": "Follow the Bars - Running"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Football",
-            "path": "sports/football.ics",
-            "satellite": {
-                "sport_type": "Football"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Functional LSD",
-            "path": "sports/functionallsd.ics",
-            "satellite": {
-                "sport_type": "Functional LSD"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "General Physical Training",
-            "path": "sports/generalphysicaltraining.ics",
-            "satellite": {
-                "sport_type": "General Physical Training"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Mixed sports",
-            "path": "sports/mixedsports.ics",
-            "satellite": {
-                "sport_type": "Mixed sports"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Park Run - 5 Verst",
-            "path": "sports/parkrun-5verst.ics",
-            "satellite": {
-                "sport_type": "Park Run - 5 Verst"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "RAGE",
-            "path": "sports/rage.ics",
-            "satellite": {
-                "sport_type": "RAGE"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "RAGE - Knights",
-            "path": "sports/rage-knights.ics",
-            "satellite": {
-                "sport_type": "RAGE - Knights"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Sambo",
-            "path": "sports/sambo.ics",
-            "satellite": {
-                "sport_type": "Sambo"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Social Dance",
-            "path": "sports/socialdance.ics",
-            "satellite": {
-                "sport_type": "Social Dance"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Street Dance",
-            "path": "sports/streetdance.ics",
-            "satellite": {
-                "sport_type": "Street Dance"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Table tennis - Advanced",
-            "path": "sports/tabletennis-advanced.ics",
-            "satellite": {
-                "sport_type": "Table tennis - Advanced"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Table tennis - Beginners",
-            "path": "sports/tabletennis-beginners.ics",
-            "satellite": {
-                "sport_type": "Table tennis - Beginners"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Tennis",
-            "path": "sports/tennis.ics",
-            "satellite": {
-                "sport_type": "Tennis"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Tricking club",
-            "path": "sports/trickingclub.ics",
-            "satellite": {
-                "sport_type": "Tricking club"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Volleyball",
-            "path": "sports/volleyball.ics",
-            "satellite": {
-                "sport_type": "Volleyball"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Yoga - Strength",
-            "path": "sports/yoga-strength.ics",
-            "satellite": {
-                "sport_type": "Yoga - Strength"
-            },
-            "type": "sports"
-        },
-        {
-            "name": "Yoga - Stretching",
-            "path": "sports/yoga-stretching.ics",
-            "satellite": {
-                "sport_type": "Yoga - Stretching"
-            },
-            "type": "sports"
+          "alias": "sport",
+          "type": "category"
         }
-    ],
-    "filters": [
+      ]
+    },
+    {
+      "alias": "badminton-beginners",
+      "description": "Sport schedule for 'Badminton - Beginners'",
+      "name": "Badminton - Beginners",
+      "path": "sports/badminton-beginners.ics",
+      "tags": [
         {
-            "alias": "sport_type",
-            "name": "Sport type"
+          "alias": "sport",
+          "type": "category"
         }
-    ],
-    "title": "Sport"
+      ]
+    },
+    {
+      "alias": "basketball",
+      "description": "Sport schedule for 'Basketball'",
+      "name": "Basketball",
+      "path": "sports/basketball.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "boxing",
+      "description": "Sport schedule for 'Boxing'",
+      "name": "Boxing",
+      "path": "sports/boxing.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cricket",
+      "description": "Sport schedule for 'Cricket'",
+      "name": "Cricket",
+      "path": "sports/cricket.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "follow-the-bars-running",
+      "description": "Sport schedule for 'Follow the Bars - Running'",
+      "name": "Follow the Bars - Running",
+      "path": "sports/follow-the-bars-running.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "football",
+      "description": "Sport schedule for 'Football'",
+      "name": "Football",
+      "path": "sports/football.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "functional-lsd",
+      "description": "Sport schedule for 'Functional LSD'",
+      "name": "Functional LSD",
+      "path": "sports/functional-lsd.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "general-physical-training",
+      "description": "Sport schedule for 'General Physical Training'",
+      "name": "General Physical Training",
+      "path": "sports/general-physical-training.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "mixed-sports",
+      "description": "Sport schedule for 'Mixed sports'",
+      "name": "Mixed sports",
+      "path": "sports/mixed-sports.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "park-run-5-verst",
+      "description": "Sport schedule for 'Park Run - 5 Verst'",
+      "name": "Park Run - 5 Verst",
+      "path": "sports/park-run-5-verst.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "rage",
+      "description": "Sport schedule for 'RAGE'",
+      "name": "RAGE",
+      "path": "sports/rage.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "rage-knights",
+      "description": "Sport schedule for 'RAGE - Knights'",
+      "name": "RAGE - Knights",
+      "path": "sports/rage-knights.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "sambo",
+      "description": "Sport schedule for 'Sambo'",
+      "name": "Sambo",
+      "path": "sports/sambo.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "social-dance",
+      "description": "Sport schedule for 'Social Dance'",
+      "name": "Social Dance",
+      "path": "sports/social-dance.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "street-dance",
+      "description": "Sport schedule for 'Street Dance'",
+      "name": "Street Dance",
+      "path": "sports/street-dance.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "table-tennis-advanced",
+      "description": "Sport schedule for 'Table tennis - Advanced'",
+      "name": "Table tennis - Advanced",
+      "path": "sports/table-tennis-advanced.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "table-tennis-beginners",
+      "description": "Sport schedule for 'Table tennis - Beginners'",
+      "name": "Table tennis - Beginners",
+      "path": "sports/table-tennis-beginners.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "tennis",
+      "description": "Sport schedule for 'Tennis'",
+      "name": "Tennis",
+      "path": "sports/tennis.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "tricking-club",
+      "description": "Sport schedule for 'Tricking club'",
+      "name": "Tricking club",
+      "path": "sports/tricking-club.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "volleyball",
+      "description": "Sport schedule for 'Volleyball'",
+      "name": "Volleyball",
+      "path": "sports/volleyball.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "yoga-strength",
+      "description": "Sport schedule for 'Yoga - Strength'",
+      "name": "Yoga - Strength",
+      "path": "sports/yoga-strength.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "yoga-stretching",
+      "description": "Sport schedule for 'Yoga - Stretching'",
+      "name": "Yoga - Stretching",
+      "path": "sports/yoga-stretching.ics",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "event_groups_count": 23,
+    "tags": [
+      {
+        "alias": "sport",
+        "type": "category"
+      }
+    ]
+  }
 }
