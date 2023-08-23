@@ -161,6 +161,7 @@ class CoreCourseEvent(BaseModel):
         """
         Set recurrence rule and recurrence date for event
         """
+        until = datetime.datetime.combine(self.ends, datetime.time.max)
 
         rrule = icalendar.vRecur(
             {
@@ -168,7 +169,7 @@ class CoreCourseEvent(BaseModel):
                 "BYDAY": config.ICS_WEEKDAYS[self.weekday],
                 "FREQ": "WEEKLY",
                 "INTERVAL": 1,
-                "UNTIL": self.ends,
+                "UNTIL": until,
             }
         )
         rdate = icalendar.vDate(self.starts)

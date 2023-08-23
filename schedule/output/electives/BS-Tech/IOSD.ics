@@ -205,13 +205,24 @@ LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:iOS Development with Swift
-DTSTART:20230717T193000
-DTEND:20230717T210000
-UID:b53199bc@innohassle.ru
+DTSTART:20230722T161000
+DTEND:20230722T174000
+UID:b9132c46@innohassle.ru
 CATEGORIES:iOS Development with Swift
 COLOR:coral
-DESCRIPTION:Location: 312\nInstructor: Rozaliya Amirova\nSubject: iOS Deve
- lopment with Swift\nTime: 19:30 - 21:00 17.07.2023
-LOCATION:312
+DESCRIPTION:Location: 314\nInstructor: Rozaliya Amirova\nSubject: iOS Deve
+ lopment with Swift\nTime: 16:10 - 17:40 22.07.2023
+LOCATION:314
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:iOS Development with Swift
+DTSTART:20230722T175000
+DTEND:20230722T192000
+UID:1413524d@innohassle.ru
+CATEGORIES:iOS Development with Swift
+COLOR:coral
+DESCRIPTION:Location: 314\nInstructor: Rozaliya Amirova\nSubject: iOS Deve
+ lopment with Swift\nTime: 17:50 - 19:20 22.07.2023
+LOCATION:314
 END:VEVENT
 END:VCALENDAR

@@ -73,24 +73,24 @@ LOCATION:321
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230627T175000
-DTEND:20230627T192000
-UID:8ec578d7@innohassle.ru
+DTSTART:20230626T143000
+DTEND:20230626T160000
+UID:865f61c7@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
- ced Statistical and Econometric Methods\nTime: 17:50 - 19:20 27.06.2023
+ ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 26.06.2023
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230628T193000
-DTEND:20230628T210000
-UID:df2fa6ac@innohassle.ru
+DTSTART:20230626T161000
+DTEND:20230626T174000
+UID:f0440b1@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
 DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
- ced Statistical and Econometric Methods\nTime: 19:30 - 21:00 28.06.2023
+ ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 26.06.2023
 LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
@@ -119,23 +119,23 @@ BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T143000
 DTEND:20230705T160000
-UID:59c64b56@innohassle.ru
+UID:e409c5c9@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
-DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
- ced Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.07.2023
-LOCATION:online
+DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
+  Statistical and Econometric Methods\nTime: 14:30 - 16:00 05.07.2023
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
 DTSTART:20230705T161000
 DTEND:20230705T174000
-UID:d09d6a20@innohassle.ru
+UID:45e5170a@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
-DESCRIPTION:Location: online\nInstructor: Rustam Ibragimov\nSubject: Advan
- ced Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.07.2023
-LOCATION:online
+DESCRIPTION:Location: 317\nInstructor: Rustam Ibragimov\nSubject: Advanced
+  Statistical and Econometric Methods\nTime: 16:10 - 17:40 05.07.2023
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods

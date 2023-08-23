@@ -151,18 +151,6 @@ LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Application of Artificial Intelligence in Software Engineering
-DTSTART:20230624T091000
-DTEND:20230624T104000
-UID:a20eabfd@innohassle.ru
-CATEGORIES:Application of Artificial Intelligence in Software Engineering
-COLOR:blueviolet
-DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
- on of Artificial Intelligence in Software Engineering\nTime: 09:10 - 10:40
-  24.06.2023
-LOCATION:300
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Application of Artificial Intelligence in Software Engineering
 DTSTART:20230624T105000
 DTEND:20230624T122000
 UID:8af8b6ba@innohassle.ru
@@ -170,6 +158,18 @@ CATEGORIES:Application of Artificial Intelligence in Software Engineering
 COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
  on of Artificial Intelligence in Software Engineering\nTime: 10:50 - 12:20
+  24.06.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Application of Artificial Intelligence in Software Engineering
+DTSTART:20230624T091000
+DTEND:20230624T104000
+UID:a20eabfd@innohassle.ru
+CATEGORIES:Application of Artificial Intelligence in Software Engineering
+COLOR:blueviolet
+DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
+ on of Artificial Intelligence in Software Engineering\nTime: 09:10 - 10:40
   24.06.2023
 LOCATION:300
 END:VEVENT
@@ -187,18 +187,6 @@ LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Application of Artificial Intelligence in Software Engineering
-DTSTART:20230626T091000
-DTEND:20230626T104000
-UID:bc8a2933@innohassle.ru
-CATEGORIES:Application of Artificial Intelligence in Software Engineering
-COLOR:blueviolet
-DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
- on of Artificial Intelligence in Software Engineering\nTime: 09:10 - 10:40
-  26.06.2023
-LOCATION:300
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Application of Artificial Intelligence in Software Engineering
 DTSTART:20230626T105000
 DTEND:20230626T122000
 UID:947c3474@innohassle.ru
@@ -206,6 +194,18 @@ CATEGORIES:Application of Artificial Intelligence in Software Engineering
 COLOR:blueviolet
 DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
  on of Artificial Intelligence in Software Engineering\nTime: 10:50 - 12:20
+  26.06.2023
+LOCATION:300
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Application of Artificial Intelligence in Software Engineering
+DTSTART:20230626T091000
+DTEND:20230626T104000
+UID:bc8a2933@innohassle.ru
+CATEGORIES:Application of Artificial Intelligence in Software Engineering
+COLOR:blueviolet
+DESCRIPTION:Location: 300\nInstructor: Giancarlo Succi\nSubject: Applicati
+ on of Artificial Intelligence in Software Engineering\nTime: 09:10 - 10:40
   26.06.2023
 LOCATION:300
 END:VEVENT

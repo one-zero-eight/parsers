@@ -218,10 +218,11 @@ BEGIN:VEVENT
 SUMMARY:Introduction to DevOps (lab)
 DTSTART:20230717T175000
 DTEND:20230717T192000
-UID:6e09b95d@innohassle.ru
+UID:922d9323@innohassle.ru
 CATEGORIES:Introduction to DevOps
 COLOR:burlywood
-DESCRIPTION:Instructor: Dmitry Creed\nType: lab\nSubject: Introduction to 
- DevOps\nTime: 17:50 - 19:20 17.07.2023
+DESCRIPTION:Location: 314\nInstructor: Dmitry Creed\nType: lab\nSubject: I
+ ntroduction to DevOps\nTime: 17:50 - 19:20 17.07.2023
+LOCATION:314
 END:VEVENT
 END:VCALENDAR

@@ -150,7 +150,7 @@ if __name__ == "__main__":
         group_alias = f"{semester_tag_reference.alias}-{group_slug}"
         course_path = directory / course_slug
         course_path.mkdir(parents=True, exist_ok=True)
-        file_name = f"{group_alias}.ics"
+        file_name = f"{group_slug}.ics"
         file_path = course_path / file_name
 
         parser.logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")

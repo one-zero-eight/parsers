@@ -106,13 +106,13 @@ LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Python (lab)
-DTSTART:20230706T193000
-DTEND:20230706T210000
-UID:d0fe7c1d@innohassle.ru
+DTSTART:20230708T193000
+DTEND:20230708T210000
+UID:39c503a2@innohassle.ru
 CATEGORIES:Programming in Python
 COLOR:burlywood
 DESCRIPTION:Location: 303\nInstructor: Alaa Aldin Hajjar\nType: lab\nGroup
- : group4\nSubject: Programming in Python\nTime: 19:30 - 21:00 06.07.2023
+ : group4\nSubject: Programming in Python\nTime: 19:30 - 21:00 08.07.2023
 LOCATION:303
 END:VEVENT
 END:VCALENDAR
