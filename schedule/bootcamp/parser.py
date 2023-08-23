@@ -97,7 +97,9 @@ class BootcampParser:
                 for lesson in lessons:
                     academic_group, location = lesson[0].split(", ")
                     teacher = lesson[1] if len(lesson) == 2 else None
-                    description = f"{academic_group}\n{teacher}" if teacher else academic_group
+                    description = (
+                        f"{academic_group}\n{teacher}" if teacher else academic_group
+                    )
                     events.append(
                         BootcampEvent(
                             summary=lesson_type,
@@ -121,4 +123,3 @@ class BootcampParser:
             case _:
                 raise ValueError()
         return events
-
