@@ -94,6 +94,8 @@ if __name__ == "__main__":
             with open(file_path, "wb") as f:
                 f.write(calendar.to_ical())
 
+
+
     # create a new .json file with information about calendars
     with open(json_file, "w") as f:
         json.dump(calendars, f, indent=4, sort_keys=True)

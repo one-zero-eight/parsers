@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-from pydantic import parse_obj_as
+from pydantic import parse_obj_as, Field
 
-from schedule.config_base import BaseParserConfig
+from schedule.config_base import GoogleSpreadsheetConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -12,11 +12,17 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 """Path to config.json file"""
 
 
-class CoreCoursesParserConfig(BaseParserConfig):
+class CoreCoursesParserConfig(GoogleSpreadsheetConfig):
     """
     Config for core courses parser from Google Sheets
     """
 
+    SPREADSHEET_ID: str | None
+    """Spreadsheet ID from Google Sheets URL"""
+    TARGET_RANGES: list[str] = Field(default_factory=list)
+    """Target ranges from spreadsheet"""
+    TARGET_SHEET_TITLES: list[str] = Field(default_factory=list)
+    """Target sheet titles from spreadsheet"""
     RECURRENCE: list[dict]
     """Recurrence for events
     For ex.:

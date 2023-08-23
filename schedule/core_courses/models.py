@@ -10,7 +10,7 @@ from schedule.config_base import CSS3Color
 from schedule.processors.regex import (
     process_only_on,
     process_desc_in_parentheses,
-    remove_trailing_spaces,
+    process_spaces,
 )
 
 
@@ -42,7 +42,7 @@ class Subject(BaseModel):
 
         dirt_name = re.sub(r"\s*\(.*\)\s*", "", dirt_name)
         dirt_name = re.sub(r"\s*-.*$", "", dirt_name)
-        clear_name = remove_trailing_spaces(dirt_name)
+        clear_name = process_spaces(dirt_name)
 
         if clear_name not in cls.__instances__:
             cls.__instances__[clear_name] = cls(name=clear_name)

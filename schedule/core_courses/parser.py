@@ -14,7 +14,7 @@ from google.oauth2.credentials import Credentials
 
 from schedule.core_courses.config import core_courses_config as config
 from schedule.core_courses.models import ScheduleEvent
-from schedule.processors.regex import beautify_string
+from schedule.processors.regex import prettify_string
 from schedule.utils import *
 
 
@@ -95,7 +95,7 @@ class CoreCoursesParser:
         df = pd.DataFrame(data=values)
         # remove trailing spaces and translate
         df.replace(r"^\s*$", "", regex=True, inplace=True)
-        df = df.applymap(lambda x: beautify_string(x) if isinstance(x, str) else x)
+        df = df.applymap(lambda x: prettify_string(x) if isinstance(x, str) else x)
 
         max_x, max_y = df.shape
 
@@ -337,3 +337,23 @@ def process_target_schedule(
     )
 
     return events
+
+
+DAYS = [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY",
+]
+weekday_converter = {
+    "MONDAY": 0,
+    "TUESDAY": 1,
+    "WEDNESDAY": 2,
+    "THURSDAY": 3,
+    "FRIDAY": 4,
+    "SATURDAY": 5,
+    "SUNDAY": 6,
+}
