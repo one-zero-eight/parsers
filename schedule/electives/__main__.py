@@ -1,8 +1,10 @@
 import json
 import logging
 import re
+from hashlib import md5, sha1
 
 import icalendar
+import pandas as pd
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.parser import ElectiveParser, convert_separation
@@ -23,19 +25,52 @@ if __name__ == "__main__":
         "calendars": [],
     }
 
-    for i in range(len(config.TARGET_SHEET_TITLES)):
-        sheet_title = config.TARGET_SHEET_TITLES[i]
+    xlsx = parser.get_xlsx_file(
+        spreadsheet_id=config.SPREADSHEET_ID,
+    )
 
-        df = parser.get_clear_df(
-            spreadsheet_id=config.SPREADSHEET_ID,
-            target_title=sheet_title,
-            target_range=config.TARGET_RANGES[i],
+    dfs = parser.clear_df(
+        xlsx_file=xlsx,
+        targets=config.TARGETS,
+    )
+    # noinspection InsecureHash
+    to_hash = (
+        sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest()
+        for target in config.TARGETS
+    )
+    # noinspection InsecureHash
+    hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
+    parser.logger.info(f"Hashsum: {hashsum}")
+    xlsx_path = config.TEMP_DIR / f"{hashsum}.xlsx"
+    # check if file exists
+    if xlsx_path.exists():
+        parser.logger.info(f"Hashsum match!")
+
+    with open(xlsx_path, "wb") as f:
+        parser.logger.info(f"Loading cached file {hashsum}.xlsx")
+        xlsx.seek(0)
+        content = xlsx.read()
+        f.write(content)
+
+    for target in config.TARGETS:
+        parser.logger.info(f"Processing {target.sheet_name}... Range: {target.range}")
+
+        sheet_df = next(
+            df
+            for sheet_name, df in dfs.items()
+            if sheet_name.startswith(target.sheet_name)
         )
+        by_weeks = parser.split_df_by_weeks(sheet_df)
+        index = {}
+        for sheet_df in by_weeks:
+            index.update(sheet_df.index)
+        big_df = pd.DataFrame(index=list(index))
+        big_df = pd.concat([big_df, *by_weeks], axis=1)
+        events = parser.parse_df(big_df, config.ELECTIVES)
 
-        parsed = parser.parse_df(df, config.ELECTIVES)
-        converted = convert_separation(parsed)
+        converted = convert_separation(events)
 
-        directory = config.SAVE_ICS_PATH / sheet_title.replace("/", "-").replace(
+        directory = config.SAVE_ICS_PATH / target.sheet_name.replace("/", "-").replace(
             " ", "-"
         )
 
@@ -73,7 +108,7 @@ if __name__ == "__main__":
                     "type": "elective",
                     "path": relative_directory.as_posix(),
                     "satellite": {
-                        "elective_type": config.TARGET_SHEET_TITLES[i],
+                        "elective_type": target.sheet_name,
                         "description": elective.name if elective else "",
                     },
                 }

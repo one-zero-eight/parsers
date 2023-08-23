@@ -1,7 +1,7 @@
 from enum import StrEnum
 from pathlib import Path
 
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, validator
 
 from schedule.utils import get_project_root
 
@@ -60,31 +60,47 @@ class CSS3Color(StrEnum):
 
 
 class VeryBaseParserConfig(BaseModel):
+    MOUNT_POINT: Path = PROJECT_ROOT / "output"
+    """Mount point for output files"""
     SAVE_ICS_PATH: Path
-    """Path to directory to save .ics files"""
+    """Path to directory to save .ics files relative to MOUNT_POINT"""
     SAVE_JSON_PATH: Path
     """Path to save .json file"""
     TIMEZONE = "Europe/Moscow"
     """Timezone for events"""
 
+    @validator("SAVE_JSON_PATH", "SAVE_ICS_PATH", pre=True, always=True)
+    def relative_path_ics(cls, v, values):
+        """If not absolute path, then with respect to the main directory"""
+        v = Path(v)
+        if not v.is_absolute():
+            v = values["MOUNT_POINT"] / v
 
-class BaseParserConfig(VeryBaseParserConfig):
+        # if not children of mount point, then raise error
+        if not v.is_relative_to(values["MOUNT_POINT"]):
+            raise ValueError(
+                f"SAVE_ICS_PATH must be children of MOUNT_POINT, but got {v}"
+            )
+
+        if not v.exists():
+            v.mkdir(parents=True, exist_ok=True)
+        return v
+
+
+class GoogleSpreadsheetConfig(VeryBaseParserConfig):
     """
     Base config for parsers
     """
 
-    SPREADSHEET_ID: str | None
-    """Spreadsheet ID from Google Sheets URL"""
-    TARGET_RANGES: list[str] = Field(default_factory=list)
-    """Target ranges from spreadsheet"""
-    TARGET_SHEET_TITLES: list[str] = Field(default_factory=list)
-    """Target sheet titles from spreadsheet"""
     CREDENTIALS_PATH: Path = "credentials.json"
     """Path to credentials.json file for Google Sheets API"""
     TOKEN_PATH: Path = "token.json"
     """Path to token.json file for Google Sheets API"""
 
-    API_SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+    API_SCOPES = [
+        "https://www.googleapis.com/auth/spreadsheets.readonly",
+        "https://www.googleapis.com/auth/drive.readonly",
+    ]
     """API scopes for Google Sheets API"""
     TIMEZONE_DELTA = "+03:00"
     """Timezone delta for events"""
@@ -92,7 +108,6 @@ class BaseParserConfig(VeryBaseParserConfig):
     @validator(
         "CREDENTIALS_PATH",
         "TOKEN_PATH",
-        "SAVE_ICS_PATH",
         "SAVE_JSON_PATH",
         pre=True,
         always=True,
@@ -104,23 +119,16 @@ class BaseParserConfig(VeryBaseParserConfig):
             v = PROJECT_ROOT / v
         return v
 
-    @validator("CREDENTIALS_PATH", always=True)
-    def file_exists(cls, v: Path):
-        """Check if the file exists"""
-        if not v.exists():
-            raise ValueError(f"File {v.absolute()} does not exist")
-        return v
-
 
 __all__ = [
-    "BaseParserConfig",
+    "GoogleSpreadsheetConfig",
     "VeryBaseParserConfig",
     "CSS3Color",
     "DayOfWeek",
 ]
 
 if __name__ == "__main__":
-    cfg = BaseParserConfig(
+    cfg = GoogleSpreadsheetConfig(
         SAVE_ICS_PATH=Path(""),
         SAVE_JSON_PATH=Path(""),
     )

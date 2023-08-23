@@ -1,14 +1,14 @@
 {
-  "SPREADSHEET_ID": "1poSbgOaXQpdcM8F8AiIustuPERJ0Heo0YW4t2lxYtmE",
-  "TARGET_RANGES": [
-    "ElectivesBSTechRange",
-    "ElectivesMSTechRange",
-    "ElectivesHumRange"
-  ],
-  "TARGET_SHEET_TITLES": [
-    "BS Tech",
-    "MS Tech",
-    "BS/MS Hum"
+  "SPREADSHEET_ID": "11il6BUKSQ_bZIlRKH-SOvl1N9U5zbWcSRUV7jbgJpPI",
+  "TARGETS": [
+    {
+      "sheet_name": "BS Tech",
+      "range": "A2:H100"
+    },
+    {
+      "sheet_name": "MS Tech",
+      "range": "A2:H100"
+    }
   ],
   "SAVE_ICS_PATH": "output/electives",
   "SAVE_JSON_PATH": "output/electives.json",

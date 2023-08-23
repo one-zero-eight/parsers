@@ -6,7 +6,7 @@ import icalendar
 from pydantic import BaseModel, validator
 
 from schedule.config_base import CSS3Color
-from schedule.processors.regex import symbol_translation, remove_trailing_spaces
+from schedule.processors.regex import symbol_translation, process_spaces
 
 
 class Elective(BaseModel):
@@ -33,7 +33,7 @@ class Elective(BaseModel):
         :rtype: str
         """
         if string:
-            string = remove_trailing_spaces(string)
+            string = process_spaces(string)
             string = string.translate(symbol_translation)
         return string
 
