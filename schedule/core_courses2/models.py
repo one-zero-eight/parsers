@@ -166,15 +166,14 @@ class CoreCourseEvent(BaseModel):
         rrule = icalendar.vRecur(
             {
                 "WKST": "MO",
-                "BYDAY": config.ICS_WEEKDAYS[self.weekday],
                 "FREQ": "WEEKLY",
                 "INTERVAL": 1,
                 "UNTIL": until,
             }
         )
-        rdate = icalendar.vDate(self.starts)
         vevent.add("rrule", rrule)
-        vevent.add("rdate", rdate)
+        # rdate = icalendar.vDate(self.starts)
+        # vevent.add("rdate", rdate)
 
     def process_subject(self):
         """Process subject string
@@ -252,8 +251,10 @@ class CoreCourseEvent(BaseModel):
         location = self.process_starts_at(location)
         # patterns for "week only" information
         location = self.process_week_only(location)
+        # remove spaces near slashes(/)
+        location = re.sub(r"\s*\/\s*", "/", location)
 
-        return location
+        self.location = location
 
     def process_week_only(self, location):
         """
@@ -261,7 +262,7 @@ class CoreCourseEvent(BaseModel):
         - "105 (WEEK 2-3 ONLY)" -> "105", only on weeks 2 and 3 of semester
         - "105 (WEEK 2 ONLY)" -> "105", only on week 2 of semester
         """
-        if week_only_m := re.match(
+        if week_only_m := re.search(
             r"\(?WEEK ([^)]+) ONLY\)?", location, flags=re.IGNORECASE
         ):
             week_only = week_only_m.group(1)
@@ -288,7 +289,7 @@ class CoreCourseEvent(BaseModel):
         - "STARST AT 16.10" -> starts at 16.10
         - "107 (STARTS AT 10.50)" -> "107", starts at 10.50
         """
-        if starts_at_m := re.match(
+        if starts_at_m := re.search(
             r"\(?STARTS AT ([^)]+)\)?", location, flags=re.IGNORECASE
         ):
             starts_at = starts_at_m.group(1).replace(".", ":")
@@ -304,7 +305,7 @@ class CoreCourseEvent(BaseModel):
         - "STARTS ON 2/10" -> starts on 2/10
         - "STARTS FROM 21/09" -> starts on 21/09
         """
-        if starts_on_m := re.match(
+        if starts_on_m := re.search(
             r"\(?STARTS (?:ON|FROM) ([^)]+)\)?", location, flags=re.IGNORECASE
         ):
             starts_on = starts_on_m.group(1)
@@ -320,7 +321,8 @@ class CoreCourseEvent(BaseModel):
         - "107 (ONLY ON 8/09, 29/09, 27/10, 17/11)" -> "107", only on 8/09, 29/09, 27/10, 17/11
         - "ONLINE (only on 31/08 and 14/09)" -> "ONLINE", only on 31/08, 14/09
         """
-        if only_on_m := re.match(
+
+        if only_on_m := re.search(
             r"\(?ONLY ON ([^)]+)\)?", location, flags=re.IGNORECASE
         ):
             only_on = only_on_m.group(1)
@@ -378,15 +380,18 @@ class CoreCourseEvent(BaseModel):
         """
 
         vevent = icalendar.Event()
+
+        start_of_weekdays = nearest_weekday(self.starts, self.weekday)
+
         mapping = {
             "summary": self.summary,
             "description": self.description,
             "location": self.location,
             "dtstart": icalendar.vDatetime(
-                datetime.datetime.combine(self.starts, self.start_time)
+                datetime.datetime.combine(start_of_weekdays, self.start_time)
             ),
             "dtend": icalendar.vDatetime(
-                datetime.datetime.combine(self.starts, self.end_time)
+                datetime.datetime.combine(start_of_weekdays, self.end_time)
             ),
             "dtstamp": icalendar.vDatetime(self.dtstamp),
             "uid": self.get_uid(),
