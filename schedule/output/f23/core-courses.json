@@ -805,11 +805,15 @@
     "event_groups_count": 40,
     "tags": [
       {
-        "alias": "core-courses",
-        "type": "category"
+        "alias": "bs-year-4",
+        "type": "core-courses"
       },
       {
-        "alias": "ms-year-2",
+        "alias": "ms-year-1",
+        "type": "core-courses"
+      },
+      {
+        "alias": "bs-year-1",
         "type": "core-courses"
       },
       {
@@ -817,8 +821,8 @@
         "type": "core-courses"
       },
       {
-        "alias": "bs-year-1",
-        "type": "core-courses"
+        "alias": "core-courses",
+        "type": "category"
       },
       {
         "alias": "f23",
@@ -829,11 +833,7 @@
         "type": "core-courses"
       },
       {
-        "alias": "bs-year-4",
-        "type": "core-courses"
-      },
-      {
-        "alias": "ms-year-1",
+        "alias": "ms-year-2",
         "type": "core-courses"
       }
     ]

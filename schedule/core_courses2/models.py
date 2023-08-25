@@ -161,7 +161,7 @@ class CoreCourseEvent(BaseModel):
         """
         Set recurrence rule and recurrence date for event
         """
-        until = datetime.datetime.combine(self.ends, datetime.time.max)
+        until = datetime.datetime.combine(self.ends, datetime.time.min)
 
         rrule = icalendar.vRecur(
             {
@@ -195,6 +195,9 @@ class CoreCourseEvent(BaseModel):
             else:
                 # if inside_brackets is not "lec" or "tut" or "lab" then it is part of subject
                 subject = subject.replace(match[0], f": {inside_brackets.strip()}", 1)
+
+        # remove whitespaces before colons(:)
+        subject = re.sub(r"\s*\:\s*", ": ", subject)
         subject = process_spaces(subject)
         self.subject = subject
 
