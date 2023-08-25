@@ -681,10 +681,10 @@
       ]
     },
     {
-      "alias": "f23-m22-ds-01",
-      "path": "f23/core-courses/ms-year-1/m22-ds-01.ics",
-      "name": "M22-DS-01",
-      "description": "Core courses schedule for 'M22-DS-01'",
+      "alias": "f23-m23-ds-01",
+      "path": "f23/core-courses/ms-year-1/m23-ds-01.ics",
+      "name": "M23-DS-01",
+      "description": "Core courses schedule for 'M23-DS-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -701,10 +701,10 @@
       ]
     },
     {
-      "alias": "f23-m22-ro-01",
-      "path": "f23/core-courses/ms-year-1/m22-ro-01.ics",
-      "name": "M22-RO-01",
-      "description": "Core courses schedule for 'M22-RO-01'",
+      "alias": "f23-m23-ro-01",
+      "path": "f23/core-courses/ms-year-1/m23-ro-01.ics",
+      "name": "M23-RO-01",
+      "description": "Core courses schedule for 'M23-RO-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -721,10 +721,10 @@
       ]
     },
     {
-      "alias": "f23-m22-se-01",
-      "path": "f23/core-courses/ms-year-1/m22-se-01.ics",
-      "name": "M22-SE-01",
-      "description": "Core courses schedule for 'M22-SE-01'",
+      "alias": "f23-m23-se-01",
+      "path": "f23/core-courses/ms-year-1/m23-se-01.ics",
+      "name": "M23-SE-01",
+      "description": "Core courses schedule for 'M23-SE-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -741,10 +741,10 @@
       ]
     },
     {
-      "alias": "f23-m22-se-02",
-      "path": "f23/core-courses/ms-year-1/m22-se-02.ics",
-      "name": "M22-SE-02",
-      "description": "Core courses schedule for 'M22-SE-02'",
+      "alias": "f23-m23-se-02",
+      "path": "f23/core-courses/ms-year-1/m23-se-02.ics",
+      "name": "M23-SE-02",
+      "description": "Core courses schedule for 'M23-SE-02'",
       "tags": [
         {
           "alias": "core-courses",
@@ -761,10 +761,10 @@
       ]
     },
     {
-      "alias": "f23-m22-te-01",
-      "path": "f23/core-courses/ms-year-1/m22-te-01.ics",
-      "name": "M22-TE-01",
-      "description": "Core courses schedule for 'M22-TE-01'",
+      "alias": "f23-m23-te-01",
+      "path": "f23/core-courses/ms-year-1/m23-te-01.ics",
+      "name": "M23-TE-01",
+      "description": "Core courses schedule for 'M23-TE-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -781,10 +781,10 @@
       ]
     },
     {
-      "alias": "f23-m21-ds",
-      "path": "f23/core-courses/ms-year-2/m21-ds.ics",
-      "name": "M21-DS",
-      "description": "Core courses schedule for 'M21-DS'",
+      "alias": "f23-m22-ds",
+      "path": "f23/core-courses/ms-year-2/m22-ds.ics",
+      "name": "M22-DS",
+      "description": "Core courses schedule for 'M22-DS'",
       "tags": [
         {
           "alias": "core-courses",
@@ -805,15 +805,11 @@
     "event_groups_count": 40,
     "tags": [
       {
-        "alias": "bs-year-4",
+        "alias": "ms-year-2",
         "type": "core-courses"
       },
       {
         "alias": "ms-year-1",
-        "type": "core-courses"
-      },
-      {
-        "alias": "bs-year-1",
         "type": "core-courses"
       },
       {
@@ -825,16 +821,20 @@
         "type": "category"
       },
       {
-        "alias": "f23",
-        "type": "semester"
-      },
-      {
         "alias": "bs-year-2",
         "type": "core-courses"
       },
       {
-        "alias": "ms-year-2",
+        "alias": "bs-year-1",
         "type": "core-courses"
+      },
+      {
+        "alias": "bs-year-4",
+        "type": "core-courses"
+      },
+      {
+        "alias": "f23",
+        "type": "semester"
       }
     ]
   }

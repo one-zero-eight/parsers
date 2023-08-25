@@ -71,13 +71,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230829T124000
 DTEND:20230829T141000
 DTSTAMP:20230828T000000
-UID:x-3d7cb8ae@innohassle.ru
+UID:x-3e0b8a9c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 12:4
  0 - 14:10
-LOCATION:105/106/108/313/318/321/421
+LOCATION:105/106/108/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Programming (lab)
@@ -96,13 +96,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230829T160000
 DTEND:20230829T173000
 DTSTAMP:20230828T000000
-UID:x-abd7ed99@innohassle.ru
+UID:x-f496159e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:105/106/108/313/318/321/421
+LOCATION:106/108/313/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Logic & Discrete Maths (lec)
@@ -205,13 +205,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T124000
 DTEND:20230901T141000
 DTSTAMP:20230828T000000
-UID:x-fda1d182@innohassle.ru
+UID:x-9ec967bd@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 12:4
  0 - 14:10
-LOCATION:106/313/314/316/318/320/421
+LOCATION:106/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lab)
@@ -230,13 +230,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T160000
 DTEND:20230901T173000
 DTSTAMP:20230828T000000
-UID:x-6b0a84b5@innohassle.ru
+UID:x-98007881@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:106/313/314/316/318/320/421
+LOCATION:313/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis I (lec)
@@ -303,13 +303,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231024T124000
 DTEND:20231024T141000
 DTSTAMP:20231023T000000
-UID:x-b70ebaf3@innohassle.ru
+UID:x-5fd6bffb@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 12:4
  0 - 14:10
-LOCATION:105/106/108/313/318/321/421
+LOCATION:105/106/108/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Programming (lab)
@@ -328,13 +328,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231024T160000
 DTEND:20231024T173000
 DTSTAMP:20231023T000000
-UID:x-21a5efc4@innohassle.ru
+UID:x-954b20f9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:105/106/108/313/318/321/421
+LOCATION:106/108/313/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Logic & Discrete Maths (lec)
@@ -437,12 +437,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T124000
 DTEND:20231027T141000
 DTSTAMP:20231023T000000
-UID:x-7abae970@innohassle.ru
+UID:x-ff1452da@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
- ov\,Marouf\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 12:40 - 14:10
-LOCATION:106/313/314/316/318/320/421
+ ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 12:4
+ 0 - 14:10
+LOCATION:106/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lab)
@@ -461,11 +462,12 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T160000
 DTEND:20231027T173000
 DTSTAMP:20231023T000000
-UID:x-87545f8c@innohassle.ru
+UID:x-f9dd4de6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
- ov\,Marouf\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:00 - 17:30
-LOCATION:106/313/314/316/318/320/421
+ ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:0
+ 0 - 17:30
+LOCATION:313/314/316/318/320/421
 END:VEVENT
 END:VCALENDAR
