@@ -3,8 +3,8 @@ from pathlib import Path
 
 from pydantic import parse_obj_as, validator, BaseModel
 
-from schedule.config_base import GoogleSpreadsheetConfig
 from schedule.electives.models import Elective
+from schedule.config_base import GoogleSpreadsheetConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -14,27 +14,32 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 
 
 class ElectivesParserConfig(GoogleSpreadsheetConfig):
-    class Target(BaseModel):
-        """
-        Target model
-        """
-
-        sheet_name: str
-        """Sheet name"""
-        range: str
-        """Range"""
 
     """
     Config for electives parser from Google Sheets
     """
 
-    ELECTIVES: list[Elective]
-    """Electives list"""
+    class Target(BaseModel):
+        """
+        Target model for electives (sheet in Google Sheets)
+        """
+
+        sheet_name: str
+        range: str
 
     TARGETS: list[Target]
 
+    class Tag(BaseModel):
+        alias: str
+        type: str
+        name: str
+
+    SEMESTER_TAG: Tag
+
     SPREADSHEET_ID: str
     TEMP_DIR: Path = PROJECT_ROOT / "temp" / "electives"
+
+    ELECTIVES: list["Elective"]
 
     @validator("TEMP_DIR", pre=True)
     def ensure_dir(cls, v):

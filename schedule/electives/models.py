@@ -1,9 +1,10 @@
 import datetime
-from typing import Optional
+import re
+from typing import Optional, Any, Generator
 from zlib import crc32
 
 import icalendar
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, validator, Field
 
 from schedule.config_base import CSS3Color
 from schedule.processors.regex import symbol_translation, process_spaces
@@ -24,7 +25,7 @@ class Elective(BaseModel):
     """Type of elective"""
 
     @validator("name", "instructor", "elective_type", pre=True)
-    def beatify_string(cls: type["Elective"], string: str) -> str:  # noqa
+    def beatify_string(cls: type["Elective"], string: str) -> str:
         """Beatify string
 
         :param string: string to beatify
@@ -50,6 +51,136 @@ class Elective(BaseModel):
         return CSS3Color.get_by_index(hash_ % color_count)
 
 
+class ElectiveCell(BaseModel):
+    original: list[str]
+    """ Original cell value """
+
+    class Occurrence(BaseModel):
+        """Occurrence of the elective"""
+
+        original: str
+        """ Original occurrence value """
+        elective: Optional[Elective]
+        """ Elective object """
+        location: Optional[str]
+        """ Location of the elective """
+        group: Optional[str]
+        """ Group to which the elective belongs """
+        class_type: Optional[str]
+        """ Type of the class(leture, seminar, etc.) """
+        starts_at: Optional[datetime.time]
+        """ Time when the elective starts (modificator) """
+        ends_at: Optional[datetime.time]
+        """ Time when the elective ends (modificator) """
+
+        def __init__(self, **data: Any):
+            """
+            Process cell value
+
+            - GAI (lec) online
+            - PHL 101
+            - PMBA (lab) (Group 1) 313
+            - GDU 18:00-19:30 (lab) 101
+            - OMML (18:10-19:50) 312
+            - PGA 300
+            - IQC (17:05-18:35) online
+            - SMP online
+            - ASEM (starts at 18:05) 101
+            """
+
+            from schedule.electives.config import electives_config as config
+
+            super().__init__(**data)
+
+            string = self.original.strip()
+
+            # just first word as elective
+            splitter = string.split(" ")
+            elective_alias = splitter[0]
+            self.elective = next(
+                elective
+                for elective in config.ELECTIVES
+                if elective.alias == elective_alias
+            )
+            string = " ".join(splitter[1:])
+            # find time xx:xx-xx:xx
+
+            if timeslot_m := re.search(r"\(?(\d{2}:\d{2})-(\d{2}:\d{2})\)?", string):
+                self.starts_at = datetime.datetime.strptime(
+                    timeslot_m.group(1), "%H:%M"
+                ).time()
+                self.ends_at = datetime.datetime.strptime(
+                    timeslot_m.group(2), "%H:%M"
+                ).time()
+                string = string.replace(timeslot_m.group(0), "")
+
+            # find starts at xx:xx
+            if timeslot_m := re.search(r"\(?starts at (\d{2}:\d{2})\)?", string):
+                self.starts_at = datetime.datetime.strptime(
+                    timeslot_m.group(1), "%H:%M"
+                ).time()
+                string = string.replace(timeslot_m.group(0), "")
+
+            # find (lab), (lec)
+            if class_type_m := re.search(
+                r"\(?(lab|lec)\)?", string, flags=re.IGNORECASE
+            ):
+                self.class_type = class_type_m.group(1).lower()
+                string = string.replace(class_type_m.group(0), "")
+
+            # find (Group 1)
+            if group_m := re.search(r"\(?(Group \d+)\)?", string):
+                self.group = group_m.group(1)
+                string = string.replace(group_m.group(0), "")
+
+            # find location (what is left)
+            string = string.strip()
+            if string:
+                self.location = string
+
+    occurrences: list[Occurrence] = Field(default_factory=list)
+    """ List of occurrences of the electives """
+
+    def __init__(self, **data: Any):
+        super().__init__(**data)
+        for line in self.original:
+            self.occurrences.append(self.Occurrence(original=line))
+
+    def generate_events(
+        self, date: datetime.date, timeslot: tuple[datetime.time, datetime.time]
+    ) -> Generator["ElectiveEvent", None, None]:
+        """
+        Generate events for the cell
+
+        :param date: date of the events
+        :param timeslot: timeslot of the events
+        :return: generator of events
+        """
+        overall_start, overall_end = timeslot
+        overall_start = datetime.datetime.combine(date, overall_start)
+        overall_end = datetime.datetime.combine(date, overall_end)
+
+        # iterate over occurrences
+        for occurrence in self.occurrences:
+            start = overall_start
+            end = overall_end
+
+            if occurrence.starts_at:
+                start = datetime.datetime.combine(date, occurrence.starts_at)
+
+            if occurrence.ends_at:
+                end = datetime.datetime.combine(date, occurrence.ends_at)
+
+            yield ElectiveEvent(
+                elective=occurrence.elective,
+                location=occurrence.location,
+                class_type=occurrence.class_type,
+                group=occurrence.group,
+                start=start,
+                end=end,
+            )
+
+
 class ElectiveEvent(BaseModel):
     """
     Elective event model
@@ -63,14 +194,10 @@ class ElectiveEvent(BaseModel):
     """ Event end time """
     location: Optional[str]
     """ Event location """
-    description: Optional[str]
-    """ Event description """
-    event_type: Optional[str]
+    class_type: Optional[str]
     """ Event type """
     group: Optional[str] = None
     """ Group to which the event belongs """
-    notes: Optional[str] = None
-    """ Notes for the event """
 
     def __hash__(self):
         string_to_hash = str(
@@ -79,7 +206,7 @@ class ElectiveEvent(BaseModel):
                 self.start.isoformat(),
                 self.end.isoformat(),
                 self.location,
-                self.event_type,
+                self.class_type,
                 self.group,
             )
         )
@@ -103,15 +230,14 @@ class ElectiveEvent(BaseModel):
         :return: description of the event
         :rtype: str
         """
-
         r = {
-            "Location": self.location,
-            "Instructor": self.elective.instructor,
-            "Type": self.event_type,
-            "Group": self.group,
+            # "Location": self.location,
             "Subject": self.elective.name,
-            "Time": f"{self.start.strftime('%H:%M')} - {self.end.strftime('%H:%M')} {self.start.strftime('%d.%m.%Y')}",
-            "Notes": self.notes,
+            "Instructor": self.elective.instructor,
+            # "Type": self.class_type,
+            "Group": self.group,
+            "Time": f"{self.start.strftime('%H:%M')} - {self.end.strftime('%H:%M')}",
+            "Date": self.start.strftime("%d.%m.%Y"),
         }
 
         r = {k: v for k, v in r.items() if v}
@@ -126,8 +252,8 @@ class ElectiveEvent(BaseModel):
         """
         vevent = icalendar.Event()
         vevent["summary"] = self.elective.name
-        if self.event_type is not None:
-            vevent["summary"] += f" ({self.event_type})"
+        if self.class_type is not None:
+            vevent["summary"] += f" ({self.class_type})"
         vevent["dtstart"] = icalendar.vDatetime(self.start)
         vevent["dtend"] = icalendar.vDatetime(self.end)
         vevent["uid"] = self.get_uid()

@@ -4,7 +4,7 @@ import re
 from collections import defaultdict
 from datetime import datetime
 from itertools import pairwise, groupby
-from typing import Collection
+from typing import Collection, Generator
 
 import numpy as np
 import pandas as pd
@@ -14,7 +14,9 @@ from openpyxl.utils.cell import coordinate_to_tuple
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.models import Elective, ElectiveEvent
+from schedule.processors.regex import prettify_string
 from schedule.utils import *
+from schedule.electives.models import ElectiveCell
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
@@ -40,7 +42,7 @@ class ElectiveParser:
             {"Authorization": f"Bearer {self.credentials.token}"}
         )
 
-    def clear_df(
+    def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, targets: list[config.Target]
     ) -> dict[str, pd.DataFrame]:
         """
@@ -73,6 +75,8 @@ class ElectiveParser:
             df = df.replace(r"^\s*$", np.nan, regex=True)
             # -------- Exclude nan rows --------
             df = df.dropna(how="all")
+            # -------- Strip, translate and remove trailing spaces --------
+            df = df.applymap(prettify_string)
             # -------- Update dataframe --------
             dfs[target.sheet_name] = df
         self.logger.info("Dataframes ready")
@@ -228,110 +232,28 @@ class ElectiveParser:
         return dfs
 
     @classmethod
-    def parse_df(
-        cls, df: pd.DataFrame, electives: Collection[Elective]
-    ) -> list[ElectiveEvent]:
+    def parse_df(cls, df: pd.DataFrame) -> Generator[ElectiveEvent, None, None]:
         """
         Parse dataframe with schedule
 
         :param df: dataframe with schedule
         :type df: pd.DataFrame
-        :param electives: list of electives to parse
-        :type electives: Collection[parser.models.Elective]
-        :return: list of parsed events
-        :rtype: list[ElectiveEvent]
+        :return: parsed events
         """
 
-        # for each cell in day column
-        def process_cell(cell: str) -> list[dict[str, str]]:
-            """
-            Process cell, find events in it and return list of parsed events
+        df = df.applymap(
+            lambda x: ElectiveCell(original=x.strip().split("\n"))
+            if not pd.isna(x)
+            else x
+        )
 
-            :param cell: cell to process
-            :type cell: str
-            :return: list of parsed events
-            :rtype: list[dict[str, str]]
-            """
-            #           "BDLD(lec) 312" ->
-            #           {"ele"BDLD", "lec", "312"
-            #           "PP(lab/group2)303" -> "PP", "lab/group2", "303"
+        for date, date_column in df.items():
+            date: datetime.date
+            for timeslot, cell in date_column.items():
+                timeslot: tuple[datetime.time, datetime.time]
 
-            result: list[dict] = []
-
-            if pd.isna(cell):
-                return result
-
-            occurences = cell.strip().split("\n")
-
-            for line in occurences:
-                dct = {}
-                # find event_type in brackets "BDLD(lec) 312"
-                # if brackets in the end of the line, just add to the description
-
-                if end_brackets := re.search(r"\((.*?)\)$", line):
-                    dct["notes"] = end_brackets.group(1)
-                    line = line.replace(end_brackets.group(0), " ")
-                elif middle_brackets := re.search(r"\((.*?)\)", line):
-                    event_type = middle_brackets.group(1)
-                    event_type = event_type.replace(" ", "")
-                    line = line.replace(middle_brackets.group(0), " ")
-                    if event_type.startswith("lab"):
-                        if "/" in event_type:
-                            dct["group"] = event_type.split("/")[1]
-                        event_type = "lab"
-                    elif not event_type.startswith(("lec", "tut")):
-                        dct["group"] = event_type
-                        event_type = None
-
-                    dct["event_type"] = event_type
-
-                parts = line.split()
-
-                if len(parts) == 2:
-                    event_name, event_location = parts
-                else:
-                    event_name = parts[0]
-                    event_location = None
-
-                elective = next((e for e in electives if e.alias == event_name), None)
-
-                if elective is None:
-                    raise ValueError(f"Course not found: {event_name}")
-
-                dct["elective"] = elective
-                dct["location"] = event_location
-
-                result.append(dct)
-            return result
-
-        # first column is time
-        # first row is day in format 'Month Day'
-        # first cell is week number
-
-        events = []
-
-        days = [day for day in df.columns if day != ""]
-        days: list[datetime.date]
-        for day in days:
-            # copy column
-            day_df = df[day].copy()
-            # drop rows with empty cells
-            day_df = day_df.dropna()
-            day_df = day_df[day_df != ""]
-            # for each cell in day column
-            for timeslot, cell in day_df.items():
-                start_delta, end_delta = timeslot
-                cell_events = process_cell(cell)
-                event_start = datetime.combine(day, start_delta)
-                event_end = datetime.combine(day, end_delta)
-
-                for cell_event in cell_events:
-                    event = ElectiveEvent(
-                        start=event_start, end=event_end, **cell_event
-                    )
-                    events.append(event)
-
-        return events
+                if isinstance(cell, ElectiveCell):
+                    yield from cell.generate_events(date, timeslot)
 
 
 def convert_separation(
