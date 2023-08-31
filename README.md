@@ -14,7 +14,7 @@ Contains following parsers:
 - [schedule](./schedule)
     - [core courses](./schedule/core_courses)
     - [elective courses](./schedule/electives)
-    - [sports](.schedule/sports)
+    - [sports](./schedule/sports)
 
 ## Demo
 
