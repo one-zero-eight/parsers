@@ -73,7 +73,7 @@ async def main():
         logger.info(f"Grouping events by sport.name and sport_schedule_event.title")
 
         sport_tag_reference = PredefinedEventGroup.TagReference(
-            alias="sport", type="category"
+            alias="sports", type="category"
         )
 
         for (title, subtitle), events in groupby(sport_events, key=grouping):
