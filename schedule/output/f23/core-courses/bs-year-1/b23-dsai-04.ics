@@ -133,12 +133,12 @@ SUMMARY:Logic & Discrete Maths (lab)
 DTSTART:20230830T160000
 DTEND:20230830T173000
 DTSTAMP:20230828T000000
-UID:x-dec23ce9@innohassle.ru
+UID:x-51b84983@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
 DESCRIPTION:Instructor: Ali Belal Jnadi\nGroup: B23-DSAI-04\nCourse: BS - 
  Year 1\nTime: 16:00 - 17:30
-LOCATION:320
+LOCATION:313 (room #307 on 29/11)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Fundamentals of Computer Architecture (lec)
@@ -205,13 +205,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T124000
 DTEND:20230901T141000
 DTSTAMP:20230828T000000
-UID:x-9ec967bd@innohassle.ru
+UID:x-ded75671@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-04\nCourse: BS - Year 1\nTime: 12:4
  0 - 14:10
-LOCATION:106/314/316/318/320/421
+LOCATION:106/314 (room #301 on 1/09)/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lab)
@@ -230,13 +230,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T160000
 DTEND:20230901T173000
 DTSTAMP:20230828T000000
-UID:x-98007881@innohassle.ru
+UID:x-7002642c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-04\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:313/314/316/318/320/421
+LOCATION:106/314 (room #301 on 1/09)/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis I (lec)
@@ -365,12 +365,12 @@ SUMMARY:Logic & Discrete Maths (lab)
 DTSTART:20231025T160000
 DTEND:20231025T173000
 DTSTAMP:20231023T000000
-UID:x-439411d0@innohassle.ru
+UID:x-2be40bba@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
 DESCRIPTION:Instructor: Ali Belal Jnadi\nGroup: B23-DSAI-04\nCourse: BS - 
  Year 1\nTime: 16:00 - 17:30
-LOCATION:320
+LOCATION:313 (room #307 on 29/11)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Fundamentals of Computer Architecture (lec)
