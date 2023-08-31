@@ -14,11 +14,11 @@ Contains following parsers:
 - [schedule](./schedule)
     - [core courses](./schedule/core_courses)
     - [elective courses](./schedule/electives)
-    - ~~sport~~ (not implemented yet)
+    - [sports] (.schedule/sports)
 
 ## Demo
 
-Will be later...
+Check output files in the [output](./schedule/output) directory.
 
 ## Project Installation
 
@@ -33,15 +33,16 @@ To install the InNoHassle Parsers, follow the steps below:
     ```
 
 ## How to Use
-
-1. Run the parser:
+1. Configure parsers using ```config.json``` files
+2. Run the parser:
 
     ```bash
     poetry shell
     python -m schedule.core_courses
     python -m schedule.electives
+    python -m schedule.sports
     ```
-2. The output will be in the `schedule/output` directory.
+3. The output will be in the `schedule/output` directory.
 
 ## Features List
 
@@ -54,7 +55,7 @@ To install the InNoHassle Parsers, follow the steps below:
 |           Language           |              Frameworks               |              Libraries               |
 |:----------------------------:|:-------------------------------------:|:------------------------------------:|
 | [Python](https://python.org) | [Poetry](https://python-poetry.org/)  | [pandas](https://pandas.pydata.org/) |
-|                              | [Sphinx](https://www.sphinx-doc.org/) | [pydantic](https://pydantic.dev/)    |
+|                              |  | [pydantic](https://pydantic.dev/)    |
 ## For Customer
 
 We highly value your satisfaction and want to provide you with the best possible support. If you encounter any problems or have any questions regarding our product or service, please don't hesitate to create an **issue**. Our team is here to assist you and will promptly address your concerns. Your feedback is crucial for us to continually improve our offerings, and we appreciate the opportunity to assist you. Thank you for choosing us as your trusted provider, and we assure you of our commitment to your satisfaction.
