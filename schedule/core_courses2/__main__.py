@@ -127,7 +127,7 @@ if __name__ == "__main__":
     for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
         group_calendar = icalendar.Calendar()
 
-        group_calendar["prodid"] = "-//one-zero-eight//InNoHassle Schedule",
+        group_calendar["prodid"] = "-//one-zero-eight//InNoHassle Schedule"
         group_calendar["version"] = "2.0"
         group_calendar["method"] = "PUBLISH"
 
