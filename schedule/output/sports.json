@@ -1,6 +1,18 @@
 {
   "event_groups": [
     {
+      "alias": "animal-flow",
+      "path": "sports/animal-flow.ics",
+      "name": "Animal flow",
+      "description": "Sport schedule for 'Animal flow'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
       "alias": "badminton-advanced",
       "path": "sports/badminton-advanced.ics",
       "name": "Badminton - Advanced",
@@ -17,6 +29,18 @@
       "path": "sports/badminton-beginners.ics",
       "name": "Badminton - Beginners",
       "description": "Sport schedule for 'Badminton - Beginners'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "basic-strength-training",
+      "path": "sports/basic-strength-training.ics",
+      "name": "Basic strength training",
+      "description": "Sport schedule for 'Basic strength training'",
       "tags": [
         {
           "alias": "sport",
@@ -61,6 +85,30 @@
       ]
     },
     {
+      "alias": "crossfit",
+      "path": "sports/crossfit.ics",
+      "name": "CrossFit",
+      "description": "Sport schedule for 'CrossFit'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "crossfit-women",
+      "path": "sports/crossfit-women.ics",
+      "name": "CrossFit - Women",
+      "description": "Sport schedule for 'CrossFit - Women'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
       "alias": "follow-the-bars-running",
       "path": "sports/follow-the-bars-running.ics",
       "name": "Follow the Bars - Running",
@@ -97,10 +145,34 @@
       ]
     },
     {
-      "alias": "general-physical-training",
-      "path": "sports/general-physical-training.ics",
-      "name": "General Physical Training",
-      "description": "Sport schedule for 'General Physical Training'",
+      "alias": "functional-training",
+      "path": "sports/functional-training.ics",
+      "name": "Functional Training",
+      "description": "Sport schedule for 'Functional Training'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "healthy-back",
+      "path": "sports/healthy-back.ics",
+      "name": "Healthy back",
+      "description": "Sport schedule for 'Healthy back'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "karate",
+      "path": "sports/karate.ics",
+      "name": "Karate",
+      "description": "Sport schedule for 'Karate'",
       "tags": [
         {
           "alias": "sport",
@@ -121,10 +193,22 @@
       ]
     },
     {
-      "alias": "park-run-5-verst",
-      "path": "sports/park-run-5-verst.ics",
-      "name": "Park Run - 5 Verst",
-      "description": "Sport schedule for 'Park Run - 5 Verst'",
+      "alias": "mobility",
+      "path": "sports/mobility.ics",
+      "name": "Mobility",
+      "description": "Sport schedule for 'Mobility'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "power-up",
+      "path": "sports/power-up.ics",
+      "name": "Power Up",
+      "description": "Sport schedule for 'Power Up'",
       "tags": [
         {
           "alias": "sport",
@@ -169,10 +253,22 @@
       ]
     },
     {
-      "alias": "social-dance",
-      "path": "sports/social-dance.ics",
-      "name": "Social Dance",
-      "description": "Sport schedule for 'Social Dance'",
+      "alias": "social-dance-advanced",
+      "path": "sports/social-dance-advanced.ics",
+      "name": "Social Dance - Advanced",
+      "description": "Sport schedule for 'Social Dance - Advanced'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "social-dance-junior-middle",
+      "path": "sports/social-dance-junior-middle.ics",
+      "name": "Social Dance - Junior|Middle",
+      "description": "Sport schedule for 'Social Dance - Junior|Middle'",
       "tags": [
         {
           "alias": "sport",
@@ -185,6 +281,30 @@
       "path": "sports/street-dance.ics",
       "name": "Street Dance",
       "description": "Sport schedule for 'Street Dance'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "stretching",
+      "path": "sports/stretching.ics",
+      "name": "Stretching",
+      "description": "Sport schedule for 'Stretching'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "swimming",
+      "path": "sports/swimming.ics",
+      "name": "Swimming",
+      "description": "Sport schedule for 'Swimming'",
       "tags": [
         {
           "alias": "sport",
@@ -251,34 +371,10 @@
           "type": "category"
         }
       ]
-    },
-    {
-      "alias": "yoga-strength",
-      "path": "sports/yoga-strength.ics",
-      "name": "Yoga - Strength",
-      "description": "Sport schedule for 'Yoga - Strength'",
-      "tags": [
-        {
-          "alias": "sport",
-          "type": "category"
-        }
-      ]
-    },
-    {
-      "alias": "yoga-stretching",
-      "path": "sports/yoga-stretching.ics",
-      "name": "Yoga - Stretching",
-      "description": "Sport schedule for 'Yoga - Stretching'",
-      "tags": [
-        {
-          "alias": "sport",
-          "type": "category"
-        }
-      ]
     }
   ],
   "meta": {
-    "event_groups_count": 23,
+    "event_groups_count": 31,
     "tags": [
       {
         "alias": "sport",

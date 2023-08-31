@@ -1,7 +1,7 @@
 {
   "event_groups": [
     {
-      "alias": "bs-tech-gai",
+      "alias": "f23-bs-tech-gai",
       "path": "f23/electives/bs-tech/gai.ics",
       "name": "GAI",
       "description": "Generative Artificial Intelligence",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "alias": "bs-tech-phl",
+      "alias": "f23-bs-tech-phl",
       "path": "f23/electives/bs-tech/phl.ics",
       "name": "PHL",
       "description": "Programming in Haskell",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "alias": "bs-tech-pmba",
+      "alias": "f23-bs-tech-pmba",
       "path": "f23/electives/bs-tech/pmba.ics",
       "name": "PMBA",
       "description": "Project Management Beyond Agile",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "alias": "bs-tech-pmba-group-1",
+      "alias": "f23-bs-tech-pmba-group-1",
       "path": "f23/electives/bs-tech/pmba-group-1.ics",
       "name": "PMBA Group 1",
       "description": "Project Management Beyond Agile",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "alias": "bs-tech-pmba-group-2",
+      "alias": "f23-bs-tech-pmba-group-2",
       "path": "f23/electives/bs-tech/pmba-group-2.ics",
       "name": "PMBA Group 2",
       "description": "Project Management Beyond Agile",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "alias": "bs-tech-gdu",
+      "alias": "f23-bs-tech-gdu",
       "path": "f23/electives/bs-tech/gdu.ics",
       "name": "GDU",
       "description": "Game Development with Unity",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "alias": "bs-tech-omml",
+      "alias": "f23-bs-tech-omml",
       "path": "f23/electives/bs-tech/omml.ics",
       "name": "OMML",
       "description": "Optimization Methods in Machine Learning",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "alias": "bs-tech-bdld",
+      "alias": "f23-bs-tech-bdld",
       "path": "f23/electives/bs-tech/bdld.ics",
       "name": "BDLD",
       "description": "Blockchain: Distributed Ledger Development",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "alias": "bs-tech-smp",
+      "alias": "f23-bs-tech-smp",
       "path": "f23/electives/bs-tech/smp.ics",
       "name": "SMP",
       "description": "System Programming",
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "alias": "bs-tech-asem",
+      "alias": "f23-bs-tech-asem",
       "path": "f23/electives/bs-tech/asem.ics",
       "name": "ASEM",
       "description": "Advanced Statistical and Econometric Methods",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "alias": "bs-tech-pga",
+      "alias": "f23-bs-tech-pga",
       "path": "f23/electives/bs-tech/pga.ics",
       "name": "PGA",
       "description": "Programming in Scala",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "alias": "bs-tech-ihd",
+      "alias": "f23-bs-tech-ihd",
       "path": "f23/electives/bs-tech/ihd.ics",
       "name": "IHD",
       "description": "Introduction to Hardware Design",
@@ -241,7 +241,7 @@
       ]
     },
     {
-      "alias": "bs-tech-iqc",
+      "alias": "f23-bs-tech-iqc",
       "path": "f23/electives/bs-tech/iqc.ics",
       "name": "IQC",
       "description": "Introduction to Quantum Computing",
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "alias": "bs-tech-spda",
+      "alias": "f23-bs-tech-spda",
       "path": "f23/electives/bs-tech/spda.ics",
       "name": "SPDA",
       "description": "Software Product Development and Analysis",
@@ -281,7 +281,7 @@
       ]
     },
     {
-      "alias": "bs-tech-ids",
+      "alias": "f23-bs-tech-ids",
       "path": "f23/electives/bs-tech/ids.ics",
       "name": "IDS",
       "description": "iOS Development with Swift",
@@ -301,7 +301,7 @@
       ]
     },
     {
-      "alias": "bs-tech-dcd",
+      "alias": "f23-bs-tech-dcd",
       "path": "f23/electives/bs-tech/dcd.ics",
       "name": "DCD",
       "description": "Digital Circuit Design",
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "alias": "bs-tech-cggd",
+      "alias": "f23-bs-tech-cggd",
       "path": "f23/electives/bs-tech/cggd.ics",
       "name": "CGGD",
       "description": "Computer Graphics in Game Development",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "alias": "bs-tech-resu",
+      "alias": "f23-bs-tech-resu",
       "path": "f23/electives/bs-tech/resu.ics",
       "name": "RESU",
       "description": "Reverse engineering and software vulnerabilities",
@@ -361,7 +361,7 @@
       ]
     },
     {
-      "alias": "bs-tech-epja",
+      "alias": "f23-bs-tech-epja",
       "path": "f23/electives/bs-tech/epja.ics",
       "name": "EPJA",
       "description": "Enterprise programming on Javascript - Advanced",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "alias": "bs-tech-mcd",
+      "alias": "f23-bs-tech-mcd",
       "path": "f23/electives/bs-tech/mcd.ics",
       "name": "MCD",
       "description": "Modern Control Paradigms",
@@ -401,7 +401,7 @@
       ]
     },
     {
-      "alias": "ms-acv",
+      "alias": "f23-ms-acv",
       "path": "f23/electives/ms/acv.ics",
       "name": "ACV",
       "description": "Advanced Computer Vision",
@@ -421,7 +421,7 @@
       ]
     },
     {
-      "alias": "ms-fds",
+      "alias": "f23-ms-fds",
       "path": "f23/electives/ms/fds.ics",
       "name": "FDS",
       "description": "Fundamentals of DevOps",
@@ -441,7 +441,7 @@
       ]
     },
     {
-      "alias": "ms-caw",
+      "alias": "f23-ms-caw",
       "path": "f23/electives/ms/caw.ics",
       "name": "CAW",
       "description": "Contact-aware Control",
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "alias": "ms-dsm",
+      "alias": "f23-ms-dsm",
       "path": "f23/electives/ms/dsm.ics",
       "name": "DSM",
       "description": "Decision Support Systems with Application in Medical Domain",
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "alias": "ms-pm",
+      "alias": "f23-ms-pm",
       "path": "f23/electives/ms/pm.ics",
       "name": "PM",
       "description": "Product Management",
@@ -505,16 +505,16 @@
     "event_groups_count": 25,
     "tags": [
       {
-        "alias": "bs-tech",
-        "type": "electives"
-      },
-      {
         "alias": "ms",
         "type": "electives"
       },
       {
         "alias": "f23",
         "type": "semester"
+      },
+      {
+        "alias": "bs-tech",
+        "type": "electives"
       },
       {
         "alias": "electives",

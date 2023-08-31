@@ -136,7 +136,7 @@ class SportScheduleEvent(BaseModel):
         vevent["location"] = self.location
         vevent["uid"] = self.get_uid()
         starting = nearest_weekday(
-            very_first_date, self.sport_schedule_event.daysOfWeek[0]
+            very_first_date, self.sport_schedule_event.daysOfWeek[0] - 1 # 0 is Monday
         )
         dtstart = datetime.datetime.combine(starting, self.start)
         dtend = datetime.datetime.combine(starting, self.end)
