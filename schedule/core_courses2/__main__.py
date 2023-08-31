@@ -55,15 +55,16 @@ class Output(BaseModel):
         unique_tags = set(
             (tag.alias, tag.type) for group in self.event_groups for tag in group.tags
         )
+        unique_tags = [
+            {
+                "alias": alias,
+                "type": type_,
+            }
+            for alias, type_ in sorted(unique_tags, key=lambda x: (x[1], x[0]))
+        ]
         self.meta = {
             "event_groups_count": len(self.event_groups),
-            "tags": [
-                {
-                    "alias": alias,
-                    "type": type_,
-                }
-                for alias, type_ in unique_tags
-            ],
+            "tags": unique_tags,
         }
 
 
