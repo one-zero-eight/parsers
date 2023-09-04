@@ -513,12 +513,12 @@
         "type": "semester"
       },
       {
-        "alias": "bs-tech",
-        "type": "electives"
-      },
-      {
         "alias": "electives",
         "type": "category"
+      },
+      {
+        "alias": "bs-tech",
+        "type": "electives"
       }
     ]
   }

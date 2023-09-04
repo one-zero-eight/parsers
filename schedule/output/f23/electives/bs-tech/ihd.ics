@@ -85,6 +85,17 @@ LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Hardware Design
+DTSTART:20231025T193000
+DTEND:20231025T210000
+UID:9f0edd6d@innohassle.ru
+CATEGORIES:Introduction to Hardware Design
+COLOR:burlywood
+DESCRIPTION:Subject: Introduction to Hardware Design\nInstructor: Albert D
+ emian\nTime: 19:30 - 21:00\nDate: 25.10.2023
+LOCATION:103
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Introduction to Hardware Design
 DTSTART:20231026T175000
 DTEND:20231026T192000
 UID:904098b3@innohassle.ru
@@ -151,13 +162,13 @@ LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Hardware Design
-DTSTART:20231116T161000
-DTEND:20231116T174000
-UID:ae73b865@innohassle.ru
+DTSTART:20231115T193000
+DTEND:20231115T210000
+UID:c3d83b0@innohassle.ru
 CATEGORIES:Introduction to Hardware Design
 COLOR:burlywood
 DESCRIPTION:Subject: Introduction to Hardware Design\nInstructor: Albert D
- emian\nTime: 16:10 - 17:40\nDate: 16.11.2023
+ emian\nTime: 19:30 - 21:00\nDate: 15.11.2023
 LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
@@ -173,13 +184,13 @@ LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Hardware Design
-DTSTART:20231123T161000
-DTEND:20231123T174000
-UID:33232111@innohassle.ru
+DTSTART:20231122T193000
+DTEND:20231122T210000
+UID:8fe9980a@innohassle.ru
 CATEGORIES:Introduction to Hardware Design
 COLOR:burlywood
 DESCRIPTION:Subject: Introduction to Hardware Design\nInstructor: Albert D
- emian\nTime: 16:10 - 17:40\nDate: 23.11.2023
+ emian\nTime: 19:30 - 21:00\nDate: 22.11.2023
 LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
@@ -191,17 +202,6 @@ CATEGORIES:Introduction to Hardware Design
 COLOR:burlywood
 DESCRIPTION:Subject: Introduction to Hardware Design\nInstructor: Albert D
  emian\nTime: 17:50 - 19:20\nDate: 23.11.2023
-LOCATION:103
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Introduction to Hardware Design
-DTSTART:20231130T161000
-DTEND:20231130T174000
-UID:f13c5402@innohassle.ru
-CATEGORIES:Introduction to Hardware Design
-COLOR:burlywood
-DESCRIPTION:Subject: Introduction to Hardware Design\nInstructor: Albert D
- emian\nTime: 16:10 - 17:40\nDate: 30.11.2023
 LOCATION:103
 END:VEVENT
 BEGIN:VEVENT

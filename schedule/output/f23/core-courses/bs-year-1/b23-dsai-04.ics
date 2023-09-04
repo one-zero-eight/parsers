@@ -230,13 +230,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T160000
 DTEND:20230901T173000
 DTSTAMP:20230828T000000
-UID:x-7002642c@innohassle.ru
+UID:x-e7cf0303@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-04\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:106/314 (room #301 on 1/09)/316/318/320/421
+LOCATION:106/313/314 (room #301 on 1/09)/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis I (lec)
@@ -437,7 +437,7 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T124000
 DTEND:20231027T141000
 DTSTAMP:20231023T000000
-UID:x-ff1452da@innohassle.ru
+UID:x-21b03cc1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
@@ -462,12 +462,12 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T160000
 DTEND:20231027T173000
 DTSTAMP:20231023T000000
-UID:x-f9dd4de6@innohassle.ru
+UID:x-e9790195@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-04\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:313/314/316/318/320/421
+LOCATION:106/313/314/316/318/320/421
 END:VEVENT
 END:VCALENDAR

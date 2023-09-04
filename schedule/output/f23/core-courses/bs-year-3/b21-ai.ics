@@ -23,12 +23,12 @@ SUMMARY:Information Retrieval (lab)
 DTSTART:20230828T125000
 DTEND:20230828T142000
 DTSTAMP:20230828T000000
-UID:x-ac8ee483@innohassle.ru
+UID:x-49b1f402@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Amirreza Darvishzadeh\nGroup: B21-AI\nCourse: BS -
   Year 3\nTime: 12:50 - 14:20
-LOCATION:314 (room #307 on 28/08)
+LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Computer Vision (lec)

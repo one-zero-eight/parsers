@@ -41,6 +41,17 @@ LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Optimization Methods in Machine Learning
+DTSTART:20230905T193000
+DTEND:20230905T210000
+UID:e640cd26@innohassle.ru
+CATEGORIES:Optimization Methods in Machine Learning
+COLOR:crimson
+DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
+  Aleksandr Beznosikov\nTime: 19:30 - 21:00\nDate: 05.09.2023
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Optimization Methods in Machine Learning
 DTSTART:20230906T163000
 DTEND:20230906T180000
 UID:a2fd23f1@innohassle.ru
@@ -48,17 +59,6 @@ CATEGORIES:Optimization Methods in Machine Learning
 COLOR:crimson
 DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
   Aleksandr Beznosikov\nTime: 16:30 - 18:00\nDate: 06.09.2023
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Optimization Methods in Machine Learning
-DTSTART:20230906T181000
-DTEND:20230906T195000
-UID:9d5716b6@innohassle.ru
-CATEGORIES:Optimization Methods in Machine Learning
-COLOR:crimson
-DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
-  Aleksandr Beznosikov\nTime: 18:10 - 19:50\nDate: 06.09.2023
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -96,6 +96,17 @@ LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Optimization Methods in Machine Learning
+DTSTART:20231003T193000
+DTEND:20231003T210000
+UID:4689cdac@innohassle.ru
+CATEGORIES:Optimization Methods in Machine Learning
+COLOR:crimson
+DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
+  Aleksandr Beznosikov\nTime: 19:30 - 21:00\nDate: 03.10.2023
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Optimization Methods in Machine Learning
 DTSTART:20231004T163000
 DTEND:20231004T180000
 UID:3f3d26e7@innohassle.ru
@@ -103,17 +114,6 @@ CATEGORIES:Optimization Methods in Machine Learning
 COLOR:crimson
 DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
   Aleksandr Beznosikov\nTime: 16:30 - 18:00\nDate: 04.10.2023
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Optimization Methods in Machine Learning
-DTSTART:20231004T181000
-DTEND:20231004T195000
-UID:9713a0@innohassle.ru
-CATEGORIES:Optimization Methods in Machine Learning
-COLOR:crimson
-DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
-  Aleksandr Beznosikov\nTime: 18:10 - 19:50\nDate: 04.10.2023
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -151,6 +151,17 @@ LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Optimization Methods in Machine Learning
+DTSTART:20231114T175000
+DTEND:20231114T192000
+UID:9b3fb806@innohassle.ru
+CATEGORIES:Optimization Methods in Machine Learning
+COLOR:crimson
+DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
+  Aleksandr Beznosikov\nTime: 17:50 - 19:20\nDate: 14.11.2023
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Optimization Methods in Machine Learning
 DTSTART:20231115T163000
 DTEND:20231115T180000
 UID:df8e5268@innohassle.ru
@@ -158,17 +169,6 @@ CATEGORIES:Optimization Methods in Machine Learning
 COLOR:crimson
 DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
   Aleksandr Beznosikov\nTime: 16:30 - 18:00\nDate: 15.11.2023
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Optimization Methods in Machine Learning
-DTSTART:20231115T181000
-DTEND:20231115T195000
-UID:e024672f@innohassle.ru
-CATEGORIES:Optimization Methods in Machine Learning
-COLOR:crimson
-DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
-  Aleksandr Beznosikov\nTime: 18:10 - 19:50\nDate: 15.11.2023
 LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
@@ -206,6 +206,17 @@ LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Optimization Methods in Machine Learning
+DTSTART:20231205T175000
+DTEND:20231205T192000
+UID:3ddca2d@innohassle.ru
+CATEGORIES:Optimization Methods in Machine Learning
+COLOR:crimson
+DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
+  Aleksandr Beznosikov\nTime: 17:50 - 19:20\nDate: 05.12.2023
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Optimization Methods in Machine Learning
 DTSTART:20231206T163000
 DTEND:20231206T180000
 UID:59e8a28d@innohassle.ru
@@ -213,17 +224,6 @@ CATEGORIES:Optimization Methods in Machine Learning
 COLOR:crimson
 DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
   Aleksandr Beznosikov\nTime: 16:30 - 18:00\nDate: 06.12.2023
-LOCATION:312
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Optimization Methods in Machine Learning
-DTSTART:20231206T181000
-DTEND:20231206T195000
-UID:664297ca@innohassle.ru
-CATEGORIES:Optimization Methods in Machine Learning
-COLOR:crimson
-DESCRIPTION:Subject: Optimization Methods in Machine Learning\nInstructor:
-  Aleksandr Beznosikov\nTime: 18:10 - 19:50\nDate: 06.12.2023
 LOCATION:312
 END:VEVENT
 END:VCALENDAR

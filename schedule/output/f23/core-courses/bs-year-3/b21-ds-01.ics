@@ -47,11 +47,11 @@ SUMMARY:Data and Knowledge Representation (lab)
 DTSTART:20230905T125000
 DTEND:20230905T142000
 DTSTAMP:20230828T000000
-UID:x-48180463@innohassle.ru
+UID:x-bdb69b52@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
-DESCRIPTION:Instructor: ElDakroury Karim\nGroup: B21-DS-01\nCourse: BS - Y
- ear 3\nTime: 12:50 - 14:20
+DESCRIPTION:Instructor: Imre Delgado\nGroup: B21-DS-01\nCourse: BS - Year 
+ 3\nTime: 12:50 - 14:20
 LOCATION:313 
 END:VEVENT
 BEGIN:VEVENT
@@ -143,11 +143,11 @@ SUMMARY:Data and Knowledge Representation (lab)
 DTSTART:20231024T125000
 DTEND:20231024T142000
 DTSTAMP:20231023T000000
-UID:x-a938bb0a@innohassle.ru
+UID:x-969a4b0a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
-DESCRIPTION:Instructor: ElDakroury Karim\nGroup: B21-DS-01\nCourse: BS - Y
- ear 3\nTime: 12:50 - 14:20
+DESCRIPTION:Instructor: Imre Delgado\nGroup: B21-DS-01\nCourse: BS - Year 
+ 3\nTime: 12:50 - 14:20
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
