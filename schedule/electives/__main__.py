@@ -129,7 +129,7 @@ if __name__ == "__main__":
             calendar.add("x-wr-total-vevents", str(cnt))
 
             elective_x_group_alias = sluggify(calendar_name)
-            calendar_alias = sluggify(target.sheet_name) + "-" + elective_x_group_alias
+            calendar_alias = f"{config.SEMESTER_TAG.alias}-{sluggify(target.sheet_name)}-{elective_x_group_alias}"
 
             file_name = f"{elective_x_group_alias}.ics"
             file_path = elective_type_directory / file_name
