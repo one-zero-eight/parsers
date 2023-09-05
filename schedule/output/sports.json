@@ -169,6 +169,18 @@
       ]
     },
     {
+      "alias": "innotyaga",
+      "path": "sports/innotyaga.ics",
+      "name": "Innotyaga",
+      "description": "Sport schedule for 'Innotyaga'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
       "alias": "karate",
       "path": "sports/karate.ics",
       "name": "Karate",
@@ -197,6 +209,18 @@
       "path": "sports/mobility.ics",
       "name": "Mobility",
       "description": "Sport schedule for 'Mobility'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "park-run-5-verst",
+      "path": "sports/park-run-5-verst.ics",
+      "name": "Park Run - 5 Verst",
+      "description": "Sport schedule for 'Park Run - 5 Verst'",
       "tags": [
         {
           "alias": "sports",
@@ -374,7 +398,7 @@
     }
   ],
   "meta": {
-    "event_groups_count": 31,
+    "event_groups_count": 33,
     "tags": [
       {
         "alias": "sports",

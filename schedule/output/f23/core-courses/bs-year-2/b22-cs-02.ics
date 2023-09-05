@@ -47,22 +47,22 @@ SUMMARY:Operating Systems (lec)
 DTSTART:20230904T180000
 DTEND:20230904T193000
 DTSTAMP:20230828T000000
-UID:0-11dd008b@innohassle.ru
+UID:0-63e049c9@innohassle.ru
 COLOR:darkgreen
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-02\nCourse: BS - Ye
  ar 2\nTime: 18:00 - 19:30
-LOCATION:105 
+LOCATION:108 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Operating Systems (lec)
 DTSTART:20230911T180000
 DTEND:20230911T193000
 DTSTAMP:20230828T000000
-UID:1-11dd008b@innohassle.ru
+UID:1-63e049c9@innohassle.ru
 COLOR:darkgreen
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-02\nCourse: BS - Ye
  ar 2\nTime: 18:00 - 19:30
-LOCATION:105 
+LOCATION:108 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Optimization (lec)
@@ -105,22 +105,22 @@ SUMMARY:Operating Systems (lec)
 DTSTART:20230905T180000
 DTEND:20230905T193000
 DTSTAMP:20230828T000000
-UID:0-7cd5a47a@innohassle.ru
+UID:0-ee8ed38@innohassle.ru
 COLOR:darkgreen
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-02\nCourse: BS - Ye
  ar 2\nTime: 18:00 - 19:30
-LOCATION:105 
+LOCATION:108 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Operating Systems (lec)
 DTSTART:20230912T180000
 DTEND:20230912T193000
 DTSTAMP:20230828T000000
-UID:1-7cd5a47a@innohassle.ru
+UID:1-ee8ed38@innohassle.ru
 COLOR:darkgreen
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-02\nCourse: BS - Ye
  ar 2\nTime: 18:00 - 19:30
-LOCATION:105 
+LOCATION:108 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Operating Systems (lec)
@@ -199,11 +199,11 @@ SUMMARY:Operating Systems (lec)
 DTSTART:20230907T180000
 DTEND:20230907T193000
 DTSTAMP:20230828T000000
-UID:0-222ef531@innohassle.ru
+UID:0-d1853ada@innohassle.ru
 COLOR:darkgreen
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-02\nCourse: BS - Ye
  ar 2\nTime: 18:00 - 19:30
-LOCATION:105 
+LOCATION:108 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Differential Equations (lec)

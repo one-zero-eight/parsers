@@ -181,26 +181,6 @@
       ]
     },
     {
-      "alias": "f23-bs-tech-asem",
-      "path": "f23/electives/bs-tech/asem.ics",
-      "name": "ASEM",
-      "description": "Advanced Statistical and Econometric Methods",
-      "tags": [
-        {
-          "alias": "electives",
-          "type": "category"
-        },
-        {
-          "alias": "bs-tech",
-          "type": "electives"
-        },
-        {
-          "alias": "f23",
-          "type": "semester"
-        }
-      ]
-    },
-    {
       "alias": "f23-bs-tech-pga",
       "path": "f23/electives/bs-tech/pga.ics",
       "name": "PGA",
@@ -265,6 +245,26 @@
       "path": "f23/electives/bs-tech/spda.ics",
       "name": "SPDA",
       "description": "Software Product Development and Analysis",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "f23",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "f23-bs-tech-asem",
+      "path": "f23/electives/bs-tech/asem.ics",
+      "name": "ASEM",
+      "description": "Advanced Statistical and Econometric Methods",
       "tags": [
         {
           "alias": "electives",
@@ -505,20 +505,20 @@
     "event_groups_count": 25,
     "tags": [
       {
+        "alias": "f23",
+        "type": "semester"
+      },
+      {
         "alias": "ms",
+        "type": "electives"
+      },
+      {
+        "alias": "bs-tech",
         "type": "electives"
       },
       {
         "alias": "electives",
         "type": "category"
-      },
-      {
-        "alias": "f23",
-        "type": "semester"
-      },
-      {
-        "alias": "bs-tech",
-        "type": "electives"
       }
     ]
   }
