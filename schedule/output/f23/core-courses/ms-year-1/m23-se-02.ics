@@ -11,7 +11,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230828T090000
 DTEND:20230828T103000
 DTSTAMP:20230828T000000
-UID:0-c81ca2b9@innohassle.ru
+UID:0-d60d3c7@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 09:00 - 10:30
@@ -22,7 +22,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230904T090000
 DTEND:20230904T103000
 DTSTAMP:20230828T000000
-UID:1-c81ca2b9@innohassle.ru
+UID:1-d60d3c7@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 09:00 - 10:30
@@ -33,7 +33,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230911T090000
 DTEND:20230911T103000
 DTSTAMP:20230828T000000
-UID:2-c81ca2b9@innohassle.ru
+UID:2-d60d3c7@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 09:00 - 10:30
@@ -44,7 +44,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230828T104000
 DTEND:20230828T121000
 DTSTAMP:20230828T000000
-UID:0-632e885f@innohassle.ru
+UID:0-a652f921@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -55,7 +55,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230904T104000
 DTEND:20230904T121000
 DTSTAMP:20230828T000000
-UID:1-632e885f@innohassle.ru
+UID:1-a652f921@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -66,7 +66,7 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230911T104000
 DTEND:20230911T121000
 DTSTAMP:20230828T000000
-UID:2-632e885f@innohassle.ru
+UID:2-a652f921@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -77,7 +77,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230904T160000
 DTEND:20230904T173000
 DTSTAMP:20230828T000000
-UID:0-cd6d96e@innohassle.ru
+UID:0-61171a1d@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -88,7 +88,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230911T160000
 DTEND:20230911T173000
 DTSTAMP:20230828T000000
-UID:1-cd6d96e@innohassle.ru
+UID:1-61171a1d@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -99,8 +99,8 @@ SUMMARY:IT Product Development (lec)
 DTSTART:20230926T090000
 DTEND:20230926T103000
 DTSTAMP:20230828T000000
-UID:x-3c7f73ee@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-6bba3bf7@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Nursultan Askarbekuly\nGroup: M23-SE-02\nCourse: M
  S - Year 1\nTime: 09:00 - 10:30
@@ -111,8 +111,8 @@ SUMMARY:IT Product Development (lab)
 DTSTART:20230926T124000
 DTEND:20230926T141000
 DTSTAMP:20230828T000000
-UID:x-c67a1420@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-da5d8c35@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Gleb Shalimov\nGroup: M23-SE-02\nCourse: MS - Year
   1\nTime: 12:40 - 14:10
@@ -123,7 +123,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230905T142000
 DTEND:20230905T155000
 DTSTAMP:20230828T000000
-UID:0-7f482153@innohassle.ru
+UID:0-254b819c@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 14:20 - 15:50
@@ -134,7 +134,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230912T142000
 DTEND:20230912T155000
 DTSTAMP:20230828T000000
-UID:1-7f482153@innohassle.ru
+UID:1-254b819c@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 14:20 - 15:50
@@ -145,8 +145,8 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230830T090000
 DTEND:20230830T103000
 DTSTAMP:20230828T000000
-UID:x-571f0068@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-5ba1c085@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 09:00 - 10:30
@@ -157,8 +157,8 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230830T104000
 DTEND:20230830T121000
 DTSTAMP:20230828T000000
-UID:x-c79fed2b@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-cb212dc6@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -169,8 +169,8 @@ SUMMARY:Managing Software Development (lec)
 DTSTART:20230830T124000
 DTEND:20230830T141000
 DTSTAMP:20230828T000000
-UID:x-b2c09d3d@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-be7e5dd0@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Andrey Sadovykh\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 12:40 - 14:10
@@ -181,7 +181,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230906T160000
 DTEND:20230906T173000
 DTSTAMP:20230828T000000
-UID:0-a73e8893@innohassle.ru
+UID:0-fd3d285c@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -192,7 +192,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230913T160000
 DTEND:20230913T173000
 DTSTAMP:20230828T000000
-UID:1-a73e8893@innohassle.ru
+UID:1-fd3d285c@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -203,8 +203,8 @@ SUMMARY:Requirements Engineering (lec)
 DTSTART:20230921T104000
 DTEND:20230921T121000
 DTSTAMP:20230828T000000
-UID:x-15ecb509@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-1e6d6988@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Manuel Mazzara\nGroup: M23-SE-02\nCourse: MS - Yea
  r 1\nTime: 10:40 - 12:10
@@ -215,8 +215,8 @@ SUMMARY:Requirements Engineering (lec)
 DTSTART:20230921T124000
 DTEND:20230921T141000
 DTSTAMP:20230828T000000
-UID:x-745905f2@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-7fd8d973@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Manuel Mazzara\nGroup: M23-SE-02\nCourse: MS - Yea
  r 1\nTime: 12:40 - 14:10
@@ -227,7 +227,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230907T160000
 DTEND:20230907T173000
 DTSTAMP:20230828T000000
-UID:0-806cde46@innohassle.ru
+UID:0-da6f7e89@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -238,7 +238,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230914T160000
 DTEND:20230914T173000
 DTSTAMP:20230828T000000
-UID:1-806cde46@innohassle.ru
+UID:1-da6f7e89@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 16:00 - 17:30
@@ -249,7 +249,7 @@ SUMMARY:Managing Software Development (tut)
 DTSTART:20230901T090000
 DTEND:20230901T103000
 DTSTAMP:20230828T000000
-UID:0-656dd2dc@innohassle.ru
+UID:0-1b6af9b4@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Mansur Khazeev\,Denis Nikolskiy\nGroup: M23-SE-02\
  nCourse: MS - Year 1\nTime: 09:00 - 10:30
@@ -260,7 +260,7 @@ SUMMARY:Managing Software Development (tut)
 DTSTART:20230908T090000
 DTEND:20230908T103000
 DTSTAMP:20230828T000000
-UID:1-656dd2dc@innohassle.ru
+UID:1-1b6af9b4@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Mansur Khazeev\,Denis Nikolskiy\nGroup: M23-SE-02\
  nCourse: MS - Year 1\nTime: 09:00 - 10:30
@@ -271,7 +271,7 @@ SUMMARY:Managing Software Development (tut)
 DTSTART:20230915T090000
 DTEND:20230915T103000
 DTSTAMP:20230828T000000
-UID:2-656dd2dc@innohassle.ru
+UID:2-1b6af9b4@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Mansur Khazeev\,Denis Nikolskiy\nGroup: M23-SE-02\
  nCourse: MS - Year 1\nTime: 09:00 - 10:30
@@ -282,7 +282,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230908T104000
 DTEND:20230908T121000
 DTSTAMP:20230828T000000
-UID:0-f62f6c31@innohassle.ru
+UID:0-e6354f00@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -293,7 +293,7 @@ SUMMARY:Empirical Methods (lec)
 DTSTART:20230915T104000
 DTEND:20230915T121000
 DTSTAMP:20230828T000000
-UID:1-f62f6c31@innohassle.ru
+UID:1-e6354f00@innohassle.ru
 COLOR:chocolate
 DESCRIPTION:Instructor: Giancarlo Succi\nGroup: M23-SE-02\nCourse: MS - Ye
  ar 1\nTime: 10:40 - 12:10
@@ -304,8 +304,8 @@ SUMMARY:Empirical Methods (lab)
 DTSTART:20230908T160000
 DTEND:20230908T173000
 DTSTAMP:20230828T000000
-UID:x-2710343d@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-891b67a9@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Firas Jolha\nGroup: M23-SE-02\nCourse: MS - Year 1
  \nTime: 16:00 - 17:30

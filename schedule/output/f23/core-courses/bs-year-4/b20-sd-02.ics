@@ -11,8 +11,8 @@ SUMMARY:DevOps Engineering (lec)
 DTSTART:20230830T111000
 DTEND:20230830T124000
 DTSTAMP:20230828T000000
-UID:x-8309eedb@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-7eaaf8fe@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
 DESCRIPTION:Instructor: Dmitry Creed\nGroup: B20-SD-02\nCourse: BS - Year 
  4\nTime: 11:10 - 12:40
@@ -23,8 +23,8 @@ SUMMARY:Software Architecture (lab)
 DTSTART:20230830T131000
 DTEND:20230830T144000
 DTSTAMP:20230828T000000
-UID:x-6a855c4e@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-e7c4b816@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Darko Bozhinoski\nGroup: B20-SD-02\nCourse: BS - Y
  ear 4\nTime: 13:10 - 14:40
@@ -35,8 +35,8 @@ SUMMARY:DevOps Engineering (lab)
 DTSTART:20230830T145000
 DTEND:20230830T162000
 DTSTAMP:20230828T000000
-UID:x-b22f01cf@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-4f8c17ea@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:crimson
 DESCRIPTION:Instructor: Dmitry Creed\nGroup: B20-SD-02\nCourse: BS - Year 
  4\nTime: 14:50 - 16:20
@@ -47,8 +47,8 @@ SUMMARY:Academic Research and Writing Culture
 DTSTART:20230831T131000
 DTEND:20230831T144000
 DTSTAMP:20230828T000000
-UID:x-31c920a5@innohassle.ru
-RRULE:FREQ=WEEKLY;UNTIL=20231023T000000;INTERVAL=1;WKST=MO
+UID:x-2c94eee1@innohassle.ru
+RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Georgiy Gelvanovsky\,Rabab Marouf\,Ruslan Saduov\,
  Oksana Zhirosh\nGroup: B20-SD-02\nCourse: BS - Year 4\nTime: 13:10 - 14:40
@@ -59,7 +59,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230908T093000
 DTEND:20230908T110000
 DTSTAMP:20230828T000000
-UID:0-82f2c27f@innohassle.ru
+UID:0-e8375728@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 09:30 - 11:00
@@ -70,7 +70,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230929T093000
 DTEND:20230929T110000
 DTSTAMP:20230828T000000
-UID:1-82f2c27f@innohassle.ru
+UID:1-e8375728@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 09:30 - 11:00
@@ -81,7 +81,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230908T111000
 DTEND:20230908T124000
 DTSTAMP:20230828T000000
-UID:0-fa043ea5@innohassle.ru
+UID:0-90c1abf2@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 11:10 - 12:40
@@ -92,7 +92,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230929T111000
 DTEND:20230929T124000
 DTSTAMP:20230828T000000
-UID:1-fa043ea5@innohassle.ru
+UID:1-90c1abf2@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 11:10 - 12:40
@@ -103,7 +103,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230909T093000
 DTEND:20230909T110000
 DTSTAMP:20230828T000000
-UID:0-eaa1738f@innohassle.ru
+UID:0-8064e6d8@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 09:30 - 11:00
@@ -114,7 +114,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230930T093000
 DTEND:20230930T110000
 DTSTAMP:20230828T000000
-UID:1-eaa1738f@innohassle.ru
+UID:1-8064e6d8@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 09:30 - 11:00
@@ -125,7 +125,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230909T111000
 DTEND:20230909T124000
 DTSTAMP:20230828T000000
-UID:0-92578f55@innohassle.ru
+UID:0-f8921a02@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 11:10 - 12:40
@@ -136,7 +136,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230930T111000
 DTEND:20230930T124000
 DTSTAMP:20230828T000000
-UID:1-92578f55@innohassle.ru
+UID:1-f8921a02@innohassle.ru
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-02\nCourse: BS - Yea
  r 4\nTime: 11:10 - 12:40
