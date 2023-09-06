@@ -386,6 +386,10 @@ class CoreCourseEvent(BaseModel):
 
         start_of_weekdays = nearest_weekday(self.starts, self.weekday)
 
+        # should be between starts and until
+        starts_dt = datetime.datetime.combine(self.starts, datetime.time.min)
+        until_dt = datetime.datetime.combine(self.ends, datetime.time.min)
+
         mapping = {
             "summary": self.summary,
             "description": self.description,
@@ -412,12 +416,16 @@ class CoreCourseEvent(BaseModel):
         else:
             for i, date in enumerate(sorted(self.only_on)):
                 x_vevent = vevent.copy()
-                x_vevent["dtstart"] = icalendar.vDatetime(
-                    datetime.datetime.combine(date, self.start_time)
-                )
-                x_vevent["dtend"] = icalendar.vDatetime(
-                    datetime.datetime.combine(date, self.end_time)
-                )
+                dtstart = datetime.datetime.combine(date, self.start_time)
+                dtend = datetime.datetime.combine(date, self.end_time)
+
+                # should be between starts and until
+                if not (starts_dt <= dtstart <= until_dt and starts_dt <= dtend <= until_dt):
+                    continue
+
+                x_vevent["dtstart"] = icalendar.vDatetime(dtstart)
+                x_vevent["dtend"] = icalendar.vDatetime(dtend)
+
                 x_vevent["uid"] = self.get_uid(sequence=str(i))
                 yield x_vevent
 

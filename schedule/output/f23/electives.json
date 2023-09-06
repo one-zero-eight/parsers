@@ -505,20 +505,20 @@
     "event_groups_count": 25,
     "tags": [
       {
-        "alias": "f23",
-        "type": "semester"
-      },
-      {
-        "alias": "ms",
-        "type": "electives"
+        "alias": "electives",
+        "type": "category"
       },
       {
         "alias": "bs-tech",
         "type": "electives"
       },
       {
-        "alias": "electives",
-        "type": "category"
+        "alias": "ms",
+        "type": "electives"
+      },
+      {
+        "alias": "f23",
+        "type": "semester"
       }
     ]
   }
