@@ -395,10 +395,22 @@
           "type": "category"
         }
       ]
+    },
+    {
+      "alias": "yoga-stretching",
+      "path": "sports/yoga-stretching.ics",
+      "name": "Yoga - Stretching",
+      "description": "Sport schedule for 'Yoga - Stretching'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
     }
   ],
   "meta": {
-    "event_groups_count": 33,
+    "event_groups_count": 34,
     "tags": [
       {
         "alias": "sports",
