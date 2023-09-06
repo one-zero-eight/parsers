@@ -10,30 +10,38 @@ from pydantic import BaseModel, Field
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.parser import ElectiveParser, convert_separation
-from schedule.models import PredefinedEventGroup
+from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
 
 
 class Output(BaseModel):
     event_groups: list[PredefinedEventGroup]
+    tags: list[PredefinedTag]
     meta: dict[str, Any] = Field(default_factory=dict)
 
-    def __init__(self, **data: Any):
-        super().__init__(**data)
-        unique_tags = set(
-            (tag.alias, tag.type) for group in self.event_groups for tag in group.tags
-        )
-        # sort
-        unique_tags = sorted(unique_tags, key=lambda x: (x[1], x[0]))
+    def __init__(
+        self,
+        event_groups: list[PredefinedEventGroup],
+        tags: list[PredefinedTag],
+    ):
+        # only unique (alias, type) tags
+        visited = set()
+
+        visited_tags = []
+
+        for tag in tags:
+            if (tag.alias, tag.type) not in visited:
+                visited.add((tag.alias, tag.type))
+                visited_tags.append(tag)
+
+        # sort tags
+        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
+
+        super().__init__(event_groups=event_groups, tags=visited_tags)
+
         self.meta = {
             "event_groups_count": len(self.event_groups),
-            "tags": [
-                {
-                    "alias": alias,
-                    "type": type_,
-                }
-                for alias, type_ in unique_tags
-            ],
+            "tags_count": len(self.tags),
         }
 
 
@@ -69,15 +77,20 @@ if __name__ == "__main__":
         content = xlsx.read()
         f.write(content)
 
-    semester_tag_reference = PredefinedEventGroup.TagReference(
+    semester_tag = PredefinedTag(
         alias=config.SEMESTER_TAG.alias,
         type=config.SEMESTER_TAG.type,
+        name=config.SEMESTER_TAG.name,
     )
 
-    elective_tag_reference = PredefinedEventGroup.TagReference(
+    elective_tag = PredefinedTag(
         alias="electives",
         type="category",
+        name="Electives",
     )
+    semester_tag_reference = semester_tag.reference
+    elective_tag_reference = elective_tag.reference
+    tags = [semester_tag, elective_tag]
 
     predefined_event_groups: list[PredefinedEventGroup] = []
 
@@ -107,10 +120,15 @@ if __name__ == "__main__":
 
         elective_type_directory.mkdir(parents=True, exist_ok=True)
 
-        elective_type_tag_reference = PredefinedEventGroup.TagReference(
+        elective_type_tag = PredefinedTag(
             alias=sluggify(target.sheet_name),
             type="electives",
+            name=target.sheet_name,
         )
+
+        tags.append(elective_type_tag)
+
+        elective_type_tag_reference = elective_type_tag.reference
 
         for calendar_name, events in converted.items():
             calendar = icalendar.Calendar()
@@ -166,7 +184,7 @@ if __name__ == "__main__":
     parser.logger.info(
         f"Writing JSON file... {len(predefined_event_groups)} event groups."
     )
-    output = Output(event_groups=predefined_event_groups)
+    output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
     with open(config.SAVE_JSON_PATH, "w") as f:
         json.dump(output.dict(), f, indent=2, sort_keys=False)

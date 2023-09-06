@@ -354,12 +354,11 @@ SUMMARY:Operating Systems (lec)
 DTSTART:20231025T110000
 DTEND:20231025T123000
 DTSTAMP:20231023T000000
-UID:x-ca8ea394@innohassle.ru
+UID:x-a62791e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkgreen
-DESCRIPTION:Instructor: Giancarlo Succi\nGroup: B22-CS-01\nCourse: BS - Ye
- ar 2\nTime: 11:00 - 12:30
-LOCATION:ONLINE
+DESCRIPTION:Instructor: Leonard Johard\nGroup: B22-CS-01\nCourse: BS - Yea
+ r 2\nTime: 11:00 - 12:30
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Operating Systems (tut)

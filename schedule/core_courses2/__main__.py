@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from schedule.core_courses2.config import core_courses_config as config
 from schedule.core_courses2.models import CoreCourseCell, CoreCourseEvent
 from schedule.core_courses2.parser import CoreCoursesParser
-from schedule.models import PredefinedEventGroup
+from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
 
 
@@ -48,23 +48,32 @@ def get_dataframes_pipeline() -> dict[str, pd.DataFrame]:
 
 class Output(BaseModel):
     event_groups: list[PredefinedEventGroup]
+    tags: list[PredefinedTag]
     meta: dict[str, Any] = Field(default_factory=dict)
 
-    def __init__(self, **data: Any):
-        super().__init__(**data)
-        unique_tags = set(
-            (tag.alias, tag.type) for group in self.event_groups for tag in group.tags
-        )
-        unique_tags = [
-            {
-                "alias": alias,
-                "type": type_,
-            }
-            for alias, type_ in sorted(unique_tags, key=lambda x: (x[1], x[0]))
-        ]
+    def __init__(
+        self,
+        event_groups: list[PredefinedEventGroup],
+        tags: list[PredefinedTag],
+    ):
+        # only unique (alias, type) tags
+        visited = set()
+
+        visited_tags = []
+
+        for tag in tags:
+            if (tag.alias, tag.type) not in visited:
+                visited.add((tag.alias, tag.type))
+                visited_tags.append(tag)
+
+        # sort tags
+        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
+
+        super().__init__(event_groups=event_groups, tags=visited_tags)
+
         self.meta = {
             "event_groups_count": len(self.event_groups),
-            "tags": unique_tags,
+            "tags_count": len(self.tags),
         }
 
 
@@ -113,18 +122,34 @@ if __name__ == "__main__":
 
     events.sort(key=lambda x: (x.course, x.group))
     directory = config.SAVE_ICS_PATH
-
-    academic_tag_reference = PredefinedEventGroup.TagReference(
-        alias="core-courses", type="category"
+    academic_tag = PredefinedTag(
+        alias="core-courses",
+        name="Core courses",
+        type="category",
     )
-
-    semester_tag_reference = PredefinedEventGroup.TagReference(
-        alias=config.SEMESTER_TAG.alias, type=config.SEMESTER_TAG.type
+    semester_tag = PredefinedTag(
+        alias=config.SEMESTER_TAG.alias,
+        name=config.SEMESTER_TAG.name,
+        type=config.SEMESTER_TAG.type,
     )
+    academic_tag_reference = academic_tag.reference
+    semester_tag_reference = semester_tag.reference
+
     parser.logger.info("Writing JSON and iCalendars files...")
     parser.logger.info(f"> Mount point: {config.MOUNT_POINT}")
+
+    tags = [academic_tag, semester_tag]
     courses = set(event.course for event in events)
     for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
+        course_slug = sluggify(course)
+        course_tag = PredefinedTag(
+            alias=course_slug,
+            name=course,
+            type="core-courses",
+        )
+        course_tag_reference = course_tag.reference
+        tags.append(course_tag)
+
         group_calendar = icalendar.Calendar()
 
         group_calendar["prodid"] = "-//one-zero-eight//InNoHassle Schedule"
@@ -147,7 +172,6 @@ if __name__ == "__main__":
                 group_calendar.add_component(vevent)
         group_calendar.add("x-wr-total-vevents", str(cnt))
 
-        course_slug = sluggify(course)
         group_slug = sluggify(group)
         group_alias = f"{semester_tag_reference.alias}-{group_slug}"
         course_path = directory / course_slug
@@ -161,10 +185,6 @@ if __name__ == "__main__":
             content = group_calendar.to_ical()
             # TODO: add validation
             f.write(content)
-
-        course_tag_reference = PredefinedEventGroup.TagReference(
-            alias=course_slug, type="core-courses"
-        )
 
         predefined_event_groups.append(
             PredefinedEventGroup(
@@ -183,7 +203,7 @@ if __name__ == "__main__":
     parser.logger.info(
         f"Writing JSON file... {len(predefined_event_groups)} event groups."
     )
-    output = Output(event_groups=predefined_event_groups)
+    output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
     with open(config.SAVE_JSON_PATH, "w") as f:
         json.dump(output.dict(), f, indent=2, sort_keys=False)

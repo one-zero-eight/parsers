@@ -501,25 +501,30 @@
       ]
     }
   ],
+  "tags": [
+    {
+      "alias": "electives",
+      "type": "category",
+      "name": "Electives"
+    },
+    {
+      "alias": "bs-tech",
+      "type": "electives",
+      "name": "BS Tech"
+    },
+    {
+      "alias": "ms",
+      "type": "electives",
+      "name": "MS"
+    },
+    {
+      "alias": "f23",
+      "type": "semester",
+      "name": "Fall 2023"
+    }
+  ],
   "meta": {
     "event_groups_count": 25,
-    "tags": [
-      {
-        "alias": "electives",
-        "type": "category"
-      },
-      {
-        "alias": "bs-tech",
-        "type": "electives"
-      },
-      {
-        "alias": "ms",
-        "type": "electives"
-      },
-      {
-        "alias": "f23",
-        "type": "semester"
-      }
-    ]
+    "tags_count": 4
   }
 }

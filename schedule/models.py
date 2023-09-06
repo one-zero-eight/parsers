@@ -17,14 +17,18 @@ def validate_slug(s):
 
 class PredefinedTag(BaseModel):
     alias: str
-    name: str
     type: str
+    name: str
 
     @validator("alias", "type")
     def validate_alias(cls, v):
         if not validate_slug(v):
             raise ValueError(f"Invalid slug '{v}'")
         return v
+
+    @property
+    def reference(self) -> "PredefinedEventGroup.TagReference":
+        return PredefinedEventGroup.TagReference(alias=self.alias, type=self.type)
 
 
 class PredefinedEventGroup(BaseModel):
@@ -36,12 +40,6 @@ class PredefinedEventGroup(BaseModel):
     class TagReference(BaseModel):
         alias: str
         type: str
-
-        @validator("alias", "type")
-        def validate_alias(cls, v):
-            if not validate_slug(v):
-                raise ValueError(f"Invalid slug '{v}'")
-            return v
 
     tags: list[TagReference] = Field(default_factory=list)
 
