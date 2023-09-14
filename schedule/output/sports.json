@@ -397,6 +397,18 @@
       ]
     },
     {
+      "alias": "yoga-strength",
+      "path": "sports/yoga-strength.ics",
+      "name": "Yoga - Strength",
+      "description": "Sport schedule for 'Yoga - Strength'",
+      "tags": [
+        {
+          "alias": "sport",
+          "type": "category"
+        }
+      ]
+    },
+    {
       "alias": "yoga-stretching",
       "path": "sports/yoga-stretching.ics",
       "name": "Yoga - Stretching",
@@ -417,7 +429,7 @@
     }
   ],
   "meta": {
-    "event_groups_count": 34,
+    "event_groups_count": 35,
     "tags_count": 1
   }
 }

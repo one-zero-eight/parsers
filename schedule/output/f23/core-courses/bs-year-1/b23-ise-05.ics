@@ -96,13 +96,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230829T160000
 DTEND:20230829T173000
 DTSTAMP:20230828T000000
-UID:x-9aaa84ae@innohassle.ru
+UID:x-feb9ccf9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-05\nCourse: BS - Year 1\nTime: 16:00
   - 17:30
-LOCATION:106/108/313/318/321/421
+LOCATION:105/106/108/313 (room # 301 on 19/09)/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Logic & Discrete Maths (lec)
@@ -205,13 +205,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T124000
 DTEND:20230901T141000
 DTSTAMP:20230828T000000
-UID:x-c74236aa@innohassle.ru
+UID:x-d4b01932@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-05\nCourse: BS - Year 1\nTime: 12:40
   - 14:10
-LOCATION:106/314 (room #301 on 1/09)/316/318/320/421
+LOCATION:106/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lab)
@@ -230,13 +230,13 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T160000
 DTEND:20230901T173000
 DTSTAMP:20230828T000000
-UID:x-36102024@innohassle.ru
+UID:x-8efb3a44@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-05\nCourse: BS - Year 1\nTime: 16:00
   - 17:30
-LOCATION:106/313/314 (room #301 on 1/09)/316/318/320/421
+LOCATION:106/313/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis I (lec)

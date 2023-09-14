@@ -30,24 +30,13 @@ LOCATION:101
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230912T180500
-DTEND:20230912T192000
-UID:152f4ec0@innohassle.ru
+DTSTART:20230913T193000
+DTEND:20230913T210000
+UID:ec511c07@innohassle.ru
 CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
 DESCRIPTION:Subject: Advanced Statistical and Econometric Methods\nInstruc
- tor: Rustam Ibragimov\nTime: 18:05 - 19:20\nDate: 12.09.2023
-LOCATION:101
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Advanced Statistical and Econometric Methods
-DTSTART:20230912T193000
-DTEND:20230912T210000
-UID:e3135d60@innohassle.ru
-CATEGORIES:Advanced Statistical and Econometric Methods
-COLOR:brown
-DESCRIPTION:Subject: Advanced Statistical and Econometric Methods\nInstruc
- tor: Rustam Ibragimov\nTime: 19:30 - 21:00\nDate: 12.09.2023
+ tor: Rustam Ibragimov\nTime: 19:30 - 21:00\nDate: 13.09.2023
 LOCATION:101
 END:VEVENT
 BEGIN:VEVENT
@@ -70,6 +59,17 @@ CATEGORIES:Advanced Statistical and Econometric Methods
 COLOR:brown
 DESCRIPTION:Subject: Advanced Statistical and Econometric Methods\nInstruc
  tor: Rustam Ibragimov\nTime: 19:30 - 21:00\nDate: 19.09.2023
+LOCATION:101
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Advanced Statistical and Econometric Methods
+DTSTART:20230920T193000
+DTEND:20230920T210000
+UID:528c0221@innohassle.ru
+CATEGORIES:Advanced Statistical and Econometric Methods
+COLOR:brown
+DESCRIPTION:Subject: Advanced Statistical and Econometric Methods\nInstruc
+ tor: Rustam Ibragimov\nTime: 19:30 - 21:00\nDate: 20.09.2023
 LOCATION:101
 END:VEVENT
 BEGIN:VEVENT

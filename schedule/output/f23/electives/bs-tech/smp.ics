@@ -41,28 +41,6 @@ LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:System Programming
-DTSTART:20230919T175000
-DTEND:20230919T192000
-UID:ba980b39@innohassle.ru
-CATEGORIES:System Programming
-COLOR:brown
-DESCRIPTION:Subject: System Programming\nInstructor: Vladislav Shpilevoy\n
- Time: 17:50 - 19:20\nDate: 19.09.2023
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:System Programming
-DTSTART:20230919T193000
-DTEND:20230919T210000
-UID:659c412d@innohassle.ru
-CATEGORIES:System Programming
-COLOR:brown
-DESCRIPTION:Subject: System Programming\nInstructor: Vladislav Shpilevoy\n
- Time: 19:30 - 21:00\nDate: 19.09.2023
-LOCATION:online
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:System Programming
 DTSTART:20230926T175000
 DTEND:20230926T192000
 UID:60ecb1fa@innohassle.ru
@@ -235,6 +213,28 @@ CATEGORIES:System Programming
 COLOR:brown
 DESCRIPTION:Subject: System Programming\nInstructor: Vladislav Shpilevoy\n
  Time: 19:30 - 21:00\nDate: 14.11.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:System Programming
+DTSTART:20231121T175000
+DTEND:20231121T192000
+UID:18fd4fda@innohassle.ru
+CATEGORIES:System Programming
+COLOR:brown
+DESCRIPTION:Subject: System Programming\nInstructor: Vladislav Shpilevoy\n
+ Time: 17:50 - 19:20\nDate: 21.11.2023
+LOCATION:online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:System Programming
+DTSTART:20231121T193000
+DTEND:20231121T210000
+UID:c7f905ce@innohassle.ru
+CATEGORIES:System Programming
+COLOR:brown
+DESCRIPTION:Subject: System Programming\nInstructor: Vladislav Shpilevoy\n
+ Time: 19:30 - 21:00\nDate: 21.11.2023
 LOCATION:online
 END:VEVENT
 END:VCALENDAR

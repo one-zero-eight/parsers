@@ -43,12 +43,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20230915T174000
 DTEND:20230915T191000
-UID:5a468e48@innohassle.ru
+UID:92ab02be@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 15.09.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -65,12 +65,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20230922T174000
 DTEND:20230922T191000
-UID:717100c1@innohassle.ru
+UID:b99c8c37@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 22.09.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -87,12 +87,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20230929T174000
 DTEND:20230929T191000
-UID:f61277db@innohassle.ru
+UID:3efffb2d@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 29.09.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -109,12 +109,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231006T174000
 DTEND:20231006T191000
-UID:56b1ce82@innohassle.ru
+UID:9e5c4274@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 06.10.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -131,12 +131,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231013T174000
 DTEND:20231013T191000
-UID:578b2d76@innohassle.ru
+UID:9f66a180@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 13.10.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -153,12 +153,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231020T174000
 DTEND:20231020T191000
-UID:85387595@innohassle.ru
+UID:4dd5f963@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 20.10.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -175,12 +175,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231027T174000
 DTEND:20231027T191000
-UID:d3a77e70@innohassle.ru
+UID:1b4af286@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 27.10.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -197,12 +197,12 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231103T174000
 DTEND:20231103T191000
-UID:f9b5b609@innohassle.ru
+UID:31583aff@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 03.11.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lec)
@@ -219,11 +219,11 @@ BEGIN:VEVENT
 SUMMARY:Contact-aware Control (lab)
 DTSTART:20231110T174000
 DTEND:20231110T191000
-UID:7dc9e8a2@innohassle.ru
+UID:b5246454@innohassle.ru
 CATEGORIES:Contact-aware Control
 COLOR:chartreuse
 DESCRIPTION:Subject: Contact-aware Control\nInstructor: Sergei Savin (lec)
  \,\nAnastasiya Andronova (lab)\nTime: 17:40 - 19:10\nDate: 10.11.2023
-LOCATION:422
+LOCATION:317
 END:VEVENT
 END:VCALENDAR

@@ -32,38 +32,26 @@ LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Project Management Beyond Agile (lab)
-DTSTART:20230916T193000
-DTEND:20230916T210000
-UID:e6ae3f19@innohassle.ru
+DTSTART:20230916T175000
+DTEND:20230916T192000
+UID:f07a57fc@innohassle.ru
 CATEGORIES:Project Management Beyond Agile
 COLOR:burlywood
 DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
- gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 19:30 - 21:0
+ gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 17:50 - 19:2
  0\nDate: 16.09.2023
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Project Management Beyond Agile (lab)
-DTSTART:20231007T193000
-DTEND:20231007T210000
-UID:56668e27@innohassle.ru
+DTSTART:20230923T175000
+DTEND:20230923T192000
+UID:8219794b@innohassle.ru
 CATEGORIES:Project Management Beyond Agile
 COLOR:burlywood
 DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
- gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 19:30 - 21:0
- 0\nDate: 07.10.2023
-LOCATION:313
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Project Management Beyond Agile (lab)
-DTSTART:20231014T193000
-DTEND:20231014T210000
-UID:7847944a@innohassle.ru
-CATEGORIES:Project Management Beyond Agile
-COLOR:burlywood
-DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
- gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 19:30 - 21:0
- 0\nDate: 14.10.2023
+ gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 17:50 - 19:2
+ 0\nDate: 23.09.2023
 LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
@@ -80,13 +68,13 @@ LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Project Management Beyond Agile (lab)
-DTSTART:20231028T193000
-DTEND:20231028T210000
-UID:7c88e52e@innohassle.ru
+DTSTART:20231028T175000
+DTEND:20231028T192000
+UID:6a5c8dcb@innohassle.ru
 CATEGORIES:Project Management Beyond Agile
 COLOR:burlywood
 DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
- gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 19:30 - 21:0
+ gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 17:50 - 19:2
  0\nDate: 28.10.2023
 LOCATION:313
 END:VEVENT
@@ -116,14 +104,25 @@ LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Project Management Beyond Agile (lab)
-DTSTART:20231125T193000
-DTEND:20231125T210000
-UID:62c2267@innohassle.ru
+DTSTART:20231125T175000
+DTEND:20231125T192000
+UID:10f84a82@innohassle.ru
 CATEGORIES:Project Management Beyond Agile
 COLOR:burlywood
 DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
- gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 19:30 - 21:0
+ gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 17:50 - 19:2
  0\nDate: 25.11.2023
 LOCATION:313
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Project Management Beyond Agile (lab)
+DTSTART:20231202T175000
+DTEND:20231202T192000
+UID:e8a59c0d@innohassle.ru
+CATEGORIES:Project Management Beyond Agile
+COLOR:burlywood
+DESCRIPTION:Subject: Project Management Beyond Agile\nInstructor: Yegor Bu
+ gayenko (lec)\, Alexey Potyomkin (lab)\nGroup: Group 2\nTime: 17:50 - 19:2
+ 0\nDate: 02.12.2023
 END:VEVENT
 END:VCALENDAR

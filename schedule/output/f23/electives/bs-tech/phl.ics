@@ -164,12 +164,12 @@ BEGIN:VEVENT
 SUMMARY:Programming in Haskell
 DTSTART:20231117T125000
 DTEND:20231117T142000
-UID:2e599ba3@innohassle.ru
+UID:de71ff96@innohassle.ru
 CATEGORIES:Programming in Haskell
 COLOR:chartreuse
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 17.11.2023
-LOCATION:107
+LOCATION:313
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell

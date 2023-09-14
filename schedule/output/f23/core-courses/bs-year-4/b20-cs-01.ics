@@ -59,12 +59,12 @@ SUMMARY:Academic Research and Writing Culture
 DTSTART:20230831T111000
 DTEND:20230831T124000
 DTSTAMP:20230828T000000
-UID:x-24ca5ae5@innohassle.ru
+UID:x-2495eead@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Georgiy Gelvanovsky\,Rabab Marouf\,Ruslan Saduov\,
  Oksana Zhirosh\nGroup: B20-CS-01\nCourse: BS - Year 4\nTime: 11:10 - 12:40
-LOCATION:101 (room #307 on 31/08)/107/313/317
+LOCATION:101/107/313 (room# 320 on 21/09)/317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Secure System Development (lec)

@@ -47,12 +47,12 @@ SUMMARY:Introduction to Computer Vision (lab)
 DTSTART:20230829T143000
 DTEND:20230829T160000
 DTSTAMP:20230828T000000
-UID:x-828f9f20@innohassle.ru
+UID:x-c27f0eba@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Yusuf Mesbah\nGroup: B21-RO\nCourse: BS - Year 3\n
  Time: 14:30 - 16:00
-LOCATION:314 (room #301 on 29/08)
+LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Practical Machine Learning and Deep Learning (lec)

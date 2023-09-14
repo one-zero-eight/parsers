@@ -83,26 +83,26 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230829T142000
 DTEND:20230829T155000
 DTSTAMP:20230828T000000
-UID:x-a3ec1a0@innohassle.ru
+UID:x-8ce38ed7@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-04\nCourse: BS - Year 1\nTime: 14:20
   - 15:50
-LOCATION:105/106/108/313/318/321/421
+LOCATION:105/106/108/313 (room # 301 on 19/09)/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230829T160000
 DTEND:20230829T173000
 DTSTAMP:20230828T000000
-UID:x-9aaa84ae@innohassle.ru
+UID:x-feb9ccf9@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-04\nCourse: BS - Year 1\nTime: 16:00
   - 17:30
-LOCATION:106/108/313/318/321/421
+LOCATION:105/106/108/313 (room # 301 on 19/09)/318/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Logic & Discrete Maths (lec)
@@ -169,12 +169,12 @@ SUMMARY:Fundamentals of Computer Architecture (lab)
 DTSTART:20230831T160000
 DTEND:20230831T173000
 DTSTAMP:20230828T000000
-UID:x-33ff822f@innohassle.ru
+UID:x-2643851d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Andrey Sandimirov\nGroup: B23-ISE-04\nCourse: BS -
   Year 1\nTime: 16:00 - 17:30
-LOCATION:320
+LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lec)
@@ -217,26 +217,26 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20230901T142000
 DTEND:20230901T155000
 DTSTAMP:20230828T000000
-UID:x-7ba0e4de@innohassle.ru
+UID:x-a38d3ffa@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-04\nCourse: BS - Year 1\nTime: 14:20
   - 15:50
-LOCATION:106/313/314 (room #301 on 1/09)/316/318/320/421
+LOCATION:106/313/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:English for Academic Purposes I
 DTSTART:20230901T160000
 DTEND:20230901T173000
 DTSTAMP:20230828T000000
-UID:x-36102024@innohassle.ru
+UID:x-8efb3a44@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-ISE-04\nCourse: BS - Year 1\nTime: 16:00
   - 17:30
-LOCATION:106/313/314 (room #301 on 1/09)/316/318/320/421
+LOCATION:106/313/314/316/318/320/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis I (lec)
@@ -401,12 +401,12 @@ SUMMARY:Fundamentals of Computer Architecture (lab)
 DTSTART:20231026T160000
 DTEND:20231026T173000
 DTSTAMP:20231023T000000
-UID:x-e657c437@innohassle.ru
+UID:x-f3ebc305@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkblue
 DESCRIPTION:Instructor: Andrey Sandimirov\nGroup: B23-ISE-04\nCourse: BS -
   Year 1\nTime: 16:00 - 17:30
-LOCATION:320
+LOCATION:314
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra I (lec)

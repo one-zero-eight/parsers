@@ -1,22 +1,13 @@
 {
   "categories": [
     {
-      "title": "Core Courses",
-      "shortDescription": "Academic schedule for core courses in F23.",
-      "path": "core-courses.json",
-      "slug": "core-courses"
+      "path": "f23/core-courses.json"
     },
     {
-      "title": "Electives",
-      "shortDescription": "Academic schedule for electives in F23.",
-      "path": "electives.json",
-      "slug": "electives"
+      "path": "f23/electives.json"
     },
     {
-      "title": "Sports",
-      "shortDescription": "Sports schedule for F23.",
-      "path": "sports.json",
-      "slug": "sports"
+      "path": "sports.json"
     }
   ]
 }
