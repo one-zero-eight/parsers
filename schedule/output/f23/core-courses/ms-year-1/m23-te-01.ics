@@ -64,7 +64,7 @@ RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:blueviolet
 DESCRIPTION:Instructor: Kirill Pshinnik\nGroup: M23-TE-01\nCourse: MS - Ye
  ar 1\nTime: 14:20 - 15:50
-LOCATION:ONLINE
+LOCATION:ONLINE 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:IT business start (lec)
@@ -137,7 +137,7 @@ RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:blueviolet
 DESCRIPTION:Instructor: Kirill Pshinnik\nGroup: M23-TE-01\nCourse: MS - Ye
  ar 1\nTime: 14:20 - 15:50
-LOCATION:ONLINE
+LOCATION:ONLINE 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No-code Development (lec)
@@ -148,7 +148,7 @@ UID:0-c627b6c0@innohassle.ru
 COLOR:blueviolet
 DESCRIPTION:Instructor: Maria Razmazina\,David Orok\nGroup: M23-TE-01\nCou
  rse: MS - Year 1\nTime: 16:00 - 17:30
-LOCATION:ONLINE
+LOCATION:ONLINE 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No-code Development (lec)
@@ -159,7 +159,7 @@ UID:1-c627b6c0@innohassle.ru
 COLOR:blueviolet
 DESCRIPTION:Instructor: Maria Razmazina\,David Orok\nGroup: M23-TE-01\nCou
  rse: MS - Year 1\nTime: 16:00 - 17:30
-LOCATION:ONLINE
+LOCATION:ONLINE 
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Unit Economics in IT business (lec)

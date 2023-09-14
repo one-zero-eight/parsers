@@ -240,9 +240,9 @@ class CoreCourseEvent(BaseModel):
             return
 
         location = self.location
-        # sub "ONLINE", "online", "(ONLINE)" and "(online)" with "ONLINE"
+        # sub "ONLINE", "online", with "ONLINE"
         location = re.sub(
-            r"\s*\(?ONLINE\)?\s*", "ONLINE", location, flags=re.IGNORECASE
+            r"ONLINE", "ONLINE", location, flags=re.IGNORECASE
         )
         # replace " and " with comma
         location = re.sub(r"\s+and\s+", ", ", location, flags=re.IGNORECASE)

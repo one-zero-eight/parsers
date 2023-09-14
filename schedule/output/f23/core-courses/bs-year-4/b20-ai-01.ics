@@ -28,7 +28,7 @@ RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Rinat Mullakhmetov\nGroup: B20-AI-01\nCourse: BS -
   Year 4\nTime: 14:50 - 16:20
-LOCATION:ONLINE(FROM 5/09)
+LOCATION:ONLINE (FROM 5/09)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Practical Machine Learning and Deep Learning (lec)
