@@ -82,7 +82,7 @@ async def main():
         logger.info(f"Saving json to {json_file}")
         logger.info(f"Grouping events by sport.name and sport_schedule_event.title")
 
-        sport_tag = PredefinedTag(alias="sport", type="category", name="Sport")
+        sport_tag = PredefinedTag(alias="sports", type="category", name="Sport")
 
         sport_tag_reference = sport_tag.reference
 

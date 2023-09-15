@@ -7,7 +7,7 @@
       "description": "Sport schedule for 'Animal flow'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -19,7 +19,7 @@
       "description": "Sport schedule for 'Badminton - Advanced'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -31,7 +31,7 @@
       "description": "Sport schedule for 'Badminton - Beginners'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -43,7 +43,7 @@
       "description": "Sport schedule for 'Basic strength training'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -55,7 +55,7 @@
       "description": "Sport schedule for 'Basketball'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -67,7 +67,7 @@
       "description": "Sport schedule for 'Boxing'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -79,7 +79,7 @@
       "description": "Sport schedule for 'Cricket'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -91,7 +91,7 @@
       "description": "Sport schedule for 'CrossFit'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -103,7 +103,7 @@
       "description": "Sport schedule for 'CrossFit - Women'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -115,7 +115,7 @@
       "description": "Sport schedule for 'Follow the Bars - Running'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -127,7 +127,7 @@
       "description": "Sport schedule for 'Football'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -139,7 +139,7 @@
       "description": "Sport schedule for 'Functional LSD'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -151,7 +151,7 @@
       "description": "Sport schedule for 'Functional Training'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -163,7 +163,7 @@
       "description": "Sport schedule for 'Healthy back'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -175,7 +175,7 @@
       "description": "Sport schedule for 'Innotyaga'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -187,7 +187,7 @@
       "description": "Sport schedule for 'Karate'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -199,7 +199,7 @@
       "description": "Sport schedule for 'Mixed sports'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -211,7 +211,7 @@
       "description": "Sport schedule for 'Mobility'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -223,7 +223,7 @@
       "description": "Sport schedule for 'Park Run - 5 Verst'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -235,7 +235,7 @@
       "description": "Sport schedule for 'Power Up'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -247,7 +247,7 @@
       "description": "Sport schedule for 'RAGE'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -259,7 +259,7 @@
       "description": "Sport schedule for 'RAGE - Knights'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -271,7 +271,7 @@
       "description": "Sport schedule for 'Sambo'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -283,7 +283,7 @@
       "description": "Sport schedule for 'Social Dance - Advanced'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -295,7 +295,7 @@
       "description": "Sport schedule for 'Social Dance - Junior|Middle'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -307,7 +307,7 @@
       "description": "Sport schedule for 'Street Dance'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -319,7 +319,7 @@
       "description": "Sport schedule for 'Stretching'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -331,7 +331,7 @@
       "description": "Sport schedule for 'Swimming'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -343,7 +343,7 @@
       "description": "Sport schedule for 'Table tennis - Advanced'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -355,7 +355,7 @@
       "description": "Sport schedule for 'Table tennis - Beginners'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -367,7 +367,7 @@
       "description": "Sport schedule for 'Tennis'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -379,7 +379,7 @@
       "description": "Sport schedule for 'Tricking club'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -391,7 +391,7 @@
       "description": "Sport schedule for 'Volleyball'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -403,7 +403,7 @@
       "description": "Sport schedule for 'Yoga - Strength'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -415,7 +415,7 @@
       "description": "Sport schedule for 'Yoga - Stretching'",
       "tags": [
         {
-          "alias": "sport",
+          "alias": "sports",
           "type": "category"
         }
       ]
@@ -423,7 +423,7 @@
   ],
   "tags": [
     {
-      "alias": "sport",
+      "alias": "sports",
       "type": "category",
       "name": "Sport"
     }
