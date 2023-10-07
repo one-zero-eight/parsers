@@ -66,8 +66,6 @@ class VeryBaseParserConfig(BaseModel):
     """Path to directory to save .ics files relative to MOUNT_POINT"""
     SAVE_JSON_PATH: Path
     """Path to save .json file"""
-    TIMEZONE = "Europe/Moscow"
-    """Timezone for events"""
 
     @validator("SAVE_JSON_PATH", "SAVE_ICS_PATH", pre=True, always=True)
     def relative_path_ics(cls, v, values):

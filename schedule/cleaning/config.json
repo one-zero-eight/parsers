@@ -1,0 +1,194 @@
+{
+  "SAVE_ICS_PATH": "cleaning",
+  "SAVE_JSON_PATH": "cleaning.json",
+  "START_DATE": "2023-01-28",
+  "END_DATE": "2024-01-01",
+  "CLEANING_ENTRIES": [
+    {
+      "name": "Cleaning 2 (3-4 floor)",
+      "location": "2 building 3-4 floor",
+      "dates": [
+        "2023-08-08",
+        "2023-08-17",
+        "2023-08-28",
+        "2023-09-05",
+        "2023-09-14",
+        "2023-09-25",
+        "2023-10-03",
+        "2023-10-03",
+        "2023-10-12",
+        "2023-10-23",
+        "2023-10-31"
+      ]
+    },
+    {
+      "name": "Cleaning 2 (1-2 floor)",
+      "location": "2 building 1-2 floor",
+      "dates": [
+        "2023-08-01",
+        "2023-08-09",
+        "2023-08-18",
+        "2023-08-29",
+        "2023-09-06",
+        "2023-09-15",
+        "2023-09-26",
+        "2023-10-04",
+        "2023-10-13",
+        "2023-10-24",
+        "2023-11-01"
+      ]
+    },
+    {
+      "name": "Cleaning 3 (3-4 floor)",
+      "location": "3 building 3-4 floor",
+      "dates": [
+        "2023-08-02",
+        "2023-08-10",
+        "2023-08-21",
+        "2023-08-30",
+        "2023-09-07",
+        "2023-09-18",
+        "2023-09-27",
+        "2023-10-05",
+        "2023-10-16",
+        "2023-10-25",
+        "2023-11-02"
+      ]
+    },
+    {
+      "name": "Cleaning 3 (1-2 floor)",
+      "location": "3 building 1-2 floor",
+      "dates": [
+        "2023-08-03",
+        "2023-08-11",
+        "2023-08-22",
+        "2023-08-31",
+        "2023-09-08",
+        "2023-09-19",
+        "2023-09-28",
+        "2023-10-06",
+        "2023-10-17",
+        "2023-10-26",
+        "2023-11-03"
+      ]
+    },
+    {
+      "name": "Cleaning 1",
+      "location": "1 building 1-4 floor",
+      "dates": [
+        "2023-08-04",
+        "2023-08-14",
+        "2023-08-23",
+        "2023-09-01",
+        "2023-09-11",
+        "2023-09-20",
+        "2023-09-29",
+        "2023-10-09",
+        "2023-10-18",
+        "2023-10-27"
+      ]
+    },
+    {
+      "name": "Cleaning 4",
+      "location": "4 building 1-4 floor",
+      "dates": [
+        "2023-08-07",
+        "2023-08-16",
+        "2023-08-25",
+        "2023-09-04",
+        "2023-09-13",
+        "2023-09-22",
+        "2023-10-02",
+        "2023-10-11",
+        "2023-10-20",
+        "2023-10-30"
+      ]
+    },
+    {
+      "name": "Cleaning 6 (1-7 floor)",
+      "location": "6 building 1-7 floor",
+      "dates": [
+        "2023-10-02",
+        "2023-10-13",
+        "2023-10-21",
+        "2023-11-02"
+      ]
+    },
+    {
+      "name": "Cleaning 6 (8-13 floor)",
+      "location": "6 building 8-13 floor",
+      "dates": [
+        "2023-10-03",
+        "2023-10-14",
+        "2023-10-22",
+        "2023-11-03"
+      ]
+    },
+    {
+      "name": "Cleaning 5",
+      "location": "5 building 1-5 floor",
+      "dates": [
+        "2023-10-04",
+        "2023-10-15",
+        "2023-10-25",
+        "2023-11-04"
+      ]
+    }
+  ],
+  "LINEN_CHANGE_ENTRIES": [
+    {
+      "name": "Linen change 1",
+      "location": "1 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "MO",
+        "until": "2024-01-01"
+      }
+    },
+    {
+      "name": "Linen change 2",
+      "location": "2 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "TU",
+        "until": "2024-01-01"
+      }
+    },
+    {
+      "name": "Linen change 3",
+      "location": "3 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "WE",
+        "until": "2024-01-01"
+      }
+    },
+    {
+      "name": "Linen change 4",
+      "location": "4 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "TH",
+        "until": "2024-01-01"
+      }
+    },
+    {
+      "name": "Linen change 5",
+      "location": "5 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "WE",
+        "until": "2024-01-01"
+      }
+    },
+    {
+      "name": "Linen change 6",
+      "location": "6 building",
+      "rrule": {
+        "freq": "WEEKLY",
+        "byday": "MO",
+        "until": "2024-01-01"
+      }
+    }
+  ]
+}

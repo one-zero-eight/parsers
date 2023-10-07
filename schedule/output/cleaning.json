@@ -1,0 +1,200 @@
+{
+  "event_groups": [
+    {
+      "alias": "cleaning-1-building-1-4-floor",
+      "path": "cleaning/cleaning-1-building-1-4-floor.ics",
+      "name": "Cleaning: 1 building 1-4 floor",
+      "description": "Cleaning schedule for 1 building 1-4 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-2-building-1-2-floor",
+      "path": "cleaning/cleaning-2-building-1-2-floor.ics",
+      "name": "Cleaning: 2 building 1-2 floor",
+      "description": "Cleaning schedule for 2 building 1-2 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-2-building-3-4-floor",
+      "path": "cleaning/cleaning-2-building-3-4-floor.ics",
+      "name": "Cleaning: 2 building 3-4 floor",
+      "description": "Cleaning schedule for 2 building 3-4 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-3-building-1-2-floor",
+      "path": "cleaning/cleaning-3-building-1-2-floor.ics",
+      "name": "Cleaning: 3 building 1-2 floor",
+      "description": "Cleaning schedule for 3 building 1-2 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-3-building-3-4-floor",
+      "path": "cleaning/cleaning-3-building-3-4-floor.ics",
+      "name": "Cleaning: 3 building 3-4 floor",
+      "description": "Cleaning schedule for 3 building 3-4 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-4-building-1-4-floor",
+      "path": "cleaning/cleaning-4-building-1-4-floor.ics",
+      "name": "Cleaning: 4 building 1-4 floor",
+      "description": "Cleaning schedule for 4 building 1-4 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-5-building-1-5-floor",
+      "path": "cleaning/cleaning-5-building-1-5-floor.ics",
+      "name": "Cleaning: 5 building 1-5 floor",
+      "description": "Cleaning schedule for 5 building 1-5 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-6-building-1-7-floor",
+      "path": "cleaning/cleaning-6-building-1-7-floor.ics",
+      "name": "Cleaning: 6 building 1-7 floor",
+      "description": "Cleaning schedule for 6 building 1-7 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-6-building-8-13-floor",
+      "path": "cleaning/cleaning-6-building-8-13-floor.ics",
+      "name": "Cleaning: 6 building 8-13 floor",
+      "description": "Cleaning schedule for 6 building 8-13 floor",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-1-building",
+      "path": "cleaning/linen-change-1-building.ics",
+      "name": "Linen Change: 1 building",
+      "description": "Linen change schedule for 1 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-2-building",
+      "path": "cleaning/linen-change-2-building.ics",
+      "name": "Linen Change: 2 building",
+      "description": "Linen change schedule for 2 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-3-building",
+      "path": "cleaning/linen-change-3-building.ics",
+      "name": "Linen Change: 3 building",
+      "description": "Linen change schedule for 3 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-4-building",
+      "path": "cleaning/linen-change-4-building.ics",
+      "name": "Linen Change: 4 building",
+      "description": "Linen change schedule for 4 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-5-building",
+      "path": "cleaning/linen-change-5-building.ics",
+      "name": "Linen Change: 5 building",
+      "description": "Linen change schedule for 5 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-6-building",
+      "path": "cleaning/linen-change-6-building.ics",
+      "name": "Linen Change: 6 building",
+      "description": "Linen change schedule for 6 building",
+      "tags": [
+        {
+          "alias": "linen-change",
+          "type": "category"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "alias": "cleaning",
+      "type": "category",
+      "name": "Cleaning"
+    },
+    {
+      "alias": "linen-change",
+      "type": "category",
+      "name": "Linen Change"
+    }
+  ],
+  "meta": {
+    "event_groups_count": 15,
+    "tags_count": 2
+  }
+}
