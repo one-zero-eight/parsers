@@ -23,7 +23,7 @@ UID:e86b2506@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Basic strength training
-COLOR:crimson
+COLOR:brown
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 15:00 - 16:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -35,7 +35,7 @@ UID:1ea3f5fc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Basic strength training
-COLOR:crimson
+COLOR:brown
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -47,7 +47,7 @@ UID:fb0be51a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Basic strength training
-COLOR:crimson
+COLOR:brown
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -59,7 +59,7 @@ UID:48747c0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Basic strength training
-COLOR:crimson
+COLOR:brown
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 15:00 - 16:30
 LOCATION:[SC] 3rd floor
 END:VEVENT

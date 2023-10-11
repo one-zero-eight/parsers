@@ -23,7 +23,7 @@ UID:e2935da2@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:Park Run
-COLOR:crimson
+COLOR:burlywood
 DESCRIPTION:Location: [Outdoor] Workout\nTime: 09:00 - 09:45
 LOCATION:[Outdoor] Workout
 END:VEVENT

@@ -22,7 +22,7 @@ DTSTART:20230901T105000
 DTEND:20230901T122000
 UID:92b951a@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 01.09.2023
 LOCATION:101
@@ -33,7 +33,7 @@ DTSTART:20230901T125000
 DTEND:20230901T142000
 UID:439b7a33@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 01.09.2023
 LOCATION:101
@@ -44,7 +44,7 @@ DTSTART:20230915T105000
 DTEND:20230915T122000
 UID:e7fb263c@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 15.09.2023
 LOCATION:101
@@ -55,7 +55,7 @@ DTSTART:20230915T125000
 DTEND:20230915T142000
 UID:ad4bc915@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 15.09.2023
 LOCATION:101
@@ -66,7 +66,7 @@ DTSTART:20231006T105000
 DTEND:20231006T122000
 UID:845a0005@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 06.10.2023
 LOCATION:107
@@ -77,7 +77,7 @@ DTSTART:20231006T125000
 DTEND:20231006T142000
 UID:ceeaef2c@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 06.10.2023
 LOCATION:107
@@ -88,7 +88,7 @@ DTSTART:20231013T105000
 DTEND:20231013T122000
 UID:65c8f244@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 13.10.2023
 LOCATION:107
@@ -99,7 +99,7 @@ DTSTART:20231013T125000
 DTEND:20231013T142000
 UID:2f781d6d@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 13.10.2023
 LOCATION:107
@@ -110,7 +110,7 @@ DTSTART:20231027T175000
 DTEND:20231027T192000
 UID:c17ac150@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 17:50 - 19:20\nDate: 27.10.2023
 LOCATION:101
@@ -121,7 +121,7 @@ DTSTART:20231027T193000
 DTEND:20231027T210000
 UID:dff24727@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 19:30 - 21:00\nDate: 27.10.2023
 LOCATION:101
@@ -132,7 +132,7 @@ DTSTART:20231103T105000
 DTEND:20231103T122000
 UID:8a39c7ac@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 03.11.2023
 LOCATION:107
@@ -143,7 +143,7 @@ DTSTART:20231103T125000
 DTEND:20231103T142000
 UID:c0892885@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 03.11.2023
 LOCATION:107
@@ -154,7 +154,7 @@ DTSTART:20231110T105000
 DTEND:20231110T122000
 UID:9c1a2278@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 10.11.2023
 LOCATION:307
@@ -165,7 +165,7 @@ DTSTART:20231110T125000
 DTEND:20231110T142000
 UID:d6aacd51@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 10.11.2023
 LOCATION:307
@@ -176,7 +176,7 @@ DTSTART:20231117T125000
 DTEND:20231117T142000
 UID:de71ff96@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 17.11.2023
 LOCATION:313
@@ -187,7 +187,7 @@ DTSTART:20231117T143000
 DTEND:20231117T160000
 UID:7c5fe7b7@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 14:30 - 16:00\nDate: 17.11.2023
 LOCATION:107
@@ -198,7 +198,7 @@ DTSTART:20231124T105000
 DTEND:20231124T122000
 UID:f8cebe5e@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 24.11.2023
 LOCATION:101
@@ -209,7 +209,7 @@ DTSTART:20231124T125000
 DTEND:20231124T142000
 UID:b27e5177@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 24.11.2023
 LOCATION:101
@@ -220,7 +220,7 @@ DTSTART:20231201T105000
 DTEND:20231201T122000
 UID:d0c4c094@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 10:50 - 12:20\nDate: 01.12.2023
 LOCATION:107
@@ -231,7 +231,7 @@ DTSTART:20231201T125000
 DTEND:20231201T142000
 UID:9a742fbd@innohassle.ru
 CATEGORIES:Programming in Haskell
-COLOR:chartreuse
+COLOR:coral
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 01.12.2023
 LOCATION:107

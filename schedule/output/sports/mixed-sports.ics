@@ -23,7 +23,7 @@ UID:9903ede5@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SU
 CATEGORIES:sport
 CATEGORIES:Mixed sports
-COLOR:brown
+COLOR:rebeccapurple
 DESCRIPTION:Location: [SC] Big Hall\nTime: 17:30 - 19:30
 LOCATION:[SC] Big Hall
 END:VEVENT

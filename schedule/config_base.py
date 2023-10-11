@@ -41,7 +41,6 @@ class CSS3Color(StrEnum):
     BROWN = "brown"
     CHOCOLATE = "chocolate"
     BURLYWOOD = "burlywood"
-    CHARTREUSE = "chartreuse"
     CORAL = "coral"
     CRIMSON = "crimson"
     DARK_BLUE = "darkblue"

@@ -23,7 +23,7 @@ UID:d42ffec1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:Badminton
-COLOR:crimson
+COLOR:blueviolet
 DESCRIPTION:Location: [SC] Big Hall\nTime: 19:00 - 20:30
 LOCATION:[SC] Big Hall
 END:VEVENT
@@ -35,7 +35,7 @@ UID:148e3aec@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SU
 CATEGORIES:sport
 CATEGORIES:Badminton
-COLOR:crimson
+COLOR:blueviolet
 DESCRIPTION:Location: [SC] Big Hall\nTime: 15:00 - 16:30
 LOCATION:[SC] Big Hall
 END:VEVENT
@@ -47,7 +47,7 @@ UID:9bf6da9e@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=WE
 CATEGORIES:sport
 CATEGORIES:Badminton
-COLOR:crimson
+COLOR:blueviolet
 DESCRIPTION:Location: [SC] Big Hall\nTime: 16:30 - 18:00
 LOCATION:[SC] Big Hall
 END:VEVENT

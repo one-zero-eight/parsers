@@ -65,6 +65,12 @@ if __name__ == "__main__":
         type="category",
     )
 
+    cleaning_cleaning_tag = PredefinedTag(
+        alias="room-cleaning",
+        name="Room Cleaning",
+        type="cleaning",
+    )
+
     for location, events in groupby(cleaning_events, key=lambda x: x.location):
         events: Iterable[CleaningEvent]
         calendar = get_base_calendar()
@@ -87,9 +93,7 @@ if __name__ == "__main__":
                 alias=group_alias,
                 name=f"Cleaning: {location}",
                 description=f"Cleaning schedule for {location}",
-                tags=[
-                    cleaning_tag,
-                ],
+                tags=[cleaning_tag, cleaning_cleaning_tag],
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
             )
         )
@@ -104,7 +108,7 @@ if __name__ == "__main__":
     linen_change_tag = PredefinedTag(
         alias="linen-change",
         name="Linen Change",
-        type="category",
+        type="cleaning",
     )
 
     linen_change_events = sorted(linen_change_events, key=lambda x: x.location)
@@ -133,6 +137,7 @@ if __name__ == "__main__":
                 name=f"Linen Change: {location}",
                 description=f"Linen change schedule for {location}",
                 tags=[
+                    cleaning_tag,
                     linen_change_tag,
                 ],
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
@@ -142,7 +147,10 @@ if __name__ == "__main__":
         with open(file_path, "wb") as f:
             f.write(calendar.to_ical())
 
-    output = Output(event_groups=event_groups, tags=[cleaning_tag, linen_change_tag])
+    output = Output(
+        event_groups=event_groups,
+        tags=[cleaning_tag, linen_change_tag, cleaning_cleaning_tag],
+    )
 
     logger.info(f"Saving calendars information to {json_file}")
 

@@ -65,7 +65,7 @@ def get_base_calendar() -> icalendar.Calendar:
     return calendar
 
 
-def nearest_weekday(date: datetime.date, day: int) -> datetime.date:
+def nearest_weekday(date: datetime.date, day: int | str) -> datetime.date:
     """
     Returns the date of the next given weekday after
     the given date. For example, the date of next Monday.
@@ -77,6 +77,9 @@ def nearest_weekday(date: datetime.date, day: int) -> datetime.date:
     :return: date of the next given weekday
     :rtype: datetime.date
     """
+    if isinstance(day, str):
+        day = ["mo", "tu", "we", "th", "fr", "sa", "su"].index(day[:2].lower())
+
     days = (day - date.weekday() + 7) % 7
     return date + datetime.timedelta(days=days)
 

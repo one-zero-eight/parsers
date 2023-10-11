@@ -19,13 +19,13 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 
 
 class CleaningEntry(BaseModel):
-    name: str
+    name: str = "Cleaning"
     location: str
     dates: list[datetime.date]
 
 
 class LinenChangeEntry(BaseModel):
-    name: str
+    name: str = "Linen change"
     location: str
     rrule: dict[str, str]
 

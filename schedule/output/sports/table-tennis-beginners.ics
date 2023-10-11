@@ -23,7 +23,7 @@ UID:79a13174@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Table tennis
-COLOR:indigo
+COLOR:darkgreen
 DESCRIPTION:Location: [SC] 2nd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 2nd floor
 END:VEVENT
@@ -35,7 +35,7 @@ UID:38529cca@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Table tennis
-COLOR:indigo
+COLOR:darkgreen
 DESCRIPTION:Location: [SC] 2nd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 2nd floor
 END:VEVENT
@@ -47,7 +47,7 @@ UID:4d289290@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SU
 CATEGORIES:sport
 CATEGORIES:Table tennis
-COLOR:indigo
+COLOR:darkgreen
 DESCRIPTION:Location: [SC] 2nd floor\nTime: 10:00 - 11:30
 LOCATION:[SC] 2nd floor
 END:VEVENT

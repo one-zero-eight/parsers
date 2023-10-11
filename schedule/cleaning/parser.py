@@ -56,6 +56,7 @@ class CleaningParser:
                     summary=linen_change_entry.name,
                     location=linen_change_entry.location,
                     rrule=linen_change_entry.rrule,
+                    date=self.config.START_DATE,
                 )
             )
 
@@ -120,6 +121,7 @@ class CleaningEvent(BaseModel):
 
 class LinenChangeEvent(BaseModel):
     summary: str
+    date: datetime.date
     description: str = "Working hours:\n10:00-12:00\n13:00-17:00"
     location: str
     rrule: dict
@@ -160,6 +162,12 @@ class LinenChangeEvent(BaseModel):
         event.add("summary", self.summary)
         event.add("description", self.description)
         event.add("location", self.location)
+        from schedule.utils import nearest_weekday
+
+        event.add(
+            "dtstart", icalendar.vDate(nearest_weekday(self.date, self.rrule["byday"]))
+        )
+
         rrule = icalendar.vRecur(
             freq=self.rrule["freq"],
             byday=self.rrule["byday"],

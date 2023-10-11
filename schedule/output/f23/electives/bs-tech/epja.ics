@@ -22,7 +22,7 @@ DTSTART:20231020T175000
 DTEND:20231020T192000
 UID:3ba2ab85@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 17:50 - 19:20\nDate: 20.10.2023
 LOCATION:314
@@ -33,7 +33,7 @@ DTSTART:20231020T193000
 DTEND:20231020T210000
 UID:252a2df2@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 19:30 - 21:00\nDate: 20.10.2023
 LOCATION:314
@@ -44,7 +44,7 @@ DTSTART:20231021T091000
 DTEND:20231021T104000
 UID:abf819c1@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 21.10.2023
 LOCATION:320
@@ -55,7 +55,7 @@ DTSTART:20231021T105000
 DTEND:20231021T122000
 UID:830e0486@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 10:50 - 12:20\nDate: 21.10.2023
 LOCATION:320
@@ -66,7 +66,7 @@ DTSTART:20231021T125000
 DTEND:20231021T142000
 UID:c9beebaf@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 12:50 - 14:20\nDate: 21.10.2023
 LOCATION:320
@@ -77,7 +77,7 @@ DTSTART:20231111T091000
 DTEND:20231111T104000
 UID:38cb471c@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 11.11.2023
 LOCATION:320
@@ -88,7 +88,7 @@ DTSTART:20231111T105000
 DTEND:20231111T122000
 UID:103d5a5b@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 10:50 - 12:20\nDate: 11.11.2023
 LOCATION:320
@@ -99,7 +99,7 @@ DTSTART:20231111T125000
 DTEND:20231111T142000
 UID:5a8db572@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 12:50 - 14:20\nDate: 11.11.2023
 LOCATION:320
@@ -110,7 +110,7 @@ DTSTART:20231120T143000
 DTEND:20231120T160000
 UID:b66841f@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 14:30 - 16:00\nDate: 20.11.2023
 LOCATION:314
@@ -121,7 +121,7 @@ DTSTART:20231120T175000
 DTEND:20231120T192000
 UID:78a28d7@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 17:50 - 19:20\nDate: 20.11.2023
 LOCATION:314
@@ -132,7 +132,7 @@ DTSTART:20231120T193000
 DTEND:20231120T210000
 UID:1902aea0@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 19:30 - 21:00\nDate: 20.11.2023
 LOCATION:314
@@ -143,7 +143,7 @@ DTSTART:20231125T091000
 DTEND:20231125T104000
 UID:aad99f0f@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 25.11.2023
 LOCATION:320
@@ -154,7 +154,7 @@ DTSTART:20231125T105000
 DTEND:20231125T122000
 UID:822f8248@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 10:50 - 12:20\nDate: 25.11.2023
 LOCATION:320
@@ -165,7 +165,7 @@ DTSTART:20231125T125000
 DTEND:20231125T142000
 UID:c89f6d61@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 12:50 - 14:20\nDate: 25.11.2023
 LOCATION:320
@@ -176,7 +176,7 @@ DTSTART:20231202T091000
 DTEND:20231202T104000
 UID:beadb7f9@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 02.12.2023
 LOCATION:320
@@ -187,7 +187,7 @@ DTSTART:20231202T105000
 DTEND:20231202T122000
 UID:965baabe@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 10:50 - 12:20\nDate: 02.12.2023
 LOCATION:320
@@ -198,7 +198,7 @@ DTSTART:20231202T125000
 DTEND:20231202T142000
 UID:dceb4597@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 12:50 - 14:20\nDate: 02.12.2023
 LOCATION:320
@@ -209,7 +209,7 @@ DTSTART:20231209T091000
 DTEND:20231209T104000
 UID:d5797f68@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 09.12.2023
 LOCATION:320
@@ -220,7 +220,7 @@ DTSTART:20231209T105000
 DTEND:20231209T122000
 UID:fd8f622f@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 10:50 - 12:20\nDate: 09.12.2023
 LOCATION:320
@@ -231,7 +231,7 @@ DTSTART:20231209T125000
 DTEND:20231209T142000
 UID:b73f8d06@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
-COLOR:firebrick
+COLOR:blueviolet
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 12:50 - 14:20\nDate: 09.12.2023
 LOCATION:320

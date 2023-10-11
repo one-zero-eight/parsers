@@ -23,7 +23,7 @@ UID:9db98e64@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 15:00 - 16:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -35,7 +35,7 @@ UID:3eec54ac@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -47,7 +47,7 @@ UID:60ec41d6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=WE
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 09:00 - 10:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -59,7 +59,7 @@ UID:6c5b41c6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=WE
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 13:30 - 15:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -71,7 +71,7 @@ UID:30cf32b4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 11:00 - 12:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -83,7 +83,7 @@ UID:f4f8f2b4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=WE
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:crimson
+COLOR:indigo
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 3rd floor
 END:VEVENT

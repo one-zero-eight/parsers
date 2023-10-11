@@ -1,13 +1,16 @@
 {
   "categories": [
     {
-      "path": "f23/core-courses.json"
+      "path": "ics/f23/core-courses.json"
     },
     {
-      "path": "f23/electives.json"
+      "path": "ics/f23/electives.json"
     },
     {
-      "path": "sports.json"
+      "path": "ics/sports.json"
+    },
+    {
+      "path": "ics/cleaning.json"
     }
   ]
 }

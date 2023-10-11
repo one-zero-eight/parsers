@@ -23,7 +23,7 @@ UID:4e1a962c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=WE
 CATEGORIES:sport
 CATEGORIES:Swimming
-COLOR:chartreuse
+COLOR:crimson
 DESCRIPTION:Location: [SC] Swimming pool\nTime: 09:00 - 10:30
 LOCATION:[SC] Swimming pool
 END:VEVENT

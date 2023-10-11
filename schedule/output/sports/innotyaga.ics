@@ -23,7 +23,7 @@ UID:64459f9a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Innotyaga
-COLOR:darkgreen
+COLOR:rebeccapurple
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 19:00 - 20:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -35,7 +35,7 @@ UID:6492ca0b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Innotyaga
-COLOR:darkgreen
+COLOR:rebeccapurple
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 19:00 - 20:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -47,7 +47,7 @@ UID:bb091cd1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:Innotyaga
-COLOR:darkgreen
+COLOR:rebeccapurple
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 19:00 - 20:30
 LOCATION:[SC] 3rd floor
 END:VEVENT

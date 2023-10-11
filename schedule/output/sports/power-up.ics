@@ -23,7 +23,7 @@ UID:315c21c0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=FR
 CATEGORIES:sport
 CATEGORIES:Power Up
-COLOR:brown
+COLOR:chocolate
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 13:30 - 15:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -35,7 +35,7 @@ UID:878434a4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=FR
 CATEGORIES:sport
 CATEGORIES:Power Up
-COLOR:brown
+COLOR:chocolate
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 15:00 - 16:30
 LOCATION:[SC] 3rd floor
 END:VEVENT
@@ -47,7 +47,7 @@ UID:bfe562c3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=FR
 CATEGORIES:sport
 CATEGORIES:Power Up
-COLOR:brown
+COLOR:chocolate
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 16:30 - 18:00
 LOCATION:[SC] 3rd floor
 END:VEVENT
