@@ -33,12 +33,12 @@ SUMMARY:Information Retrieval (lab)
 DTSTART:20230828T143000
 DTEND:20230828T160000
 DTSTAMP:20230828T000000
-UID:x-1c0862b7@innohassle.ru
+UID:x-df6b729@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:darkgreen
 DESCRIPTION:Instructor: Kamil Sabbagh\nGroup: B21-SD-02\nCourse: BS - Year
   3\nTime: 14:30 - 16:00
-LOCATION:314
+LOCATION:314 (ROOM #312 ON 20/11)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Architecture (lab)
@@ -57,12 +57,12 @@ SUMMARY:Compiler Construction (lec)
 DTSTART:20230830T105000
 DTEND:20230830T122000
 DTSTAMP:20230828T000000
-UID:x-66394865@innohassle.ru
+UID:x-522b8251@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:blueviolet
 DESCRIPTION:Instructor: Evgeni Zouev\nGroup: B21-SD-02\nCourse: BS - Year 
  3\nTime: 10:50 - 12:20
-LOCATION:106
+LOCATION:106 (ONLINE ON 18/10)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Compiler Construction (lab)
@@ -81,31 +81,31 @@ SUMMARY:Programming Paradigms (lec)
 DTSTART:20230831T105000
 DTEND:20230831T122000
 DTSTAMP:20230828T000000
-UID:x-74898910@innohassle.ru
+UID:x-f8a39fdc@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:blueviolet
 DESCRIPTION:Instructor: Nikolay Kudasov\nGroup: B21-SD-02\nCourse: BS - Ye
  ar 3\nTime: 10:50 - 12:20
-LOCATION:106
+LOCATION:106 (ONLINE ON 19/10)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming Paradigms (lab)
 DTSTART:20230831T143000
 DTEND:20230831T160000
 DTSTAMP:20230828T000000
-UID:x-70ca3a0@innohassle.ru
+UID:x-827f0e1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:blueviolet
 DESCRIPTION:Instructor: Khaled Ismaeel\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 14:30 - 16:00
-LOCATION:106
+LOCATION:106 (ONLINE ON 19/10)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Architecture (lec)
 DTSTART:20230908T105000
 DTEND:20230908T122000
 DTSTAMP:20230828T000000
-UID:0-1c51973d@innohassle.ru
+UID:0-8d161fd0@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 10:50 - 12:20
@@ -116,7 +116,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230929T105000
 DTEND:20230929T122000
 DTSTAMP:20230828T000000
-UID:1-1c51973d@innohassle.ru
+UID:1-8d161fd0@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 10:50 - 12:20
@@ -127,7 +127,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230908T125000
 DTEND:20230908T142000
 DTSTAMP:20230828T000000
-UID:0-e8f07d1c@innohassle.ru
+UID:0-14561d8b@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 12:50 - 14:20
@@ -138,7 +138,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230929T125000
 DTEND:20230929T142000
 DTSTAMP:20230828T000000
-UID:1-e8f07d1c@innohassle.ru
+UID:1-14561d8b@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 12:50 - 14:20
@@ -149,7 +149,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230909T105000
 DTEND:20230909T122000
 DTSTAMP:20230828T000000
-UID:0-a8eb3fc2@innohassle.ru
+UID:0-e545ae20@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 10:50 - 12:20
@@ -160,7 +160,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230930T105000
 DTEND:20230930T122000
 DTSTAMP:20230828T000000
-UID:1-a8eb3fc2@innohassle.ru
+UID:1-e545ae20@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 10:50 - 12:20
@@ -171,7 +171,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230909T125000
 DTEND:20230909T142000
 DTSTAMP:20230828T000000
-UID:0-5c4ad5e3@innohassle.ru
+UID:0-7c05ac7b@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 12:50 - 14:20
@@ -182,7 +182,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230930T125000
 DTEND:20230930T142000
 DTSTAMP:20230828T000000
-UID:1-5c4ad5e3@innohassle.ru
+UID:1-7c05ac7b@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B21-SD-02\nCourse: BS - Yea
  r 3\nTime: 12:50 - 14:20
@@ -205,12 +205,12 @@ SUMMARY:Information Retrieval (lab)
 DTSTART:20231023T143000
 DTEND:20231023T160000
 DTSTAMP:20231023T000000
-UID:x-b8513704@innohassle.ru
+UID:x-1e4f8739@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:darkgreen
 DESCRIPTION:Instructor: Kamil Sabbagh\nGroup: B21-SD-02\nCourse: BS - Year
   3\nTime: 14:30 - 16:00
-LOCATION:314
+LOCATION:314 (ROOM #312 ON 20/11)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Architecture (lab)

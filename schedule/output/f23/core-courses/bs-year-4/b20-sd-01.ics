@@ -57,19 +57,19 @@ SUMMARY:Academic Research and Writing Culture
 DTSTART:20230831T111000
 DTEND:20230831T124000
 DTSTAMP:20230828T000000
-UID:x-2495eead@innohassle.ru
+UID:x-484c7988@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Georgiy Gelvanovsky\,Rabab Marouf\,Ruslan Saduov\,
  Oksana Zhirosh\nGroup: B20-SD-01\nCourse: BS - Year 4\nTime: 11:10 - 12:40
-LOCATION:101/107/313 (room# 320 on 21/09)/317
+LOCATION:101/107 (ONLINE ON 19/10)/313 ONLINE ON 19/10/317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Architecture (lec)
 DTSTART:20230908T131000
 DTEND:20230908T144000
 DTSTAMP:20230828T000000
-UID:0-9201ef07@innohassle.ru
+UID:0-981a9a9@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-01\nCourse: BS - Yea
  r 4\nTime: 13:10 - 14:40
@@ -80,7 +80,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230929T131000
 DTEND:20230929T144000
 DTSTAMP:20230828T000000
-UID:1-9201ef07@innohassle.ru
+UID:1-981a9a9@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-01\nCourse: BS - Yea
  r 4\nTime: 13:10 - 14:40
@@ -91,7 +91,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230909T131000
 DTEND:20230909T144000
 DTSTAMP:20230828T000000
-UID:0-1c95803e@innohassle.ru
+UID:0-61d21859@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-01\nCourse: BS - Yea
  r 4\nTime: 13:10 - 14:40
@@ -102,7 +102,7 @@ SUMMARY:Software Architecture (lec)
 DTSTART:20230930T131000
 DTEND:20230930T144000
 DTSTAMP:20230828T000000
-UID:1-1c95803e@innohassle.ru
+UID:1-61d21859@innohassle.ru
 COLOR:indigo
 DESCRIPTION:Instructor: Anna Melekhova\nGroup: B20-SD-01\nCourse: BS - Yea
  r 4\nTime: 13:10 - 14:40

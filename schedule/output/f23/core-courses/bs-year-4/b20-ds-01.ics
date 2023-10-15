@@ -21,12 +21,12 @@ SUMMARY:Introduction to Computer Vision (lec)
 DTSTART:20230829T105000
 DTEND:20230829T124000
 DTSTAMP:20230828T000000
-UID:x-1a440730@innohassle.ru
+UID:x-586dbd9c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Nikola Zlatanov\nGroup: B20-DS-01\nCourse: BS - Ye
  ar 4\nTime: 10:50 - 12:40
-LOCATION:107 
+LOCATION:107  ONLINE ON 17/10
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Computer Vision (lab)
@@ -45,12 +45,12 @@ SUMMARY:Practical Machine Learning and Deep Learning (lec)
 DTSTART:20230830T105000
 DTEND:20230830T124000
 DTSTAMP:20230828T000000
-UID:x-e12e1668@innohassle.ru
+UID:x-56e4dec3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Vladimir Ivanov\nGroup: B20-DS-01\nCourse: BS - Ye
  ar 4\nTime: 10:50 - 12:40
-LOCATION:107 
+LOCATION:107  ONLINE ON 18/10
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Practical Machine Learning and Deep Learning (lab)
@@ -69,12 +69,12 @@ SUMMARY:Academic Research and Writing Culture
 DTSTART:20230831T131000
 DTEND:20230831T144000
 DTSTAMP:20230828T000000
-UID:x-23f07400@innohassle.ru
+UID:x-59c33c6a@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:rebeccapurple
 DESCRIPTION:Instructor: Georgiy Gelvanovsky\,Rabab Marouf\,Ruslan Saduov\,
  Oksana Zhirosh\nGroup: B20-DS-01\nCourse: BS - Year 4\nTime: 13:10 - 14:40
-LOCATION:101/107/313 (room# 320 on 21/09)/317
+LOCATION:101/107 (ONLINE ON 19/10)/313 ONLINE ON 19/10/317
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Computer Vision (lec)

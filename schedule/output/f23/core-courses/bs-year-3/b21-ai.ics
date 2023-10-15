@@ -45,12 +45,12 @@ SUMMARY:Introduction to Computer Vision (lec)
 DTSTART:20230829T105000
 DTEND:20230829T122000
 DTSTAMP:20230828T000000
-UID:x-c99db56d@innohassle.ru
+UID:x-728d2d8b@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:indigo
 DESCRIPTION:Instructor: Nikola Zlatanov\nGroup: B21-AI\nCourse: BS - Year 
  3\nTime: 10:50 - 12:20
-LOCATION:107
+LOCATION:107 (ONLINE ON 17/10)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Computer Vision (lab)
@@ -69,12 +69,12 @@ SUMMARY:Practical Machine Learning and Deep Learning (lec)
 DTSTART:20230830T105000
 DTEND:20230830T122000
 DTSTAMP:20230828T000000
-UID:x-bd68e700@innohassle.ru
+UID:x-7b6c0aa3@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
 COLOR:chocolate
 DESCRIPTION:Instructor: Vladimir Ivanov\nGroup: B21-AI\nCourse: BS - Year 
  3\nTime: 10:50 - 12:20
-LOCATION:107
+LOCATION:107 (ONLINE ON 18/10)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Practical Machine Learning and Deep Learning (lab)
