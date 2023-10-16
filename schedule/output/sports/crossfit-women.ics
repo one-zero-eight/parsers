@@ -23,7 +23,7 @@ UID:eec07713@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:CrossFit
-COLOR:darkgreen
+COLOR:darkslateblue
 DESCRIPTION:Location: [SC] 3rd floor\nTime: 12:30 - 14:00
 LOCATION:[SC] 3rd floor
 END:VEVENT

@@ -23,7 +23,7 @@ UID:b7e88cf7@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Football
-COLOR:firebrick
+COLOR:dimgray
 DESCRIPTION:Location: [Outdoor] Stadium\nTime: 18:30 - 20:30
 LOCATION:[Outdoor] Stadium
 END:VEVENT
@@ -35,7 +35,7 @@ UID:920311ea@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Football
-COLOR:firebrick
+COLOR:dimgray
 DESCRIPTION:Location: [Outdoor] Stadium\nTime: 18:30 - 20:30
 LOCATION:[Outdoor] Stadium
 END:VEVENT
@@ -47,7 +47,7 @@ UID:12e11a8c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SA
 CATEGORIES:sport
 CATEGORIES:Football
-COLOR:firebrick
+COLOR:dimgray
 DESCRIPTION:Location: [Outdoor] Stadium\nTime: 18:30 - 20:30
 LOCATION:[Outdoor] Stadium
 END:VEVENT

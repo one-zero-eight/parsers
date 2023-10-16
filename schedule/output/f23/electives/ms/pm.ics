@@ -20,150 +20,165 @@ BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231006T124000
 DTEND:20231006T141000
-UID:31197053@innohassle.ru
+UID:191ae71c@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 06.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231013T124000
 DTEND:20231013T141000
-UID:ad732918@innohassle.ru
+UID:50c9715d@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 13.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231013T142000
 DTEND:20231013T155000
-UID:1ba24ace@innohassle.ru
+UID:a3460086@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 14:20 - 15:50\nDate: 13.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231020T124000
 DTEND:20231020T141000
-UID:7b7d1f6a@innohassle.ru
+UID:402ada07@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 20.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231020T142000
 DTEND:20231020T155000
-UID:cdac7cbc@innohassle.ru
+UID:b3a5abdc@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 14:20 - 15:50\nDate: 20.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231027T124000
 DTEND:20231027T141000
-UID:6d25a1d4@innohassle.ru
+UID:f4f152b9@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 27.10.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231103T124000
 DTEND:20231103T141000
-UID:8956eb5b@innohassle.ru
+UID:9fb3f096@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 03.11.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231111T124000
 DTEND:20231111T141000
-UID:3640cae@innohassle.ru
+UID:62bbee69@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 11.11.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231118T124000
 DTEND:20231118T141000
-UID:398dcf6c@innohassle.ru
+UID:64a671ea@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 18.11.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231125T124000
 DTEND:20231125T141000
-UID:c3328462@innohassle.ru
+UID:c683cd8d@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 25.11.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231125T142000
 DTEND:20231125T155000
-UID:75e3e7b4@innohassle.ru
+UID:350cbc56@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 14:20 - 15:50\nDate: 25.11.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231202T124000
 DTEND:20231202T141000
-UID:b6463d7e@innohassle.ru
+UID:7dffd974@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 02.12.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231202T142000
 DTEND:20231202T155000
-UID:975ea8@innohassle.ru
+UID:8e70a8af@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 14:20 - 15:50\nDate: 02.12.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231209T124000
 DTEND:20231209T141000
-UID:9df582e@innohassle.ru
+UID:3b34053@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 12:40 - 14:10\nDate: 09.12.2023
+LOCATION:online
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Product Management
 DTSTART:20231209T142000
 DTEND:20231209T155000
-UID:bf0e3bf8@innohassle.ru
+UID:f03c3188@innohassle.ru
 CATEGORIES:Product Management
-COLOR:darkblue
+COLOR:maroon
 DESCRIPTION:Subject: Product Management\nInstructor: Iuliia Metelskaia\nTi
  me: 14:20 - 15:50\nDate: 09.12.2023
+LOCATION:online
 END:VEVENT
 END:VCALENDAR

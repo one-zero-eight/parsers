@@ -22,7 +22,7 @@ DTSTART:20230908T143000
 DTEND:20230908T160000
 UID:2b116860@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 08.09.2023
 LOCATION:107
@@ -33,7 +33,7 @@ DTSTART:20230908T161000
 DTEND:20230908T174000
 UID:8afdbaa3@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 16:10 - 17:40\nDate: 08.09.2023
 LOCATION:107
@@ -44,7 +44,7 @@ DTSTART:20230909T143000
 DTEND:20230909T160000
 UID:a8febcc@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 09.09.2023
 LOCATION:318
@@ -55,7 +55,7 @@ DTSTART:20230922T143000
 DTEND:20230922T160000
 UID:67cd493e@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 22.09.2023
 LOCATION:108
@@ -66,7 +66,7 @@ DTSTART:20230923T091000
 DTEND:20230923T104000
 UID:761344e8@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 09:10 - 10:40\nDate: 23.09.2023
 LOCATION:317
@@ -77,7 +77,7 @@ DTSTART:20230923T105000
 DTEND:20230923T122000
 UID:5ee559af@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 10:50 - 12:20\nDate: 23.09.2023
 LOCATION:317
@@ -88,7 +88,7 @@ DTSTART:20231006T143000
 DTEND:20231006T160000
 UID:a542a04f@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 06.10.2023
 LOCATION:108
@@ -99,7 +99,7 @@ DTSTART:20231007T091000
 DTEND:20231007T104000
 UID:b49cad99@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 09:10 - 10:40\nDate: 07.10.2023
 LOCATION:317
@@ -110,7 +110,7 @@ DTSTART:20231007T105000
 DTEND:20231007T122000
 UID:9c6ab0de@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 10:50 - 12:20\nDate: 07.10.2023
 LOCATION:317
@@ -119,23 +119,23 @@ BEGIN:VEVENT
 SUMMARY:Software Product Development and Analysis
 DTSTART:20231020T105000
 DTEND:20231020T122000
-UID:b6331c88@innohassle.ru
+UID:f90e8355@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 10:50 - 12:20\nDate: 20.10.2023
-LOCATION:107
+LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Product Development and Analysis
 DTSTART:20231020T125000
 DTEND:20231020T142000
-UID:fc83f3a1@innohassle.ru
+UID:b3be6c7c@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 12:50 - 14:20\nDate: 20.10.2023
-LOCATION:107
+LOCATION:300
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Software Product Development and Analysis
@@ -143,7 +143,7 @@ DTSTART:20231021T143000
 DTEND:20231021T160000
 UID:8f1b0c19@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 21.10.2023
 LOCATION:318
@@ -154,7 +154,7 @@ DTSTART:20231110T105000
 DTEND:20231110T122000
 UID:25004255@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 10:50 - 12:20\nDate: 10.11.2023
 LOCATION:107
@@ -165,7 +165,7 @@ DTSTART:20231110T125000
 DTEND:20231110T142000
 UID:6fb0ad7c@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 12:50 - 14:20\nDate: 10.11.2023
 LOCATION:107
@@ -176,7 +176,7 @@ DTSTART:20231111T143000
 DTEND:20231111T160000
 UID:1c2852c4@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 11.11.2023
 LOCATION:318
@@ -187,7 +187,7 @@ DTSTART:20231124T125000
 DTEND:20231124T142000
 UID:a92ab6f2@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 12:50 - 14:20\nDate: 24.11.2023
 LOCATION:108
@@ -198,7 +198,7 @@ DTSTART:20231124T143000
 DTEND:20231124T160000
 UID:fb2ccae6@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 24.11.2023
 LOCATION:108
@@ -209,7 +209,7 @@ DTSTART:20231125T143000
 DTEND:20231125T160000
 UID:8e3a8ad7@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 25.11.2023
 LOCATION:318
@@ -220,7 +220,7 @@ DTSTART:20231208T125000
 DTEND:20231208T142000
 UID:d68a5695@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 12:50 - 14:20\nDate: 08.12.2023
 LOCATION:108
@@ -231,7 +231,7 @@ DTSTART:20231208T143000
 DTEND:20231208T160000
 UID:848c2a81@innohassle.ru
 CATEGORIES:Software Product Development and Analysis
-COLOR:coral
+COLOR:mediumvioletred
 DESCRIPTION:Subject: Software Product Development and Analysis\nInstructor
  : Konstantin Arkhipov\nTime: 14:30 - 16:00\nDate: 08.12.2023
 LOCATION:108

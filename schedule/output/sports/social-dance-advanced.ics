@@ -23,7 +23,7 @@ UID:7de912a1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TU
 CATEGORIES:sport
 CATEGORIES:Social Dance
-COLOR:rebeccapurple
+COLOR:midnightblue
 DESCRIPTION:Location: [SC] Room 233\nTime: 19:30 - 20:30
 LOCATION:[SC] Room 233
 END:VEVENT
@@ -35,7 +35,7 @@ UID:11203f82@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=TH
 CATEGORIES:sport
 CATEGORIES:Social Dance
-COLOR:rebeccapurple
+COLOR:midnightblue
 DESCRIPTION:Location: [SC] Room 233\nTime: 19:30 - 20:30
 LOCATION:[SC] Room 233
 END:VEVENT
@@ -47,7 +47,7 @@ UID:67bdecfa@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231225;BYDAY=SU
 CATEGORIES:sport
 CATEGORIES:Social Dance
-COLOR:rebeccapurple
+COLOR:midnightblue
 DESCRIPTION:Location: [SC] Room 233\nTime: 13:00 - 14:30
 LOCATION:[SC] Room 233
 END:VEVENT
