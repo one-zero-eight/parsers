@@ -41,13 +41,13 @@ DESCRIPTION:Instructor: Darko Bozhinoski\nGroup: B22-CS-01\nCourse: BS - Y
 LOCATION:ONLINE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Philosophy II (lab)
+SUMMARY:Philosophy II: Introduction to AI (lab)
 DTSTART:20230828T130000
 DTEND:20230828T143000
 DTSTAMP:20230828T000000
-UID:x-fb5ae1aa@innohassle.ru
+UID:x-86923cd6@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
-COLOR:chocolate
+COLOR:teal
 DESCRIPTION:Instructor: Munir Makhmutov\nGroup: B22-CS-01\nCourse: BS - Ye
  ar 2\nTime: 13:00 - 14:30
 LOCATION:308

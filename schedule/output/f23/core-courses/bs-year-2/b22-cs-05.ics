@@ -41,13 +41,13 @@ DESCRIPTION:Instructor: Darko Bozhinoski\nGroup: B22-CS-05\nCourse: BS - Y
 LOCATION:ONLINE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Philosophy II (lab)
+SUMMARY:Philosophy II: Introduction to AI (lab)
 DTSTART:20230828T162000
 DTEND:20230828T175000
 DTSTAMP:20230828T000000
-UID:x-bdca35ff@innohassle.ru
+UID:x-8599dd65@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231022T000000;INTERVAL=1;WKST=MO
-COLOR:chocolate
+COLOR:teal
 DESCRIPTION:Instructor: Marko Pezer\nGroup: B22-CS-05\nCourse: BS - Year 2
  \nTime: 16:20 - 17:50
 LOCATION:313
