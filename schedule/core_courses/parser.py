@@ -1,31 +1,33 @@
-"""Parser for core courses schedule"""
-
-import datetime
+import io
 import logging
 import re
 from collections import defaultdict
-from itertools import pairwise
-from typing import Iterable
+from datetime import datetime
+from itertools import pairwise, groupby
+from typing import Collection, Generator
+from zipfile import ZipFile
 
-import googleapiclient.discovery
+import icalendar
 import numpy as np
 import pandas as pd
+import requests
 from google.oauth2.credentials import Credentials
 
 from schedule.core_courses.config import core_courses_config as config
-from schedule.core_courses.models import ScheduleEvent
+from schedule.core_courses.models import CoreCourseEvent, CoreCourseCell
 from schedule.processors.regex import prettify_string
 from schedule.utils import *
 
 
 class CoreCoursesParser:
     """
-    Parser for core courses schedule
+    Elective parser class
     """
 
-    spreadsheets: googleapiclient.discovery.Resource
     credentials: Credentials
+    """ Google API credentials object """
     logger = logging.getLogger(__name__ + "." + "Parser")
+    """ Logger object """
 
     def __init__(self):
         self.credentials = get_credentials(
@@ -33,327 +35,265 @@ class CoreCoursesParser:
             token_path=config.TOKEN_PATH,
             scopes=config.API_SCOPES,
         )
-        self.spreadsheets = connect_spreadsheets(self.credentials)
+        self.session = requests.Session()
+        self.session.headers.update(
+            {"Authorization": f"Bearer {self.credentials.token}"}
+        )
 
-    @staticmethod
-    def merge_cells(df: pd.DataFrame, target_sheet: dict["str", ...]) -> None:
+    def get_clear_dataframes_from_xlsx(
+        self, xlsx_file: io.BytesIO, targets: list[config.Target]
+    ) -> dict[str, pd.DataFrame]:
         """
-        Merge cells in the DataFrame according to the Google Sheets data
+        Get data from xlsx file and return it as a DataFrame with merged
+        cells and empty cells in the course row filled by left value.
 
-        :param df: DataFrame to merge cells in
+        :param xlsx_file: xlsx file with data
+        :type xlsx_file: io.BytesIO
+        :param targets: list of targets to get data from (sheets and ranges)
+        :type targets: list[config.Target]
+
+        :return: dataframes with merged cells and empty cells filled
+        :rtype: dict[str, pd.DataFrame]
+        """
+        # ------- Read xlsx file into dataframes -------
+        dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
+        # ------- Clean up dataframes -------
+        dfs = {key.strip(): value for key, value in dfs.items()}
+
+        for target in targets:
+            self.logger.info(f"Processing sheet: '{target.sheet_name}'")
+            df = dfs[target.sheet_name]
+            # -------- Fill merged cells with values --------
+            CoreCoursesParser.merge_cells(df, xlsx_file, target.sheet_name)
+            # -------- Select range --------
+            df = CoreCoursesParser.select_range(df, target.range)
+            # -------- Fill empty cells --------
+            df = df.replace(r"^\s*$", np.nan, regex=True)
+            # -------- Strip, translate and remove trailing spaces --------
+            df = df.applymap(prettify_string)
+            # -------- Update dataframe --------
+            dfs[target.sheet_name] = df
+
+        self.logger.info("Dataframes ready")
+        return dfs
+
+    def get_xlsx_file(self, spreadsheet_id: str) -> io.BytesIO:
+        """
+        Export xlsx file from Google Sheets and return it as BytesIO object.
+
+        :param spreadsheet_id: id of Google Sheets spreadsheet
+        :return: xlsx file as BytesIO object
+        """
+        # ------- Get data from Google Sheets -------
+        self.logger.debug("Getting dataframe from Google Sheets...")
+        # ------- Create url for export -------
+        spreadsheet_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}"
+        export_url = spreadsheet_url + "/export?format=xlsx"
+        # ------- Export xlsx file -------
+        self.logger.info(f"Exporting from URL: {export_url}")
+        response = self.session.get(export_url)
+        self.logger.info(f"Response status: {response.status_code}")
+        response.raise_for_status()
+        # ------- Return xlsx file as BytesIO object -------
+        return io.BytesIO(response.content)
+
+    @classmethod
+    def merge_cells(cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str):
+        """
+        Merge cells in dataframe
+
+        :param df: Dataframe to process
+        :param xlsx: xlsx file with data
+        :param target_sheet_name: sheet to process
+        """
+        xlsx.seek(0)
+        xlsx_zipfile = ZipFile(xlsx)
+        sheets = get_sheets(xlsx_zipfile)
+        target_sheet_id = None
+        for sheet_id, sheet_name in sheets.items():
+            if target_sheet_name in sheet_name:
+                target_sheet_id = sheet_id
+                break
+        sheet = get_sheet_by_id(xlsx_zipfile, target_sheet_id)
+        merged_ranges = get_merged_ranges(sheet)
+
+        # ------- Merge cells -------
+        for merged_range in merged_ranges:
+            (start_row, start_col), (end_row, end_col) = split_range_to_xy(merged_range)
+            # get value from top left cell
+            value = df.iloc[start_row, start_col]
+            # fill merged cells with value
+            df.iloc[start_row : end_row + 1, start_col : end_col + 1] = value
+
+    @classmethod
+    def select_range(cls, df: pd.DataFrame, target_range: str) -> pd.DataFrame:
+        """
+        Select range from dataframe
+
+        :param df: dataframe to process
         :type df: pd.DataFrame
-        :param target_sheet: Target sheet from Google Sheets API
-        :type target_sheet: dict
-        :return: None
-        :rtype: None
-        """
-        if "merges" not in target_sheet:
-            return
-
-        max_x, max_y = df.shape
-
-        for merge in target_sheet["merges"]:
-            x0 = merge["startRowIndex"]
-            y0 = merge["startColumnIndex"]
-            x1 = merge["endRowIndex"]
-            y1 = merge["endColumnIndex"]
-
-            if x0 < max_x and y0 < max_y:
-                df.iloc[x0:x1, y0:y1] = df.iloc[x0][y0]
-
-    def get_clear_df(
-        self: "CoreCoursesParser",
-        spreadsheet_id: str,
-        target_range: str,
-        target_title: str,
-    ) -> pd.DataFrame:
-        """
-        Get data from Google Sheets and return it as a DataFrame with merged cells and empty cells in the course
-        row filled by left value. Also remove trailing spaces and translate russian letters to english ones.
-
-        :param spreadsheet_id: ID of the spreadsheet to get data from
-        :type spreadsheet_id: str
-        :param target_range: Range of the data to get
+        :param target_range: range to select
         :type target_range: str
-        :param target_title: Title of the target sheet
-        :type target_title: str
-        :return: DataFrame with data from Google Sheets
+        :return: selected range
         :rtype: pd.DataFrame
         """
+        (start_row, start_col), (end_row, end_col) = split_range_to_xy(target_range)
+        return df.iloc[
+            start_row : end_row + 1,
+            start_col : end_col + 1,
+        ]
 
-        self.logger.debug("Getting dataframe from Google Sheets...")
-        self.logger.info(
-            f"Retrieving data: {spreadsheet_id}/{target_title}-{target_range}"
-        )
+    @classmethod
+    def set_weekday_and_time_as_index(
+        cls, df: pd.DataFrame, column: int = 0
+    ) -> pd.DataFrame:
+        """
+        Set time column as index and process it to datetime format
 
-        values = (
-            self.spreadsheets.values()
-            .get(spreadsheetId=spreadsheet_id, range=target_range)
-            .execute()["values"]
-        )
+        :param df: dataframe to process
+        :type df: pd.DataFrame
+        :param column: column to set as index, defaults to 0
+        :type column: int, optional
+        """
 
-        df = pd.DataFrame(data=values)
-        # remove trailing spaces and translate
-        df.replace(r"^\s*$", "", regex=True, inplace=True)
-        df = df.applymap(lambda x: prettify_string(x) if isinstance(x, str) else x)
+        # get column view and iterate over it
+        df_column = df.iloc[:, column]
+        df_column: pd.Series
+        # drop column
+        df.drop(df.columns[column], axis=1, inplace=True)
+        # fill nan values with previous value
+        df_column.fillna(method="ffill", inplace=True)
 
-        max_x, max_y = df.shape
+        # ----- Process weekday ------ #
+        # get indexes of weekdays
+        weekdays_indexes = [
+            i for i, cell in enumerate(df_column.values) if cell in config.WEEKDAYS
+        ]
 
-        self.logger.info(f"Data retrieved: {max_x}x{max_y}")
-        spreadsheet = self.spreadsheets.get(
-            spreadsheetId=config.SPREADSHEET_ID,
-            ranges=[target_range],
-            includeGridData=False,  # values already fetched
-        ).execute()
+        # create index mapping for weekdays [None, None, "MONDAY", "MONDAY", ...]
+        index_mapping = pd.Series(index=df_column.index)
+        last_index = len(df_column)
+        for start, end in pairwise(weekdays_indexes + [last_index]):
+            index_mapping.iloc[start] = "delete"
+            index_mapping.iloc[start + 1 : end] = df_column[start]
 
-        self.logger.info(
-            f"Spreadsheet {spreadsheet['properties']['title']} retrieved:\n"
-            + f"Sheets({len(spreadsheet['sheets'])}): "
-            + ", ".join(
-                f"{sheet['properties']['title']}" for sheet in spreadsheet["sheets"]
+        # ----- Process time ------ #
+        # matched r"\d{1,2}:\d{2}-\d{1,2}:\d{2}" regex
+
+        matched = df_column[df_column.str.match(r"\d{1,2}:\d{2}-\d{1,2}:\d{2}")]
+
+        for i, cell in matched.items():
+            # "9:00-10:30" -> datetime.time(9, 0), datetime.time(10, 30)
+            start, end = cell.split("-")
+            df_column.loc[i] = (
+                datetime.strptime(start, "%H:%M").time(),
+                datetime.strptime(end, "%H:%M").time(),
             )
+
+        # create multiindex from index mapping and time column
+        multiindex = pd.MultiIndex.from_arrays(
+            [index_mapping, df_column], names=["weekday", "time"]
         )
-
-        # get target sheet
-        target_sheet = None
-        for sheet in spreadsheet["sheets"]:
-            if sheet["properties"]["title"] == target_title:
-                target_sheet = sheet
-                break
-
-        if target_sheet is None:
-            raise ValueError(f"Target sheet {target_title} not found")
-
-        self.logger.info(
-            f"Target sheet: {target_sheet['properties']['title']} "
-            + f"Sheet index: ({target_sheet['properties']['index']}) "
-            + f"Sheet merges: ({len(target_sheet['merges'])})"
-        )
-
-        self.logger.info("Merging cells")
-
-        self.merge_cells(df, target_sheet)
-
-        df.fillna("", inplace=True)
-
-        self.logger.info("Cells merged")
-        self.logger.info("Filling empty cells")
-        for y in range(1, max_y):
-            course_name = df.iloc[0, y]
-            if course_name == "":
-                df.iloc[0, y] = df.iloc[0, y - 1]
-                self.logger.info(f"> Filled empty cell in courses line: {y}")
-        self.logger.info("Empty cells filled")
-        self.logger.info("Dataframe ready")
+        # set multiindex as index
+        df.set_index(multiindex, inplace=True)
+        # drop rows with weekday
+        df.drop("delete", inplace=True, level=0)
         return df
 
-    @staticmethod
-    def refactor_course_df(
-        course_df: pd.DataFrame, group_names: list[str]
+    @classmethod
+    def set_course_and_group_as_header(
+        cls, df: pd.DataFrame, rows: tuple = (0, 1)
     ) -> pd.DataFrame:
         """
-        Refactor course DataFrame to get a DataFrame with one cell corresponding to pair (timeslot, group),
-        to one event.
+        Set course and group as header
 
-        :param course_df: DataFrame to refactor
-        :type course_df: pd.DataFrame
-        :param group_names: List of group names
-        :type group_names: list[str]
-        :return: Refactored DataFrame
-        :rtype: pd.DataFrame
-        """
-        course_df.columns = ["time", *group_names]
-        course_df.set_index("time", inplace=True)
-
-        course_df = course_df.groupby("time").agg(
-            lambda intersecting: list(filter(None, intersecting))
-        )
-
-        # course_df.fillna("", inplace=True)
-
-        return course_df
-
-    def parse_df(self, df: pd.DataFrame) -> dict[str, dict[str, list[ScheduleEvent]]]:
-        """
-        Parse DataFrame into a dictionary with separation by days and then by course.
-
-        :param df: DataFrame to parse
+        :param df: dataframe to process
         :type df: pd.DataFrame
-        :return: Dictionary with separation by days and then by course
-        :rtype: dict[str, dict[str, list[ScheduleEvent]]]
+        :param rows: row to set as columns, defaults to (0, 1)
+        :type rows: tuple, optional
+        """
+        # ------- Set course and group as header -------
+        # get rows with course and group
+        df_header = df.iloc[rows[0] : rows[1] + 1]
+        # drop rows with course and group
+        df.drop(list(rows), inplace=True)
+        df.reset_index(drop=True, inplace=True)
+        # fill nan values with previous value
+        df_header = df_header.fillna(method="ffill", axis=1)
+        multiindex = pd.MultiIndex.from_arrays(
+            df_header.values, names=["course", "group"]
+        )
+        df.columns = multiindex
+        return df
+
+    @classmethod
+    def split_df_by_courses(
+        cls, df: pd.DataFrame, time_columns: list[int]
+    ) -> list[pd.DataFrame]:
+        """
+        Split dataframe by "Week *" rows
+
+        :param time_columns: list of columns(pd) with time and weekday
+        :param df: dataframe to split
+        :type df: pd.DataFrame
+        :return: list of dataframes with locators
+        :rtype: list[pd.DataFrame, ExcelToPandasLocator]
         """
 
-        self.logger.debug("Parsing dataframe to separation by days|groups...")
-        self.logger.info("Get 'week' indexes...")
-        week_column = df.iloc[:, 0]
-        week_mask = week_column.isin(DAYS).values
-        week_indexes = np.argwhere(week_mask).flatten().tolist()
-        self.logger.info(f"> Found {len(week_indexes)} indexes:")
+        cls.logger.debug("Parsing dataframe to separation by course|groups...")
+        cls.logger.info("Get indexes of time columns...")
 
-        self.logger.info("Separating by days...")
-        max_x, max_y = df.shape
-        separation_by_days = defaultdict(dict)
-        courses_line = df.iloc[0, 1:]
-        groups_line = df.iloc[1, 1:]
+        time_columns_indexes = time_columns
+        cls.logger.info(f"Time columns indexes: {time_columns_indexes}")
 
-        for start_x, end_x in pairwise(week_indexes + [max_x]):
-            day_name = week_column[start_x]
-            self.logger.info(f" > Separating day {day_name}")
-            week_df = df.iloc[start_x:end_x]
-            day_row = week_df.iloc[0]
-            day_mask = day_row.isin(DAYS).values
-            day_indexes = np.argwhere(day_mask).flatten().tolist()
+        # split dataframe by found columns
+        _, max_y = df.shape
+        split_indexes = time_columns_indexes + [max_y]
 
-            for start_y, end_y in pairwise(day_indexes + [max_y]):
-                course_name = courses_line.iloc[start_y]
-                self.logger.info(f"  > {course_name}")
-                group_names = groups_line.iloc[start_y:end_y]
-                group_names = group_names[group_names != ""].values
-                group_names = list(map(lambda x: format_group_name(x), group_names))
+        split_dfs = []
 
-                course_df = week_df.iloc[1:, start_y:end_y]
-                course_df = self.refactor_course_df(course_df, group_names)
-                separation_by_days[day_name][course_name] = course_df
+        for i, (start, end) in enumerate(pairwise(split_indexes)):
+            cls.logger.info(f"Splitting dataframe by columns {start}:{end}")
+            split_df = df.iloc[:, start:end].copy()
+            split_dfs.append(split_df)
+        return split_dfs
 
-        return separation_by_days
+    @classmethod
+    def generate_events_from_processed_column(
+        cls,
+        processed_column: pd.Series,
+        target: config.Target,
+    ) -> Generator[CoreCourseEvent, None, None]:
+        """
+        Generate events from processed cells
 
+        :param target: target to generate events for (needed for start and end dates)
+        :param processed_column: series with processed cells (CoreCourseCell),
+         multiindex with (weekday, timeslot) and (course, group) as name
+        :return: generator of events
+        """
+        # -------- Iterate over processed cells --------
+        (course, group) = processed_column.name
+        course: str
+        group: str
 
-def get_events_for_course(course_df: pd.DataFrame) -> Iterable[ScheduleEvent]:
-    """
-    Convert course DataFrame (timeslot as index, group name as column name, list of event lines in cell value) to list
-    of ScheduleEvents.
-
-    :param course_df: DataFrame to convert
-    :type course_df: pd.DataFrame
-    :return: List of ScheduleEvents
-    :rtype: Iterable[ScheduleEvent]
-    """
-    for timeslot, by_groups in course_df.iterrows():  # type: str, dict
-        for name, event_lines in by_groups.items():  # type: str, list[str]
-            if not event_lines:
+        for (weekday, timeslot), cell in processed_column.items():
+            if cell is None:
                 continue
+            cell: CoreCourseCell
+            weekday: str
+            timeslot: tuple[datetime.time, datetime.time]
 
-            start_time, end_time = timeslot.split("-")
-            start_time = datetime.datetime.strptime(start_time, "%H:%M").time()
-            end_time = datetime.datetime.strptime(end_time, "%H:%M").time()
-
-            cell_event = ScheduleEvent(
-                group=name, start_time=start_time, end_time=end_time
+            event = cell.get_event(
+                weekday=weekday,
+                timeslot=timeslot,
+                course=course,
+                group=group,
+                target=target,
+                return_none=True,
             )
 
-            cell_event.from_cell(event_lines)
+            if event is None:
+                continue
 
-            yield cell_event
-
-
-def convert_separation(
-    separation_by_days: dict,
-    very_first_date: datetime.date,
-    very_last_date: datetime.date,
-    logger: logging.Logger,
-) -> Iterable[ScheduleEvent]:
-    """
-    Convert separation by days and then by courses to list of ScheduleEvents.
-
-    :param separation_by_days: Dictionary with separation by days and then by courses
-    :type separation_by_days: dict
-    :param very_first_date: first date of schedule
-    :type very_first_date: datetime.date
-    :param very_last_date: last date of schedule
-    :type very_last_date: datetime.date
-    :param logger: logger
-    :type logger: logging.Logger
-    :return: List of ScheduleEvents
-    :rtype: Iterable[ScheduleEvent]
-    """
-    rrule = get_weekday_rrule(very_last_date)
-
-    logger.info("Converting separation to ScheduleEvent")
-    dtstamp = very_first_date
-
-    for day_name, separation_by_courses in separation_by_days.items():
-        logger.info(f" > Parsing day {day_name}")
-        weekday_dtstart = nearest_weekday(very_first_date, weekday_converter[day_name])
-
-        for course_name, course_df in separation_by_courses.items():
-            logger.info(f"  > Parsing course {course_name}")
-            course_events = get_events_for_course(course_df)
-
-            for course_event in course_events:
-                course_event.day = weekday_dtstart
-                course_event.dtstamp = dtstamp
-                course_event.recurrence = rrule
-                course_event.course = course_name
-                yield course_event
-
-
-remove_pattern = re.compile(r"\(.*\)")
-
-
-def format_group_name(dirt_group_name: str) -> str:
-    """
-    Format group name to uppercase and remove all brackets and text inside.
-
-    :param dirt_group_name: dirty group name
-    :type dirt_group_name: str
-    :return: formatted group name
-    :rtype: str
-    """
-    dirt_group_name.replace(" ", "")
-    dirt_group_name = dirt_group_name.upper()
-    dirt_group_name = remove_pattern.sub("", dirt_group_name)
-    dirt_group_name = dirt_group_name.strip()
-    return dirt_group_name
-
-
-def process_target_schedule(
-    parser: CoreCoursesParser, target_id: int
-) -> Iterable[ScheduleEvent]:
-    """
-    Process target schedule by target_id.
-
-    :param parser: current parser
-    :param target_id: target id
-    :type target_id: int
-    :return: List of ScheduleEvents
-    :rtype: Iterable[ScheduleEvent]
-    """
-    df = parser.get_clear_df(
-        spreadsheet_id=config.SPREADSHEET_ID,
-        target_range=config.TARGET_RANGES[target_id],
-        target_title=config.TARGET_SHEET_TITLES[target_id],
-    )
-    separation_by_days = parser.parse_df(df)
-
-    from_date = datetime.datetime.fromisoformat(
-        config.RECURRENCE[target_id]["start"]
-    ).date()
-    until_date = datetime.datetime.fromisoformat(
-        config.RECURRENCE[target_id]["end"]
-    ).date()
-
-    events = convert_separation(
-        separation_by_days, from_date, until_date, parser.logger
-    )
-
-    return events
-
-
-DAYS = [
-    "MONDAY",
-    "TUESDAY",
-    "WEDNESDAY",
-    "THURSDAY",
-    "FRIDAY",
-    "SATURDAY",
-    "SUNDAY",
-]
-weekday_converter = {
-    "MONDAY": 0,
-    "TUESDAY": 1,
-    "WEDNESDAY": 2,
-    "THURSDAY": 3,
-    "FRIDAY": 4,
-    "SATURDAY": 5,
-    "SUNDAY": 6,
-}
+            yield event

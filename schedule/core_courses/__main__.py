@@ -1,92 +1,204 @@
-import datetime
-import itertools
 import json
 import logging
-import re
+import os
+from hashlib import sha1
+from itertools import chain, groupby
+from typing import Any
 
 import icalendar
+import pandas as pd
+from openpyxl.utils import column_index_from_string
+from pydantic import BaseModel, Field
 
 from schedule.core_courses.config import core_courses_config as config
-from schedule.core_courses.models import Subject, ScheduleEvent
-from schedule.core_courses.parser import CoreCoursesParser, process_target_schedule
-from schedule.core_courses.temp import history_events
+from schedule.core_courses.models import CoreCourseCell, CoreCourseEvent
+from schedule.core_courses.parser import CoreCoursesParser
+from schedule.models import PredefinedEventGroup, PredefinedTag
+from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
+
+
+# noinspection InsecureHash
+def hashsum_dfs(dfs: dict[str, pd.DataFrame]) -> str:
+    to_hash = (
+        sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest()
+        for target in config.TARGETS
+    )
+    hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
+    return hashsum
+
+
+def get_dataframes_pipeline() -> dict[str, pd.DataFrame]:
+    dfs = parser.get_clear_dataframes_from_xlsx(xlsx_file=xlsx, targets=config.TARGETS)
+    hashsum = hashsum_dfs(dfs)
+
+    parser.logger.info(f"Hashsum: {hashsum}")
+    xlsx_path = config.TEMP_DIR / f"{hashsum}.xlsx"
+
+    if xlsx_path.exists():
+        parser.logger.info(f"Hashsum match!")
+
+    with open(xlsx_path, "wb") as f:
+        parser.logger.info(f"Saving cached file {hashsum}.xlsx")
+        xlsx.seek(0)
+        content = xlsx.read()
+        f.write(content)
+
+    return dfs
+
+
+class Output(BaseModel):
+    event_groups: list[PredefinedEventGroup]
+    tags: list[PredefinedTag]
+    meta: dict[str, Any] = Field(default_factory=dict)
+
+    def __init__(
+        self,
+        event_groups: list[PredefinedEventGroup],
+        tags: list[PredefinedTag],
+    ):
+        # only unique (alias, type) tags
+        visited = set()
+
+        visited_tags = []
+
+        for tag in tags:
+            if (tag.alias, tag.type) not in visited:
+                visited.add((tag.alias, tag.type))
+                visited_tags.append(tag)
+
+        # sort tags
+        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
+
+        super().__init__(event_groups=event_groups, tags=visited_tags)
+
+        self.meta = {
+            "event_groups_count": len(self.event_groups),
+            "tags_count": len(self.tags),
+        }
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
-    ignoring_subjects = [
-        Subject.from_str(subject_name) for subject_name in config.IGNORING_SUBJECTS
-    ]
-    for subject in ignoring_subjects:
-        subject.is_ignored = True
-
     parser = CoreCoursesParser()
-    logger = CoreCoursesParser.logger
-    all_events = []
-    for i in range(len(config.TARGET_RANGES)):
-        logger.info(f"Processing target {i}")
-        all_events.extend(process_target_schedule(parser, i))
 
-    calendars = {
-        "filters": [{"title": "Course", "alias": "course"}],
-        "title": "Core Courses",
-        "calendars": [],
-    }
+    xlsx = parser.get_xlsx_file(spreadsheet_id=config.SPREADSHEET_ID)
 
-    directory = config.SAVE_ICS_PATH
-    json_file = config.SAVE_JSON_PATH
+    dfs = get_dataframes_pipeline()
 
-    # replace spaces and dashes with single dash
-    replace_spaces_pattern = re.compile(r"[\s-]+")
+    events = []
 
-    all_events = sorted(all_events, key=lambda x: (x.course, x.group))
-    now_str = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
-    logger.info("Writing JSON and iCalendars files...")
-    for course_name, course_events in itertools.groupby(all_events, lambda x: x.course):
-        logger.info(f" > Writing course {course_name}")
-        course_path = directory / replace_spaces_pattern.sub("-", course_name)
-        course_path.mkdir(parents=True, exist_ok=True)
-        for group_name, group_events in itertools.groupby(
-            course_events, lambda x: x.group
-        ):
-            logger.info(f"  > {group_name}...")
-            calendar = get_base_calendar()
-            calendar["x-wr-calname"] = group_name
-            vevents = []
+    for target in config.TARGETS:
+        parser.logger.info(f"Processing '{target.sheet_name}'... Range: {target.range}")
+        # find dataframe from dfs
+        sheet_df = dfs[target.sheet_name]
 
-            for group_event in group_events:
-                if group_event.subject.is_ignored:
-                    logger.info(f"   > Ignoring {group_event.subject.name}")
-                    continue
-                group_event: ScheduleEvent
-                group_vevents = group_event.get_vevents()
-                vevents.extend(group_vevents)
-                for vevent in group_vevents:
-                    calendar.add_component(vevent)
-
-            if course_name == "BS - Year 1":
-                for event in history_events:
-                    history_vevents = event.get_vevents()
-                    vevents.extend(history_vevents)
-                    for vevent in history_vevents:
-                        calendar.add_component(vevent)
-
-            file_name = f"{group_name}.ics"
-            file_path = course_path / file_name
-            calendar_name = group_name
-            calendars["calendars"].append(
-                {
-                    "name": calendar_name,
-                    "path": file_path.relative_to(json_file.parent).as_posix(),
-                    "type": "core course",
-                    "satellite": {"course": course_name},
-                }
+        time_columns_index = [
+            column_index_from_string(col) - 1 for col in target.time_columns
+        ]
+        by_courses = parser.split_df_by_courses(sheet_df, time_columns_index)
+        for course_df in by_courses:
+            # -------- Set course and group as header; weekday and timeslot as index --------
+            parser.set_course_and_group_as_header(course_df)
+            parser.set_weekday_and_time_as_index(course_df)
+            # -------- Process cells and generate events --------
+            event_generators = (
+                course_df
+                # -------- Group by weekday and time --------
+                .groupby(level=[0, 1], sort=False).agg(list)
+                # -------- Apply CoreCourseCell to each cell --------
+                .applymap(
+                    lambda x: None
+                    if all(pd.isna(y) for y in x)
+                    else CoreCourseCell(value=x)
+                )
+                # -------- Generate events from processed cells --------
+                .apply(parser.generate_events_from_processed_column, target=target)
             )
+            # -------- Append generated events to events list --------
+            events.extend(chain.from_iterable(event_generators))
 
-            with open(file_path, "wb") as f:
-                f.write(calendar.to_ical())
+    predefined_event_groups: list[PredefinedEventGroup] = []
 
-    # create a new .json file with information about calendars
-    with open(json_file, "w") as f:
-        json.dump(calendars, f, indent=4, sort_keys=True)
+    events.sort(key=lambda x: (x.course, x.group))
+    directory = config.SAVE_ICS_PATH
+    academic_tag = PredefinedTag(
+        alias="core-courses",
+        name="Core courses",
+        type="category",
+    )
+    semester_tag = PredefinedTag(
+        alias=config.SEMESTER_TAG.alias,
+        name=config.SEMESTER_TAG.name,
+        type=config.SEMESTER_TAG.type,
+    )
+    academic_tag_reference = academic_tag.reference
+    semester_tag_reference = semester_tag.reference
+
+    parser.logger.info("Writing JSON and iCalendars files...")
+    parser.logger.info(f"> Mount point: {config.MOUNT_POINT}")
+
+    tags = [academic_tag, semester_tag]
+    courses = set(event.course for event in events)
+    for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
+        course_slug = sluggify(course)
+        course_tag = PredefinedTag(
+            alias=course_slug,
+            name=course,
+            type="core-courses",
+        )
+        course_tag_reference = course_tag.reference
+        tags.append(course_tag)
+
+        group_calendar = get_base_calendar()
+
+        group_calendar["x-wr-calname"] = group
+        group_events = list(group_events)
+        cnt = 0
+        for group_event in group_events:
+            if group_event.subject in config.IGNORED_SUBJECTS:
+                parser.logger.info(f"> Ignoring {group_event.subject}")
+                continue
+            group_event: CoreCourseEvent
+            group_vevents = group_event.generate_vevents()
+            for vevent in group_vevents:
+                cnt += 1
+                group_calendar.add_component(vevent)
+        group_calendar.add("x-wr-total-vevents", str(cnt))
+
+        group_slug = sluggify(group)
+        group_alias = f"{semester_tag_reference.alias}-{group_slug}"
+        course_path = directory / course_slug
+        course_path.mkdir(parents=True, exist_ok=True)
+        file_name = f"{group_slug}.ics"
+        file_path = course_path / file_name
+
+        parser.logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+
+        with open(file_path, "wb") as f:
+            content = group_calendar.to_ical()
+            # TODO: add validation
+            f.write(content)
+
+        predefined_event_groups.append(
+            PredefinedEventGroup(
+                alias=group_alias,
+                name=group,
+                description=f"Core courses schedule for '{group}'",
+                path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
+                tags=[
+                    academic_tag_reference,
+                    semester_tag_reference,
+                    course_tag_reference,
+                ],
+            )
+        )
+
+    parser.logger.info(
+        f"Writing JSON file... {len(predefined_event_groups)} event groups."
+    )
+    output = Output(event_groups=predefined_event_groups, tags=tags)
+    # create a new .json file with information about calendar
+    with open(config.SAVE_JSON_PATH, "w") as f:
+        json.dump(output.dict(), f, indent=2, sort_keys=False)
