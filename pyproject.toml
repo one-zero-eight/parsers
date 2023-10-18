@@ -18,8 +18,5 @@ aiohttp = "^3.8.4"
 openpyxl = "^3.1.2"
 
 [tool.poetry.group.dev.dependencies]
-sphinx-rtd-theme = "^1.2.2"
-sphinx = "6"
-autodoc-pydantic = "^1.8.0"
 black = "^23.3.0"
 
