@@ -4,19 +4,18 @@ import re
 from collections import defaultdict
 from datetime import datetime
 from itertools import pairwise, groupby
-from typing import Collection, Generator
+from typing import Generator
 
 import numpy as np
 import pandas as pd
 import requests
-from google.oauth2.credentials import Credentials
 from openpyxl.utils.cell import coordinate_to_tuple
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.models import Elective, ElectiveEvent
+from schedule.electives.models import ElectiveCell
 from schedule.processors.regex import prettify_string
 from schedule.utils import *
-from schedule.electives.models import ElectiveCell
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 
@@ -26,21 +25,11 @@ class ElectiveParser:
     Elective parser class
     """
 
-    credentials: Credentials
-    """ Google API credentials object """
     logger = logging.getLogger(__name__ + "." + "Parser")
     """ Logger object """
 
     def __init__(self):
-        self.credentials = get_credentials(
-            credentials_path=config.CREDENTIALS_PATH,
-            token_path=config.TOKEN_PATH,
-            scopes=config.API_SCOPES,
-        )
         self.session = requests.Session()
-        self.session.headers.update(
-            {"Authorization": f"Bearer {self.credentials.token}"}
-        )
 
     def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, targets: list[config.Target]

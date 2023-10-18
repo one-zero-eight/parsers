@@ -10,7 +10,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, validator, SecretStr
 
-from schedule.config_base import VeryBaseParserConfig
+from schedule.config_base import BaseParserConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -30,7 +30,7 @@ class LinenChangeEntry(BaseModel):
     rrule: dict[str, str]
 
 
-class CleaningParserConfig(VeryBaseParserConfig):
+class CleaningParserConfig(BaseParserConfig):
     START_DATE: datetime.date
     END_DATE: datetime.date
 

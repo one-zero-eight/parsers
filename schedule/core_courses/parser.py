@@ -1,17 +1,13 @@
 import io
 import logging
-import re
-from collections import defaultdict
 from datetime import datetime
-from itertools import pairwise, groupby
-from typing import Collection, Generator
+from itertools import pairwise
+from typing import Generator
 from zipfile import ZipFile
 
-import icalendar
 import numpy as np
 import pandas as pd
 import requests
-from google.oauth2.credentials import Credentials
 
 from schedule.core_courses.config import core_courses_config as config
 from schedule.core_courses.models import CoreCourseEvent, CoreCourseCell
@@ -23,22 +19,14 @@ class CoreCoursesParser:
     """
     Elective parser class
     """
-
-    credentials: Credentials
-    """ Google API credentials object """
+    #
+    # credentials: Credentials
+    # """ Google API credentials object """
     logger = logging.getLogger(__name__ + "." + "Parser")
     """ Logger object """
 
     def __init__(self):
-        self.credentials = get_credentials(
-            credentials_path=config.CREDENTIALS_PATH,
-            token_path=config.TOKEN_PATH,
-            scopes=config.API_SCOPES,
-        )
         self.session = requests.Session()
-        self.session.headers.update(
-            {"Authorization": f"Bearer {self.credentials.token}"}
-        )
 
     def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, targets: list[config.Target]

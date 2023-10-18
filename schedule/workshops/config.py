@@ -3,7 +3,7 @@ from pathlib import Path
 
 from pydantic import parse_obj_as, validator
 
-from schedule.config_base import VeryBaseParserConfig
+from schedule.config_base import BaseParserConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -12,7 +12,7 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 """Path to config.json file"""
 
 
-class BootcampParserConfig(VeryBaseParserConfig):
+class BootcampParserConfig(BaseParserConfig):
     SPREADSHEET_PATH: Path
     YEAR_OF_BOOTCAMP: int = 2023
 

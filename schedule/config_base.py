@@ -70,7 +70,7 @@ class CSS3Color(StrEnum):
         return list(cls.__members__.values())[idx]
 
 
-class VeryBaseParserConfig(BaseModel):
+class BaseParserConfig(BaseModel):
     MOUNT_POINT: Path = PROJECT_ROOT / "output"
     """Mount point for output files"""
     SAVE_ICS_PATH: Path
@@ -79,7 +79,7 @@ class VeryBaseParserConfig(BaseModel):
     """Path to save .json file"""
 
     @validator("SAVE_JSON_PATH", "SAVE_ICS_PATH", pre=True, always=True)
-    def relative_path_ics(cls, v, values):
+    def relative_path(cls, v, values):
         """If not absolute path, then with respect to the main directory"""
         v = Path(v)
         if not v.is_absolute():
@@ -107,49 +107,8 @@ class VeryBaseParserConfig(BaseModel):
         return v
 
 
-class GoogleSpreadsheetConfig(VeryBaseParserConfig):
-    """
-    Base config for parsers
-    """
-
-    CREDENTIALS_PATH: Path = "credentials.json"
-    """Path to credentials.json file for Google Sheets API"""
-    TOKEN_PATH: Path = "token.json"
-    """Path to token.json file for Google Sheets API"""
-
-    API_SCOPES = [
-        "https://www.googleapis.com/auth/spreadsheets.readonly",
-        "https://www.googleapis.com/auth/drive.readonly",
-    ]
-    """API scopes for Google Sheets API"""
-    TIMEZONE_DELTA = "+03:00"
-    """Timezone delta for events"""
-
-    @validator(
-        "CREDENTIALS_PATH",
-        "TOKEN_PATH",
-        "SAVE_JSON_PATH",
-        pre=True,
-        always=True,
-    )
-    def relative_path(cls, v):
-        """If not absolute path, then with respect to the main directory"""
-        v = Path(v)
-        if not v.is_absolute():
-            v = PROJECT_ROOT / v
-        return v
-
-
 __all__ = [
-    "GoogleSpreadsheetConfig",
-    "VeryBaseParserConfig",
+    "BaseParserConfig",
     "CSS3Color",
     "DayOfWeek",
 ]
-
-if __name__ == "__main__":
-    cfg = GoogleSpreadsheetConfig(
-        SAVE_ICS_PATH=Path(""),
-        SAVE_JSON_PATH=Path(""),
-    )
-    print(cfg.CREDENTIALS_PATH.absolute())

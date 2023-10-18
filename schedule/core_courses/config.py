@@ -4,7 +4,7 @@ from pathlib import Path
 
 from pydantic import parse_obj_as, validator, BaseModel
 
-from schedule.config_base import GoogleSpreadsheetConfig
+from schedule.config_base import BaseParserConfig
 from schedule.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -13,7 +13,7 @@ CONFIG_PATH = Path(__file__).parent / "config.json"
 """Path to config.json file"""
 
 
-class CoreCoursesConfig(GoogleSpreadsheetConfig):
+class CoreCoursesConfig(BaseParserConfig):
     """
     Config for electives parser from Google Sheets
     """
@@ -78,12 +78,3 @@ with open(CONFIG_PATH, "r") as f:
 core_courses_config: CoreCoursesConfig = parse_obj_as(
     CoreCoursesConfig, elective_config_dict
 )
-
-
-if __name__ == "__main__":
-    cfg = GoogleSpreadsheetConfig(
-        SAVE_ICS_PATH=Path(""),
-        SAVE_JSON_PATH=Path(""),
-    )
-    print(PROJECT_ROOT)
-    print(cfg.CREDENTIALS_PATH.absolute())
