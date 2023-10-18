@@ -70,13 +70,13 @@ class ElectiveParser:
             # -------- Set time column as index --------
             df = ElectiveParser.set_time_column_as_index(df)
             # -------- Strip all values --------
-            df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+            df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
             # -------- Fill empty cells --------
             df = df.replace(r"^\s*$", np.nan, regex=True)
             # -------- Exclude nan rows --------
             df = df.dropna(how="all")
             # -------- Strip, translate and remove trailing spaces --------
-            df = df.applymap(prettify_string)
+            df = df.map(prettify_string)
             # -------- Update dataframe --------
             dfs[target.sheet_name] = df
         self.logger.info("Dataframes ready")
@@ -241,7 +241,7 @@ class ElectiveParser:
         :return: parsed events
         """
 
-        df = df.applymap(
+        df = df.map(
             lambda x: ElectiveCell(original=x.strip().split("\n"))
             if not pd.isna(x)
             else x

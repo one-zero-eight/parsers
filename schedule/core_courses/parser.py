@@ -70,7 +70,7 @@ class CoreCoursesParser:
             # -------- Fill empty cells --------
             df = df.replace(r"^\s*$", np.nan, regex=True)
             # -------- Strip, translate and remove trailing spaces --------
-            df = df.applymap(prettify_string)
+            df = df.map(prettify_string)
             # -------- Update dataframe --------
             dfs[target.sheet_name] = df
 
@@ -162,7 +162,7 @@ class CoreCoursesParser:
         # drop column
         df.drop(df.columns[column], axis=1, inplace=True)
         # fill nan values with previous value
-        df_column.fillna(method="ffill", inplace=True)
+        df_column.ffill(inplace=True)
 
         # ----- Process weekday ------ #
         # get indexes of weekdays
@@ -171,7 +171,7 @@ class CoreCoursesParser:
         ]
 
         # create index mapping for weekdays [None, None, "MONDAY", "MONDAY", ...]
-        index_mapping = pd.Series(index=df_column.index)
+        index_mapping = pd.Series(index=df_column.index, dtype=object)
         last_index = len(df_column)
         for start, end in pairwise(weekdays_indexes + [last_index]):
             index_mapping.iloc[start] = "delete"
@@ -219,7 +219,7 @@ class CoreCoursesParser:
         df.drop(list(rows), inplace=True)
         df.reset_index(drop=True, inplace=True)
         # fill nan values with previous value
-        df_header = df_header.fillna(method="ffill", axis=1)
+        df_header = df_header.ffill(axis=1)
         multiindex = pd.MultiIndex.from_arrays(
             df_header.values, names=["course", "group"]
         )

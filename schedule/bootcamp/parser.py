@@ -18,7 +18,7 @@ class BootcampParser:
     def __init__(self):
         with config.SPREADSHEET_PATH.open("rb") as f:
             self.df = pd.read_excel(f, engine="openpyxl", header=0, index_col=[0])
-        # self.df.iloc[:, 0].fillna(method="ffill", axis=0, inplace=True)
+        # self.df.iloc[:, 0].ffil(, axis=0, inplace=True)
         # self.df.set_index(self.df.columns[0], inplace=True)
         BootcampParser.process_header_with_dates(self.df)
         BootcampParser.process_index_with_time(self.df)
@@ -36,7 +36,7 @@ class BootcampParser:
 
     @staticmethod
     def remove_trailing_spaces(df: pd.DataFrame):
-        return df.applymap(
+        return df.map(
             lambda x: x.strip() if isinstance(x, str) else x,
         )
 

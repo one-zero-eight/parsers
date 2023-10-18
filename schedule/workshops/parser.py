@@ -20,7 +20,7 @@ class WorkshopParser:
     def __init__(self):
         with config.SPREADSHEET_PATH.open("rb") as f:
             self.df = pd.read_excel(f, engine="openpyxl", header=0)
-        # self.df.iloc[:, 0].fillna(method="ffill", axis=0, inplace=True)
+        # self.df.iloc[:, 0].ffil(, axis=0, inplace=True)
         # self.df.set_index(self.df.columns[0], inplace=True)
 
         WorkshopParser.process_header_with_dates(self.df)
@@ -41,7 +41,7 @@ class WorkshopParser:
 
     @staticmethod
     def remove_trailing_spaces(df: pd.DataFrame):
-        return df.applymap(
+        return df.map(
             lambda x: x.strip() if isinstance(x, str) else x,
         )
 

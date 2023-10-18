@@ -108,7 +108,7 @@ if __name__ == "__main__":
                 # -------- Group by weekday and time --------
                 .groupby(level=[0, 1], sort=False).agg(list)
                 # -------- Apply CoreCourseCell to each cell --------
-                .applymap(
+                .map(
                     lambda x: None
                     if all(pd.isna(y) for y in x)
                     else CoreCourseCell(value=x)
