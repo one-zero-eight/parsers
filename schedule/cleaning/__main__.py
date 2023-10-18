@@ -1,54 +1,20 @@
+import asyncio
 import logging
-from typing import Iterable, Any
+from itertools import groupby
+from typing import Iterable
 
-from pydantic import BaseModel, Field
-
-from schedule.cleaning.parser import CleaningParser, CleaningEvent, LinenChangeEvent
 from schedule.cleaning.config import cleaning_config as config
+from schedule.cleaning.parser import CleaningParser, CleaningEvent, LinenChangeEvent
+from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups
 from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
-from itertools import groupby
-import icalendar
-
 from schedule.utils import get_base_calendar
-
-
-class Output(BaseModel):
-    event_groups: list[PredefinedEventGroup]
-    tags: list[PredefinedTag]
-    meta: dict[str, Any] = Field(default_factory=dict)
-
-    def __init__(
-        self,
-        event_groups: list[PredefinedEventGroup],
-        tags: list[PredefinedTag],
-    ):
-        # only unique (alias, type) tags
-        visited = set()
-
-        visited_tags = []
-
-        for tag in tags:
-            if (tag.alias, tag.type) not in visited:
-                visited.add((tag.alias, tag.type))
-                visited_tags.append(tag)
-
-        # sort tags
-        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
-
-        super().__init__(event_groups=event_groups, tags=visited_tags)
-
-        self.meta = {
-            "event_groups_count": len(self.event_groups),
-            "tags_count": len(self.tags),
-        }
-
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
     parser = CleaningParser(config)
-    logger = CleaningParser.logger
+
     cleaning_events = parser.get_cleaning_events()
 
     logging.info(f"Cleaning events: {len(cleaning_events)}")
@@ -97,7 +63,7 @@ if __name__ == "__main__":
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
             )
         )
-        logger.info(f"Saving {file_path}")
+        logging.info(f"Saving {file_path}")
         with open(file_path, "wb") as f:
             f.write(calendar.to_ical())
 
@@ -143,7 +109,7 @@ if __name__ == "__main__":
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
             )
         )
-        logger.info(f"Saving {file_path}")
+        logging.info(f"Saving {file_path}")
         with open(file_path, "wb") as f:
             f.write(calendar.to_ical())
 
@@ -152,7 +118,19 @@ if __name__ == "__main__":
         tags=[cleaning_tag, linen_change_tag, cleaning_cleaning_tag],
     )
 
-    logger.info(f"Saving calendars information to {json_file}")
+    logging.info(f"Saving calendars information to {json_file}")
 
     with open(json_file, "w") as f:
         f.write(output.json(indent=2, sort_keys=False))
+
+    # InNoHassle integration
+    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+        logging.info("Skipping InNoHassle integration")
+        exit(0)
+
+    inh_client = InNoHassleEventsClient(
+        api_url=config.INNOHASSLE_API_URL,
+        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+    )
+
+    asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))

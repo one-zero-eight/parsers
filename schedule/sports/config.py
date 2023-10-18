@@ -3,7 +3,7 @@ __all__ = ["sports_config", "SportsParserConfig"]
 import datetime
 from pathlib import Path
 
-from pydantic import BaseModel, validator, SecretStr
+from pydantic import BaseModel, SecretStr
 
 from schedule.config_base import BaseParserConfig
 from schedule.utils import get_project_root

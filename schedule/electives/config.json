@@ -1,4 +1,5 @@
 {
+  "INNOHASSLE_API_URL": "https://api.innohassle.ru/events/v0",
   "SPREADSHEET_ID": "1TKPSqry0_C4DK0JB2TwPfcQJ9Lzf4W-u",
   "SEMESTER_TAG": {
     "alias": "f23",

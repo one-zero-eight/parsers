@@ -1,18 +1,20 @@
+import asyncio
 import json
 import logging
-import os
 from hashlib import sha1
 from itertools import chain, groupby
-from typing import Any
 
-import icalendar
 import pandas as pd
 from openpyxl.utils import column_index_from_string
-from pydantic import BaseModel, Field
 
 from schedule.core_courses.config import core_courses_config as config
 from schedule.core_courses.models import CoreCourseCell, CoreCourseEvent
 from schedule.core_courses.parser import CoreCoursesParser
+from schedule.innohassle import (
+    InNoHassleEventsClient,
+    Output,
+    update_inh_event_groups,
+)
 from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
@@ -32,50 +34,19 @@ def get_dataframes_pipeline() -> dict[str, pd.DataFrame]:
     dfs = parser.get_clear_dataframes_from_xlsx(xlsx_file=xlsx, targets=config.TARGETS)
     hashsum = hashsum_dfs(dfs)
 
-    parser.logger.info(f"Hashsum: {hashsum}")
+    logging.info(f"Hashsum: {hashsum}")
     xlsx_path = config.TEMP_DIR / f"{hashsum}.xlsx"
 
     if xlsx_path.exists():
-        parser.logger.info(f"Hashsum match!")
+        logging.info(f"Hashsum match!")
 
     with open(xlsx_path, "wb") as f:
-        parser.logger.info(f"Saving cached file {hashsum}.xlsx")
+        logging.info(f"Saving cached file {hashsum}.xlsx")
         xlsx.seek(0)
         content = xlsx.read()
         f.write(content)
 
     return dfs
-
-
-class Output(BaseModel):
-    event_groups: list[PredefinedEventGroup]
-    tags: list[PredefinedTag]
-    meta: dict[str, Any] = Field(default_factory=dict)
-
-    def __init__(
-        self,
-        event_groups: list[PredefinedEventGroup],
-        tags: list[PredefinedTag],
-    ):
-        # only unique (alias, type) tags
-        visited = set()
-
-        visited_tags = []
-
-        for tag in tags:
-            if (tag.alias, tag.type) not in visited:
-                visited.add((tag.alias, tag.type))
-                visited_tags.append(tag)
-
-        # sort tags
-        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
-
-        super().__init__(event_groups=event_groups, tags=visited_tags)
-
-        self.meta = {
-            "event_groups_count": len(self.event_groups),
-            "tags_count": len(self.tags),
-        }
 
 
 if __name__ == "__main__":
@@ -90,7 +61,7 @@ if __name__ == "__main__":
     events = []
 
     for target in config.TARGETS:
-        parser.logger.info(f"Processing '{target.sheet_name}'... Range: {target.range}")
+        logging.info(f"Processing '{target.sheet_name}'... Range: {target.range}")
         # find dataframe from dfs
         sheet_df = dfs[target.sheet_name]
 
@@ -136,8 +107,8 @@ if __name__ == "__main__":
     academic_tag_reference = academic_tag.reference
     semester_tag_reference = semester_tag.reference
 
-    parser.logger.info("Writing JSON and iCalendars files...")
-    parser.logger.info(f"> Mount point: {config.MOUNT_POINT}")
+    logging.info("Writing JSON and iCalendars files...")
+    logging.info(f"> Mount point: {config.MOUNT_POINT}")
 
     tags = [academic_tag, semester_tag]
     courses = set(event.course for event in events)
@@ -158,7 +129,7 @@ if __name__ == "__main__":
         cnt = 0
         for group_event in group_events:
             if group_event.subject in config.IGNORED_SUBJECTS:
-                parser.logger.info(f"> Ignoring {group_event.subject}")
+                logging.info(f"> Ignoring {group_event.subject}")
                 continue
             group_event: CoreCourseEvent
             group_vevents = group_event.generate_vevents()
@@ -174,7 +145,7 @@ if __name__ == "__main__":
         file_name = f"{group_slug}.ics"
         file_path = course_path / file_name
 
-        parser.logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+        logging.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
 
         with open(file_path, "wb") as f:
             content = group_calendar.to_ical()
@@ -195,10 +166,22 @@ if __name__ == "__main__":
             )
         )
 
-    parser.logger.info(
+    logging.info(
         f"Writing JSON file... {len(predefined_event_groups)} event groups."
     )
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
     with open(config.SAVE_JSON_PATH, "w") as f:
         json.dump(output.dict(), f, indent=2, sort_keys=False)
+
+    # InNoHassle integration
+    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+        logging.info("Skipping InNoHassle integration")
+        exit(0)
+
+    inh_client = InNoHassleEventsClient(
+        api_url=config.INNOHASSLE_API_URL,
+        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+    )
+
+    asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))

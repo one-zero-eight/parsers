@@ -1,50 +1,16 @@
+import asyncio
 import json
 import logging
-import re
-from hashlib import md5, sha1
-from typing import Any
+from hashlib import sha1
 
-import icalendar
 import pandas as pd
-from pydantic import BaseModel, Field
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.parser import ElectiveParser, convert_separation
+from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups
 from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
-
-
-class Output(BaseModel):
-    event_groups: list[PredefinedEventGroup]
-    tags: list[PredefinedTag]
-    meta: dict[str, Any] = Field(default_factory=dict)
-
-    def __init__(
-        self,
-        event_groups: list[PredefinedEventGroup],
-        tags: list[PredefinedTag],
-    ):
-        # only unique (alias, type) tags
-        visited = set()
-
-        visited_tags = []
-
-        for tag in tags:
-            if (tag.alias, tag.type) not in visited:
-                visited.add((tag.alias, tag.type))
-                visited_tags.append(tag)
-
-        # sort tags
-        visited_tags = sorted(visited_tags, key=lambda x: (x.type, x.alias))
-
-        super().__init__(event_groups=event_groups, tags=visited_tags)
-
-        self.meta = {
-            "event_groups_count": len(self.event_groups),
-            "tags_count": len(self.tags),
-        }
-
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
@@ -66,14 +32,14 @@ if __name__ == "__main__":
     )
     # noinspection InsecureHash
     hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
-    parser.logger.info(f"Hashsum: {hashsum}")
+    logging.info(f"Hashsum: {hashsum}")
     xlsx_path = config.TEMP_DIR / f"{hashsum}.xlsx"
     # check if file exists
     if xlsx_path.exists():
-        parser.logger.info(f"Hashsum match!")
+        logging.info(f"Hashsum match!")
 
     with open(xlsx_path, "wb") as f:
-        parser.logger.info(f"Loading cached file {hashsum}.xlsx")
+        logging.info(f"Loading cached file {hashsum}.xlsx")
         xlsx.seek(0)
         content = xlsx.read()
         f.write(content)
@@ -98,7 +64,7 @@ if __name__ == "__main__":
     mount_point = config.SAVE_ICS_PATH
 
     for target in config.TARGETS:
-        parser.logger.info(f"Processing {target.sheet_name}... Range: {target.range}")
+        logging.info(f"Processing {target.sheet_name}... Range: {target.range}")
 
         sheet_df = next(
             df
@@ -149,7 +115,7 @@ if __name__ == "__main__":
             file_name = f"{elective_x_group_alias}.ics"
             file_path = elective_type_directory / file_name
 
-            parser.logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+            logging.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
 
             with open(file_path, "wb") as f:
                 content = calendar.to_ical()
@@ -176,10 +142,20 @@ if __name__ == "__main__":
                 )
             )
 
-    parser.logger.info(
-        f"Writing JSON file... {len(predefined_event_groups)} event groups."
-    )
+    logging.info(f"Writing JSON file... {len(predefined_event_groups)} event groups.")
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
     with open(config.SAVE_JSON_PATH, "w") as f:
         json.dump(output.dict(), f, indent=2, sort_keys=False)
+
+    # InNoHassle integration
+    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+        logging.info("Skipping InNoHassle integration")
+        exit(0)
+
+    inh_client = InNoHassleEventsClient(
+        api_url=config.INNOHASSLE_API_URL,
+        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+    )
+
+    asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))

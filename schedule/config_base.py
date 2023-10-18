@@ -1,7 +1,8 @@
 from enum import StrEnum
 from pathlib import Path
+from typing import Optional
 
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, validator, SecretStr
 
 from schedule.utils import get_project_root
 
@@ -77,6 +78,9 @@ class BaseParserConfig(BaseModel):
     """Path to directory to save .ics files relative to MOUNT_POINT"""
     SAVE_JSON_PATH: Path
     """Path to save .json file"""
+    INNOHASSLE_API_URL: Optional[str] = None
+    """URL to InNoHassle API"""
+    PARSER_AUTH_KEY: Optional[SecretStr] = None
 
     @validator("SAVE_JSON_PATH", "SAVE_ICS_PATH", pre=True, always=True)
     def relative_path(cls, v, values):
@@ -104,6 +108,14 @@ class BaseParserConfig(BaseModel):
         """Create directory if not exists"""
         v = Path(v)
         v.mkdir(parents=True, exist_ok=True)
+        return v
+
+    @validator("PARSER_AUTH_KEY", pre=True, always=True)
+    def from_env(cls, v):
+        """Get PARSER_AUTH_KEY from environment variable"""
+        if v is None:
+            from os import environ
+            v = environ.get("PARSER_AUTH_KEY")
         return v
 
 
