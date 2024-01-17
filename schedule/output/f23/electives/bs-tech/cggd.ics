@@ -183,36 +183,36 @@ LOCATION:101
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
-DTSTART:20231201T143000
-DTEND:20231201T160000
-UID:7298f6dd@innohassle.ru
-CATEGORIES:Computer Graphics in Game Development
-COLOR:darkslateblue
-DESCRIPTION:Subject: Computer Graphics in Game Development\nInstructor: Iv
- an Belyavtsev\nTime: 14:30 - 16:00\nDate: 01.12.2023
-LOCATION:108
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Computer Graphics in Game Development
 DTSTART:20231201T161000
 DTEND:20231201T174000
-UID:d374241e@innohassle.ru
+UID:ce2f585e@innohassle.ru
 CATEGORIES:Computer Graphics in Game Development
 COLOR:darkslateblue
 DESCRIPTION:Subject: Computer Graphics in Game Development\nInstructor: Iv
  an Belyavtsev\nTime: 16:10 - 17:40\nDate: 01.12.2023
-LOCATION:108
+LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development
 DTSTART:20231201T175000
 DTEND:20231201T192000
-UID:7e745a15@innohassle.ru
+UID:632f2655@innohassle.ru
 CATEGORIES:Computer Graphics in Game Development
 COLOR:darkslateblue
 DESCRIPTION:Subject: Computer Graphics in Game Development\nInstructor: Iv
  an Belyavtsev\nTime: 17:50 - 19:20\nDate: 01.12.2023
-LOCATION:108
+LOCATION:312
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Computer Graphics in Game Development
+DTSTART:20231201T193000
+DTEND:20231201T210000
+UID:7da7a022@innohassle.ru
+CATEGORIES:Computer Graphics in Game Development
+COLOR:darkslateblue
+DESCRIPTION:Subject: Computer Graphics in Game Development\nInstructor: Iv
+ an Belyavtsev\nTime: 19:30 - 21:00\nDate: 01.12.2023
+LOCATION:312
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Computer Graphics in Game Development

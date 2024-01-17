@@ -257,13 +257,13 @@ DESCRIPTION:Instructor: Darko Bozhinoski\nGroup: B22-DSAI-04\nCourse: BS -
 LOCATION:ONLINE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Philosophy II (lab)
+SUMMARY:Philosophy II: Introduction to AI (lab)
 DTSTART:20231023T130000
 DTEND:20231023T143000
 DTSTAMP:20231023T000000
-UID:x-441fdd9b@innohassle.ru
+UID:x-36dacc8c@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
-COLOR:chocolate
+COLOR:teal
 DESCRIPTION:Instructor: Jayveersinh Raj\nGroup: B22-DSAI-04\nCourse: BS - 
  Year 2\nTime: 13:00 - 14:30
 LOCATION:421

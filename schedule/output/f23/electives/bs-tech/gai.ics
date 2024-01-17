@@ -320,13 +320,13 @@ BEGIN:VEVENT
 SUMMARY:Generative Artificial Intelligence (lab)
 DTSTART:20231128T175000
 DTEND:20231128T192000
-UID:e9316926@innohassle.ru
+UID:7b8443f7@innohassle.ru
 CATEGORIES:Generative Artificial Intelligence
 COLOR:brown
 DESCRIPTION:Subject: Generative Artificial Intelligence\nInstructor: Muham
  mad Fahim (lec)\, Gcinizwe Dlamini (lab)\nTime: 17:50 - 19:20\nDate: 28.11
  .2023
-LOCATION:313 (BS3)
+LOCATION:313 (BS3) SMP (online)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Generative Artificial Intelligence (lab)

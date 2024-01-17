@@ -12,13 +12,19 @@ import requests
 from schedule.core_courses.config import core_courses_config as config
 from schedule.core_courses.models import CoreCourseEvent, CoreCourseCell
 from schedule.processors.regex import prettify_string
-from schedule.utils import *
+from schedule.utils import (
+    get_merged_ranges,
+    get_sheet_by_id,
+    get_sheets,
+    split_range_to_xy,
+)
 
 
 class CoreCoursesParser:
     """
     Elective parser class
     """
+
     #
     # credentials: Credentials
     # """ Google API credentials object """
@@ -50,7 +56,11 @@ class CoreCoursesParser:
 
         for target in targets:
             self.logger.info(f"Processing sheet: '{target.sheet_name}'")
-            df = dfs[target.sheet_name]
+            df = None
+            for key, value in dfs.items():
+                if key.startswith(target.sheet_name):
+                    df = value
+                    break
             # -------- Fill merged cells with values --------
             CoreCoursesParser.merge_cells(df, xlsx_file, target.sheet_name)
             # -------- Select range --------

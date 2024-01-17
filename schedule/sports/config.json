@@ -1,7 +1,7 @@
 {
   "INNOHASSLE_API_URL": "https://api.innohassle.ru/events/v0",
-  "START_OF_SEMESTER": "2023-08-28",
-  "END_OF_SEMESTER": "2023-12-25",
+  "START_OF_SEMESTER": "2024-01-22",
+  "END_OF_SEMESTER": "2024-05-25",
   "SAVE_ICS_PATH": "sports",
   "SAVE_JSON_PATH": "sports.json"
 }

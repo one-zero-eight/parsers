@@ -339,7 +339,7 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231024T160000
 DTEND:20231024T173000
 DTSTAMP:20231023T000000
-UID:x-954b20f9@innohassle.ru
+UID:x-d7f88938@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:mediumvioletred
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
@@ -448,7 +448,7 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T124000
 DTEND:20231027T141000
 DTSTAMP:20231023T000000
-UID:x-21b03cc1@innohassle.ru
+UID:x-ff1452da@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:mediumvioletred
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
@@ -473,12 +473,12 @@ SUMMARY:English for Academic Purposes I
 DTSTART:20231027T160000
 DTEND:20231027T173000
 DTSTAMP:20231023T000000
-UID:x-281f6c7a@innohassle.ru
+UID:x-42f2e77d@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:mediumvioletred
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Arslanova\,Melnikova\,Sadu
  ov\,Marouf\,Vasilyeva\nGroup: B23-DSAI-02\nCourse: BS - Year 1\nTime: 16:0
  0 - 17:30
-LOCATION:106/313/314/316/318/320/421
+LOCATION:106/313 (ROOM 107 ON 24/11)/314/316/318/320/421
 END:VEVENT
 END:VCALENDAR

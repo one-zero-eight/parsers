@@ -165,12 +165,12 @@ SUMMARY:Sensing\, perception\, and actuation (lec)
 DTSTART:20231024T124000
 DTEND:20231024T141000
 DTSTAMP:20231023T000000
-UID:x-a0c7b33d@innohassle.ru
+UID:x-d6730eb4@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:maroon
-DESCRIPTION:Instructor: Dmitry Popov\nGroup: M23-RO-01\nCourse: MS - Year 
- 1\nTime: 12:40 - 14:10
-LOCATION:ONLINE
+DESCRIPTION:Instructor: Ruslan Damindarov\nGroup: M23-RO-01\nCourse: MS - 
+ Year 1\nTime: 12:40 - 14:10
+LOCATION:102
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sensing\, perception\, and actuation (lab)
@@ -237,12 +237,12 @@ SUMMARY:Sensing\, perception\, and actuation (lec)
 DTSTART:20231026T104000
 DTEND:20231026T121000
 DTSTAMP:20231023T000000
-UID:x-d384a9d7@innohassle.ru
+UID:x-8b0de359@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20231210T000000;INTERVAL=1;WKST=MO
 COLOR:maroon
-DESCRIPTION:Instructor: Dmitry Popov\nGroup: M23-RO-01\nCourse: MS - Year 
- 1\nTime: 10:40 - 12:10
-LOCATION:ONLINE
+DESCRIPTION:Instructor: Ruslan Damindarov\nGroup: M23-RO-01\nCourse: MS - 
+ Year 1\nTime: 10:40 - 12:10
+LOCATION:104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sensing\, perception\, and actuation (lab)

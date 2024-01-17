@@ -141,12 +141,12 @@ BEGIN:VEVENT
 SUMMARY:Enterprise programming on Javascript - Advanced
 DTSTART:20231125T091000
 DTEND:20231125T104000
-UID:aad99f0f@innohassle.ru
+UID:c8b726cb@innohassle.ru
 CATEGORIES:Enterprise programming on Javascript - Advanced
 COLOR:darkolivegreen
 DESCRIPTION:Subject: Enterprise programming on Javascript - Advanced\nInst
  ructor: Nikita Grigoryev\nTime: 09:10 - 10:40\nDate: 25.11.2023
-LOCATION:320
+LOCATION:320 ASEM 101
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Enterprise programming on Javascript - Advanced

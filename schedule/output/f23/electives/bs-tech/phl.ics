@@ -128,28 +128,6 @@ LOCATION:101
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
-DTSTART:20231103T105000
-DTEND:20231103T122000
-UID:8a39c7ac@innohassle.ru
-CATEGORIES:Programming in Haskell
-COLOR:darkslateblue
-DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
- Time: 10:50 - 12:20\nDate: 03.11.2023
-LOCATION:107
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Programming in Haskell
-DTSTART:20231103T125000
-DTEND:20231103T142000
-UID:c0892885@innohassle.ru
-CATEGORIES:Programming in Haskell
-COLOR:darkslateblue
-DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
- Time: 12:50 - 14:20\nDate: 03.11.2023
-LOCATION:107
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Programming in Haskell
 DTSTART:20231110T105000
 DTEND:20231110T122000
 UID:9c1a2278@innohassle.ru
@@ -172,14 +150,14 @@ LOCATION:307
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
-DTSTART:20231117T125000
-DTEND:20231117T142000
-UID:de71ff96@innohassle.ru
+DTSTART:20231117T091000
+DTEND:20231117T104000
+UID:4c1f69cd@innohassle.ru
 CATEGORIES:Programming in Haskell
 COLOR:darkslateblue
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
- Time: 12:50 - 14:20\nDate: 17.11.2023
-LOCATION:313
+ Time: 09:10 - 10:40\nDate: 17.11.2023
+LOCATION:107
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Programming in Haskell
@@ -235,5 +213,27 @@ COLOR:darkslateblue
 DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
  Time: 12:50 - 14:20\nDate: 01.12.2023
 LOCATION:107
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Programming in Haskell
+DTSTART:20231209T161000
+DTEND:20231209T174000
+UID:aa7751ba@innohassle.ru
+CATEGORIES:Programming in Haskell
+COLOR:darkslateblue
+DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
+ Time: 16:10 - 17:40\nDate: 09.12.2023
+LOCATION:106
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Programming in Haskell
+DTSTART:20231209T175000
+DTEND:20231209T192000
+UID:7772fb1@innohassle.ru
+CATEGORIES:Programming in Haskell
+COLOR:darkslateblue
+DESCRIPTION:Subject: Programming in Haskell\nInstructor: Nikolay Kudasov\n
+ Time: 17:50 - 19:20\nDate: 09.12.2023
+LOCATION:106
 END:VEVENT
 END:VCALENDAR
