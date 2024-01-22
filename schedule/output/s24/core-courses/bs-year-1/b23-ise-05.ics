@@ -106,13 +106,13 @@ SUMMARY:English for Academic Purposes II
 DTSTART:20240123T160000
 DTEND:20240123T173000
 DTSTAMP:20240122T000000
-UID:x-924108f0@innohassle.ru
+UID:x-f66687d0@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20240525T000000;INTERVAL=1;WKST=MO
 COLOR:indianred
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Kruglova\,Melnikova\,Saduo
  v\,Marouf\,Vasilyeva\nGroup: B23-ISE-05\nCourse: BS - Year 1\nTime: 16:00 
  - 17:30
-LOCATION:106/301/312/314/321/421
+LOCATION:106/301/304/312/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analytical Geometry and Linear Algebra II (lec)
@@ -215,13 +215,13 @@ SUMMARY:English for Academic Purposes II
 DTSTART:20240126T124000
 DTEND:20240126T141000
 DTSTAMP:20240122T000000
-UID:x-1a52975d@innohassle.ru
+UID:x-41bf21a1@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20240525T000000;INTERVAL=1;WKST=MO
 COLOR:indianred
 DESCRIPTION:Instructor: Gelvanovsky\,Rednikova\,Kruglova\,Melnikova\,Saduo
  v\,Marouf\,Vasilyeva\nGroup: B23-ISE-05\nCourse: BS - Year 1\nTime: 12:40 
  - 14:10
-LOCATION:106/314/316/320/321/421
+LOCATION:106/301/316/320/321/421
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mathematical Analysis II (lab)

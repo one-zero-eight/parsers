@@ -45,12 +45,12 @@ SUMMARY:Human-AI Interaction Design (lab)
 DTSTART:20240123T110000
 DTEND:20240123T123000
 DTSTAMP:20240122T000000
-UID:x-aad29a32@innohassle.ru
+UID:x-cef01f22@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20240525T000000;INTERVAL=1;WKST=MO
 COLOR:mediumvioletred
 DESCRIPTION:Instructor: Ali Belal Jnadi\nGroup: B22-AI-02\nCourse: BS - Ye
  ar 2\nTime: 11:00 - 12:30
-LOCATION:421
+LOCATION:104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Introduction to Machine Learning (lab)

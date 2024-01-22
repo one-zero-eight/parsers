@@ -1,10 +1,58 @@
 {
   "event_groups": [
     {
+      "alias": "crossfit",
+      "path": "sports/crossfit.ics",
+      "name": "CrossFit",
+      "description": "Sport schedule for 'CrossFit'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "functional-lsd",
+      "path": "sports/functional-lsd.ics",
+      "name": "Functional LSD",
+      "description": "Sport schedule for 'Functional LSD'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
       "alias": "functional-training",
       "path": "sports/functional-training.ics",
       "name": "Functional Training",
       "description": "Sport schedule for 'Functional Training'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "rage",
+      "path": "sports/rage.ics",
+      "name": "RAGE",
+      "description": "Sport schedule for 'RAGE'",
+      "tags": [
+        {
+          "alias": "sports",
+          "type": "category"
+        }
+      ]
+    },
+    {
+      "alias": "rage-knights",
+      "path": "sports/rage-knights.ics",
+      "name": "RAGE - Knights",
+      "description": "Sport schedule for 'RAGE - Knights'",
       "tags": [
         {
           "alias": "sports",
@@ -45,7 +93,7 @@
     }
   ],
   "meta": {
-    "event_groups_count": 3,
+    "event_groups_count": 7,
     "tags_count": 1
   }
 }

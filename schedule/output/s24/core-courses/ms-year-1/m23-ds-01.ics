@@ -45,12 +45,12 @@ SUMMARY:Advanced Information Retrieval (lec)
 DTSTART:20240122T160000
 DTEND:20240122T173000
 DTSTAMP:20240122T000000
-UID:x-dae40fda@innohassle.ru
+UID:x-a72df466@innohassle.ru
 RRULE:FREQ=WEEKLY;UNTIL=20240525T000000;INTERVAL=1;WKST=MO
 COLOR:darkolivegreen
 DESCRIPTION:Instructor: Leonard Johard\nGroup: M23-DS-01\nCourse: MS - Yea
  r 1\nTime: 16:00 - 17:30
-LOCATION:107
+LOCATION:303
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Advanced Information Retrieval (lab)
