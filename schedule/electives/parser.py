@@ -183,8 +183,9 @@ class ElectiveParser:
         """
         # "June 7" -> datetime.date(current_year, 6, 7)
         if re.match(r"\w+ \d+", cell):
-            dtime = datetime.strptime(cell, "%B %d")
-            return dtime.date().replace(year=get_current_year())
+            cell = str(get_current_year()) + " " + cell
+            dtime = datetime.strptime(cell, "%Y %B %d")
+            return dtime.date()
         else:
             return cell
 

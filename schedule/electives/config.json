@@ -1,14 +1,18 @@
 {
   "INNOHASSLE_API_URL": "https://api.innohassle.ru/events/v0",
-  "SPREADSHEET_ID": "1TKPSqry0_C4DK0JB2TwPfcQJ9Lzf4W-u",
+  "SPREADSHEET_ID": "1LAPQxFD82C5aZWT0sxQluRyZFr2-1gHgx-zkQl3IXq0",
   "SEMESTER_TAG": {
-    "alias": "f23",
-    "name": "Fall 2023",
+    "alias": "s24",
+    "name": "Spring 2024",
     "type": "semester"
   },
   "TARGETS": [
     {
-      "sheet_name": "BS Tech",
+      "sheet_name": "BS3 Tech",
+      "range": "A2:H144"
+    },
+    {
+      "sheet_name": "BS4 Hum",
       "range": "A2:H144"
     },
     {
@@ -16,146 +20,122 @@
       "range": "A2:H144"
     }
   ],
-  "SAVE_ICS_PATH": "f23/electives",
-  "SAVE_JSON_PATH": "f23/electives.json",
+  "SAVE_ICS_PATH": "s24/electives",
+  "SAVE_JSON_PATH": "s24/electives.json",
   "ELECTIVES": [
     {
-      "alias": "ASEM",
-      "name": "Advanced Statistical and Econometric Methods",
-      "instructor": "Rustam Ibragimov",
-      "type": "offline"
+      "alias": "ESSD",
+      "name": "Enterprise Software Systems Development",
+      "instructor": "Sergey Zykov",
+      "type": "online/offline"
     },
     {
-      "alias": "BDLD",
-      "name": "Blockchain: Distributed Ledger Development",
-      "instructor": "Hamza Salem",
-      "type": "offline"
+      "alias": "HPC",
+      "name": "High-Performance Computing",
+      "instructor": "Ivan Konyukhov",
+      "type": "Offline"
     },
     {
-      "alias": "CGGD",
-      "name": "Computer Graphics in Game Development",
-      "instructor": "Ivan Belyavtsev",
-      "type": "offline"
+      "alias": "ACD",
+      "name": "Architecture of Computing Devices",
+      "instructor": "Mike Kuskov",
+      "type": "Offline"
     },
     {
-      "alias": "DCD",
-      "name": "Digital Circuit Design",
-      "instructor": "Mikhail Kuskov (lab)",
-      "type": "offline"
+      "alias": "AIBS",
+      "name": "Artificial Intelligence in Business and Society",
+      "instructor": "Davide La Torre",
+      "type": "Online"
     },
     {
-      "alias": "EPJA",
-      "name": "Enterprise programming on Javascript - Advanced",
-      "instructor": "Nikita Grigoryev",
-      "type": "offline"
+      "alias": "BG",
+      "name": "Business of Games",
+      "instructor": "Daniil Chebotkov",
+      "type": "Online/offline"
     },
     {
-      "alias": "GDU",
-      "name": "Game Development with Unity",
-      "instructor": "Andrey Zykov (lec), \nSherif Nafee (lab)",
-      "type": "offline"
+      "alias": "EPSD",
+      "name": "Efficient Processes in Software Development",
+      "instructor": "Konstantin Chekin",
+      "type": "Online/offline"
     },
     {
-      "alias": "GAI",
-      "name": "Generative Artificial Intelligence",
-      "instructor": "Muhammad Fahim (lec), \nGcinizwe Dlamini (lab)",
-      "type": "lectures - online\nlabs - offline"
+      "alias": "I3DM",
+      "name": "Introduction to 3D Modeling",
+      "instructor": "Stoyan Sargoichev, Pavel Kalinov, Viktor Pronchev",
+      "type": "Online/offline"
     },
     {
-      "alias": "IHD",
-      "name": "Introduction to Hardware Design",
-      "instructor": "Albert Demian",
-      "type": "offline"
-    },
-    {
-      "alias": "IQC",
-      "name": "Introduction to Quantum Computing",
-      "instructor": "Stanislav Protasov",
-      "type": "online"
-    },
-    {
-      "alias": "IDS",
-      "name": "iOS Development with Swift",
-      "instructor": "Albert Akhmadiev",
-      "type": "offline"
-    },
-    {
-      "alias": "MCD",
-      "name": "Modern Control Paradigms",
-      "instructor": "Simeon Nedelchev",
-      "type": "offline"
-    },
-    {
-      "alias": "OMML",
-      "name": "Optimization Methods in Machine Learning",
-      "instructor": "Aleksandr Beznosikov",
-      "type": "offline"
-    },
-    {
-      "alias": "PHL",
-      "name": "Programming in Haskell",
-      "instructor": "Nikolay Kudasov",
-      "type": "offline"
-    },
-    {
-      "alias": "PGA",
-      "name": "Programming in Scala",
-      "instructor": "Ivan Lyagaev",
-      "type": "lectures - online\nlabs - offline"
-    },
-    {
-      "alias": "PMBA",
-      "name": "Project Management Beyond Agile",
-      "instructor": "Yegor Bugayenko (lec), Alexey Potyomkin (lab)",
-      "type": "lectures - mixed\nlabs - offline"
-    },
-    {
-      "alias": "RESU",
-      "name": "Reverse engineering and software vulnerabilities",
-      "instructor": "Evgeny Rasskazov",
-      "type": "mixed"
+      "alias": "OSBP",
+      "name": "Open Source Best Practices",
+      "instructor": "Yegor Bugayenko",
+      "type": "Online/offline"
     },
     {
       "alias": "SPDA",
       "name": "Software Product Development and Analysis",
       "instructor": "Konstantin Arkhipov",
-      "type": "offline"
+      "type": "Offline"
     },
     {
-      "alias": "SMP",
-      "name": "System Programming",
-      "instructor": "Vladislav Shpilevoy",
-      "type": "online"
+      "alias": "TC",
+      "name": "Technical Communication",
+      "instructor": "Ekateryna Ushakova",
+      "type": "Offline"
     },
     {
-      "alias": "DSM",
-      "name": "Decision Support Systems with Application in Medical Domain",
-      "instructor": "Benjamin Aribisala",
-      "type": "online"
+      "alias": "ICD",
+      "name": "Introduction to Career Development for IT-specialist ",
+      "instructor": "Gulnaz Ibragimova",
+      "type": "Offline"
     },
     {
-      "alias": "ACV",
-      "name": "Advanced Computer Vision",
-      "instructor": "Adil Khan (lec),\nKaram Almaghout (lab)",
-      "type": "lectures - online\nlabs - offline"
+      "alias": "UXUI",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed",
+      "type": "Offline/online"
     },
     {
-      "alias": "FDS",
-      "name": "Fundamentals of DevOps",
-      "instructor": "Dmitry Creed",
-      "type": "offline"
+      "alias": "PIT",
+      "name": "Psychology of IT-specialist ",
+      "instructor": "Eleonora Ilyina",
+      "type": "Offline"
     },
     {
-      "alias": "CAW",
-      "name": "Contact-aware Control",
-      "instructor": "Sergei Savin (lec),\nAnastasiya Andronova (lab)",
-      "type": "lectures - online\nlabs - offline"
+      "alias": "CEO",
+      "name": "CEO Toolkit",
+      "instructor": "Vasil Zakiev",
+      "type": "Offline/online"
     },
     {
-      "alias": "PM",
-      "name": "Product Management",
-      "instructor": "Iuliia Metelskaia",
-      "type": "online"
+      "alias": "DESSF",
+      "name": "Developing Entrepreneurial Skills for a Startup Founder",
+      "instructor": "Alina Valencia",
+      "type": "Online/offline"
+    },
+    {
+      "alias": "UE",
+      "name": "Unit Economics",
+      "instructor": "Maxim Popov",
+      "type": "Offline"
+    },
+    {
+      "alias": "TM",
+      "name": "Team management",
+      "instructor": "Petr Grachev",
+      "type": "Offline"
+    },
+    {
+      "alias": "PSB",
+      "name": "Public Speaking in Business",
+      "instructor": "Victoria Tsybova",
+      "type": "-"
+    },
+    {
+      "alias": "EN",
+      "name": "Entrepreneurial Negotiations",
+      "instructor": "Leonid Smelov",
+      "type": "-"
     }
   ]
 }

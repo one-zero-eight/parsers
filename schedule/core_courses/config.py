@@ -63,7 +63,7 @@ class CoreCoursesConfig(BaseParserConfig):
         "SUNDAY",
     ]
     ICS_WEEKDAYS = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
-    IGNORED_SUBJECTS: list[str] = ["Elective courses on Physical Education"]
+    IGNORED_SUBJECTS: list[str] = ["Elective courses on Physical Education", "Elective course on Physical Education"]
 
     @validator("TEMP_DIR", pre=True)
     def ensure_dir(cls, v):

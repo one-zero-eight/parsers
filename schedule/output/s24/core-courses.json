@@ -421,10 +421,10 @@
       ]
     },
     {
-      "alias": "s24-b21-ai",
-      "path": "s24/core-courses/bs-year-3/b21-ai.ics",
-      "name": "B21-AI",
-      "description": "Core courses schedule for 'B21-AI'",
+      "alias": "s24-b21-ai-01",
+      "path": "s24/core-courses/bs-year-3/b21-ai-01.ics",
+      "name": "B21-AI-01",
+      "description": "Core courses schedule for 'B21-AI-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -441,10 +441,10 @@
       ]
     },
     {
-      "alias": "s24-b21-cs",
-      "path": "s24/core-courses/bs-year-3/b21-cs.ics",
-      "name": "B21-CS",
-      "description": "Core courses schedule for 'B21-CS'",
+      "alias": "s24-b21-cs-01",
+      "path": "s24/core-courses/bs-year-3/b21-cs-01.ics",
+      "name": "B21-CS-01",
+      "description": "Core courses schedule for 'B21-CS-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -501,10 +501,10 @@
       ]
     },
     {
-      "alias": "s24-b21-ro",
-      "path": "s24/core-courses/bs-year-3/b21-ro.ics",
-      "name": "B21-RO",
-      "description": "Core courses schedule for 'B21-RO'",
+      "alias": "s24-b21-ro-01",
+      "path": "s24/core-courses/bs-year-3/b21-ro-01.ics",
+      "name": "B21-RO-01",
+      "description": "Core courses schedule for 'B21-RO-01'",
       "tags": [
         {
           "alias": "core-courses",

@@ -1,0 +1,395 @@
+{
+  "event_groups": [
+    {
+      "alias": "s24-bs3-tech-essd",
+      "path": "s24/electives/bs3-tech/essd.ics",
+      "name": "ESSD",
+      "description": "Enterprise Software Systems Development",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-osbp",
+      "path": "s24/electives/bs3-tech/osbp.ics",
+      "name": "OSBP",
+      "description": "Open Source Best Practices",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-hpc",
+      "path": "s24/electives/bs3-tech/hpc.ics",
+      "name": "HPC",
+      "description": "High-Performance Computing",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-bg",
+      "path": "s24/electives/bs3-tech/bg.ics",
+      "name": "BG",
+      "description": "Business of Games",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-spda",
+      "path": "s24/electives/bs3-tech/spda.ics",
+      "name": "SPDA",
+      "description": "Software Product Development and Analysis",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-acd",
+      "path": "s24/electives/bs3-tech/acd.ics",
+      "name": "ACD",
+      "description": "Architecture of Computing Devices",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs3-tech-tc",
+      "path": "s24/electives/bs3-tech/tc.ics",
+      "name": "TC",
+      "description": "Technical Communication",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs3-tech",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-icd-group-1",
+      "path": "s24/electives/bs4-hum/icd-group-1.ics",
+      "name": "ICD Group 1",
+      "description": "Introduction to Career Development for IT-specialist",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-pit-group-1",
+      "path": "s24/electives/bs4-hum/pit-group-1.ics",
+      "name": "PIT Group 1",
+      "description": "Psychology of IT-specialist",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-pit-group-2",
+      "path": "s24/electives/bs4-hum/pit-group-2.ics",
+      "name": "PIT Group 2",
+      "description": "Psychology of IT-specialist",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-icd-group-2",
+      "path": "s24/electives/bs4-hum/icd-group-2.ics",
+      "name": "ICD Group 2",
+      "description": "Introduction to Career Development for IT-specialist",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-uxui",
+      "path": "s24/electives/bs4-hum/uxui.ics",
+      "name": "UXUI",
+      "description": "UX/UI Design",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-ue",
+      "path": "s24/electives/bs4-hum/ue.ics",
+      "name": "UE",
+      "description": "Unit Economics",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-ceo",
+      "path": "s24/electives/bs4-hum/ceo.ics",
+      "name": "CEO",
+      "description": "CEO Toolkit",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-tm",
+      "path": "s24/electives/bs4-hum/tm.ics",
+      "name": "TM",
+      "description": "Team management",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-bs4-hum-dessf",
+      "path": "s24/electives/bs4-hum/dessf.ics",
+      "name": "DESSF",
+      "description": "Developing Entrepreneurial Skills for a Startup Founder",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "bs4-hum",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-ms-psb",
+      "path": "s24/electives/ms/psb.ics",
+      "name": "PSB",
+      "description": "Public Speaking in Business",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "ms",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    },
+    {
+      "alias": "s24-ms-en",
+      "path": "s24/electives/ms/en.ics",
+      "name": "EN",
+      "description": "Entrepreneurial Negotiations",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category"
+        },
+        {
+          "alias": "ms",
+          "type": "electives"
+        },
+        {
+          "alias": "s24",
+          "type": "semester"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "alias": "electives",
+      "type": "category",
+      "name": "Electives"
+    },
+    {
+      "alias": "bs3-tech",
+      "type": "electives",
+      "name": "BS3 Tech"
+    },
+    {
+      "alias": "bs4-hum",
+      "type": "electives",
+      "name": "BS4 Hum"
+    },
+    {
+      "alias": "ms",
+      "type": "electives",
+      "name": "MS"
+    },
+    {
+      "alias": "s24",
+      "type": "semester",
+      "name": "Spring 2024"
+    }
+  ],
+  "meta": {
+    "event_groups_count": 18,
+    "tags_count": 5
+  }
+}
