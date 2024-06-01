@@ -277,10 +277,10 @@
       ]
     },
     {
-      "alias": "sum24-b22-cs-01",
-      "path": "sum24/core-courses/bs-year-2/b22-cs-01.ics",
-      "name": "B22-CS-01",
-      "description": "Core courses schedule for 'B22-CS-01'",
+      "alias": "sum24-b22-cbs-01",
+      "path": "sum24/core-courses/bs-year-2/b22-cbs-01.ics",
+      "name": "B22-CBS-01",
+      "description": "Core courses schedule for 'B22-CBS-01'",
       "tags": [
         {
           "alias": "core-courses",
@@ -300,10 +300,10 @@
       ]
     },
     {
-      "alias": "sum24-b22-cs-02",
-      "path": "sum24/core-courses/bs-year-2/b22-cs-02.ics",
-      "name": "B22-CS-02",
-      "description": "Core courses schedule for 'B22-CS-02'",
+      "alias": "sum24-b22-cbs-02",
+      "path": "sum24/core-courses/bs-year-2/b22-cbs-02.ics",
+      "name": "B22-CBS-02",
+      "description": "Core courses schedule for 'B22-CBS-02'",
       "tags": [
         {
           "alias": "core-courses",

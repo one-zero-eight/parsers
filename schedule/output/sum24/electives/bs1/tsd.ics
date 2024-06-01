@@ -53,12 +53,12 @@ BEGIN:VEVENT
 SUMMARY:Tech Startup Design
 DTSTART:20240613T142000
 DTEND:20240613T155000
-UID:7328473f@innohassle.ru
+UID:31066834@innohassle.ru
 CATEGORIES:Tech Startup Design
 COLOR:darkmagenta
 DESCRIPTION:Subject: Tech Startup Design\nInstructor: Zhanara Semenova\nTi
  me: 14:20 - 15:50\nDate: 13.06.2024
-LOCATION:103 DT 102
+LOCATION:103
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Tech Startup Design

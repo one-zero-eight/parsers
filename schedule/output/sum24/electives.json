@@ -185,6 +185,29 @@
       ]
     },
     {
+      "alias": "sum24-bs1-fwd",
+      "path": "sum24/electives/bs1/fwd.ics",
+      "name": "FWD",
+      "description": "Front-end Web Development",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category",
+          "name": "Electives"
+        },
+        {
+          "alias": "bs1",
+          "type": "electives",
+          "name": "BS1"
+        },
+        {
+          "alias": "sum24",
+          "type": "semester",
+          "name": "Summer 2024"
+        }
+      ]
+    },
+    {
       "alias": "sum24-bs1-rtst",
       "path": "sum24/electives/bs1/rtst.ics",
       "name": "RTST",
@@ -369,10 +392,10 @@
       ]
     },
     {
-      "alias": "sum24-bs1-b-m",
-      "path": "sum24/electives/bs1/b-m.ics",
-      "name": "B&M",
-      "description": "Branding & Marketing in IT industry",
+      "alias": "sum24-bs1-dt",
+      "path": "sum24/electives/bs1/dt.ics",
+      "name": "DT",
+      "description": "Design Thinking for IT-specialist",
       "tags": [
         {
           "alias": "electives",
@@ -392,10 +415,10 @@
       ]
     },
     {
-      "alias": "sum24-bs1-dt",
-      "path": "sum24/electives/bs1/dt.ics",
-      "name": "DT",
-      "description": "Design Thinking for IT-specialist",
+      "alias": "sum24-bs1-b-m",
+      "path": "sum24/electives/bs1/b-m.ics",
+      "name": "B&M",
+      "description": "Branding & Marketing in IT industry",
       "tags": [
         {
           "alias": "electives",
@@ -668,6 +691,29 @@
       ]
     },
     {
+      "alias": "sum24-bs2-bpm",
+      "path": "sum24/electives/bs2/bpm.ics",
+      "name": "BPM",
+      "description": "Basics of Product Management",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category",
+          "name": "Electives"
+        },
+        {
+          "alias": "bs2",
+          "type": "electives",
+          "name": "BS2"
+        },
+        {
+          "alias": "sum24",
+          "type": "semester",
+          "name": "Summer 2024"
+        }
+      ]
+    },
+    {
       "alias": "sum24-bs2-hbt",
       "path": "sum24/electives/bs2/hbt.ics",
       "name": "HBT",
@@ -695,6 +741,29 @@
       "path": "sum24/electives/bs2/psb.ics",
       "name": "PSB",
       "description": "Public Speaking in Business",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category",
+          "name": "Electives"
+        },
+        {
+          "alias": "bs2",
+          "type": "electives",
+          "name": "BS2"
+        },
+        {
+          "alias": "sum24",
+          "type": "semester",
+          "name": "Summer 2024"
+        }
+      ]
+    },
+    {
+      "alias": "sum24-bs2-mle",
+      "path": "sum24/electives/bs2/mle.ics",
+      "name": "MLE",
+      "description": "MLOps Engineering",
       "tags": [
         {
           "alias": "electives",
@@ -944,6 +1013,29 @@
       ]
     },
     {
+      "alias": "sum24-ms-mle",
+      "path": "sum24/electives/ms/mle.ics",
+      "name": "MLE",
+      "description": "MLOps Engineering",
+      "tags": [
+        {
+          "alias": "electives",
+          "type": "category",
+          "name": "Electives"
+        },
+        {
+          "alias": "ms",
+          "type": "electives",
+          "name": "MS"
+        },
+        {
+          "alias": "sum24",
+          "type": "semester",
+          "name": "Summer 2024"
+        }
+      ]
+    },
+    {
       "alias": "sum24-ms-ittm",
       "path": "sum24/electives/ms/ittm.ics",
       "name": "ITTM",
@@ -995,7 +1087,7 @@
     }
   ],
   "meta": {
-    "event_groups_count": 42,
+    "event_groups_count": 46,
     "tags_count": 5
   }
 }
