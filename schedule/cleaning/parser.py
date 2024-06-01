@@ -122,7 +122,7 @@ class CleaningEvent(BaseModel):
 class LinenChangeEvent(BaseModel):
     summary: str
     date: datetime.date
-    description: str = "Working hours:\n10:00-12:00\n13:00-17:00"
+    description: str = "Working hours:\n13:00-17:00"
     location: str
     rrule: dict
 
