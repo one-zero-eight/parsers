@@ -1,18 +1,20 @@
 {
   "event_groups": [
     {
-      "alias": "cleaning-1-building-1-4-floor",
-      "path": "cleaning/cleaning-1-building-1-4-floor.ics",
-      "name": "Cleaning: 1 building 1-4 floor",
-      "description": "Cleaning schedule for 1 building 1-4 floor",
+      "alias": "cleaning-1-building",
+      "path": "cleaning/cleaning-1-building.ics",
+      "name": "Cleaning: 1 building",
+      "description": "Cleaning schedule for 1 building",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
@@ -24,11 +26,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
@@ -40,107 +44,139 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-3-building-1-2-floor",
-      "path": "cleaning/cleaning-3-building-1-2-floor.ics",
-      "name": "Cleaning: 3 building 1-2 floor",
-      "description": "Cleaning schedule for 3 building 1-2 floor",
+      "alias": "cleaning-3-building",
+      "path": "cleaning/cleaning-3-building.ics",
+      "name": "Cleaning: 3 building",
+      "description": "Cleaning schedule for 3 building",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-3-building-3-4-floor",
-      "path": "cleaning/cleaning-3-building-3-4-floor.ics",
-      "name": "Cleaning: 3 building 3-4 floor",
-      "description": "Cleaning schedule for 3 building 3-4 floor",
+      "alias": "cleaning-4-building",
+      "path": "cleaning/cleaning-4-building.ics",
+      "name": "Cleaning: 4 building",
+      "description": "Cleaning schedule for 4 building",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-4-building-1-4-floor",
-      "path": "cleaning/cleaning-4-building-1-4-floor.ics",
-      "name": "Cleaning: 4 building 1-4 floor",
-      "description": "Cleaning schedule for 4 building 1-4 floor",
+      "alias": "cleaning-5-building",
+      "path": "cleaning/cleaning-5-building.ics",
+      "name": "Cleaning: 5 building",
+      "description": "Cleaning schedule for 5 building",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-5-building-1-5-floor",
-      "path": "cleaning/cleaning-5-building-1-5-floor.ics",
-      "name": "Cleaning: 5 building 1-5 floor",
-      "description": "Cleaning schedule for 5 building 1-5 floor",
+      "alias": "cleaning-6-building-1-7-floors",
+      "path": "cleaning/cleaning-6-building-1-7-floors.ics",
+      "name": "Cleaning: 6 building 1-7 floors",
+      "description": "Cleaning schedule for 6 building 1-7 floors",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-6-building-1-7-floor",
-      "path": "cleaning/cleaning-6-building-1-7-floor.ics",
-      "name": "Cleaning: 6 building 1-7 floor",
-      "description": "Cleaning schedule for 6 building 1-7 floor",
+      "alias": "cleaning-6-building-8-13-floors",
+      "path": "cleaning/cleaning-6-building-8-13-floors.ics",
+      "name": "Cleaning: 6 building 8-13 floors",
+      "description": "Cleaning schedule for 6 building 8-13 floors",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
     {
-      "alias": "cleaning-6-building-8-13-floor",
-      "path": "cleaning/cleaning-6-building-8-13-floor.ics",
-      "name": "Cleaning: 6 building 8-13 floor",
-      "description": "Cleaning schedule for 6 building 8-13 floor",
+      "alias": "cleaning-7-building-1-7-floors",
+      "path": "cleaning/cleaning-7-building-1-7-floors.ics",
+      "name": "Cleaning: 7 building 1-7 floors",
+      "description": "Cleaning schedule for 7 building 1-7 floors",
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "room-cleaning",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Room Cleaning"
+        }
+      ]
+    },
+    {
+      "alias": "cleaning-7-building-8-13-floors",
+      "path": "cleaning/cleaning-7-building-8-13-floors.ics",
+      "name": "Cleaning: 7 building 8-13 floors",
+      "description": "Cleaning schedule for 7 building 8-13 floors",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category",
+          "name": "Cleaning"
+        },
+        {
+          "alias": "room-cleaning",
+          "type": "cleaning",
+          "name": "Room Cleaning"
         }
       ]
     },
@@ -152,11 +188,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     },
@@ -168,11 +206,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     },
@@ -184,11 +224,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     },
@@ -200,11 +242,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     },
@@ -216,11 +260,13 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     },
@@ -232,11 +278,31 @@
       "tags": [
         {
           "alias": "cleaning",
-          "type": "category"
+          "type": "category",
+          "name": "Cleaning"
         },
         {
           "alias": "linen-change",
-          "type": "cleaning"
+          "type": "cleaning",
+          "name": "Linen Change"
+        }
+      ]
+    },
+    {
+      "alias": "linen-change-7-building",
+      "path": "cleaning/linen-change-7-building.ics",
+      "name": "Linen Change: 7 building",
+      "description": "Linen change schedule for 7 building",
+      "tags": [
+        {
+          "alias": "cleaning",
+          "type": "category",
+          "name": "Cleaning"
+        },
+        {
+          "alias": "linen-change",
+          "type": "cleaning",
+          "name": "Linen Change"
         }
       ]
     }
@@ -259,7 +325,7 @@
     }
   ],
   "meta": {
-    "event_groups_count": 15,
+    "event_groups_count": 17,
     "tags_count": 3
   }
 }
