@@ -1,5 +1,4 @@
 {
-  "INNOHASSLE_API_URL": "https://api.innohassle.ru/events/v0",
   "SAVE_ICS_PATH": "cleaning",
   "SAVE_JSON_PATH": "cleaning.json",
   "START_DATE": "2024-01-01",

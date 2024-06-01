@@ -2,9 +2,12 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Optional
 
+from dotenv import load_dotenv
 from pydantic import BaseModel, validator, SecretStr
 
 from schedule.utils import get_project_root
+
+load_dotenv()
 
 PROJECT_ROOT = get_project_root()
 
@@ -111,11 +114,20 @@ class BaseParserConfig(BaseModel):
         return v
 
     @validator("PARSER_AUTH_KEY", pre=True, always=True)
-    def from_env(cls, v):
+    def parser_key_from_env(cls, v):
         """Get PARSER_AUTH_KEY from environment variable"""
         if v is None:
             from os import environ
             v = environ.get("PARSER_AUTH_KEY")
+
+        return v
+
+    @validator("INNOHASSLE_API_URL", pre=True, always=True)
+    def api_url_from_env(cls, v):
+        """Get INNOHASSLE_API_URL from environment variable"""
+        if v is None:
+            from os import environ
+            v = environ.get("INNOHASSLE_API_URL")
         return v
 
 

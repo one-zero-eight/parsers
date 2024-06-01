@@ -13,9 +13,8 @@ from schedule.core_courses.parser import CoreCoursesParser
 from schedule.innohassle import (
     InNoHassleEventsClient,
     Output,
-    update_inh_event_groups,
+    update_inh_event_groups, CreateTag, CreateEventGroup,
 )
-from schedule.models import PredefinedEventGroup, PredefinedTag
 from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
 
@@ -90,22 +89,20 @@ if __name__ == "__main__":
             # -------- Append generated events to events list --------
             events.extend(chain.from_iterable(event_generators))
 
-    predefined_event_groups: list[PredefinedEventGroup] = []
+    predefined_event_groups: list[CreateEventGroup] = []
 
     events.sort(key=lambda x: (x.course, x.group))
     directory = config.SAVE_ICS_PATH
-    academic_tag = PredefinedTag(
+    academic_tag = CreateTag(
         alias="core-courses",
         name="Core courses",
         type="category",
     )
-    semester_tag = PredefinedTag(
+    semester_tag = CreateTag(
         alias=config.SEMESTER_TAG.alias,
         name=config.SEMESTER_TAG.name,
         type=config.SEMESTER_TAG.type,
     )
-    academic_tag_reference = academic_tag.reference
-    semester_tag_reference = semester_tag.reference
 
     logging.info("Writing JSON and iCalendars files...")
     logging.info(f"> Mount point: {config.MOUNT_POINT}")
@@ -114,12 +111,11 @@ if __name__ == "__main__":
     courses = set(event.course for event in events)
     for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
         course_slug = sluggify(course)
-        course_tag = PredefinedTag(
+        course_tag = CreateTag(
             alias=course_slug,
             name=course,
             type="core-courses",
         )
-        course_tag_reference = course_tag.reference
         tags.append(course_tag)
 
         group_calendar = get_base_calendar()
@@ -139,7 +135,7 @@ if __name__ == "__main__":
         group_calendar.add("x-wr-total-vevents", str(cnt))
 
         group_slug = sluggify(group)
-        group_alias = f"{semester_tag_reference.alias}-{group_slug}"
+        group_alias = f"{semester_tag.alias}-{group_slug}"
         course_path = directory / course_slug
         course_path.mkdir(parents=True, exist_ok=True)
         file_name = f"{group_slug}.ics"
@@ -153,15 +149,15 @@ if __name__ == "__main__":
             f.write(content)
 
         predefined_event_groups.append(
-            PredefinedEventGroup(
+            CreateEventGroup(
                 alias=group_alias,
                 name=group,
                 description=f"Core courses schedule for '{group}'",
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
                 tags=[
-                    academic_tag_reference,
-                    semester_tag_reference,
-                    course_tag_reference,
+                    academic_tag,
+                    semester_tag,
+                    course_tag,
                 ],
             )
         )

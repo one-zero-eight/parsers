@@ -7,8 +7,7 @@ import pandas as pd
 
 from schedule.electives.config import electives_config as config
 from schedule.electives.parser import ElectiveParser, convert_separation
-from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups
-from schedule.models import PredefinedEventGroup, PredefinedTag
+from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups, CreateTag, CreateEventGroup
 from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
 
@@ -44,22 +43,20 @@ if __name__ == "__main__":
         content = xlsx.read()
         f.write(content)
 
-    semester_tag = PredefinedTag(
+    semester_tag = CreateTag(
         alias=config.SEMESTER_TAG.alias,
         type=config.SEMESTER_TAG.type,
         name=config.SEMESTER_TAG.name,
     )
 
-    elective_tag = PredefinedTag(
+    elective_tag = CreateTag(
         alias="electives",
         type="category",
         name="Electives",
     )
-    semester_tag_reference = semester_tag.reference
-    elective_tag_reference = elective_tag.reference
     tags = [semester_tag, elective_tag]
 
-    predefined_event_groups: list[PredefinedEventGroup] = []
+    predefined_event_groups: list[CreateEventGroup] = []
 
     mount_point = config.SAVE_ICS_PATH
 
@@ -87,7 +84,7 @@ if __name__ == "__main__":
 
         elective_type_directory.mkdir(parents=True, exist_ok=True)
 
-        elective_type_tag = PredefinedTag(
+        elective_type_tag = CreateTag(
             alias=sluggify(target.sheet_name),
             type="electives",
             name=target.sheet_name,
@@ -95,7 +92,6 @@ if __name__ == "__main__":
 
         tags.append(elective_type_tag)
 
-        elective_type_tag_reference = elective_type_tag.reference
 
         for calendar_name, events in converted.items():
             calendar = get_base_calendar()
@@ -129,15 +125,15 @@ if __name__ == "__main__":
             else:
                 description = f"Elective schedule for '{calendar_name}'"
             predefined_event_groups.append(
-                PredefinedEventGroup(
+                CreateEventGroup(
                     alias=calendar_alias,
                     name=calendar_name,
                     description=description,
                     path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
                     tags=[
-                        elective_tag_reference,
-                        elective_type_tag_reference,
-                        semester_tag_reference,
+                        elective_tag,
+                        elective_type_tag,
+                        semester_tag,
                     ],
                 )
             )

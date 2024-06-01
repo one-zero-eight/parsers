@@ -5,8 +5,7 @@ from itertools import groupby
 
 import aiohttp as aiohttp
 
-from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups
-from schedule.models import PredefinedEventGroup, PredefinedTag
+from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups, CreateTag, CreateEventGroup
 from schedule.processors.regex import sluggify
 from schedule.sports.config import sports_config as config
 from schedule.sports.models import SportScheduleEvent
@@ -36,7 +35,7 @@ async def main():
 
     logging.info(f"Processed {len(sport_events)} sport events")
 
-    grouping = lambda x: (x.sport.name, x.sport_schedule_event.title or "")
+    grouping = lambda x: (x.sport.name, x.sport_schedule_event.title or "")  # noqa: E731
     sport_events.sort(key=grouping)
 
     event_groups = []
@@ -45,11 +44,9 @@ async def main():
     logging.info(f"Saving calendars to {directory}")
     json_file = config.SAVE_JSON_PATH
     logging.info(f"Saving json to {json_file}")
-    logging.info(f"Grouping events by sport.name and sport_schedule_event.title")
+    logging.info("Grouping events by sport.name and sport_schedule_event.title")
 
-    sport_tag = PredefinedTag(alias="sports", type="category", name="Sport")
-
-    sport_tag_reference = sport_tag.reference
+    sport_tag = CreateTag(alias="sports", type="category", name="Sport")
 
     for (title, subtitle), events in groupby(sport_events, key=grouping):
         calendar = get_base_calendar()
@@ -67,12 +64,12 @@ async def main():
         filename = f"{group_alias}.ics"
         file_path = directory / filename
         event_groups.append(
-            PredefinedEventGroup(
+            CreateEventGroup(
                 alias=group_alias,
                 name=calendar_name,
                 description=f"Sport schedule for '{calendar_name}'",
                 path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
-                tags=[sport_tag_reference],
+                tags=[sport_tag],
             )
         )
 

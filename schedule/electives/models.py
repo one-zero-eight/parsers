@@ -97,8 +97,6 @@ class ElectiveCell(BaseModel):
             # just first word as elective
             splitter = string.split(" ")
             elective_alias = splitter[0]
-            if elective_alias == "ESSF":
-                elective_alias = "DESSF"
             self.elective = next(
                 elective
                 for elective in config.ELECTIVES

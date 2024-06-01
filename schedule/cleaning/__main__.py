@@ -5,8 +5,7 @@ from typing import Iterable
 
 from schedule.cleaning.config import cleaning_config as config
 from schedule.cleaning.parser import CleaningParser, CleaningEvent, LinenChangeEvent
-from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups
-from schedule.models import PredefinedEventGroup, PredefinedTag
+from schedule.innohassle import Output, InNoHassleEventsClient, update_inh_event_groups, CreateTag, CreateEventGroup
 from schedule.processors.regex import sluggify
 from schedule.utils import get_base_calendar
 
@@ -25,13 +24,13 @@ if __name__ == "__main__":
 
     cleaning_events = sorted(cleaning_events, key=lambda x: x.location)
 
-    cleaning_tag = PredefinedTag(
+    cleaning_tag = CreateTag(
         alias="cleaning",
         name="Cleaning",
         type="category",
     )
 
-    cleaning_cleaning_tag = PredefinedTag(
+    cleaning_cleaning_tag = CreateTag(
         alias="room-cleaning",
         name="Room Cleaning",
         type="cleaning",
@@ -55,7 +54,7 @@ if __name__ == "__main__":
         file_path = directory / filename
 
         event_groups.append(
-            PredefinedEventGroup(
+            CreateEventGroup(
                 alias=group_alias,
                 name=f"Cleaning: {location}",
                 description=f"Cleaning schedule for {location}",
@@ -71,7 +70,7 @@ if __name__ == "__main__":
 
     logging.info(f"Linen change events: {len(linen_change_events)}")
 
-    linen_change_tag = PredefinedTag(
+    linen_change_tag = CreateTag(
         alias="linen-change",
         name="Linen Change",
         type="cleaning",
@@ -98,7 +97,7 @@ if __name__ == "__main__":
         file_path = directory / filename
 
         event_groups.append(
-            PredefinedEventGroup(
+            CreateEventGroup(
                 alias=group_alias,
                 name=f"Linen Change: {location}",
                 description=f"Linen change schedule for {location}",

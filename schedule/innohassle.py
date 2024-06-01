@@ -8,12 +8,38 @@ __all__ = [
 
 import logging
 import pathlib
+import re
 from typing import Optional, Any
 
 import aiohttp
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 
-from schedule.models import PredefinedEventGroup, PredefinedTag
+
+class CreateTag(BaseModel):
+    alias: str
+    type: str
+    name: str
+
+    @validator("alias", "type")
+    def validate_alias(cls, v):
+        if not validate_slug(v):
+            raise ValueError(f"Invalid slug '{v}'")
+        return v
+
+
+class CreateEventGroup(BaseModel):
+    alias: str
+    path: str
+    name: str
+    description: Optional[str] = None
+
+    tags: list[CreateTag] = Field(default_factory=list)
+
+    @validator("alias")
+    def validate_alias(cls, v):
+        if not validate_slug(v):
+            raise ValueError(f"Invalid slug '{v}'")
+        return v
 
 
 class ViewTag(BaseModel):
@@ -21,6 +47,7 @@ class ViewTag(BaseModel):
     alias: str
     type: Optional[str] = None
     name: Optional[str] = None
+    description: Optional[str] = None
     satellite: Optional[dict] = None
 
 
@@ -52,7 +79,18 @@ class InNoHassleEventsClient:
             async with s.get(f"{self.api_url}/event-groups/") as response:
                 response.raise_for_status()
                 groups_dict = await response.json()
-                return [ViewEventGroup(**group) for group in groups_dict["groups"]]
+                return [ViewEventGroup(**group) for group in groups_dict["event_groups"]]
+
+    async def batch_create_or_read_event_groups(
+        self, event_groups: list[CreateEventGroup]
+    ) -> list[ViewEventGroup]:
+        data = {"event_groups": [group.dict() for group in event_groups]}
+
+        async with self.session() as s:
+            async with s.post(f"{self.api_url}/event-groups/batch-create-or-read", json=data) as response:
+                response.raise_for_status()
+                groups_dict = await response.json()
+                return [ViewEventGroup(**group) for group in groups_dict["event_groups"]]
 
     async def update_ics(self, event_group_id: int, ics_content: bytes) -> None:
         data = aiohttp.FormData()
@@ -82,14 +120,14 @@ class InNoHassleEventsClient:
 
 
 class Output(BaseModel):
-    event_groups: list[PredefinedEventGroup]
-    tags: list[PredefinedTag]
+    event_groups: list[CreateEventGroup]
+    tags: list[CreateTag]
     meta: dict[str, Any] = Field(default_factory=dict)
 
     def __init__(
         self,
-        event_groups: list[PredefinedEventGroup],
-        tags: list[PredefinedTag],
+        event_groups: list[CreateEventGroup],
+        tags: list[CreateTag],
     ):
         # only unique (alias, type) tags
         visited = set()
@@ -117,7 +155,8 @@ async def update_inh_event_groups(
     mount_point: pathlib.Path,
     output: Output,
 ) -> None:
-    inh_event_groups = await inh_client.get_event_groups()
+    logging.info(f"Trying to create or read {len(output.event_groups)} event groups")
+    inh_event_groups = await inh_client.batch_create_or_read_event_groups(output.event_groups)
     inh_event_groups_dict = {group.alias: group for group in inh_event_groups}
 
     for event_group in output.event_groups:
@@ -131,3 +170,13 @@ async def update_inh_event_groups(
                 event_group_id=inh_event_group.id,
                 ics_content=(mount_point / event_group.path).read_bytes(),
             )
+
+
+def validate_slug(s):
+    # only dashes and lowercase letters, digits
+    if re.match(r"^[a-z-0-9]+$", s):
+        return True
+    # multiple dashes - not allowed
+    if re.match(r"-{2,}", s):
+        return False
+    return False
