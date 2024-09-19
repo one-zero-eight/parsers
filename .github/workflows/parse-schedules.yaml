@@ -38,7 +38,7 @@ jobs:
           key: venv-test-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
       - name: "Install Poetry dependencies 📦"
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --with dev
+        run: poetry install --no-interaction
       - name: "Parse schedules 🕵️‍♂️"
         env:
           PARSER_AUTH_KEY: ${{ secrets.PARSER_AUTH_KEY }}
