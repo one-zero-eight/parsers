@@ -124,9 +124,9 @@ class InNoHassleEventsClient:
                     return 201
 
                 if response.content:
-                    logger.error(await response.json())
+                    logger.error(await response.text())
 
-                raise Exception(f"Unexpected response status: {response.status}")
+                raise Exception(f"Unexpected response status: {response.status} for event group {event_group_id}")
 
     async def parse_cleaning(self, cleaning_config: "CleaningParserConfig"):
         async with self.session() as s:

@@ -381,15 +381,15 @@ class CoreCourseEvent(BaseModel):
 
         if self.location_item and self.location_item.on:  # only on specific dates, not every week
             rdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.on]
-            vevent.add("rdate", rdates)
+            vevent["rdate"] = rdates
             # dtstart and dtend should be adapted
             dtstart = dtstart.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
             dtend = dtend.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
         else:  # every week at the same time
-            vevent.add("rrule", self.every_week_rule())
+            vevent["rrule"] = self.every_week_rule()
 
-        vevent.add("dtstart", icalendar.vDatetime(dtstart))
-        vevent.add("dtend", icalendar.vDatetime(dtend))
+        vevent["dtstart"] = icalendar.vDatetime(dtstart)
+        vevent["dtend"] = icalendar.vDatetime(dtend)
 
         if not self.location_item or not self.location_item.NEST:  # Simple case, only one event
             yield vevent
@@ -408,14 +408,14 @@ class CoreCourseEvent(BaseModel):
                     vevent_copy = vevent.copy()
                     _recurrence_id = dtstart.replace(day=on.day, month=on.month)
                     exdates.append(_recurrence_id)
-                    vevent_copy.add("recurrence-id", icalendar.vDatetime(_recurrence_id))
-                    vevent_copy.add("sequence", i + j)
+                    vevent_copy["recurrence-id"] = icalendar.vDatetime(_recurrence_id)
+                    vevent_copy["sequence"] = i + j
                     vevent_copy.pop("rrule")
                     # adapt dtstart and dtend
                     _dtstart = dtstart.replace(day=on.day, month=on.month)
                     _dtend = dtend.replace(day=on.day, month=on.month)
-                    vevent_copy.add("dtstart", icalendar.vDatetime(_dtstart))
-                    vevent_copy.add("dtend", icalendar.vDatetime(_dtend))
+                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                     if item.location:
                         vevent_copy["location"] = item.location
                     if item.starts_at:
@@ -429,7 +429,7 @@ class CoreCourseEvent(BaseModel):
                     yield vevent_copy
 
             if exdates:  # ignore reccurencies in original event
-                vevent.add("exdate", exdates)
+                vevent["exdate"] = exdates
             yield vevent
         else:  # just a single event on specific dates
             yield vevent
@@ -443,12 +443,12 @@ class CoreCourseEvent(BaseModel):
                 vevent_copy["uid"] = self.get_uid(sequence=str(i))
                 vevent_copy.pop("rdate")
                 rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on]
-                vevent_copy.add("rdate", rdates)
+                vevent_copy["rdate"] = rdates
                 # adapt dtstart and dtend
                 _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
                 _dtend = dtend.replace(day=item.on[0].day, month=item.on[0].month)
-                vevent_copy.add("dtstart", icalendar.vDatetime(_dtstart))
-                vevent_copy.add("dtend", icalendar.vDatetime(_dtend))
+                vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
+                vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                 if item.location:
                     vevent_copy["location"] = item.location
                 if item.starts_at:
