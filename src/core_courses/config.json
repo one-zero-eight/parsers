@@ -1,0 +1,35 @@
+{
+  "SPREADSHEET_ID": "1DRHAg5n715F0KIXOH9hhMH3MPEOdOh-xTTzBOWECYmU",
+  "SEMESTER_TAG": {
+    "alias": "fall24",
+    "name": "Fall 2024",
+    "type": "semester"
+  },
+  "TARGETS": [
+    {
+      "sheet_name": "1st block common (since 2608)",
+      "range": "A1:BB116",
+      "start_date": "2024-08-25",
+      "end_date": "2024-12-23",
+      "time_columns": [
+        "A",
+        "N",
+        "Y",
+        "AK",
+        "AT",
+        "BA"
+      ]
+    },
+    {
+      "sheet_name": "Ru Programs",
+      "range": "A1:G131",
+      "start_date": "2024-08-25",
+      "end_date": "2024-12-23",
+      "time_columns": [
+        "A"
+      ]
+    }
+  ],
+  "SAVE_ICS_PATH": "fall24/core-courses",
+  "SAVE_JSON_PATH": "fall24/core-courses.json"
+}

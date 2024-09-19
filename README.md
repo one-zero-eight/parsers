@@ -1,65 +1,61 @@
-# InNoHassle Parsers
+# Parsers | InNoHassle ecosystem
 
+## Table of contents
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg) ](https://opensource.org/licenses/MIT) 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat&logo=Python)
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+Did you know that GitHub supports table of
+contents [by default](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) 🤔
 
-## Project Description
+## About
 
-Schedule parsers for the InNoHassle ecosystem. These parsers parse schedules provided by the university (Google Tables, Sport API, etc.) and convert them into .ics files to make comfortable schedule for the students.
-Contains following parsers:
+Schedule parsers for the InNoHassle ecosystem. These parsers parse schedules provided by the university
+(Google Tables, Sport API, etc.) and updates [InNoHassle Events](https://github.com/one-zero-eight/events) with it.
 
-- [schedule](./schedule)
-    - [core courses](./schedule/core_courses)
-    - [elective courses](./schedule/electives)
-    - [sports](./schedule/sports)
+### Features
 
-## Demo
+Parse schedules:
 
-Check output files in the [output](./schedule/output) directory.
+- [core courses](src/core_courses) from Google Spreadsheet
+- [elective courses](src/electives) from another Google Spreadheet
+- [sports](src/sports) from [InnoSport](https://sport.innopolis.university/)
+- [cleaning](src/cleaning) semi-automatic based
+  on [tables](https://hotel.innopolis.university/studentaccommodation/)
+- [bootcamp](src/bootcamp) and [workshops](src/workshops) semi-automatic
 
-## Project Installation
+### Technologies
 
-To install the InNoHassle Parsers, follow the steps below:
+- [Python 3.12](https://www.python.org/downloads/release/python-3123/) & [Poetry](https://python-poetry.org/docs/)
+- [Pydantic 2](https://docs.pydantic.dev/latest/)
+- [Pandas](https://pandas.pydata.org/)
+- [Google API client](https://github.com/googleapis/google-api-python-client)
+- Formatting and linting: [Ruff](https://docs.astral.sh/ruff/)
 
-1. Clone the [repository](https://github.com/one-zero-eight/InNoHassle-Parsers/) repository
-2. Install [Python](https://python.org)
-3. Install [Poetry](https://python-poetry.org/)
-4. Install dependencies using poetry:
-    ```bash
-    poetry install
-    ```
+## Development
+
+### Getting started
+
+1. Install [Python 3.11+](https://www.python.org/downloads/release/python-3117/)
+2. Install [Poetry](https://python-poetry.org/docs/)
+3. Install project dependencies with [Poetry](https://python-poetry.org/docs/cli/#options-2).
+   ```bash
+   poetry install --no-root
+   ```
 
 ## How to Use
-1. Configure parsers using ```config.json``` files
-2. Run the parser:
 
+1. Configure parsers using `config.json` files
+2. Run the parser:
     ```bash
-    poetry shell
-    python -m schedule.core_courses
-    python -m schedule.electives
-    python -m schedule.sports
+    poetry run python -m schedule.core_courses
+    ```
+    OR for periodic update of all schedules
+    ```bash
+    poetry run python -m schedule --period 600
     ```
 3. The output will be in the `schedule/output` directory.
 
-## Features List
+## Contributing
 
-- Automatic parsing of schedules provided by the university
-- Converting scedules into the .ics files
-
-
-## Frameworks and Technologies Used
-
-|           Language           |              Frameworks               |              Libraries               |
-|:----------------------------:|:-------------------------------------:|:------------------------------------:|
-| [Python](https://python.org) | [Poetry](https://python-poetry.org/)  | [pandas](https://pandas.pydata.org/) |
-|                              |  | [pydantic](https://pydantic.dev/)    |
-## For Customer
-
-We highly value your satisfaction and want to provide you with the best possible support. If you encounter any problems or have any questions regarding our product or service, please don't hesitate to create an **issue**. Our team is here to assist you and will promptly address your concerns. Your feedback is crucial for us to continually improve our offerings, and we appreciate the opportunity to assist you. Thank you for choosing us as your trusted provider, and we assure you of our commitment to your satisfaction.
-
-## License
-
-This project is licensed under the [MIT License](https://license.md/licenses/mit-license/) - see the [LICENSE](LICENSE) file for details.
+We are open to contributions of any kind.
+You can help us with code, bugs, design, documentation, media, new ideas, etc.
+If you are interested in contributing, please read
+our [contribution guide](https://github.com/one-zero-eight/.github/blob/main/CONTRIBUTING.md).

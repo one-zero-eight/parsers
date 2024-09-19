@@ -3,21 +3,30 @@ name = "innohassle-parsers"
 version = "0.1.0"
 description = ""
 authors = ["Ruslan Bel'kov <ruslan.belckov@yandex.ru>"]
-readme = "schedule/README.md"
+readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "~3.12"
 google-api-python-client = "^2.131.0"
 google-auth-httplib2 = "^0.2.0"
 google-auth-oauthlib = "^1.2.0"
-pandas = {extras = ["openpyxl"], version = "^2.0.3"}
+pandas = { extras = ["openpyxl"], version = "^2.0.3" }
 pydantic = "^1.10"
-icalendar = "^5.0.4"
-google = {extras = ["auth"], version = "^3.0.0"}
+icalendar = "^5.0.13"
+google = { extras = ["auth"], version = "^3.0.0" }
 aiohttp = "^3.8.4"
 openpyxl = "^3.1.2"
 python-dotenv = "^1.0.1"
+pyyaml = "^6.0.2"
+colorlog = "^6.8.2"
+ruff = "^0.6.5"
+pytest = "^8.3.3"
 
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.4.7"
-
+[tool.ruff]
+line-length = 120
+lint.ignore = [
+    # wildcard imports are fine
+    "F403",
+    "F405",
+]
