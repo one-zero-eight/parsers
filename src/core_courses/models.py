@@ -381,7 +381,7 @@ class CoreCourseEvent(BaseModel):
 
         if self.location_item and self.location_item.on:  # only on specific dates, not every week
             rdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.on]
-            vevent["rdate"] = rdates
+            vevent.add("rdate", rdates)
             # dtstart and dtend should be adapted
             dtstart = dtstart.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
             dtend = dtend.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
@@ -429,7 +429,7 @@ class CoreCourseEvent(BaseModel):
                     yield vevent_copy
 
             if exdates:  # ignore reccurencies in original event
-                vevent["exdate"] = exdates
+                vevent.add("exdate", exdates)
             yield vevent
         else:  # just a single event on specific dates
             yield vevent
@@ -443,7 +443,7 @@ class CoreCourseEvent(BaseModel):
                 vevent_copy["uid"] = self.get_uid(sequence=str(i))
                 vevent_copy.pop("rdate")
                 rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on]
-                vevent_copy["rdate"] = rdates
+                vevent_copy.add("rdate", rdates)
                 # adapt dtstart and dtend
                 _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
                 _dtend = dtend.replace(day=item.on[0].day, month=item.on[0].month)

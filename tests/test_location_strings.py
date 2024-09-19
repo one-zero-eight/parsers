@@ -170,6 +170,10 @@ cases = [
         "ONLINE ON 11/09, 313 ON 30/10",
         Item(location="ONLINE", on=[ydate(day=11, month=9)], NEST=[Item(location="313", on=[ydate(day=30, month=10)])]),
     ),
+    (
+        "301 (ON 15/10, 29/10, 05/11)",
+        Item(location="301", on=[ydate(day=15, month=10), ydate(day=29, month=10), ydate(day=5, month=11)]),
+    ),
 ]
 
 
