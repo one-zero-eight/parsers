@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--period", type=int, help="Period in seconds", default=600)
+    parser.add_argument("--period", type=int, help="Period in seconds", default=-1)
 
     args = parser.parse_args()
     logger.info(f"Update schedule of Core Courses, Electives and Sports every {args.period} seconds")
@@ -29,4 +29,6 @@ if __name__ == "__main__":
     while True:
         main()
         logger.info(f"Wait for {args.period} seconds...")
+        if args.period == -1:
+            break
         time.sleep(args.period)

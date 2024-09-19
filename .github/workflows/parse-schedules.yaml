@@ -1,0 +1,47 @@
+name: "Parse schedules 🕵️‍♂️"
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: "Parse schedules 🕵️‍"
+    runs-on: ubuntu-latest
+    if: ${{ needs.check.outputs.updated == 'true' }}
+    steps:
+      - name: "Check out repository 🚚"
+        uses: actions/checkout@v4
+      - name: "Pull the latest changes 🔄"
+        run: git pull
+      - name: "Set up Python 🐍"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: "Install Poetry 📦 (cache-hit)"
+        id: cached-poetry
+        uses: actions/cache@v4
+        with:
+          path: ~/.local  # the path depends on the OS
+          key: poetry-1.8.3  # increment to reset cache
+      - name: "Install Poetry 📦"
+        if: steps.cached-poetry.outputs.cache-hit != 'true'
+        uses: snok/install-poetry@v1
+        with:
+          version: '1.8.3'
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+      - name: "Install Poetry dependencies 📦 (cache-hit)"
+        id: cached-poetry-dependencies
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-test-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      - name: "Install Poetry dependencies 📦"
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --with dev
+      - name: "Parse schedules 🕵️‍♂️"
+        env:
+          PARSER_AUTH_KEY: ${{ secrets.PARSER_AUTH_KEY }}
+          INNOHASSLE_API_URL: "https://api.innohassle.ru/events/v0"
+        run: poetry run python -m src
