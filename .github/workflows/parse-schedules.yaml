@@ -8,7 +8,6 @@ jobs:
   check:
     name: "Parse schedules 🕵️‍"
     runs-on: ubuntu-latest
-    if: ${{ needs.check.outputs.updated == 'true' }}
     steps:
       - name: "Check out repository 🚚"
         uses: actions/checkout@v4
