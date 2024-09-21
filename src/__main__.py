@@ -26,7 +26,7 @@ def create_markdown_table_and_details(data_dict, warnings):
 
     # Add a warning section if there are any warnings
     if warnings:
-        result.append("### Warnings\n")
+        result.append("### Warnings ⚠️\n")
         for warning in warnings:
             result.append(f"- {warning.message}\n")
         result.append("\n")
@@ -37,18 +37,15 @@ def create_markdown_table_and_details(data_dict, warnings):
 
         # Updated and Same sections for each category
         for section, course_list in courses.items():
-            result.append(f"**{section.capitalize()} [{len(course_list)}]**\n")
-
+            # Create foldable sections for each course code
+            result.append(f"<details><summary><b>{section.capitalize()} [{len(course_list)}]</b></summary>\n\n")
             if course_list:
-                # Create foldable sections for each course code
-                result.append("<details><summary>Click to view</summary>\n\n")
                 # as bulleted list
                 course_list = [f"- {course}" for course in course_list]
                 result.append("\n".join(course_list) + "\n")
-                result.append("</details>\n")
             else:
-                result.append("_No courses available_\n")
-
+                result.append("Nothing...\n")
+            result.append("</details>\n")
             result.append("\n")  # Add space between sections
 
     # Join the result into a single string
