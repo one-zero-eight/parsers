@@ -134,8 +134,8 @@ def main():
         api_url=config.INNOHASSLE_API_URL,
         parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
     )
-    asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))
-
+    result = asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))
+    return result
 
 if __name__ == "__main__":
     main()

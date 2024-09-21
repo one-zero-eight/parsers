@@ -1,5 +1,6 @@
 import datetime
 import re
+import warnings
 from typing import Optional, Literal, Generator
 from zlib import crc32
 
@@ -237,7 +238,7 @@ class CoreCourseEvent(BaseModel):
             self.location_item = parse_location_string(location)
 
             if self.location_item is None:
-                logger.warning(f"Location `{location}` is not parsed properly")
+                warnings.warn(f"Location `{location}` is not parsed properly")
 
     def __hash__(self):
         string_to_hash = str(
@@ -305,7 +306,7 @@ class CoreCourseEvent(BaseModel):
                         )
                         if item.location:
                             if self.location_item.location:
-                                logger.warning(
+                                warnings.warn(
                                     "Both parent and NEST have location, NEST location will be skipped "
                                     f"{item.location}, {self.location_item.location}"
                                 )
@@ -314,7 +315,7 @@ class CoreCourseEvent(BaseModel):
 
                         if item.starts_from:
                             if self.location_item.starts_from:
-                                logger.warning(
+                                warnings.warn(
                                     "Both parent and NEST have starts_from, NEST starts_from will be skipped "
                                     f"{item.starts_from}, {self.location_item.starts_from}"
                                 )
@@ -323,7 +324,7 @@ class CoreCourseEvent(BaseModel):
 
                         if item.starts_at:
                             if self.location_item.starts_at:
-                                logger.warning(
+                                warnings.warn(
                                     "Both parent and NEST have starts_at, NEST starts_at will be skipped "
                                     f"{item.starts_at}, {self.location_item.starts_at}"
                                 )
@@ -332,7 +333,7 @@ class CoreCourseEvent(BaseModel):
 
                         if item.till:
                             if self.location_item.till:
-                                logger.warning(
+                                warnings.warn(
                                     "Both parent and NEST have till, NEST till will be skipped "
                                     f"{item.till}, {self.location_item.till}"
                                 )
@@ -401,7 +402,7 @@ class CoreCourseEvent(BaseModel):
         if vevent.has_key("rrule"):  # event with rrule
             for i, item in enumerate(self.location_item.NEST):
                 if not item.on:
-                    logger.warning(f"NEST item {item} has no on, it is not possible to create event")
+                    warnings.warn(f"NEST item {item} has no on, it is not possible to create event")
                     continue
                 # override specific recurrence entry
                 for j, on in enumerate(item.on):
@@ -436,7 +437,7 @@ class CoreCourseEvent(BaseModel):
 
             for i, item in enumerate(self.location_item.NEST):
                 if not item.on:
-                    logger.warning(f"NEST item {item} has no on, it is not possible to create event")
+                    warnings.warn(f"NEST item {item} has no on, it is not possible to create event")
                     continue
 
                 vevent_copy = vevent.copy()

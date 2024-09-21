@@ -13,6 +13,7 @@ import datetime
 import json
 import pathlib
 import re
+import warnings
 from functools import partial
 from typing import Any, Optional
 
@@ -179,16 +180,18 @@ async def update_inh_event_groups(
     inh_client: InNoHassleEventsClient,
     mount_point: pathlib.Path,
     output: Output,
-) -> None:
+) -> dict:
     logger.info(f"Trying to create or read {len(output.event_groups)} event groups")
     inh_event_groups = await inh_client.batch_create_or_read_event_groups(output.event_groups)
     inh_event_groups_dict = {group.alias: group for group in inh_event_groups}
+    updated = []
+    same = []
 
     async def task(event_group):
         inh_event_group = inh_event_groups_dict.get(event_group.alias)
 
         if inh_event_group is None:
-            logger.warning(f"Event group {event_group.alias} not found")
+            warnings.warn(f"Event group `{event_group.alias}` not found")
         else:
             code = await inh_client.update_ics(
                 event_group_id=inh_event_group.id,
@@ -196,11 +199,15 @@ async def update_inh_event_groups(
             )
             if code == 200:
                 logger.info(f"ICS is not modified for {event_group.alias} <{inh_event_group.id}>")
+                same.append(inh_event_group.alias)
             elif code == 201:
                 logger.info(f"ICS is modified for {event_group.alias} <{inh_event_group.id}>")
+                updated.append(inh_event_group.alias)
 
     tasks = [asyncio.create_task(task(event_group)) for event_group in output.event_groups]
     await asyncio.gather(*tasks)
+
+    return {"updated": updated, "same": same}
 
 
 def validate_slug(s):

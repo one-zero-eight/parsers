@@ -90,7 +90,7 @@ async def main():
         parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
     )
 
-    await update_inh_event_groups(inh_client, config.MOUNT_POINT, output)
+    return await update_inh_event_groups(inh_client, config.MOUNT_POINT, output)
 
 
 if __name__ == "__main__":
