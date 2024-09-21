@@ -174,6 +174,30 @@ cases = [
         "301 (ON 15/10, 29/10, 05/11)",
         Item(location="301", on=[ydate(day=15, month=10), ydate(day=29, month=10), ydate(day=5, month=11)]),
     ),
+    ("ОНЛАЙН (С 25.09)", Item(location="ОНЛАЙН", starts_from=ydate(day=25, month=9))),
+    (
+        "ОНЛАЙН (ТОЛЬКО 04/10, 18/10, 01/11, 15/11)",
+        Item(
+            location="ОНЛАЙН",
+            on=[ydate(day=4, month=10), ydate(day=18, month=10), ydate(day=1, month=11), ydate(day=15, month=11)],
+        ),
+    ),
+    (
+        "ОНЛАЙН (ТОЛЬКО 27/09, 11/10, 25/10, 08/11, 22/11, 06/12, 20/12) НАЧАЛО В 18:00",
+        Item(
+            location="ОНЛАЙН",
+            on=[
+                ydate(day=27, month=9),
+                ydate(day=11, month=10),
+                ydate(day=25, month=10),
+                ydate(day=8, month=11),
+                ydate(day=22, month=11),
+                ydate(day=6, month=12),
+                ydate(day=20, month=12),
+            ],
+            starts_at=time(hour=18, minute=0),
+        ),
+    ),
 ]
 
 

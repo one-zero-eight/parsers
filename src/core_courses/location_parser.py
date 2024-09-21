@@ -44,14 +44,14 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         if m := re.fullmatch(r"^(ONLINE|ОНЛАЙН)$", y):
             return m.group(0)
 
-        if m := re.fullmatch(r"^((\d|ONLINE|OНЛAЙН)+(?:\s*/\s*(\d|ONLINE|OНЛAЙН)+)+)$", y):
+        if m := re.fullmatch(r"^((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)$", y):
             locations = m.group(1)
             locations = locations.split("/")
             locations = [l.strip() for l in locations]
             return "/".join(locations)
 
     _loc = combine_patterns(
-        [r"(\d+)", r"ROOM\s*#?\s*(\d+)", r"(ONLINE|OНЛAЙН)", r"((\d|ONLINE|OНЛAЙН)+(?:\s*/\s*(\d|ONLINE|OНЛAЙН)+)+)"]
+        [r"(\d+)", r"ROOM\s*#?\s*(\d+)", r"(ONLINE|ОНЛАЙН)", r"((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)"]
     )
 
     def location_plus_pattern(group_name: str, pattern: str):
@@ -60,7 +60,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
     if as_simple_location := get_location(y=x):
         return Item(location=as_simple_location)
 
-    _starts_from_pattern = r"STARTS\s*(ON|FROM)\s*(\d{1,2}[\/.]\d{1,2})"
+    _starts_from_pattern = r"\(?(STARTS ON|STARTS FROM|С)\s*(\d{1,2}[\/.]\d{1,2})\)?"
 
     def starts_from(y: str):
         if m := re.fullmatch(_starts_from_pattern, y):
@@ -69,7 +69,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
 
             return Item(starts_from=ydate(day=int(day), month=int(month)))
 
-    _starts_at_pattern = r"STARTS\s*(AT)\s*(\d{1,2}[:.]\d{1,2})"
+    _starts_at_pattern = r"\(?(STARTS|STARTS AT|НАЧАЛО В)\s*(\d{1,2}[:.]\d{1,2})\)?"
 
     def starts_at(y: str):
         if m := re.fullmatch(_starts_at_pattern, y):
@@ -78,7 +78,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
 
             return Item(starts_at=time(hour=int(hour), minute=int(minute)))
 
-    _week_pattern = r"WEEK\s*(?P<weeks>\d+(?:-\d+)?(?:,\s*\d+(?:-\d+)?)*)(?:\s+ONLY)?"
+    _week_pattern = r"\(?WEEK\s*(?P<weeks>\d+(?:-\d+)?(?:,\s*\d+(?:-\d+)?)*)(?:\s+ONLY)?\)?"
 
     def week(y: str):
         if m := re.fullmatch(_week_pattern, y):
@@ -89,7 +89,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             weeks = [item for sublist in weeks for item in sublist]
             return Item(on_weeks=weeks)
 
-    _on_pattern = r"\(?(ON|ONLY ON|НА|ТОЛЬКО НА)\s*(?P<dates>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
+    _on_pattern = r"\(?(ON|ONLY ON|НА|ТОЛЬКО НА|ТОЛЬКО)\s*(?P<dates>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
 
     def on(y: str):
         if m := re.fullmatch(_on_pattern, y):
@@ -100,7 +100,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             dates = [ydate(day=int(d[0]), month=int(d[1])) for d in dates]
             return Item(on=dates)
 
-    _till_pattern = r"TILL\s*(?P<time>\d{1,2}[:.]\d{1,2})"
+    _till_pattern = r"\(?TILL\s*(?P<time>\d{1,2}[:.]\d{1,2})\)?"
 
     def till(y: str):
         if m := re.fullmatch(_till_pattern, y):
