@@ -80,6 +80,7 @@ def main():
         for calendar_name, events in converted.items():
             calendar = get_base_calendar()
             calendar["x-wr-calname"] = calendar_name
+            calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.SPREADSHEET_ID}"
 
             cnt = 0
 

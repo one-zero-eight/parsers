@@ -105,8 +105,9 @@ def main():
         tags.append(course_tag)
 
         group_calendar = get_base_calendar()
-
         group_calendar["x-wr-calname"] = group
+        group_calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.SPREADSHEET_ID}"
+
         group_events = list(group_events)
         cnt = 0
         for group_event in group_events:
