@@ -33,11 +33,11 @@ Parse schedules:
 
 ### Getting started
 
-1. Install [Python 3.11+](https://www.python.org/downloads/release/python-3117/)
+1. Install [Python 3.12](https://www.python.org/downloads/)
 2. Install [Poetry](https://python-poetry.org/docs/)
 3. Install project dependencies with [Poetry](https://python-poetry.org/docs/cli/#options-2).
    ```bash
-   poetry install --no-root
+   poetry install
    ```
 
 ## How to Use
