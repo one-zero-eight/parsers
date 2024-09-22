@@ -52,6 +52,7 @@ async def main():
         calendar_name = f"{title} - {subtitle}" if subtitle else title
         logger.info(f"Saving {calendar_name} calendar")
         calendar["x-wr-calname"] = calendar_name
+        calendar["x-wr-link"] = f"https://sport.innopolis.university"
         for event in events:
             event: SportScheduleEvent
             vevent = event.get_vevent(config.START_OF_SEMESTER, config.END_OF_SEMESTER)
