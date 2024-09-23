@@ -10,12 +10,6 @@ updates:
         patterns:
           - "*"
 
-  # Enable version updates for Docker
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
   # Enable version updates for Actions
   - package-ecosystem: "github-actions"
     directory: "/"
