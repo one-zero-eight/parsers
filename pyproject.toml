@@ -8,10 +8,10 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-aiohttp = "^3.8.4"
+aiohttp = "^3.10.6"
 colorlog = "^6.8.2"
 google = { extras = ["auth"], version = "^3.0.0" }
-google-api-python-client = "^2.131.0"
+google-api-python-client = "^2.147.0"
 google-auth-httplib2 = "^0.2.0"
 google-auth-oauthlib = "^1.2.0"
 icalendar = "^5.0.13"
