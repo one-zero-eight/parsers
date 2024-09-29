@@ -7,6 +7,7 @@ from src.core_courses.__main__ import main as core_courses_main
 from src.electives.__main__ import main as electives_main
 from src.logging_ import logger
 from src.sports.__main__ import main as sports_main
+from src.cleaning.__main__ import main as cleaning_main
 
 
 def create_markdown_table_and_details(data_dict, warnings):
@@ -66,6 +67,10 @@ def main():
     logger.info("\nSports:")
     if _ := asyncio.run(sports_main()):
         result["Sports"] = _
+
+    logger.info("\nCleaning:")
+    if _ := cleaning_main():
+        result["Cleaning"] = _
     return result
 
 

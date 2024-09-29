@@ -8,8 +8,7 @@ from src.electives.config import electives_config as config
 from src.electives.parser import ElectiveParser, convert_separation
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.processors.regex import sluggify
-from src.utils import get_base_calendar
+from src.utils import get_base_calendar, sluggify
 
 
 def main():

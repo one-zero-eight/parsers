@@ -397,8 +397,6 @@ class CoreCourseEvent(BaseModel):
             return
 
         # NEST
-        exdates = []
-
         if vevent.has_key("rrule"):  # event with rrule
             for i, item in enumerate(self.location_item.NEST):
                 if not item.on:
@@ -408,7 +406,6 @@ class CoreCourseEvent(BaseModel):
                 for j, on in enumerate(item.on):
                     vevent_copy = vevent.copy()
                     _recurrence_id = dtstart.replace(day=on.day, month=on.month)
-                    exdates.append(_recurrence_id)
                     vevent_copy["recurrence-id"] = icalendar.vDatetime(_recurrence_id)
                     vevent_copy["sequence"] = i + j
                     vevent_copy.pop("rrule")
@@ -429,8 +426,6 @@ class CoreCourseEvent(BaseModel):
                         vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                     yield vevent_copy
 
-            if exdates:  # ignore reccurencies in original event
-                vevent.add("exdate", exdates)
             yield vevent
         else:  # just a single event on specific dates
             yield vevent

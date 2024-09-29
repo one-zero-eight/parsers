@@ -4,7 +4,6 @@ from typing import Optional
 
 import pandas as pd
 
-from src.processors.regex import symbol_translation
 from src.workshops.config import bootcamp_config as config
 from src.workshops.models import WorkshopEvent
 
@@ -72,7 +71,6 @@ class WorkshopParser:
         # replace multiple \n with one \n to avoid empty lines using regex
         event_cell = re.sub(r"\n+", "\n", event_cell)
         # replace cyrillic symbols with their unicode analogs
-        event_cell = event_cell.translate(symbol_translation)
         splitter = event_cell.splitlines()
         splitter = list(map(str.strip, splitter))
         new_splitter = []

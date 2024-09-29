@@ -8,13 +8,13 @@ from typing import Generator
 import numpy as np
 import pandas as pd
 import requests
-from openpyxl.utils.cell import coordinate_to_tuple
+from openpyxl.utils import coordinate_to_tuple
 
 from src.electives.config import electives_config as config
 from src.electives.models import Elective, ElectiveCell, ElectiveEvent
-from src.processors.regex import prettify_string
-from src.utils import *
 from src.logging_ import logger
+from src.processors.regex import prettify_string
+from src.utils import get_current_year
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 

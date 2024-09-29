@@ -129,21 +129,6 @@ class InNoHassleEventsClient:
 
                 raise Exception(f"Unexpected response status: {response.status} for event group {event_group_id}")
 
-    async def parse_cleaning(self, cleaning_config: "CleaningParserConfig"):
-        async with self.session() as s:
-            async with s.post(
-                f"{self.api_url}/parse/cleaning",
-                json=cleaning_config.dict(),
-            ) as response:
-                if response.status == 200:
-                    logger.debug("Cleaning schedule is updated")
-                    return
-
-                if response.content:
-                    logger.error(await response.json())
-
-                raise Exception(f"Unexpected response status: {response.status}")
-
 
 class Output(BaseModel):
     event_groups: list[CreateEventGroup]
@@ -218,6 +203,3 @@ def validate_slug(s):
     if re.match(r"-{2,}", s):
         return False
     return False
-
-
-from src.cleaning.__main__ import CleaningParserConfig  # noqa: E402

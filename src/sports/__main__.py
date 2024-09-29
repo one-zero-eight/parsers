@@ -6,11 +6,10 @@ import aiohttp as aiohttp
 
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.processors.regex import sluggify
 from src.sports.config import sports_config as config
 from src.sports.models import SportScheduleEvent
 from src.sports.parser import SportParser
-from src.utils import get_base_calendar
+from src.utils import get_base_calendar, sluggify
 
 
 async def main():

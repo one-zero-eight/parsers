@@ -1,18 +1,3 @@
-__all__ = [
-    "get_base_calendar",
-    "get_current_year",
-    "nearest_weekday",
-    "get_weekday_rrule",
-    "get_credentials",
-    "connect_spreadsheets",
-    "get_project_root",
-    "get_sheets",
-    "get_sheet_by_id",
-    "get_namespace",
-    "get_merged_ranges",
-    "split_range_to_xy",
-]
-
 import datetime
 import os
 import re
@@ -21,6 +6,7 @@ from pathlib import Path
 # noinspection StandardLibraryXml
 from xml.etree import ElementTree as ET
 from zipfile import ZipFile
+from zlib import crc32
 
 import googleapiclient.discovery
 import icalendar
@@ -28,6 +14,7 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from openpyxl.utils import coordinate_to_tuple
+
 
 TIMEZONE = "Europe/Moscow"
 
@@ -49,9 +36,7 @@ def get_base_calendar() -> icalendar.Calendar:
     calendar["x-wr-timezone"] = TIMEZONE
 
     # add timezone
-    timezone = icalendar.Timezone(
-        tzid=TIMEZONE,
-    )
+    timezone = icalendar.Timezone(tzid=TIMEZONE)
     timezone["x-lic-location"] = TIMEZONE
     # add standard timezone
     standard = icalendar.TimezoneStandard()
@@ -255,3 +240,28 @@ def make_year_in_future(date: datetime.date, left_date: datetime.date) -> dateti
     else:
         date = date.replace(year=left_date.year)
     return date
+
+
+def get_color(summary: str) -> icalendar.vText:
+    from src.config_base import CSS3Color
+
+    h = crc32(summary.encode("utf-8")) % len(CSS3Color)
+    return icalendar.vText(CSS3Color.get_by_index(h))
+
+
+def sluggify(s: str) -> str:
+    """
+    Sluggify string.
+
+    :param s: string to sluggify
+    :type s: str
+    :return: sluggified string
+    :rtype: str
+    """
+    s = s.lower()
+    # also translates special symbols, brackets, commas, etc.
+    s = re.sub(r"[^a-z0-9\s-]", " ", s)
+    s = re.sub(r"\s+", "-", s)
+    # remove multiple dashes
+    s = re.sub(r"-{2,}", "-", s)
+    return s

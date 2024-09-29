@@ -5,8 +5,8 @@ from zlib import crc32
 import icalendar
 from pydantic import BaseModel
 
-from src.config_base import CSS3Color, VDayOfWeek
-from src.utils import nearest_weekday
+from src.config_base import VDayOfWeek
+from src.utils import get_color, nearest_weekday
 
 
 class ResponseSports(BaseModel):
@@ -152,19 +152,7 @@ class SportScheduleEvent(BaseModel):
             icalendar.vText("sport"),
             icalendar.vText(self.sport.name),
         ]
-        vevent["color"] = icalendar.vText(self.color.value)
+        vevent["color"] = get_color(self.summary)
         vevent["description"] = icalendar.vText(self.description)
 
         return vevent
-
-    @property
-    def color(self) -> CSS3Color:
-        """
-        Get color for the event
-
-        :return: color for the event
-        """
-
-        color_count = len(CSS3Color)
-        hash_ = crc32(self.summary.encode("utf-8"))
-        return CSS3Color.get_by_index(hash_ % color_count)

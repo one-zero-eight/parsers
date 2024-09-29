@@ -3,14 +3,8 @@ from zlib import crc32
 
 from pydantic import BaseModel
 import icalendar
-from src.config_base import CSS3Color
 
-
-class Palitre:
-    @staticmethod
-    def get_by_summary(summary: str):
-        h = crc32(summary.encode("utf-8")) % len(CSS3Color)
-        return CSS3Color.get_by_index(h)
+from src.utils import get_color
 
 
 class WorkshopEvent(BaseModel):
@@ -81,5 +75,5 @@ class WorkshopEvent(BaseModel):
             vevent["description"] = description
         if self.location:
             vevent["location"] = self.location
-        vevent["color"] = Palitre.get_by_summary(self.summary)
+        vevent["color"] = get_color(self.summary)
         return vevent

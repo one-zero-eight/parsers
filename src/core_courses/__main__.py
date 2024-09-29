@@ -11,8 +11,7 @@ from src.core_courses.models import CoreCourseCell, CoreCourseEvent
 from src.core_courses.parser import CoreCoursesParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.processors.regex import sluggify
-from src.utils import get_base_calendar
+from src.utils import get_base_calendar, sluggify
 
 
 # noinspection InsecureHash
