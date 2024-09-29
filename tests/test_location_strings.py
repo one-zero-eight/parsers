@@ -198,6 +198,10 @@ cases = [
             starts_at=time(hour=18, minute=0),
         ),
     ),
+    (
+        "314 (? ON 01/10)",
+        Item(location="314", NEST=[Item(location="?", on=[ydate(day=1, month=10)])]),
+    ),
 ]
 
 

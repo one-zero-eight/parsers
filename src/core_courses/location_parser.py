@@ -38,6 +38,9 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         if m := re.fullmatch(r"^(\d+)$", y):
             return m.group(1)
 
+        if m := re.fullmatch(r"^\?$", y):
+            return "?"
+
         if m := re.fullmatch(r"^ROOM\s*#?\s*(\d+)$", y):
             return m.group(1)
 
@@ -51,7 +54,13 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             return "/".join(locations)
 
     _loc = combine_patterns(
-        [r"(\d+)", r"ROOM\s*#?\s*(\d+)", r"(ONLINE|ОНЛАЙН)", r"((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)"]
+        [
+            r"(\d+)",
+            r"\?",
+            r"ROOM\s*#?\s*(\d+)",
+            r"(ONLINE|ОНЛАЙН)",
+            r"((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)",
+        ]
     )
 
     def location_plus_pattern(group_name: str, pattern: str):
@@ -89,7 +98,9 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             weeks = [item for sublist in weeks for item in sublist]
             return Item(on_weeks=weeks)
 
-    _on_pattern = r"\(?(ON|ONLY ON|НА|ТОЛЬКО НА|ТОЛЬКО)\s*(?P<dates>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
+    _on_pattern = (
+        r"\(?(ON|ONLY ON|НА|ТОЛЬКО НА|ТОЛЬКО)\s*(?P<dates>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
+    )
 
     def on(y: str):
         if m := re.fullmatch(_on_pattern, y):
