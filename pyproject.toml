@@ -15,7 +15,7 @@ google-api-python-client = "^2.147.0"
 google-auth-httplib2 = "^0.2.0"
 google-auth-oauthlib = "^1.2.0"
 html5lib = "^1.1"
-icalendar = "^5.0.13"
+icalendar = "^6.0.0"
 openpyxl = "^3.1.2"
 pandas = { extras = ["openpyxl"], version = "^2.0.3" }
 pydantic = "^1.10"
