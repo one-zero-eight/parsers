@@ -69,7 +69,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
     if as_simple_location := get_location(y=x):
         return Item(location=as_simple_location)
 
-    _starts_from_pattern = r"\(?(STARTS ON|STARTS FROM|С)\s*(\d{1,2}[\/.]\d{1,2})\)?"
+    _starts_from_pattern = r"\(?(STARTS ON|STARTS FROM|FROM|С)\s*(\d{1,2}[\/.]\d{1,2})\)?"
 
     def starts_from(y: str):
         if m := re.fullmatch(_starts_from_pattern, y):

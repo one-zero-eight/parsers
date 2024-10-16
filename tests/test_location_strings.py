@@ -202,6 +202,10 @@ cases = [
         "314 (? ON 01/10)",
         Item(location="314", NEST=[Item(location="?", on=[ydate(day=1, month=10)])]),
     ),
+    (
+        "421 (316 FROM 31/10)",
+        Item(location="421", NEST=[Item(location="316", starts_from=ydate(day=31, month=10))]),
+    ),
 ]
 
 
