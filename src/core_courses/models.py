@@ -32,13 +32,13 @@ class CoreCourseCell:
         return self.value.__repr__()
 
     def get_event(
-        self: "CoreCourseCell",
-        weekday: str,
-        timeslot: tuple[datetime.time, datetime.time],
-        course: str,
-        group: str,
-        target: config.Target,
-        return_none: bool = False,
+            self: "CoreCourseCell",
+            weekday: str,
+            timeslot: tuple[datetime.time, datetime.time],
+            course: str,
+            group: str,
+            target: config.Target,
+            return_none: bool = False,
     ) -> Optional["CoreCourseEvent"]:
         """
         Get event from cell
@@ -302,14 +302,15 @@ class CoreCourseEvent(BaseModel):
                     preprocess_on_and_weeks_on(item)
                     if not item.on:
                         logger.info(
-                            f"NEST item {item} has not on or weeks_on, " f"its properties will be propagated to parent"
+                            f"NEST item {item} has not on or weeks_on, its properties will be propagated to parent"
                         )
                         if item.location:
                             if self.location_item.location:
                                 warnings.warn(
-                                    "Both parent and NEST have location, NEST location will be skipped "
+                                    "Both parent and NEST have location, NEST properties will be skipped "
                                     f"{item.location}, {self.location_item.location}"
-                                )
+                                )  # TODO: handle case "421 (316 FROM 31/10)"
+                                continue
                             else:
                                 self.location_item.location = item.location
 
