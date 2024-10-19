@@ -10,6 +10,20 @@
       "sheet_name": "1st block common (since 2608)",
       "range": "A1:BB116",
       "start_date": "2024-08-25",
+      "end_date": "2024-10-21",
+      "time_columns": [
+        "A",
+        "N",
+        "Y",
+        "AK",
+        "AT",
+        "BA"
+      ]
+    },
+    {
+      "sheet_name": "2nd block common (since 2110)",
+      "range": "A1:BB116",
+      "start_date": "2024-10-21",
       "end_date": "2024-12-23",
       "time_columns": [
         "A",
