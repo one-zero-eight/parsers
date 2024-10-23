@@ -32,13 +32,13 @@ class CoreCourseCell:
         return self.value.__repr__()
 
     def get_event(
-            self: "CoreCourseCell",
-            weekday: str,
-            timeslot: tuple[datetime.time, datetime.time],
-            course: str,
-            group: str,
-            target: config.Target,
-            return_none: bool = False,
+        self: "CoreCourseCell",
+        weekday: str,
+        timeslot: tuple[datetime.time, datetime.time],
+        course: str,
+        group: str,
+        target: config.Target,
+        return_none: bool = False,
     ) -> Optional["CoreCourseEvent"]:
         """
         Get event from cell

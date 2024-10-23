@@ -137,5 +137,6 @@ def main():
     result = asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))
     return result
 
+
 if __name__ == "__main__":
     main()
