@@ -393,6 +393,11 @@ class CoreCourseEvent(BaseModel):
         vevent["dtstart"] = icalendar.vDatetime(dtstart)
         vevent["dtend"] = icalendar.vDatetime(dtend)
 
+        # check for item.except_ and add exdate if needed
+        if self.location_item.except_:
+            exdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.except_]
+            vevent.add("exdate", exdates)
+
         if not self.location_item or not self.location_item.NEST:  # Simple case, only one event
             yield vevent
             return
@@ -426,10 +431,6 @@ class CoreCourseEvent(BaseModel):
                         _dtend = _dtend.replace(hour=item.till.hour, minute=item.till.minute)
                         vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                     yield vevent_copy
-            # check for item.except_ and add exdate if needed
-            if self.location_item.except_:
-                exdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.except_]
-                vevent.add("exdate", exdates)
             yield vevent
         else:  # just a single event on specific dates
             yield vevent
