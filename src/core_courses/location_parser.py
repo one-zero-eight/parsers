@@ -12,6 +12,7 @@ class Item(BaseModel):
     till: time | None = None
     on_weeks: list[int] | None = None
     on: list[date] | None = None
+    except_: list[date] | None = None
     NEST: list["Item"] | None = None
 
     class Config:
@@ -119,7 +120,20 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             hour, minute = _time.split(sep=":")
             return Item(till=time(hour=int(hour), minute=int(minute)))
 
-    _mod = combine_patterns([_starts_from_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern])
+    _except_pattern = (
+        r"\(?(EXCEPT|КРОМЕ)\s*(?P<dates_except>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
+    )
+
+    def except_(y: str):
+        if m := re.fullmatch(_except_pattern, y):
+            dates = m.group("dates_except")
+            dates = dates.split(",")
+            dates = [d.replace(".", "/") for d in dates]
+            dates = [d.split("/") for d in dates]
+            dates = [ydate(day=int(d[0]), month=int(d[1])) for d in dates]
+            return Item(except_=dates)
+
+    _mod = combine_patterns([_starts_from_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern])
 
     def any_modifier(y: str):
         if m := re.fullmatch(_mod, y):
@@ -134,6 +148,8 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
                 return as_on
             if as_till := till(z):
                 return as_till
+            if as_except := except_(z):
+                return as_except
 
     if as_any_modifier := any_modifier(x):
         return as_any_modifier

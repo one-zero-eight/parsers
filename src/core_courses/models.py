@@ -279,7 +279,7 @@ class CoreCourseEvent(BaseModel):
         :return: icalendar events if "only on xx/xx, xx/xx" appeared in location, else one icalendar event
         """
 
-        def preprocess_on_and_weeks_on(item: Item):
+        def convert_weeks_on_to_only_on(item: Item):
             if item.on_weeks:
                 on = []
                 for week in item.on_weeks:
@@ -299,7 +299,7 @@ class CoreCourseEvent(BaseModel):
                 # all properties should be moved to the parent
                 new_nest = []
                 for item in self.location_item.NEST:
-                    preprocess_on_and_weeks_on(item)
+                    convert_weeks_on_to_only_on(item)
                     if not item.on:
                         logger.info(
                             f"NEST item {item} has not on or weeks_on, its properties will be propagated to parent"
@@ -359,7 +359,7 @@ class CoreCourseEvent(BaseModel):
                 self.end_time = (datetime.datetime.combine(self.starts, self.start_time) + duration).time()
             if self.location_item.till:
                 self.end_time = self.location_item.till
-            preprocess_on_and_weeks_on(self.location_item)
+            convert_weeks_on_to_only_on(self.location_item)
 
         start_of_weekdays = nearest_weekday(self.starts, self.weekday)
         dtstart = datetime.datetime.combine(start_of_weekdays, self.start_time)
@@ -426,7 +426,10 @@ class CoreCourseEvent(BaseModel):
                         _dtend = _dtend.replace(hour=item.till.hour, minute=item.till.minute)
                         vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                     yield vevent_copy
-
+            # check for item.except_ and add exdate if needed
+            if self.location_item.except_:
+                exdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.except_]
+                vevent.add("exdate", exdates)
             yield vevent
         else:  # just a single event on specific dates
             yield vevent

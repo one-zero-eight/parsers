@@ -206,6 +206,8 @@ cases = [
         "421 (316 FROM 31/10)",
         Item(location="421", NEST=[Item(location="316", starts_from=ydate(day=31, month=10))]),
     ),
+    ("460 EXCEPT 28/11", Item(location="460", except_=[ydate(day=28, month=11)])),
+    ("303 КРОМЕ 18/11", Item(location="303", except_=[ydate(day=18, month=11)])),
 ]
 
 
