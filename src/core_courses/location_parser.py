@@ -120,9 +120,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             hour, minute = _time.split(sep=":")
             return Item(till=time(hour=int(hour), minute=int(minute)))
 
-    _except_pattern = (
-        r"\(?(EXCEPT|КРОМЕ)\s*(?P<dates_except>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
-    )
+    _except_pattern = r"\(?(EXCEPT|КРОМЕ)\s*(?P<dates_except>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
 
     def except_(y: str):
         if m := re.fullmatch(_except_pattern, y):
@@ -133,7 +131,9 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             dates = [ydate(day=int(d[0]), month=int(d[1])) for d in dates]
             return Item(except_=dates)
 
-    _mod = combine_patterns([_starts_from_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern])
+    _mod = combine_patterns(
+        [_starts_from_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern]
+    )
 
     def any_modifier(y: str):
         if m := re.fullmatch(_mod, y):
@@ -303,5 +303,23 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
 
     if as__5 := _5(x):
         return as__5
+
+    # 317 ON 15/02, 22/02, 15/03, 22/03, 5/04, 12/04, 19/04 (ONLINE ON 26/04)
+    __6 = rf"(?P<location>{_loc})\s*(?P<modifier>{_mod_noname})\s*\((?P<location2>{_loc})\s*(?P<mod2>{_mod_noname})\)"
+
+    def _6(y: str):
+        if m := re.fullmatch(__6, y):
+            loc = get_location(m.group("location"))
+            mod = any_modifier(m.group("modifier"))
+            loc2 = get_location(m.group("location2"))
+            mod2 = any_modifier(m.group("mod2"))
+            if mod and mod2:
+                mod.location = loc
+                mod2.location = loc2
+                mod.NEST = [mod2]
+                return mod
+
+    if as__6 := _6(x):
+        return as__6
 
     return None

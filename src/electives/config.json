@@ -5,12 +5,7 @@
     "name": "Fall 2024",
     "type": "semester"
   },
-  "TARGETS": [
-    {
-      "sheet_name": "BS Tech",
-      "range": "A2:H144"
-    }
-  ],
+  "TARGETS": [],
   "SAVE_ICS_PATH": "fall24/electives",
   "SAVE_JSON_PATH": "fall24/electives.json",
   "ELECTIVES": [
