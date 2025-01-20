@@ -48,6 +48,9 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         if m := re.fullmatch(r"^(ONLINE|ОНЛАЙН)$", y):
             return m.group(0)
 
+        if m := re.fullmatch(r"^(ONLINE|ОНЛАЙН)\s*\(TBA\)$", y):
+            return m.group(0)
+
         if m := re.fullmatch(r"^((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)$", y):
             locations = m.group(1)
             locations = locations.split("/")
@@ -60,6 +63,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             r"\?",
             r"ROOM\s*#?\s*(\d+)",
             r"(ONLINE|ОНЛАЙН)",
+            r"(ONLINE|ОНЛАЙН)\s*\(TBA\)",
             r"((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)",
         ]
     )

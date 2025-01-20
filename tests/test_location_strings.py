@@ -224,6 +224,7 @@ cases = [
             NEST=[Item(location="ONLINE", on=[ydate(day=26, month=4)])],
         ),
     ),
+    ("ОНЛАЙН (TBA) НАЧАЛО В 18:30", Item(location="ОНЛАЙН (TBA)", starts_at=time(hour=18, minute=30))),
 ]
 
 

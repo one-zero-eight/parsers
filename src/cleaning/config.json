@@ -1,8 +1,8 @@
 {
   "SAVE_ICS_PATH": "cleaning",
   "SAVE_JSON_PATH": "cleaning.json",
-  "start_date": "2024-06-03",
-  "cleaning_spreadsheet_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRFcOzHYsw0hqqA_A4m1p2nk4_zIrI2UkH0z-vL4F20VM4AvJgKqiRUwQYSibRvrWi10IAMMZ38Gf1A/pubhtml",
+  "start_date": "2025-01-20",
+  "cleaning_spreadsheet_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyn8FIlygudmZmR9WyuJN6IIZe4XoRXsCBsXEQg2adOTOE3dHwj-xl7OQWWgu2thCpKr4-5t8fHGrb/pubhtml",
   "linen_change_entries": [
     {
       "location": "1 building",
