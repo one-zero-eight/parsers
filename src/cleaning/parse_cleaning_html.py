@@ -34,7 +34,9 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
                     # drop first column
                     df = df.drop(df.columns[0], axis=1)
                     # drop columns that contain only NaN
-                    df = df.dropna(axis=1, how="all")
+                    df = df.dropna(axis="columns", how="all")
+                    df = df.dropna(axis="rows", how="all")
+                    df = df.reindex()
                     # now second row should be [Monday ПОНЕДЕЛЬНИК,Tuesday ВТОРНИК,Wednesday СРЕДА,Thursday ЧЕТВЕРГ,
                     # Friday ПЯТНИЦА,Saturday СУББОТА,Sunday ВОСКРЕСЕНЬЕ]
                     assert (
@@ -56,7 +58,7 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
                     # 3, 5, 7, 9, 11... rows should be days of month (be careful at the end of month and start of month)
                     days = df.iloc[2::2, :]
                     # drop first, second and days rows
-                    df = df.drop([0, 1, *range(2, len(df), 2)])
+                    df = df.drop(df.index[[0, 1, *range(2, len(df), 2)]])
                     # flatten days
                     days = days.astype(int).values.flatten()
                     first_day_large_than_15 = days[0] > 15

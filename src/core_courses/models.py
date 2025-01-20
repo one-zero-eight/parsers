@@ -308,7 +308,7 @@ class CoreCourseEvent(BaseModel):
                             if self.location_item.location:
                                 warnings.warn(
                                     "Both parent and NEST have location, NEST properties will be skipped "
-                                    f"{item.location}, {self.location_item.location}"
+                                    f"{self.location_item.location}, not {item.location};\nItem({self.location_item})"
                                 )  # TODO: handle case "421 (316 FROM 31/10)"
                                 continue
                             else:

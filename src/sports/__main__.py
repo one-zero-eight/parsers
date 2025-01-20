@@ -2,7 +2,7 @@ import asyncio
 import json
 from itertools import groupby
 
-import aiohttp as aiohttp
+import aiohttp
 
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger

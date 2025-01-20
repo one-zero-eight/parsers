@@ -99,6 +99,8 @@ class InNoHassleEventsClient:
                 return [ViewEventGroup(**group) for group in groups_dict["event_groups"]]
 
     async def batch_create_or_read_event_groups(self, event_groups: list[CreateEventGroup]) -> list[ViewEventGroup]:
+        if not event_groups:
+            return []
         data = {"event_groups": [group.dict() for group in event_groups]}
 
         async with self.session() as s:

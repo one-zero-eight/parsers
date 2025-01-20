@@ -1,13 +1,13 @@
 import asyncio
 import os
 import time
-
 import warnings
+
+from src.cleaning.__main__ import main as cleaning_main
 from src.core_courses.__main__ import main as core_courses_main
 from src.electives.__main__ import main as electives_main
 from src.logging_ import logger
 from src.sports.__main__ import main as sports_main
-from src.cleaning.__main__ import main as cleaning_main
 
 
 def create_markdown_table_and_details(data_dict, warnings):
@@ -97,8 +97,16 @@ if __name__ == "__main__":
             if w:
                 logger.warning("Warnings occurred")
                 for warning in w:
-                    logger.warning(warning.message)
-
+                    record = logger.makeRecord(
+                        logger.name,
+                        30,
+                        warning.filename,
+                        warning.lineno,
+                        warning.message,
+                        (),
+                        None,
+                    )
+                    logger.handle(record)
                 exit(1)
     else:
         while True:
