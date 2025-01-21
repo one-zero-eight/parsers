@@ -225,6 +225,15 @@ cases = [
         ),
     ),
     ("ОНЛАЙН (TBA) НАЧАЛО В 18:30", Item(location="ОНЛАЙН (TBA)", starts_at=time(hour=18, minute=30))),
+    (
+        "ONLINE ON 10/02, 17/02, 03/03, 10/03 STARTS AT 11:00 TILL 14:00",
+        Item(
+            location="ONLINE",
+            on=[ydate(day=10, month=2), ydate(day=17, month=2), ydate(day=3, month=3), ydate(day=10, month=3)],
+            starts_at=time(hour=11, minute=0),
+            till=time(hour=14, minute=0),
+        ),
+    ),
 ]
 
 

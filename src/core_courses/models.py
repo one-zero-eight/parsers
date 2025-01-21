@@ -1,7 +1,7 @@
 import datetime
 import re
 import warnings
-from typing import Optional, Literal, Generator
+from typing import Generator, Literal, Optional
 from zlib import crc32
 
 import icalendar
@@ -150,6 +150,8 @@ class CoreCourseEvent(BaseModel):
     class_type: Optional[Literal["lec", "tut", "lab", "лек", "тут", "лаб"]] = None
     "Event class type"
 
+    _sequence_number: int = -1
+
     def __init__(self, **data):
         super().__init__(**data)
         self.process_subject()
@@ -263,7 +265,7 @@ class CoreCourseEvent(BaseModel):
         :return: unique identifier
         :rtype: str
         """
-        return sequence + ("-%x@innohassle.ru" % abs(hash(self)))
+        return sequence + f"-{abs(hash(self)):x}@innohassle.ru"
 
     def __repr__(self):
         return self.__str__()
@@ -279,6 +281,28 @@ class CoreCourseEvent(BaseModel):
         :return: icalendar events if "only on xx/xx, xx/xx" appeared in location, else one icalendar event
         """
 
+        if not self.location_item:
+            start_of_weekdays = nearest_weekday(self.starts, self.weekday)
+            dtstart = datetime.datetime.combine(start_of_weekdays, self.start_time)
+            dtend = datetime.datetime.combine(start_of_weekdays, self.end_time)
+            mapping = {
+                "summary": self.summary,
+                "description": self.description,
+                "location": self.location,
+                "dtstamp": icalendar.vDatetime(self.dtstamp),
+                "uid": self.get_uid(),
+                "color": self.color,
+                "rrule": self.every_week_rule(),
+                "dtstart": icalendar.vDatetime(dtstart),
+                "dtend": icalendar.vDatetime(dtend),
+            }
+            vevent = icalendar.Event()
+            for key, value in mapping.items():
+                if value:
+                    vevent.add(key, value)
+            yield vevent
+            return
+
         def convert_weeks_on_to_only_on(item: Item):
             if item.on_weeks:
                 on = []
@@ -292,84 +316,31 @@ class CoreCourseEvent(BaseModel):
             if item.on:
                 item.on = sorted(set(item.on))
 
-        if self.location_item:
-            if self.location_item.NEST:
-                # shaking:
-                # if NEST does not have on or weeks_on then it is should be dropped from the list and
-                # all properties should be moved to the parent
-                new_nest = []
-                for item in self.location_item.NEST:
-                    convert_weeks_on_to_only_on(item)
-                    if not item.on:
-                        logger.info(
-                            f"NEST item {item} has not on or weeks_on, its properties will be propagated to parent"
-                        )
-                        if item.location:
-                            if self.location_item.location:
-                                warnings.warn(
-                                    "Both parent and NEST have location, NEST properties will be skipped "
-                                    f"{self.location_item.location}, not {item.location};\nItem({self.location_item})"
-                                )  # TODO: handle case "421 (316 FROM 31/10)"
-                                continue
-                            else:
-                                self.location_item.location = item.location
+        location_item = self.location_item
+        location = location_item.location or self.location
+        starts = location_item.starts_from or self.starts
+        start_time = self.start_time
+        end_time = self.end_time
+        # move event start time to location starts_at time keeping same duration
+        if location_item.starts_at:
+            _start_time = datetime.datetime.combine(starts, start_time)
+            _end_time = datetime.datetime.combine(starts, end_time)
+            duration = _end_time - _start_time
+            start_time = location_item.starts_at
+            end_time = (datetime.datetime.combine(starts, start_time) + duration).time()
+        if location_item.till:
+            end_time = location_item.till
 
-                        if item.starts_from:
-                            if self.location_item.starts_from:
-                                warnings.warn(
-                                    "Both parent and NEST have starts_from, NEST starts_from will be skipped "
-                                    f"{item.starts_from}, {self.location_item.starts_from}"
-                                )
-                            else:
-                                self.location_item.starts_from = item.starts_from
-
-                        if item.starts_at:
-                            if self.location_item.starts_at:
-                                warnings.warn(
-                                    "Both parent and NEST have starts_at, NEST starts_at will be skipped "
-                                    f"{item.starts_at}, {self.location_item.starts_at}"
-                                )
-                            else:
-                                self.location_item.starts_at = item.starts_at
-
-                        if item.till:
-                            if self.location_item.till:
-                                warnings.warn(
-                                    "Both parent and NEST have till, NEST till will be skipped "
-                                    f"{item.till}, {self.location_item.till}"
-                                )
-                            else:
-                                self.location_item.till = item.till
-
-                    else:
-                        new_nest.append(item)
-
-                self.location_item.NEST = new_nest
-
-            if self.location_item.location:
-                self.location = self.location_item.location
-            if self.location_item.starts_from:
-                self.starts = self.location_item.starts_from
-            if self.location_item.starts_at:
-                # move event start time to location starts_at time keeping same duration
-                _start_time = datetime.datetime.combine(self.starts, self.start_time)
-                _end_time = datetime.datetime.combine(self.starts, self.end_time)
-                duration = _end_time - _start_time
-                self.start_time = self.location_item.starts_at
-                self.end_time = (datetime.datetime.combine(self.starts, self.start_time) + duration).time()
-            if self.location_item.till:
-                self.end_time = self.location_item.till
-            convert_weeks_on_to_only_on(self.location_item)
-
-        start_of_weekdays = nearest_weekday(self.starts, self.weekday)
-        dtstart = datetime.datetime.combine(start_of_weekdays, self.start_time)
-        dtend = datetime.datetime.combine(start_of_weekdays, self.end_time)
+        convert_weeks_on_to_only_on(location_item)
+        start_of_weekdays = nearest_weekday(starts, self.weekday)
+        dtstart = datetime.datetime.combine(start_of_weekdays, start_time)
+        dtend = datetime.datetime.combine(start_of_weekdays, end_time)
         duration = dtend - dtstart
 
         mapping = {
             "summary": self.summary,
             "description": self.description,
-            "location": self.location,
+            "location": location,
             "dtstamp": icalendar.vDatetime(self.dtstamp),
             "uid": self.get_uid(),
             "color": self.color,
@@ -381,39 +352,53 @@ class CoreCourseEvent(BaseModel):
             if value:
                 vevent.add(key, value)
 
-        if self.location_item and self.location_item.on:  # only on specific dates, not every week
-            rdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.on]
+        if location_item.on:  # only on specific dates, not every week
+            rdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.on]
             vevent.add("rdate", rdates)
             # dtstart and dtend should be adapted
-            dtstart = dtstart.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
-            dtend = dtend.replace(day=self.location_item.on[0].day, month=self.location_item.on[0].month)
+            dtstart = dtstart.replace(day=location_item.on[0].day, month=location_item.on[0].month)
+            dtend = dtend.replace(day=location_item.on[0].day, month=location_item.on[0].month)
         else:  # every week at the same time
-            vevent["rrule"] = self.every_week_rule()
+            vevent.add("rrule", self.every_week_rule())
 
         vevent["dtstart"] = icalendar.vDatetime(dtstart)
         vevent["dtend"] = icalendar.vDatetime(dtend)
 
         # check for item.except_ and add exdate if needed
-        if self.location_item.except_:
-            exdates = [dtstart.replace(day=on.day, month=on.month) for on in self.location_item.except_]
+        if location_item.except_:
+            exdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.except_]
             vevent.add("exdate", exdates)
 
-        if not self.location_item or not self.location_item.NEST:  # Simple case, only one event
+        nested_on = []
+        extra_nested = []
+        if location_item.NEST:
+            for item in location_item.NEST:
+                convert_weeks_on_to_only_on(item)
+                if item.on:
+                    nested_on.append(item)
+                else:
+                    logger.info(f"Root Item: {location_item}, {self.original_value}")
+                    extra_nested.append(item)
+
+        if not (nested_on or extra_nested):  # Simple case, only one event
             yield vevent
             return
 
+        if extra_nested:  # TODO: Handle '421 (316 FROM 31/10)' case
+            warnings.warn(f"Extra nested is not implemented yet\nItem({location_item})")
+
         # NEST
         if vevent.has_key("rrule"):  # event with rrule
-            for i, item in enumerate(self.location_item.NEST):
-                if not item.on:
-                    warnings.warn(f"NEST item {item} has no on, it is not possible to create event")
-                    continue
+            seq = 0
+
+            for i, item in enumerate(nested_on):
                 # override specific recurrence entry
                 for j, on in enumerate(item.on):
+                    seq += 1
                     vevent_copy = vevent.copy()
                     _recurrence_id = dtstart.replace(day=on.day, month=on.month)
                     vevent_copy["recurrence-id"] = icalendar.vDatetime(_recurrence_id)
-                    vevent_copy["sequence"] = i + j
+                    vevent_copy["sequence"] = seq
                     vevent_copy.pop("rrule")
                     # adapt dtstart and dtend
                     _dtstart = dtstart.replace(day=on.day, month=on.month)
@@ -435,11 +420,7 @@ class CoreCourseEvent(BaseModel):
         else:  # just a single event on specific dates
             yield vevent
 
-            for i, item in enumerate(self.location_item.NEST):
-                if not item.on:
-                    warnings.warn(f"NEST item {item} has no on, it is not possible to create event")
-                    continue
-
+            for i, item in enumerate(nested_on):
                 vevent_copy = vevent.copy()
                 vevent_copy["uid"] = self.get_uid(sequence=str(i))
                 vevent_copy.pop("rdate")

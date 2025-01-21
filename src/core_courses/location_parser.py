@@ -185,6 +185,28 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         as_two_modifiers = two_modifiers(m.group("two_modifiers"))
         as_two_modifiers.location = location
         return as_two_modifiers
+    _three_modifiers_pattern = (
+        rf"\(?(?P<first>{_mod_noname})\)?\s*\(?(?P<second>{_mod_noname})\)?\s*\(?(?P<third>{_mod_noname})\)?"
+    )
+
+    def three_modifiers(y: str):
+        if m := re.fullmatch(_three_modifiers_pattern, y):
+            z1, z2, z3 = m.group("first"), m.group("second"), m.group("third")
+            as_z1 = any_modifier(z1)
+            as_z2 = any_modifier(z2)
+            as_z3 = any_modifier(z3)
+            if as_z1 and as_z2 and as_z3:
+                combined = as_z1.dict(exclude_none=True) | as_z2.dict(exclude_none=True) | as_z3.dict(exclude_none=True)
+                return Item.parse_obj(combined)
+
+    if as_three_modifiers := three_modifiers(x):
+        return as_three_modifiers
+
+    if m := re.fullmatch(location_plus_pattern("three_modifiers", _three_modifiers_pattern), x):
+        location = get_location(m.group("location"))
+        as_three_modifiers = three_modifiers(m.group("three_modifiers"))
+        as_three_modifiers.location = location
+        return as_three_modifiers
 
     if from_parent:  # only one nesting level
         return None
