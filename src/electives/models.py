@@ -102,7 +102,7 @@ class ElectiveCell(BaseModel):
                 self.class_type = class_type_m.group(1).lower()
                 string = string.replace(class_type_m.group(0), "")
 
-            # find (Group 1)
+            # find (G1)
             if group_m := re.search(r"\(?(G\d+)\)?", string):
                 self.group = group_m.group(1)
                 string = string.replace(group_m.group(0), "")

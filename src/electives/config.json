@@ -1,73 +1,58 @@
 {
-  "SPREADSHEET_ID": "1Lozf9ZcI-OFSA9mN9aFzac-8Ql7IJWdw",
+  "SPREADSHEET_ID": "1NtAj-IT7A4-jHns6A5fBmbjzwIUDqcyMea6zOtp-0S8",
   "SEMESTER_TAG": {
-    "alias": "fall24",
-    "name": "Fall 2024",
+    "alias": "spring25",
+    "name": "Spring 2025",
     "type": "semester"
   },
-  "TARGETS": [],
-  "SAVE_ICS_PATH": "fall24/electives",
-  "SAVE_JSON_PATH": "fall24/electives.json",
+  "TARGETS": [
+    {
+      "sheet_name": "BS3 Tech",
+      "range": "A2:H144"
+    }
+  ],
+  "SAVE_ICS_PATH": "spring25/electives",
+  "SAVE_JSON_PATH": "spring25/electives.json",
   "ELECTIVES": [
     {
-      "alias": "ATLLM",
-      "name": "Advanced Techniques for Large Language Model Applications",
-      "instructor": "Hamza Salem",
-      "type": "offline"
+      "alias": "BA",
+      "name": "Business Analysis in IT",
+      "instructor": "Ivan Goskov"
     },
     {
-      "alias": "COOP",
-      "name": "Challenges of Object Oriented Programming",
-      "instructor": "Yegor Bugayenko",
-      "type": "Online"
-    },
-    {
-      "alias": "CGGD",
+      "alias": "CG",
       "name": "Computer Graphics in Game Development",
-      "instructor": "Ivan Belyavtsev",
-      "type": "Offline"
+      "instructor": "Ivan Belyavtsev"
     },
     {
-      "alias": "EPJA",
-      "name": "Enterprise programming on Javascript - Advanced",
-      "instructor": "Nikita Grigoryev",
-      "type": "Offline"
+      "alias": "ESSD",
+      "name": "Enterprise Software Systems Development",
+      "instructor": "Sergey Zykov"
     },
     {
-      "alias": "FTCS",
-      "name": "FinTech for Computer Science - Building a Centralized Exchange",
-      "instructor": "Hamza Salem",
-      "type": "Offline"
+      "alias": "HPC",
+      "name": "High-Performance Computing",
+      "instructor": "Ivan Konyukhov"
     },
     {
-      "alias": "FCPA",
-      "name": "Flutter: Creating Cross-Platform Applications",
-      "instructor": "Timur Kharin",
-      "type": "Offlline"
+      "alias": "IC",
+      "name": "Industrial C++",
+      "instructor": "Evgeni Zouev"
     },
     {
-      "alias": "ICMD",
-      "name": "Introduction to Chemoinformatics and Molecular Design",
-      "instructor": "Ruslan Lukin",
-      "type": "Offline"
+      "alias": "RE",
+      "name": "Reverse Engineering: From hardware to software",
+      "instructor": "Evgeny Rasskazov"
     },
     {
-      "alias": "ID",
-      "name": "Introduction to DevOps",
-      "instructor": "Dmitry Creed",
-      "type": "Online"
+      "alias": "SPDA",
+      "name": "Software Product Development and Analysis",
+      "instructor": "Konstantin Arkhipov"
     },
     {
-      "alias": "PS",
-      "name": "Programming in Scala",
-      "instructor": "Ivan Lyagaev, Artem Bahanov, Pavel Tishkin (Tinkoff)",
-      "type": "Online/offline"
-    },
-    {
-      "alias": "TC",
-      "name": "Technical Communication",
-      "instructor": "Ekateryna Ushakova",
-      "type": "Offline"
+      "alias": "SQM",
+      "name": "Software Quality Metrics",
+      "instructor": "Yegor Bugayenko"
     }
   ]
 }

@@ -1,10 +1,10 @@
 import json
 from pathlib import Path
 
-from pydantic import parse_obj_as, validator, BaseModel
+from pydantic import BaseModel, parse_obj_as, validator
 
-from src.electives.models import Elective
 from src.config_base import BaseParserConfig
+from src.electives.models import Elective
 from src.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
