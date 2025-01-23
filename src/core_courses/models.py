@@ -457,7 +457,6 @@ class CoreCourseEvent(BaseModel):
             "Group": self.group,
             "Course": self.course,
             # "Subject": self.subject,
-            "Time": f"{self.start_time.strftime('%H:%M')} - {self.end_time.strftime('%H:%M')}",
         }
 
         r = {k: v for k, v in r.items() if v}
