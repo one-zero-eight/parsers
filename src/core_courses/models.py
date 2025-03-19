@@ -353,7 +353,11 @@ class CoreCourseEvent(BaseModel):
                 vevent.add(key, value)
 
         if location_item.on:  # only on specific dates, not every week
-            rdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.on]
+            rdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.on if
+                      self.starts <= on <= self.ends]
+            if not rdates:
+                logger.warning(f"Event {self} has no rdates")
+                return
             vevent.add("rdate", rdates)
             # dtstart and dtend should be adapted
             dtstart = dtstart.replace(day=location_item.on[0].day, month=location_item.on[0].month)
@@ -394,6 +398,8 @@ class CoreCourseEvent(BaseModel):
             for i, item in enumerate(nested_on):
                 # override specific recurrence entry
                 for j, on in enumerate(item.on):
+                    if self.starts > on or on > self.ends:
+                        continue
                     seq += 1
                     vevent_copy = vevent.copy()
                     _recurrence_id = dtstart.replace(day=on.day, month=on.month)
@@ -424,7 +430,10 @@ class CoreCourseEvent(BaseModel):
                 vevent_copy = vevent.copy()
                 vevent_copy["uid"] = self.get_uid(sequence=str(i))
                 vevent_copy.pop("rdate")
-                rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on]
+                rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on
+                          if self.starts <= on <= self.ends]
+                if not rdates:
+                    continue
                 vevent_copy.add("rdate", rdates)
                 # adapt dtstart and dtend
                 _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
