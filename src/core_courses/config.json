@@ -10,6 +10,19 @@
       "sheet_name": "1st block common (since 2001)",
       "range": "A1:AT116",
       "start_date": "2025-01-20",
+      "end_date": "2025-03-17",
+      "time_columns": [
+        "A",
+        "N",
+        "Z",
+        "AL",
+        "AS"
+      ]
+    },
+    {
+      "sheet_name": "2nd block common (since 1703)",
+      "range": "A1:AT116",
+      "start_date": "2025-03-17",
       "end_date": "2025-05-07",
       "time_columns": [
         "A",
