@@ -199,7 +199,7 @@ async def update_inh_event_groups(
 
 def validate_slug(s):
     # only dashes and lowercase letters, digits
-    if re.match(r"^[a-z-0-9]+$", s):
+    if re.match(r"^[a-z-0-9а-яА-ЯёЁ]+$", s):
         return True
     # multiple dashes - not allowed
     if re.match(r"-{2,}", s):

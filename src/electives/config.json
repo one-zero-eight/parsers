@@ -1,58 +1,346 @@
 {
-  "SPREADSHEET_ID": "1NtAj-IT7A4-jHns6A5fBmbjzwIUDqcyMea6zOtp-0S8",
+  "SPREADSHEET_ID": "1uSGLyKSAXq1q7vxMVKWi3qE86uydQgPhFNO8TV9omZM",
   "SEMESTER_TAG": {
-    "alias": "spring25",
-    "name": "Spring 2025",
+    "alias": "sum25",
+    "name": "Summer 2025",
     "type": "semester"
   },
+  "DISTRIBUTION_SPREADSHEET_ID": "1tLRCqUQtIYN6w302emjskATRfqKz19DUi-guvlvIu4c",
   "TARGETS": [
     {
-      "sheet_name": "BS3 Tech",
-      "range": "A2:H144"
+      "sheet_name": "BS1 (рус)",
+      "range": "A2:H63"
+    },
+    {
+      "sheet_name": "BS1",
+      "range": "A2:H81"
+    },
+    {
+      "sheet_name": "BS2",
+      "range": "A2:H81"
+    },
+    {
+      "sheet_name": "MS",
+      "range": "A2:H90"
     }
   ],
-  "SAVE_ICS_PATH": "spring25/electives",
-  "SAVE_JSON_PATH": "spring25/electives.json",
+  "SAVE_ICS_PATH": "sum25/electives",
+  "SAVE_JSON_PATH": "sum25/electives.json",
   "ELECTIVES": [
+    {
+      "alias": "РО",
+      "name": "Методы и подходы к запуску роботизированных систем",
+      "instructor": "Руслан Даминдаров"
+    },
+    {
+      "alias": "ФИЗ",
+      "name": "Общая физика (углубленный курс)",
+      "instructor": "Кирилл Клименок"
+    },
+    {
+      "alias": "ЭК",
+      "name": "Экономические механизмы и их наиболее актуальные приложения",
+      "instructor": "Александр Филатов"
+    },
+    {
+      "alias": "ТФКП",
+      "name": "Теория функций комплексного переменного",
+      "instructor": "Сергей Городецкий"
+    },
+    {
+      "alias": "AE",
+      "name": "Applied Economics: Introduction to IT Entrepreneurship",
+      "instructor": "Tatiana Kamaletdinova"
+    },
+    {
+      "alias": "B&M",
+      "name": "Branding & Marketing in IT industry",
+      "instructor": "Marko Pezer"
+    },
+    {
+      "alias": "BPM",
+      "name": "Basics of Product Management",
+      "instructor": "Iuliia Metelskaia"
+    },
+    {
+      "alias": "PIT",
+      "name": "Psychology of IT-specialist",
+      "instructor": "Eleonora Ilina"
+    },
+    {
+      "alias": "ICD",
+      "name": "Introduction to Career Development for IT-specialist",
+      "instructor": "Gulnaz Ibragimova"
+    },
+    {
+      "alias": "UXUI",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed"
+    },
+    {
+      "alias": "HBT",
+      "name": "How to build an IT team",
+      "instructor": "Peter Grachev"
+    },
+    {
+      "alias": "DT",
+      "name": "Design thinking",
+      "instructor": "Roman Efimov"
+    },
+    {
+      "alias": "RSS",
+      "name": "Reading skills for IT specialist",
+      "instructor": "Victoriya Kondrat'eva"
+    },
+    {
+      "alias": "BR",
+      "name": "Conscious Communication. (Business Rhetorics)",
+      "instructor": "Leonid Smelov"
+    },
+    {
+      "alias": "TSD",
+      "name": "Tech Startup Design",
+      "instructor": "Zhanara Semenova"
+    },
+    {
+      "alias": "PSE",
+      "name": "Product Solutions Engineering",
+      "instructor": "Marat Gadzhimuradov"
+    },
+    {
+      "alias": "PH",
+      "name": "Programming in Haskell",
+      "instructor": "Nikolay Kudasov"
+    },
+    {
+      "alias": "HLR",
+      "name": "How to launch the robot?",
+      "instructor": "Ruslan Damindarov"
+    },
+    {
+      "alias": "PP",
+      "name": "Programming in Python",
+      "instructor": "Alaa Aldin Hajjar"
+    },
+    {
+      "alias": "RTST",
+      "name": "Real-Time Scheduling Theory",
+      "instructor": "Artem Burmyakov"
+    },
+    {
+      "alias": "GF",
+      "name": "Golang & Flutter: Rapid Cross-Platform Development",
+      "instructor": "Timur Kharin"
+    },
+    {
+      "alias": "I3DM",
+      "name": "Introduction to 3D Modeling",
+      "instructor": "Egor Dmitriev"
+    },
     {
       "alias": "BA",
       "name": "Business Analysis in IT",
       "instructor": "Ivan Goskov"
     },
     {
-      "alias": "CG",
-      "name": "Computer Graphics in Game Development",
-      "instructor": "Ivan Belyavtsev"
+      "alias": "ACD",
+      "name": "Architecture of Computing Devices",
+      "instructor": "Mikhail Kuskov"
     },
     {
-      "alias": "ESSD",
-      "name": "Enterprise Software Systems Development",
-      "instructor": "Sergey Zykov"
+      "alias": "FCS",
+      "name": "Fundamentals of Computer Science in Lean 4",
+      "instructor": "Anatoliy Baskakov"
     },
     {
-      "alias": "HPC",
-      "name": "High-Performance Computing",
-      "instructor": "Ivan Konyukhov"
+      "alias": "TC",
+      "name": "Tech Communication",
+      "instructor": "Ekateryna Ushakova"
     },
     {
-      "alias": "IC",
-      "name": "Industrial C++",
-      "instructor": "Evgeni Zouev"
+      "alias": "CEO",
+      "name": "Startup CEO Toolkit",
+      "instructor": "Vasil Zakiev"
     },
     {
-      "alias": "RE",
-      "name": "Reverse Engineering: From hardware to software",
-      "instructor": "Evgeny Rasskazov"
+      "alias": "B&M",
+      "name": "Branding & Marketing in IT industry",
+      "instructor": "Marko Pezer"
     },
     {
-      "alias": "SPDA",
-      "name": "Software Product Development and Analysis",
-      "instructor": "Konstantin Arkhipov"
+      "alias": "BPM",
+      "name": "Basics of Product Management",
+      "instructor": "Iuliia Metelskaia"
     },
     {
-      "alias": "SQM",
-      "name": "Software Quality Metrics",
+      "alias": "PIT",
+      "name": "Psychology of IT-specialist",
+      "instructor": "Eleonora Ilina"
+    },
+    {
+      "alias": "ICD",
+      "name": "Introduction to Career Development for IT-specialist",
+      "instructor": "Gulnaz Ibragimova"
+    },
+    {
+      "alias": "UXUI",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed"
+    },
+    {
+      "alias": "HBT",
+      "name": "How to build an IT team",
+      "instructor": "Peter Grachev"
+    },
+    {
+      "alias": "DT",
+      "name": "Design thinking",
+      "instructor": "Roman Efimov"
+    },
+    {
+      "alias": "RSS",
+      "name": "Reading skills for IT specialist",
+      "instructor": "Victoriya Kondrat'eva"
+    },
+    {
+      "alias": "BR",
+      "name": "Conscious Communication. (Business Rhetorics)",
+      "instructor": "Leonid Smelov"
+    },
+    {
+      "alias": "TSD",
+      "name": "Tech Startup Design",
+      "instructor": "Zhanara Semenova"
+    },
+    {
+      "alias": "PSE",
+      "name": "Product Solutions Engineering",
+      "instructor": "Marat Gadzhimuradov"
+    },
+    {
+      "alias": "DLS",
+      "name": "Deep Learning for Search",
+      "instructor": "Albert Nasybullin"
+    },
+    {
+      "alias": "COOP",
+      "name": "Challenges of Object Oriented Programming",
       "instructor": "Yegor Bugayenko"
+    },
+    {
+      "alias": "SDHLA",
+      "name": "System Design of High-Load Applications",
+      "instructor": "Oleg Mifle"
+    },
+    {
+      "alias": "PP",
+      "name": "Programming in Python",
+      "instructor": "Alaa Aldin Hajjar"
+    },
+    {
+      "alias": "RTST",
+      "name": "Real-Time Scheduling Theory",
+      "instructor": "Artem Burmyakov"
+    },
+    {
+      "alias": "GF",
+      "name": "Golang & Flutter: Rapid Cross-Platform Development",
+      "instructor": "Timur Kharin"
+    },
+    {
+      "alias": "I3DM",
+      "name": "Introduction to 3D Modeling",
+      "instructor": "Egor Dmitriev"
+    },
+    {
+      "alias": "BA",
+      "name": "Business Analysis in IT",
+      "instructor": "Ivan Goskov"
+    },
+    {
+      "alias": "ACD",
+      "name": "Architecture of Computing Devices",
+      "instructor": "Mikhail Kuskov"
+    },
+    {
+      "alias": "FCS",
+      "name": "Fundamentals of Computer Science in Lean 4",
+      "instructor": "Anatoliy Baskakov"
+    },
+    {
+      "alias": "TC",
+      "name": "Tech Communication",
+      "instructor": "Ekateryna Ushakova"
+    },
+    {
+      "alias": "IROS",
+      "name": "Introduction to Robotics Operating System",
+      "instructor": "Geesara Prathap Kulathunga"
+    },
+    {
+      "alias": "FD",
+      "name": "Fundamentals of DevOps",
+      "instructor": "Dmitry Creed"
+    },
+    {
+      "alias": "EPSD",
+      "name": "Efficient Processes in Software Development",
+      "instructor": "Konstantin Chekin"
+    },
+    {
+      "alias": "AHLS",
+      "name": "Architecture of Highload Distributed Systems",
+      "instructor": "Vadim Podolniy"
+    },
+    {
+      "alias": "AAI",
+      "name": "Agentic AI",
+      "instructor": "Muhammad Fahim"
+    },
+    {
+      "alias": "LLM",
+      "name": "Large Language Models",
+      "instructor": "Muhammad Fahim"
+    },
+    {
+      "alias": "ANTO",
+      "name": "Advanced Nonlinear Trajectory Optimization",
+      "instructor": "Alexey Shamraev"
+    },
+    {
+      "alias": "FDRU",
+      "name": "Интеграция и автоматизация процесса разработки ПО",
+      "instructor": "Dmitry Creed"
+    },
+    {
+      "alias": "BR",
+      "name": "Business Rhetoric",
+      "instructor": "Leonid Smelov"
+    },
+    {
+      "alias": "PSIT",
+      "name": "Public Speaking for IT-specialist (Advanced)",
+      "instructor": "Victoria Tsybova"
+    },
+    {
+      "alias": "CDED",
+      "name": "Cyberlaw: Data, Ethics and Digital Property",
+      "instructor": "Mikhail Zhuravlev"
+    },
+    {
+      "alias": "UXUI",
+      "name": "UX/UI Design",
+      "instructor": "Haytham Hamed"
+    },
+    {
+      "alias": "DT",
+      "name": "Design thinking",
+      "instructor": "Roman Efimov"
+    },
+    {
+      "alias": "ITTM",
+      "name": "IT team management",
+      "instructor": "Peter Grachev"
     }
-  ]
+   ]
 }

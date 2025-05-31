@@ -277,7 +277,7 @@ def sluggify(s: str) -> str:
     """
     s = s.lower()
     # also translates special symbols, brackets, commas, etc.
-    s = re.sub(r"[^a-z0-9\s-]", " ", s)
+    s = re.sub(r"[^a-z0-9а-яА-ЯёЁ\s-]", " ", s)
     s = re.sub(r"\s+", "-", s)
     # remove multiple dashes
     s = re.sub(r"-{2,}", "-", s)

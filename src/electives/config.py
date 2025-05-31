@@ -36,6 +36,7 @@ class ElectivesParserConfig(BaseParserConfig):
     SEMESTER_TAG: Tag
 
     SPREADSHEET_ID: str
+    DISTRIBUTION_SPREADSHEET_ID: str | None = None
     TEMP_DIR: Path = PROJECT_ROOT / "temp" / "electives"
 
     ELECTIVES: list["Elective"]
@@ -47,7 +48,7 @@ class ElectivesParserConfig(BaseParserConfig):
         return v
 
 
-with open(CONFIG_PATH, "r") as f:
+with open(CONFIG_PATH) as f:
     elective_config_dict = json.load(f)
 
 electives_config: ElectivesParserConfig = parse_obj_as(ElectivesParserConfig, elective_config_dict)

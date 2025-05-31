@@ -95,8 +95,7 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
                         # 7 корпус 1-7 этажи 7 building 1-7 floors
                         # 2 корпус 3-4 этаж 2 building 3-4 floor
                         # 3 корпус 3 building
-                        logger.debug(index, value)
-                        matches = re.finditer(r"(?P<building>\d) building( (?P<floors>(\d+|\d+-\d+)) floors?)?", value)
+                        matches = re.finditer(r"(?P<building>\d)\s+building(\s+(?P<floors>(\d+|\d+-\d+))\s+floors?)?", value)
                         for m in matches:
                             building = m.group("building")
                             floors = m.group("floors")
@@ -105,12 +104,14 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
                             else:
                                 key = f"{building} building"
                             entries[key].append(index.date())
-                            logger.debug(f"Building: {building}, floors: {floors}")
+                            logger.debug(f"{key}, {index.date()}")
 
             return entries
 
 
 if __name__ == "__main__":
+
     url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyn8FIlygudmZmR9WyuJN6IIZe4XoRXsCBsXEQg2adOTOE3dHwj-xl7OQWWgu2thCpKr4-5t8fHGrb/pubhtml?gid=995085907"
+    
     parsed = parse_from_url(url)
     print(parsed)

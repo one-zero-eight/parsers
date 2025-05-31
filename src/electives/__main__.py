@@ -51,7 +51,7 @@ def main():
     for target in config.TARGETS:
         logger.info(f"Processing {target.sheet_name}... Range: {target.range}")
 
-        sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name.startswith(target.sheet_name))
+        sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name == target.sheet_name)
         by_weeks = parser.split_df_by_weeks(sheet_df)
         index = {}
         for sheet_df in by_weeks:

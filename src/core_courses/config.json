@@ -1,47 +1,24 @@
 {
   "SPREADSHEET_ID": "1uD48Zw6-RpuJnjVxwyWX9iaZn87ClIV1C63wYvc9aQg",
   "SEMESTER_TAG": {
-    "alias": "spring25",
-    "name": "Spring 2025",
+    "alias": "sum25",
+    "name": "Summer 2025",
     "type": "semester"
   },
   "TARGETS": [
     {
-      "sheet_name": "1st block common (since 2001)",
-      "range": "A1:AT116",
-      "start_date": "2025-01-20",
-      "end_date": "2025-03-17",
+      "sheet_name": "SUMMER",
+      "range": "A1:AM119",
+      "start_date": "2025-06-02",
+      "end_date": "2025-07-21",
       "time_columns": [
         "A",
-        "N",
-        "Z",
-        "AL",
-        "AS"
-      ]
-    },
-    {
-      "sheet_name": "2nd block common (since 1703)",
-      "range": "A1:AT116",
-      "start_date": "2025-03-17",
-      "end_date": "2025-05-07",
-      "time_columns": [
-        "A",
-        "N",
-        "Z",
-        "AL",
-        "AS"
-      ]
-    },
-    {
-      "sheet_name": "Ru Programs",
-      "range": "A1:G131",
-      "start_date": "2025-01-20",
-      "end_date": "2025-05-07",
-      "time_columns": [
-        "A"
+        "G",
+        "T",
+        "AF"
       ]
     }
   ],
-  "SAVE_ICS_PATH": "spring25/core-courses",
-  "SAVE_JSON_PATH": "spring25/core-courses.json"
+  "SAVE_ICS_PATH": "sum25/core-courses",
+  "SAVE_JSON_PATH": "sum25/core-courses.json"
 }
