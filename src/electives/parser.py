@@ -259,16 +259,16 @@ class ElectiveParser:
 
 def convert_separation(
     events: list[ElectiveEvent],
-) -> dict[str, list[ElectiveEvent]]:
+) -> dict[str, tuple[str, list[ElectiveEvent]]]:
     """
     Convert list of events to dict with separation by Elective and group.
 
     :param events: list of events to convert
     :type events: list[ElectiveEvent]
     :return: dict with separation by Elective and group
-    :rtype: dict[str, list[ElectiveEvent]]
+    :rtype: dict[str, tuple[str, list[ElectiveEvent]]] (name, events)
     """
-    output = defaultdict(list)
+    output = defaultdict(lambda: (None, list()))
 
     # # by groups of elective
     # for (elective, group), _events in groupby(events, lambda e: (e.elective, e.group)):
@@ -284,6 +284,7 @@ def convert_separation(
     for elective, _events in groupby(events, lambda e: e.elective):
         elective: Elective
         cal = output[elective.alias]
-        cal.extend(_events)
+        cal[0] = elective.name
+        cal[1].extend(_events)
 
     return dict(output)

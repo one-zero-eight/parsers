@@ -76,9 +76,9 @@ def main():
 
         tags.append(elective_type_tag)
 
-        for calendar_name, events in converted.items():
+        for elective_alias, (name, events) in converted.items():
             calendar = get_base_calendar()
-            calendar["x-wr-calname"] = calendar_name
+            calendar["x-wr-calname"] = elective_alias
             calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.SPREADSHEET_ID}"
 
             cnt = 0
@@ -89,7 +89,7 @@ def main():
 
             calendar.add("x-wr-total-vevents", str(cnt))
 
-            elective_x_group_alias = sluggify(calendar_name)
+            elective_x_group_alias = sluggify(elective_alias)
             calendar_alias = f"{config.SEMESTER_TAG.alias}-{sluggify(target.sheet_name)}-{elective_x_group_alias}"
 
             file_name = f"{elective_x_group_alias}.ics"
@@ -102,16 +102,16 @@ def main():
                 # TODO: add validation
                 f.write(content)
 
-            calendar_name = calendar_name.replace("-", " ")
+            elective_alias = elective_alias.replace("-", " ")
 
             if events:
                 description = events[0].elective.name
             else:
-                description = f"Elective schedule for '{calendar_name}'"
+                description = f"Elective schedule for '{elective_alias}'"
             predefined_event_groups.append(
                 CreateEventGroup(
                     alias=calendar_alias,
-                    name=calendar_name,
+                    name=name,
                     description=description,
                     path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
                     tags=[
