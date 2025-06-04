@@ -22,7 +22,7 @@ class ResponseSportSchedule(BaseModel):
     class SportScheduleEvent(BaseModel):
         class ExtendedProps(BaseModel):
             group_id: int
-            training_class: str
+            training_class: str | None
             current_load: int
             capacity: int
 
@@ -30,7 +30,7 @@ class ResponseSportSchedule(BaseModel):
                 string_to_hash = str(
                     (
                         self.group_id,
-                        self.training_class,
+                        self.training_class or "",
                     )
                 )
 
@@ -70,7 +70,7 @@ class SportScheduleEvent(BaseModel):
         return title
 
     @property
-    def location(self) -> str:
+    def location(self) -> str | None:
         return self.sport_schedule_event.extendedProps.training_class
 
     @property
