@@ -3,7 +3,7 @@ name = "innohassle-parsers"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Ruslan Bel'kov", email = "ruslan.belckov@yandex.ru" }]
-requires-python = "~=3.12"
+requires-python = "~=3.12.0"
 readme = "README.md"
 dependencies = [
     "aiohttp>=3.10.6,<4",
