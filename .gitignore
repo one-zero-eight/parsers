@@ -23,3 +23,9 @@ token.json
 credentials.json
 *.zip
 innopolis_user_data.json
+new_innopolis_user_data.json
+*.html
+*.csv
+test.json
+academic_groups.json
+distributions.json
