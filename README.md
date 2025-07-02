@@ -23,7 +23,7 @@ Parse schedules:
 
 ### Technologies
 
-- [Python 3.12](https://www.python.org/downloads/release/python-3123/) & [Poetry](https://python-poetry.org/docs/)
+- [Python 3.12](https://www.python.org/downloads/release/python-3123/) & [uv](https://docs.astral.sh/uv/)
 - [Pydantic 2](https://docs.pydantic.dev/latest/)
 - [Pandas](https://pandas.pydata.org/)
 - [Google API client](https://github.com/googleapis/google-api-python-client)
@@ -34,10 +34,10 @@ Parse schedules:
 ### Getting started
 
 1. Install [Python 3.12](https://www.python.org/downloads/)
-2. Install [Poetry](https://python-poetry.org/docs/)
-3. Install project dependencies with [Poetry](https://python-poetry.org/docs/cli/#options-2).
+2. Install [uv](https://docs.astral.sh/uv/)
+3. Install project dependencies with [uv](https://docs.astral.sh/uv/).
    ```bash
-   poetry install
+   uv sync
    ```
 
 ## How to Use
@@ -45,11 +45,11 @@ Parse schedules:
 1. Configure parsers using `config.json` files
 2. Run the parser:
     ```bash
-    poetry run python -m schedule.core_courses
+    uv run python -m schedule.core_courses
     ```
     OR for periodic update of all schedules
     ```bash
-    poetry run python -m schedule --period 600
+    uv run python -m schedule --period 600
     ```
 3. The output will be in the `schedule/output` directory.
 
