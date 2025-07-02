@@ -16,12 +16,9 @@ jobs:
       - name: "Set up uv 🚀"
         uses: astral-sh/setup-uv@v6
         with:
-          enable-cache: true
           activate-environment: true
-          prune-cache: false
       - name: "Parse schedules 🕵️‍♂️"
         env:
           PARSER_AUTH_KEY: ${{ secrets.PARSER_AUTH_KEY }}
           INNOHASSLE_API_URL: "https://api.innohassle.ru/events/v0"
         run: uv run python -m src
-        continue-on-error: true
