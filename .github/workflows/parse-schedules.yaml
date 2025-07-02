@@ -16,6 +16,7 @@ jobs:
       - name: "Set up uv 🚀"
         uses: astral-sh/setup-uv@v6
         with:
+          enable-cache: false
           activate-environment: true
       - name: "Parse schedules 🕵️‍♂️"
         env:
