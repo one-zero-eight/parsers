@@ -1,28 +1,27 @@
-[tool.poetry]
+[project]
 name = "innohassle-parsers"
 version = "0.1.0"
 description = ""
-authors = ["Ruslan Bel'kov <ruslan.belckov@yandex.ru>"]
+authors = [{ name = "Ruslan Bel'kov", email = "ruslan.belckov@yandex.ru" }]
+requires-python = "~=3.12"
 readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.12"
-aiohttp = "^3.10.6"
-colorlog = "^6.8.2"
-google = { extras = ["auth"], version = "^3.0.0" }
-google-api-python-client = "^2.147.0"
-google-auth-httplib2 = "^0.2.0"
-google-auth-oauthlib = "^1.2.0"
-html5lib = "^1.1"
-icalendar = "^5.0.13"
-openpyxl = "^3.1.2"
-pandas = { extras = ["openpyxl"], version = "^2.0.3" }
-pydantic = "^1.10"
-pytest = "^8.3.3"
-python-dotenv = "^1.0.1"
-pyyaml = "^6.0.2"
-ruff = "^0.6.8"
+dependencies = [
+    "aiohttp>=3.10.6,<4",
+    "colorlog>=6.8.2,<7",
+    "google>=3.0.0,<4",
+    "google-api-python-client>=2.147.0,<3",
+    "google-auth-httplib2>=0.2.0,<0.3",
+    "google-auth-oauthlib>=1.2.0,<2",
+    "html5lib~=1.1",
+    "icalendar>=5.0.13,<6",
+    "openpyxl>=3.1.2,<4",
+    "pandas>=2.0.3,<3",
+    "pydantic~=1.10",
+    "pytest>=8.3.3,<9",
+    "python-dotenv>=1.0.1,<2",
+    "pyyaml>=6.0.2,<7",
+    "ruff>=0.6.8,<0.7",
+]
 
 [tool.ruff]
 line-length = 120
