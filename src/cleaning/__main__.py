@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from collections.abc import Iterable
 from itertools import groupby
 from pathlib import Path
@@ -42,6 +43,7 @@ def main():
         file_path = directory / f"{group_alias}.ics"
         logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:
             content = calendar.to_ical()
             f.write(content)
@@ -73,6 +75,7 @@ def main():
         file_path = directory / f"{group_alias}.ics"
         logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:
             content = calendar.to_ical()
             f.write(content)

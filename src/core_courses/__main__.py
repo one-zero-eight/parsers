@@ -1,6 +1,7 @@
 import asyncio
 import io
 import json
+import os
 from hashlib import sha1
 from itertools import chain, groupby
 
@@ -131,6 +132,7 @@ def main():
 
         logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:
             content = group_calendar.to_ical()
             # TODO: add validation

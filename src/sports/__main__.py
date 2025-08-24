@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from itertools import groupby
 
 import aiohttp
@@ -70,13 +71,14 @@ async def main():
                 tags=[sport_tag],
             )
         )
-
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as file:
             file.write(calendar.to_ical())
 
     output = Output(event_groups=event_groups, tags=[sport_tag])
 
     logger.debug(f"Saving calendars information to {json_file}")
+    os.makedirs(json_file.parent, exist_ok=True)
     with open(json_file, "w") as f:
         json.dump(output.model_dump(), f, indent=2, sort_keys=False, ensure_ascii=False)
 

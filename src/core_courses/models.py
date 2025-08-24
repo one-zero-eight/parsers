@@ -2,7 +2,6 @@ import datetime
 import re
 import warnings
 from collections.abc import Generator
-from datetime import UTC
 from typing import Literal, Optional
 from zlib import crc32
 
@@ -64,7 +63,7 @@ class CoreCourseCell:
             event = CoreCourseEvent(
                 start_time=start_time,
                 end_time=end_time,
-                dtstamp=datetime.datetime.combine(target.start_date, datetime.time.min),
+                dtstamp=datetime.datetime.combine(target.start_date, datetime.time.min, tzinfo=MOSCOW_TZ),
                 starts=starts,
                 ends=ends,
                 weekday=weekday_int,
@@ -151,7 +150,7 @@ class CoreCourseEvent(BaseModel):
         """
         Set recurrence rule and recurrence date for event
         """
-        until = datetime.datetime.combine(self.ends, datetime.time.min).astimezone(UTC)
+        until = datetime.datetime.combine(self.ends, datetime.time.min, tzinfo=MOSCOW_TZ)
 
         rrule = icalendar.vRecur(
             {
@@ -272,8 +271,8 @@ class CoreCourseEvent(BaseModel):
 
         if not self.location_item:
             start_of_weekdays = nearest_weekday(self.starts, self.weekday)
-            dtstart = datetime.datetime.combine(start_of_weekdays, self.start_time)
-            dtend = datetime.datetime.combine(start_of_weekdays, self.end_time)
+            dtstart = datetime.datetime.combine(start_of_weekdays, self.start_time, tzinfo=MOSCOW_TZ)
+            dtend = datetime.datetime.combine(start_of_weekdays, self.end_time, tzinfo=MOSCOW_TZ)
             mapping = {
                 "summary": self.summary,
                 "description": self.description,
@@ -282,8 +281,8 @@ class CoreCourseEvent(BaseModel):
                 "uid": self.get_uid(),
                 "color": self.color,
                 "rrule": self.every_week_rule(),
-                "dtstart": icalendar.vDatetime(dtstart.astimezone(MOSCOW_TZ)),
-                "dtend": icalendar.vDatetime(dtend.astimezone(MOSCOW_TZ)),
+                "dtstart": icalendar.vDatetime(dtstart),
+                "dtend": icalendar.vDatetime(dtend),
             }
             vevent = icalendar.Event()
             for key, value in mapping.items():
@@ -312,18 +311,18 @@ class CoreCourseEvent(BaseModel):
         end_time = self.end_time
         # move event start time to location starts_at time keeping same duration
         if location_item.starts_at:
-            _start_time = datetime.datetime.combine(starts, start_time)
-            _end_time = datetime.datetime.combine(starts, end_time)
+            _start_time = datetime.datetime.combine(starts, start_time, tzinfo=MOSCOW_TZ)
+            _end_time = datetime.datetime.combine(starts, end_time, tzinfo=MOSCOW_TZ)
             duration = _end_time - _start_time
             start_time = location_item.starts_at
-            end_time = (datetime.datetime.combine(starts, start_time) + duration).time()
+            end_time = (datetime.datetime.combine(starts, start_time, tzinfo=MOSCOW_TZ) + duration).time()
         if location_item.till:
             end_time = location_item.till
 
         convert_weeks_on_to_only_on(location_item)
         start_of_weekdays = nearest_weekday(starts, self.weekday)
-        dtstart = datetime.datetime.combine(start_of_weekdays, start_time)
-        dtend = datetime.datetime.combine(start_of_weekdays, end_time)
+        dtstart = datetime.datetime.combine(start_of_weekdays, start_time, tzinfo=MOSCOW_TZ)
+        dtend = datetime.datetime.combine(start_of_weekdays, end_time, tzinfo=MOSCOW_TZ)
         duration = dtend - dtstart
 
         mapping = {
@@ -355,8 +354,8 @@ class CoreCourseEvent(BaseModel):
         else:  # every week at the same time
             vevent.add("rrule", self.every_week_rule())
 
-        vevent["dtstart"] = icalendar.vDatetime(dtstart.astimezone(MOSCOW_TZ))
-        vevent["dtend"] = icalendar.vDatetime(dtend.astimezone(MOSCOW_TZ))
+        vevent["dtstart"] = icalendar.vDatetime(dtstart)
+        vevent["dtend"] = icalendar.vDatetime(dtend)
 
         # check for item.except_ and add exdate if needed
         if location_item.except_:
@@ -399,8 +398,8 @@ class CoreCourseEvent(BaseModel):
                     # adapt dtstart and dtend
                     _dtstart = dtstart.replace(day=on.day, month=on.month)
                     _dtend = dtend.replace(day=on.day, month=on.month)
-                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
+                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                     if item.location:
                         vevent_copy["location"] = item.location
                     if item.starts_at:
@@ -429,18 +428,18 @@ class CoreCourseEvent(BaseModel):
                 # adapt dtstart and dtend
                 _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
                 _dtend = dtend.replace(day=item.on[0].day, month=item.on[0].month)
-                vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
-                vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
+                vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
+                vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                 if item.location:
                     vevent_copy["location"] = item.location
                 if item.starts_at:
                     _dtstart = _dtstart.replace(hour=item.starts_at.hour, minute=item.starts_at.minute)
                     _dtend = _dtstart + duration
-                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
+                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
                 if item.till:
                     _dtend = _dtend.replace(hour=item.till.hour, minute=item.till.minute)
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
 
                 yield vevent_copy
 

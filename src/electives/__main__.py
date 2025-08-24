@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from hashlib import sha1
 
 import pandas as pd
@@ -101,6 +102,7 @@ def main():
 
             logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
+            os.makedirs(file_path.parent, exist_ok=True)
             with open(file_path, "wb") as f:
                 content = calendar.to_ical()
                 # TODO: add validation

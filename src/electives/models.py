@@ -8,7 +8,7 @@ import icalendar
 from pydantic import BaseModel, Field, field_validator
 
 from src.processors.regex import process_spaces
-from src.utils import get_color
+from src.utils import MOSCOW_TZ, get_color
 
 
 class Elective(BaseModel):
@@ -133,8 +133,8 @@ class ElectiveCell(BaseModel):
         :return: generator of events
         """
         overall_start, overall_end = timeslot
-        overall_start = datetime.datetime.combine(date, overall_start)
-        overall_end = datetime.datetime.combine(date, overall_end)
+        overall_start = datetime.datetime.combine(date, overall_start, tzinfo=MOSCOW_TZ)
+        overall_end = datetime.datetime.combine(date, overall_end, tzinfo=MOSCOW_TZ)
 
         # iterate over occurrences
         for occurrence in self.occurrences:
@@ -142,10 +142,10 @@ class ElectiveCell(BaseModel):
             end = overall_end
 
             if occurrence.starts_at:
-                start = datetime.datetime.combine(date, occurrence.starts_at)
+                start = datetime.datetime.combine(date, occurrence.starts_at, tzinfo=MOSCOW_TZ)
 
             if occurrence.ends_at:
-                end = datetime.datetime.combine(date, occurrence.ends_at)
+                end = datetime.datetime.combine(date, occurrence.ends_at, tzinfo=MOSCOW_TZ)
 
             yield ElectiveEvent(
                 elective=occurrence.elective,

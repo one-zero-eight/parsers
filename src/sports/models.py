@@ -5,7 +5,7 @@ import icalendar
 from pydantic import BaseModel, RootModel
 
 from src.constants import VDayOfWeek
-from src.utils import get_color, nearest_weekday
+from src.utils import MOSCOW_TZ, get_color, nearest_weekday
 
 
 class ResponseSports(BaseModel):
@@ -133,8 +133,8 @@ class SportScheduleEvent(BaseModel):
             very_first_date,
             self.sport_schedule_event.daysOfWeek[0] - 1,  # 0 is Monday
         )
-        dtstart = datetime.datetime.combine(starting, self.start)
-        dtend = datetime.datetime.combine(starting, self.end)
+        dtstart = datetime.datetime.combine(starting, self.start, tzinfo=MOSCOW_TZ)
+        dtend = datetime.datetime.combine(starting, self.end, tzinfo=MOSCOW_TZ)
 
         vevent["rrule"] = icalendar.vRecur(
             {
