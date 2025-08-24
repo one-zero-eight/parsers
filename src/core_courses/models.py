@@ -2,6 +2,7 @@ import datetime
 import re
 import warnings
 from collections.abc import Generator
+from datetime import UTC
 from typing import Literal, Optional
 from zlib import crc32
 
@@ -150,16 +151,9 @@ class CoreCourseEvent(BaseModel):
         """
         Set recurrence rule and recurrence date for event
         """
-        until = datetime.datetime.combine(self.ends, datetime.time.min, tzinfo=MOSCOW_TZ)
+        until = datetime.datetime.combine(self.ends, datetime.time.min).astimezone(UTC)
 
-        rrule = icalendar.vRecur(
-            {
-                "WKST": "MO",
-                "FREQ": "WEEKLY",
-                "INTERVAL": 1,
-                "UNTIL": until,
-            }
-        )
+        rrule = icalendar.vRecur({"WKST": "MO", "FREQ": "WEEKLY", "INTERVAL": 1, "UNTIL": until})
         return rrule
 
     def process_subject(self):

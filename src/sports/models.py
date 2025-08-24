@@ -135,11 +135,11 @@ class SportScheduleEvent(BaseModel):
         )
         dtstart = datetime.datetime.combine(starting, self.start, tzinfo=MOSCOW_TZ)
         dtend = datetime.datetime.combine(starting, self.end, tzinfo=MOSCOW_TZ)
-
+        very_last_date_dt = datetime.datetime.combine(very_last_date, datetime.time.min, tzinfo=datetime.UTC)
         vevent["rrule"] = icalendar.vRecur(
             {
                 "freq": "weekly",
-                "until": very_last_date,
+                "until": very_last_date_dt,
                 "byday": [
                     icalendar.vWeekday(VDayOfWeek.get_by_index(day - 1)) for day in self.sport_schedule_event.daysOfWeek
                 ],
