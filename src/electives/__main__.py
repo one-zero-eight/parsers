@@ -12,20 +12,24 @@ from src.utils import get_base_calendar, sluggify
 
 
 def main():
+    if not config.spreadsheet_id:
+        logger.error("Spreadsheet ID is not set")
+        return None
+
     parser = ElectiveParser()
     xlsx = parser.get_xlsx_file(
-        spreadsheet_id=config.SPREADSHEET_ID,
+        spreadsheet_id=config.spreadsheet_id,
     )
     dfs = parser.get_clear_dataframes_from_xlsx(
         xlsx_file=xlsx,
-        targets=config.TARGETS,
+        targets=config.targets,
     )
     # noinspection InsecureHash
-    to_hash = (sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest() for target in config.TARGETS)
+    to_hash = (sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest() for target in config.targets)
     # noinspection InsecureHash
     hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
     logger.info(f"Hashsum: {hashsum}")
-    xlsx_path = config.TEMP_DIR / f"{hashsum}.xlsx"
+    xlsx_path = config.temp_dir / f"{hashsum}.xlsx"
     xlsx_path.parent.mkdir(parents=True, exist_ok=True)
     # check if file exists
     if xlsx_path.exists():
@@ -36,9 +40,9 @@ def main():
         content = xlsx.read()
         f.write(content)
     semester_tag = CreateTag(
-        alias=config.SEMESTER_TAG.alias,
-        type=config.SEMESTER_TAG.type,
-        name=config.SEMESTER_TAG.name,
+        alias=config.semester_tag.alias,
+        type=config.semester_tag.type,
+        name=config.semester_tag.name,
     )
     elective_tag = CreateTag(
         alias="electives",
@@ -47,8 +51,8 @@ def main():
     )
     tags = [semester_tag, elective_tag]
     predefined_event_groups: list[CreateEventGroup] = []
-    mount_point = config.SAVE_ICS_PATH
-    for target in config.TARGETS:
+    mount_point = config.save_ics_path
+    for target in config.targets:
         logger.info(f"Processing {target.sheet_name}... Range: {target.range}")
 
         sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name == target.sheet_name)
@@ -79,7 +83,7 @@ def main():
         for elective_alias, (name, events) in converted.items():
             calendar = get_base_calendar()
             calendar["x-wr-calname"] = elective_alias
-            calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.SPREADSHEET_ID}"
+            calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.spreadsheet_id}"
 
             cnt = 0
 
@@ -90,12 +94,12 @@ def main():
             calendar.add("x-wr-total-vevents", str(cnt))
 
             elective_x_group_alias = sluggify(elective_alias)
-            calendar_alias = f"{config.SEMESTER_TAG.alias}-{sluggify(target.sheet_name)}-{elective_x_group_alias}"
+            calendar_alias = f"{config.semester_tag.alias}-{sluggify(target.sheet_name)}-{elective_x_group_alias}"
 
             file_name = f"{elective_x_group_alias}.ics"
             file_path = elective_type_directory / file_name
 
-            logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+            logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
             with open(file_path, "wb") as f:
                 content = calendar.to_ical()
@@ -113,7 +117,7 @@ def main():
                     alias=calendar_alias,
                     name=name,
                     description=description,
-                    path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
+                    path=file_path.relative_to(config.mount_point).as_posix(),
                     tags=[
                         elective_tag,
                         elective_type_tag,
@@ -124,17 +128,17 @@ def main():
     logger.info(f"Writing JSON file... {len(predefined_event_groups)} event groups.")
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
-    with open(config.SAVE_JSON_PATH, "w") as f:
+    with open(config.save_json_path, "w") as f:
         json.dump(output.dict(), f, indent=2, sort_keys=False)
     # InNoHassle integration
-    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+    if config.innohassle_api_url is None or config.parser_auth_key is None:
         logger.info("Skipping InNoHassle integration")
         return
     inh_client = InNoHassleEventsClient(
-        api_url=config.INNOHASSLE_API_URL,
-        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+        api_url=config.innohassle_api_url,
+        parser_auth_key=config.parser_auth_key.get_secret_value(),
     )
-    result = asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))
+    result = asyncio.run(update_inh_event_groups(inh_client, config.mount_point, output))
     return result
 
 

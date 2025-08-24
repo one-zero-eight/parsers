@@ -2,9 +2,9 @@ import datetime
 from zlib import crc32
 
 import icalendar
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 
-from src.cleaning.config import core_courses_config as config
+from src.cleaning.config import cleaning_config as config
 from src.cleaning.parse_cleaning_html import parse_from_url
 from src.utils import get_color, nearest_weekday
 
@@ -61,7 +61,8 @@ class CleaningEvent(BaseModel):
     date: datetime.date
     rdate: list[datetime.date]
 
-    @validator("rdate", pre=True)
+    @field_validator("rdate", mode="before")
+    @classmethod
     def remove_repeat_dates(cls, v):
         return list(set(v))
 

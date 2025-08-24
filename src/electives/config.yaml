@@ -1,0 +1,10 @@
+spreadsheet_id: ""
+semester_tag:
+  alias: fall25
+  name: fall 2025
+  type: semester
+distribution_spreadsheet_id: null
+targets: []
+save_ics_path: fall25/electives
+save_json_path: fall25/electives.json
+electives: []

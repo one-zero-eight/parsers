@@ -29,3 +29,6 @@ new_innopolis_user_data.json
 test.json
 academic_groups.json
 distributions.json
+migrate_user_data.py
+log.txt
+academic_groups.py

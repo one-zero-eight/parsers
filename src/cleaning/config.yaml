@@ -1,0 +1,33 @@
+save_ics_path: cleaning
+save_json_path: cleaning.json
+start_date: "2025-08-25"
+cleaning_spreadsheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRFcOzHYsw0hqqA_A4m1p2nk4_zIrI2UkH0z-vL4F20VM4AvJgKqiRUwQYSibRvrWi10IAMMZ38Gf1A/pubhtml
+linen_change_entries:
+  - location: 1 building
+    rrule:
+      freq: WEEKLY
+      byday: MO
+  - location: 2 building
+    rrule:
+      freq: WEEKLY
+      byday: TU
+  - location: 3 building
+    rrule:
+      freq: WEEKLY
+      byday: WE
+  - location: 4 building
+    rrule:
+      freq: WEEKLY
+      byday: MO
+  - location: 5 building
+    rrule:
+      freq: WEEKLY
+      byday: WE
+  - location: 6 building
+    rrule:
+      freq: WEEKLY
+      byday: MO
+  - location: 7 building
+    rrule:
+      freq: WEEKLY
+      byday: TU

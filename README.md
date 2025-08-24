@@ -45,11 +45,11 @@ Parse schedules:
 1. Configure parsers using `config.json` files
 2. Run the parser:
     ```bash
-    uv run python -m schedule.core_courses
+    uv run -m src.core_courses
     ```
     OR for periodic update of all schedules
     ```bash
-    uv run python -m schedule --period 600
+    uv run -m src.core_courses --period 600
     ```
 3. The output will be in the `schedule/output` directory.
 

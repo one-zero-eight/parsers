@@ -1,14 +1,13 @@
 import datetime
-import json
 from pathlib import Path
 
-from pydantic import BaseModel, parse_obj_as
+from pydantic import BaseModel
 
 from src.config_base import BaseParserConfig
 from src.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
-CONFIG_PATH = Path(__file__).parent / "config.json"
+config_path = Path(__file__).parent / "config.yaml"
 
 
 class LinenChangeEntry(BaseModel):
@@ -22,8 +21,4 @@ class CleaningParserConfig(BaseParserConfig):
     cleaning_spreadsheet_url: str
     linen_change_entries: list[LinenChangeEntry]
 
-
-with open(CONFIG_PATH, "r") as f:
-    elective_config_dict = json.load(f)
-
-core_courses_config: CleaningParserConfig = parse_obj_as(CleaningParserConfig, elective_config_dict)
+cleaning_config: CleaningParserConfig = CleaningParserConfig.from_yaml(config_path)

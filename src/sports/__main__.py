@@ -26,7 +26,7 @@ async def main():
         sport = sports[sport_id]
         _sport_events = [
             SportScheduleEvent(sport=sport, sport_schedule_event=sport_schedule_event)
-            for sport_schedule_event in sport_schedule.__root__
+            for sport_schedule_event in sport_schedule.root
         ]
         sport_events.extend(_sport_events)
 
@@ -37,9 +37,9 @@ async def main():
 
     event_groups = []
 
-    directory = config.SAVE_ICS_PATH
+    directory = config.save_ics_path
     logger.info(f"Saving calendars to {directory}")
-    json_file = config.SAVE_JSON_PATH
+    json_file = config.save_json_path
     logger.info(f"Saving json to {json_file}")
     logger.info("Grouping events by sport.name and sport_schedule_event.title")
 
@@ -54,7 +54,7 @@ async def main():
         calendar["x-wr-link"] = "https://sport.innopolis.university"
         for event in events:
             event: SportScheduleEvent
-            vevent = event.get_vevent(config.START_OF_SEMESTER, config.END_OF_SEMESTER)
+            vevent = event.get_vevent(config.start_of_semester, config.end_of_semester)
             calendar.add_component(vevent)
 
         group_alias = sluggify(calendar_name)
@@ -66,7 +66,7 @@ async def main():
                 alias=group_alias,
                 name=calendar_name,
                 description=f"Sport schedule for '{calendar_name}'",
-                path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
+                path=file_path.relative_to(config.mount_point).as_posix(),
                 tags=[sport_tag],
             )
         )
@@ -78,19 +78,19 @@ async def main():
 
     logger.debug(f"Saving calendars information to {json_file}")
     with open(json_file, "w") as f:
-        json.dump(output.dict(), f, indent=2, sort_keys=False)
+        json.dump(output.model_dump(), f, indent=2, sort_keys=False, ensure_ascii=False)
 
     # InNoHassle integration
-    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+    if config.innohassle_api_url is None or config.parser_auth_key is None:
         logger.info("Skipping InNoHassle integration")
         return
 
     inh_client = InNoHassleEventsClient(
-        api_url=config.INNOHASSLE_API_URL,
-        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+        api_url=config.innohassle_api_url,
+        parser_auth_key=config.parser_auth_key.get_secret_value(),
     )
 
-    return await update_inh_event_groups(inh_client, config.MOUNT_POINT, output)
+    return await update_inh_event_groups(inh_client, config.mount_point, output)
 
 
 if __name__ == "__main__":

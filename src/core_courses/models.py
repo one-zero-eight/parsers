@@ -1,19 +1,22 @@
 import datetime
 import re
 import warnings
-from typing import Generator, Literal, Optional
+from collections.abc import Generator
+from datetime import UTC
+from typing import Literal, Optional
 from zlib import crc32
 
 import icalendar
 from pandas import isna
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
-from src.config_base import CSS3Color
-from src.core_courses.config import core_courses_config as config
+from src.constants import WEEKDAYS, CSS3Color
+from src.core_courses.config import Target
 from src.core_courses.location_parser import Item, parse_location_string
 from src.logging_ import logger
 from src.processors.regex import process_spaces
 from src.utils import *
+from src.utils import MOSCOW_TZ
 
 
 class CoreCourseCell:
@@ -37,59 +40,48 @@ class CoreCourseCell:
         timeslot: tuple[datetime.time, datetime.time],
         course: str,
         group: str,
-        target: config.Target,
-        return_none: bool = False,
+        target: Target,
     ) -> Optional["CoreCourseEvent"]:
         """
-        Get event from cell
-
-        :return: event from cell
-        :rtype: Optional[CoreCourseCell]
+        Convert cell to event
         """
-        weekday_int = config.WEEKDAYS.index(weekday)
+        weekday_int = WEEKDAYS.index(weekday)
         start_time, end_time = timeslot
         cell_info = self.parse_value_into_parts()
 
         try:
+            starts = target.start_date
+            ends = target.end_date
+
+            group = self.preprocess_group(group)
+
+            for override in target.override:
+                if group in override.groups or course in override.courses:
+                    starts = override.start_date
+                    ends = override.end_date
+                    break
+
             event = CoreCourseEvent(
                 start_time=start_time,
                 end_time=end_time,
                 dtstamp=datetime.datetime.combine(target.start_date, datetime.time.min),
-                starts=target.start_date,
-                ends=target.end_date,
+                starts=starts,
+                ends=ends,
                 weekday=weekday_int,
-                course=self.preprocess_course(course),
-                group=self.preprocess_group(group),
+                course=course,
+                group=group,
                 original_value=self.value,
                 **cell_info,
             )
             return event
         except ValueError:
-            if return_none:
-                return None
-            raise
-
-    @classmethod
-    def preprocess_course(cls, value: str) -> str:
-        """
-        Process course name
-
-        :param value: course name
-        :type value: str
-        :return: processed course name
-        :rtype: str
-        """
-        return value
+            logger.error(f"Error parsing cell {self.value} for {course} {group} {weekday} {timeslot}", exc_info=True)
+            return None
 
     @classmethod
     def preprocess_group(cls, value: str) -> str:
         """
         Process group name
-
-        :param value: group name
-        :type value: str
-        :return: processed group name
-        :rtype: str
 
         - "M21-DS(16)" -> "M21-DS"
         - "M22-TE-01 (10)" -> "M22-TE-01"
@@ -97,14 +89,7 @@ class CoreCourseCell:
         """
         return re.sub(r"\s*\(\d+\)\s*$", "", value)
 
-    def parse_value_into_parts(self) -> dict[str, ...]:
-        """
-        Process cell value
-
-        :return: processed value
-        :rtype: dict[str, ...]
-        """
-
+    def parse_value_into_parts(self) -> dict[str, str | None]:
         match self.value:
             case None, subject, None:
                 return {"subject": subject}
@@ -114,9 +99,13 @@ class CoreCourseCell:
                     "teacher": teacher,
                     "location": location,
                 }
+            case _:
+                raise ValueError(f"Unknown value: {self.value}")
 
 
 class CoreCourseEvent(BaseModel):
+    model_config = ConfigDict(coerce_numbers_to_str=True)
+
     course: str
     "Event course"
     group: str
@@ -141,13 +130,13 @@ class CoreCourseEvent(BaseModel):
 
     subject: str
     "Event subject, can be with type in brackets"
-    teacher: Optional[str] = None
+    teacher: str | None = None
     "Event teacher"
-    location: Optional[str] = None
+    location: str | None = Field(default=None)
     "Event location (lower priority with respect to location_item)"
     location_item: Item | None = None
     "Parsed location item from location string"
-    class_type: Optional[Literal["lec", "tut", "lab", "лек", "тут", "лаб"]] = None
+    class_type: Literal["lec", "tut", "lab", "лек", "тут", "лаб"] | None = None
     "Event class type"
 
     _sequence_number: int = -1
@@ -162,7 +151,7 @@ class CoreCourseEvent(BaseModel):
         """
         Set recurrence rule and recurrence date for event
         """
-        until = datetime.datetime.combine(self.ends, datetime.time.min)
+        until = datetime.datetime.combine(self.ends, datetime.time.min).astimezone(UTC)
 
         rrule = icalendar.vRecur(
             {
@@ -293,8 +282,8 @@ class CoreCourseEvent(BaseModel):
                 "uid": self.get_uid(),
                 "color": self.color,
                 "rrule": self.every_week_rule(),
-                "dtstart": icalendar.vDatetime(dtstart),
-                "dtend": icalendar.vDatetime(dtend),
+                "dtstart": icalendar.vDatetime(dtstart.astimezone(MOSCOW_TZ)),
+                "dtend": icalendar.vDatetime(dtend.astimezone(MOSCOW_TZ)),
             }
             vevent = icalendar.Event()
             for key, value in mapping.items():
@@ -353,8 +342,9 @@ class CoreCourseEvent(BaseModel):
                 vevent.add(key, value)
 
         if location_item.on:  # only on specific dates, not every week
-            rdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.on if
-                      self.starts <= on <= self.ends]
+            rdates = [
+                dtstart.replace(day=on.day, month=on.month) for on in location_item.on if self.starts <= on <= self.ends
+            ]
             if not rdates:
                 logger.warning(f"Event {self} has no rdates")
                 return
@@ -365,8 +355,8 @@ class CoreCourseEvent(BaseModel):
         else:  # every week at the same time
             vevent.add("rrule", self.every_week_rule())
 
-        vevent["dtstart"] = icalendar.vDatetime(dtstart)
-        vevent["dtend"] = icalendar.vDatetime(dtend)
+        vevent["dtstart"] = icalendar.vDatetime(dtstart.astimezone(MOSCOW_TZ))
+        vevent["dtend"] = icalendar.vDatetime(dtend.astimezone(MOSCOW_TZ))
 
         # check for item.except_ and add exdate if needed
         if location_item.except_:
@@ -409,8 +399,8 @@ class CoreCourseEvent(BaseModel):
                     # adapt dtstart and dtend
                     _dtstart = dtstart.replace(day=on.day, month=on.month)
                     _dtend = dtend.replace(day=on.day, month=on.month)
-                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
+                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
                     if item.location:
                         vevent_copy["location"] = item.location
                     if item.starts_at:
@@ -430,26 +420,27 @@ class CoreCourseEvent(BaseModel):
                 vevent_copy = vevent.copy()
                 vevent_copy["uid"] = self.get_uid(sequence=str(i))
                 vevent_copy.pop("rdate")
-                rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on
-                          if self.starts <= on <= self.ends]
+                rdates = [
+                    dtstart.replace(day=on.day, month=on.month) for on in item.on if self.starts <= on <= self.ends
+                ]
                 if not rdates:
                     continue
                 vevent_copy.add("rdate", rdates)
                 # adapt dtstart and dtend
                 _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
                 _dtend = dtend.replace(day=item.on[0].day, month=item.on[0].month)
-                vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
-                vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
+                vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
+                vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
                 if item.location:
                     vevent_copy["location"] = item.location
                 if item.starts_at:
                     _dtstart = _dtstart.replace(hour=item.starts_at.hour, minute=item.starts_at.minute)
                     _dtend = _dtstart + duration
-                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
+                    vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart.astimezone(MOSCOW_TZ))
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
                 if item.till:
                     _dtend = _dtend.replace(hour=item.till.hour, minute=item.till.minute)
-                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
+                    vevent_copy["dtend"] = icalendar.vDatetime(_dtend.astimezone(MOSCOW_TZ))
 
                 yield vevent_copy
 

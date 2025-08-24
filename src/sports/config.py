@@ -1,3 +1,5 @@
+from pydantic import ConfigDict
+
 __all__ = ["sports_config", "SportsParserConfig"]
 
 import datetime
@@ -10,7 +12,7 @@ from src.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
 
-CONFIG_PATH = Path(__file__).parent / "config.json"
+config_path = Path(__file__).parent / "config.yaml"
 
 
 class Credentials(BaseModel):
@@ -23,14 +25,12 @@ class Token(BaseModel):
 
 
 class SportsParserConfig(BaseParserConfig):
-    START_OF_SEMESTER: datetime.date
-    END_OF_SEMESTER: datetime.date
+    start_of_semester: datetime.date
+    end_of_semester: datetime.date
 
     website_url: str = "https://sport.innopolis.university"
     api_url: str = "https://sport.innopolis.university/api"
-
-    class Config:
-        validate_assignment = True
+    model_config = ConfigDict(validate_assignment=True)
 
 
-sports_config: SportsParserConfig = SportsParserConfig.parse_file(CONFIG_PATH)
+sports_config: SportsParserConfig = SportsParserConfig.from_yaml(config_path)

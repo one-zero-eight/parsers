@@ -1,11 +1,11 @@
 import asyncio
-from typing import Iterable
+from collections.abc import Iterable
 
 import aiohttp as aiohttp
 
 from src.logging_ import logger
 from src.sports.config import sports_config as config
-from src.sports.models import ResponseSportSchedule, ResponseSports
+from src.sports.models import ResponseSports, ResponseSportSchedule
 
 
 class SportParser:
@@ -22,14 +22,14 @@ class SportParser:
             return response_schema
 
     async def get_sport_schedule(self, sport_id: int) -> ResponseSportSchedule:
-        start = config.START_OF_SEMESTER.strftime("%Y-%m-%d")
-        final = config.END_OF_SEMESTER.strftime("%Y-%m-%d")
+        start = config.start_of_semester.strftime("%Y-%m-%d")
+        final = config.end_of_semester.strftime("%Y-%m-%d")
         url = f"{config.api_url}/calendar/{sport_id}/schedule?start={start}T00%3A00&end={final}T00%3A00"
         logger.debug(f"Getting sport schedule from {url}")
         async with self.session.get(url) as response:
             text = await response.text()
-            response_schema = ResponseSportSchedule.parse_raw(text)
-            logger.debug(f"Got {len(response_schema.__root__)} events")
+            response_schema = ResponseSportSchedule.model_validate_json(text)
+            logger.debug(f"Got {len(response_schema.root)} events")
             return response_schema
 
     async def batch_get_sport_schedule(self, sport_ids: Iterable[int]) -> dict[int, ResponseSportSchedule]:

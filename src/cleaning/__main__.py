@@ -1,10 +1,10 @@
 import asyncio
 import json
+from collections.abc import Iterable
 from itertools import groupby
 from pathlib import Path
-from typing import Iterable
 
-from src.cleaning.config import core_courses_config as config
+from src.cleaning.config import cleaning_config as config
 from src.cleaning.parser import CleaningEvent, CleaningParser, LinenChangeEvent
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
@@ -17,7 +17,7 @@ def main():
     linen_change_tag = CreateTag(alias="linen-change", name="Linen Change", type="cleaning")
     parser = CleaningParser()
 
-    directory = config.SAVE_ICS_PATH
+    directory = config.save_ics_path
     tags = [cleaning_tag, cleaning_cleaning_tag, linen_change_tag]
     event_groups = []
 
@@ -40,7 +40,7 @@ def main():
 
         group_alias = f"cleaning-{sluggify(location)}"
         file_path = directory / f"{group_alias}.ics"
-        logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+        logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
         with open(file_path, "wb") as f:
             content = calendar.to_ical()
@@ -52,7 +52,7 @@ def main():
                 name=f"Cleaning: {location}",
                 description=f"Cleaning schedule for {location}",
                 tags=[cleaning_tag, cleaning_cleaning_tag],
-                path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
+                path=file_path.relative_to(config.mount_point).as_posix(),
             )
         )
     # ----- Linen change -----
@@ -71,7 +71,7 @@ def main():
 
         group_alias = f"linen-change-{sluggify(location)}"
         file_path = directory / f"{group_alias}.ics"
-        logger.info(f"> Writing {file_path.relative_to(config.MOUNT_POINT)}")
+        logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
 
         with open(file_path, "wb") as f:
             content = calendar.to_ical()
@@ -83,7 +83,7 @@ def main():
                 name=f"Linen Change: {location}",
                 description=f"Linen change schedule for {location}",
                 tags=[cleaning_tag, linen_change_tag],
-                path=file_path.relative_to(config.MOUNT_POINT).as_posix(),
+                path=file_path.relative_to(config.mount_point).as_posix(),
             )
         )
 
@@ -91,20 +91,20 @@ def main():
     logger.info(f"Writing JSON file... {len(event_groups)} event groups.")
     output = Output(event_groups=event_groups, tags=tags)
     # create a new .json file with information about calendar
-    with open(config.SAVE_JSON_PATH, "w") as f:
-        json.dump(output.dict(), f, indent=2, sort_keys=False)
+    with open(config.save_json_path, "w") as f:
+        json.dump(output.model_dump(), f, indent=2, sort_keys=False, ensure_ascii=False)
 
     # InNoHassle integration
-    if config.INNOHASSLE_API_URL is None or config.PARSER_AUTH_KEY is None:
+    if config.innohassle_api_url is None or config.parser_auth_key is None:
         logger.info("Skipping InNoHassle integration")
         return
 
     inh_client = InNoHassleEventsClient(
-        api_url=config.INNOHASSLE_API_URL,
-        parser_auth_key=config.PARSER_AUTH_KEY.get_secret_value(),
+        api_url=config.innohassle_api_url,
+        parser_auth_key=config.parser_auth_key.get_secret_value(),
     )
 
-    result = asyncio.run(update_inh_event_groups(inh_client, config.MOUNT_POINT, output))
+    result = asyncio.run(update_inh_event_groups(inh_client, config.mount_point, output))
     return result
 
 

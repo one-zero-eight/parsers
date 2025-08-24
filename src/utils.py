@@ -34,6 +34,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from openpyxl.utils import coordinate_to_tuple
 
 TIMEZONE = "Europe/Moscow"
+MOSCOW_TZ = datetime.timezone(datetime.timedelta(hours=3), name="Europe/Moscow")
 
 
 def get_base_calendar() -> icalendar.Calendar:
@@ -260,7 +261,7 @@ def make_year_in_future(date: datetime.date, left_date: datetime.date) -> dateti
 
 
 def get_color(summary: str) -> icalendar.vText:
-    from src.config_base import CSS3Color
+    from src.constants import CSS3Color
 
     h = crc32(summary.encode("utf-8")) % len(CSS3Color)
     return icalendar.vText(CSS3Color.get_by_index(h))

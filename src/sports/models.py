@@ -1,11 +1,10 @@
 import datetime
-from typing import Optional
 from zlib import crc32
 
 import icalendar
-from pydantic import BaseModel
+from pydantic import BaseModel, RootModel
 
-from src.config_base import VDayOfWeek
+from src.constants import VDayOfWeek
 from src.utils import get_color, nearest_weekday
 
 
@@ -18,49 +17,50 @@ class ResponseSports(BaseModel):
     sports: list[Sport]
 
 
-class ResponseSportSchedule(BaseModel):
-    class SportScheduleEvent(BaseModel):
-        class ExtendedProps(BaseModel):
-            group_id: int
-            training_class: str | None
-            current_load: int
-            capacity: int
-
-            def __hash__(self):
-                string_to_hash = str(
-                    (
-                        self.group_id,
-                        self.training_class or "",
-                    )
-                )
-
-                return crc32(string_to_hash.encode("utf-8"))
-
-        title: Optional[str]
-        daysOfWeek: list[int]
-        startTime: str
-        endTime: str
-        extendedProps: ExtendedProps
+class SportScheduleEvent(BaseModel):
+    class ExtendedProps(BaseModel):
+        group_id: int
+        training_class: str | None = None
+        current_load: int
+        capacity: int
 
         def __hash__(self):
             string_to_hash = str(
                 (
-                    self.title,
-                    self.daysOfWeek,
-                    self.startTime,
-                    self.endTime,
-                    hash(self.extendedProps),
+                    self.group_id,
+                    self.training_class or "",
                 )
             )
 
             return crc32(string_to_hash.encode("utf-8"))
 
-    __root__: list[SportScheduleEvent]
+    title: str | None
+    daysOfWeek: list[int]
+    startTime: str
+    endTime: str
+    extendedProps: ExtendedProps
+
+    def __hash__(self):
+        string_to_hash = str(
+            (
+                self.title,
+                self.daysOfWeek,
+                self.startTime,
+                self.endTime,
+                hash(self.extendedProps),
+            )
+        )
+
+        return crc32(string_to_hash.encode("utf-8"))
+
+
+class ResponseSportSchedule(RootModel[list[SportScheduleEvent]]):
+    pass
 
 
 class SportScheduleEvent(BaseModel):
     sport: ResponseSports.Sport
-    sport_schedule_event: ResponseSportSchedule.SportScheduleEvent
+    sport_schedule_event: SportScheduleEvent
 
     @property
     def summary(self) -> str:

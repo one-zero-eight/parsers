@@ -1,23 +1,21 @@
 import io
+from collections import defaultdict
+from collections.abc import Generator
 from datetime import datetime
 from itertools import pairwise
-from typing import Generator
-from zipfile import ZipFile
 
 import numpy as np
+import openpyxl
 import pandas as pd
 import requests
+from openpyxl.utils import get_column_letter
 
-from src.core_courses.config import core_courses_config as config
+from src.constants import WEEKDAYS
+from src.core_courses.config import Target
 from src.core_courses.models import CoreCourseCell, CoreCourseEvent
-from src.processors.regex import prettify_string
-from src.utils import (
-    get_merged_ranges,
-    get_sheet_by_id,
-    get_sheets,
-    split_range_to_xy,
-)
 from src.logging_ import logger
+from src.processors.regex import prettify_string
+from src.utils import split_range_to_xy
 
 
 class CoreCoursesParser:
@@ -33,16 +31,11 @@ class CoreCoursesParser:
         self.session = requests.Session()
 
     def get_clear_dataframes_from_xlsx(
-        self, xlsx_file: io.BytesIO, targets: list[config.Target]
-    ) -> dict[str, pd.DataFrame]:
+        self, xlsx_file: io.BytesIO, target_sheet_names: list[str]
+    ) -> tuple[dict[str, pd.DataFrame], dict]:
         """
         Get data from xlsx file and return it as a DataFrame with merged
         cells and empty cells in the course row filled by left value.
-
-        :param xlsx_file: xlsx file with data
-        :type xlsx_file: io.BytesIO
-        :param targets: list of targets to get data from (sheets and ranges)
-        :type targets: list[config.Target]
 
         :return: dataframes with merged cells and empty cells filled
         :rtype: dict[str, pd.DataFrame]
@@ -50,28 +43,83 @@ class CoreCoursesParser:
         # ------- Read xlsx file into dataframes -------
         dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
         # ------- Clean up dataframes -------
-        dfs = {key.strip(): value for key, value in dfs.items()}
-
-        for target in targets:
-            logger.info(f"Processing sheet: '{target.sheet_name}'")
-            df = None
-            for key, value in dfs.items():
-                if key.startswith(target.sheet_name):
-                    df = value
-                    break
-            # -------- Fill merged cells with values --------
-            CoreCoursesParser.merge_cells(df, xlsx_file, target.sheet_name)
+        merged_ranges: dict[str, list[tuple[int, int, int, int]]] = defaultdict(list)
+        for target_sheet_name in target_sheet_names:
+            df = dfs[target_sheet_name]
             # -------- Select range --------
-            df = CoreCoursesParser.select_range(df, target.range)
+            (min_row, min_col, max_row, max_col) = self.auto_detect_range(df, xlsx_file, target_sheet_name)
+            df = df.iloc[min_row : max_row + 1, min_col : max_col + 1]
+            # -------- Fill merged cells with values --------
+            merged_ranges[target_sheet_name] = self.merge_cells(df, xlsx_file, target_sheet_name)
             # -------- Fill empty cells --------
             df = df.replace(r"^\s*$", np.nan, regex=True)
             # -------- Strip, translate and remove trailing spaces --------
             df = df.map(prettify_string)
             # -------- Update dataframe --------
-            dfs[target.sheet_name] = df
+            dfs[target_sheet_name] = df
 
-        logger.info("Dataframes ready")
-        return dfs
+        return dfs, merged_ranges
+
+    def auto_detect_range(
+        self, sheet_df: pd.DataFrame, xlsx_file: io.BytesIO, sheet_name: str
+    ) -> tuple[int, int, int, int]:
+        """
+        :return: tuple of (min_row, min_col, max_row, max_col)
+        """
+        time_columns_index = self.get_time_columns(sheet_df)
+        logger.info(f"Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
+        # -------- Get rightmost column index --------
+        rightmost_column_index = self.get_rightmost_column_index(xlsx_file, sheet_name, time_columns_index)
+        logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
+        last_row_index = self.get_last_row_index(xlsx_file, sheet_name)
+        target_range = f"A1:{get_column_letter(rightmost_column_index + 1)}{last_row_index}"
+        logger.info(f"Target range: {target_range}")
+        return (0, 0, last_row_index, rightmost_column_index)
+
+    def get_time_columns(self, sheet_df: pd.DataFrame) -> list[int]:
+        # find columns where presents "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"
+        time_columns = []
+        for column in sheet_df.columns:
+            values_in_column = sheet_df[column].values
+            if all(weekday in values_in_column for weekday in WEEKDAYS[:-1]):
+                time_columns.append(column)
+        return time_columns
+
+    def get_rightmost_column_index(self, xlsx_file: io.BytesIO, sheet_name: str, time_columns: list[int]) -> int:
+        # Column after time columns that has no borders formatting
+
+        wb = openpyxl.load_workbook(xlsx_file)
+        sheet = wb[sheet_name]
+        last_time_column = time_columns[-1]
+
+        next_column = last_time_column + 1
+        cell = sheet.cell(row=1, column=next_column + 1)
+
+        # Check if cell has no borders
+        has_no_border = (
+            (cell.border is None or cell.border.right is None or cell.border.right.style is None)
+            and (cell.border is None or cell.border.top is None or cell.border.top.style is None)
+            and (cell.border is None or cell.border.bottom is None or cell.border.bottom.style is None)
+        )
+
+        if has_no_border:
+            return next_column - 1
+        else:
+            # Continue searching for column with no border
+            for col in range(next_column + 1, sheet.max_column + 1):
+                cell = sheet.cell(row=1, column=col + 1)
+                if (
+                    (cell.border is None or cell.border.right is None or cell.border.right.style is None)
+                    and (cell.border is None or cell.border.top is None or cell.border.top.style is None)
+                    and (cell.border is None or cell.border.bottom is None or cell.border.bottom.style is None)
+                ):
+                    return col - 1
+            return next_column  # fallback
+
+    def get_last_row_index(self, xlsx_file: io.BytesIO, sheet_name: str) -> int:
+        wb = openpyxl.load_workbook(xlsx_file)
+        sheet = wb[sheet_name]
+        return sheet.max_row
 
     def get_xlsx_file(self, spreadsheet_id: str) -> io.BytesIO:
         """
@@ -94,32 +142,31 @@ class CoreCoursesParser:
         return io.BytesIO(response.content)
 
     @classmethod
-    def merge_cells(cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str):
+    def merge_cells(cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str) -> list[tuple[int, int, int, int]]:
         """
         Merge cells in dataframe
 
         :param df: Dataframe to process
         :param xlsx: xlsx file with data
         :param target_sheet_name: sheet to process
+        :return: list of merged ranges: (min_row, min_col, max_row, max_col)
         """
         xlsx.seek(0)
-        xlsx_zipfile = ZipFile(xlsx)
-        sheets = get_sheets(xlsx_zipfile)
-        target_sheet_id = None
-        for sheet_id, sheet_name in sheets.items():
-            if target_sheet_name in sheet_name:
-                target_sheet_id = sheet_id
-                break
-        sheet = get_sheet_by_id(xlsx_zipfile, target_sheet_id)
-        merged_ranges = get_merged_ranges(sheet)
-
+        ws = openpyxl.load_workbook(xlsx)
+        sheet = ws[target_sheet_name]
+        merged_ranges = []
         # ------- Merge cells -------
-        for merged_range in merged_ranges:
-            (start_row, start_col), (end_row, end_col) = split_range_to_xy(merged_range)
-            # get value from top left cell
-            value = df.iloc[start_row, start_col]
-            # fill merged cells with value
-            df.iloc[start_row : end_row + 1, start_col : end_col + 1] = value
+        for merged_range in sheet.merged_cells.ranges:
+            min_col, min_row, max_col, max_row = merged_range.bounds
+            min_col = min_col - 1
+            min_row = min_row - 1
+            max_col = max_col - 1
+            max_row = max_row - 1
+            value = df.iloc[min_row, min_col]
+
+            df.iloc[min_row : max_row + 1, min_col : max_col + 1] = value
+            merged_ranges.append((min_row, min_col, max_row, max_col))
+        return merged_ranges
 
     @classmethod
     def select_range(cls, df: pd.DataFrame, target_range: str) -> pd.DataFrame:
@@ -160,7 +207,7 @@ class CoreCoursesParser:
 
         # ----- Process weekday ------ #
         # get indexes of weekdays
-        weekdays_indexes = [i for i, cell in enumerate(df_column.values) if cell in config.WEEKDAYS]
+        weekdays_indexes = [i for i, cell in enumerate(df_column.values) if cell in WEEKDAYS]
 
         # create index mapping for weekdays [None, None, "MONDAY", "MONDAY", ...]
         index_mapping = pd.Series(index=df_column.index, dtype=object)
@@ -247,7 +294,7 @@ class CoreCoursesParser:
     def generate_events_from_processed_column(
         cls,
         processed_column: pd.Series,
-        target: config.Target,
+        target: Target,
     ) -> Generator[CoreCourseEvent, None, None]:
         """
         Generate events from processed cells
@@ -275,7 +322,6 @@ class CoreCoursesParser:
                 course=course,
                 group=group,
                 target=target,
-                return_none=True,
             )
 
             if event is None:

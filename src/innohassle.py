@@ -1,3 +1,5 @@
+from pydantic import field_validator
+
 __all__ = [
     "InNoHassleEventsClient",
     "Output",
@@ -18,7 +20,7 @@ from functools import partial
 from typing import Any, Optional
 
 import aiohttp
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
 
 from src.logging_ import logger
 
@@ -28,7 +30,8 @@ class CreateTag(BaseModel):
     type: str
     name: str
 
-    @validator("alias", "type")
+    @field_validator("alias", "type")
+    @classmethod
     def validate_alias(cls, v):
         if not validate_slug(v):
             raise ValueError(f"Invalid slug '{v}'")
@@ -43,7 +46,8 @@ class CreateEventGroup(BaseModel):
 
     tags: list[CreateTag] = Field(default_factory=list)
 
-    @validator("alias")
+    @field_validator("alias")
+    @classmethod
     def validate_alias(cls, v):
         if not validate_slug(v):
             raise ValueError(f"Invalid slug '{v}'")

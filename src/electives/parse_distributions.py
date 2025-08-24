@@ -16,7 +16,7 @@ def normalize_name(name: str) -> str:
 def main():
     parser = ElectiveParser()
     xlsx = parser.get_xlsx_file(
-        spreadsheet_id=config.DISTRIBUTION_SPREADSHEET_ID,
+        spreadsheet_id=config.distribution_spreadsheet_id,
     )
     # ------- Read xlsx file into dataframes -------
     dfs = pd.read_excel(xlsx, engine="openpyxl", sheet_name=None, header=0)
@@ -42,7 +42,7 @@ def main():
 
         elective_name_x_elective_alias: dict[str, str] = {}
 
-        for elective in config.ELECTIVES:
+        for elective in config.electives:
             elective_name_x_elective_alias[normalize_name(elective.name)] = elective.alias
 
         DICTIONARY = {
@@ -73,7 +73,7 @@ def main():
                 if not elective_alias:
                     warnings.warn(f"No alias found for `{elective_name}`")
                 else:
-                    calendar_alias = f"{config.SEMESTER_TAG.alias}-{sluggify(sheet_name_dictionary[sheet_name])}-{sluggify(elective_alias)}"
+                    calendar_alias = f"{config.semester_tag.alias}-{sluggify(sheet_name_dictionary[sheet_name])}-{sluggify(elective_alias)}"
                     distributions[email].add(calendar_alias)
 
         for email, elective_aliases in distributions.items():

@@ -1,15 +1,16 @@
 import io
 import re
 from collections import defaultdict
+from collections.abc import Generator
 from datetime import datetime
 from itertools import groupby, pairwise
-from typing import Generator
 
 import numpy as np
 import pandas as pd
 import requests
 from openpyxl.utils import coordinate_to_tuple
 
+from src.electives.config import Target
 from src.electives.config import electives_config as config
 from src.electives.models import Elective, ElectiveCell, ElectiveEvent
 from src.logging_ import logger
@@ -28,7 +29,7 @@ class ElectiveParser:
         self.session = requests.Session()
 
     def get_clear_dataframes_from_xlsx(
-        self, xlsx_file: io.BytesIO, targets: list[config.Target]
+        self, xlsx_file: io.BytesIO, targets: list[Target]
     ) -> dict[str, pd.DataFrame]:
         """
         Get data from xlsx file and return it as a DataFrame with merged
@@ -221,7 +222,7 @@ class ElectiveParser:
         :return: parsed events
         """
 
-        _elective_aliases = [e.alias for e in config.ELECTIVES]
+        _elective_aliases = [e.alias for e in config.electives]
         _elective_line_pattern = re.compile(r"(?P<elective_alias>" + "|".join(_elective_aliases) + r")")
 
         def process_line(line: str) -> ElectiveCell | str:

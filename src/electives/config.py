@@ -1,7 +1,6 @@
-import json
 from pathlib import Path
 
-from pydantic import BaseModel, parse_obj_as, validator
+from pydantic import BaseModel, field_validator
 
 from src.config_base import BaseParserConfig
 from src.electives.models import Elective
@@ -9,46 +8,37 @@ from src.utils import get_project_root
 
 PROJECT_ROOT = get_project_root()
 
-CONFIG_PATH = Path(__file__).parent / "config.json"
-"""Path to config.json file"""
+config_path = Path(__file__).parent / "config.yaml"
+
+
+class Target(BaseModel):
+    sheet_name: str
+    range: str
+
+
+class Tag(BaseModel):
+    alias: str
+    type: str
+    name: str
 
 
 class ElectivesParserConfig(BaseParserConfig):
-    """
-    Config for electives parser from Google Sheets
-    """
+    targets: list[Target]
 
-    class Target(BaseModel):
-        """
-        Target model for electives (sheet in Google Sheets)
-        """
+    semester_tag: Tag
 
-        sheet_name: str
-        range: str
+    spreadsheet_id: str
+    distribution_spreadsheet_id: str | None = None
+    temp_dir: Path = PROJECT_ROOT / "temp" / "electives"
 
-    TARGETS: list[Target]
+    electives: list["Elective"]
 
-    class Tag(BaseModel):
-        alias: str
-        type: str
-        name: str
-
-    SEMESTER_TAG: Tag
-
-    SPREADSHEET_ID: str
-    DISTRIBUTION_SPREADSHEET_ID: str | None = None
-    TEMP_DIR: Path = PROJECT_ROOT / "temp" / "electives"
-
-    ELECTIVES: list["Elective"]
-
-    @validator("TEMP_DIR", pre=True)
+    @field_validator("temp_dir", mode="before")
+    @classmethod
     def ensure_dir(cls, v):
         """Ensure that directory exists"""
         v.mkdir(parents=True, exist_ok=True)
         return v
 
 
-with open(CONFIG_PATH) as f:
-    elective_config_dict = json.load(f)
-
-electives_config: ElectivesParserConfig = parse_obj_as(ElectivesParserConfig, elective_config_dict)
+electives_config: ElectivesParserConfig = ElectivesParserConfig.from_yaml(config_path)

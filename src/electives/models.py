@@ -1,10 +1,11 @@
 import datetime
 import re
-from typing import Optional, Any, Generator
+from collections.abc import Generator
+from typing import Any
 from zlib import crc32
 
 import icalendar
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, Field, field_validator
 
 from src.processors.regex import process_spaces
 from src.utils import get_color
@@ -17,14 +18,15 @@ class Elective(BaseModel):
 
     alias: str
     """Alias for elective"""
-    name: Optional[str]
+    name: str | None = None
     """Name of elective"""
-    instructor: Optional[str]
+    instructor: str | None = None
     """Instructor of elective"""
-    elective_type: Optional[str]
+    elective_type: str | None = None
     """Type of elective"""
 
-    @validator("name", "instructor", "elective_type", pre=True)
+    @field_validator("name", "instructor", "elective_type", mode="before")
+    @classmethod
     def beatify_string(cls: type["Elective"], string: str) -> str:
         """Beatify string
 
@@ -47,17 +49,17 @@ class ElectiveCell(BaseModel):
 
         original: str
         """ Original occurrence value """
-        elective: Optional[Elective]
+        elective: Elective | None = None
         """ Elective object """
-        location: Optional[str]
+        location: str | None = None
         """ Location of the elective """
-        group: Optional[str]
+        group: str | None = None
         """ Group to which the elective belongs """
-        class_type: Optional[str]
+        class_type: str | None = None
         """ Type of the class(leture, seminar, etc.) """
-        starts_at: Optional[datetime.time]
+        starts_at: datetime.time | None = None
         """ Time when the elective starts (modificator) """
-        ends_at: Optional[datetime.time]
+        ends_at: datetime.time | None = None
         """ Time when the elective ends (modificator) """
 
         def __init__(self, **data: Any):
@@ -83,7 +85,7 @@ class ElectiveCell(BaseModel):
             # just first word as elective
             splitter = string.split(" ")
             elective_alias = splitter[0]
-            self.elective = next(elective for elective in config.ELECTIVES if elective.alias == elective_alias)
+            self.elective = next(elective for elective in config.electives if elective.alias == elective_alias)
             string = " ".join(splitter[1:])
             # find time xx:xx-xx:xx
 
@@ -166,11 +168,11 @@ class ElectiveEvent(BaseModel):
     """ Event start time """
     end: datetime.datetime
     """ Event end time """
-    location: Optional[str]
+    location: str | None = None
     """ Event location """
-    class_type: Optional[str]
+    class_type: str | None = None
     """ Event type """
-    group: Optional[str] = None
+    group: str | None = None
     """ Group to which the event belongs """
 
     def __hash__(self):

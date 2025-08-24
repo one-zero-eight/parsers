@@ -2,7 +2,7 @@ import re
 from datetime import date, datetime, time
 from functools import partial
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class Item(BaseModel):
@@ -14,12 +14,10 @@ class Item(BaseModel):
     on: list[date] | None = None
     except_: list[date] | None = None
     NEST: list["Item"] | None = None
-
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = ConfigDict(arbitrary_types_allowed=True)
 
 
-Item.update_forward_refs()
+Item.model_rebuild()
 ydate = partial(date, year=datetime.today().year)
 
 
