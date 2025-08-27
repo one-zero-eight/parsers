@@ -28,6 +28,8 @@ class CoreCourseCell:
     def __init__(self, value: list[str | None]):
         if len(value) == 3:
             self.value = [None if (isna(x)) else x for x in value]
+        elif len(value) == 1:
+            self.value = [None if (isna(value[0])) else value[0]] + [None] * 2
         else:
             raise ValueError(f"Length of value must be 3. {value}")
 
