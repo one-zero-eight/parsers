@@ -1,14 +1,15 @@
 import io
 import re
-from collections import defaultdict
 from collections.abc import Generator
 from datetime import datetime
 from itertools import groupby, pairwise
+from typing import TypedDict
 
 import numpy as np
+import openpyxl
 import pandas as pd
 import requests
-from openpyxl.utils import coordinate_to_tuple
+from openpyxl.utils import coordinate_to_tuple, get_column_letter
 
 from src.electives.config import Target
 from src.electives.config import electives_config as config
@@ -28,9 +29,7 @@ class ElectiveParser:
     def __init__(self):
         self.session = requests.Session()
 
-    def get_clear_dataframes_from_xlsx(
-        self, xlsx_file: io.BytesIO, targets: list[Target]
-    ) -> dict[str, pd.DataFrame]:
+    def get_clear_dataframes_from_xlsx(self, xlsx_file: io.BytesIO, targets: list[Target]) -> dict[str, pd.DataFrame]:
         """
         Get data from xlsx file and return it as a DataFrame with merged
         cells and empty cells in the course row filled by left value.
@@ -46,13 +45,14 @@ class ElectiveParser:
         # ------- Read xlsx file into dataframes -------
         dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
         # ------- Clean up dataframes -------
-        dfs = {key.strip(): value for key, value in dfs.items()}
+        dfs = {key: value for key, value in dfs.items()}
 
         for target in targets:
             logger.debug(f"Processing sheet: {target.sheet_name}")
             df = dfs[target.sheet_name]
             # -------- Select range --------
-            df = ElectiveParser.select_range(df, target.range)
+            (min_row, min_col, max_row, max_col) = self.auto_detect_range(df, xlsx_file, target.sheet_name)
+            df = df.iloc[min_row : max_row + 1, min_col : max_col + 1]
             # -------- Set time column as index --------
             df = ElectiveParser.set_time_column_as_index(df)
             # -------- Strip all values --------
@@ -67,6 +67,33 @@ class ElectiveParser:
             dfs[target.sheet_name] = df
         logger.debug("Dataframes ready")
         return dfs
+
+    
+    def auto_detect_range(
+        self, sheet_df: pd.DataFrame, xlsx_file: io.BytesIO, sheet_name: str
+    ) -> tuple[int, int, int, int]:
+        """
+        :return: tuple of (min_row, min_col, max_row, max_col)
+        """
+
+        weekdays = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+
+        # find all columns named as weekday by checking the first row
+        first_row = sheet_df.iloc[0]
+        weekday_columns_index = [i for i, value in enumerate(first_row) if isinstance(value, str) and value.upper().strip() in weekdays]
+        assert len(weekday_columns_index) == len(weekdays), "Weekday columns not found"
+        rightmost_column_index = max(weekday_columns_index)
+        leftmost_column_index = min(weekday_columns_index) - 1
+        logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
+        last_row_index = self.get_last_row_index(xlsx_file, sheet_name)
+        target_range = f"{get_column_letter(leftmost_column_index + 1)}1:{get_column_letter(rightmost_column_index + 1)}{last_row_index}"
+        logger.info(f"Target range: {target_range}")
+        return (0, leftmost_column_index, last_row_index, rightmost_column_index)
+
+    def get_last_row_index(self, xlsx_file: io.BytesIO, sheet_name: str) -> int:
+        wb = openpyxl.load_workbook(xlsx_file)
+        sheet = wb[sheet_name]
+        return sheet.max_row
 
     def get_xlsx_file(self, spreadsheet_id: str) -> io.BytesIO:
         """
@@ -258,9 +285,12 @@ class ElectiveParser:
                     yield from cell.generate_events(date, timeslot)
 
 
-def convert_separation(
-    events: list[ElectiveEvent],
-) -> dict[str, list[str, list[ElectiveEvent]]]:
+class Separation(TypedDict):
+    name: str
+    events: list[ElectiveEvent]
+
+
+def convert_separation(events: list[ElectiveEvent]) -> dict[str, Separation]:
     """
     Convert list of events to dict with separation by Elective and group.
 
@@ -269,7 +299,7 @@ def convert_separation(
     :return: dict with separation by Elective and group
     :rtype: dict[str, list[str, list[ElectiveEvent]]] (name, events)
     """
-    output = defaultdict(lambda: [None, list()])
+    output: dict[str, Separation] = dict()
 
     # # by groups of elective
     # for (elective, group), _events in groupby(events, lambda e: (e.elective, e.group)):
@@ -284,8 +314,13 @@ def convert_separation(
     # only by Elective
     for elective, _events in groupby(events, lambda e: e.elective):
         elective: Elective
-        cal = output[elective.alias]
-        cal[0] = elective.name
-        cal[1].extend(_events)
+        if elective.alias not in output:
+            output[elective.alias] = Separation(
+                name=elective.name or "",
+                events=list(_events),
+            )
+        else:
+            output[elective.alias]["events"].extend(_events)
 
     return dict(output)
+

@@ -54,7 +54,7 @@ def main():
     predefined_event_groups: list[CreateEventGroup] = []
     mount_point = config.save_ics_path
     for target in config.targets:
-        logger.info(f"Processing {target.sheet_name}... Range: {target.range}")
+        logger.info(f"Processing {target.sheet_name}...")
 
         sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name == target.sheet_name)
         by_weeks = parser.split_df_by_weeks(sheet_df)
@@ -65,9 +65,9 @@ def main():
         big_df = pd.concat([big_df, *by_weeks], axis=1)
         big_df.dropna(axis=1, how="all", inplace=True)
         big_df.dropna(axis=0, how="all", inplace=True)
-        events = list(parser.parse_df(big_df))
+        all_events = list(parser.parse_df(big_df))
 
-        converted = convert_separation(events)
+        converted = convert_separation(all_events)
 
         elective_type_directory = mount_point / sluggify(target.sheet_name)
 
@@ -81,7 +81,9 @@ def main():
 
         tags.append(elective_type_tag)
 
-        for elective_alias, (name, events) in converted.items():
+        for elective_alias, separation in converted.items():
+            name = separation["name"]
+            events = separation["events"]
             calendar = get_base_calendar()
             calendar["x-wr-calname"] = elective_alias
             calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.spreadsheet_id}"
@@ -131,7 +133,7 @@ def main():
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
     with open(config.save_json_path, "w") as f:
-        json.dump(output.dict(), f, indent=2, sort_keys=False)
+        json.dump(output.model_dump(), f, indent=2, sort_keys=False)
     # InNoHassle integration
     if config.innohassle_api_url is None or config.parser_auth_key is None:
         logger.info("Skipping InNoHassle integration")

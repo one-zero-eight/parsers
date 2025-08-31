@@ -88,19 +88,25 @@ class ElectiveCell(BaseModel):
             self.elective = next(elective for elective in config.electives if elective.alias == elective_alias)
             string = " ".join(splitter[1:])
             # find time xx:xx-xx:xx
-
             if timeslot_m := re.search(r"\(?(\d{2}:\d{2})-(\d{2}:\d{2})\)?", string):
                 self.starts_at = datetime.datetime.strptime(timeslot_m.group(1), "%H:%M").time()
                 self.ends_at = datetime.datetime.strptime(timeslot_m.group(2), "%H:%M").time()
                 string = string.replace(timeslot_m.group(0), "")
 
             # find starts at xx:xx
-            if timeslot_m := re.search(r"\(?starts at (\d{2}:\d{2})\)?", string):
+            if timeslot_m := (
+                re.search(r"\(?starts at (\d{2}:\d{2})\)?", string) or re.search(r"\(?начало в (\d{2}:\d{2})\)?", string)
+            ):
                 self.starts_at = datetime.datetime.strptime(timeslot_m.group(1), "%H:%M").time()
+                string = string.replace(timeslot_m.group(0), "")
+            
+            # find ends at xx:xx
+            if timeslot_m := re.search(r"\(?ends at (\d{2}:\d{2})\)?", string) or re.search(r"\(?конец в (\d{2}:\d{2})\)?", string):
+                self.ends_at = datetime.datetime.strptime(timeslot_m.group(1), "%H:%M").time()
                 string = string.replace(timeslot_m.group(0), "")
 
             # find (lab), (lec)
-            if class_type_m := re.search(r"\(?(lab|lec)\)?", string, flags=re.IGNORECASE):
+            if class_type_m := re.search(r"\(?(lab|lec|лек|сем)\)?", string, flags=re.IGNORECASE):
                 self.class_type = class_type_m.group(1).lower()
                 string = string.replace(class_type_m.group(0), "")
 

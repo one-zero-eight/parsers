@@ -13,7 +13,6 @@ config_path = Path(__file__).parent / "config.yaml"
 
 class Target(BaseModel):
     sheet_name: str
-    range: str
 
 
 class Tag(BaseModel):

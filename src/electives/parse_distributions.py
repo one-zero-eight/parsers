@@ -15,13 +15,12 @@ def normalize_name(name: str) -> str:
 
 def main():
     parser = ElectiveParser()
-    xlsx = parser.get_xlsx_file(
-        spreadsheet_id=config.distribution_spreadsheet_id,
-    )
+    assert config.distribution_spreadsheet_id is not None
+    xlsx = parser.get_xlsx_file(spreadsheet_id=config.distribution_spreadsheet_id)
     # ------- Read xlsx file into dataframes -------
     dfs = pd.read_excel(xlsx, engine="openpyxl", sheet_name=None, header=0)
     # ------- Clean up dataframes -------
-    dfs = {key.strip(): value for key, value in dfs.items()}
+    dfs = {key: value for key, value in dfs.items()}
 
     total_distributions = defaultdict(set)
 
@@ -56,7 +55,15 @@ def main():
             "conscious communication (business rhetorics)": "Conscious Communication. (Business Rhetorics)",
         }
 
-        sheet_name_dictionary = {"BS1 RU": "BS1 (рус)", "BS1": "BS1", "BS2": "BS2", "MS": "MS", "MS1": "MS"}
+        sheet_name_dictionary = {
+            "BS1 RU": "BS1 (рус)",
+            "BS1": "BS1",
+            "BS2": "BS2",
+            "BS2 RU": "Rus BS2",
+            "BS3": "BS3 Tech",
+            "MS": "MS",
+            "MS1": "MS",
+        }
 
         distributions = defaultdict(set)
 
@@ -82,9 +89,39 @@ def main():
     for email, elective_aliases in total_distributions.items():
         total_distributions[email] = list(elective_aliases)
 
+    # Invert structure: group academic groups by calendar alias and collect user emails
+    academic_groups_data = defaultdict(set)
+    
+    for email, elective_aliases in total_distributions.items():
+        for alias in elective_aliases:
+            academic_groups_data[alias].add(email)
+    
+    # Convert to the desired format
+    academic_groups = []
+    for event_group_alias, user_emails in academic_groups_data.items():
+        # Generate academic group name from event_group_alias
+        # Convert "fall25-rus-bs2-ти" to "B25-RUS-BS2-ТИ" format
+        parts = event_group_alias.replace(f"{config.semester_tag.alias}-", "").split("-")
+        name = "-".join(part.upper() for part in parts)
+        # Ensure it starts with year prefix like "B25"
+        if not name.startswith("B25"):
+            name = f"B25-{name}"
+        
+        academic_groups.append({
+            "name": name,
+            "event_group_alias": event_group_alias,
+            "user_emails": sorted(list(user_emails))
+        })
+    
+    # Sort academic groups by name
+    academic_groups.sort(key=lambda x: x["name"])
+
     with open("electives_distributions.json", "w") as f:
         json.dump(
-            {"users": [{"email": email, "groups": groups} for email, groups in total_distributions.items()]},
+            {
+                "users": [],
+                "academic_groups": academic_groups
+            },
             f,
             indent=2,
             ensure_ascii=False,
