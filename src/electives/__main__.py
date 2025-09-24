@@ -55,7 +55,7 @@ def main():
     mount_point = config.save_ics_path
     for target in config.targets:
         logger.info(f"Processing {target.sheet_name}...")
-        if target.sheet_name == "Russian as a foreign language":
+        if "Russian as a foreign language" in target.sheet_name:
             logger.info("Skip")
             continue
 
