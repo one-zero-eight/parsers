@@ -55,6 +55,9 @@ def main():
     mount_point = config.save_ics_path
     for target in config.targets:
         logger.info(f"Processing {target.sheet_name}...")
+        if target.sheet_name == "Russian as a foreign language":
+            logger.info("Skip")
+            continue
 
         sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name == target.sheet_name)
         by_weeks = parser.split_df_by_weeks(sheet_df)
