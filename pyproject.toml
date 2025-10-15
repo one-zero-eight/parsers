@@ -1,10 +1,12 @@
 [project]
-name = "innohassle-parsers"
+name = "parsers"
 version = "0.1.0"
 description = ""
-authors = [{ name = "Ruslan Bel'kov", email = "ruslan.belckov@yandex.ru" }]
-requires-python = "~=3.12.0"
+authors = [{ name = "one-zero-eight" }]
+urls = { homepage = "https://t.me/one_zero_eight" }
 readme = "README.md"
+requires-python = ">=3.12,<3.13"
+
 dependencies = [
     "aiohttp>=3.10.6,<4",
     "colorlog>=6.8.2,<7",
@@ -25,10 +27,6 @@ dependencies = [
 
 [tool.ruff]
 line-length = 120
-lint.ignore = [
-    # wildcard imports are fine
-    "F403",
-    "F405",
-    "PLR"
-]
 lint.extend-select = ["I", "UP", "PL"]
+lint.extend-ignore = ["PLC0415", "PLR"]
+target-version = "py313"
