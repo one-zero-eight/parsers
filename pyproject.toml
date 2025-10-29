@@ -15,14 +15,14 @@ dependencies = [
     "google-auth-httplib2>=0.2.0,<0.3",
     "google-auth-oauthlib>=1.2.0,<2",
     "html5lib~=1.1",
-    "icalendar>=5.0.13,<6",
+    "icalendar>=5.0.13,<7",
     "openpyxl>=3.1.2,<4",
     "pandas>=2.0.3,<3",
     "pydantic>=2.11.7",
     "pytest>=8.3.3,<9",
     "python-dotenv>=1.0.1,<2",
     "pyyaml>=6.0.2,<7",
-    "ruff>=0.6.8,<0.7",
+    "ruff>=0.6.8,<0.15",
 ]
 
 [tool.ruff]
