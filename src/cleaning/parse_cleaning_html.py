@@ -4,6 +4,7 @@ from collections import defaultdict
 from datetime import date, datetime
 
 import bs4
+import httpx
 import numpy as np
 import pandas as pd
 import requests
@@ -11,6 +12,7 @@ from dateutil import relativedelta
 
 from src.logging_ import logger
 
+# TODO: Rework to work with xlsx instead (better to def parse(dfs: dict[str, pd.DataFrame]) -> dict[str, list[date]])...
 
 def parse_from_url(url: str) -> dict[str, list[date]]:
     with requests.Session() as session:
@@ -95,7 +97,9 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
                         # 7 корпус 1-7 этажи 7 building 1-7 floors
                         # 2 корпус 3-4 этаж 2 building 3-4 floor
                         # 3 корпус 3 building
-                        matches = re.finditer(r"(?P<building>\d)\s+building(\s+(?P<floors>(\d+|\d+-\d+))\s+floors?)?", value)
+                        matches = re.finditer(
+                            r"(?P<building>\d)\s+building(\s+(?P<floors>(\d+|\d+-\d+))\s+floors?)?", value
+                        )
                         for m in matches:
                             building = m.group("building")
                             floors = m.group("floors")
@@ -109,9 +113,31 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
             return entries
 
 
-if __name__ == "__main__":
+def get_xlsx_file(spreadsheet_id: str) -> io.BytesIO:
+    """
+    Export xlsx file from Google Sheets and return it as BytesIO object.
 
-    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyn8FIlygudmZmR9WyuJN6IIZe4XoRXsCBsXEQg2adOTOE3dHwj-xl7OQWWgu2thCpKr4-5t8fHGrb/pubhtml?gid=995085907"
-    
-    parsed = parse_from_url(url)
+    :param spreadsheet_id: id of Google Sheets spreadsheet
+    :return: xlsx file as BytesIO object
+    """
+    # ------- Get data from Google Sheets -------
+    logger.debug("Getting dataframe from Google Sheets...")
+    # ------- Create url for export -------
+    spreadsheet_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}"
+    export_url = spreadsheet_url + "/export?format=xlsx"
+    # ------- Export xlsx file -------
+    logger.debug(f"Exporting from URL: {export_url}")
+    response = httpx.get(export_url)
+    logger.debug(f"Response status: {response.status_code}")
+    response.raise_for_status()
+    # ------- Return xlsx file as BytesIO object -------
+    return io.BytesIO(response.content)
+
+
+if __name__ == "__main__":
+    # https://docs.google.com/spreadsheets/d/1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs/export?format=xlsx
+    spreadsheet_id = "1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs"
+
+    parsed = get_xlsx_file(spreadsheet_id)
+    dfs = pd.read_excel(parsed, sheet_name=None)
     print(parsed)

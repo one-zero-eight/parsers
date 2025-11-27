@@ -5,7 +5,7 @@ import icalendar
 from pydantic import BaseModel, field_validator
 
 from src.cleaning.config import cleaning_config as config
-from src.cleaning.parse_cleaning_html import parse_from_url
+from src.logging_ import logger
 from src.utils import get_color, nearest_weekday
 
 
@@ -17,18 +17,23 @@ class CleaningParser:
         :return: cleaning events
         :rtype: list[CleaningEvent]
         """
-        parsed = parse_from_url(config.cleaning_spreadsheet_url)
-        events = []
 
-        for location, dates in parsed.items():
-            events.append(
-                CleaningEvent(
-                    summary="Cleaning",
-                    location=location,
-                    date=dates[0],
-                    rdate=dates,
-                )
-            )
+        # TODO: Use parse_cleaning_html.py instead
+        logger.warning("Not implemented")
+        events = []
+        
+        # parsed = parse_from_url(config.cleaning_spreadsheet_url)
+        # events = []
+
+        # for location, dates in parsed.items():
+        #     events.append(
+        #         CleaningEvent(
+        #             summary="Cleaning",
+        #             location=location,
+        #             date=dates[0],
+        #             rdate=dates,
+        #         )
+        #     )
 
         return events
 

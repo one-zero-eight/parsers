@@ -32,3 +32,4 @@ distributions.json
 migrate_user_data.py
 log.txt
 academic_groups.py
+electives_distributions.json
