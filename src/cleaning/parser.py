@@ -21,13 +21,9 @@ class CleaningParser:
         :rtype: list[CleaningEvent]
         """
 
-        # TODO: Use parse_cleaning_html.py instead
-        logger.warning("Not implemented")
         events = []
-        
-        spreadsheet_id = "1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs"
 
-        xlsx_file = get_xlsx_file(spreadsheet_id)
+        xlsx_file = get_xlsx_file(config.cleaning_spreadsheet_id)
         dfs = pd.read_excel(xlsx_file, sheet_name=None, header=None)
 
         parsed = parse(dfs)

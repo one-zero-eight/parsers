@@ -12,9 +12,7 @@ from dateutil import relativedelta
 
 from src.logging_ import logger
 
-# TODO: Rework to work with xlsx instead (better to def parse(dfs: dict[str, pd.DataFrame]) -> dict[str, list[date]])...
-
-def process_dataframe(df, entries):
+def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     # drop columns that contain only NaN
     df = df.dropna(axis="columns", how="all")
     df = df.dropna(axis="rows", how="all")
@@ -42,7 +40,6 @@ def process_dataframe(df, entries):
     days = df.iloc[2::2, :]
     # drop first, second and days rows
     df = df.drop(df.index[[0, 1, *range(2, len(df), 2)]])
-    # flatten days
     days = days.astype(int).values.flatten()
     first_day_large_than_15 = days[0] > 15
     # Split the list based on monotonic increasing by one
