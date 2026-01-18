@@ -142,30 +142,37 @@ class CoreCoursesParser:
         return io.BytesIO(response.content)
 
     @classmethod
-    def merge_cells(cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str) -> list[tuple[int, int, int, int]]:
-        """
-        Merge cells in dataframe
-
-        :param df: Dataframe to process
-        :param xlsx: xlsx file with data
-        :param target_sheet_name: sheet to process
-        :return: list of merged ranges: (min_row, min_col, max_row, max_col)
-        """
+    def merge_cells(
+        cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str, row_offset: int = 0, col_offset: int = 0
+    ):
         xlsx.seek(0)
         ws = openpyxl.load_workbook(xlsx)
         sheet = ws[target_sheet_name]
+
         merged_ranges = []
-        # ------- Merge cells -------
+        nrows, ncols = df.shape
+
         for merged_range in sheet.merged_cells.ranges:
             min_col, min_row, max_col, max_row = merged_range.bounds
-            min_col = min_col - 1
-            min_row = min_row - 1
-            max_col = max_col - 1
-            max_row = max_row - 1
-            value = df.iloc[min_row, min_col]
 
+            min_col = (min_col - 1) - col_offset
+            max_col = (max_col - 1) - col_offset
+            min_row = (min_row - 1) - row_offset
+            max_row = (max_row - 1) - row_offset
+
+            # Skip ranges not fully/partially inside df
+            if max_row < 0 or max_col < 0 or min_row >= nrows or min_col >= ncols:
+                continue
+
+            min_row = max(min_row, 0)
+            min_col = max(min_col, 0)
+            max_row = min(max_row, nrows - 1)
+            max_col = min(max_col, ncols - 1)
+
+            value = df.iloc[min_row, min_col]
             df.iloc[min_row : max_row + 1, min_col : max_col + 1] = value
             merged_ranges.append((min_row, min_col, max_row, max_col))
+
         return merged_ranges
 
     @classmethod
