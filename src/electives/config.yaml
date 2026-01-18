@@ -1,110 +1,39 @@
-spreadsheet_id: "1WH_lkDhQVe2lj3l3uBHByM2mymeMbk1z1qUS8uMAy04"
+spreadsheet_id: "1FyxFcgJ9pOqalE_k21bXGJggzSpZpcILw6Lb1_1WHkQ"
 semester_tag:
-  alias: fall25
-  name: fall 2025
+  alias: spring26
+  name: Spring 2026
   type: semester
-distribution_spreadsheet_id: "1-wE4mSxVzJkE4PM7QNlLUScR7zGfyyHgL5Vt6R-KR64"
+distribution_spreadsheet_id: "1MFul8dgrKydjxzOHkAFH27qlf3uCCPEdgdTa2-lY0AA"
 targets:
+- sheet_name: "BS2 RU"
 - sheet_name: "BS3 Tech"
-- sheet_name: "Rus BS2"
-- sheet_name: "Russian as a foreign language "
-save_ics_path: fall25/electives
-save_json_path: fall25/electives.json
+save_ics_path: spring26/electives
+save_json_path: spring26/electives.json
 electives: [
-    {
-      "alias": "SRE",
-      "name": "Industrial development, operation and reliability of software systems",
-      "instructor": "T-Bank team",
-    },
-    {
-      "alias": "AEML",
-      "name": "Introduction to Adaptive and Efficient Machine Learning",
-      "instructor": "Akdodshoev Ahmadsho",
-    },
-    {
-      "alias": "ADSA",
-      "name": "Advanced Data Structures & Algorithms: Real-World Use Cases",
-      "instructor": "Gleb Lobanov",
-    },
-    {
-      "alias": "DSO",
-      "name": "Introduction to DevSecOps",
-      "instructor": "Dmitry Creed",
-    },
-    {
-      "alias": "SPDA",
-      "name": "Software Product Development and Analysis",
-      "instructor": "Konstantin Arkhipov",
-    },
-    {
-      "alias": "PY",
-      "name": "Industrial Software Development in Python: Key Technologies and Approaches",
-      "instructor": "German Tarasov",
-    },
-    {
-      "alias": "AD",
-      "name": "Basics of Android Development",
-      "instructor": "VK",
-    },
-    {
-      "alias": "ATLLM",
-      "name": "Advanced Techniques for Large Language Model Applications",
-      "instructor": "Hamza Salem",
-    },
-    {
-      "alias": "RBL",
-      "name": "Prototyping Games in Roblox",
-      "instructor": "Iskander Gataullin",
-    },
-    {
-      "alias": "JS",
-      "name": "Enterprise programming on Javascript - Advanced",
-      "instructor": "Nikita Grigoryev",
-    },
-    {
-      "alias": "CG",
-      "name": "Computer Graphics in Game Development",
-      "instructor": "Ivan Belyavtsev",
-    },
-    {
-      "alias": "MCP",
-      "name": "Introduction to Modern Control Paradigms",
-      "instructor": "Simeon Nedelchev",
-    },
-    {
-      "alias": "DO",
-      "name": "Introduction to DevOps",
-      "instructor": "Dmitry Creed",
-    },
-    {
-      "alias": "BDJ",
-      "name": "Basics of Backend Development in Java",
-      "instructor": "T-Bank team",
-    },
-    {
-      "alias": "SC",
-      "name": "Programming in Scala",
-      "instructor": "Ivan Lyagaev",
-    },
     # Ru programs
     {
-      "alias": "ВФА",
-      "name": "Введение в функциональный анализ",
-      "instructor": "П. Останин\nИ. Бутаков",
+      "alias": "ВВТУС",
+      "name": "Введение в теорию управляемых систем",
+      "instructor": "Sergei Savin",
     },
     {
-      "alias": "ПМ",
-      "name": "Прикладная математика: искусство и ремесло вычислений",
-      "instructor": "В. Гордин",
+      "alias": "МОКВ",
+      "name": "Математические основы квантовых вычислений",
+      "instructor": "Oleg Kiselev, Mikhail Moshchanetskii",
     },
     {
-      "alias": "ТИ",
-      "name": "Теория информации",
-      "instructor": "А. Фролов\nФ. Иванов\nИ. Бутаков\nП. Рыбин\nК. Андреев\nД. Артемасов\nО. Нестеренков\nД. Гошкодер\nА. Кувшинов\nА. Семененко\nА. Гладков\nД. Гошкодер\nК. Андреев",
+      "alias": "ОСКВМ",  # TODO: Change to 'ОСКМ' once it's fixed in the table
+      "name": "Основы математического и компьютерного моделирования",
+      "instructor": "Anna Maslovskaya",
     },
-    # Russian as a foreign language
-    { "alias": "A1", "name": "Russian as a Foreign Language" },
-    { "alias": "A2", "name": "Russian as a Foreign Language" },
-    { "alias": "B1", "name": "Russian as a Foreign Language" },
-    { "alias": "B1", "name": "Russian as a Foreign Language" },
-  ]
+    {
+      "alias": "ПМИРВ",
+      "name": "Прикладная математика: искусство и ремесло вычислений (углубленный курс)",
+      "instructor": "Gordin Vladimir, Smirnov Mikhail",
+    },
+    {
+      "alias": "ФА",
+      "name": "Функциональный анализ",
+      "instructor": "Ostanin Pavel. Butakov Ivan",
+    },
+]
