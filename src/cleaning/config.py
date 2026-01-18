@@ -19,6 +19,7 @@ class LinenChangeEntry(BaseModel):
 class CleaningParserConfig(BaseParserConfig):
     start_date: datetime.date
     cleaning_spreadsheet_url: str
+    cleaning_spreadsheet_id: str
     linen_change_entries: list[LinenChangeEntry]
 
 cleaning_config: CleaningParserConfig = CleaningParserConfig.from_yaml(config_path)
