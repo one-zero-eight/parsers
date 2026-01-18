@@ -1,32 +1,16 @@
-spreadsheet_id: 1GlRGsy6-UvdIqj_E-iT9UBz9gvBNba5qHTjfm-npyjI
+spreadsheet_id: 1qetU56NwowMgHSD4ZBSFDO5omeO6FHPYSIz6sde86yo
 semester_tag:
-  alias: fall25
-  name: Fall 2025
+  alias: spring26
+  name: Spring 2026
   type: semester
 targets:
-  - sheet_name: 1st block common (since 2508)
-    start_date: "2025-08-25"
-    end_date: "2025-10-27"
+  - sheet_name: 1st block common (since 1901)
+    start_date: "2026-01-19"
+    end_date: "2026-05-03"
     override:
       - groups: []
-        courses: ["BS - Year 1"]
-        start_date: "2025-09-01"
-        end_date: "2025-10-27"
-  - sheet_name: 2nd block common (since 2710)
-    start_date: "2025-10-27"
-    end_date: "2025-12-08"
-    override:
-      - groups: []
-        courses: ["BS - Year 1"]
-        start_date: "2025-10-27"
-        end_date: "2025-12-08"
-  - sheet_name: Ru Programs
-    start_date: "2025-08-25"
-    end_date: "2025-12-08"
-    override:
-      - groups: []
-        courses: ["BS - Year 1"]
-        start_date: "2025-09-01"
-        end_date: "2025-12-15"
-save_ics_path: fall25/core-courses
-save_json_path: fall25/core-courses.json
+        courses: []
+        start_date: "2026-01-19"
+        end_date: "2026-05-03"
+save_ics_path: spring26/core-courses
+save_json_path: spring26/core-courses.json

@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = "==3.12.*"
 
 [[package]]
@@ -387,49 +387,6 @@ wheels = [
 ]
 
 [[package]]
-name = "innohassle-parsers"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "aiohttp" },
-    { name = "colorlog" },
-    { name = "google" },
-    { name = "google-api-python-client" },
-    { name = "google-auth-httplib2" },
-    { name = "google-auth-oauthlib" },
-    { name = "html5lib" },
-    { name = "httpx" },
-    { name = "icalendar" },
-    { name = "openpyxl" },
-    { name = "pandas" },
-    { name = "pydantic" },
-    { name = "pytest" },
-    { name = "python-dotenv" },
-    { name = "pyyaml" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "aiohttp", specifier = ">=3.10.6,<4" },
-    { name = "colorlog", specifier = ">=6.8.2,<7" },
-    { name = "google", specifier = ">=3.0.0,<4" },
-    { name = "google-api-python-client", specifier = ">=2.147.0,<3" },
-    { name = "google-auth-httplib2", specifier = ">=0.2.0,<0.3" },
-    { name = "google-auth-oauthlib", specifier = ">=1.2.0,<2" },
-    { name = "html5lib", specifier = "~=1.1" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "icalendar", specifier = ">=5.0.13,<6" },
-    { name = "openpyxl", specifier = ">=3.1.2,<4" },
-    { name = "pandas", specifier = ">=2.0.3,<3" },
-    { name = "pydantic", specifier = ">=2.11.7" },
-    { name = "pytest", specifier = ">=8.3.3,<9" },
-    { name = "python-dotenv", specifier = ">=1.0.1,<2" },
-    { name = "pyyaml", specifier = ">=6.0.2,<7" },
-    { name = "ruff", specifier = ">=0.6.8,<0.7" },
-]
-
-[[package]]
 name = "multidict"
 version = "6.6.4"
 source = { registry = "https://pypi.org/simple" }
@@ -524,6 +481,64 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/f6/61/1bce4129f93ab66f1c68b7ed1c12bac6a70b1b56c5dab359c6bbcd480b52/pandas-2.3.2-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:df4df0b9d02bb873a106971bb85d448378ef14b86ba96f035f50bbd3688456b4", size = 12766345, upload-time = "2025-08-21T10:27:26.6Z" },
     { url = "https://files.pythonhosted.org/packages/8e/46/80d53de70fee835531da3a1dae827a1e76e77a43ad22a8cd0f8142b61587/pandas-2.3.2-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:213a5adf93d020b74327cb2c1b842884dbdd37f895f42dcc2f09d451d949f811", size = 13439314, upload-time = "2025-08-21T10:27:29.213Z" },
     { url = "https://files.pythonhosted.org/packages/28/30/8114832daff7489f179971dbc1d854109b7f4365a546e3ea75b6516cea95/pandas-2.3.2-cp312-cp312-win_amd64.whl", hash = "sha256:8c13b81a9347eb8c7548f53fd9a4f08d4dfe996836543f805c987bafa03317ae", size = 10983326, upload-time = "2025-08-21T10:27:31.901Z" },
+]
+
+[[package]]
+name = "pandas-stubs"
+version = "2.3.3.260113"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "types-pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/92/5d/be23854a73fda69f1dbdda7bc10fbd6f930bd1fa87aaec389f00c901c1e8/pandas_stubs-2.3.3.260113.tar.gz", hash = "sha256:076e3724bcaa73de78932b012ec64b3010463d377fa63116f4e6850643d93800", size = 116131, upload-time = "2026-01-13T22:30:16.704Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/c6/df1fe324248424f77b89371116dab5243db7f052c32cc9fe7442ad9c5f75/pandas_stubs-2.3.3.260113-py3-none-any.whl", hash = "sha256:ec070b5c576e1badf12544ae50385872f0631fc35d99d00dc598c2954ec564d3", size = 168246, upload-time = "2026-01-13T22:30:15.244Z" },
+]
+
+[[package]]
+name = "parsers"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "colorlog" },
+    { name = "google" },
+    { name = "google-api-python-client" },
+    { name = "google-auth-httplib2" },
+    { name = "google-auth-oauthlib" },
+    { name = "html5lib" },
+    { name = "httpx" },
+    { name = "icalendar" },
+    { name = "openpyxl" },
+    { name = "pandas" },
+    { name = "pandas-stubs" },
+    { name = "pydantic" },
+    { name = "pytest" },
+    { name = "python-dotenv" },
+    { name = "pyyaml" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "aiohttp", specifier = ">=3.10.6,<4" },
+    { name = "colorlog", specifier = ">=6.8.2,<7" },
+    { name = "google", specifier = ">=3.0.0,<4" },
+    { name = "google-api-python-client", specifier = ">=2.147.0,<3" },
+    { name = "google-auth-httplib2", specifier = ">=0.2.0,<0.3" },
+    { name = "google-auth-oauthlib", specifier = ">=1.2.0,<2" },
+    { name = "html5lib", specifier = "~=1.1" },
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "icalendar", specifier = ">=5.0.13,<6" },
+    { name = "openpyxl", specifier = ">=3.1.2,<4" },
+    { name = "pandas", specifier = ">=2.0.3,<3" },
+    { name = "pandas-stubs", specifier = "~=2.3.2" },
+    { name = "pydantic", specifier = ">=2.11.7" },
+    { name = "pytest", specifier = ">=8.3.3,<9" },
+    { name = "python-dotenv", specifier = ">=1.0.1,<2" },
+    { name = "pyyaml", specifier = ">=6.0.2,<7" },
+    { name = "ruff", specifier = ">=0.6.8,<0.7" },
 ]
 
 [[package]]
@@ -818,6 +833,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3f/f4/4a80cd6ef364b2e8b65b15816a843c0980f7a5a2b4dc701fc574952aa19f/soupsieve-2.7.tar.gz", hash = "sha256:ad282f9b6926286d2ead4750552c8a6142bc4c783fd66b0293547c8fe6ae126a", size = 103418, upload-time = "2025-04-20T18:50:08.518Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e7/9c/0e6afc12c269578be5c0c1c9f4b49a8d32770a080260c333ac04cc1c832d/soupsieve-2.7-py3-none-any.whl", hash = "sha256:6e60cc5c1ffaf1cebcc12e8188320b72071e922c2e897f737cadce79ad5d30c4", size = 36677, upload-time = "2025-04-20T18:50:07.196Z" },
+]
+
+[[package]]
+name = "types-pytz"
+version = "2025.2.0.20251108"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/ff/c047ddc68c803b46470a357454ef76f4acd8c1088f5cc4891cdd909bfcf6/types_pytz-2025.2.0.20251108.tar.gz", hash = "sha256:fca87917836ae843f07129567b74c1929f1870610681b4c92cb86a3df5817bdb", size = 10961, upload-time = "2025-11-08T02:55:57.001Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e7/c1/56ef16bf5dcd255155cc736d276efa6ae0a5c26fd685e28f0412a4013c01/types_pytz-2025.2.0.20251108-py3-none-any.whl", hash = "sha256:0f1c9792cab4eb0e46c52f8845c8f77cf1e313cb3d68bf826aa867fe4717d91c", size = 10116, upload-time = "2025-11-08T02:55:56.194Z" },
 ]
 
 [[package]]
