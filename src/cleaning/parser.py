@@ -8,6 +8,9 @@ from src.cleaning.config import cleaning_config as config
 from src.logging_ import logger
 from src.utils import get_color, nearest_weekday
 
+import pandas as pd
+from src.cleaning.parse_cleaning_html import parse, get_xlsx_file
+
 
 class CleaningParser:
     def get_cleaning_events(self) -> list["CleaningEvent"]:
@@ -18,22 +21,23 @@ class CleaningParser:
         :rtype: list[CleaningEvent]
         """
 
-        # TODO: Use parse_cleaning_html.py instead
-        logger.warning("Not implemented")
         events = []
-        
-        # parsed = parse_from_url(config.cleaning_spreadsheet_url)
-        # events = []
 
-        # for location, dates in parsed.items():
-        #     events.append(
-        #         CleaningEvent(
-        #             summary="Cleaning",
-        #             location=location,
-        #             date=dates[0],
-        #             rdate=dates,
-        #         )
-        #     )
+        xlsx_file = get_xlsx_file(config.cleaning_spreadsheet_id)
+        dfs = pd.read_excel(xlsx_file, sheet_name=None, header=None)
+
+        parsed = parse(dfs)
+        events = []
+
+        for location, dates in parsed.items():
+            events.append(
+                CleaningEvent(
+                    summary="Cleaning",
+                    location=location,
+                    date=dates[0],
+                    rdate=dates,
+                )
+            )
 
         return events
 
