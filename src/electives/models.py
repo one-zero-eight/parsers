@@ -18,6 +18,8 @@ class Elective(BaseModel):
 
     alias: str
     """Alias for elective"""
+    short_name: str
+    """Short name for elective"""
     name: str | None = None
     """Name of elective"""
     instructor: str | None = None
@@ -84,8 +86,8 @@ class ElectiveCell(BaseModel):
             string = self.original.strip()
             # just first word as elective
             splitter = string.split(" ")
-            elective_alias = splitter[0]
-            self.elective = next(elective for elective in config.electives if elective.alias == elective_alias)
+            elective_short_name = splitter[0]
+            self.elective = next(elective for elective in config.electives if elective.short_name == elective_short_name)
             string = " ".join(splitter[1:])
             # find time xx:xx-xx:xx
             if timeslot_m := re.search(r"\(?(\d{2}:\d{2})-(\d{2}:\d{2})\)?", string):

@@ -12,27 +12,32 @@ save_json_path: spring26/electives.json
 electives: [
     # Ru programs
     {
-      "alias": "ВВТУС",
+      "alias": "spring26-rus-bs2-ввтус",
+      "short_name": "ВВТУС",
       "name": "Введение в теорию управляемых систем",
       "instructor": "Sergei Savin",
     },
     {
-      "alias": "МОКВ",
+      "alias": "spring26-rus-bs2-мокв",
+      "short_name": "МОКВ",
       "name": "Математические основы квантовых вычислений",
       "instructor": "Oleg Kiselev, Mikhail Moshchanetskii",
     },
     {
-      "alias": "ОСКВМ",  # TODO: Change to 'ОСКМ' once it's fixed in the table
+      "alias": "spring26-rus-bs2-оскм",
+      "short_name": "ОСКВМ",  # TODO: Change to 'ОСКМ' once it's fixed in the table
       "name": "Основы математического и компьютерного моделирования",
       "instructor": "Anna Maslovskaya",
     },
     {
-      "alias": "ПМИРВ",
+      "alias": "spring26-rus-bs2-пмирв",
+      "short_name": "ПМИРВ",
       "name": "Прикладная математика: искусство и ремесло вычислений (углубленный курс)",
       "instructor": "Gordin Vladimir, Smirnov Mikhail",
     },
     {
-      "alias": "ФА",
+      "alias": "spring26-rus-bs2-фа",
+      "short_name": "ФА",
       "name": "Функциональный анализ",
       "instructor": "Ostanin Pavel. Butakov Ivan",
     },
