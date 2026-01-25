@@ -10,6 +10,43 @@ targets:
 save_ics_path: spring26/electives
 save_json_path: spring26/electives.json
 electives: [
+    # En programs
+    {
+      "alias": "spring26-bs3-tech-spda",
+      "short_name": "SPDA",
+      "name": "Software Product Development and Analysis",
+      "instructor": "Konstantin Arkhipov",
+    },
+    {
+      "alias": "spring26-bs3-tech-idso",
+      "short_name": "IDSO",
+      "name": "Introduction to DevSecOps",
+      "instructor": "Dmitry Creed",
+    },
+    {
+      "alias": "spring26-bs3-tech-ido",
+      "short_name": "IDO",
+      "name": "Introduction to DevOps",
+      "instructor": "Dmitry Creed",
+    },
+    {
+      "alias": "spring26-bs3-tech-aih",
+      "short_name": "AIH",
+      "name": "Artificial Intelligence in Healthcare",
+      "instructor": "Gcinizwe Dlamini",
+    },
+    {
+      "alias": "spring26-bs3-tech-bait",
+      "short_name": "BA",
+      "name": "Business Analysis in IT",
+      "instructor": "Ivan Goskov",
+    },
+    {
+      "alias": "spring26-bs3-tech-atit",
+      "short_name": "ATC",
+      "name": "Advanced Technical Communications in IT",
+      "instructor": "Ekateryna Ushakova",
+    },
     # Ru programs
     {
       "alias": "spring26-rus-bs2-ввтус",
@@ -40,5 +77,35 @@ electives: [
       "short_name": "ФА",
       "name": "Функциональный анализ",
       "instructor": "Ostanin Pavel. Butakov Ivan",
+    },
+    {
+      "alias": "spring26-rus-bs2-виапрпо",
+      "short_name": "ВИАПР",
+      "name": "Введение в интеграцию и автоматизацию процесса разработки ПО",
+      "instructor": "Dmitry Creed",
+    },
+    {
+      "alias": "spring26-rus-bs2-фа",
+      "short_name": "ФА",
+      "name": "Функциональный анализ",
+      "instructor": "Ostanin Pavel. Butakov Ivan",
+    },
+    {
+      "alias": "spring26-rus-bs2-высвыч",
+      "short_name": "ВВ",
+      "name": "Высокопроизводительные вычисления",
+      "instructor": "Ivan Konyukhov",
+    },
+    {
+      "alias": "spring26-rus-bs2-оснр",
+      "short_name": "ОР",
+      "name": "Основы робототехники",
+      "instructor": "Alexandr Maloletov",
+    },
+    {
+      "alias": "spring26-rus-bs2-углп",
+      "short_name": "УPy",
+      "name": "Углубленный Python",
+      "instructor": "Быков Кирилл Валерьевич",
     },
 ]
