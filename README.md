@@ -42,7 +42,7 @@ Parse schedules:
 
 ## How to Use
 
-1. Configure parsers using `config.json` files
+1. Configure parsers using `config.yaml` files
 2. Run the parser:
     ```bash
     uv run -m src.core_courses

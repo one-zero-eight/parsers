@@ -249,8 +249,8 @@ class ElectiveParser:
         :return: parsed events
         """
 
-        _elective_aliases = [e.alias for e in config.electives]
-        _elective_line_pattern = re.compile(r"(?P<elective_alias>" + "|".join(_elective_aliases) + r")")
+        _elective_short_name = [e.short_name for e in config.electives]
+        _elective_line_pattern = re.compile(r"(?P<elective_alias>" + "|".join(_elective_short_name) + r")")
 
         def process_line(line: str) -> ElectiveCell | str:
             """
@@ -323,4 +323,3 @@ def convert_separation(events: list[ElectiveEvent]) -> dict[str, Separation]:
             output[elective.alias]["events"].extend(_events)
 
     return dict(output)
-
