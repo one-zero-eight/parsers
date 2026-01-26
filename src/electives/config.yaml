@@ -62,7 +62,7 @@ electives: [
     },
     {
       "alias": "оскм",
-      "short_name": "ОСКВМ",  # TODO: Change to 'ОСКМ' once it's fixed in the table
+      "short_name": "ОСКМ",
       "name": "Основы математического и компьютерного моделирования",
       "instructor": "Anna Maslovskaya",
     },
@@ -83,12 +83,6 @@ electives: [
       "short_name": "ВИАПР",
       "name": "Введение в интеграцию и автоматизацию процесса разработки ПО",
       "instructor": "Dmitry Creed",
-    },
-    {
-      "alias": "фа",
-      "short_name": "ФА",
-      "name": "Функциональный анализ",
-      "instructor": "Ostanin Pavel. Butakov Ivan",
     },
     {
       "alias": "высвыч",
