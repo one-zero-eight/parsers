@@ -269,6 +269,8 @@ class ElectiveParser:
             # get substrings
             breaks = [m.start() for m in matches]
             substrings = [line[i:j] for i, j in zip(breaks, breaks[1:] + [None])]
+            if not breaks or not substrings:
+                return None
             substrings = [line[: breaks[0]]] + substrings
             substrings = filter(len, substrings)
             substrings = map(str.strip, substrings)
