@@ -20,7 +20,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from src.logging_ import logger
 
-from ..processors.regex import prettify_string
+from ..string_utils import prettify_string
 from ..utils import WEEKDAYS, sanitize_sheet_name
 
 

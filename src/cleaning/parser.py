@@ -2,14 +2,12 @@ import datetime
 from zlib import crc32
 
 import icalendar
+import pandas as pd
 from pydantic import BaseModel, field_validator
 
 from src.cleaning.config import cleaning_config as config
-from src.logging_ import logger
+from src.cleaning.parse_cleaning_html import get_xlsx_file, parse
 from src.utils import get_color, nearest_weekday
-
-import pandas as pd
-from src.cleaning.parse_cleaning_html import parse, get_xlsx_file
 
 
 class CleaningParser:

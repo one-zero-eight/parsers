@@ -19,7 +19,7 @@ from pydantic import BaseModel
 
 from src.logging_ import logger
 
-from ..processors.regex import prettify_string
+from ..string_utils import prettify_string
 from ..utils import sanitize_sheet_name
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")

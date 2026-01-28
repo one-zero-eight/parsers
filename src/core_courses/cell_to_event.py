@@ -9,7 +9,7 @@ from src.core_courses.config import Target
 from src.core_courses.location_parser import Item, parse_location_string
 from src.core_courses.parser import CoreCourseCell
 from src.logging_ import logger
-from src.processors.regex import remove_repeating_spaces_and_trailing_spaces
+from src.string_utils import remove_repeating_spaces_and_trailing_spaces
 from src.utils import MOSCOW_TZ, WEEKDAYS
 
 
