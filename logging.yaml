@@ -4,9 +4,11 @@ formatters:
   src:
     "()": colorlog.ColoredFormatter
     format: '[%(black)s%(asctime)s%(reset)s] [%(log_color)s%(levelname)s%(reset)s] [%(cyan)sFile "%(relativePath)s", line %(lineno)d%(reset)s] %(message)s'
+    datefmt: "%Y-%m-%d %H:%M:%S"
   default:
     "()": colorlog.ColoredFormatter
     format: '[%(black)s%(asctime)s%(reset)s] [%(log_color)s%(levelname)s%(reset)s] [%(name)s] %(message)s'
+    datefmt: "%Y-%m-%d %H:%M:%S"
 handlers:
   src:
     formatter: src
