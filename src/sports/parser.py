@@ -1,7 +1,7 @@
 import asyncio
 from collections.abc import Iterable
 
-import aiohttp as aiohttp
+import aiohttp
 
 from src.logging_ import logger
 from src.sports.config import sports_config as config

@@ -63,7 +63,7 @@ async def main():
     xlsx_file = await fetch_xlsx_spreadsheet(spreadsheet_id=config.spreadsheet_id)
     original_target_sheet_names = [target.sheet_name for target in config.targets]
     pipeline_result = parser.pipeline(xlsx_file, original_target_sheet_names)
-    
+
     # Get sheet name -> gid mapping
     logger.info("Fetching sheet gids from Google Spreadsheet...")
     sheet_gids = await get_sheet_gids(config.spreadsheet_id)
@@ -113,14 +113,14 @@ async def main():
         group_calendar["x-wr-calname"] = group
         group_calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.spreadsheet_id}"
 
-        group_events = list(group_events)
+        group_events = list(group_events)  # noqa: PLW2901
         cnt = 0
         for group_event in group_events:
             if group_event.subject in config.ignored_subjects:
                 logger.debug(f"> Ignoring {group_event.subject}")
                 continue
             group_event: CoreCourseEvent
-            
+
             # Get gid for this event's sheet
             gid = None
             if group_event.sheet_name:
@@ -134,12 +134,14 @@ async def main():
                             gid = sheet_gid
                             break
                 if gid is None:
-                    logger.warning(f"Could not find gid for sheet '{group_event.sheet_name}', using first available gid")
+                    logger.warning(
+                        f"Could not find gid for sheet '{group_event.sheet_name}', using first available gid"
+                    )
                     gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
             else:
                 logger.warning("Event has no sheet_name, using first available gid")
                 gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-            
+
             group_vevents = generate_vevents(group_event, config.spreadsheet_id, gid)
             for vevent in group_vevents:
                 cnt += 1

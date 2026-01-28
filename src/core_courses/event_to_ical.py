@@ -74,7 +74,7 @@ def generate_vevents(event: CoreCourseEvent, spreadsheet_id: str, gid: str) -> G
     :param event: The core course event to convert
     :return: icalendar events if "only on xx/xx, xx/xx" appeared in location, else one icalendar event
     """
-    
+
     xwr_link = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={gid}#gid={gid}&range={event.a1}"
     if not event.location_item:
         start_of_weekdays = nearest_weekday(event.starts, event.weekday)

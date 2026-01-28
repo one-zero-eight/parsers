@@ -9,7 +9,6 @@ from .parser import Elective, ElectiveCell
 
 
 class ElectiveEvent(BaseModel):
-
     elective: Elective
     "Elective object"
     start: datetime.datetime
@@ -46,7 +45,9 @@ def convert_cell_to_events(
     overall_end = datetime.datetime.combine(date, overall_end, tzinfo=MOSCOW_TZ)
 
     for line in cell.value:
-        yield parse_one_line_in_value(line, date, overall_start, overall_end, electives=electives, sheet_name=sheet_name, a1=cell.a1)
+        yield parse_one_line_in_value(
+            line, date, overall_start, overall_end, electives=electives, sheet_name=sheet_name, a1=cell.a1
+        )
 
 
 def parse_one_line_in_value(

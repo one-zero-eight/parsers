@@ -60,7 +60,10 @@ class BaseParserConfig(BaseModel):
 
         return v
 
-    @field_validator("innohassle_api_url", mode="before", )
+    @field_validator(
+        "innohassle_api_url",
+        mode="before",
+    )
     @classmethod
     def api_url_from_env(cls, v):
         "Get INNOHASSLE_API_URL from environment variable"
@@ -76,4 +79,3 @@ class BaseParserConfig(BaseModel):
         with open(path) as f:
             yaml_config = yaml.safe_load(f)
         return cls.model_validate(yaml_config)
-

@@ -20,4 +20,5 @@ class CleaningParserConfig(BaseParserConfig):
     cleaning_spreadsheet_id: str
     linen_change_entries: list[LinenChangeEntry]
 
+
 cleaning_config: CleaningParserConfig = CleaningParserConfig.from_yaml(config_path)

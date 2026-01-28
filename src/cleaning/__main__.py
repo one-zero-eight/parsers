@@ -27,15 +27,15 @@ def main():
     cleaning_events = sorted(cleaning_events, key=lambda x: x.location)
     course_path = Path()
     course_path.mkdir(parents=True, exist_ok=True)
-    for location, events in groupby(cleaning_events, key=lambda x: x.location):
-        events: Iterable[CleaningEvent]
+    for location, cleaning_events_group in groupby(cleaning_events, key=lambda x: x.location):
+        cleaning_events_group: Iterable[CleaningEvent]
         calendar = get_base_calendar()
         calendar["x-wr-calname"] = f"Cleaning: {location}"
         calendar["x-wr-link"] = config.cleaning_spreadsheet_url
         cnt = 0
-        for event in events:
+        for cleaning_event in cleaning_events_group:
             cnt += 1
-            vevent = event.get_vevent()
+            vevent = cleaning_event.get_vevent()
             calendar.add_component(vevent)
         calendar.add("x-wr-total-vevents", str(cnt))
 
@@ -61,14 +61,14 @@ def main():
     linen_change_events = parser.get_linen_change_schedule()
     linen_change_events = sorted(linen_change_events, key=lambda x: x.location)
 
-    for location, events in groupby(linen_change_events, key=lambda x: x.location):
-        events: Iterable[LinenChangeEvent]
+    for location, linen_change_events_group in groupby(linen_change_events, key=lambda x: x.location):
+        linen_change_events_group: Iterable[LinenChangeEvent]
 
         calendar = get_base_calendar()
         calendar["x-wr-calname"] = f"Linen Change: {location}"
 
-        for event in events:
-            vevent = event.get_vevent()
+        for linen_change_event in linen_change_events_group:
+            vevent = linen_change_event.get_vevent()
             calendar.add_component(vevent)
 
         group_alias = f"linen-change-{sluggify(location)}"

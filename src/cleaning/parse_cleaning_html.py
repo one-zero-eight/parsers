@@ -12,10 +12,11 @@ from dateutil import relativedelta
 
 from src.logging_ import logger
 
+
 def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     # drop columns that contain only NaN
     df = df.dropna(axis="columns", how="all")
-    df = df.dropna(axis="rows", how="all")
+    df = df.dropna(axis="index", how="all")
     df = df.reindex()
     # now second row should be [Monday ПОНЕДЕЛЬНИК,Tuesday ВТОРНИК,Wednesday СРЕДА,Thursday ЧЕТВЕРГ,
     # Friday ПЯТНИЦА,Saturday СУББОТА,Sunday ВОСКРЕСЕНЬЕ]
@@ -75,9 +76,7 @@ def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
         # 7 корпус 1-7 этажи 7 building 1-7 floors
         # 2 корпус 3-4 этаж 2 building 3-4 floor
         # 3 корпус 3 building
-        matches = re.finditer(
-            r"(?P<building>\d)\s+building(\s+(?P<floors>(\d+|\d+-\d+))\s+floors?)?", value
-        )
+        matches = re.finditer(r"(?P<building>\d)\s+building(\s+(?P<floors>(\d+|\d+-\d+))\s+floors?)?", value)
         for m in matches:
             building = m.group("building")
             floors = m.group("floors")

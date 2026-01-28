@@ -112,7 +112,7 @@ class SportScheduleEvent(BaseModel):
         :return: unique identifier
         :rtype: str
         """
-        return "%x@innohassle.ru" % abs(hash(self))
+        return f"{abs(hash(self)):x}@innohassle.ru"
 
     @property
     def description(self) -> str:

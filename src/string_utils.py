@@ -61,4 +61,3 @@ def prettify_string(string: str | None) -> str | None:
         # remove repeating spaces and trailing spaces
         string = remove_repeating_spaces_and_trailing_spaces(string)
     return string
-

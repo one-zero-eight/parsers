@@ -52,7 +52,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         if m := re.fullmatch(r"^((\d|ONLINE|ОНЛАЙН)+(?:\s*/\s*(\d|ONLINE|ОНЛАЙН)+)+)$", y):
             locations = m.group(1)
             locations = locations.split("/")
-            locations = [l.strip() for l in locations]
+            locations = [location.strip() for location in locations]
             return "/".join(locations)
 
     _loc = combine_patterns(
@@ -201,7 +201,11 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             as_z2 = any_modifier(z2)
             as_z3 = any_modifier(z3)
             if as_z1 and as_z2 and as_z3:
-                combined = as_z1.model_dump(exclude_none=True) | as_z2.model_dump(exclude_none=True) | as_z3.model_dump(exclude_none=True)
+                combined = (
+                    as_z1.model_dump(exclude_none=True)
+                    | as_z2.model_dump(exclude_none=True)
+                    | as_z3.model_dump(exclude_none=True)
+                )
                 return Item.model_validate(combined)
 
     if as_three_modifiers := three_modifiers(x):

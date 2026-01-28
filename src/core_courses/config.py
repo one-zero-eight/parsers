@@ -51,4 +51,5 @@ class CoreCoursesConfig(BaseParserConfig):
         "Elective course on Physical Education",
     ]
 
+
 core_courses_config: CoreCoursesConfig = CoreCoursesConfig.from_yaml(config_path)

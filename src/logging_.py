@@ -12,7 +12,7 @@ class RelativePathFilter(logging.Filter):
         return True
 
 
-with open("logging.yaml", "r") as f:
+with open("logging.yaml") as f:
     config = yaml.safe_load(f)
     logging.config.dictConfig(config)
 

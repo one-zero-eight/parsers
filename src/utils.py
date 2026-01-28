@@ -22,7 +22,6 @@ MOSCOW_TZ = datetime.timezone(datetime.timedelta(hours=3), name="Europe/Moscow")
 WEEKDAYS = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
 
-
 async def fetch_xlsx_spreadsheet(spreadsheet_id: str) -> io.BytesIO:
     """
     Export xlsx file from Google Sheets and return it as BytesIO object.
@@ -59,10 +58,11 @@ async def get_sheet_gids(spreadsheet_id: str) -> dict[str, str]:
         items_matches = re.findall(pattern_items, html)
         for name, gid in items_matches:
             # Unescape JavaScript string escapes
-            name_clean = name.replace('\\/', '/').replace('\\"', '"')
+            name_clean = name.replace("\\/", "/").replace('\\"', '"')
             sheet_mappings[name_clean] = gid
 
         return sheet_mappings
+
 
 def nearest_weekday(date: datetime.date, day: int | str) -> datetime.date:
     """

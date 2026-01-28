@@ -19,7 +19,7 @@ async def main():
     xlsx = await fetch_xlsx_spreadsheet(spreadsheet_id=config.spreadsheet_id)
     original_target_sheet_names = [target.sheet_name for target in config.targets]
     pipeline_result = parser.pipeline(xlsx, original_target_sheet_names, config.electives)
-    
+
     # Get sheet name -> gid mapping
     logger.info("Fetching sheet gids from Google Spreadsheet...")
     sheet_gids = await get_sheet_gids(config.spreadsheet_id)
@@ -74,7 +74,7 @@ async def main():
                 else:
                     logger.warning("Event has no sheet_name, using first available gid")
                     gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-                
+
                 calendar.add_component(generate_vevent(event, config.spreadsheet_id, gid))
                 cnt += 1
 

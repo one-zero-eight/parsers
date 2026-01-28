@@ -377,9 +377,17 @@ class ElectiveParser:
         df = df.map(lambda x: process_line(x) if isinstance(x, str) else x)
 
         for date, date_column in df.items():
-            date: datetime.date
+            if not isinstance(date, datetime.date):
+                warnings.warn(f"Expected date as index, got {type(date).__name__}")
+                continue
             for timeslot, cell in date_column.items():
-                timeslot: tuple[datetime.time, datetime.time]
+                if not (
+                    isinstance(timeslot, tuple)
+                    and len(timeslot) == 2
+                    and all(isinstance(t, datetime.time) for t in timeslot)
+                ):
+                    warnings.warn(f"Expected timeslot as tuple of two datetime.time, got {timeslot!r}")
+                    continue
 
                 if isinstance(cell, ElectiveCell):
                     yield from convert_cell_to_events(cell, date, timeslot, electives, sheet_name)

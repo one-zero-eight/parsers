@@ -42,8 +42,7 @@ def create_markdown_table_and_details(data_dict, warnings):
             result.append(f"<details><summary><b>{section.capitalize()} [{len(course_list)}]</b></summary>\n\n")
             if course_list:
                 # as bulleted list
-                course_list = [f"- {course}" for course in course_list]
-                result.append("\n".join(course_list) + "\n")
+                result.append("\n".join([f"- {course}" for course in course_list]) + "\n")
             else:
                 result.append("Nothing...\n")
             result.append("</details>\n")

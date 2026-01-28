@@ -26,7 +26,7 @@ from ..utils import WEEKDAYS, sanitize_sheet_name
 
 class CoreCourseCell(BaseModel):
     model_config = ConfigDict(coerce_numbers_to_str=True)
-    
+
     value: tuple[str, str | None, str | None] = Field(..., min_length=3, max_length=3)
     "Cell values: [subject, teacher (optional), location and modifiers (optional)]"
     a1: str | None = None
@@ -214,7 +214,6 @@ class CoreCoursesParser:
         sheet = wb[sheet_name]
         return sheet.max_row
 
-
     def assign_excel_row_and_column_to_subject(self, df: pd.DataFrame) -> None:
         def check_value_is_time(string_to_check: str) -> bool:
             return bool(re.match(r"^\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}$", string_to_check))
@@ -228,7 +227,7 @@ class CoreCoursesParser:
                 v = df.iloc[i, j]
                 if isinstance(v, str):
                     v = v.strip()
-                
+
                 if not v or pd.isna(v) or v in WEEKDAYS or check_value_is_time(v):
                     continue
 
@@ -257,17 +256,17 @@ class CoreCoursesParser:
 
         def clamp_rows(n: int) -> int:
             return max(min(n, nrows - 1), 0)
-        
+
         def clamp_cols(n: int) -> int:
             return max(min(n, ncols - 1), 0)
-        
+
         for merged_range in sheet.merged_cells.ranges:
             min_col, min_row, max_col, max_row = merged_range.bounds
             min_col = clamp_cols(min_col - 1)
             min_row = clamp_rows(min_row - 1)
             max_col = clamp_cols(max_col - 1)
             max_row = clamp_rows(max_row - 1)
-            
+
             value = df.iloc[min_row, min_col]
             df.iloc[min_row : max_row + 1, min_col : max_col + 1] = value
             merged_ranges.append((min_row, min_col, max_row, max_col))
