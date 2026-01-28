@@ -17,7 +17,7 @@ import pathlib
 import re
 import warnings
 from functools import partial
-from typing import Any, Optional
+from typing import Any
 
 import aiohttp
 from pydantic import BaseModel, Field
@@ -42,7 +42,7 @@ class CreateEventGroup(BaseModel):
     alias: str
     path: str
     name: str
-    description: Optional[str] = None
+    description: str | None = None
 
     tags: list[CreateTag] = Field(default_factory=list)
 
@@ -57,10 +57,10 @@ class CreateEventGroup(BaseModel):
 class ViewTag(BaseModel):
     id: int
     alias: str
-    type: Optional[str] = None
-    name: Optional[str] = None
-    description: Optional[str] = None
-    satellite: Optional[dict] = None
+    type: str | None = None
+    name: str | None = None
+    description: str | None = None
+    satellite: dict | None = None
 
 
 class ViewEventGroup(BaseModel):
@@ -70,18 +70,18 @@ class ViewEventGroup(BaseModel):
 
     id: int
     alias: str
-    path: Optional[str] = None
-    name: Optional[str] = None
-    description: Optional[str] = None
+    path: str | None = None
+    name: str | None = None
+    description: str | None = None
     tags: list["ViewTag"] = Field(default_factory=list)
 
 
 def json_serial(obj):
     """JSON serializer for objects not serializable by default json code"""
 
-    if isinstance(obj, (datetime.datetime, datetime.date)):
+    if isinstance(obj, datetime.datetime | datetime.date):
         return obj.isoformat()
-    raise TypeError("Type %s not serializable" % type(obj))
+    raise TypeError(f"Type {type(obj)} not serializable")
 
 
 class InNoHassleEventsClient:

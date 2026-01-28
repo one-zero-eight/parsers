@@ -72,7 +72,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
     if as_simple_location := get_location(y=x):
         return Item(location=as_simple_location)
 
-    _starts_from_pattern = r"\(?(STARTS ON|STARTS FROM|FROM|С)\s*(\d{1,2}[\/.]\d{1,2})\)?"
+    _starts_from_pattern = r"\(?(STARTS ON|STARTS FROM|FROM|С|НАЧАЛО С|СТАРТ|СТАРТ С)\s*(\d{1,2}[\/.]\d{1,2})\)?"
 
     def starts_from(y: str):
         if m := re.fullmatch(_starts_from_pattern, y):
@@ -81,7 +81,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
 
             return Item(starts_from=ydate(day=int(day), month=int(month)))
 
-    _starts_at_pattern = r"\(?(STARTS|STARTS AT|НАЧАЛО В)\s*(\d{1,2}[:.]\d{1,2})\)?"
+    _starts_at_pattern = r"\(?(STARTS|STARTS AT|НАЧАЛО В|НАЧАЛО)\s*(\d{1,2}[:.]\d{1,2})\)?"
 
     def starts_at(y: str):
         if m := re.fullmatch(_starts_at_pattern, y):
@@ -101,17 +101,21 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             weeks = [item for sublist in weeks for item in sublist]
             return Item(on_weeks=weeks)
 
-    _on_pattern = (
-        r"\(?(ON|ONLY ON|НА|ТОЛЬКО НА|ТОЛЬКО)\s*(?P<dates>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
-    )
+    # ON 13/09, 20/09
+    # ONLY ON 13/09 20/09
+    # ТОЛЬКО НА 13/09, 20/09
+    # and etc.
+    _date_component_pattern = r"(?P<day>\d{1,2})[\/.](?P<month>\d{1,2})"
+    _date_component_non_capturing = r"\d{1,2}[\/.]\d{1,2}"
+    _on_pattern = rf"\(?(ON|ONLY ON|НА|ТОЛЬКО НА|ТОЛЬКО)\s*(?P<dates>{_date_component_non_capturing}(?:[,\s]\s*{_date_component_non_capturing})*)\)?"
 
     def on(y: str):
         if m := re.fullmatch(_on_pattern, y):
-            dates = m.group("dates")
-            dates = dates.split(",")
-            dates = [d.replace(".", "/") for d in dates]
-            dates = [d.split("/") for d in dates]
-            dates = [ydate(day=int(d[0]), month=int(d[1])) for d in dates]
+            dates_str = m.group("dates")
+            dates = [
+                ydate(day=int(dm.group("day")), month=int(dm.group("month")))
+                for dm in re.finditer(_date_component_pattern, dates_str)
+            ]
             return Item(on=dates)
 
     _till_pattern = r"\(?TILL\s*(?P<time>\d{1,2}[:.]\d{1,2})\)?"
@@ -122,15 +126,18 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             hour, minute = _time.split(sep=":")
             return Item(till=time(hour=int(hour), minute=int(minute)))
 
-    _except_pattern = r"\(?(EXCEPT|КРОМЕ)\s*(?P<dates_except>(\d{1,2}[\/.]\d{1,2}(?:,\s*\d{1,2}[\/.]\d{1,2})*))\)?"
+    # EXCEPT 30/01 06/02
+    # КРОМЕ 30/01, 06/02
+    # и т.д.
+    _except_pattern = rf"\(?(EXCEPT|КРОМЕ)\s*(?P<dates_except>{_date_component_non_capturing}(?:[,\s]+{_date_component_non_capturing})*)\)?"
 
     def except_(y: str):
         if m := re.fullmatch(_except_pattern, y):
-            dates = m.group("dates_except")
-            dates = dates.split(",")
-            dates = [d.replace(".", "/") for d in dates]
-            dates = [d.split("/") for d in dates]
-            dates = [ydate(day=int(d[0]), month=int(d[1])) for d in dates]
+            dates_str = m.group("dates_except")
+            dates = [
+                ydate(day=int(dm.group("day")), month=int(dm.group("month")))
+                for dm in re.finditer(_date_component_pattern, dates_str)
+            ]
             return Item(except_=dates)
 
     _mod = combine_patterns(
@@ -172,8 +179,8 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             as_z1 = any_modifier(z1)
             as_z2 = any_modifier(z2)
             if as_z1 and as_z2:
-                combined = as_z1.dict(exclude_none=True) | as_z2.dict(exclude_none=True)
-                return Item.parse_obj(combined)
+                combined = as_z1.model_dump(exclude_none=True) | as_z2.model_dump(exclude_none=True)
+                return Item.model_validate(combined)
 
     if as_two_modifiers := two_modifiers(x):
         return as_two_modifiers
@@ -194,8 +201,8 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             as_z2 = any_modifier(z2)
             as_z3 = any_modifier(z3)
             if as_z1 and as_z2 and as_z3:
-                combined = as_z1.dict(exclude_none=True) | as_z2.dict(exclude_none=True) | as_z3.dict(exclude_none=True)
-                return Item.parse_obj(combined)
+                combined = as_z1.model_dump(exclude_none=True) | as_z2.model_dump(exclude_none=True) | as_z3.model_dump(exclude_none=True)
+                return Item.model_validate(combined)
 
     if as_three_modifiers := three_modifiers(x):
         return as_three_modifiers

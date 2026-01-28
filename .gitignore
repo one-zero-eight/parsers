@@ -18,6 +18,7 @@ settings.yaml
 /tests/repositories/temp
 /src/temp
 /src/output
+output
 
 token.json
 credentials.json

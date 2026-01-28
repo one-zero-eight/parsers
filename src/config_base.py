@@ -5,29 +5,25 @@ from pathlib import Path
 import yaml
 from pydantic import BaseModel, ConfigDict, SecretStr, field_validator
 
-from src.utils import get_project_root
-
-PROJECT_ROOT = get_project_root()
-
 
 class BaseParserConfig(BaseModel):
     model_config = ConfigDict(extra="forbid", validate_default=True)
 
-    mount_point: Path = PROJECT_ROOT / "output"
-    """Mount point for output files"""
+    mount_point: Path = Path("output")
+    "Mount point for output files"
     save_ics_path: Path
-    """Path to directory to save .ics files relative to MOUNT_POINT"""
+    "Path to directory to save .ics files relative to MOUNT_POINT"
     save_json_path: Path
-    """Path to save .json file"""
+    "Path to save .json file"
     innohassle_api_url: str | None = None
-    """URL to InNoHassle API"""
+    "URL to InNoHassle API"
     parser_auth_key: SecretStr | None = None
-    """Parser auth key"""
+    "Parser auth key"
 
     @field_validator("save_json_path", "save_ics_path", mode="before")
     @classmethod
     def relative_path(cls, v, values):
-        """If not absolute path, then with respect to the main directory"""
+        "If not absolute path, then with respect to the main directory"
         v = Path(v)
         if not v.is_absolute():
             v = values.data["mount_point"] / v
@@ -37,18 +33,18 @@ class BaseParserConfig(BaseModel):
             raise ValueError(f"save_ics_path must be children of mount_point, but got {v}")
         return v
 
-    @field_validator("save_json_path", mode="before")
+    @field_validator("save_json_path", mode="after")
     @classmethod
-    def create_parent_dir(cls, v, values):
-        """Create parent directory if not exists"""
+    def create_parent_dir(cls, v):
+        "Create parent directory if not exists"
         v = Path(v)
         v.parent.mkdir(parents=True, exist_ok=True)
         return v
 
-    @field_validator("save_ics_path", mode="before")
+    @field_validator("save_ics_path", mode="after")
     @classmethod
-    def create_dir(cls, v, values):
-        """Create directory if not exists"""
+    def create_dir(cls, v):
+        "Create directory if not exists"
         v = Path(v)
         v.mkdir(parents=True, exist_ok=True)
         return v
@@ -56,7 +52,7 @@ class BaseParserConfig(BaseModel):
     @field_validator("parser_auth_key", mode="before")
     @classmethod
     def parser_key_from_env(cls, v):
-        """Get PARSER_AUTH_KEY from environment variable"""
+        "Get PARSER_AUTH_KEY from environment variable"
         if v is None:
             from os import environ
 
@@ -67,7 +63,7 @@ class BaseParserConfig(BaseModel):
     @field_validator("innohassle_api_url", mode="before", )
     @classmethod
     def api_url_from_env(cls, v):
-        """Get INNOHASSLE_API_URL from environment variable"""
+        "Get INNOHASSLE_API_URL from environment variable"
         if v is None:
             from os import environ
 
@@ -76,7 +72,7 @@ class BaseParserConfig(BaseModel):
 
     @classmethod
     def from_yaml(cls, path: Path):
-        """Load config from yaml file"""
+        "Load config from yaml file"
         with open(path) as f:
             yaml_config = yaml.safe_load(f)
         return cls.model_validate(yaml_config)

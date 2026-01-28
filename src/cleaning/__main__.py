@@ -41,7 +41,7 @@ def main():
 
         group_alias = f"cleaning-{sluggify(location)}"
         file_path = directory / f"{group_alias}.ics"
-        logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
+        logger.info(f"> Writing {file_path}")
 
         os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:
@@ -73,7 +73,7 @@ def main():
 
         group_alias = f"linen-change-{sluggify(location)}"
         file_path = directory / f"{group_alias}.ics"
-        logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
+        logger.info(f"> Writing {file_path}")
 
         os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:

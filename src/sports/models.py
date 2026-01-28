@@ -1,10 +1,10 @@
 import datetime
+from enum import StrEnum
 from zlib import crc32
 
 import icalendar
 from pydantic import BaseModel, RootModel
 
-from src.constants import VDayOfWeek
 from src.utils import MOSCOW_TZ, get_color, nearest_weekday
 
 
@@ -17,7 +17,7 @@ class ResponseSports(BaseModel):
     sports: list[Sport]
 
 
-class SportScheduleEvent(BaseModel):
+class SportScheduleEventResponse(BaseModel):
     class ExtendedProps(BaseModel):
         group_id: int
         training_class: str | None = None
@@ -54,13 +54,27 @@ class SportScheduleEvent(BaseModel):
         return crc32(string_to_hash.encode("utf-8"))
 
 
-class ResponseSportSchedule(RootModel[list[SportScheduleEvent]]):
+class ResponseSportSchedule(RootModel[list[SportScheduleEventResponse]]):
     pass
+
+
+class VDayOfWeek(StrEnum):
+    MONDAY = "MO"
+    TUESDAY = "TU"
+    WEDNESDAY = "WE"
+    THURSDAY = "TH"
+    FRIDAY = "FR"
+    SATURDAY = "SA"
+    SUNDAY = "SU"
+
+    @classmethod
+    def get_by_index(cls, idx: int) -> "VDayOfWeek":
+        return list(cls.__members__.values())[idx]
 
 
 class SportScheduleEvent(BaseModel):
     sport: ResponseSports.Sport
-    sport_schedule_event: SportScheduleEvent
+    sport_schedule_event: SportScheduleEventResponse
 
     @property
     def summary(self) -> str:

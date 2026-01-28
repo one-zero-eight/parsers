@@ -1,14 +1,11 @@
 import re
 
 
-def process_spaces(s: str) -> str:
-    """
-    Remove multiple spaces and trailing spaces.
-    """
+def remove_repeating_spaces_and_trailing_spaces(s: str) -> str:
     return re.sub(r"\s{2,}", " ", s).strip()
 
 
-def process_brackets(s: str) -> str:
+def set_one_space_around_brackets_and_remove_repeating_brackets(s: str) -> str:
     """
     Prettify string with brackets.
 
@@ -28,7 +25,7 @@ def process_brackets(s: str) -> str:
     return s
 
 
-def process_commas(s: str) -> str:
+def set_one_space_after_comma_and_remove_repeating_commas(s: str) -> str:
     """
     Prettify string with commas.
 
@@ -47,8 +44,9 @@ def process_commas(s: str) -> str:
 
 def prettify_string(string: str | None) -> str | None:
     """
-    Remove repeating spaces. Strip string.
-    Set only one whitespace before and after brackets. Remove repeating brackets.
+    Set only one whitespace before "(" and after ")". Remove repeating brackets.
+    Set only one whitespace after ",". Remove repeating commas.
+    Remove repeating spaces and trailing spaces. Strip string.
 
     :param string: string to beautify
     :type string: str
@@ -57,9 +55,9 @@ def prettify_string(string: str | None) -> str | None:
     """
     if isinstance(string, str):
         # set only one space between brackets and remove repeating brackets
-        string = process_brackets(string)
+        string = set_one_space_around_brackets_and_remove_repeating_brackets(string)
         # set only one space after commas and remove repeating commas
-        string = process_commas(string)
+        string = set_one_space_after_comma_and_remove_repeating_commas(string)
         # remove repeating spaces and trailing spaces
-        string = process_spaces(string)
+        string = remove_repeating_spaces_and_trailing_spaces(string)
     return string

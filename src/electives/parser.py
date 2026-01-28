@@ -1,24 +1,66 @@
+"""
+This file should be synced between:
+https://github.com/one-zero-eight/parsers/blob/main/src/electives/parser.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/parsers/electives/parser.py
+"""
+
+import datetime
 import io
 import re
+import warnings
 from collections.abc import Generator
-from datetime import datetime
 from itertools import groupby, pairwise
-from typing import TypedDict
 
 import numpy as np
 import openpyxl
 import pandas as pd
-import requests
-from openpyxl.utils import coordinate_to_tuple, get_column_letter
+from openpyxl.utils import get_column_letter
+from pydantic import BaseModel
 
-from src.electives.config import Target
-from src.electives.config import electives_config as config
-from src.electives.models import Elective, ElectiveCell, ElectiveEvent
 from src.logging_ import logger
-from src.processors.regex import prettify_string
-from src.utils import get_current_year
+
+from ..processors.regex import prettify_string
+from ..utils import sanitize_sheet_name
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
+
+
+class Elective(BaseModel):
+    """
+    How it will be in innohassle event group name: spring26-bs2-ru-ввтус
+    - semester alias: spring26
+    - sheet name: bs2-ru
+    - elective alias: ввтус
+    """
+
+    alias: str
+    "Alias for elective, how it will be as part in innohassle event group name. Most probably same as short name"
+    short_name: str
+    "Short name of elective, exactly how it is written in the schedule"
+    name: str | None = None
+    "Name of elective"
+    instructor: str | None = None
+    "Instructor of elective"
+    elective_type: str | None = None
+    "Type of elective"
+
+
+class ElectiveCell(BaseModel):
+    value: list[str]
+    "Original cell value"
+    a1: str | None = None
+    "A1 coordinates of the cell"
+
+    def __repr__(self):
+        return "\n".join(self.value)
+
+
+from .cell_to_event import ElectiveEvent, convert_cell_to_events  # noqa: E402
+
+
+class Separation(BaseModel):
+    elective: Elective
+    events: list[ElectiveEvent]
 
 
 class ElectiveParser:
@@ -26,35 +68,67 @@ class ElectiveParser:
     Elective parser class
     """
 
-    def __init__(self):
-        self.session = requests.Session()
+    def pipeline(
+        self,
+        xlsx_file: io.BytesIO,
+        original_target_sheet_names: list[str],
+        electives: list[Elective],
+    ) -> Generator[list[Separation], None, None]:
+        sanitized_target_sheet_names = [
+            sanitize_sheet_name(target_sheet_name) for target_sheet_name in original_target_sheet_names
+        ]
+        dfs = self.get_clear_dataframes_from_xlsx(xlsx_file, sanitized_target_sheet_names)
 
-    def get_clear_dataframes_from_xlsx(self, xlsx_file: io.BytesIO, targets: list[Target]) -> dict[str, pd.DataFrame]:
+        for target_sheet_name, original_target_sheet_name in zip(
+            sanitized_target_sheet_names, original_target_sheet_names
+        ):
+            # find dataframe from dfs
+            if target_sheet_name not in dfs:
+                logger.warning(f"Sheet {target_sheet_name} not found in xlsx file")
+                continue
+            sheet_df = dfs[target_sheet_name]
+
+            by_weeks = self.split_df_by_weeks(sheet_df)
+            index = {}
+            for sheet_df in by_weeks:
+                index.update(sheet_df.index.tolist())
+            big_df = pd.DataFrame(index=index)
+            big_df = pd.concat([big_df, *by_weeks], axis=1)
+            big_df.dropna(axis=1, how="all", inplace=True)
+            big_df.dropna(axis=0, how="all", inplace=True)
+            all_events = list(self.parse_df(big_df, electives, original_target_sheet_name))
+            converted = self.events_to_separation_by_elective(all_events)
+            yield converted
+
+    def get_clear_dataframes_from_xlsx(
+        self, xlsx_file: io.BytesIO, target_sheet_names: list[str]
+    ) -> dict[str, pd.DataFrame]:
         """
         Get data from xlsx file and return it as a DataFrame with merged
         cells and empty cells in the course row filled by left value.
 
         :param xlsx_file: xlsx file with data
         :type xlsx_file: io.BytesIO
-        :param targets: list of targets to get data from (sheets and ranges)
-        :type targets: list[config.Target]
+        :param target_sheet_names: list of target sheet names to get data from
+        :type target_sheet_names: list[str]
 
         :return: dataframes with merged cells and empty cells filled
         :rtype: dict[str, pd.DataFrame]
         """
         # ------- Read xlsx file into dataframes -------
         dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
-        # ------- Clean up dataframes -------
-        dfs = {key: value for key, value in dfs.items()}
 
-        for target in targets:
-            logger.debug(f"Processing sheet: {target.sheet_name}")
-            df = dfs[target.sheet_name]
+        # ------- Clean up dataframes -------
+        for target_sheet_name in target_sheet_names:
+            df = dfs[target_sheet_name]
             # -------- Select range --------
-            (min_row, min_col, max_row, max_col) = self.auto_detect_range(df, xlsx_file, target.sheet_name)
+            (min_row, min_col, max_row, max_col) = self.auto_detect_range(df, xlsx_file, target_sheet_name)
+
+            # -------- Add Excel coordinates to cell values --------
             df = df.iloc[min_row : max_row + 1, min_col : max_col + 1]
+            self.assign_excel_row_and_column_to_cells(df, min_row, min_col)
             # -------- Set time column as index --------
-            df = ElectiveParser.set_time_column_as_index(df)
+            df = self.set_time_column_as_index(df)
             # -------- Strip all values --------
             df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
             # -------- Fill empty cells --------
@@ -64,11 +138,44 @@ class ElectiveParser:
             # -------- Strip, translate and remove trailing spaces --------
             df = df.map(prettify_string)
             # -------- Update dataframe --------
-            dfs[target.sheet_name] = df
-        logger.debug("Dataframes ready")
+            dfs[target_sheet_name] = df
+
         return dfs
 
-    
+    def events_to_separation_by_elective(self, events: list[ElectiveEvent]) -> list[Separation]:
+        """
+        Convert list of events to dict with separation by Elective.
+
+        :param events: list of events to convert
+        :type events: list[ElectiveEvent]
+        :return: separations by Elective
+        :rtype: list[Separation]
+        """
+        output: dict[str, Separation] = dict()
+
+        # # by groups of elective
+        # for (elective, group), _events in groupby(events, lambda e: (e.elective, e.group)):
+        #     elective: Elective
+        #     if group is None:
+        #         continue  # cal = output[elective.alias]
+        #     else:
+        #         cal = output[f"{elective.alias}-{group}"]
+        #     cal: list[ElectiveEvent]
+        #     cal.extend(_events)
+
+        # only by Elective
+        for elective, _events in groupby(events, lambda e: e.elective):
+            elective: Elective
+            if elective.alias not in output:
+                output[elective.alias] = Separation(
+                    elective=elective,
+                    events=list(_events),
+                )
+            else:
+                output[elective.alias].events.extend(_events)
+
+        return list(output.values())
+
     def auto_detect_range(
         self, sheet_df: pd.DataFrame, xlsx_file: io.BytesIO, sheet_name: str
     ) -> tuple[int, int, int, int]:
@@ -80,7 +187,9 @@ class ElectiveParser:
 
         # find all columns named as weekday by checking the first row
         first_row = sheet_df.iloc[0]
-        weekday_columns_index = [i for i, value in enumerate(first_row) if isinstance(value, str) and value.upper().strip() in weekdays]
+        weekday_columns_index = [
+            i for i, value in enumerate(first_row) if isinstance(value, str) and value.upper().strip() in weekdays
+        ]
         assert len(weekday_columns_index) == len(weekdays), "Weekday columns not found"
         rightmost_column_index = max(weekday_columns_index)
         leftmost_column_index = min(weekday_columns_index) - 1
@@ -95,48 +204,7 @@ class ElectiveParser:
         sheet = wb[sheet_name]
         return sheet.max_row
 
-    def get_xlsx_file(self, spreadsheet_id: str) -> io.BytesIO:
-        """
-        Export xlsx file from Google Sheets and return it as BytesIO object.
-
-        :param spreadsheet_id: id of Google Sheets spreadsheet
-        :return: xlsx file as BytesIO object
-        """
-        # ------- Get data from Google Sheets -------
-        logger.debug("Getting dataframe from Google Sheets...")
-        # ------- Create url for export -------
-        spreadsheet_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}"
-        export_url = spreadsheet_url + "/export?format=xlsx"
-        # ------- Export xlsx file -------
-        logger.debug(f"Exporting from URL: {export_url}")
-        response = self.session.get(export_url)
-        logger.debug(f"Response status: {response.status_code}")
-        response.raise_for_status()
-        # ------- Return xlsx file as BytesIO object -------
-        return io.BytesIO(response.content)
-
-    @classmethod
-    def select_range(cls, df: pd.DataFrame, target_range: str) -> pd.DataFrame:
-        """
-        Select range from dataframe
-
-        :param df: dataframe to process
-        :type df: pd.DataFrame
-        :param target_range: range to select
-        :type target_range: str
-        :return: selected range
-        :rtype: pd.DataFrame
-        """
-        start, end = target_range.split(":")
-        start_row, start_col = coordinate_to_tuple(start)
-        end_row, end_col = coordinate_to_tuple(end)
-        return df.iloc[
-            start_row - 1 : end_row,
-            start_col - 1 : end_col,
-        ]
-
-    @classmethod
-    def set_time_column_as_index(cls, df: pd.DataFrame, column: int = 0) -> pd.DataFrame:
+    def set_time_column_as_index(self, df: pd.DataFrame, column: int = 0) -> pd.DataFrame:
         """
         Set time column as index and process it to datetime format
 
@@ -145,14 +213,27 @@ class ElectiveParser:
         :param column: column to set as index, defaults to 0
         :type column: int, optional
         """
+
         # "9:00-10:30" -> datetime.time(9, 0), datetime.time(10, 30)
-        df[column] = df[column].apply(lambda x: ElectiveParser.proces_time_cell(x) if isinstance(x, str) else x)
+        def process_time_cell(cell: str) -> tuple[datetime.time, datetime.time] | str:
+            if "$" in cell:
+                cell, a1 = cell.rsplit("$", maxsplit=1)
+                cell = cell.strip()
+            if re.match(r"\d{1,2}:\d{2}-\d{1,2}:\d{2}", cell):
+                start, end = cell.split("-")
+                return (
+                    datetime.datetime.strptime(start, "%H:%M").time(),
+                    datetime.datetime.strptime(end, "%H:%M").time(),
+                )
+            else:
+                return cell
+
+        df[column] = df[column].apply(lambda x: process_time_cell(x) if isinstance(x, str) else x)
         df.set_index(column, inplace=True)
         df.rename_axis(index="time", inplace=True)
         return df
 
-    @classmethod
-    def set_date_row_as_header(cls, df: pd.DataFrame, row: int = 0) -> pd.DataFrame:
+    def set_date_row_as_header(self, df: pd.DataFrame, row: int = 0) -> pd.DataFrame:
         """
         Set date row as columns and process it to datetime format
 
@@ -161,54 +242,53 @@ class ElectiveParser:
         :param row: row to set as columns, defaults to 0
         :type row: int, optional
         """
+
         # "June 7" -> datetime.date(current_year, 6, 7)
+        def process_date_cell(cell: str) -> datetime.date | str:
+            if "$" in cell:
+                cell, a1 = cell.rsplit("$", maxsplit=1)
+                cell = cell.strip()
+            if re.match(r"\w+ \d+", cell):
+                dtime = datetime.datetime.strptime(cell, "%B %d")
+                dtime = dtime.replace(year=datetime.date.today().year)
+                return dtime.date()
+            else:
+                return cell
+
         index = df.index[row]
-        df.loc[index] = df.loc[index].apply(lambda x: ElectiveParser.process_date_cell(x) if isinstance(x, str) else x)
+        df.loc[index] = df.loc[index].apply(lambda x: process_date_cell(x) if isinstance(x, str) else x)
         df.columns = df.loc[index]
         df.drop(index, inplace=True)
         df.rename_axis(columns="date", inplace=True)
         return df
 
-    @classmethod
-    def proces_time_cell(cls, cell: str) -> tuple[datetime.time, datetime.time] | str:
+    def assign_excel_row_and_column_to_cells(self, df: pd.DataFrame, min_row: int, min_col: int) -> None:
         """
-        Process time cell and return tuple of start and end time
+        Add Excel coordinates to cell values in the format: "value$A1"
 
-        :param cell: cell to process
-        :type cell: str
-        :return: tuple of start and end time
-        :rtype: tuple[datetime.time, datetime.time]
+        :param df: dataframe to process
+        :type df: pd.DataFrame
+        :param min_row: minimum row index in original sheet (0-indexed)
+        :type min_row: int
+        :param min_col: minimum column index in original sheet (0-indexed)
+        :type min_col: int
         """
-        # "9:00-10:30" -> datetime.time(9, 0), datetime.time(10, 30)
-        if re.match(r"\d{1,2}:\d{2}-\d{1,2}:\d{2}", cell):
-            start, end = cell.split("-")
-            return (
-                datetime.strptime(start, "%H:%M").time(),
-                datetime.strptime(end, "%H:%M").time(),
-            )
-        else:
-            return cell
+        for i in range(len(df.values)):
+            for j in range(len(df.values[i])):
+                v = df.iloc[i, j]
+                if pd.isna(v) or not isinstance(v, str) or not v.strip():
+                    continue
 
-    @classmethod
-    def process_date_cell(cls, cell: str) -> datetime.date:
-        """
-        Process date cell and return datetime.date
+                # Calculate Excel coordinates (1-indexed)
+                excel_row = min_row + i + 1
+                excel_col = min_col + j + 1
+                excel_coords = f"{get_column_letter(excel_col)}{excel_row}"
 
-        :param cell: cell to process
-        :type cell: str
-        :return: datetime.date
-        :rtype: datetime.date
-        """
-        # "June 7" -> datetime.date(current_year, 6, 7)
-        if re.match(r"\w+ \d+", cell):
-            cell = str(get_current_year()) + " " + cell
-            dtime = datetime.strptime(cell, "%Y %B %d")
-            return dtime.date()
-        else:
-            return cell
+                # Add coordinates to cell value if not already present
+                if "$" not in v:
+                    df.iloc[i, j] = f"{v}${excel_coords}"
 
-    @classmethod
-    def split_df_by_weeks(cls, df: pd.DataFrame) -> list[pd.DataFrame]:
+    def split_df_by_weeks(self, df: pd.DataFrame) -> list[pd.DataFrame]:
         """
         Split dataframe by "Week *" rows
 
@@ -235,46 +315,64 @@ class ElectiveParser:
             logger.debug(f"Processing week: {week}... From ({start}) to ({end})")
             week_df: pd.DataFrame = df.iloc[start:end].copy()
             # ----- Set date row as header -----
-            week_df = ElectiveParser.set_date_row_as_header(week_df)
+            week_df = self.set_date_row_as_header(week_df)
             dfs.append(week_df)
         return dfs
 
-    @classmethod
-    def parse_df(cls, df: pd.DataFrame) -> Generator[ElectiveEvent, None, None]:
+    def parse_df(
+        self, df: pd.DataFrame, electives: list[Elective], sheet_name: str
+    ) -> Generator[ElectiveEvent, None, None]:
         """
         Parse dataframe with schedule
 
         :param df: dataframe with schedule
         :type df: pd.DataFrame
+        :param electives: list of electives
+        :type electives: list[Elective]
+        :param sheet_name: name of the sheet being parsed
+        :type sheet_name: str
         :return: parsed events
         """
 
-        _elective_short_name = [e.short_name for e in config.electives]
-        _elective_line_pattern = re.compile(r"(?P<elective_alias>" + "|".join(_elective_short_name) + r")")
+        _elective_short_names = [e.short_name for e in electives]
+        _elective_line_pattern = re.compile(r"(?P<elective_short_name>" + "|".join(_elective_short_names) + r")")
 
-        def process_line(line: str) -> ElectiveCell | str:
+        def process_line(line: str) -> ElectiveCell | None:
             """
             Process line of the dataframe
 
             :param line: line to process
             :type line: str
-            :return: ElectiveCell or original line
-            :rtype: ElectiveCell | str
+            :return: ElectiveCell or nothing
+            :rtype: ElectiveCell | None
             """
             if pd.isna(line):
-                return line
+                return None
             line = line.strip()
+
+            # Extract a1 coordinates if present (format: "value$A1")
+            a1 = None
+            if isinstance(line, str) and "$" in line:
+                line, a1 = line.rsplit("$", maxsplit=1)
+                line = line.strip()
+
             # find all matches in the string and split by them
             matches = _elective_line_pattern.finditer(line)
             # get substrings
             breaks = [m.start() for m in matches]
+            if not breaks:
+                warnings.warn(
+                    f"No matches found in line: {line}, most probably incorrect or missing elective short_name in config"
+                )
+                return ElectiveCell(value=[line], a1=a1)
+
             substrings = [line[i:j] for i, j in zip(breaks, breaks[1:] + [None])]
             if not breaks or not substrings:
                 return None
             substrings = [line[: breaks[0]]] + substrings
             substrings = filter(len, substrings)
             substrings = map(str.strip, substrings)
-            return ElectiveCell(original=list(substrings))
+            return ElectiveCell(value=list(substrings), a1=a1)
 
         df = df.map(lambda x: process_line(x) if isinstance(x, str) else x)
 
@@ -284,44 +382,4 @@ class ElectiveParser:
                 timeslot: tuple[datetime.time, datetime.time]
 
                 if isinstance(cell, ElectiveCell):
-                    yield from cell.generate_events(date, timeslot)
-
-
-class Separation(TypedDict):
-    name: str
-    events: list[ElectiveEvent]
-
-
-def convert_separation(events: list[ElectiveEvent]) -> dict[str, Separation]:
-    """
-    Convert list of events to dict with separation by Elective and group.
-
-    :param events: list of events to convert
-    :type events: list[ElectiveEvent]
-    :return: dict with separation by Elective and group
-    :rtype: dict[str, list[str, list[ElectiveEvent]]] (name, events)
-    """
-    output: dict[str, Separation] = dict()
-
-    # # by groups of elective
-    # for (elective, group), _events in groupby(events, lambda e: (e.elective, e.group)):
-    #     elective: Elective
-    #     if group is None:
-    #         continue  # cal = output[elective.alias]
-    #     else:
-    #         cal = output[f"{elective.alias}-{group}"]
-    #     cal: list[ElectiveEvent]
-    #     cal.extend(_events)
-
-    # only by Elective
-    for elective, _events in groupby(events, lambda e: e.elective):
-        elective: Elective
-        if elective.alias not in output:
-            output[elective.alias] = Separation(
-                name=elective.name or "",
-                events=list(_events),
-            )
-        else:
-            output[elective.alias]["events"].extend(_events)
-
-    return dict(output)
+                    yield from convert_cell_to_events(cell, date, timeslot, electives, sheet_name)

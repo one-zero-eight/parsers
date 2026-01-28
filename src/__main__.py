@@ -57,11 +57,11 @@ def main():
     result = {}
 
     logger.info("\nCore Courses:")
-    if _ := core_courses_main():
+    if _ := asyncio.run(core_courses_main()):
         result["Core Courses"] = _
 
     logger.info("\nElectives:")
-    if _ := electives_main():
+    if _ := asyncio.run(electives_main()):
         result["Electives"] = _
 
     logger.info("\nSports:")

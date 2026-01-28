@@ -1,81 +1,85 @@
 import asyncio
-import io
+import datetime
 import json
 import os
-from hashlib import sha1
-from itertools import chain, groupby
+from collections.abc import Generator
+from itertools import groupby
 
 import pandas as pd
 
+from src.core_courses.cell_to_event import CoreCourseEvent, convert_cell_to_event
+from src.core_courses.config import Target
 from src.core_courses.config import core_courses_config as config
-from src.core_courses.models import CoreCourseCell, CoreCourseEvent
-from src.core_courses.parser import CoreCoursesParser
+from src.core_courses.event_to_ical import generate_vevents
+from src.core_courses.parser import CoreCourseCell, CoreCoursesParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.utils import get_base_calendar, sluggify
+from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sanitize_sheet_name, sluggify
 
 
-# noinspection InsecureHash
-def hashsum_dfs(dfs: dict[str, pd.DataFrame]) -> str:
-    to_hash = (sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest() for target in config.targets)
-    hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
-    return hashsum
+def use(
+    processed_column: pd.Series,
+    target: Target,
+) -> Generator[CoreCourseEvent, None, None]:
+    """
+    Generate events from processed cells
+
+    :param processed_column: series with processed cells (CoreCourseCell),
+        multiindex with (weekday, timeslot) and (course, group) as name
+    :param target: target to generate events for (needed for start and end dates)
+    :return: generator of events
+    """
+    # -------- Iterate over processed cells --------
+    (course, group) = processed_column.name
+    course: str
+    group: str
+
+    for (weekday, timeslot), cell in processed_column.items():
+        cell: CoreCourseCell | None
+        if cell is None:
+            continue
+        weekday: str
+        timeslot: tuple[datetime.time, datetime.time]
+
+        event = convert_cell_to_event(
+            cell=cell,
+            weekday=weekday,
+            timeslot=timeslot,
+            course=course,
+            group=group,
+            target=target,
+        )
+
+        if event is None:
+            continue
+
+        # Set sheet_name from target
+        event.sheet_name = target.sheet_name
+        yield event
 
 
-def get_dataframes_pipeline(parser: CoreCoursesParser, xlsx: io.BytesIO) -> dict[str, pd.DataFrame]:
-    dfs, _merged_ranges = parser.get_clear_dataframes_from_xlsx(
-        xlsx_file=xlsx, target_sheet_names=[target.sheet_name for target in config.targets]
-    )
-    hashsum = hashsum_dfs(dfs)
-
-    logger.info(f"Hashsum: {hashsum}")
-    xlsx_path = config.temp_dir / f"{hashsum}.xlsx"
-    xlsx_path.parent.mkdir(parents=True, exist_ok=True)
-    if xlsx_path.exists():
-        logger.info("Hashsum match!")
-
-    with open(xlsx_path, "wb") as f:
-        logger.info(f"Saving cached file {hashsum}.xlsx")
-        xlsx.seek(0)
-        content = xlsx.read()
-        f.write(content)
-
-    return dfs
-
-
-def main():
+async def main():
     parser = CoreCoursesParser()
+    xlsx_file = await fetch_xlsx_spreadsheet(spreadsheet_id=config.spreadsheet_id)
+    original_target_sheet_names = [target.sheet_name for target in config.targets]
+    pipeline_result = parser.pipeline(xlsx_file, original_target_sheet_names)
+    
+    # Get sheet name -> gid mapping
+    logger.info("Fetching sheet gids from Google Spreadsheet...")
+    sheet_gids = await get_sheet_gids(config.spreadsheet_id)
+    logger.debug(f"Found sheet gids: {sheet_gids}")
 
-    xlsx = parser.get_xlsx_file(spreadsheet_id=config.spreadsheet_id)
-
-    dfs = get_dataframes_pipeline(parser, xlsx)
-
-    events = []
-
-    for target in config.targets:
-        logger.info(f"Processing '{target.sheet_name}'...")
-        # find dataframe from dfs
-        sheet_df = dfs[target.sheet_name]
-
-        time_columns_index = parser.get_time_columns(sheet_df)
-        by_courses = parser.split_df_by_courses(sheet_df, time_columns_index)
-        for course_df in by_courses:
-            # -------- Set course and group as header; weekday and timeslot as index --------
-            parser.set_course_and_group_as_header(course_df)
-            parser.set_weekday_and_time_as_index(course_df)
-            # -------- Process cells and generate events --------
-            event_generators = (
-                course_df
-                # -------- Group by weekday and time --------
-                .groupby(level=[0, 1], sort=False)
-                .agg(list)
-                # -------- Apply CoreCourseCell to each cell --------
-                .map(lambda x: None if all(pd.isna(y) for y in x) else CoreCourseCell(value=x))
-                # -------- Generate events from processed cells --------
-                .apply(parser.generate_events_from_processed_column, target=target)
+    # -------- Generate events from processed cells --------
+    events: list[CoreCourseEvent] = []
+    for target, grouped_dfs_with_cells_list in zip(config.targets, pipeline_result):
+        for grouped_dfs_with_cells in grouped_dfs_with_cells_list:
+            series_with_generators = grouped_dfs_with_cells.apply(
+                use,
+                target=target,
             )
-            # -------- Append generated events to events list --------
-            events.extend(chain.from_iterable(event_generators))
+            for generator in series_with_generators:
+                generator: Generator[CoreCourseEvent, None, None]
+                events.extend(generator)
 
     predefined_event_groups: list[CreateEventGroup] = []
 
@@ -96,7 +100,6 @@ def main():
     logger.info(f"> Mount point: {config.mount_point}")
 
     tags = [academic_tag, semester_tag]
-    courses = set(event.course for event in events)
     for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
         course_slug = sluggify(course)
         course_tag = CreateTag(
@@ -117,7 +120,27 @@ def main():
                 logger.debug(f"> Ignoring {group_event.subject}")
                 continue
             group_event: CoreCourseEvent
-            group_vevents = group_event.generate_vevents()
+            
+            # Get gid for this event's sheet
+            gid = None
+            if group_event.sheet_name:
+                # Try exact match first
+                gid = sheet_gids.get(group_event.sheet_name)
+                # If not found, try sanitized match
+                if gid is None:
+                    sanitized_name = sanitize_sheet_name(group_event.sheet_name)
+                    for sheet_name, sheet_gid in sheet_gids.items():
+                        if sanitize_sheet_name(sheet_name) == sanitized_name:
+                            gid = sheet_gid
+                            break
+                if gid is None:
+                    logger.warning(f"Could not find gid for sheet '{group_event.sheet_name}', using first available gid")
+                    gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
+            else:
+                logger.warning("Event has no sheet_name, using first available gid")
+                gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
+            
+            group_vevents = generate_vevents(group_event, config.spreadsheet_id, gid)
             for vevent in group_vevents:
                 cnt += 1
                 group_calendar.add_component(vevent)
@@ -130,7 +153,7 @@ def main():
         file_name = f"{group_slug}.ics"
         file_path = course_path / file_name
 
-        logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
+        logger.info(f"> Writing {file_path}")
 
         os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, "wb") as f:
@@ -168,9 +191,9 @@ def main():
         parser_auth_key=config.parser_auth_key.get_secret_value(),
     )
 
-    result = asyncio.run(update_inh_event_groups(inh_client, config.mount_point, output))
+    result = await update_inh_event_groups(inh_client, config.mount_point, output)
     return result
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

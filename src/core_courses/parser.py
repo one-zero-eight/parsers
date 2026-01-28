@@ -1,34 +1,123 @@
+"""
+This file should be synced between:
+https://github.com/one-zero-eight/parsers/blob/main/src/core_courses/parser.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/parsers/core_courses/parser.py
+"""
+
+import datetime
 import io
+import re
 from collections import defaultdict
 from collections.abc import Generator
-from datetime import datetime
 from itertools import pairwise
 
 import numpy as np
 import openpyxl
 import pandas as pd
-import requests
 from openpyxl.utils import get_column_letter
+from pandas.core.frame import DataFrame
+from pydantic import BaseModel, ConfigDict, Field
 
-from src.constants import WEEKDAYS
-from src.core_courses.config import Target
-from src.core_courses.models import CoreCourseCell, CoreCourseEvent
 from src.logging_ import logger
-from src.processors.regex import prettify_string
-from src.utils import split_range_to_xy
+
+from ..processors.regex import prettify_string
+from ..utils import WEEKDAYS, sanitize_sheet_name
+
+
+class CoreCourseCell(BaseModel):
+    model_config = ConfigDict(coerce_numbers_to_str=True)
+    
+    value: tuple[str, str | None, str | None] = Field(..., min_length=3, max_length=3)
+    "Cell values: [subject, teacher (optional), location and modifiers (optional)]"
+    a1: str | None = None
+    "A1 coordinates of left-upper cell, may be a range"
+
+    def __repr__(self):
+        return "\n".join(map(str, self.value))
 
 
 class CoreCoursesParser:
-    """
-    Elective parser class
-    """
+    def pipeline(
+        self, xlsx_file: io.BytesIO, original_target_sheet_names: list[str]
+    ) -> Generator[list[DataFrame], None, None]:
+        """
+        Run pipeline and generate lists of GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) by sheet.
 
-    #
-    # credentials: Credentials
-    # """ Google API credentials object """
+        ### Usage:
 
-    def __init__(self):
-        self.session = requests.Session()
+        ```python
+        pipeline_result = parser.pipeline(xlsx, sheet_names)
+
+        def use(processed_column: pd.Series, sheet_name: str):
+            \"\"\"
+            :param processed_column: series with processed cells (CoreCourseCell),
+                multiindex with (weekday, timeslot) and (course, group) as name
+            \"\"\"
+            (course, group) = processed_column.name
+            course: str
+            group: str
+
+            for (weekday, timeslot), cell in processed_column.items():
+                cell: CoreCourseCell | None
+                if cell is None:
+                    continue
+                weekday: str
+                timeslot: tuple[datetime.time, datetime.time]
+                yield cell # Do what you want with cell
+
+        all_cells = []
+
+        for sheet_name, grouped_dfs_with_cells_list in zip(sheet_names, pipeline_result):
+            for grouped_dfs_with_cells in grouped_dfs_with_cells_list:
+                series_with_generators = grouped_dfs_with_cells.apply(use, sheet_name=sheet_name)
+                for generator in series_with_generators:
+                    generator: Generator[CoreCourseCell, None, None]
+                    all_cells.extend(generator)
+
+        ```
+        """
+
+        sanitized_sheet_names = [
+            sanitize_sheet_name(target_sheet_name) for target_sheet_name in original_target_sheet_names
+        ]
+
+        dfs, dfs_merged_ranges = self.get_clear_dataframes_from_xlsx(
+            xlsx_file=xlsx_file, target_sheet_names=sanitized_sheet_names
+        )
+
+        for target_sheet_name, original_target_sheet_name in zip(
+            sanitized_sheet_names,
+            original_target_sheet_names,
+        ):
+            # find dataframe from dfs
+            if target_sheet_name not in dfs:
+                logger.warning(f"Sheet {target_sheet_name} not found in xlsx file")
+                continue
+            sheet_df = dfs[target_sheet_name]
+
+            time_columns_index = self.get_time_columns(sheet_df)
+            logger.info(f"Sheet Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
+            rightmost_column_index = self.get_rightmost_column_index(xlsx_file, target_sheet_name, time_columns_index)
+            logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
+
+            by_courses = self.split_df_by_courses(sheet_df, time_columns_index)
+            grouped_dfs_with_cells_lst = []
+            for course_df in by_courses:
+                # ---- Set course and group as header; weekday and timeslot as index ----
+                self.set_course_and_group_as_header(course_df)
+                self.set_weekday_and_time_as_index(course_df)
+                # ---- Convert it to GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) ----
+                grouped_dfs_with_cells = (
+                    course_df
+                    # ---- Group by weekday and time ----
+                    .groupby(level=[0, 1], sort=False)
+                    .agg(list)
+                    # ---- Convert each cell to CoreCourseCell ----
+                    .map(self.factory_core_course_cell)
+                )
+                assert isinstance(grouped_dfs_with_cells, DataFrame)
+                grouped_dfs_with_cells_lst.append(grouped_dfs_with_cells)
+            yield grouped_dfs_with_cells_lst
 
     def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, target_sheet_names: list[str]
@@ -36,26 +125,30 @@ class CoreCoursesParser:
         """
         Get data from xlsx file and return it as a DataFrame with merged
         cells and empty cells in the course row filled by left value.
+        Also adds excel range to each 'subject' cell (first of three cells),
+        so will be `Analytical Geometry and Linear Algebra I (lab)$D10`
 
-        :return: dataframes with merged cells and empty cells filled
+        :return: mapping of sheet name to clear dataframe
         :rtype: dict[str, pd.DataFrame]
         """
-        # ------- Read xlsx file into dataframes -------
+        # ---- Read xlsx file into dataframes ----
         dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
-        # ------- Clean up dataframes -------
+        # ---- Clean up dataframes ----
         merged_ranges: dict[str, list[tuple[int, int, int, int]]] = defaultdict(list)
         for target_sheet_name in target_sheet_names:
             df = dfs[target_sheet_name]
-            # -------- Select range --------
+            # ---- Select range ----
             (min_row, min_col, max_row, max_col) = self.auto_detect_range(df, xlsx_file, target_sheet_name)
             df = df.iloc[min_row : max_row + 1, min_col : max_col + 1]
-            # -------- Fill merged cells with values --------
+            # ---- Fill merged cells with values ----
             merged_ranges[target_sheet_name] = self.merge_cells(df, xlsx_file, target_sheet_name)
-            # -------- Fill empty cells --------
+            # ---- Add excel range to each 'subject' cell (first of three cells) ----
+            self.assign_excel_row_and_column_to_subject(df)
+            # ---- Fill empty cells ----
             df = df.replace(r"^\s*$", np.nan, regex=True)
-            # -------- Strip, translate and remove trailing spaces --------
+            # ---- Strip, translate and remove trailing spaces ----
             df = df.map(prettify_string)
-            # -------- Update dataframe --------
+            # ---- Update dataframe ----
             dfs[target_sheet_name] = df
 
         return dfs, merged_ranges
@@ -68,7 +161,7 @@ class CoreCoursesParser:
         """
         time_columns_index = self.get_time_columns(sheet_df)
         logger.info(f"Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
-        # -------- Get rightmost column index --------
+        # ---- Get rightmost column index ----
         rightmost_column_index = self.get_rightmost_column_index(xlsx_file, sheet_name, time_columns_index)
         logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
         last_row_index = self.get_last_row_index(xlsx_file, sheet_name)
@@ -121,30 +214,40 @@ class CoreCoursesParser:
         sheet = wb[sheet_name]
         return sheet.max_row
 
-    def get_xlsx_file(self, spreadsheet_id: str) -> io.BytesIO:
-        """
-        Export xlsx file from Google Sheets and return it as BytesIO object.
 
-        :param spreadsheet_id: id of Google Sheets spreadsheet
-        :return: xlsx file as BytesIO object
-        """
-        # ------- Get data from Google Sheets -------
-        logger.debug("Getting dataframe from Google Sheets...")
-        # ------- Create url for export -------
-        spreadsheet_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}"
-        export_url = spreadsheet_url + "/export?format=xlsx"
-        # ------- Export xlsx file -------
-        logger.info(f"Exporting from URL: {export_url}")
-        response = self.session.get(export_url)
-        logger.info(f"Response status: {response.status_code}")
-        response.raise_for_status()
-        # ------- Return xlsx file as BytesIO object -------
-        return io.BytesIO(response.content)
+    def assign_excel_row_and_column_to_subject(self, df: pd.DataFrame) -> None:
+        def check_value_is_time(string_to_check: str) -> bool:
+            return bool(re.match(r"^\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}$", string_to_check))
 
-    @classmethod
+        used_cells: set[tuple[int, int]] = set()
+        for i in range(3, len(df.values)):
+            for j in range(1, len(df.values[i])):
+                if (i, j) in used_cells:
+                    continue
+
+                v = df.iloc[i, j]
+                if isinstance(v, str):
+                    v = v.strip()
+                
+                if not v or pd.isna(v) or v in WEEKDAYS or check_value_is_time(v):
+                    continue
+
+                excel_coords = f"{get_column_letter(j + 1)}{i + 1}"
+                df.iloc[i, j] = f"{df.iloc[i, j]}${excel_coords}"
+                for x in range(i, i + 3):
+                    used_cells.add((x, j))
+
     def merge_cells(
-        cls, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str, row_offset: int = 0, col_offset: int = 0
-    ):
+        self, df: pd.DataFrame, xlsx: io.BytesIO, target_sheet_name: str
+    ) -> list[tuple[int, int, int, int]]:
+        """
+        Merge cells in dataframe
+
+        :param df: Dataframe to process
+        :param xlsx: xlsx file with data
+        :param target_sheet_name: sheet to process
+        :return: list of merged ranges: (min_row, min_col, max_row, max_col)
+        """
         xlsx.seek(0)
         ws = openpyxl.load_workbook(xlsx)
         sheet = ws[target_sheet_name]
@@ -152,49 +255,26 @@ class CoreCoursesParser:
         merged_ranges = []
         nrows, ncols = df.shape
 
+        def clamp_rows(n: int) -> int:
+            return max(min(n, nrows - 1), 0)
+        
+        def clamp_cols(n: int) -> int:
+            return max(min(n, ncols - 1), 0)
+        
         for merged_range in sheet.merged_cells.ranges:
             min_col, min_row, max_col, max_row = merged_range.bounds
-
-            min_col = (min_col - 1) - col_offset
-            max_col = (max_col - 1) - col_offset
-            min_row = (min_row - 1) - row_offset
-            max_row = (max_row - 1) - row_offset
-
-            # Skip ranges not fully/partially inside df
-            if max_row < 0 or max_col < 0 or min_row >= nrows or min_col >= ncols:
-                continue
-
-            min_row = max(min_row, 0)
-            min_col = max(min_col, 0)
-            max_row = min(max_row, nrows - 1)
-            max_col = min(max_col, ncols - 1)
-
+            min_col = clamp_cols(min_col - 1)
+            min_row = clamp_rows(min_row - 1)
+            max_col = clamp_cols(max_col - 1)
+            max_row = clamp_rows(max_row - 1)
+            
             value = df.iloc[min_row, min_col]
             df.iloc[min_row : max_row + 1, min_col : max_col + 1] = value
             merged_ranges.append((min_row, min_col, max_row, max_col))
 
         return merged_ranges
 
-    @classmethod
-    def select_range(cls, df: pd.DataFrame, target_range: str) -> pd.DataFrame:
-        """
-        Select range from dataframe
-
-        :param df: dataframe to process
-        :type df: pd.DataFrame
-        :param target_range: range to select
-        :type target_range: str
-        :return: selected range
-        :rtype: pd.DataFrame
-        """
-        (start_row, start_col), (end_row, end_col) = split_range_to_xy(target_range)
-        return df.iloc[
-            start_row : end_row + 1,
-            start_col : end_col + 1,
-        ]
-
-    @classmethod
-    def set_weekday_and_time_as_index(cls, df: pd.DataFrame, column: int = 0) -> pd.DataFrame:
+    def set_weekday_and_time_as_index(self, df: pd.DataFrame, column: int = 0) -> None:
         """
         Set time column as index and process it to datetime format
 
@@ -224,16 +304,14 @@ class CoreCoursesParser:
             index_mapping.iloc[start + 1 : end] = df_column[start]
 
         # ----- Process time ------ #
-        # matched r"\d{1,2}:\d{2}-\d{1,2}:\d{2}" regex
-
         matched = df_column[df_column.str.match(r"\d{1,2}:\d{2}-\d{1,2}:\d{2}")]
 
         for i, cell in matched.items():
             # "9:00-10:30" -> datetime.time(9, 0), datetime.time(10, 30)
             start, end = cell.split("-")
             df_column.loc[i] = (
-                datetime.strptime(start, "%H:%M").time(),
-                datetime.strptime(end, "%H:%M").time(),
+                datetime.datetime.strptime(start, "%H:%M").time(),
+                datetime.datetime.strptime(end, "%H:%M").time(),
             )
 
         # create multiindex from index mapping and time column
@@ -242,10 +320,8 @@ class CoreCoursesParser:
         df.set_index(multiindex, inplace=True)
         # drop rows with weekday
         df.drop("delete", inplace=True, level=0)
-        return df
 
-    @classmethod
-    def set_course_and_group_as_header(cls, df: pd.DataFrame, rows: tuple = (0, 1)) -> pd.DataFrame:
+    def set_course_and_group_as_header(self, df: pd.DataFrame, rows: tuple = (0, 1)) -> None:
         """
         Set course and group as header
 
@@ -254,7 +330,7 @@ class CoreCoursesParser:
         :param rows: row to set as columns, defaults to (0, 1)
         :type rows: tuple, optional
         """
-        # ------- Set course and group as header -------
+        # --- Set course and group as header ---
         # get rows with course and group
         df_header = df.iloc[rows[0] : rows[1] + 1]
         # drop rows with course and group
@@ -265,18 +341,35 @@ class CoreCoursesParser:
             df_header = df_header.ffill(axis=1)
         multiindex = pd.MultiIndex.from_arrays(df_header.values, names=["course", "group"])
         df.columns = multiindex
-        return df
 
-    @classmethod
-    def split_df_by_courses(cls, df: pd.DataFrame, time_columns: list[int]) -> list[pd.DataFrame]:
+    def factory_core_course_cell(self, values: list[str | None]) -> CoreCourseCell | None:
+        if all(pd.isna(y) for y in values):
+            return None
+        if len(values) == 3:
+            values = [None if (bool(pd.isna(x))) else x for x in values]
+        elif len(values) == 1:
+            values = [None if (bool(pd.isna(values[0]))) else values[0]] + [None] * 2
+        else:
+            raise ValueError(f"Length of value must be 3 or 1, got {values}")
+
+        assert values[0] is not None, f"Subject must not be None, got {values}"
+        assert len(values) == 3, f"Length of value must be 3, got {values}"
+
+        a1 = None
+        for i, v in enumerate(values):
+            if v is not None and isinstance(v, str) and "$" in v:
+                values[i], a1 = v.rsplit("$", maxsplit=1)
+        return CoreCourseCell(value=tuple(values), a1=a1)
+
+    def split_df_by_courses(self, df: pd.DataFrame, time_columns: list[int]) -> list[pd.DataFrame]:
         """
         Split dataframe by "Week *" rows
 
         :param time_columns: list of columns(pd) with time and weekday
         :param df: dataframe to split
         :type df: pd.DataFrame
-        :return: list of dataframes with locators
-        :rtype: list[pd.DataFrame, ExcelToPandasLocator]
+        :return: list of dataframes
+        :rtype: list[pd.DataFrame]
         """
 
         logger.debug("Parsing dataframe to separation by course|groups...")
@@ -296,42 +389,3 @@ class CoreCoursesParser:
             split_df = df.iloc[:, start:end].copy()
             split_dfs.append(split_df)
         return split_dfs
-
-    @classmethod
-    def generate_events_from_processed_column(
-        cls,
-        processed_column: pd.Series,
-        target: Target,
-    ) -> Generator[CoreCourseEvent, None, None]:
-        """
-        Generate events from processed cells
-
-        :param target: target to generate events for (needed for start and end dates)
-        :param processed_column: series with processed cells (CoreCourseCell),
-         multiindex with (weekday, timeslot) and (course, group) as name
-        :return: generator of events
-        """
-        # -------- Iterate over processed cells --------
-        (course, group) = processed_column.name
-        course: str
-        group: str
-
-        for (weekday, timeslot), cell in processed_column.items():
-            if cell is None:
-                continue
-            cell: CoreCourseCell
-            weekday: str
-            timeslot: tuple[datetime.time, datetime.time]
-
-            event = cell.get_event(
-                weekday=weekday,
-                timeslot=timeslot,
-                course=course,
-                group=group,
-                target=target,
-            )
-
-            if event is None:
-                continue
-
-            yield event

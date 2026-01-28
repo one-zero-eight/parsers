@@ -3,7 +3,6 @@ semester_tag:
   alias: spring26
   name: Spring 2026
   type: semester
-distribution_spreadsheet_id: "1MFul8dgrKydjxzOHkAFH27qlf3uCCPEdgdTa2-lY0AA"
 targets:
 - sheet_name: "BS2 RU"
 - sheet_name: "BS3 Tech"

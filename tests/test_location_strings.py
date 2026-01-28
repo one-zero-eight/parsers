@@ -41,6 +41,9 @@ cases = [
     ("НА 13/09", Item(on=[ydate(day=13, month=9)])),
     ("ONLY ON 13/09, 20/09", Item(on=[ydate(day=13, month=9), ydate(day=20, month=9)])),
     ("НА 13/09, 20/09", Item(on=[ydate(day=13, month=9), ydate(day=20, month=9)])),
+    ("ON 22/01 29/01", Item(on=[ydate(day=22, month=1), ydate(day=29, month=1)])),
+    ("ON 13.09 20.09", Item(on=[ydate(day=13, month=9), ydate(day=20, month=9)])),
+    ("ON 13/09  20/09", Item(on=[ydate(day=13, month=9), ydate(day=20, month=9)])),
     ("ONLINE ON 13/09", Item(location="ONLINE", on=[ydate(day=13, month=9)])),
     ("(ONLY ON 10/10)", Item(on=[ydate(day=10, month=10)])),
     (
@@ -91,6 +94,10 @@ cases = [
     ),
     # NEST
     ("317 (421 ON 11/10)", Item(location="317", NEST=[Item(location="421", on=[ydate(day=11, month=10)])])),
+    (
+        "111 (106 ON 22/01 29/01)",
+        Item(location="111", NEST=[Item(location="106", on=[ydate(day=22, month=1), ydate(day=29, month=1)])]),
+    ),
     (
         "105 (room #107 on 28/08)",
         Item(location="105", NEST=[Item(location="107", on=[ydate(day=28, month=8)])]),
@@ -208,6 +215,9 @@ cases = [
     ),
     ("460 EXCEPT 28/11", Item(location="460", except_=[ydate(day=28, month=11)])),
     ("303 КРОМЕ 18/11", Item(location="303", except_=[ydate(day=18, month=11)])),
+    ("314 EXCEPT 30/01 06/02", Item(location="314", except_=[ydate(day=30, month=1), ydate(day=6, month=2)])),
+    ("460 EXCEPT 28.11 15.12", Item(location="460", except_=[ydate(day=28, month=11), ydate(day=15, month=12)])),
+    ("303 КРОМЕ 18/11, 25/11", Item(location="303", except_=[ydate(day=18, month=11), ydate(day=25, month=11)])),
     (
         "317 ON 15/02, 22/02, 15/03, 22/03, 5/04, 12/04, 19/04 (ONLINE ON 26/04)",
         Item(
@@ -242,4 +252,4 @@ def test_location_parser(input_: str, desired: Item):
     result = parse_location_string(input_)
     _ = TestCase()
     _.maxDiff = None
-    _.assertDictEqual(result.dict(exclude_none=True), desired.dict(exclude_none=True))
+    _.assertDictEqual(result.model_dump(exclude_none=True), desired.model_dump(exclude_none=True))

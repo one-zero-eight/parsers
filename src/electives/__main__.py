@@ -1,45 +1,31 @@
 import asyncio
 import json
 import os
-from hashlib import sha1
-
-import pandas as pd
 
 from src.electives.config import electives_config as config
-from src.electives.parser import ElectiveParser, convert_separation
+from src.electives.event_to_ical import generate_vevent
+from src.electives.parser import ElectiveParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.utils import get_base_calendar, sluggify
+from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sanitize_sheet_name, sluggify
 
 
-def main():
+async def main():
     if not config.spreadsheet_id:
         logger.error("Spreadsheet ID is not set")
         return None
 
     parser = ElectiveParser()
-    xlsx = parser.get_xlsx_file(
-        spreadsheet_id=config.spreadsheet_id,
-    )
-    dfs = parser.get_clear_dataframes_from_xlsx(
-        xlsx_file=xlsx,
-        targets=config.targets,
-    )
-    # noinspection InsecureHash
-    to_hash = (sha1(pd.util.hash_pandas_object(dfs[target.sheet_name]).values).hexdigest() for target in config.targets)
-    # noinspection InsecureHash
-    hashsum = sha1("\n".join(to_hash).encode("utf-8")).hexdigest()
-    logger.info(f"Hashsum: {hashsum}")
-    xlsx_path = config.temp_dir / f"{hashsum}.xlsx"
-    xlsx_path.parent.mkdir(parents=True, exist_ok=True)
-    # check if file exists
-    if xlsx_path.exists():
-        logger.info("Hashsum match!")
-    with open(xlsx_path, "wb") as f:
-        logger.info(f"Loading cached file {hashsum}.xlsx")
-        xlsx.seek(0)
-        content = xlsx.read()
-        f.write(content)
+    xlsx = await fetch_xlsx_spreadsheet(spreadsheet_id=config.spreadsheet_id)
+    original_target_sheet_names = [target.sheet_name for target in config.targets]
+    pipeline_result = parser.pipeline(xlsx, original_target_sheet_names, config.electives)
+    
+    # Get sheet name -> gid mapping
+    logger.info("Fetching sheet gids from Google Spreadsheet...")
+    sheet_gids = await get_sheet_gids(config.spreadsheet_id)
+    logger.debug(f"Found sheet gids: {sheet_gids}")
+
+    # -------- Convert to Icalendar --------
     semester_tag = CreateTag(
         alias=config.semester_tag.alias,
         type=config.semester_tag.type,
@@ -53,59 +39,54 @@ def main():
     tags = [semester_tag, elective_tag]
     predefined_event_groups: list[CreateEventGroup] = []
     mount_point = config.save_ics_path
-    for target in config.targets:
-        logger.info(f"Processing {target.sheet_name}...")
-        if "Russian as a foreign language" in target.sheet_name:
-            logger.info("Skip")
-            continue
 
-        sheet_df = next(df for sheet_name, df in dfs.items() if sheet_name == target.sheet_name)
-        by_weeks = parser.split_df_by_weeks(sheet_df)
-        index = {}
-        for sheet_df in by_weeks:
-            index.update(sheet_df.index)
-        big_df = pd.DataFrame(index=list(index))
-        big_df = pd.concat([big_df, *by_weeks], axis=1)
-        big_df.dropna(axis=1, how="all", inplace=True)
-        big_df.dropna(axis=0, how="all", inplace=True)
-        all_events = list(parser.parse_df(big_df))
-
-        converted = convert_separation(all_events)
-
+    for target, separations in zip(config.targets, pipeline_result):
         elective_type_directory = mount_point / sluggify(target.sheet_name)
-
         elective_type_directory.mkdir(parents=True, exist_ok=True)
-
-        elective_type_tag = CreateTag(
-            alias=sluggify(target.sheet_name),
-            type="electives",
-            name=target.sheet_name,
-        )
+        elective_type_tag = CreateTag(alias=sluggify(target.sheet_name), type="electives", name=target.sheet_name)
 
         tags.append(elective_type_tag)
 
-        for elective_alias, separation in converted.items():
-            name = separation["name"]
-            events = separation["events"]
+        for elective_separation in separations:
             calendar = get_base_calendar()
-            calendar["x-wr-calname"] = elective_alias
+            elective = elective_separation.elective
+            calendar["x-wr-calname"] = elective.alias
             calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.spreadsheet_id}"
 
             cnt = 0
 
-            for event in events:
-                calendar.add_component(event.get_vevent())
+            for event in elective_separation.events:
+                # Get gid for this event's sheet
+                gid = None
+                if event.sheet_name:
+                    # Try exact match first
+                    gid = sheet_gids.get(event.sheet_name)
+                    # If not found, try sanitized match
+                    if gid is None:
+                        sanitized_name = sanitize_sheet_name(event.sheet_name)
+                        for sheet_name, sheet_gid in sheet_gids.items():
+                            if sanitize_sheet_name(sheet_name) == sanitized_name:
+                                gid = sheet_gid
+                                break
+                    if gid is None:
+                        logger.warning(f"Could not find gid for sheet '{event.sheet_name}', using first available gid")
+                        gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
+                else:
+                    logger.warning("Event has no sheet_name, using first available gid")
+                    gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
+                
+                calendar.add_component(generate_vevent(event, config.spreadsheet_id, gid))
                 cnt += 1
 
             calendar.add("x-wr-total-vevents", str(cnt))
 
-            elective_x_group_alias = sluggify(elective_alias)
+            elective_x_group_alias = sluggify(elective.alias)
             calendar_alias = f"{config.semester_tag.alias}-{sluggify(target.sheet_name)}-{elective_x_group_alias}"
 
             file_name = f"{elective_x_group_alias}.ics"
             file_path = elective_type_directory / file_name
 
-            logger.info(f"> Writing {file_path.relative_to(config.mount_point)}")
+            logger.info(f"> Writing {file_path}")
 
             os.makedirs(file_path.parent, exist_ok=True)
             with open(file_path, "wb") as f:
@@ -113,16 +94,11 @@ def main():
                 # TODO: add validation
                 f.write(content)
 
-            elective_alias = elective_alias.replace("-", " ")
-
-            if events:
-                description = events[0].elective.name
-            else:
-                description = f"Elective schedule for '{elective_alias}'"
+            description = f"Elective schedule for '{elective.name or elective.alias}'"
             predefined_event_groups.append(
                 CreateEventGroup(
                     alias=calendar_alias,
-                    name=name,
+                    name=elective.name or elective.alias,
                     description=description,
                     path=file_path.relative_to(config.mount_point).as_posix(),
                     tags=[
@@ -132,6 +108,7 @@ def main():
                     ],
                 )
             )
+
     logger.info(f"Writing JSON file... {len(predefined_event_groups)} event groups.")
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
@@ -145,9 +122,9 @@ def main():
         api_url=config.innohassle_api_url,
         parser_auth_key=config.parser_auth_key.get_secret_value(),
     )
-    result = asyncio.run(update_inh_event_groups(inh_client, config.mount_point, output))
+    result = await update_inh_event_groups(inh_client, config.mount_point, output)
     return result
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

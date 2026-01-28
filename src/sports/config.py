@@ -8,9 +8,6 @@ from pathlib import Path
 from pydantic import BaseModel, SecretStr
 
 from src.config_base import BaseParserConfig
-from src.utils import get_project_root
-
-PROJECT_ROOT = get_project_root()
 
 config_path = Path(__file__).parent / "config.yaml"
 
