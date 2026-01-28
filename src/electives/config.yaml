@@ -78,6 +78,18 @@ electives: [
       "instructor": "Ostanin Pavel. Butakov Ivan",
     },
     {
+      "alias": "cpa",
+      "short_name": "CPA",
+      "name": "CPython (продвинутый курс)",
+      "instructor": "Pyotr Andreev",
+    },
+    {
+      "alias": "ctb",
+      "short_name": "СТВ",
+      "name": "Современные технологии виртуализации",
+      "instructor": "Lev Nikolaev",
+    },
+    {
       "alias": "виапрпо",
       "short_name": "ВИАПР",
       "name": "Введение в интеграцию и автоматизацию процесса разработки ПО",
