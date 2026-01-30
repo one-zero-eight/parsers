@@ -244,12 +244,21 @@ cases = [
             till=time(hour=14, minute=0),
         ),
     ),
+    (
+        "460 STARTS FROM 07/04 (ONLINE ON 07/04)",
+        Item(
+            location="460",
+            starts_from=ydate(day=7, month=4),
+            NEST=[Item(location="ONLINE", on=[ydate(day=7, month=4)])],
+        ),
+    ),
 ]
 
 
 @pytest.mark.parametrize("input_, desired", cases, ids=[x for x, _ in cases])
 def test_location_parser(input_: str, desired: Item):
     result = parse_location_string(input_)
+    assert result is not None, f"Failed to parse location string: {input_}"
     _ = TestCase()
     _.maxDiff = None
     _.assertDictEqual(result.model_dump(exclude_none=True), desired.model_dump(exclude_none=True))
