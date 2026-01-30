@@ -252,6 +252,15 @@ cases = [
             NEST=[Item(location="ONLINE", on=[ydate(day=7, month=4)])],
         ),
     ),
+    (
+        "ONLINE FROM 13/02 STARTS AT 10:00 TILL 11:30",
+        Item(
+            location="ONLINE",
+            starts_from=ydate(day=13, month=2),
+            starts_at=time(hour=10, minute=0),
+            till=time(hour=11, minute=30),
+        ),
+    ),
 ]
 
 
