@@ -15,13 +15,7 @@ from src.core_courses.event_to_ical import generate_vevents
 from src.core_courses.parser import CoreCourseCell, CoreCoursesParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.utils import (
-    fetch_xlsx_spreadsheet,
-    get_base_calendar,
-    get_sheet_gids,
-    sanitize_sheet_name,
-    sluggify,
-)
+from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sluggify
 
 
 def use(
@@ -60,8 +54,6 @@ def use(
         if event is None:
             continue
 
-        # Set sheet_name from target
-        event.sheet_name = target.sheet_name
         yield event
 
 
@@ -71,13 +63,16 @@ async def main():
     save_config = from_yaml(SaveConfig, config_path)
     parser = CoreCoursesParser()
     xlsx_file = await fetch_xlsx_spreadsheet(spreadsheet_id=parser_config.spreadsheet_id)
-    original_target_sheet_names = [target.sheet_name for target in parser_config.targets]
-    pipeline_result = parser.pipeline(xlsx_file, original_target_sheet_names)
-
-    # Get sheet name -> gid mapping
-    logger.info("Fetching sheet gids from Google Spreadsheet...")
     sheet_gids = await get_sheet_gids(parser_config.spreadsheet_id)
     logger.debug(f"Found sheet gids: {sheet_gids}")
+
+    original_target_sheet_names = [target.sheet_name for target in parser_config.targets]
+    pipeline_result = parser.pipeline(
+        xlsx_file,
+        original_target_sheet_names,
+        sheet_gids,
+        parser_config.spreadsheet_id,
+    )
 
     # -------- Generate events from processed cells --------
     events: list[CoreCourseEvent] = []
@@ -128,28 +123,7 @@ async def main():
                 continue
             group_event: CoreCourseEvent
 
-            # Get gid for this event's sheet
-            gid = None
-            if group_event.sheet_name:
-                # Try exact match first
-                gid = sheet_gids.get(group_event.sheet_name)
-                # If not found, try sanitized match
-                if gid is None:
-                    sanitized_name = sanitize_sheet_name(group_event.sheet_name)
-                    for sheet_name, sheet_gid in sheet_gids.items():
-                        if sanitize_sheet_name(sheet_name) == sanitized_name:
-                            gid = sheet_gid
-                            break
-                if gid is None:
-                    logger.warning(
-                        f"Could not find gid for sheet '{group_event.sheet_name}', using first available gid"
-                    )
-                    gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-            else:
-                logger.warning("Event has no sheet_name, using first available gid")
-                gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-
-            group_vevents = generate_vevents(group_event, parser_config.spreadsheet_id, gid)
+            group_vevents = generate_vevents(group_event)
             for vevent in group_vevents:
                 cnt += 1
                 group_calendar.add_component(vevent)

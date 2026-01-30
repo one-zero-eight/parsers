@@ -45,10 +45,14 @@ class CoreCourseEvent(BaseModel):
 
     original_value: list[str | None]
     "Original cell values"
+    spreadsheet_id: str
+    "Spreadsheet ID"
+    google_sheet_gid: str
+    "Sheet GID"
+    google_sheet_name: str
+    "Sheet name"
     a1: str | None = None
     "A1 coordinates of left-upper cell, may be a range"
-    sheet_name: str | None = None
-    "Sheet name from which this event was parsed"
 
     subject: str
     "Event subject"
@@ -206,6 +210,9 @@ def convert_cell_to_event(
             group=group,
             group_student_number=group_student_number,
             original_value=cell.value,
+            spreadsheet_id=cell.spreadsheet_id,
+            google_sheet_gid=cell.google_sheet_gid,
+            google_sheet_name=cell.google_sheet_name,
             a1=cell.a1,
             subject=subject,
             teacher=teacher,

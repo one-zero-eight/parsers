@@ -68,7 +68,7 @@ def get_description(event: CoreCourseEvent) -> str | None:
     return None
 
 
-def generate_vevents(event: CoreCourseEvent, spreadsheet_id: str, gid: str) -> Generator[icalendar.Event, None, None]:
+def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None, None]:
     """
     Generate icalendar events from a CoreCourseEvent
 
@@ -76,7 +76,7 @@ def generate_vevents(event: CoreCourseEvent, spreadsheet_id: str, gid: str) -> G
     :return: icalendar events if "only on xx/xx, xx/xx" appeared in location, else one icalendar event
     """
 
-    xwr_link = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={gid}#gid={gid}&range={event.a1}"
+    xwr_link = f"https://docs.google.com/spreadsheets/d/{event.spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}&range={event.a1}"
     if not event.location_item:
         start_of_weekdays = nearest_weekday(event.starts, event.weekday)
         dtstart = datetime.datetime.combine(start_of_weekdays, event.start_time, tzinfo=MOSCOW_TZ)

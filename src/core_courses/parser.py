@@ -28,8 +28,14 @@ class CoreCourseCell(BaseModel):
 
     value: tuple[str, str | None, str | None] = Field(..., min_length=3, max_length=3)
     "Cell values: [subject, teacher (optional), location and modifiers (optional)]"
-    a1: str | None = None
-    "A1 coordinates of left-upper cell, may be a range"
+    spreadsheet_id: str
+    "Spreadsheet ID"
+    google_sheet_gid: str
+    "Sheet GID"
+    google_sheet_name: str
+    "Sheet name"
+    a1: str | None
+    "A1 coordinates of left-upper cell"
 
     def __repr__(self):
         return "\n".join(map(str, self.value))
@@ -37,7 +43,11 @@ class CoreCourseCell(BaseModel):
 
 class CoreCoursesParser:
     def pipeline(
-        self, xlsx_file: io.BytesIO, original_target_sheet_names: list[str]
+        self,
+        xlsx_file: io.BytesIO,
+        original_target_sheet_names: list[str],
+        sheet_gids: dict[str, str],
+        spreadsheet_id: str,
     ) -> Generator[list[DataFrame], None, None]:
         """
         Run pipeline and generate lists of GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) by sheet.
@@ -45,9 +55,9 @@ class CoreCoursesParser:
         ### Usage:
 
         ```python
-        pipeline_result = parser.pipeline(xlsx, sheet_names)
+        pipeline_result = parser.pipeline(xlsx, sheet_names, sheet_gids, spreadsheet_id)
 
-        def use(processed_column: pd.Series, sheet_name: str):
+        def use(processed_column: pd.Series, some_variable: str):
             \"\"\"
             :param processed_column: series with processed cells (CoreCourseCell),
                 multiindex with (weekday, timeslot) and (course, group) as name
@@ -65,10 +75,11 @@ class CoreCoursesParser:
                 yield cell # Do what you want with cell
 
         all_cells = []
+        some_variable = "hello there"
 
         for sheet_name, grouped_dfs_with_cells_list in zip(sheet_names, pipeline_result):
             for grouped_dfs_with_cells in grouped_dfs_with_cells_list:
-                series_with_generators = grouped_dfs_with_cells.apply(use, sheet_name=sheet_name)
+                series_with_generators = grouped_dfs_with_cells.apply(use, some_variable=some_variable)
                 for generator in series_with_generators:
                     generator: Generator[CoreCourseCell, None, None]
                     all_cells.extend(generator)
@@ -79,6 +90,10 @@ class CoreCoursesParser:
         sanitized_sheet_names = [
             sanitize_sheet_name(target_sheet_name) for target_sheet_name in original_target_sheet_names
         ]
+
+        sanitized_sheet_name_x_google_sheet_name = {
+            sanitize_sheet_name(sheet_name): sheet_name for sheet_name in sheet_gids.keys()
+        }
 
         dfs, dfs_merged_ranges = self.get_clear_dataframes_from_xlsx(
             xlsx_file=xlsx_file, target_sheet_names=sanitized_sheet_names
@@ -93,6 +108,8 @@ class CoreCoursesParser:
                 logger.warning(f"Sheet {target_sheet_name} not found in xlsx file")
                 continue
             sheet_df = dfs[target_sheet_name]
+            google_sheet_name = sanitized_sheet_name_x_google_sheet_name.get(target_sheet_name)
+            google_sheet_gid = sheet_gids.get(google_sheet_name) if google_sheet_name else None
 
             time_columns_index = self.get_time_columns(sheet_df)
             logger.info(f"Sheet Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
@@ -112,7 +129,12 @@ class CoreCoursesParser:
                     .groupby(level=[0, 1], sort=False)
                     .agg(list)
                     # ---- Convert each cell to CoreCourseCell ----
-                    .map(self.factory_core_course_cell)
+                    .map(
+                        self.factory_core_course_cell,
+                        spreadsheet_id=spreadsheet_id,
+                        google_sheet_name=google_sheet_name,
+                        google_sheet_gid=google_sheet_gid,
+                    )
                 )
                 assert isinstance(grouped_dfs_with_cells, DataFrame)
                 grouped_dfs_with_cells_lst.append(grouped_dfs_with_cells)
@@ -340,7 +362,13 @@ class CoreCoursesParser:
         multiindex = pd.MultiIndex.from_arrays(df_header.values, names=["course", "group"])
         df.columns = multiindex
 
-    def factory_core_course_cell(self, values: list[str | None]) -> CoreCourseCell | None:
+    def factory_core_course_cell(
+        self,
+        values: list[str | None],
+        google_sheet_name: str,
+        google_sheet_gid: str,
+        spreadsheet_id: str,
+    ) -> CoreCourseCell | None:
         if all(pd.isna(y) for y in values):
             return None
         if len(values) == 3:
@@ -357,7 +385,13 @@ class CoreCoursesParser:
         for i, v in enumerate(values):
             if v is not None and isinstance(v, str) and "$" in v:
                 values[i], a1 = v.rsplit("$", maxsplit=1)
-        return CoreCourseCell(value=tuple(values), a1=a1)
+        return CoreCourseCell(
+            value=tuple(values),
+            spreadsheet_id=spreadsheet_id,
+            google_sheet_name=google_sheet_name,
+            google_sheet_gid=google_sheet_gid,
+            a1=a1,
+        )
 
     def split_df_by_courses(self, df: pd.DataFrame, time_columns: list[int]) -> list[pd.DataFrame]:
         """
