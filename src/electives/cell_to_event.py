@@ -5,7 +5,7 @@ from collections.abc import Generator
 from pydantic import BaseModel
 
 from ..utils import MOSCOW_TZ
-from .parser import Elective, ElectiveCell
+from .config import Elective
 
 
 class ElectiveEvent(BaseModel):
@@ -28,6 +28,9 @@ class ElectiveEvent(BaseModel):
 
     def __str__(self):
         return f"{self.elective.name} | {self.start.strftime('%H:%M')}-{self.end.strftime('%H:%M')}"
+
+
+from .parser import ElectiveCell  # noqa: E402
 
 
 def convert_cell_to_events(

@@ -1,11 +1,24 @@
-from pathlib import Path
-
 from pydantic import BaseModel
 
-from src.config_base import BaseParserConfig
-from src.electives.parser import Elective
 
-config_path = Path(__file__).parent / "config.yaml"
+class Elective(BaseModel):
+    """
+    How it will be in innohassle event group name: spring26-bs2-ru-ввтус
+    - semester alias: spring26
+    - sheet name: bs2-ru
+    - elective alias: ввтус
+    """
+
+    alias: str
+    "Alias for elective, how it will be as part in innohassle event group name. Most probably same as short name"
+    short_name: str
+    "Short name of elective, exactly how it is written in the schedule"
+    name: str | None = None
+    "Name of elective"
+    instructor: str | None = None
+    "Instructor of elective"
+    elective_type: str | None = None
+    "Type of elective"
 
 
 class Target(BaseModel):
@@ -18,12 +31,9 @@ class Tag(BaseModel):
     name: str
 
 
-class ElectivesParserConfig(BaseParserConfig):
+class ElectivesParserConfig(BaseModel):
     targets: list[Target]
 
     semester_tag: Tag
     spreadsheet_id: str
     electives: list[Elective]
-
-
-electives_config: ElectivesParserConfig = ElectivesParserConfig.from_yaml(config_path)

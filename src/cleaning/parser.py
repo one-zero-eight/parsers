@@ -5,12 +5,15 @@ import icalendar
 import pandas as pd
 from pydantic import BaseModel, field_validator
 
-from src.cleaning.config import cleaning_config as config
-from src.cleaning.parse_cleaning_html import get_xlsx_file, parse
-from src.utils import get_color, nearest_weekday
+from ..utils import get_color, nearest_weekday
+from .config import CleaningParserConfig
+from .parse_cleaning_html import get_xlsx_file, parse
 
 
 class CleaningParser:
+    def __init__(self, config: CleaningParserConfig):
+        self.config = config
+    
     def get_cleaning_events(self) -> list["CleaningEvent"]:
         """
         Get cleaning events
@@ -21,7 +24,7 @@ class CleaningParser:
 
         events = []
 
-        xlsx_file = get_xlsx_file(config.cleaning_spreadsheet_id)
+        xlsx_file = get_xlsx_file(self.config.cleaning_spreadsheet_id)
         dfs = pd.read_excel(xlsx_file, sheet_name=None, header=None)
 
         parsed = parse(dfs)
@@ -49,13 +52,13 @@ class CleaningParser:
 
         events = []
 
-        for linen_change_entry in config.linen_change_entries:
+        for linen_change_entry in self.config.linen_change_entries:
             events.append(
                 LinenChangeEvent(
                     summary=linen_change_entry.name,
                     location=linen_change_entry.location,
                     rrule=linen_change_entry.rrule,
-                    date=config.start_date,
+                    date=self.config.start_date,
                 )
             )
 

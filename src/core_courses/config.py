@@ -1,11 +1,12 @@
+"""
+This file should be synced between:
+https://github.com/one-zero-eight/parsers/blob/main/src/core_courses/config.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/core_courses/config.py
+"""
+
 import datetime
-from pathlib import Path
 
 from pydantic import BaseModel
-
-from src.config_base import BaseParserConfig
-
-config_path = Path(__file__).parent / "config.yaml"
 
 
 class Override(BaseModel):
@@ -39,7 +40,7 @@ class Tag(BaseModel):
     "Short name"
 
 
-class CoreCoursesConfig(BaseParserConfig):
+class CoreCoursesConfig(BaseModel):
     targets: list[Target]
     "List of targets"
     semester_tag: Tag
@@ -50,6 +51,3 @@ class CoreCoursesConfig(BaseParserConfig):
         "Elective courses on Physical Education",
         "Elective course on Physical Education",
     ]
-
-
-core_courses_config: CoreCoursesConfig = CoreCoursesConfig.from_yaml(config_path)

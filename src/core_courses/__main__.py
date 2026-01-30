@@ -4,17 +4,24 @@ import json
 import os
 from collections.abc import Generator
 from itertools import groupby
+from pathlib import Path
 
 import pandas as pd
 
+from src.config_base import SaveConfig, from_yaml
 from src.core_courses.cell_to_event import CoreCourseEvent, convert_cell_to_event
-from src.core_courses.config import Target
-from src.core_courses.config import core_courses_config as config
+from src.core_courses.config import CoreCoursesConfig, Target
 from src.core_courses.event_to_ical import generate_vevents
 from src.core_courses.parser import CoreCourseCell, CoreCoursesParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sanitize_sheet_name, sluggify
+from src.utils import (
+    fetch_xlsx_spreadsheet,
+    get_base_calendar,
+    get_sheet_gids,
+    sanitize_sheet_name,
+    sluggify,
+)
 
 
 def use(
@@ -59,24 +66,24 @@ def use(
 
 
 async def main():
+    config_path = Path(__file__).parent / "config.yaml"
+    parser_config = from_yaml(CoreCoursesConfig, config_path)
+    save_config = from_yaml(SaveConfig, config_path)
     parser = CoreCoursesParser()
-    xlsx_file = await fetch_xlsx_spreadsheet(spreadsheet_id=config.spreadsheet_id)
-    original_target_sheet_names = [target.sheet_name for target in config.targets]
+    xlsx_file = await fetch_xlsx_spreadsheet(spreadsheet_id=parser_config.spreadsheet_id)
+    original_target_sheet_names = [target.sheet_name for target in parser_config.targets]
     pipeline_result = parser.pipeline(xlsx_file, original_target_sheet_names)
 
     # Get sheet name -> gid mapping
     logger.info("Fetching sheet gids from Google Spreadsheet...")
-    sheet_gids = await get_sheet_gids(config.spreadsheet_id)
+    sheet_gids = await get_sheet_gids(parser_config.spreadsheet_id)
     logger.debug(f"Found sheet gids: {sheet_gids}")
 
     # -------- Generate events from processed cells --------
     events: list[CoreCourseEvent] = []
-    for target, grouped_dfs_with_cells_list in zip(config.targets, pipeline_result):
+    for target, grouped_dfs_with_cells_list in zip(parser_config.targets, pipeline_result):
         for grouped_dfs_with_cells in grouped_dfs_with_cells_list:
-            series_with_generators = grouped_dfs_with_cells.apply(
-                use,
-                target=target,
-            )
+            series_with_generators = grouped_dfs_with_cells.apply(use, target=target)
             for generator in series_with_generators:
                 generator: Generator[CoreCourseEvent, None, None]
                 events.extend(generator)
@@ -84,20 +91,20 @@ async def main():
     predefined_event_groups: list[CreateEventGroup] = []
 
     events.sort(key=lambda x: (x.course, x.group))
-    directory = config.save_ics_path
+    directory = save_config.save_ics_path
     academic_tag = CreateTag(
         alias="core-courses",
         name="Core courses",
         type="category",
     )
     semester_tag = CreateTag(
-        alias=config.semester_tag.alias,
-        name=config.semester_tag.name,
-        type=config.semester_tag.type,
+        alias=parser_config.semester_tag.alias,
+        name=parser_config.semester_tag.name,
+        type=parser_config.semester_tag.type,
     )
 
     logger.info("Writing JSON and iCalendars files...")
-    logger.info(f"> Mount point: {config.mount_point}")
+    logger.info(f"> Mount point: {save_config.mount_point}")
 
     tags = [academic_tag, semester_tag]
     for (course, group), group_events in groupby(events, lambda x: (x.course, x.group)):
@@ -111,12 +118,12 @@ async def main():
 
         group_calendar = get_base_calendar()
         group_calendar["x-wr-calname"] = group
-        group_calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{config.spreadsheet_id}"
+        group_calendar["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{parser_config.spreadsheet_id}"
 
         group_events = list(group_events)  # noqa: PLW2901
         cnt = 0
         for group_event in group_events:
-            if group_event.subject in config.ignored_subjects:
+            if group_event.subject in parser_config.ignored_subjects:
                 logger.debug(f"> Ignoring {group_event.subject}")
                 continue
             group_event: CoreCourseEvent
@@ -142,7 +149,7 @@ async def main():
                 logger.warning("Event has no sheet_name, using first available gid")
                 gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
 
-            group_vevents = generate_vevents(group_event, config.spreadsheet_id, gid)
+            group_vevents = generate_vevents(group_event, parser_config.spreadsheet_id, gid)
             for vevent in group_vevents:
                 cnt += 1
                 group_calendar.add_component(vevent)
@@ -168,7 +175,7 @@ async def main():
                 alias=group_alias,
                 name=group,
                 description=f"Core courses schedule for '{group}'",
-                path=file_path.relative_to(config.mount_point).as_posix(),
+                path=file_path.relative_to(save_config.mount_point).as_posix(),
                 tags=[
                     academic_tag,
                     semester_tag,
@@ -180,20 +187,20 @@ async def main():
     logger.info(f"Writing JSON file... {len(predefined_event_groups)} event groups.")
     output = Output(event_groups=predefined_event_groups, tags=tags)
     # create a new .json file with information about calendar
-    with open(config.save_json_path, "w") as f:
+    with open(save_config.save_json_path, "w") as f:
         json.dump(output.model_dump(), f, indent=2, sort_keys=False, ensure_ascii=False)
 
     # InNoHassle integration
-    if config.innohassle_api_url is None or config.parser_auth_key is None:
+    if save_config.innohassle_api_url is None or save_config.parser_auth_key is None:
         logger.info("Skipping InNoHassle integration")
         return
 
     inh_client = InNoHassleEventsClient(
-        api_url=config.innohassle_api_url,
-        parser_auth_key=config.parser_auth_key.get_secret_value(),
+        api_url=save_config.innohassle_api_url,
+        parser_auth_key=save_config.parser_auth_key.get_secret_value(),
     )
 
-    result = await update_inh_event_groups(inh_client, config.mount_point, output)
+    result = await update_inh_event_groups(inh_client, save_config.mount_point, output)
     return result
 
 

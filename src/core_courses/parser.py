@@ -1,7 +1,7 @@
 """
 This file should be synced between:
 https://github.com/one-zero-eight/parsers/blob/main/src/core_courses/parser.py
-https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/parsers/core_courses/parser.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/core_courses/parser.py
 """
 
 import datetime
@@ -20,8 +20,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from src.logging_ import logger
 
-from ..string_utils import prettify_string
-from ..utils import WEEKDAYS, sanitize_sheet_name
+from ..utils import WEEKDAYS, prettify_string, sanitize_sheet_name
 
 
 class CoreCourseCell(BaseModel):

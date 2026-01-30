@@ -1,3 +1,9 @@
+"""
+This file should be synced between:
+https://github.com/one-zero-eight/parsers/blob/main/src/core_courses/location_parser.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/core_courses/location_parser.py
+"""
+
 import re
 from datetime import date, datetime, time
 from functools import partial

@@ -4,16 +4,17 @@ from collections.abc import Iterable
 import aiohttp
 
 from src.logging_ import logger
-from src.sports.config import sports_config as config
+from src.sports.config import SportsParserConfig
 from src.sports.models import ResponseSports, ResponseSportSchedule
 
 
 class SportParser:
-    def __init__(self, session: aiohttp.ClientSession):
+    def __init__(self, session: aiohttp.ClientSession, config: SportsParserConfig):
         self.session = session
+        self.config = config
 
     async def get_sports(self) -> ResponseSports:
-        url = f"{config.api_url}/sports"
+        url = f"{self.config.api_url}/sports"
         logger.debug(f"Getting sports from {url}")
         async with self.session.get(url) as response:
             text = await response.text()
@@ -22,9 +23,9 @@ class SportParser:
             return response_schema
 
     async def get_sport_schedule(self, sport_id: int) -> ResponseSportSchedule:
-        start = config.start_of_semester.strftime("%Y-%m-%d")
-        final = config.end_of_semester.strftime("%Y-%m-%d")
-        url = f"{config.api_url}/calendar/{sport_id}/schedule?start={start}T00%3A00&end={final}T00%3A00"
+        start = self.config.start_of_semester.strftime("%Y-%m-%d")
+        final = self.config.end_of_semester.strftime("%Y-%m-%d")
+        url = f"{self.config.api_url}/calendar/{sport_id}/schedule?start={start}T00%3A00&end={final}T00%3A00"
         logger.debug(f"Getting sport schedule from {url}")
         async with self.session.get(url) as response:
             text = await response.text()

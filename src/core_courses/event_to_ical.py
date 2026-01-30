@@ -6,10 +6,11 @@ from zlib import crc32
 
 import icalendar
 
-from src.core_courses.cell_to_event import CoreCourseEvent
-from src.core_courses.location_parser import Item
 from src.logging_ import logger
-from src.utils import MOSCOW_TZ, get_color, nearest_weekday
+
+from ..utils import MOSCOW_TZ, get_color, nearest_weekday
+from .cell_to_event import CoreCourseEvent
+from .location_parser import Item
 
 
 def every_week_rule(event: CoreCourseEvent) -> icalendar.vRecur:

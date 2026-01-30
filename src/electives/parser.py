@@ -19,30 +19,11 @@ from pydantic import BaseModel
 
 from src.logging_ import logger
 
-from ..string_utils import prettify_string
-from ..utils import sanitize_sheet_name
+from ..utils import prettify_string, sanitize_sheet_name
+from .cell_to_event import ElectiveEvent
+from .config import Elective
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
-
-
-class Elective(BaseModel):
-    """
-    How it will be in innohassle event group name: spring26-bs2-ru-ввтус
-    - semester alias: spring26
-    - sheet name: bs2-ru
-    - elective alias: ввтус
-    """
-
-    alias: str
-    "Alias for elective, how it will be as part in innohassle event group name. Most probably same as short name"
-    short_name: str
-    "Short name of elective, exactly how it is written in the schedule"
-    name: str | None = None
-    "Name of elective"
-    instructor: str | None = None
-    "Instructor of elective"
-    elective_type: str | None = None
-    "Type of elective"
 
 
 class ElectiveCell(BaseModel):
@@ -53,9 +34,6 @@ class ElectiveCell(BaseModel):
 
     def __repr__(self):
         return "\n".join(self.value)
-
-
-from .cell_to_event import ElectiveEvent, convert_cell_to_events  # noqa: E402
 
 
 class Separation(BaseModel):
@@ -333,6 +311,7 @@ class ElectiveParser:
         :type sheet_name: str
         :return: parsed events
         """
+        from .cell_to_event import convert_cell_to_events
 
         _elective_short_names = [e.short_name for e in electives]
         _elective_line_pattern = re.compile(r"(?P<elective_short_name>" + "|".join(_elective_short_names) + r")")

@@ -1,3 +1,9 @@
+"""
+This file should be synced between:
+https://github.com/one-zero-eight/parsers/blob/main/src/core_courses/cell_to_event.py
+https://github.com/one-zero-eight/schedule-builder-backend/blob/main/src/core_courses/cell_to_event.py
+"""
+
 import datetime
 import re
 import warnings
@@ -5,12 +11,12 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from src.core_courses.config import Target
-from src.core_courses.location_parser import Item, parse_location_string
-from src.core_courses.parser import CoreCourseCell
 from src.logging_ import logger
-from src.string_utils import remove_repeating_spaces_and_trailing_spaces
-from src.utils import MOSCOW_TZ, WEEKDAYS
+
+from ..utils import MOSCOW_TZ, WEEKDAYS, remove_repeating_spaces_and_trailing_spaces
+from .config import Target
+from .location_parser import Item, parse_location_string
+from .parser import CoreCourseCell
 
 
 class CoreCourseEvent(BaseModel):

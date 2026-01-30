@@ -1,11 +1,6 @@
 import datetime
-from pathlib import Path
 
 from pydantic import BaseModel
-
-from src.config_base import BaseParserConfig
-
-config_path = Path(__file__).parent / "config.yaml"
 
 
 class LinenChangeEntry(BaseModel):
@@ -14,11 +9,8 @@ class LinenChangeEntry(BaseModel):
     rrule: dict[str, str]
 
 
-class CleaningParserConfig(BaseParserConfig):
+class CleaningParserConfig(BaseModel):
     start_date: datetime.date
     cleaning_spreadsheet_url: str
     cleaning_spreadsheet_id: str
     linen_change_entries: list[LinenChangeEntry]
-
-
-cleaning_config: CleaningParserConfig = CleaningParserConfig.from_yaml(config_path)

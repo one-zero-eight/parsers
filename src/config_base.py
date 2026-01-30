@@ -1,4 +1,4 @@
-__all__ = ["BaseParserConfig"]
+__all__ = ["SaveConfig"]
 
 from pathlib import Path
 
@@ -6,8 +6,15 @@ import yaml
 from pydantic import BaseModel, ConfigDict, SecretStr, field_validator
 
 
-class BaseParserConfig(BaseModel):
-    model_config = ConfigDict(extra="forbid", validate_default=True)
+def from_yaml[T: BaseModel](cls: type[T], path: Path) -> T:
+    "Load config from yaml file"
+    with open(path) as f:
+        yaml_config = yaml.safe_load(f)
+    return cls.model_validate(yaml_config)
+
+
+class SaveConfig(BaseModel):
+    model_config = ConfigDict(validate_default=True)
 
     mount_point: Path = Path("output")
     "Mount point for output files"
@@ -60,10 +67,7 @@ class BaseParserConfig(BaseModel):
 
         return v
 
-    @field_validator(
-        "innohassle_api_url",
-        mode="before",
-    )
+    @field_validator("innohassle_api_url", mode="before")
     @classmethod
     def api_url_from_env(cls, v):
         "Get INNOHASSLE_API_URL from environment variable"
@@ -72,10 +76,3 @@ class BaseParserConfig(BaseModel):
 
             v = environ.get("INNOHASSLE_API_URL")
         return v
-
-    @classmethod
-    def from_yaml(cls, path: Path):
-        "Load config from yaml file"
-        with open(path) as f:
-            yaml_config = yaml.safe_load(f)
-        return cls.model_validate(yaml_config)
