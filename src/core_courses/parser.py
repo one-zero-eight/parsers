@@ -42,6 +42,10 @@ class CoreCourseCell(BaseModel):
 
 
 class CoreCoursesParser:
+
+    def __init__(self):
+        self.last_dfs_merged_ranges: dict[str, list[tuple[int, int, int, int]]] | None = None
+
     def pipeline(
         self,
         xlsx_file: io.BytesIO,
@@ -95,14 +99,11 @@ class CoreCoursesParser:
             sanitize_sheet_name(sheet_name): sheet_name for sheet_name in sheet_gids.keys()
         }
 
-        dfs, dfs_merged_ranges = self.get_clear_dataframes_from_xlsx(
+        dfs, self.last_dfs_merged_ranges = self.get_clear_dataframes_from_xlsx(
             xlsx_file=xlsx_file, target_sheet_names=sanitized_sheet_names
         )
 
-        for target_sheet_name, original_target_sheet_name in zip(
-            sanitized_sheet_names,
-            original_target_sheet_names,
-        ):
+        for target_sheet_name in sanitized_sheet_names:
             # find dataframe from dfs
             if target_sheet_name not in dfs:
                 logger.warning(f"Sheet {target_sheet_name} not found in xlsx file")
