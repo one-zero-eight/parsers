@@ -46,6 +46,24 @@ electives: [
       "name": "Advanced Technical Communications in IT",
       "instructor": "Ekateryna Ushakova",
     },
+    {
+      "alias": "cpa",
+      "short_name": "CPA",
+      "name": "CPython Advanced",
+      "instructor": "Pyotr Andreev",
+    },
+    {
+      "alias": "mvt",
+      "short_name": "СТВ",
+      "name": "Modern Virtualization Technologies",
+      "instructor": "Lev Nikolaev",
+    },
+    {
+      "alias": "mgdu",
+      "short_name": "MGDU",
+      "name": "Mobile Game Development on Unity",
+      "instructor": "Konstantin Kondyukov",
+    },
     # Ru programs
     {
       "alias": "ввтус",
@@ -76,18 +94,6 @@ electives: [
       "short_name": "ФА",
       "name": "Функциональный анализ",
       "instructor": "Ostanin Pavel. Butakov Ivan",
-    },
-    {
-      "alias": "cpa",
-      "short_name": "CPA",
-      "name": "CPython (продвинутый курс)",
-      "instructor": "Pyotr Andreev",
-    },
-    {
-      "alias": "ctb",
-      "short_name": "СТВ",
-      "name": "Современные технологии виртуализации",
-      "instructor": "Lev Nikolaev",
     },
     {
       "alias": "виапрпо",
