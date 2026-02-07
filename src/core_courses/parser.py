@@ -250,6 +250,9 @@ class CoreCoursesParser:
                 if isinstance(v, str):
                     v = v.strip()
 
+                if isinstance(v, int) or isinstance(v, float):
+                    continue  # Quick fix, assuming that class name cannot be number
+
                 if not v or pd.isna(v) or v in WEEKDAYS or check_value_is_time(v):
                     continue
 
