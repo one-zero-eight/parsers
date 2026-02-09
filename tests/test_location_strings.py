@@ -261,6 +261,19 @@ cases = [
             till=time(hour=11, minute=30),
         ),
     ),
+    # Test cases from Item class docstring examples
+    # From "Examples of ICS Output" section
+    (
+        "ONLINE ON 13/09, 20/09",
+        Item(location="ONLINE", on=[ydate(day=13, month=9), ydate(day=20, month=9)]),
+    ),
+    # From "Locations" section - ensure all examples are covered
+    ("?", Item(location="?")),
+    ("ONLINE (TBA)", Item(location="ONLINE (TBA)")),
+    ("106/313/314", Item(location="106/313/314")),
+    # From "Modifiers" section - ensure exact examples match
+    ("STARTS AT 18:00", Item(starts_at=time(hour=18, minute=0))),
+    ("EXCEPT 30/01, 06/02", Item(except_=[ydate(day=30, month=1), ydate(day=6, month=2)])),
 ]
 
 

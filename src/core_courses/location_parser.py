@@ -12,6 +12,120 @@ from pydantic import BaseModel, ConfigDict
 
 
 class Item(BaseModel):
+    """
+    Represents a parsed location string with optional modifiers and nested locations.
+    
+    This class is the result of parsing location strings from spreadsheet cells (third row
+    in CoreCourseCell). The location string can contain room numbers, online indicators,
+    and various temporal modifiers that affect when and where events occur.
+    
+    ## Flow Overview
+    
+    ### 1. Input: Spreadsheet Location String
+    Location strings come from the third cell value in CoreCourseCell (value[2]).
+    Examples:
+    - "313" → simple room number
+    - "ONLINE" → online event
+    - "313 (WEEK 1-3) / ONLINE" → room 313 for weeks 1-3, then online
+    - "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)" → online on 13/09, room 108 on 01/11, both starting at 9:00
+    - "460 EXCEPT 28/11" → room 460, excluding 28/11
+    
+    ### 2. Parsing: parse_location_string()
+    The location string is normalized (uppercased, "AND" replaced with commas) and parsed
+    into an Item object. The parser recognizes:
+    
+    **Locations:**
+    - Room numbers: "313", "room 107", "ROOM #107" → location="313" or "107"
+    - Online: "ONLINE", "ОНЛАЙН", "ONLINE (TBA)" → location="ONLINE" or "ОНЛАЙН"
+    - Unknown: "?" → location="?"
+    - Multiple: "106/313/314" → location="106/313/314"
+    
+    **Modifiers:**
+    - `starts_from`: "STARTS FROM 21/09" → starts_from=date(2024, 9, 21)
+    - `starts_at`: "STARTS AT 18:00" → starts_at=time(18, 0)
+    - `till`: "TILL 21:00" → till=time(21, 0)
+    - `on_weeks`: "WEEK 1-3" → on_weeks=[1, 2, 3]
+    - `on`: "ON 13/09, 20/09" → on=[date(2024, 9, 13), date(2024, 9, 20)]
+    - `except_`: "EXCEPT 30/01, 06/02" → except_=[date(2024, 1, 30), date(2024, 2, 6)]
+    
+    **Nested Structures (NEST):**
+    Complex patterns create nested Items:
+    - "313 (WEEK 1-3) / ONLINE" → Item(location="313", on_weeks=[1,2,3], NEST=[Item(location="ONLINE")])
+    - "105 ON 15/10, 106 ON 29/10" → Item(location="105", on=[...], NEST=[Item(location="106", on=[...])])
+    - "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)" → Item with nested items sharing starts_at
+        
+    ### 3. Output: ICS Calendar Events (generate_vevents())
+    The Item is converted to one or more ICS calendar events:
+    
+    **Simple Case (no location_item):**
+    - Creates one recurring event with RRULE (weekly recurrence)
+    - Uses event.location, event.start_time, event.end_time
+    
+    **With location_item:**
+    
+    **Base Event Properties:**
+    - `location`: Uses location_item.location or falls back to event.location
+    - `starts`: Uses location_item.starts_from or falls back to event.starts
+    - `start_time`: Adjusted if location_item.starts_at exists (keeps duration)
+    - `end_time`: Set to location_item.till if exists, otherwise calculated from start_time + duration
+    
+    **Recurrence Handling:**
+    - `on_weeks` → Converted to specific dates using nearest_weekday() + weeks offset, merged into `on`
+    - If `on` exists: Creates events with RDATE (specific dates) instead of RRULE
+      - Each date in `on` becomes a recurrence date
+      - dtstart/dtend adapted to first date in `on`
+    - If `on` is None: Creates weekly recurring event with RRULE
+    - If `except_` exists: Adds EXDATE to exclude specific dates from recurrence
+    
+    **Nested Items (NEST):**
+    Nested items create additional calendar events:
+    
+    - If parent has RRULE (weekly recurrence):
+      - For each nested item with `on` dates:
+        - Creates RECURRENCE-ID events overriding specific recurrence instances
+        - Uses nested item's location, starts_at, till if specified
+        - Removes RRULE from override event
+        - Parent event still yields with RRULE
+    
+    - If parent has RDATE (specific dates):
+      - Creates separate events for nested items
+      - Each nested item gets its own RDATE with its `on` dates
+      - Uses nested item's location, starts_at, till if specified
+      - Parent event yields first, then nested events
+    
+    **Examples of ICS Output:**
+    
+    Input: "313"
+    → One event: location="313", RRULE=FREQ=WEEKLY
+    
+    Input: "ONLINE ON 13/09, 20/09"
+    → One event: location="ONLINE", RDATE=[2024-09-13, 2024-09-20]
+    
+    Input: "313 (WEEK 1-3) / ONLINE"
+    → Two events:
+      1. location="313", RRULE=FREQ=WEEKLY (with EXDATE for weeks after 3)
+      2. location="ONLINE", RDATE=[dates for weeks 4+]
+    
+    Input: "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)"
+    → Three events:
+      1. location="ONLINE", RDATE=[2024-09-13], dtstart=09:00
+      2. location="108", RDATE=[2024-11-01], dtstart=09:00
+      3. Parent recurring event (if applicable)
+    
+    Input: "460 EXCEPT 28/11"
+    → One event: location="460", RRULE=FREQ=WEEKLY, EXDATE=[2024-11-28]
+    
+    ## Field Descriptions
+    
+    :param location: Room number, "ONLINE", "ОНЛАЙН", "?", or slash-separated combinations like "106/313"
+    :param starts_from: Date when the event starts (overrides event.starts)
+    :param starts_at: Time when the event starts (overrides event.start_time, preserves duration)
+    :param till: Time when the event ends (overrides event.end_time)
+    :param on_weeks: List of week numbers (1-based, converted to dates during ICS generation)
+    :param on: List of specific dates when event occurs (creates RDATE instead of RRULE)
+    :param except_: List of dates to exclude from recurrence (creates EXDATE)
+    :param NEST: List of nested Item objects for complex location patterns
+    """
     location: str | None = None
     starts_from: date | None = None
     starts_at: time | None = None
