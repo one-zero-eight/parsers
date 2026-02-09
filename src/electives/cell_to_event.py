@@ -21,7 +21,11 @@ class ElectiveEvent(BaseModel):
     "Event type"
     group: str | None = None
     "Group to which the event belongs"
-    sheet_name: str | None = None
+    spreadsheet_id: str
+    "Spreadsheet ID"
+    google_sheet_gid: str
+    "Sheet GID"
+    google_sheet_name: str
     "Sheet name from which this event was parsed"
     a1: str | None = None
     "A1 coordinates of the cell, may be a range"
@@ -38,8 +42,7 @@ def convert_cell_to_events(
     date: datetime.date,
     timeslot: tuple[datetime.time, datetime.time],
     electives: list[Elective],
-    sheet_name: str,
-) -> Generator[ElectiveEvent, None, None]:
+) -> Generator[ElectiveEvent]:
     """
     Parse cell value
     """
@@ -49,7 +52,15 @@ def convert_cell_to_events(
 
     for line in cell.value:
         yield parse_one_line_in_value(
-            line, date, overall_start, overall_end, electives=electives, sheet_name=sheet_name, a1=cell.a1
+            line,
+            date,
+            overall_start,
+            overall_end,
+            electives=electives,
+            spreadsheet_id=cell.spreadsheet_id,
+            google_sheet_gid=cell.google_sheet_gid,
+            google_sheet_name=cell.google_sheet_name,
+            a1=cell.a1,
         )
 
 
@@ -59,7 +70,10 @@ def parse_one_line_in_value(
     overall_start: datetime.datetime,
     overall_end: datetime.datetime,
     electives: list[Elective],
-    sheet_name: str | None = None,
+    *,
+    spreadsheet_id: str,
+    google_sheet_gid: str,
+    google_sheet_name: str,
     a1: str | None = None,
 ) -> ElectiveEvent:
     """
@@ -141,6 +155,8 @@ def parse_one_line_in_value(
         group=group,
         start=start,
         end=end,
-        sheet_name=sheet_name,
+        spreadsheet_id=spreadsheet_id,
+        google_sheet_gid=google_sheet_gid,
+        google_sheet_name=google_sheet_name,
         a1=a1,
     )

@@ -29,6 +29,12 @@ BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 class ElectiveCell(BaseModel):
     value: list[str]
     "Original cell value"
+    spreadsheet_id: str
+    "Spreadsheet ID"
+    google_sheet_gid: str
+    "Sheet GID"
+    google_sheet_name: str
+    "Sheet name"
     a1: str | None = None
     "A1 coordinates of the cell"
 
@@ -51,11 +57,17 @@ class ElectiveParser:
         xlsx_file: io.BytesIO,
         original_target_sheet_names: list[str],
         electives: list[Elective],
-    ) -> Generator[list[Separation], None, None]:
+        sheet_gids: dict[str, str],
+        spreadsheet_id: str,
+    ) -> Generator[list[Separation]]:
         sanitized_target_sheet_names = [
             sanitize_sheet_name(target_sheet_name) for target_sheet_name in original_target_sheet_names
         ]
         dfs = self.get_clear_dataframes_from_xlsx(xlsx_file, sanitized_target_sheet_names)
+
+        sanitized_sheet_name_x_google_sheet_name = {
+            sanitize_sheet_name(sheet_name): sheet_name for sheet_name in sheet_gids.keys()
+        }
 
         for target_sheet_name, original_target_sheet_name in zip(
             sanitized_target_sheet_names, original_target_sheet_names
@@ -65,6 +77,8 @@ class ElectiveParser:
                 logger.warning(f"Sheet {target_sheet_name} not found in xlsx file")
                 continue
             sheet_df = dfs[target_sheet_name]
+            google_sheet_name = sanitized_sheet_name_x_google_sheet_name.get(target_sheet_name)
+            google_sheet_gid = sheet_gids.get(google_sheet_name, "") if google_sheet_name else ""
 
             by_weeks = self.split_df_by_weeks(sheet_df)
             index = {}
@@ -74,7 +88,15 @@ class ElectiveParser:
             big_df = pd.concat([big_df, *by_weeks], axis=1)
             big_df.dropna(axis=1, how="all", inplace=True)
             big_df.dropna(axis=0, how="all", inplace=True)
-            all_events = list(self.parse_df(big_df, electives, original_target_sheet_name))
+            all_events = list(
+                self.parse_df(
+                    big_df,
+                    electives,
+                    spreadsheet_id=spreadsheet_id,
+                    google_sheet_name=google_sheet_name or original_target_sheet_name,
+                    google_sheet_gid=google_sheet_gid,
+                )
+            )
             converted = self.events_to_separation_by_elective(all_events)
             yield converted
 
@@ -298,8 +320,14 @@ class ElectiveParser:
         return dfs
 
     def parse_df(
-        self, df: pd.DataFrame, electives: list[Elective], sheet_name: str
-    ) -> Generator[ElectiveEvent, None, None]:
+        self,
+        df: pd.DataFrame,
+        electives: list[Elective],
+        *,
+        spreadsheet_id: str,
+        google_sheet_name: str,
+        google_sheet_gid: str,
+    ) -> Generator[ElectiveEvent]:
         """
         Parse dataframe with schedule
 
@@ -307,20 +335,29 @@ class ElectiveParser:
         :type df: pd.DataFrame
         :param electives: list of electives
         :type electives: list[Elective]
-        :param sheet_name: name of the sheet being parsed
-        :type sheet_name: str
+        :param spreadsheet_id: spreadsheet ID
+        :type spreadsheet_id: str
+        :param google_sheet_name: name of the sheet being parsed
+        :type google_sheet_name: str
+        :param google_sheet_gid: sheet GID
+        :type google_sheet_gid: str
         :return: parsed events
         """
         from .cell_to_event import convert_cell_to_events
 
         _elective_short_names = [e.short_name for e in electives]
-        _elective_line_pattern = re.compile(r"(?P<elective_short_name>" + "|".join(_elective_short_names) + r")")
+        has_electives = bool(_elective_short_names)
+        
+        # Compile pattern only if we have electives (will be checked before use)
+        _elective_line_pattern: re.Pattern[str] | None = None
+        if has_electives:
+            _elective_line_pattern = re.compile(r"(?P<elective_short_name>" + "|".join(_elective_short_names) + r")")
 
         def process_line(line: str) -> ElectiveCell | None:
             """
             Process line of the dataframe
 
-            :param line: line to process
+            :param line: line to process (may contain newlines)
             :type line: str
             :return: ElectiveCell or nothing
             :rtype: ElectiveCell | None
@@ -335,23 +372,49 @@ class ElectiveParser:
                 line, a1 = line.rsplit("$", maxsplit=1)
                 line = line.strip()
 
-            # find all matches in the string and split by them
-            matches = _elective_line_pattern.finditer(line)
-            # get substrings
-            breaks = [m.start() for m in matches]
-            if not breaks:
-                warnings.warn(
-                    f"No matches found in line: {line}, most probably incorrect or missing elective short_name in config"
-                )
-                return ElectiveCell(value=[line], a1=a1)
-
-            substrings = [line[i:j] for i, j in zip(breaks, breaks[1:] + [None])]
-            if not breaks or not substrings:
+            # First: split by newlines
+            lines = [line_part.strip() for line_part in line.split("\n") if line_part.strip()]
+            if not lines:
                 return None
-            substrings = [line[: breaks[0]]] + substrings
-            substrings = filter(len, substrings)
-            substrings = map(str.strip, substrings)
-            return ElectiveCell(value=list(substrings), a1=a1)
+
+            # Second: for each line, try to split by elective names (if configured)
+            result_values = []
+            for single_line in lines:
+                if not has_electives:
+                    # No electives configured, treat whole line as one elective value
+                    result_values.append(single_line)
+                else:
+                    # Try to split by elective names
+                    if _elective_line_pattern is None:
+                        # Should not happen, but handle gracefully
+                        result_values.append(single_line)
+                        continue
+                    matches = _elective_line_pattern.finditer(single_line)
+                    breaks = [m.start() for m in matches]
+                    if not breaks:
+                        # No elective names found in this line, treat whole line as one value
+                        result_values.append(single_line)
+                    else:
+                        # Split by elective names
+                        substrings = [single_line[i:j] for i, j in zip(breaks, breaks[1:] + [None])]
+                        if not substrings:
+                            result_values.append(single_line)
+                        else:
+                            substrings = [single_line[: breaks[0]]] + substrings
+                            substrings = filter(len, substrings)
+                            substrings = map(str.strip, substrings)
+                            result_values.extend(substrings)
+
+            if not result_values:
+                return None
+
+            return ElectiveCell(
+                value=result_values,
+                spreadsheet_id=spreadsheet_id,
+                google_sheet_name=google_sheet_name,
+                google_sheet_gid=google_sheet_gid,
+                a1=a1,
+            )
 
         df = df.map(lambda x: process_line(x) if isinstance(x, str) else x)
 
@@ -369,4 +432,4 @@ class ElectiveParser:
                     continue
 
                 if isinstance(cell, ElectiveCell):
-                    yield from convert_cell_to_events(cell, date, timeslot, electives, sheet_name)
+                    yield from convert_cell_to_events(cell, date, timeslot, electives)

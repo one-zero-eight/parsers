@@ -9,7 +9,7 @@ from src.electives.event_to_ical import generate_vevent
 from src.electives.parser import ElectiveParser
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
-from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sanitize_sheet_name, sluggify
+from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sluggify
 
 
 async def main():
@@ -22,13 +22,17 @@ async def main():
 
     parser = ElectiveParser()
     xlsx = await fetch_xlsx_spreadsheet(spreadsheet_id=parser_config.spreadsheet_id)
-    original_target_sheet_names = [target.sheet_name for target in parser_config.targets]
-    pipeline_result = parser.pipeline(xlsx, original_target_sheet_names, parser_config.electives)
-
-    # Get sheet name -> gid mapping
-    logger.info("Fetching sheet gids from Google Spreadsheet...")
     sheet_gids = await get_sheet_gids(parser_config.spreadsheet_id)
     logger.debug(f"Found sheet gids: {sheet_gids}")
+
+    original_target_sheet_names = [target.sheet_name for target in parser_config.targets]
+    pipeline_result = parser.pipeline(
+        xlsx,
+        original_target_sheet_names,
+        parser_config.electives,
+        sheet_gids,
+        parser_config.spreadsheet_id,
+    )
 
     # -------- Convert to Icalendar --------
     semester_tag = CreateTag(
@@ -61,26 +65,7 @@ async def main():
             cnt = 0
 
             for event in elective_separation.events:
-                # Get gid for this event's sheet
-                gid = None
-                if event.sheet_name:
-                    # Try exact match first
-                    gid = sheet_gids.get(event.sheet_name)
-                    # If not found, try sanitized match
-                    if gid is None:
-                        sanitized_name = sanitize_sheet_name(event.sheet_name)
-                        for sheet_name, sheet_gid in sheet_gids.items():
-                            if sanitize_sheet_name(sheet_name) == sanitized_name:
-                                gid = sheet_gid
-                                break
-                    if gid is None:
-                        logger.warning(f"Could not find gid for sheet '{event.sheet_name}', using first available gid")
-                        gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-                else:
-                    logger.warning("Event has no sheet_name, using first available gid")
-                    gid = next(iter(sheet_gids.values())) if sheet_gids else "0"
-
-                calendar.add_component(generate_vevent(event, parser_config.spreadsheet_id, gid))
+                calendar.add_component(generate_vevent(event, parser_config.spreadsheet_id))
                 cnt += 1
 
             calendar.add("x-wr-total-vevents", str(cnt))

@@ -79,13 +79,12 @@ def get_summary(event: ElectiveEvent) -> str:
         return elective_name
 
 
-def generate_vevent(event: ElectiveEvent, spreadsheet_id: str, gid: str) -> icalendar.Event:
+def generate_vevent(event: ElectiveEvent, spreadsheet_id: str) -> icalendar.Event:
     """
     Generate icalendar event from an ElectiveEvent
 
     :param event: The elective event to convert
     :param spreadsheet_id: Google Spreadsheet ID
-    :param gid: Google Spreadsheet sheet GID
     :return: icalendar event
     """
     vevent = icalendar.Event()
@@ -99,10 +98,10 @@ def generate_vevent(event: ElectiveEvent, spreadsheet_id: str, gid: str) -> ical
     vevent["description"] = get_description(event)
     if event.a1:
         vevent["x-wr-link"] = (
-            f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={gid}#gid={gid}&range={event.a1}"
+            f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}&range={event.a1}"
         )
     else:
-        vevent["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={gid}#gid={gid}"
+        vevent["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}"
 
     if event.location is not None:
         vevent["location"] = event.location
