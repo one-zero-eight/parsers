@@ -114,27 +114,24 @@ class Item(BaseModel):
     
     Input: "460 EXCEPT 28/11"
     → One event: location="460", RRULE=FREQ=WEEKLY, EXDATE=[2024-11-28]
-    
-    ## Field Descriptions
-    
-    :param location: Room number, "ONLINE", "ОНЛАЙН", "?", or slash-separated combinations like "106/313"
-    :param starts_from: Date when the event starts (overrides event.starts)
-    :param starts_at: Time when the event starts (overrides event.start_time, preserves duration)
-    :param till: Time when the event ends (overrides event.end_time)
-    :param on_weeks: List of week numbers (1-based, converted to dates during ICS generation)
-    :param on: List of specific dates when event occurs (creates RDATE instead of RRULE)
-    :param except_: List of dates to exclude from recurrence (creates EXDATE)
-    :param NEST: List of nested Item objects for complex location patterns
     """
     location: str | None = None
+    'Room number, "ONLINE", "ОНЛАЙН", "?", or slash-separated combinations like "106/313"'
     starts_from: date | None = None
+    "Date when the event starts (overrides event.starts)"
     starts_at: time | None = None
+    "Time when the event starts (overrides event.start_time, preserves duration)"
     till: time | None = None
+    "Time when the event ends (overrides event.end_time)"
     on_weeks: list[int] | None = None
+    "List of week numbers (1-based, converted to dates during ICS generation)"
     on: list[date] | None = None
+    "List of specific dates when event occurs (creates RDATE instead of RRULE)"
     except_: list[date] | None = None
+    "List of dates to exclude from recurrence (creates EXDATE)"
     NEST: list["Item"] | None = None
-    model_config = ConfigDict(arbitrary_types_allowed=True)
+    "List of nested Item objects for complex location patterns"
+    model_config = ConfigDict(arbitrary_types_allowed=True, use_attribute_docstrings=True)
 
 
 Item.model_rebuild()
