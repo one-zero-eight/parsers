@@ -14,13 +14,13 @@ from pydantic import BaseModel, ConfigDict
 class Item(BaseModel):
     """
     Represents a parsed location string with optional modifiers and nested locations.
-    
+
     This class is the result of parsing location strings from spreadsheet cells (third row
     in CoreCourseCell). The location string can contain room numbers, online indicators,
     and various temporal modifiers that affect when and where events occur.
-    
+
     ## Flow Overview
-    
+
     ### 1. Input: Spreadsheet Location String
     Location strings come from the third cell value in CoreCourseCell (value[2]).
     Examples:
@@ -29,17 +29,17 @@ class Item(BaseModel):
     - "313 (WEEK 1-3) / ONLINE" → room 313 for weeks 1-3, then online
     - "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)" → online on 13/09, room 108 on 01/11, both starting at 9:00
     - "460 EXCEPT 28/11" → room 460, excluding 28/11
-    
+
     ### 2. Parsing: parse_location_string()
     The location string is normalized (uppercased, "AND" replaced with commas) and parsed
     into an Item object. The parser recognizes:
-    
+
     **Locations:**
     - Room numbers: "313", "room 107", "ROOM #107" → location="313" or "107"
     - Online: "ONLINE", "ОНЛАЙН", "ONLINE (TBA)" → location="ONLINE" or "ОНЛАЙН"
     - Unknown: "?" → location="?"
     - Multiple: "106/313/314" → location="106/313/314"
-    
+
     **Modifiers:**
     - `starts_from`: "STARTS FROM 21/09" → starts_from=date(2024, 9, 21)
     - `starts_at`: "STARTS AT 18:00" → starts_at=time(18, 0)
@@ -47,28 +47,28 @@ class Item(BaseModel):
     - `on_weeks`: "WEEK 1-3" → on_weeks=[1, 2, 3]
     - `on`: "ON 13/09, 20/09" → on=[date(2024, 9, 13), date(2024, 9, 20)]
     - `except_`: "EXCEPT 30/01, 06/02" → except_=[date(2024, 1, 30), date(2024, 2, 6)]
-    
+
     **Nested Structures (NEST):**
     Complex patterns create nested Items:
     - "313 (WEEK 1-3) / ONLINE" → Item(location="313", on_weeks=[1,2,3], NEST=[Item(location="ONLINE")])
     - "105 ON 15/10, 106 ON 29/10" → Item(location="105", on=[...], NEST=[Item(location="106", on=[...])])
     - "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)" → Item with nested items sharing starts_at
-        
+
     ### 3. Output: ICS Calendar Events (generate_vevents())
     The Item is converted to one or more ICS calendar events:
-    
+
     **Simple Case (no location_item):**
     - Creates one recurring event with RRULE (weekly recurrence)
     - Uses event.location, event.start_time, event.end_time
-    
+
     **With location_item:**
-    
+
     **Base Event Properties:**
     - `location`: Uses location_item.location or falls back to event.location
     - `starts`: Uses location_item.starts_from or falls back to event.starts
     - `start_time`: Adjusted if location_item.starts_at exists (keeps duration)
     - `end_time`: Set to location_item.till if exists, otherwise calculated from start_time + duration
-    
+
     **Recurrence Handling:**
     - `on_weeks` → Converted to specific dates using nearest_weekday() + weeks offset, merged into `on`
     - If `on` exists: Creates events with RDATE (specific dates) instead of RRULE
@@ -76,45 +76,46 @@ class Item(BaseModel):
       - dtstart/dtend adapted to first date in `on`
     - If `on` is None: Creates weekly recurring event with RRULE
     - If `except_` exists: Adds EXDATE to exclude specific dates from recurrence
-    
+
     **Nested Items (NEST):**
     Nested items create additional calendar events:
-    
+
     - If parent has RRULE (weekly recurrence):
       - For each nested item with `on` dates:
         - Creates RECURRENCE-ID events overriding specific recurrence instances
         - Uses nested item's location, starts_at, till if specified
         - Removes RRULE from override event
         - Parent event still yields with RRULE
-    
+
     - If parent has RDATE (specific dates):
       - Creates separate events for nested items
       - Each nested item gets its own RDATE with its `on` dates
       - Uses nested item's location, starts_at, till if specified
       - Parent event yields first, then nested events
-    
+
     **Examples of ICS Output:**
-    
+
     Input: "313"
     → One event: location="313", RRULE=FREQ=WEEKLY
-    
+
     Input: "ONLINE ON 13/09, 20/09"
     → One event: location="ONLINE", RDATE=[2024-09-13, 2024-09-20]
-    
+
     Input: "313 (WEEK 1-3) / ONLINE"
     → Two events:
       1. location="313", RRULE=FREQ=WEEKLY (with EXDATE for weeks after 3)
       2. location="ONLINE", RDATE=[dates for weeks 4+]
-    
+
     Input: "ONLINE ON 13/09, 108 ON 01/11 (STARTS AT 9:00)"
     → Three events:
       1. location="ONLINE", RDATE=[2024-09-13], dtstart=09:00
       2. location="108", RDATE=[2024-11-01], dtstart=09:00
       3. Parent recurring event (if applicable)
-    
+
     Input: "460 EXCEPT 28/11"
     → One event: location="460", RRULE=FREQ=WEEKLY, EXDATE=[2024-11-28]
     """
+
     location: str | None = None
     'Room number, "ONLINE", "ОНЛАЙН", "?", or slash-separated combinations like "106/313"'
     starts_from: date | None = None
@@ -132,6 +133,109 @@ class Item(BaseModel):
     NEST: list["Item"] | None = None
     "List of nested Item objects for complex location patterns"
     model_config = ConfigDict(arbitrary_types_allowed=True, use_attribute_docstrings=True)
+
+    def describe_calendar_behavior(self, include_summary: bool = True) -> str:
+        """
+        Generate a human-readable description of how this Item will be converted to calendar events.
+
+        Describes the location, recurrence patterns, time overrides, exclusions, and nested overrides.
+        This method explains exactly how the Item will appear in the output ICS calendar.
+
+        :param include_summary: Whether to include the summary at the end (set to False for nested items)
+        :return: Human-readable description of calendar behavior
+        """
+        parts = []
+
+        # Location
+        if self.location:
+            parts.append(f"Location: {self.location}")
+        else:
+            parts.append("Location: (inherited from event)")
+
+        # Start date override
+        if self.starts_from:
+            parts.append(f"Starts from: {self.starts_from.strftime('%d/%m/%Y')}")
+
+        # Time overrides
+        time_parts = []
+        if self.starts_at:
+            time_parts.append(f"starts at {self.starts_at.strftime('%H:%M')}")
+        if self.till:
+            time_parts.append(f"ends at {self.till.strftime('%H:%M')}")
+        if time_parts:
+            parts.append(f"Time: {', '.join(time_parts)}")
+
+        # Recurrence pattern
+        if self.on:
+            dates_str = ", ".join(d.strftime("%d/%m/%Y") for d in sorted(self.on))
+            parts.append(f"Occurs on specific dates: {dates_str}")
+            recurrence_type = "RDATE (specific dates only)"
+        elif self.on_weeks:
+            weeks_str = ", ".join(str(w) for w in sorted(self.on_weeks))
+            parts.append(f"Occurs on weeks: {weeks_str} (will be converted to specific dates during ICS generation)")
+            recurrence_type = "RDATE (converted from weeks)"
+        else:
+            recurrence_type = "RRULE (weekly recurrence)"
+            parts.append("Occurs: Every week (weekly recurrence)")
+
+        # Exclusions
+        if self.except_:
+            except_dates = ", ".join(d.strftime("%d/%m/%Y") for d in sorted(self.except_))
+            parts.append(f"Excluded dates: {except_dates} (EXDATE - these dates will be excluded from recurrence)")
+
+        # Nested items
+        if self.NEST:
+            nested_with_dates = [n for n in self.NEST if n.on]
+            nested_without_dates = [n for n in self.NEST if not n.on]
+
+            if nested_with_dates:
+                parts.append(f"\nNested overrides ({len(nested_with_dates)} with specific dates):")
+                for i, nested in enumerate(nested_with_dates, 1):
+                    nested_desc = nested.describe_calendar_behavior(include_summary=False)
+                    # Indent nested descriptions
+                    nested_lines = nested_desc.split("\n")
+                    indented = "\n".join(f"    {line}" for line in nested_lines)
+                    parts.append(f"  Override {i}:\n{indented}")
+
+            if nested_without_dates:
+                parts.append(f"\nNested items without dates ({len(nested_without_dates)}):")
+                for i, nested in enumerate(nested_without_dates, 1):
+                    nested_desc = nested.describe_calendar_behavior(include_summary=False)
+                    nested_lines = nested_desc.split("\n")
+                    indented = "\n".join(f"    {line}" for line in nested_lines)
+                    parts.append(f"  Item {i}:\n{indented}")
+                parts.append("  Note: These nested items are not yet fully implemented in ICS generation")
+
+            # Explain how nested items work
+            if self.on or self.on_weeks:
+                parts.append(
+                    "\nCalendar behavior: Parent event uses RDATE (specific dates). "
+                    "Nested items create separate calendar events with their own RDATE lists."
+                )
+            else:
+                parts.append(
+                    "\nCalendar behavior: Parent event uses RRULE (weekly recurrence). "
+                    "Nested items create RECURRENCE-ID override events that replace specific "
+                    "instances of the weekly recurrence with different locations/times."
+                )
+
+        result = "\n".join(parts)
+
+        # Summary (only for top-level)
+        if include_summary:
+            summary_parts = [f"Calendar event type: {recurrence_type}"]
+            if self.NEST:
+                nested_count = len([n for n in self.NEST if n.on]) if self.NEST else 0
+                if nested_count > 0:
+                    summary_parts.append(f"Total events: 1 base + {nested_count} nested = {1 + nested_count} events")
+                else:
+                    summary_parts.append(f"Total events: 1 base event (+ {len(self.NEST)} nested items without dates)")
+            else:
+                summary_parts.append("Total events: 1 event")
+
+            result += "\n\n" + " | ".join(summary_parts)
+
+        return result
 
 
 Item.model_rebuild()
