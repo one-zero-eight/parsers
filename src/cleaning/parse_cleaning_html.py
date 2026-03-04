@@ -16,8 +16,13 @@ from src.logging_ import logger
 def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     # drop columns that contain only NaN
     df = df.dropna(axis="columns", how="all")
-    df = df.dropna(axis="index", how="all")
-    df = df.reindex()
+
+    # Drop trailing empty rows without removing empty rows in the middle (e.g. weeks w/o cleaning scheduled)
+    valid_rows = df.dropna(axis="index", how="all")
+    if not valid_rows.empty:
+        last_valid_index = valid_rows.index[-1]
+        df = df.loc[:last_valid_index]
+
     # now second row should be [Monday ПОНЕДЕЛЬНИК,Tuesday ВТОРНИК,Wednesday СРЕДА,Thursday ЧЕТВЕРГ,
     # Friday ПЯТНИЦА,Saturday СУББОТА,Sunday ВОСКРЕСЕНЬЕ]
     assert (
@@ -34,7 +39,12 @@ def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     ).all(), "Second row should be days of week"
 
     # first cell should be year
-    year = int(df.iloc[0, 0])
+    # if year is missing in the first cell, assume it's current one
+    year = df.iloc[0, 0]
+    if not np.isnan(year):
+        year = int(year)
+    else:
+        year = date.today().year
     # and all others in first row month - "Сентябрь/September"
     month = datetime.strptime(df.iloc[0, 1].split("/")[-1], "%B").month
     # 3, 5, 7, 9, 11... rows should be days of month (be careful at the end of month and start of month)
