@@ -65,7 +65,7 @@ electives: [
         "instructor": "Konstantin Kondyukov",
     },
     {
-        "alias": "ejdsf",
+        "alias": "ejd",
         "short_name": "EJDSF",
         "name": "Enterprise Java Development with Spring Framework",
         "instructor": "T-bank team",
