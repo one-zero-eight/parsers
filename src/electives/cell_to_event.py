@@ -88,6 +88,7 @@ def parse_one_line_in_value(
     - IQC (17:05-18:35) online
     - SMP online
     - ASEM (starts at 18:05) 101
+    - EJDSF Online STARTS AT 18:00
     """
     start = overall_start
     end = overall_end
@@ -107,17 +108,13 @@ def parse_one_line_in_value(
         ends_at = datetime.datetime.strptime(timeslot_m.group(2), "%H:%M").time()
         string = string.replace(timeslot_m.group(0), "")
 
-    # find starts at xx:xx
-    if timeslot_m := (
-        re.search(r"\(?starts at (\d{2}:\d{2})\)?", string) or re.search(r"\(?начало в (\d{2}:\d{2})\)?", string)
-    ):
+    # find starts at xx:xx (Case insensitive, handles English and Russian)
+    if timeslot_m := re.search(r"\(?(?:starts at|начало в)\s+(\d{2}:\d{2})\)?", string, flags=re.IGNORECASE):
         starts_at = datetime.datetime.strptime(timeslot_m.group(1), "%H:%M").time()
         string = string.replace(timeslot_m.group(0), "")
 
-    # find ends at xx:xx
-    if timeslot_m := re.search(r"\(?ends at (\d{2}:\d{2})\)?", string) or re.search(
-        r"\(?конец в (\d{2}:\d{2})\)?", string
-    ):
+    # find ends at xx:xx (Case insensitive, handles English and Russian)
+    if timeslot_m := re.search(r"\(?(?:ends at|конец в)\s+(\d{2}:\d{2})\)?", string, flags=re.IGNORECASE):
         ends_at = datetime.datetime.strptime(timeslot_m.group(1), "%H:%M").time()
         string = string.replace(timeslot_m.group(0), "")
 
