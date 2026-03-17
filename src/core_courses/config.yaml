@@ -4,8 +4,8 @@ semester_tag:
   name: Spring 2026
   type: semester
 targets:
-  - sheet_name: 1st block common (since 1901)
-    start_date: "2026-01-19"
+  - sheet_name: 2nd block common (since 1603)
+    start_date: "2026-03-16"
     end_date: "2026-05-03"
     override:
       - groups: []
