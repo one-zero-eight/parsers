@@ -140,8 +140,8 @@ class CoreCourseEvent(BaseModel):
                 warnings.warn(f"Location `{location}` is not parsed properly")
 
     def __str__(self):
-        timeslot = f"{self.start_time.strftime('%H:%M')}-{self.start_time.strftime('%H:%M')}"
-        return f"{self.course} / {self.group} | {self.subject} {timeslot}"
+        timeslot = f"{self.weekday + 1} {self.start_time.strftime('%H:%M')}-{self.start_time.strftime('%H:%M')}"
+        return f"[{self.course} / {self.group} | {self.subject} {timeslot} | {self.original_value[-1]}]"
 
 
 def convert_cell_to_event(
