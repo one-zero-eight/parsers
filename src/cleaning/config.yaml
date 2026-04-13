@@ -7,11 +7,11 @@ linen_change_entries:
   - location: 1 building
     rrule:
       freq: WEEKLY
-      byday: MO
+      byday: WE
   - location: 2 building
     rrule:
       freq: WEEKLY
-      byday: TU
+      byday: WE
   - location: 3 building (university)
     rrule:
       freq: WEEKLY
