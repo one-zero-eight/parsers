@@ -458,6 +458,22 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
     if from_parent:  # only one nesting level
         return None
 
+    # 316 (EXCEPT 16/04 108 ON 26/04)
+    __modifier_with_nested = rf"(?P<location>{_loc})\s*\(\s*(?P<modifier>{_mod_noname})\s+(?P<another>.+?)\s*\)"
+
+    def modifier_with_nested(y: str):
+        if m := re.fullmatch(__modifier_with_nested, y):
+            location = get_location(m.group("location"))
+            modifier = any_modifier(m.group("modifier"))
+            another = parse_location_string(m.group("another"), from_parent=True)
+            if modifier and another:
+                modifier.location = location
+                modifier.NEST = [another]
+                return modifier
+
+    if as_modifier_with_nested := modifier_with_nested(x):
+        return as_modifier_with_nested
+
     _simple_nest_pattern = rf"(?P<location>{_loc})\s*\(?(?P<rest>.+)\)?"
 
     def simple_nest(y: str):

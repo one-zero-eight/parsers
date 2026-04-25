@@ -226,6 +226,14 @@ cases = [
     ("460 EXCEPT 28.11 15.12", Item(location="460", except_=[ydate(day=28, month=11), ydate(day=15, month=12)])),
     ("303 КРОМЕ 18/11, 25/11", Item(location="303", except_=[ydate(day=18, month=11), ydate(day=25, month=11)])),
     (
+        "316 (EXCEPT 16/04 108 ON 26/04)",
+        Item(
+            location="316",
+            except_=[ydate(day=16, month=4)],
+            NEST=[Item(location="108", on=[ydate(day=26, month=4)])],
+        ),
+    ),
+    (
         "317 ON 15/02, 22/02, 15/03, 22/03, 5/04, 12/04, 19/04 (ONLINE ON 26/04)",
         Item(
             location="317",
