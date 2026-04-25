@@ -42,6 +42,7 @@ class Item(BaseModel):
 
     **Modifiers:**
     - `starts_from`: "STARTS FROM 21/09" → starts_from=date(2024, 9, 21)
+    - `ends_on`: "ENDS ON 12/03" or "ДО 12/03" or "КОНЕЦ 12/03" → ends_on=date(2024, 3, 12)
     - `starts_at`: "STARTS AT 18:00" → starts_at=time(18, 0)
     - `till`: "TILL 21:00" → till=time(21, 0)
     - `on_weeks`: "WEEK 1-3" → on_weeks=[1, 2, 3]
@@ -66,6 +67,7 @@ class Item(BaseModel):
     **Base Event Properties:**
     - `location`: Uses location_item.location or falls back to event.location
     - `starts`: Uses location_item.starts_from or falls back to event.starts
+    - `ends`: Uses location_item.ends_on or falls back to event.ends
     - `start_time`: Adjusted if location_item.starts_at exists (keeps duration)
     - `end_time`: Set to location_item.till if exists, otherwise calculated from start_time + duration
 
@@ -120,6 +122,8 @@ class Item(BaseModel):
     'Room number, "ONLINE", "ОНЛАЙН", "?", or slash-separated combinations like "106/313"'
     starts_from: date | None = None
     "Date when the event starts (overrides event.starts)"
+    ends_on: date | None = None
+    "Date when the event ends (overrides event.ends)"
     starts_at: time | None = None
     "Time when the event starts (overrides event.start_time, preserves duration)"
     till: time | None = None
@@ -155,6 +159,8 @@ class Item(BaseModel):
         # Start date override
         if self.starts_from:
             parts.append(f"Starts from: {self.starts_from.strftime('%d/%m/%Y')}")
+        if self.ends_on:
+            parts.append(f"Ends on: {self.ends_on.strftime('%d/%m/%Y')}")
 
         # Time overrides
         time_parts = []
@@ -302,6 +308,15 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
 
             return Item(starts_from=ydate(day=int(day), month=int(month)))
 
+    _ends_on_pattern = r"\(?(ENDS ON|ДО|КОНЕЦ)\s*(\d{1,2}[\/.]\d{1,2})\)?"
+
+    def ends_on(y: str):
+        if m := re.fullmatch(_ends_on_pattern, y):
+            _date = m.group(2).replace(".", "/")
+            day, month = _date.split(sep="/")
+
+            return Item(ends_on=ydate(day=int(day), month=int(month)))
+
     _starts_at_pattern = r"\(?(STARTS|STARTS AT|НАЧАЛО В|НАЧАЛО)\s*(\d{1,2}[:.]\d{1,2})\)?"
 
     def starts_at(y: str):
@@ -362,7 +377,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             return Item(except_=dates)
 
     _mod = combine_patterns(
-        [_starts_from_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern]
+        [_starts_from_pattern, _ends_on_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern]
     )
 
     def any_modifier(y: str):
@@ -370,6 +385,8 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             z = m.group(0)
             if as_starts_from := starts_from(z):
                 return as_starts_from
+            if as_ends_on := ends_on(z):
+                return as_ends_on
             if as_starts_at := starts_at(z):
                 return as_starts_at
             if as_week := week(z):

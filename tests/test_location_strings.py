@@ -24,6 +24,13 @@ cases = [
     ("STARTS FROM 21/09", Item(starts_from=ydate(day=21, month=9))),
     ("304 Starts from 19/09", Item(location="304", starts_from=ydate(day=19, month=9))),
     ("313 (STARTS FROM 21/09)", Item(location="313", starts_from=ydate(day=21, month=9))),
+    # ends_on modifier
+    ("ENDS ON 12/03", Item(ends_on=ydate(day=12, month=3))),
+    ("304 ENDS ON 19/09", Item(location="304", ends_on=ydate(day=19, month=9))),
+    ("313 (ENDS ON 21/09)", Item(location="313", ends_on=ydate(day=21, month=9))),
+    ("ДО 12/03", Item(ends_on=ydate(day=12, month=3))),
+    ("304 ДО 19/09", Item(location="304", ends_on=ydate(day=19, month=9))),
+    ("313 (КОНЕЦ 21/09)", Item(location="313", ends_on=ydate(day=21, month=9))),
     # starts_at modifier
     ("STARTS AT 16.10", Item(starts_at=time(hour=16, minute=10))),
     ("107 STARTS AT 16.10", Item(location="107", starts_at=time(hour=16, minute=10))),
@@ -259,6 +266,15 @@ cases = [
             starts_from=ydate(day=13, month=2),
             starts_at=time(hour=10, minute=0),
             till=time(hour=11, minute=30),
+        ),
+    ),
+    (
+        "ONLINE FROM 13/02 STARTS AT 10:00 ENDS ON 12/03",
+        Item(
+            location="ONLINE",
+            starts_from=ydate(day=13, month=2),
+            starts_at=time(hour=10, minute=0),
+            ends_on=ydate(day=12, month=3),
         ),
     ),
     # Test cases from Item class docstring examples

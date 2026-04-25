@@ -13,11 +13,11 @@ from .cell_to_event import CoreCourseEvent
 from .location_parser import Item
 
 
-def every_week_rule(event: CoreCourseEvent) -> icalendar.vRecur:
+def every_week_rule(event: CoreCourseEvent, *, ends: datetime.date | None = None) -> icalendar.vRecur:
     """
     Set recurrence rule and recurrence date for event
     """
-    until = datetime.datetime.combine(event.ends, datetime.time.min).astimezone(UTC)
+    until = datetime.datetime.combine(ends or event.ends, datetime.time.min).astimezone(UTC)
     rrule = icalendar.vRecur({"WKST": "MO", "FREQ": "WEEKLY", "INTERVAL": 1, "UNTIL": until})
     return rrule
 
@@ -100,6 +100,16 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
         yield vevent
         return
 
+    def clamp_ends(ends_on: datetime.date | None, fallback: datetime.date) -> datetime.date:
+        if ends_on is None:
+            return fallback
+        return min(ends_on, fallback)
+
+    def clamp_starts(starts_from: datetime.date | None, fallback: datetime.date) -> datetime.date:
+        if starts_from is None:
+            return fallback
+        return max(starts_from, fallback)
+
     def convert_weeks_on_to_only_on(item: Item):
         if item.on_weeks:
             on = []
@@ -115,7 +125,8 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
 
     location_item = event.location_item
     location = location_item.location or event.location
-    starts = location_item.starts_from or event.starts
+    starts = clamp_starts(location_item.starts_from, event.starts)
+    ends = clamp_ends(location_item.ends_on, event.ends)
     start_time = event.start_time
     end_time = event.end_time
     # move event start time to location starts_at time keeping same duration
@@ -130,6 +141,9 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
 
     convert_weeks_on_to_only_on(location_item)
     start_of_weekdays = nearest_weekday(starts, event.weekday)
+    if start_of_weekdays > ends:
+        logger.warning(f"Event {event} has no occurrences after applying location date bounds")
+        return
     dtstart = datetime.datetime.combine(start_of_weekdays, start_time, tzinfo=MOSCOW_TZ)
     dtend = datetime.datetime.combine(start_of_weekdays, end_time, tzinfo=MOSCOW_TZ)
     duration = dtend - dtstart
@@ -151,18 +165,16 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
             vevent.add(key, value)
 
     if location_item.on:  # only on specific dates, not every week
-        rdates = [
-            dtstart.replace(day=on.day, month=on.month) for on in location_item.on if event.starts <= on <= event.ends
-        ]
+        rdates = [dtstart.replace(day=on.day, month=on.month) for on in location_item.on if starts <= on <= ends]
         if not rdates:
             logger.warning(f"Event {event} has no rdates")
             return
         vevent.add("rdate", rdates)
         # dtstart and dtend should be adapted
-        dtstart = dtstart.replace(day=location_item.on[0].day, month=location_item.on[0].month)
-        dtend = dtend.replace(day=location_item.on[0].day, month=location_item.on[0].month)
+        dtstart = rdates[0]
+        dtend = dtend.replace(day=dtstart.day, month=dtstart.month)
     else:  # every week at the same time
-        vevent.add("rrule", every_week_rule(event))
+        vevent.add("rrule", every_week_rule(event, ends=ends))
 
     vevent["dtstart"] = icalendar.vDatetime(dtstart)
     vevent["dtend"] = icalendar.vDatetime(dtend)
@@ -196,8 +208,10 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
 
         for i, item in enumerate(nested_on):
             # override specific recurrence entry
+            item_starts = clamp_starts(item.starts_from, starts)
+            item_ends = clamp_ends(item.ends_on, ends)
             for j, on in enumerate(item.on):
-                if event.starts > on or on > event.ends:
+                if item_starts > on or on > item_ends:
                     continue
                 seq += 1
                 vevent_copy = vevent.copy()
@@ -229,13 +243,15 @@ def generate_vevents(event: CoreCourseEvent) -> Generator[icalendar.Event, None,
             vevent_copy = vevent.copy()
             vevent_copy["uid"] = get_uid(event, sequence=str(i))
             vevent_copy.pop("rdate")
-            rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on if event.starts <= on <= event.ends]
+            item_starts = clamp_starts(item.starts_from, starts)
+            item_ends = clamp_ends(item.ends_on, ends)
+            rdates = [dtstart.replace(day=on.day, month=on.month) for on in item.on if item_starts <= on <= item_ends]
             if not rdates:
                 continue
             vevent_copy.add("rdate", rdates)
             # adapt dtstart and dtend
-            _dtstart = dtstart.replace(day=item.on[0].day, month=item.on[0].month)
-            _dtend = dtend.replace(day=item.on[0].day, month=item.on[0].month)
+            _dtstart = rdates[0]
+            _dtend = dtend.replace(day=_dtstart.day, month=_dtstart.month)
             vevent_copy["dtstart"] = icalendar.vDatetime(_dtstart)
             vevent_copy["dtend"] = icalendar.vDatetime(_dtend)
             if item.location:
