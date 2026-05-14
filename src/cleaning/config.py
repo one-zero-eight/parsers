@@ -7,6 +7,7 @@ class LinenChangeEntry(BaseModel):
     name: str = "Linen change"
     location: str
     rrule: dict[str, str]
+    description: str
 
 
 class CleaningParserConfig(BaseModel):

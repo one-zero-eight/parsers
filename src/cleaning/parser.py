@@ -58,6 +58,7 @@ class CleaningParser:
                     summary=linen_change_entry.name,
                     location=linen_change_entry.location,
                     rrule=linen_change_entry.rrule,
+                    description=linen_change_entry.description,
                     date=self.config.start_date,
                 )
             )
@@ -107,7 +108,7 @@ class CleaningEvent(BaseModel):
 class LinenChangeEvent(BaseModel):
     summary: str
     date: datetime.date
-    description: str = "Working hours:\n13:00-17:00"
+    description: str
     location: str
     rrule: dict
 
