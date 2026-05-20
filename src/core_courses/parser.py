@@ -154,7 +154,10 @@ class CoreCoursesParser:
         :rtype: dict[str, pd.DataFrame]
         """
         # ---- Read xlsx file into dataframes ----
-        dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
+        # pandas 3 infers str columns; parser assigns time tuples into the time column (object in pandas 2)
+        dfs = pd.read_excel(
+            xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object
+        )
         # ---- Clean up dataframes ----
         merged_ranges: dict[str, list[tuple[int, int, int, int]]] = defaultdict(list)
         for target_sheet_name in target_sheet_names:
@@ -170,6 +173,8 @@ class CoreCoursesParser:
             df = df.replace(r"^\s*$", np.nan, regex=True)
             # ---- Strip, translate and remove trailing spaces ----
             df = df.map(prettify_string)
+            # pandas 3: DataFrame.map on strings infers StringDtype; parser stores time tuples in cells
+            df = df.astype(object)
             # ---- Update dataframe ----
             dfs[target_sheet_name] = df
 
@@ -363,6 +368,8 @@ class CoreCoursesParser:
         # fill nan values with previous value
         with pd.option_context("future.no_silent_downcasting", True):
             df_header = df_header.ffill(axis=1)
+        # pandas 3: NaN in column MultiIndex breaks groupby on row index levels
+        df_header = df_header.fillna("")
         multiindex = pd.MultiIndex.from_arrays(df_header.values, names=["course", "group"])
         df.columns = multiindex
 

@@ -24,6 +24,7 @@ from .cell_to_event import ElectiveEvent
 from .config import Elective
 
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
+IGNORED_CELL_VALUES = frozenset({"проект", "бжд", "а", "тсп", "физ"})
 
 
 class ElectiveCell(BaseModel):
@@ -116,7 +117,9 @@ class ElectiveParser:
         :rtype: dict[str, pd.DataFrame]
         """
         # ------- Read xlsx file into dataframes -------
-        dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None)
+        dfs = pd.read_excel(
+            xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object
+        )
 
         # ------- Clean up dataframes -------
         for target_sheet_name in target_sheet_names:
@@ -137,6 +140,7 @@ class ElectiveParser:
             df = df.dropna(how="all")
             # -------- Strip, translate and remove trailing spaces --------
             df = df.map(prettify_string)
+            df = df.astype(object)
             # -------- Update dataframe --------
             dfs[target_sheet_name] = df
 
@@ -371,6 +375,9 @@ class ElectiveParser:
             if isinstance(line, str) and "$" in line:
                 line, a1 = line.rsplit("$", maxsplit=1)
                 line = line.strip()
+
+            if line.casefold() in IGNORED_CELL_VALUES:
+                return None
 
             # First: split by newlines
             lines = [line_part.strip() for line_part in line.split("\n") if line_part.strip()]

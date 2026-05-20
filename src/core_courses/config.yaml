@@ -1,16 +1,11 @@
 spreadsheet_id: 1qetU56NwowMgHSD4ZBSFDO5omeO6FHPYSIz6sde86yo
 semester_tag:
-  alias: spring26
-  name: Spring 2026
+  alias: sum26
+  name: Sum 2026
   type: semester
 targets:
-  - sheet_name: 2nd block common (since 1603)
-    start_date: "2026-03-16"
-    end_date: "2026-05-03"
-    override:
-      - groups: []
-        courses: []
-        start_date: "2026-01-19"
-        end_date: "2026-05-03"
-save_ics_path: spring26/core-courses
-save_json_path: spring26/core-courses.json
+  - sheet_name: SUMMER
+    start_date: "2026-06-01"
+    end_date: "2026-08-02"
+save_ics_path: sum26/core-courses
+save_json_path: sum26/core-courses.json
