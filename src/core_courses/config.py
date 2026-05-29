@@ -27,7 +27,7 @@ class Target(BaseModel):
     "Datetime start"
     end_date: datetime.date
     "Datetime end"
-    override: list[Override]
+    override: list[Override] | None = None
     "Override"
 
 

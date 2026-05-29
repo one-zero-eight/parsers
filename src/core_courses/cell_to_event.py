@@ -193,11 +193,12 @@ def convert_cell_to_event(
 
         group, group_student_number = preprocess_group(group)
 
-        for override in target.override:
-            if group in override.groups or course in override.courses:
-                starts = override.start_date
-                ends = override.end_date
-                break
+        if target.override is not None:
+            for override in target.override:
+                if group in override.groups or course in override.courses:
+                    starts = override.start_date
+                    ends = override.end_date
+                    break
 
         event = CoreCourseEvent(
             start_time=start_time,
