@@ -1,0 +1,19 @@
+# This is a Docker Compose configuration for local use.
+
+# Run all services:
+# docker compose up --build --wait
+
+services:
+  parsers:
+    build: .
+    restart: no
+    env_file:
+      - path: ./.env
+        required: true
+    deploy:
+      # Change limits if project needs more RAM, try to stay within limits though
+      resources:
+        limits:
+          memory: 1g
+        reservations:
+          memory: 500m
