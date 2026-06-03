@@ -11,11 +11,11 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from src.logging_ import logger
+from .parser import log_parser_error
 
 from ..utils import MOSCOW_TZ, WEEKDAYS, remove_repeating_spaces_and_trailing_spaces
 from .config import Target
-from .location_parser import Item, parse_location_string
+from .location_parser import Item, extract_room_from_location_string, parse_location_string
 from .parser import CoreCourseCell
 
 
@@ -62,6 +62,8 @@ class CoreCourseEvent(BaseModel):
     "Event location (lower priority with respect to location_item)"
     location_item: Item | None = None
     "Parsed location item from location string"
+    dont_care_location_string: bool = Field(default=False, exclude=True)
+    "Keep room only from location string; ignore date/time modifiers"
     class_type: Literal["lec", "tut", "lab", "лек", "тут", "лаб"] | None = None
     "Event class type"
 
@@ -134,6 +136,13 @@ class CoreCourseEvent(BaseModel):
         self.location = location
 
         if not re.match(r"ELECTIVE COURSES? ON PHYSICAL EDUCATION", location):  # no need to parse this location
+            if self.dont_care_location_string:
+                self.location = extract_room_from_location_string(location)
+                self.location_item = None
+                if self.location is None:
+                    warnings.warn(f"Location `{location}` is not parsed properly")
+                return
+
             self.location_item = parse_location_string(location)
 
             if self.location_item is None:
@@ -151,6 +160,8 @@ def convert_cell_to_event(
     course: str,
     group: str,
     target: Target,
+    *,
+    dont_care_location_string: bool = False,
 ) -> CoreCourseEvent | None:
     """
     Convert cell to event
@@ -218,8 +229,9 @@ def convert_cell_to_event(
             subject=subject,
             teacher=teacher,
             location=location,
+            dont_care_location_string=dont_care_location_string,
         )
         return event
     except ValueError:
-        logger.error(f"Error parsing cell {cell.value} for {course} {group} {weekday} {timeslot}", exc_info=True)
+        log_parser_error(f"Error parsing cell {cell.value!r} for {course} {group} {weekday} {timeslot}")
         return None

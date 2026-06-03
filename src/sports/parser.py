@@ -4,8 +4,9 @@ from collections.abc import Iterable
 import aiohttp
 
 from src.logging_ import logger
+from src.core_courses.parser import parser_type
 from src.sports.config import SportsParserConfig
-from src.sports.models import ResponseSports, ResponseSportSchedule
+from src.sports.models import ResponseSports, ResponseSportSchedule, SportScheduleEvent
 
 
 class SportParser:
@@ -43,3 +44,18 @@ class SportParser:
         logger.debug("Got all sport schedules")
         sport_schedules = {sport_id: task.result() for sport_id, task in tasks.items()}
         return sport_schedules
+
+    async def load_sport_events(self) -> list[SportScheduleEvent]:
+        with parser_type("sports"):
+            get_sports_answer = await self.get_sports()
+            sports = {sport.id: sport for sport in get_sports_answer.sports}
+            sport_schedules = await self.batch_get_sport_schedule(sports.keys())
+
+        sport_events: list[SportScheduleEvent] = []
+        for sport_id, sport_schedule in sport_schedules.items():
+            sport = sports[sport_id]
+            sport_events.extend(
+                SportScheduleEvent(sport=sport, sport_schedule_event=sport_schedule_event)
+                for sport_schedule_event in sport_schedule.root
+            )
+        return sport_events

@@ -21,6 +21,119 @@ from pydantic import BaseModel, ConfigDict, Field
 from src.logging_ import logger
 
 from ..utils import WEEKDAYS, prettify_string, sanitize_sheet_name
+from .config import Target
+
+# ---------------------------------------------------------------------------
+# Parser error context (contextvars)
+# ---------------------------------------------------------------------------
+
+from contextlib import contextmanager
+from contextvars import ContextVar
+
+_parser_type: ContextVar[str | None] = ContextVar("parser_type", default=None)
+_sheet_name: ContextVar[str | None] = ContextVar("sheet_name", default=None)
+_cell: ContextVar[str | None] = ContextVar("cell", default=None)
+_stashed_context: ContextVar[tuple[str | None, str | None, str | None] | None] = ContextVar(
+    "stashed_parser_context", default=None
+)
+_error_logged: ContextVar[bool] = ContextVar("parser_error_logged", default=False)
+
+
+def _current_context() -> tuple[str | None, str | None, str | None]:
+    return (_parser_type.get(), _sheet_name.get(), _cell.get())
+
+
+def _stash_context_on_error() -> None:
+    parser_type, sheet, cell = _current_context()
+    stashed = _stashed_context.get()
+    if stashed is None:
+        _stashed_context.set((parser_type, sheet, cell))
+        return
+    old_parser_type, old_sheet, old_cell = stashed
+    _stashed_context.set(
+        (parser_type or old_parser_type, sheet or old_sheet, cell or old_cell)
+    )
+
+
+def _resolved_context() -> tuple[str | None, str | None, str | None]:
+    parser_type, sheet, cell = _current_context()
+    stashed = _stashed_context.get()
+    if stashed is None:
+        return parser_type, sheet, cell
+    stashed_parser_type, stashed_sheet, stashed_cell = stashed
+    return (
+        parser_type or stashed_parser_type,
+        sheet or stashed_sheet,
+        cell or stashed_cell,
+    )
+
+
+def _format_parser_error_message(message: str) -> str:
+    parts: list[str] = []
+    if message:
+        parts.append(message)
+    parser_type, sheet, cell = _resolved_context()
+    if parser_type:
+        parts.append(f"parser_type={parser_type}")
+    if sheet:
+        parts.append(f"sheet={sheet}")
+    if cell:
+        parts.append(f"cell={cell}")
+    return "; ".join(parts) if parts else "Parser error"
+
+
+def _clear_error_state() -> None:
+    _stashed_context.set(None)
+    _error_logged.set(False)
+
+
+def log_parser_error(message: str = "", *, exc_info: bool = True) -> None:
+    if _error_logged.get():
+        return
+    _error_logged.set(True)
+    logger.error(_format_parser_error_message(message), exc_info=exc_info)
+
+
+@contextmanager
+def parser_type(parser_type_name: str):
+    _clear_error_state()
+    token = _parser_type.set(parser_type_name)
+    try:
+        yield
+    except BaseException as exc:
+        _stash_context_on_error()
+        log_parser_error(str(exc))
+        raise
+    finally:
+        _parser_type.reset(token)
+        _clear_error_state()
+
+
+@contextmanager
+def parser_sheet(sheet_name: str):
+    token = _sheet_name.set(sheet_name)
+    try:
+        yield
+    except BaseException:
+        _stash_context_on_error()
+        raise
+    finally:
+        _sheet_name.reset(token)
+
+
+@contextmanager
+def parser_cell(cell: str | None):
+    token = _cell.set(cell)
+    try:
+        yield
+    except BaseException:
+        _stash_context_on_error()
+        raise
+    finally:
+        _cell.reset(token)
+
+
+# ---------------------------------------------------------------------------
 
 
 class CoreCourseCell(BaseModel):
@@ -53,6 +166,21 @@ class CoreCoursesParser:
         sheet_gids: dict[str, str],
         spreadsheet_id: str,
     ) -> Generator[list[DataFrame], None, None]:
+        with parser_type("core_courses"):
+            yield from self._pipeline(
+                xlsx_file,
+                original_target_sheet_names,
+                sheet_gids,
+                spreadsheet_id,
+            )
+
+    def _pipeline(
+        self,
+        xlsx_file: io.BytesIO,
+        original_target_sheet_names: list[str],
+        sheet_gids: dict[str, str],
+        spreadsheet_id: str,
+    ) -> Generator[list[DataFrame], None, None]:
         """
         Run pipeline and generate lists of GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) by sheet.
 
@@ -61,29 +189,11 @@ class CoreCoursesParser:
         ```python
         pipeline_result = parser.pipeline(xlsx, sheet_names, sheet_gids, spreadsheet_id)
 
-        def use(processed_column: pd.Series, some_variable: str):
-            \"\"\"
-            :param processed_column: series with processed cells (CoreCourseCell),
-                multiindex with (weekday, timeslot) and (course, group) as name
-            \"\"\"
-            (course, group) = processed_column.name
-            course: str
-            group: str
-
-            for (weekday, timeslot), cell in processed_column.items():
-                cell: CoreCourseCell | None
-                if cell is None:
-                    continue
-                weekday: str
-                timeslot: tuple[datetime.time, datetime.time]
-                yield cell # Do what you want with cell
-
-        all_cells = []
-        some_variable = "hello there"
+        from src.core_courses.parser import use
 
         for sheet_name, grouped_dfs_with_cells_list in zip(sheet_names, pipeline_result):
             for grouped_dfs_with_cells in grouped_dfs_with_cells_list:
-                series_with_generators = grouped_dfs_with_cells.apply(use, some_variable=some_variable)
+                series_with_generators = grouped_dfs_with_cells.apply(use, target=target)
                 for generator in series_with_generators:
                     generator: Generator[CoreCourseCell, None, None]
                     all_cells.extend(generator)
@@ -111,35 +221,39 @@ class CoreCoursesParser:
             sheet_df = dfs[target_sheet_name]
             google_sheet_name = sanitized_sheet_name_x_google_sheet_name.get(target_sheet_name)
             google_sheet_gid = sheet_gids.get(google_sheet_name) if google_sheet_name else None
+            sheet_label = google_sheet_name or target_sheet_name
 
-            time_columns_index = self.get_time_columns(sheet_df)
-            logger.info(f"Sheet Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
-            rightmost_column_index = self.get_rightmost_column_index(xlsx_file, target_sheet_name, time_columns_index)
-            logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
-
-            by_courses = self.split_df_by_courses(sheet_df, time_columns_index)
-            grouped_dfs_with_cells_lst = []
-            for course_df in by_courses:
-                # ---- Set course and group as header; weekday and timeslot as index ----
-                self.set_course_and_group_as_header(course_df)
-                self.set_weekday_and_time_as_index(course_df)
-                # ---- Convert it to GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) ----
-                grouped_dfs_with_cells = (
-                    course_df
-                    # ---- Group by weekday and time ----
-                    .groupby(level=[0, 1], sort=False)
-                    .agg(list)
-                    # ---- Convert each cell to CoreCourseCell ----
-                    .map(
-                        self.factory_core_course_cell,
-                        spreadsheet_id=spreadsheet_id,
-                        google_sheet_name=google_sheet_name,
-                        google_sheet_gid=google_sheet_gid,
-                    )
+            with parser_sheet(sheet_label):
+                time_columns_index = self.get_time_columns(sheet_df)
+                logger.info(f"Sheet Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
+                rightmost_column_index = self.get_rightmost_column_index(
+                    xlsx_file, target_sheet_name, time_columns_index
                 )
-                assert isinstance(grouped_dfs_with_cells, DataFrame)
-                grouped_dfs_with_cells_lst.append(grouped_dfs_with_cells)
-            yield grouped_dfs_with_cells_lst
+                logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
+
+                by_courses = self.split_df_by_courses(sheet_df, time_columns_index)
+                grouped_dfs_with_cells_lst = []
+                for course_df in by_courses:
+                    # ---- Set course and group as header; weekday and timeslot as index ----
+                    self.set_course_and_group_as_header(course_df)
+                    self.set_weekday_and_time_as_index(course_df)
+                    # ---- Convert it to GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) ----
+                    grouped_dfs_with_cells = (
+                        course_df
+                        # ---- Group by weekday and time ----
+                        .groupby(level=[0, 1], sort=False)
+                        .agg(list)
+                        # ---- Convert each cell to CoreCourseCell ----
+                        .map(
+                            self.factory_core_course_cell,
+                            spreadsheet_id=spreadsheet_id,
+                            google_sheet_name=google_sheet_name,
+                            google_sheet_gid=google_sheet_gid,
+                        )
+                    )
+                    assert isinstance(grouped_dfs_with_cells, DataFrame)
+                    grouped_dfs_with_cells_lst.append(grouped_dfs_with_cells)
+                yield grouped_dfs_with_cells_lst
 
     def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, target_sheet_names: list[str]
@@ -432,3 +546,36 @@ class CoreCoursesParser:
             split_df = df.iloc[:, start:end].copy()
             split_dfs.append(split_df)
         return split_dfs
+
+
+def use(
+    processed_column: pd.Series,
+    target: Target,
+) -> Generator["CoreCourseEvent"]:
+    from .cell_to_event import CoreCourseEvent, convert_cell_to_event
+
+    (course, group) = processed_column.name
+    course: str
+    group: str
+
+    for (weekday, timeslot), cell in processed_column.items():
+        cell: CoreCourseCell | None
+        if cell is None:
+            continue
+        weekday: str
+        timeslot: tuple[datetime.time, datetime.time]
+
+        with parser_cell(cell.a1):
+            event = convert_cell_to_event(
+                cell=cell,
+                weekday=weekday,
+                timeslot=timeslot,
+                course=course,
+                group=group,
+                target=target,
+            )
+
+        if event is None:
+            continue
+
+        yield event

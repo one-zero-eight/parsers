@@ -21,20 +21,7 @@ async def main():
     save_config = from_yaml(SaveConfig, config_path)
     async with aiohttp.ClientSession(headers={"Content-Type": "application/json"}) as session:
         parser = SportParser(session, parser_config)
-
-        get_sports_answer = await parser.get_sports()
-        sports = {sport.id: sport for sport in get_sports_answer.sports}
-        sport_schedules = await parser.batch_get_sport_schedule(sports.keys())
-
-    sport_events = []
-
-    for sport_id, sport_schedule in sport_schedules.items():
-        sport = sports[sport_id]
-        _sport_events = [
-            SportScheduleEvent(sport=sport, sport_schedule_event=sport_schedule_event)
-            for sport_schedule_event in sport_schedule.root
-        ]
-        sport_events.extend(_sport_events)
+        sport_events = await parser.load_sport_events()
 
     logger.info(f"Processed {len(sport_events)} sport events")
 

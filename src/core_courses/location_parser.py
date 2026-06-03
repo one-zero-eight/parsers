@@ -612,3 +612,11 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
         return as__6
 
     return None
+
+
+def extract_room_from_location_string(x: str) -> str | None:
+    """Parse a location string and return only the room, dropping all modifiers."""
+    item = parse_location_string(x)
+    if item is None:
+        return None
+    return item.location

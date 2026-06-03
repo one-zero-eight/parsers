@@ -7,5 +7,7 @@ targets:
   - sheet_name: SUMMER
     start_date: "2026-06-01"
     end_date: "2026-08-02"
+    override: []
 save_ics_path: sum26/core-courses
 save_json_path: sum26/core-courses.json
+dont_care_location_string: false

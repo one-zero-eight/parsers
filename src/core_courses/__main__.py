@@ -9,52 +9,13 @@ from pathlib import Path
 import pandas as pd
 
 from src.config_base import SaveConfig, from_yaml
-from src.core_courses.cell_to_event import CoreCourseEvent, convert_cell_to_event
+from src.core_courses.cell_to_event import CoreCourseEvent
 from src.core_courses.config import CoreCoursesConfig, Target
 from src.core_courses.event_to_ical import generate_vevents
-from src.core_courses.parser import CoreCourseCell, CoreCoursesParser
+from src.core_courses.parser import CoreCoursesParser, use
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups
 from src.logging_ import logger
 from src.utils import fetch_xlsx_spreadsheet, get_base_calendar, get_sheet_gids, sluggify
-
-
-def use(
-    processed_column: pd.Series,
-    target: Target,
-) -> Generator[CoreCourseEvent, None, None]:
-    """
-    Generate events from processed cells
-
-    :param processed_column: series with processed cells (CoreCourseCell),
-        multiindex with (weekday, timeslot) and (course, group) as name
-    :param target: target to generate events for (needed for start and end dates)
-    :return: generator of events
-    """
-    # -------- Iterate over processed cells --------
-    (course, group) = processed_column.name
-    course: str
-    group: str
-
-    for (weekday, timeslot), cell in processed_column.items():
-        cell: CoreCourseCell | None
-        if cell is None:
-            continue
-        weekday: str
-        timeslot: tuple[datetime.time, datetime.time]
-
-        event = convert_cell_to_event(
-            cell=cell,
-            weekday=weekday,
-            timeslot=timeslot,
-            course=course,
-            group=group,
-            target=target,
-        )
-
-        if event is None:
-            continue
-
-        yield event
 
 
 async def main():

@@ -51,3 +51,5 @@ class CoreCoursesConfig(BaseModel):
         "Elective courses on Physical Education",
         "Elective course on Physical Education",
     ]
+    dont_care_location_string: bool = False
+    "Parse location strings for room only; ignore ONLY ON, WEEK, EXCEPT, etc."
