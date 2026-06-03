@@ -6,7 +6,6 @@ import pandas as pd
 from pydantic import BaseModel, field_validator
 
 from ..utils import get_color, nearest_weekday
-from src.core_courses.parser import parser_type
 from .config import CleaningParserConfig
 from .parse_cleaning_html import get_xlsx_file, parse
 
@@ -16,10 +15,6 @@ class CleaningParser:
         self.config = config
     
     def get_cleaning_events(self) -> list["CleaningEvent"]:
-        with parser_type("cleaning"):
-            return self._get_cleaning_events()
-
-    def _get_cleaning_events(self) -> list["CleaningEvent"]:
         """
         Get cleaning events
 
@@ -48,10 +43,6 @@ class CleaningParser:
         return events
 
     def get_linen_change_schedule(self) -> list["LinenChangeEvent"]:
-        with parser_type("cleaning"):
-            return self._get_linen_change_schedule()
-
-    def _get_linen_change_schedule(self) -> list["LinenChangeEvent"]:
         """
         Get linen change schedule
 

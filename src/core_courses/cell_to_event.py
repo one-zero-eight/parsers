@@ -11,7 +11,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from .parser import log_parser_error
+from src.logging_ import logger
 
 from ..utils import MOSCOW_TZ, WEEKDAYS, remove_repeating_spaces_and_trailing_spaces
 from .config import Target
@@ -233,5 +233,5 @@ def convert_cell_to_event(
         )
         return event
     except ValueError:
-        log_parser_error(f"Error parsing cell {cell.value!r} for {course} {group} {weekday} {timeslot}")
+        logger.error(f"Error parsing cell {cell.value!r} for {course} {group} {weekday} {timeslot}", exc_info=True)
         return None

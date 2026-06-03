@@ -22,118 +22,6 @@ from src.logging_ import logger
 from ..utils import prettify_string, sanitize_sheet_name
 from .config import Elective
 
-# ---------------------------------------------------------------------------
-# Parser error context (contextvars)
-# ---------------------------------------------------------------------------
-
-from contextlib import contextmanager
-from contextvars import ContextVar
-
-_parser_type: ContextVar[str | None] = ContextVar("parser_type", default=None)
-_sheet_name: ContextVar[str | None] = ContextVar("sheet_name", default=None)
-_cell: ContextVar[str | None] = ContextVar("cell", default=None)
-_stashed_context: ContextVar[tuple[str | None, str | None, str | None] | None] = ContextVar(
-    "stashed_parser_context", default=None
-)
-_error_logged: ContextVar[bool] = ContextVar("parser_error_logged", default=False)
-
-
-def _current_context() -> tuple[str | None, str | None, str | None]:
-    return (_parser_type.get(), _sheet_name.get(), _cell.get())
-
-
-def _stash_context_on_error() -> None:
-    parser_type, sheet, cell = _current_context()
-    stashed = _stashed_context.get()
-    if stashed is None:
-        _stashed_context.set((parser_type, sheet, cell))
-        return
-    old_parser_type, old_sheet, old_cell = stashed
-    _stashed_context.set(
-        (parser_type or old_parser_type, sheet or old_sheet, cell or old_cell)
-    )
-
-
-def _resolved_context() -> tuple[str | None, str | None, str | None]:
-    parser_type, sheet, cell = _current_context()
-    stashed = _stashed_context.get()
-    if stashed is None:
-        return parser_type, sheet, cell
-    stashed_parser_type, stashed_sheet, stashed_cell = stashed
-    return (
-        parser_type or stashed_parser_type,
-        sheet or stashed_sheet,
-        cell or stashed_cell,
-    )
-
-
-def _format_parser_error_message(message: str) -> str:
-    parts: list[str] = []
-    if message:
-        parts.append(message)
-    parser_type, sheet, cell = _resolved_context()
-    if parser_type:
-        parts.append(f"parser_type={parser_type}")
-    if sheet:
-        parts.append(f"sheet={sheet}")
-    if cell:
-        parts.append(f"cell={cell}")
-    return "; ".join(parts) if parts else "Parser error"
-
-
-def _clear_error_state() -> None:
-    _stashed_context.set(None)
-    _error_logged.set(False)
-
-
-def log_parser_error(message: str = "", *, exc_info: bool = True) -> None:
-    if _error_logged.get():
-        return
-    _error_logged.set(True)
-    logger.error(_format_parser_error_message(message), exc_info=exc_info)
-
-
-@contextmanager
-def parser_type(parser_type_name: str):
-    _clear_error_state()
-    token = _parser_type.set(parser_type_name)
-    try:
-        yield
-    except BaseException as exc:
-        _stash_context_on_error()
-        log_parser_error(str(exc))
-        raise
-    finally:
-        _parser_type.reset(token)
-        _clear_error_state()
-
-
-@contextmanager
-def parser_sheet(sheet_name: str):
-    token = _sheet_name.set(sheet_name)
-    try:
-        yield
-    except BaseException:
-        _stash_context_on_error()
-        raise
-    finally:
-        _sheet_name.reset(token)
-
-
-@contextmanager
-def parser_cell(cell: str | None):
-    token = _cell.set(cell)
-    try:
-        yield
-    except BaseException:
-        _stash_context_on_error()
-        raise
-    finally:
-        _cell.reset(token)
-
-
-# ---------------------------------------------------------------------------
-
 BRACKETS_PATTERN = re.compile(r"\((.*?)\)")
 IGNORED_CELL_VALUES = frozenset({"проект", "бжд", "а", "тсп", "физ"})
 
@@ -175,23 +63,6 @@ class ElectiveParser:
         sheet_gids: dict[str, str],
         spreadsheet_id: str,
     ) -> Generator[list[Separation]]:
-        with parser_type("electives"):
-            yield from self._pipeline(
-                xlsx_file,
-                original_target_sheet_names,
-                electives,
-                sheet_gids,
-                spreadsheet_id,
-            )
-
-    def _pipeline(
-        self,
-        xlsx_file: io.BytesIO,
-        original_target_sheet_names: list[str],
-        electives: list[Elective],
-        sheet_gids: dict[str, str],
-        spreadsheet_id: str,
-    ) -> Generator[list[Separation]]:
         sanitized_target_sheet_names = [
             sanitize_sheet_name(target_sheet_name) for target_sheet_name in original_target_sheet_names
         ]
@@ -213,26 +84,25 @@ class ElectiveParser:
             google_sheet_gid = sheet_gids.get(google_sheet_name, "") if google_sheet_name else ""
             sheet_label = google_sheet_name or original_target_sheet_name
 
-            with parser_sheet(sheet_label):
-                by_weeks = self.split_df_by_weeks(sheet_df)
-                index = {}
-                for week_df in by_weeks:
-                    index.update(week_df.index.tolist())
-                big_df = pd.DataFrame(index=index)
-                big_df = pd.concat([big_df, *by_weeks], axis=1)
-                big_df.dropna(axis=1, how="all", inplace=True)
-                big_df.dropna(axis=0, how="all", inplace=True)
-                all_events = list(
-                    self.parse_df(
-                        big_df,
-                        electives,
-                        spreadsheet_id=spreadsheet_id,
-                        google_sheet_name=sheet_label,
-                        google_sheet_gid=google_sheet_gid,
-                    )
+            by_weeks = self.split_df_by_weeks(sheet_df)
+            index = {}
+            for week_df in by_weeks:
+                index.update(week_df.index.tolist())
+            big_df = pd.DataFrame(index=index)
+            big_df = pd.concat([big_df, *by_weeks], axis=1)
+            big_df.dropna(axis=1, how="all", inplace=True)
+            big_df.dropna(axis=0, how="all", inplace=True)
+            all_events = list(
+                self.parse_df(
+                    big_df,
+                    electives,
+                    spreadsheet_id=spreadsheet_id,
+                    google_sheet_name=sheet_label,
+                    google_sheet_gid=google_sheet_gid,
                 )
-                converted = self.events_to_separation_by_elective(all_events)
-                yield converted
+            )
+            converted = self.events_to_separation_by_elective(all_events)
+            yield converted
 
     def get_clear_dataframes_from_xlsx(
         self, xlsx_file: io.BytesIO, target_sheet_names: list[str]
@@ -572,5 +442,4 @@ class ElectiveParser:
                     continue
 
                 if isinstance(cell, ElectiveCell):
-                    with parser_cell(cell.a1):
-                        yield from convert_cell_to_events(cell, date, timeslot, electives)
+                    yield from convert_cell_to_events(cell, date, timeslot, electives)
