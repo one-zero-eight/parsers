@@ -59,29 +59,29 @@ def main():
     try:
         if parsed_data := asyncio.run(core_courses_main()):
             result["Core Courses"] = parsed_data
-    except Exception:
-        pass
+    except Exception as e:
+        logger.error(f"Failed to parse Core Courses: {e}", exc_info=True)
 
     logger.info("\nElectives:")
     try:
         if parsed_data := asyncio.run(electives_main()):
             result["Electives"] = parsed_data
-    except Exception:
-        pass
+    except Exception as e:
+        logger.error(f"Failed to parse Electives: {e}", exc_info=True)
 
     logger.info("\nSports:")
     try:
         if parsed_data := asyncio.run(sports_main()):
             result["Sports"] = parsed_data
-    except Exception:
-        pass
+    except Exception as e:
+        logger.error(f"Failed to parse Sports: {e}", exc_info=True)
 
     logger.info("\nCleaning:")
     try:
         if parsed_data := cleaning_main():
             result["Cleaning"] = parsed_data
-    except Exception:
-        pass
+    except Exception as e:
+        logger.error(f"Failed to parse Cleaning: {e}", exc_info=True)
 
     return result
 
