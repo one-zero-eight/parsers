@@ -5,8 +5,6 @@ import icalendar
 import pandas as pd
 from pydantic import BaseModel, field_validator, model_validator
 
-from src.core_courses.parser import parser_type
-
 from ..utils import get_color, nearest_weekday
 from .config import CleaningParserConfig
 from .parse_cleaning_html import get_xlsx_file, parse
