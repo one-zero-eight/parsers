@@ -5,58 +5,74 @@ cleaning_spreadsheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRFcOz
 cleaning_spreadsheet_id: 1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs
 linen_change_entries:
   - location: 1 building
-    rrule:
-      freq: WEEKLY
-      byday: WE
+    dates:
+      - "2026-06-10"
+      - "2026-06-24"
+      - "2026-07-08"
+      - "2026-07-22"
     description: | 
       Working hours: 
       14:00-17:00
   - location: 2 building
-    rrule:
-      freq: WEEKLY
-      byday: WE
+    dates:
+      - "2026-06-10"
+      - "2026-06-24"
+      - "2026-07-08"
+      - "2026-07-22"
     description: | 
       Working hours: 
       14:00-17:00
   - location: 3 building (university)
-    rrule:
-      freq: WEEKLY
-      byday: MO
+    dates:
+      - "2026-06-08"
+      - "2026-06-22"
+      - "2026-07-06"
+      - "2026-07-20"
     description: | 
       Working hours: 
       13:00-17:00
   - location: 3 building (college)
-    rrule:
-      freq: WEEKLY
-      byday: TU
+    dates:
+      - "2026-06-08"
+      - "2026-06-22"
+      - "2026-07-06"
+      - "2026-07-20"
     description: | 
       Working hours: 
       13:00-17:00
   - location: 4 building
-    rrule:
-      freq: WEEKLY
-      byday: MO
+    dates:
+      - "2026-06-08"
+      - "2026-06-22"
+      - "2026-07-06"
+      - "2026-07-20"
     description: | 
       Working hours: 
       13:00-17:00
   - location: 5 building
-    rrule:
-      freq: WEEKLY
-      byday: WE
+    dates:
+      - "2026-06-10"
+      - "2026-06-24"
+      - "2026-07-08"
+      - "2026-07-22"
     description: | 
       Working hours: 
       13:00-17:00
   - location: 6 building
-    rrule:
-      freq: WEEKLY
-      byday: MO
+    dates:
+      - "2026-06-08"
+      - "2026-06-22"
+      - "2026-07-06"
+      - "2026-07-20"
     description: | 
       Working hours: 
       13:00-17:00
   - location: 7 building
-    rrule:
-      freq: WEEKLY
-      byday: TU
+    dates:
+      - "2026-06-09"
+      - "2026-06-23"
+      - "2026-07-07"
+      - "2026-07-21"
     description: | 
       Working hours: 
       13:00-17:00
