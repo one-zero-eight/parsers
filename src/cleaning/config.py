@@ -6,7 +6,7 @@ from pydantic import BaseModel, model_validator
 class LinenChangeEntry(BaseModel):
     name: str = "Linen change"
     location: str
-    rrule: dict | None = None
+    rrule: dict[str, str | int | list[str]] | None = None
     dates: list[datetime.date] | None = None
     description: str
 

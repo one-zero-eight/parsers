@@ -87,6 +87,8 @@ def nearest_weekday(date: datetime.date, day: int | str | list[str]) -> datetime
     :rtype: datetime.date
     """
     if isinstance(day, list):
+        if not day:
+            raise ValueError("weekday list must not be empty")
         day = day[0]
 
     if isinstance(day, str):
