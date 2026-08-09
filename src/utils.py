@@ -74,7 +74,7 @@ async def get_sheet_gids(spreadsheet_id: str) -> dict[str, str]:
         return sheet_mappings
 
 
-def nearest_weekday(date: datetime.date, day: int | str) -> datetime.date:
+def nearest_weekday(date: datetime.date, day: int | str | list[str]) -> datetime.date:
     """
     Returns the date of the next given weekday after
     the given date. For example, the date of next Monday.
@@ -82,10 +82,15 @@ def nearest_weekday(date: datetime.date, day: int | str) -> datetime.date:
     :param date: date to start from
     :type date: datetime.date
     :param day: weekday to find (0 is Monday, 6 is Sunday)
-    :type day: int
+    :type day: int | str | list[str]
     :return: date of the next given weekday
     :rtype: datetime.date
     """
+    if isinstance(day, list):
+        if not day:
+            raise ValueError("weekday list must not be empty")
+        day = day[0]
+
     if isinstance(day, str):
         day = ["mo", "tu", "we", "th", "fr", "sa", "su"].index(day[:2].lower())
 

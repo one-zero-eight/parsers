@@ -111,7 +111,7 @@ class LinenChangeEvent(BaseModel):
     date: datetime.date
     description: str
     location: str
-    rrule: dict[str, str | int] | None = None
+    rrule: dict[str, str | int | list[str]] | None = None
     rdate: list[datetime.date] | None = None
 
     @model_validator(mode="after")
