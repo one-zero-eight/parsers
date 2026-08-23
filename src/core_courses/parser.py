@@ -108,16 +108,13 @@ class CoreCoursesParser:
                 self.set_course_and_group_as_header(course_df)
                 self.set_weekday_and_time_as_index(course_df)
                 # ---- Convert it to GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) ----
-                # pandas 2.x squeezes a single remaining course column to Series.
-                # Series.map() rejects factory kwargs; use() needs a DataFrame.
+                # pandas 2.x squeezes a single remaining course column to Series
+                # and drops the (course, group) MultiIndex (name becomes None → column 0).
+                original_columns = course_df.columns
                 grouped = course_df.groupby(level=[0, 1], sort=False).agg(list)
                 if isinstance(grouped, pd.Series):
-                    column_name = grouped.name
                     grouped = grouped.to_frame()
-                    if isinstance(column_name, tuple):
-                        grouped.columns = pd.MultiIndex.from_tuples(
-                            [column_name], names=["course", "group"]
-                        )
+                grouped.columns = original_columns
                 grouped_dfs_with_cells = grouped.map(
                     self.factory_core_course_cell,
                     spreadsheet_id=spreadsheet_id,
