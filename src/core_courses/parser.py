@@ -106,7 +106,10 @@ class CoreCoursesParser:
             for course_df in by_courses:
                 # ---- Set course and group as header; weekday and timeslot as index ----
                 self.set_course_and_group_as_header(course_df)
-                self.set_weekday_and_time_as_index(course_df)
+                course_df = self.set_weekday_and_time_as_index(course_df)
+                if course_df.shape[1] == 0:
+                    logger.warning("Skipping course block with no group columns after removing the time column")
+                    continue
                 # ---- Convert it to GroupBy with CoreCourseCell(value=[subject, teacher, location], a1=excel_range) ----
                 # pandas 2.x squeezes a single remaining course column to Series
                 # and drops the (course, group) MultiIndex (name becomes None → column 0).
@@ -287,7 +290,7 @@ class CoreCoursesParser:
 
         return merged_ranges
 
-    def set_weekday_and_time_as_index(self, df: pd.DataFrame, column: int = 0) -> None:
+    def set_weekday_and_time_as_index(self, df: pd.DataFrame, column: int = 0) -> pd.DataFrame:
         """
         Set time column as index and process it to datetime format
 
@@ -298,10 +301,11 @@ class CoreCoursesParser:
         """
 
         # get column view and iterate over it
-        df_column = df.iloc[:, column]
+        df_column = df.iloc[:, column].copy()
         df_column: pd.Series
-        # drop column
-        df.drop(df.columns[column], axis=1, inplace=True)
+        # Drop by position. Label drop removes every column that shares the time
+        # column's MultiIndex name (empty headers on AR+AS become ("", "")).
+        df = df.iloc[:, [i for i in range(df.shape[1]) if i != column]].copy()
         # fill nan values with previous value
         df_column.ffill(inplace=True)
 
@@ -333,6 +337,7 @@ class CoreCoursesParser:
         df.set_index(multiindex, inplace=True)
         # drop rows with weekday
         df.drop("delete", inplace=True, level=0)
+        return df
 
     def set_course_and_group_as_header(self, df: pd.DataFrame, rows: tuple = (0, 1)) -> None:
         """
