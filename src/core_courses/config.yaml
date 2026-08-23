@@ -1,13 +1,15 @@
-spreadsheet_id: 1qetU56NwowMgHSD4ZBSFDO5omeO6FHPYSIz6sde86yo
+spreadsheet_id: 14JhWp5BPsjkuC4PFAls1yzK4pxqSMeetLdSgNqL1QM8
 semester_tag:
-  alias: sum26
-  name: Sum 2026
+  alias: fall26
+  name: Fall 2026
   type: semester
 targets:
-  - sheet_name: SUMMER
-    start_date: "2026-06-01"
-    end_date: "2026-08-02"
-    override: []
-save_ics_path: sum26/core-courses
-save_json_path: sum26/core-courses.json
+  - sheet_name: "1st block common"
+    start_date: "2026-08-24"
+    end_date: "2026-12-27"
+  - sheet_name: "Ru Programs"
+    start_date: "2026-08-25"
+    end_date: "2026-12-27"
+save_ics_path: fall26/core-courses
+save_json_path: fall26/core-courses.json
 dont_care_location_string: false
