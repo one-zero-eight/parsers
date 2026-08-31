@@ -1,517 +1,172 @@
-spreadsheet_id: "12dyeop0R1zHHwOJbVJNU0j271cJLm85wJArD1X9BUQU"
+spreadsheet_id: "1WH_lkDhQVe2lj3l3uBHByM2mymeMbk1z1qUS8uMAy04"
 semester_tag:
-    alias: sum26
-    name: Sum 2026
+    alias: fall26
+    name: Fall 2026
     type: semester
 targets:
-    - sheet_name: "BS1 EN"
-    - sheet_name: "BS2 EN"
-    - sheet_name: "МОИИ, РО 1"
-    - sheet_name: "МОИИ, РО 2"
-    - sheet_name: "MS"
-save_ics_path: sum26/electives
-save_json_path: sum26/electives.json
+    - sheet_name: "Ru BS2"
+    - sheet_name: "EN BS3"
+    - sheet_name: "Ru BS3"
+save_ics_path: fall26/electives
+save_json_path: fall26/electives.json
 electives: [
-        # BS1 EN
-        #  Humanitarian
-        {
-            "alias": "BPM",
-            "short_name": "BPM",
-            "name": "Basics of Product Management",
-            "instructor": "Iuliia Metelskaia",
-        },
-        {
-            "alias": "BMIT",
-            "short_name": "BMIT",
-            "name": "Branding & Marketing in IT industry",
-            "instructor": "Marko Pezer",
-        },
-        {
-            "alias": "CC",
-            "short_name": "CC",
-            "name": "Conscious Communication (Business Rhetorics)",
-            "instructor": "Leonid Smelov",
-        },
-        {
-            "alias": "HBITT",
-            "short_name": "HBITT",
-            "name": "How to build an IT team",
-            "instructor": "Peter Grachev",
-        },
-        {
-            "alias": "HDSYG",
-            "short_name": "HDSYG",
-            "name": "How to Design and Sell Your Game: From Concept to Market",
-            "instructor": "Vyacheslav Utochkin",
-        },
-        {
-            "alias": "ICD",
-            "short_name": "ICD",
-            "name": "Introduction to Career Development for IT-specialist",
-            "instructor": "Gulnaz Ibragimova",
-        },
-        {
-            "alias": "Neg",
-            "short_name": "Neg",
-            "name": "Negotiations",
-            "instructor": "Gulnaz Ibragimova",
-        },
-        {
-            "alias": "PSE",
-            "short_name": "PSE",
-            "name": "Product Solutions Engineering",
-            "instructor": "Marat Gadzhimuradov",
-        },
-        {
-            "alias": "PITS",
-            "short_name": "PITS",
-            "name": "Psychology of IT-specialist",
-            "instructor": "Stepan Panarin",
-        },
-        {
-            "alias": "PSB",
-            "short_name": "PSB",
-            "name": "Public Speaking in Business",
-            "instructor": "Victoria Tsybova",
-        },
-        {
-            "alias": "RSITS",
-            "short_name": "RSITS",
-            "name": "Reading Skills for IT-specialist",
-            "instructor": "Victoriya Kondratieva",
-        },
-        {
-            "alias": "RPG",
-            "short_name": "RPG",
-            "name": "RPG Game Design",
-            "instructor": "Iskander Gataullin",
-        },
-        {
-            "alias": "UEFM",
-            "short_name": "UEFM",
-            "name": "Unit Economics, Financial Modelling & Business Valuation",
-            "instructor": "Maxim Popov",
-        },
-        {
-            "alias": "UXUI",
-            "short_name": "UXUI",
-            "name": "UX/UI Design",
-            "instructor": "Haytham Hamed",
-        },
-        #  Tech
+
+        # Ru BS2
 
         {
-            "alias": "IELC",
-            "short_name": "IELC",
-            "name": "Introduction to Electronic and Logic Circuits",
-            "instructor": "Al Badr Amer",
+            "alias": "ФА",
+            "short_name": "ФА",
+            "name": "Функциональный анализ",
+            "instructor": "Paul Ostanin",
         },
         {
-            "alias": "QSE",
-            "short_name": "QSE",
-            "name": "Quality Science and Engineering",
-            "instructor": "Salvatore Distefano",
+            "alias": "АКМ",
+            "short_name": "АКМ",
+            "name": "Аналитические и компьютерные модели",
+            "instructor": "Владимир Гордин",
         },
         {
-            "alias": "MALR",
-            "short_name": "MALR",
-            "name": "Methods and Approaches to the Launch of Robotic Systems / Методы и подходы к запуску роботизированных систем",
-            "instructor": "Ruslan Damindarov",
+            "alias": "DevOps",
+            "short_name": "DevOps",
+            "name": "DevOps",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "BA",
-            "short_name": "BA",
-            "name": "Business Analysis in IT",
-            "instructor": "Ivan Goskov",
+            "alias": "LCNC",
+            "short_name": "LCNC",
+            "name": "Low-code / No-code",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "CPPP",
-            "short_name": "CPPP",
-            "name": "Computer Physics with Python and Paraview",
-            "instructor": "Igor Ostanin",
+            "alias": "ПИ",
+            "short_name": "ПИ",
+            "name": "Программная инженерия",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "RTST",
-            "short_name": "RTST",
-            "name": "Real-Time Scheduling Theory",
-            "instructor": "Artem Burmyakov",
+            "alias": "СМУР",
+            "short_name": "СМУР",
+            "name": "Современные методы управления роботами",
+            "instructor": "Сергей Савин",
         },
-        {
-            "alias": "ИИС",
-            "short_name": "ИИС",
-            "name": "Инженерия интеллектуальных систем",
-            "instructor": "Marat Gadzhimuradov",
-        },
-        {
-            "alias": "CG",
-            "short_name": "CG",
-            "name": "Computational Geometry",
-            "instructor": "M. Reza Bahrami",
-        },
-        {
-            "alias": "I3DM",
-            "short_name": "I3DM",
-            "name": "Introduction to 3D Modeling",
-            "instructor": "Egor Dmitriev",
-        },
-        {
-            "alias": "IROS",
-            "short_name": "IROS",
-            "name": "Introduction to Robotics Operating System",
-            "instructor": "Ali Belal Jnadi",
-        },
-        {
-            "alias": "TC",
-            "short_name": "TC",
-            "name": "Tech communication",
-            "instructor": "Ekateryna Ushakova",
-        },
-        # BS2 EN
-        #  Humanitarian
-        {
-            "alias": "BPM",
-            "short_name": "BPM",
-            "name": "Basics of Product Management",
-            "instructor": "Iuliia Metelskaia",
-        },
-        {
-            "alias": "BMIT",
-            "short_name": "BMIT",
-            "name": "Branding & Marketing in IT industry",
-            "instructor": "Marko Pezer",
-        },
-        {
-            "alias": "CC",
-            "short_name": "CC",
-            "name": "Conscious Communication (Business Rhetorics)",
-            "instructor": "Leonid Smelov",
-        },
-        {
-            "alias": "HBITT",
-            "short_name": "HBITT",
-            "name": "How to build an IT team",
-            "instructor": "Peter Grachev",
-        },
-        {
-            "alias": "HDSYG",
-            "short_name": "HDSYG",
-            "name": "How to Design and Sell Your Game: From Concept to Market",
-            "instructor": "Vyacheslav Utochkin",
-        },
-        {
-            "alias": "ICD",
-            "short_name": "ICD",
-            "name": "Introduction to Career Development for IT-specialist",
-            "instructor": "Gulnaz Ibragimova",
-        },
-        {
-            "alias": "Neg",
-            "short_name": "Neg",
-            "name": "Negotiations",
-            "instructor": "Gulnaz Ibragimova",
-        },
-        {
-            "alias": "PSE",
-            "short_name": "PSE",
-            "name": "Product Solutions Engineering",
-            "instructor": "Marat Gadzhimuradov",
-        },
-        {
-            "alias": "PITS",
-            "short_name": "PITS",
-            "name": "Psychology of IT-specialist",
-            "instructor": "Stepan Panarin",
-        },
-        {
-            "alias": "PSB",
-            "short_name": "PSB",
-            "name": "Public Speaking in Business",
-            "instructor": "Victoria Tsybova",
-        },
-        {
-            "alias": "RSITS",
-            "short_name": "RSITS",
-            "name": "Reading Skills for IT-specialist",
-            "instructor": "Victoriya Kondratieva",
-        },
-        {
-            "alias": "RPG",
-            "short_name": "RPG",
-            "name": "RPG Game Design",
-            "instructor": "Iskander Gataullin",
-        },
-        {
-            "alias": "UEFM",
-            "short_name": "UEFM",
-            "name": "Unit Economics, Financial Modelling & Business Valuation",
-            "instructor": "Maxim Popov",
-        },
-        {
-            "alias": "UXUI",
-            "short_name": "UXUI",
-            "name": "UX/UI Design",
-            "instructor": "Haytham Hamed",
-        },
-        #  Tech
+
+        # EN BS3
 
         {
-            "alias": "DLS",
-            "short_name": "DLS",
-            "name": "Deep Learning for Search",
-            "instructor": "Albert Nasybullin",
+            "alias": "IDORS",
+            "short_name": "IDORS",
+            "name": "Industrial development, operation and reliability of software systems",
+            "instructor": "T-Bank team",
         },
         {
-            "alias": "IT9",
-            "short_name": "IT9",
-            "name": "IT Professions Lab: 9 Specializations in One Course",
-            "instructor": "T Bank",
+            "alias": "AEML",
+            "short_name": "AEML",
+            "name": "Introduction to Adaptive and Efficient Machine Learning",
+            "instructor": "Akdodshoev Ahmadsho",
         },
         {
-            "alias": "IDO",
-            "short_name": "IDO",
-            "name": "Introduction to DevOps",
-            "instructor": "Dmitriy Creed",
+            "alias": "SD",
+            "short_name": "SD",
+            "name": "Security for Developers: Code, Data, Peopl",
+            "instructor": "ООО \"СКАЕНГ\"",
         },
         {
-            "alias": "IDSO",
-            "short_name": "IDSO",
+            "alias": "DSO",
+            "short_name": "DSO",
             "name": "Introduction to DevSecOps",
-            "instructor": "Dmitriy Creed",
+            "instructor": "Dmitry Creed",
+        },
+        {
+            "alias": "SPDA",
+            "short_name": "SPDA",
+            "name": "Software Product Development and Analysis",
+            "instructor": "Konstantin Arkhipov",
+        },
+        {
+            "alias": "ISDP",
+            "short_name": "ISDP",
+            "name": "Industrial Software Development in Python: Key Technologies and Approaches",
+            "instructor": "German Tarasov",
         },
         {
             "alias": "ISRE",
             "short_name": "ISRE",
-            "name": "Introduction to Site Reliability Engineering (SRE)",
-            "instructor": "Dmitriy Creed",
+            "name": "Introduction to SRE",
+            "instructor": "Dmitry Creed",
         },
         {
-            "alias": "SA",
-            "short_name": "SA",
-            "name": "Statistics with Applications",
-            "instructor": "Nikola Zlatanov",
+            "alias": "OSINT",
+            "short_name": "OSINT",
+            "name": "Open Source Intelligence (OSINT)",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "SDHLA",
-            "short_name": "SDHLA",
-            "name": "System Design of High-Load Applications",
-            "instructor": "Oleg Mifle",
+            "alias": "BDA",
+            "short_name": "BDA",
+            "name": "Big Data Analytics",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "BA",
-            "short_name": "BA",
-            "name": "Business Analysis in IT",
-            "instructor": "Ivan Goskov",
+            "alias": "BSOC",
+            "short_name": "BSOC",
+            "name": "Building Security Operations Centers (SOC)",
+            "instructor": "Ростелеком",
         },
         {
-            "alias": "CG",
-            "short_name": "CG",
-            "name": "Computational Geometry",
-            "instructor": "M. Reza Bahrami",
+            "alias": "IDMG",
+            "short_name": "IDMG",
+            "name": "Intro to Development of Multiplayer Games",
+            "instructor": "ООО \"Кар Икс Технолоджис\"",
         },
         {
-            "alias": "IROS",
-            "short_name": "IROS",
-            "name": "Introduction to Robotics Operating System",
-            "instructor": "Ali Belal Jnadi",
+            "alias": "PBP",
+            "short_name": "PBP",
+            "name": "Postal Business Portal: How a Digital B2B Product Is Built and Evolves",
+            "instructor": "ООО \"Почтовые технологии\"",
         },
         {
-            "alias": "RTST",
-            "short_name": "RTST",
-            "name": "Real-Time Scheduling Theory",
-            "instructor": "Artem Burmyakov",
-        },
-        {
-            "alias": "TC",
-            "short_name": "TC",
-            "name": "Tech communication",
-            "instructor": "Ekateryna Ushakova",
-        },
-        {
-            "alias": "I3DM",
-            "short_name": "I3DM",
-            "name": "Introduction to 3D Modeling",
-            "instructor": "Egor Dmitriev",
-        },
-        # МОИИ, РО 1
-
-        {
-            "alias": "ОФ",
-            "short_name": "ОФ",
-            "name": "Общая физика (углубленный курс)",
-            "instructor": "Кирилл Клименок",
-        },
-        {
-            "alias": "ЭМ",
-            "short_name": "ЭМ",
-            "name": "Экономические механизмы и их наиболее актуальные приложения",
-            "instructor": "Александр Филатов",
-        },
-        {
-            "alias": "MALR",
-            "short_name": "MALR",
-            "name": "Methods and Approaches to the Launch of Robotic Systems / Методы и подходы к запуску роботизированных систем",
-            "instructor": "Ruslan Damindarov",
-        },
-        {
-            "alias": "BA",
-            "short_name": "BA",
-            "name": "Business Analysis in IT",
-            "instructor": "Ivan Goskov",
-        },
-        {
-            "alias": "ТФКП",
-            "short_name": "ТФКП",
-            "name": "Теория функций комплексного переменного",
-            "instructor": "Сергей Городецкий",
-        },
-        # МОИИ, РО 2
-
-        {
-            "alias": "УАИНС",
-            "short_name": "УАИНС",
-            "name": "Устойчивость и анализ искусственных нейронных сетей: теория и практика",
-            "instructor": "Oleg Kiselev",
-        },
-        {
-            "alias": "BA",
-            "short_name": "BA",
-            "name": "Business Analysis in IT",
-            "instructor": "Ivan Goskov",
-        },
-        {
-            "alias": "Топ",
-            "short_name": "Топ",
-            "name": "Топология",
-            "instructor": "Ramil Nasibullin",
-        },
-        {
-            "alias": "PMBA",
-            "short_name": "PMBA",
-            "name": "Project Management Beyond Agile",
-            "instructor": "Yegor Bugayenko",
-        },
-        {
-            "alias": "ВМ",
-            "short_name": "ВМ",
-            "name": "Вычислительная математика (углубленный курс)",
-            "instructor": "Yaroslav Kholodov",
-        },
-        {
-            "alias": "ИИС",
-            "short_name": "ИИС",
-            "name": "Инженерия интеллектуальных систем",
-            "instructor": "Marat Gadzhimuradov",
-        },
-        {
-            "alias": "CPPP",
-            "short_name": "CPPP",
-            "name": "Computer Physics with Python and Paraview",
-            "instructor": "Igor Ostanin",
-        },
-        {
-            "alias": "RTST",
-            "short_name": "RTST",
-            "name": "Real-Time Scheduling Theory",
-            "instructor": "Artem Burmyakov",
-        },
-        # MS
-        #  Tech
-        {
-            "alias": "IDO",
-            "short_name": "IDO",
+            "alias": "DO",
+            "short_name": "DO",
             "name": "Introduction to DevOps",
-            "instructor": "Dmitriy Creed",
+            "instructor": "Dmitry Creed",
         },
         {
-            "alias": "AAI",
-            "short_name": "AAI",
-            "name": "Agentic AI",
-            "instructor": "Alberto Sillitti",
+            "alias": "BDJ",
+            "short_name": "BDJ",
+            "name": "Basics of Backend Development in Java",
+            "instructor": "T-Bank team",
         },
         {
-            "alias": "EPSD",
-            "short_name": "EPSD",
-            "name": "Efficient Processes in Software Development",
-            "instructor": "Konstantin Chekin",
+            "alias": "IITS",
+            "short_name": "IITS",
+            "name": "Industrial IT Systems: From Idea to Operation",
+            "instructor": "ООО \"Почтовые технологии\"",
         },
-        {
-            "alias": "TSOML",
-            "short_name": "TSOML",
-            "name": "The Security and Interpretability of Machine Learning",
-            "instructor": "Bader Rasheed ",
-        },
-        {
-            "alias": "IDORU",
-            "short_name": "IDORU",
-            "name": "Introduction to DevOps (RU)",
-            "instructor": "Dmitriy Creed",
-        },
-        {
-            "alias": "MHDM",
-            "short_name": "MHDM",
-            "name": "Models of Human Decision-Making",
-            "instructor": "Vladimir Maksimenko",
-        },
-        {
-            "alias": "ANTO",
-            "short_name": "ANTO",
-            "name": "Advanced Nonlinear Trajectory Optimization",
-            "instructor": "Aleksei Shamraev",
-        },
-        #  Humanitarian
+
+        # EN BS3
 
         {
-            "alias": "СКЛК",
-            "short_name": "СКЛК",
-            "name": "Системная коммуникация для лидеров и команд",
-            "instructor": "Леонид Смелов",
+            "alias": "ВКЗ",
+            "short_name": "ВКЗ",
+            "name": "Введение в компьютерное зрение",
+            "instructor": "Илья Афанасьев",
         },
         {
-            "alias": "ITTM",
-            "short_name": "ITTM",
-            "name": "IT Team management",
-            "instructor": "Peter Grachev",
-        },
-        {
-            "alias": "Neg",
-            "short_name": "Neg",
-            "name": "Negotiations",
+            "alias": "ВВРК",
+            "short_name": "ВВРК",
+            "name": "Введение в развитие карьеры ИТ-специалиста",
             "instructor": "Gulnaz Ibragimova",
         },
         {
-            "alias": "БКСУ",
-            "short_name": "БКСУ",
-            "name": "Брендинг как система управления: от стратегии к внедрению",
-            "instructor": "Анатолий Рыжков",
+            "alias": "ПИТС",
+            "short_name": "ПИТС",
+            "name": "Психология ИТ-специалиста",
+            "instructor": "Alia Islamova",
         },
         {
-            "alias": "DT",
-            "short_name": "DT",
-            "name": "Design Thinking for IT specialist",
-            "instructor": "Roman Efimov",
-        },
-        {
-            "alias": "FMDP",
-            "short_name": "FMDP",
-            "name": "Financial Management in Digital Products",
-            "instructor": "Ivan Troshin",
-        },
-        {
-            "alias": "PS",
-            "short_name": "PS",
-            "name": "Public Speaking",
-            "instructor": "Elena Rakhamtullina",
-        },
-        {
-            "alias": "UXUI",
-            "short_name": "UXUI",
-            "name": "UX/UI Design",
-            "instructor": "Haytham Hamed",
-        },
-        {
-            "alias": "CDEDP",
-            "short_name": "CDEDP",
-            "name": "Cyberlaw: Data, Ethics and Digital Property",
-            "instructor": "Mikhail Zhuravlev",
+            "alias": "ПВВБ",
+            "short_name": "ПВВБ",
+            "name": "Публичные выступления в бизнесе",
+            "instructor": "Rakhmatullina Elena",
         },
     ]
