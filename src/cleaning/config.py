@@ -22,5 +22,4 @@ class LinenChangeEntry(BaseModel):
 class CleaningParserConfig(BaseModel):
     start_date: datetime.date
     cleaning_spreadsheet_url: str
-    cleaning_spreadsheet_id: str
     linen_change_entries: list[LinenChangeEntry]

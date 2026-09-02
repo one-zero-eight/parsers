@@ -2,7 +2,6 @@ save_ics_path: cleaning
 save_json_path: cleaning.json
 start_date: "2025-08-25"
 cleaning_spreadsheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRll5tP8-fP0mJ7jtfrDp71297dFn7dFtIki7gJ0H6i_7QXM5HSSGRo2FR_vo8XKv8MKMSIzyiJqIKQ/pubhtml
-cleaning_spreadsheet_id: 1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs
 linen_change_entries:
   - location: 1 building
     rrule:

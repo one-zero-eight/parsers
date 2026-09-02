@@ -2,12 +2,11 @@ import datetime
 from zlib import crc32
 
 import icalendar
-import pandas as pd
 from pydantic import BaseModel, field_validator, model_validator
 
 from ..utils import get_color, nearest_weekday
 from .config import CleaningParserConfig
-from .parse_cleaning_html import get_xlsx_file, parse
+from .parse_cleaning_html import parse_from_url
 
 
 class CleaningParser:
@@ -24,11 +23,7 @@ class CleaningParser:
 
         events = []
 
-        xlsx_file = get_xlsx_file(self.config.cleaning_spreadsheet_id)
-        dfs = pd.read_excel(xlsx_file, sheet_name=None, header=None)
-
-        parsed = parse(dfs)
-        events = []
+        parsed = parse_from_url(self.config.cleaning_spreadsheet_url)
 
         for location, dates in parsed.items():
             events.append(

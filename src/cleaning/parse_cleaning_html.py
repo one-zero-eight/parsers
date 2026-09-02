@@ -3,11 +3,9 @@ import re
 from collections import defaultdict
 from datetime import date, datetime
 
-import bs4
 import httpx
 import numpy as np
 import pandas as pd
-import requests
 from dateutil import relativedelta
 
 from src.logging_ import logger
@@ -45,8 +43,17 @@ def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
         year = int(year)
     else:
         year = date.today().year
-    # and all others in first row month - "Сентябрь/September"
-    month = datetime.strptime(df.iloc[0, 1].split("/")[-1], "%B").month
+
+    # Parse month(s) from header cell - can be single "Сентябрь/September"
+    # or multi-month "Сентябрь/September-Октябрь/October"
+    month_header = df.iloc[0, 1]
+    # Split by '-' to handle multi-month headers, then extract English month name after '/'
+    month_parts = month_header.split("-")
+    months = []
+    for part in month_parts:
+        english_name = part.strip().split("/")[-1].strip()
+        months.append(datetime.strptime(english_name, "%B").month)
+
     # 3, 5, 7, 9, 11... rows should be days of month (be careful at the end of month and start of month)
     days = df.iloc[2::2, :]
     # drop first, second and days rows
@@ -54,27 +61,51 @@ def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     days = days.astype(int).values.flatten()
     first_day_large_than_15 = days[0] > 15
     # Split the list based on monotonic increasing by one
-    split_lists = np.split(days, np.where(np.diff(days) != 1)[0] + 1)
-    prev = cur = next = []
-    if len(split_lists) == 1:
-        cur = split_lists[0]
-    elif len(split_lists) == 2:
-        if first_day_large_than_15:
-            prev, cur = split_lists
-        else:
-            cur, next = split_lists
-    elif len(split_lists) == 3:
-        prev, cur, next = split_lists
-    else:
-        raise ValueError("Too many splits")
-    days_as_dates = []
-    current_month_date = date(year, month, 1)
-    previous_month_date = current_month_date - relativedelta.relativedelta(months=1)
-    next_month_date = current_month_date + relativedelta.relativedelta(months=1)
+    split_lists = list(np.split(days, np.where(np.diff(days) != 1)[0] + 1))
 
-    days_as_dates.extend([previous_month_date.replace(day=day) for day in prev])
-    days_as_dates.extend([current_month_date.replace(day=day) for day in cur])
-    days_as_dates.extend([next_month_date.replace(day=day) for day in next])
+    # Determine which splits are prev month trailing, main months, and next month leading
+    # If first split starts with a high day number (>15), it's from the previous month
+    has_prev = first_day_large_than_15
+    # Expected number of main month splits equals number of months in the header
+    expected_main = len(months)
+    expected_total = expected_main + (1 if has_prev else 0)
+    has_next = len(split_lists) > expected_total
+
+    prev_splits = []
+    main_splits = []
+    next_splits = []
+
+    idx = 0
+    if has_prev:
+        prev_splits.append(split_lists[idx])
+        idx += 1
+    for _ in range(expected_main):
+        if idx < len(split_lists):
+            main_splits.append(split_lists[idx])
+            idx += 1
+    while idx < len(split_lists):
+        next_splits.append(split_lists[idx])
+        idx += 1
+
+    first_month_date = date(year, months[0], 1)
+    previous_month_date = first_month_date - relativedelta.relativedelta(months=1)
+
+    days_as_dates = []
+
+    # Previous month trailing days
+    for s in prev_splits:
+        days_as_dates.extend([previous_month_date.replace(day=int(day)) for day in s])
+
+    # Main months
+    for i, s in enumerate(main_splits):
+        month_date = date(year, months[i], 1)
+        days_as_dates.extend([month_date.replace(day=int(day)) for day in s])
+
+    # Next month leading days
+    last_month_date = date(year, months[-1], 1)
+    next_month_date = last_month_date + relativedelta.relativedelta(months=1)
+    for s in next_splits:
+        days_as_dates.extend([next_month_date.replace(day=int(day)) for day in s])
 
     # flatten df
     df = df.values.flatten()
@@ -107,57 +138,69 @@ def parse(dfs: dict[str, pd.DataFrame]) -> dict[str, list[date]]:
     return entries
 
 
-def parse_from_url(url: str) -> dict[str, list[date]]:
-    with requests.Session() as session:
-        with session.get(url) as response:
-            html = response.text
-            soup = bs4.BeautifulSoup(html, "html.parser")
-            # <div id="sheets-viewport" class="">
-            div = soup.find("div", id="sheets-viewport")
-            entries: dict[str, list[date]] = defaultdict(list)
-            # iterate over children divs
-            for child in div.children:
-                if isinstance(child, bs4.Tag):
-                    table = child.find("table")
-
-                    with io.StringIO() as f:
-                        f.write(str(table))
-                        f.seek(0)
-                        df = pd.read_html(f, flavor="bs4")
-                    assert len(df) == 1
-                    df = df[0]
-                    # drop first column
-                    df = df.drop(df.columns[0], axis=1)
-                    process_dataframe(df, entries)
-
-            return entries
-
-
-def get_xlsx_file(spreadsheet_id: str) -> io.BytesIO:
+def _extract_sheet_gids(pubhtml_url: str) -> list[str]:
     """
-    Export xlsx file from Google Sheets and return it as BytesIO object.
+    Fetch the pubhtml page and extract sheet GIDs from the embedded JavaScript.
 
-    :param spreadsheet_id: id of Google Sheets spreadsheet
-    :return: xlsx file as BytesIO object
+    The pubhtml page contains JS like:
+        items.push({name: "...", ..., gid: "1174170404", ...});
     """
-    # ------- Get data from Google Sheets -------
-    logger.debug("Getting dataframe from Google Sheets...")
-    # ------- Create url for export -------
-    spreadsheet_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}"
-    export_url = spreadsheet_url + "/export?format=xlsx"
-    # ------- Export xlsx file -------
-    logger.debug(f"Exporting from URL: {export_url}")
-    response = httpx.get(export_url, follow_redirects=True)
-    logger.debug(f"Response status: {response.status_code}")
+    logger.debug(f"Fetching pubhtml page: {pubhtml_url}")
+    response = httpx.get(pubhtml_url, follow_redirects=True)
     response.raise_for_status()
-    # ------- Return xlsx file as BytesIO object -------
-    return io.BytesIO(response.content)
+    html = response.text
+
+    gids = re.findall(r'gid:\s*"(\d+)"', html)
+    logger.debug(f"Found {len(gids)} sheet GIDs: {gids}")
+    return gids
+
+
+def _pubhtml_to_base_url(pubhtml_url: str) -> str:
+    """
+    Convert a pubhtml URL to the base URL for CSV export.
+
+    E.g. '.../pubhtml' -> '.../pub'
+         '.../pubhtml?...' -> '.../pub'
+    """
+    # Strip query params and /pubhtml suffix
+    base = pubhtml_url.split("?")[0]
+    if base.endswith("/pubhtml"):
+        base = base[: -len("/pubhtml")] + "/pub"
+    return base
+
+
+def parse_from_url(url: str) -> dict[str, list[date]]:
+    """
+    Parse cleaning schedule from a Google Sheets pubhtml URL.
+
+    Extracts sheet GIDs from the pubhtml page, then fetches each sheet
+    as CSV and parses it.
+
+    :param url: Google Sheets pubhtml URL
+    :return: dict mapping location to list of cleaning dates
+    """
+    gids = _extract_sheet_gids(url)
+    if not gids:
+        logger.warning("No sheet GIDs found in pubhtml page")
+        return {}
+
+    base_url = _pubhtml_to_base_url(url)
+    entries: dict[str, list[date]] = defaultdict(list)
+
+    for gid in gids:
+        csv_url = f"{base_url}?gid={gid}&single=true&output=csv"
+        logger.debug(f"Fetching CSV: {csv_url}")
+        response = httpx.get(csv_url, follow_redirects=True)
+        response.raise_for_status()
+
+        df = pd.read_csv(io.StringIO(response.text), header=None)
+        df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
+        process_dataframe(df, entries)
+
+    return entries
 
 
 if __name__ == "__main__":
-    # https://docs.google.com/spreadsheets/d/1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs/export?format=xlsx
-    spreadsheet_id = "1xXnyinI1sNQ3ZKTPlKlqJKt4685oCz2R2LzlgEUztKs"
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRll5tP8-fP0mJ7jtfrDp71297dFn7dFtIki7gJ0H6i_7QXM5HSSGRo2FR_vo8XKv8MKMSIzyiJqIKQ/pubhtml"
+    print(parse_from_url(url))
 
-    xlsx_file = get_xlsx_file(spreadsheet_id)
-    dfs = pd.read_excel(xlsx_file, sheet_name=None, header=None)
-    print(parse(dfs))
