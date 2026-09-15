@@ -23,39 +23,39 @@ linen_change_entries:
       byday: MO
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
   - location: 3 building (college)
     rrule:
       freq: WEEKLY
       byday: TU
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
   - location: 4 building
     rrule:
       freq: WEEKLY
       byday: MO
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
   - location: 5 building
     rrule:
       freq: WEEKLY
       byday: WE
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
   - location: 6 building
     rrule:
       freq: WEEKLY
       byday: MO
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
   - location: 7 building
     rrule:
       freq: WEEKLY
       byday: TU
     description: | 
       Working hours: 
-      13:00-17:00
+      14:00-17:00
