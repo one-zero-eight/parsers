@@ -221,6 +221,59 @@ cases = [
         Item(location="421", NEST=[Item(location="316", starts_from=ydate(day=31, month=10))]),
     ),
     ("460 EXCEPT 28/11", Item(location="460", except_=[ydate(day=28, month=11)])),
+    (
+        "307 (108 ON 21/10, 105 ON 28/10) EXCEPT 14/10",
+        Item(
+            location="307",
+            except_=[ydate(day=14, month=10)],
+            NEST=[
+                Item(location="108", on=[ydate(day=21, month=10)]),
+                Item(location="105", on=[ydate(day=28, month=10)]),
+            ],
+        ),
+    ),
+    (
+        "307 (107 ON 29/10) (318 ONLY ON 08/10)",
+        Item(
+            location="307",
+            NEST=[
+                Item(location="107", on=[ydate(day=29, month=10)]),
+                Item(location="318", on=[ydate(day=8, month=10)]),
+            ],
+        ),
+    ),
+    (
+        "106 (105 ON 29/10) (ONLINE ON 08/10)",
+        Item(
+            location="106",
+            NEST=[
+                Item(location="105", on=[ydate(day=29, month=10)]),
+                Item(location="ONLINE", on=[ydate(day=8, month=10)]),
+            ],
+        ),
+    ),
+    (
+        "307 (101 ON 29/10) (460 ONLY ON 08/10)",
+        Item(
+            location="307",
+            NEST=[
+                Item(location="101", on=[ydate(day=29, month=10)]),
+                Item(location="460", on=[ydate(day=8, month=10)]),
+            ],
+        ),
+    ),
+    (
+        "307 (107 ON 01/10, 15/10, 318 ON 08/10) (ONLINE ON 22/10) EXCEPT 29/10",
+        Item(
+            location="307",
+            except_=[ydate(day=29, month=10)],
+            NEST=[
+                Item(location="107", on=[ydate(day=1, month=10), ydate(day=15, month=10)]),
+                Item(location="318", on=[ydate(day=8, month=10)]),
+                Item(location="ONLINE", on=[ydate(day=22, month=10)]),
+            ],
+        ),
+    ),
     ("303 КРОМЕ 18/11", Item(location="303", except_=[ydate(day=18, month=11)])),
     ("314 EXCEPT 30/01 06/02", Item(location="314", except_=[ydate(day=30, month=1), ydate(day=6, month=2)])),
     ("460 EXCEPT 28.11 15.12", Item(location="460", except_=[ydate(day=28, month=11), ydate(day=15, month=12)])),
@@ -308,3 +361,15 @@ def test_location_parser(input_: str, desired: Item):
     _ = TestCase()
     _.maxDiff = None
     _.assertDictEqual(result.model_dump(exclude_none=True), desired.model_dump(exclude_none=True))
+
+
+@pytest.mark.parametrize(
+    "input_",
+    [
+        "307 (107 ON 29/10) (UNKNOWN ON 08/10)",
+        "307 (107 ON 29/10, INVALID) EXCEPT 14/10",
+        "307 (107 ON 29/10) (318 ONLY ON 08/10) UNEXPECTED",
+    ],
+)
+def test_location_parser_rejects_invalid_overrides(input_: str):
+    assert parse_location_string(input_) is None

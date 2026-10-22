@@ -619,6 +619,31 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
     if as__6 := _6(x):
         return as__6
 
+    # Parenthesized room overrides, optionally followed by a base-event exclusion:
+    # 307 (107 ON 29/10) (318 ONLY ON 08/10)
+    # 307 (108 ON 21/10, 105 ON 28/10) EXCEPT 14/10
+    _parenthesized_overrides = (
+        rf"(?P<location>{_loc})\s*(?P<overrides>(?:\([^()]+\)\s*)+)"
+        rf"(?P<exclusion>{_except_pattern})?"
+    )
+    if m := re.fullmatch(_parenthesized_overrides, x):
+        nested_pattern = rf"{_loc}\s+{_mod_noname}"
+        nested_list_pattern = rf"{nested_pattern}(?:\s*,\s*{nested_pattern})*"
+        nested_items = []
+        for group in re.finditer(r"\(([^()]+)\)", m.group("overrides")):
+            contents = group.group(1).strip()
+            if not re.fullmatch(nested_list_pattern, contents):
+                return None
+            for nested_match in re.finditer(nested_pattern, contents):
+                nested = parse_location_string(nested_match.group(0), from_parent=True)
+                if nested is None:
+                    return None
+                nested_items.append(nested)
+        item = except_(m.group("exclusion")) if m.group("exclusion") else Item()
+        item.location = get_location(m.group("location"))
+        item.NEST = nested_items
+        return item
+
     return None
 
 
