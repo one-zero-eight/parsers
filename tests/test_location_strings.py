@@ -30,6 +30,7 @@ cases = [
     ("313 (ENDS ON 21/09)", Item(location="313", ends_on=ydate(day=21, month=9))),
     ("ДО 12/03", Item(ends_on=ydate(day=12, month=3))),
     ("304 ДО 19/09", Item(location="304", ends_on=ydate(day=19, month=9))),
+    ("ОНЛАЙН ДО 12.03", Item(location="ОНЛАЙН", ends_on=ydate(day=12, month=3))),
     ("313 (КОНЕЦ 21/09)", Item(location="313", ends_on=ydate(day=21, month=9))),
     # starts_at modifier
     ("STARTS AT 16.10", Item(starts_at=time(hour=16, minute=10))),
@@ -74,7 +75,14 @@ cases = [
     # till modifier
     ("TILL 18:00", Item(till=time(hour=18, minute=0))),
     ("107 (TILL 18:00)", Item(location="107", till=time(hour=18, minute=0))),
+    ("ДО 13:00", Item(till=time(hour=13, minute=0))),
+    ("ОНЛАЙН ДО 13:00", Item(location="ОНЛАЙН", till=time(hour=13, minute=0))),
+    ("107 (ДО 13:00)", Item(location="107", till=time(hour=13, minute=0))),
     # Multiple modifiers
+    (
+        "ОНЛАЙН НАЧАЛО В 11:00 ДО 13:00",
+        Item(location="ОНЛАЙН", starts_at=time(hour=11, minute=0), till=time(hour=13, minute=0)),
+    ),
     (
         "STARTS AT 18:00 TILL 21:00",
         Item(starts_at=time(hour=18, minute=0), till=time(hour=21, minute=0)),

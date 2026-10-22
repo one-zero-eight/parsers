@@ -44,7 +44,7 @@ class Item(BaseModel):
     - `starts_from`: "STARTS FROM 21/09" → starts_from=date(2024, 9, 21)
     - `ends_on`: "ENDS ON 12/03" or "ДО 12/03" or "КОНЕЦ 12/03" → ends_on=date(2024, 3, 12)
     - `starts_at`: "STARTS AT 18:00" → starts_at=time(18, 0)
-    - `till`: "TILL 21:00" → till=time(21, 0)
+    - `till`: "TILL 21:00" or "ДО 21:00" → till=time(21, 0)
     - `on_weeks`: "WEEK 1-3" → on_weeks=[1, 2, 3]
     - `on`: "ON 13/09, 20/09" → on=[date(2024, 9, 13), date(2024, 9, 20)]
     - `except_`: "EXCEPT 30/01, 06/02" → except_=[date(2024, 1, 30), date(2024, 2, 6)]
@@ -354,7 +354,7 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             ]
             return Item(on=dates)
 
-    _till_pattern = r"\(?TILL\s*(?P<time>\d{1,2}[:.]\d{1,2})\)?"
+    _till_pattern = r"\(?(?:TILL|ДО)\s*(?P<time>\d{1,2}[:.]\d{1,2})\)?"
 
     def till(y: str):
         if m := re.fullmatch(_till_pattern, y):
