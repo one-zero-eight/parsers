@@ -377,7 +377,15 @@ def parse_location_string(x: str, from_parent: bool = False) -> Item | None:
             return Item(except_=dates)
 
     _mod = combine_patterns(
-        [_starts_from_pattern, _ends_on_pattern, _starts_at_pattern, _week_pattern, _on_pattern, _till_pattern, _except_pattern]
+        [
+            _starts_from_pattern,
+            _ends_on_pattern,
+            _starts_at_pattern,
+            _week_pattern,
+            _on_pattern,
+            _till_pattern,
+            _except_pattern,
+        ]
     )
 
     def any_modifier(y: str):

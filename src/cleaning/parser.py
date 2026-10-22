@@ -12,7 +12,7 @@ from .parse_cleaning_html import parse_from_url
 class CleaningParser:
     def __init__(self, config: CleaningParserConfig):
         self.config = config
-    
+
     def get_cleaning_events(self) -> list["CleaningEvent"]:
         """
         Get cleaning events

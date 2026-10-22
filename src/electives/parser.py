@@ -120,9 +120,7 @@ class ElectiveParser:
         :rtype: dict[str, pd.DataFrame]
         """
         # ------- Read xlsx file into dataframes -------
-        dfs = pd.read_excel(
-            xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object
-        )
+        dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object)
 
         # ------- Clean up dataframes -------
         for target_sheet_name in target_sheet_names:
@@ -354,7 +352,7 @@ class ElectiveParser:
 
         _elective_short_names = [e.short_name for e in electives]
         has_electives = bool(_elective_short_names)
-        
+
         # Compile pattern only if we have electives (will be checked before use)
         _elective_line_pattern: re.Pattern[str] | None = None
         if has_electives:

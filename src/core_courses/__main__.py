@@ -1,16 +1,13 @@
 import asyncio
-import datetime
 import json
 import os
 from collections.abc import Generator
 from itertools import groupby
 from pathlib import Path
 
-import pandas as pd
-
 from src.config_base import SaveConfig, from_yaml
 from src.core_courses.cell_to_event import CoreCourseEvent
-from src.core_courses.config import CoreCoursesConfig, Target
+from src.core_courses.config import CoreCoursesConfig
 from src.core_courses.event_to_ical import generate_vevents
 from src.core_courses.parser import CoreCoursesParser, use
 from src.innohassle import CreateEventGroup, CreateTag, InNoHassleEventsClient, Output, update_inh_event_groups

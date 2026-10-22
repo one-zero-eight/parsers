@@ -10,6 +10,7 @@ import re
 from collections import defaultdict
 from collections.abc import Generator
 from itertools import pairwise
+from typing import TYPE_CHECKING
 
 import numpy as np
 import openpyxl
@@ -22,6 +23,9 @@ from src.logging_ import logger
 
 from ..utils import WEEKDAYS, prettify_string, sanitize_sheet_name
 from .config import Target
+
+if TYPE_CHECKING:
+    from .cell_to_event import CoreCourseEvent
 
 
 class CoreCourseCell(BaseModel):
@@ -43,7 +47,6 @@ class CoreCourseCell(BaseModel):
 
 
 class CoreCoursesParser:
-
     def __init__(self):
         self.last_dfs_merged_ranges: dict[str, list[tuple[int, int, int, int]]] | None = None
 
@@ -96,17 +99,15 @@ class CoreCoursesParser:
             google_sheet_gid = sheet_gids.get(google_sheet_name) if google_sheet_name else None
             time_columns_index = self.get_time_columns(sheet_df)
             logger.info(f"Sheet Time columns: {[get_column_letter(col + 1) for col in time_columns_index]}")
-            rightmost_column_index = self.get_rightmost_column_index(
-                xlsx_file, target_sheet_name, time_columns_index
-            )
+            rightmost_column_index = self.get_rightmost_column_index(xlsx_file, target_sheet_name, time_columns_index)
             logger.info(f"Rightmost column index: {get_column_letter(rightmost_column_index + 1)}")
 
             by_courses = self.split_df_by_courses(sheet_df, time_columns_index)
             grouped_dfs_with_cells_lst = []
-            for course_df in by_courses:
+            for course_block in by_courses:
                 # ---- Set course and group as header; weekday and timeslot as index ----
-                self.set_course_and_group_as_header(course_df)
-                course_df = self.set_weekday_and_time_as_index(course_df)
+                self.set_course_and_group_as_header(course_block)
+                course_df = self.set_weekday_and_time_as_index(course_block)
                 if course_df.shape[1] == 0:
                     logger.warning("Skipping course block with no group columns after removing the time column")
                     continue
@@ -142,9 +143,7 @@ class CoreCoursesParser:
         """
         # ---- Read xlsx file into dataframes ----
         # pandas 3 infers str columns; parser assigns time tuples into the time column (object in pandas 2)
-        dfs = pd.read_excel(
-            xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object
-        )
+        dfs = pd.read_excel(xlsx_file, engine="openpyxl", sheet_name=None, header=None, dtype=object)
         # ---- Clean up dataframes ----
         merged_ranges: dict[str, list[tuple[int, int, int, int]]] = defaultdict(list)
         for target_sheet_name in target_sheet_names:
@@ -427,7 +426,7 @@ def use(
     processed_column: pd.Series,
     target: Target,
 ) -> Generator["CoreCourseEvent"]:
-    from .cell_to_event import CoreCourseEvent, convert_cell_to_event
+    from .cell_to_event import convert_cell_to_event
 
     (course, group) = processed_column.name
     course: str

@@ -101,7 +101,9 @@ def generate_vevent(event: ElectiveEvent, spreadsheet_id: str) -> icalendar.Even
             f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}&range={event.a1}"
         )
     else:
-        vevent["x-wr-link"] = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}"
+        vevent["x-wr-link"] = (
+            f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}?gid={event.google_sheet_gid}#gid={event.google_sheet_gid}"
+        )
 
     if event.location is not None:
         vevent["location"] = event.location

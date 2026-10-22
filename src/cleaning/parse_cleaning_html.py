@@ -68,8 +68,6 @@ def process_dataframe(df: pd.DataFrame, entries: dict[str, list[date]]) -> None:
     has_prev = first_day_large_than_15
     # Expected number of main month splits equals number of months in the header
     expected_main = len(months)
-    expected_total = expected_main + (1 if has_prev else 0)
-    has_next = len(split_lists) > expected_total
 
     prev_splits = []
     main_splits = []
@@ -203,4 +201,3 @@ def parse_from_url(url: str) -> dict[str, list[date]]:
 if __name__ == "__main__":
     url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRll5tP8-fP0mJ7jtfrDp71297dFn7dFtIki7gJ0H6i_7QXM5HSSGRo2FR_vo8XKv8MKMSIzyiJqIKQ/pubhtml"
     print(parse_from_url(url))
-
