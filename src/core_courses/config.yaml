@@ -4,7 +4,7 @@ semester_tag:
   name: Fall 2026
   type: semester
 targets:
-  - sheet_name: "2nd block FROM 2610"
+  - sheet_name: "1st block common"
     start_date: "2026-08-24"
     end_date: "2026-12-27"
     override:
