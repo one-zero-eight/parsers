@@ -4,38 +4,14 @@ semester_tag:
   name: Fall 2026
   type: semester
 targets:
-  - sheet_name: "1st block common"
-    start_date: "2026-08-24"
+  - sheet_name: "2nd block common"
+    start_date: "2026-10-26"
     end_date: "2026-12-27"
-    override:
-      - groups: []
-        courses: ["BS - Year 1"]
-        start_date: "2026-09-01"
-        end_date: "2026-12-27"
-      - groups: []
-        courses: ["BS - Year 2"]
-        start_date: "2026-08-31"
-        end_date: "2026-12-27"
-      - groups: []
-        courses: ["BS - Year 3"]
-        start_date: "2026-08-24"
-        end_date: "2026-12-27"
+    override: []
   - sheet_name: "Ru Programs"
-    start_date: "2026-08-25"
+    start_date: "2026-10-26"
     end_date: "2026-12-27"
-    override:
-      - groups: []
-        courses: ["BS - Year 1"]
-        start_date: "2026-09-01"
-        end_date: "2026-12-27"
-      - groups: []
-        courses: ["BS - Year 2"]
-        start_date: "2026-08-31"
-        end_date: "2026-12-27"
-      - groups: []
-        courses: ["BS - Year 3"]
-        start_date: "2026-08-24"
-        end_date: "2026-12-27"
+    override: []
 save_ics_path: fall26/core-courses
 save_json_path: fall26/core-courses.json
 dont_care_location_string: false
